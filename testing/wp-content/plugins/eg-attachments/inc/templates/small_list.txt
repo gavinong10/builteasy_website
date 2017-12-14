@@ -1,0 +1,7 @@
+[title]Small list[/title]
+[description]Small list of attachments without icon[/description]
+[before]<ul>[/before]
+[loop]<li class="attachments attachments-small">
+	<a title="%TITLE%" href="%URL%" %NOFOLLOW%>%FILENAME%</a> (%FILESIZE%)
+</li>[/loop]
+[after]</ul>[/after]

@@ -1,0 +1,408 @@
+@import "bourbon";
+
+@mixin josefin {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+@mixin opensans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@mixin lato {
+  font-family: 'Lato', sans-serif;
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+}
+
+@font-face {
+  font-family: 'tve-leads-four-set-icons';
+  src: url('fonts/four_set/four_set_icons.eot?-o8i8n4');
+  src: url('fonts/four_set/four_set_icons.eot?#iefix-o8i8n4') format('embedded-opentype'),
+  url('fonts/four_set/four_set_icons.woff?-o8i8n4') format('woff'),
+  url('fonts/four_set/four_set_icons.ttf?-o8i8n4') format('truetype'),
+  url('fonts/four_set/four_set_icons.svg?-o8i8n4#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="four-set-icon"], [class*=" four-set-icon"] {
+  color: inherit;
+  font-family: 'tve-leads-four-set-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.four-set-icon-lock:before {
+  content: "\e600";
+}
+
+$white: #fff;
+$black: #000;
+
+[class*='tve_four_set'] {
+  @include clearfix();
+}
+body {
+  #tve_four_set {
+    a {
+      color: inherit;
+    }
+    .tve_four_set_v1 {
+      &.tve-leads-lightbox {
+        .tve_p_lb_content {
+          max-width: 790px;
+          padding: 0 20px !important;
+          #tve_editor {
+            .tve_p_lb_control {
+              padding: 20px 0;
+            }
+          }
+        }
+      }
+    }
+    .tve_four_set_v2 {
+      //screen filler
+      &.tve-leads-lightbox {
+        .tve_p_lb_close {
+          background: none;
+          border: 0;
+          color: #a4969d;
+          font-size: 30px;
+          top: 15px;
+          right: 15px;
+        }
+        .tve_p_lb_content {
+          border-radius: 2px;
+          max-width: 1200px;
+          padding: 0 !important;
+          #tve_editor {
+            .tve_p_lb_control {
+              padding: 0;
+            }
+          }
+          .tve_p_lb_inner {
+            // max-height: 765px;
+          }
+        }
+        .tve_cb6 {
+          border-radius: 2px;
+          border-width: 0 !important;
+          position: relative;
+          .tve_cb_cnt {
+            padding: 30px;
+            > p {
+              color: #3a3a3a;
+            }
+          }
+          &:after {
+            border-color: inherit;
+            border-width: 10px;
+            border-style: solid;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-bottom-color: transparent;
+            content: '';
+            display: block;
+            height: 0;
+            margin: auto 0;
+            position: absolute;
+            left: -20px;
+            top: 0;
+            bottom: 0;
+            width: 0;
+          }
+        }
+      }
+    }
+  }
+  #tve_four_set {
+    @include josefin();
+    text-shadow: none;
+    .thrv_lead_generation {
+      &.thrv_lead_generation_horizontal {
+        input[type='text'], input[type="email"] {
+          margin-bottom: 0;
+        }
+      }
+      &.thrv_lead_generation_vertical {
+      }
+      .tve_lg_input_container {
+        button {
+          text-shadow: none;
+        }
+      }
+      &.tve_white {
+        button {
+          color: #333333;
+        }
+      }
+      input[type='text'], input[type="email"] {
+        @include opensans();
+        border-radius: 0;
+        border: 0;
+        color: #a2a2a2;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 12px;
+        height: auto;
+        line-height: 17px;
+        margin-top: 0;
+        padding: 29px 20px 28px !important;
+        &:hover, &:active, &:focus {
+          border: 0;
+        }
+        &:active, &:focus, &:hover {
+          color: $black;
+          font-style: normal;
+        }
+      }
+      button {
+        @include lato();
+        border-radius: 0;
+        box-shadow: none;
+        font-weight: 700;
+        font-size: 18px;
+        padding: 26px 10px;
+        &:active {
+          box-shadow: none;
+          border-top: 0;
+        }
+      }
+    }
+    h2 {
+      @include josefin();
+      color: #492c3b;
+      font-weight: 600;
+      font-size: 30px;
+    }
+    h3 {
+      @include josefin();
+      color: #fff;
+      font-weight: 600;
+      font-size: 24px;
+    }
+    h4 {
+      @include lato();
+      color: $white;
+      font-size: 18px;
+      font-weight: 400;
+    }
+    h5 {
+      @include josefin();
+      color: $black;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    h6 {
+      @include josefin();
+      color: $white;
+      font-weight: 600;
+      font-size: 15px;
+    }
+    p {
+      text-shadow: none;
+      @include josefin();
+      color: #3a3a3a;
+      font-weight: 400;
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+    ul.thrv_wrapper, ol.thrv_wrapper {
+      font-size: 18px;
+      margin-left: 20px;
+      li {
+        @include josefin();
+        color: #3a3a3a;
+        font-size: inherit;
+        font-weight: 600;
+      }
+    }
+    h1, h2, h3, h4, h5, h6 {
+      text-shadow: none;
+      line-height: 1.5em;
+      letter-spacing: normal;
+    }
+    //ribbon
+    .thrv-ribbon {
+      box-shadow: 0 0 5px 0 rgba($black, .75);
+      padding: 17px 0;
+      .thrv_lead_generation_horizontal {
+        input[type='text'], input[type="email"] {
+          padding: 14px 10px !important;
+        }
+        button {
+          font-size: 12px;
+          padding: 15px 10px;
+        }
+      }
+      .thrv_lead_generation {
+        &.thrv_lead_generation_horizontal {
+          &.tve_2 {
+            .tve_lg_2 {
+              padding-right: 4%;
+              width: 67%;
+              &:last-of-type {
+                width: 33%;
+              }
+            }
+          }
+        }
+      }
+    }
+    //lightbox
+    .tve-leads-lightbox {
+      .tve_p_lb_close {
+        background: none;
+        border: 0;
+        color: #646f7c;
+        font-size: 30px;
+        top: 10px;
+        right: 10px;
+      }
+      .tve_p_lb_content {
+        box-shadow: none;
+        border-radius: 0;
+        .tve_p_lb_inner {
+          // max-height: 480px;
+        }
+      }
+    }
+    //widget
+    .thrv-leads-widget {
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border-width: 0;
+      padding: 20px;
+      .tve_btn {
+        min-width: 100%;
+      }
+      .thrv_lead_generation_vertical {
+        input[type='text'], input[type="email"] {
+          margin-bottom: 25px;
+        }
+      }
+    }
+    //slide in
+    .thrv-leads-slide-in {
+      border-radius: 2px;
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      border-width: 0;
+      max-width: 430px;
+      .tve-leads-close {
+        background: none;
+        border: 0;
+        color: #646f7c;
+        font-size: 30px;
+        top: 10px;
+        right: 10px;
+      }
+      .thrv_lead_generation_vertical {
+        input[type='text'], input[type="email"] {
+          margin-bottom: 22px;
+        }
+      }
+    }
+    //post footer
+    .thrv-leads-form-box {
+      border-radius: 2px;
+      border-width: 0;
+      padding: 30px;
+      .thrv_lead_generation_horizontal {
+        &.tve_2 {
+          .tve_lg_input_container {
+            &.tve_lg_2 {
+              width: 54%;
+              &:last-of-type {
+                width: 46%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .tve_four_set_v1 {
+    &.thrv-leads-slide-in {
+      padding: 30px 20px 0;
+    }
+  }
+  .tve_four_set_v2 {
+    &.thrv-leads-slide-in {
+      padding: 30px 20px;
+    }
+  }
+}
+
+//background1 background2 ribbon bg
+$color-pallete: 'blue' #4aa3df #3b8ec6 #0979c1,
+'black' #111111 #000000 #000000,
+'green' #8dc63f #6ea128 #70ab20,
+'white' #ebebeb #cccccc #fff,
+'orange' #f6ab28 #c88c24 #fca103,
+'purple' #ae83c7 #9162ac #492c3b,
+'red' #cc543e #b2412c #ac3620,
+'teal' #2e9a93 #2d9992 #149087;
+@each $color in $color-pallete {
+  [class*='tve_four_set'] {
+    .thrv_lead_generation {
+      &.tve_#{nth($color, 1)} {
+        .tve_lg_input_container {
+          button {
+            background: nth($color, 2);
+            &:hover {
+              background: nth($color, 3);
+            }
+            &:active {
+              background: nth($color, 3);
+            }
+          }
+        }
+      }
+    }
+    .thrv_contentbox_shortcode {
+      .tve_cb.tve_cb5 {
+        &.tve_#{nth($color, 1)} {
+          background: nth($color, 4);
+        }
+      }
+      .tve_cb.tve_cb6 {
+        &.tve_#{nth($color, 1)} {
+          background: nth($color, 4);
+          border-color: nth($color, 4);
+        }
+      }
+    }
+    &.thrv-leads-form-box {
+      &.tve_#{nth($color, 1)} {
+        background: nth($color, 4);
+      }
+    }
+    &.thrv-ribbon {
+      &.tve_#{nth($color, 1)} {
+        background: nth($color, 4);
+      }
+    }
+  }
+}
+
+@import "_responsive";

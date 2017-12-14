@@ -1,0 +1,266 @@
+#tooltip {
+	position: absolute;
+	z-index: 999999;
+	border: 2px solid #DFDFDF;
+	padding: 12px;
+	max-width: 300px;
+	
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	
+	-webkit-box-shadow: 6px 6px 25px 15px rgba(0, 0, 0, .08);
+	-moz-box-shadow: 6px 6px 25px 15px rgba(0, 0, 0, .08);
+	box-shadow: 6px 6px 25px 15px rgba(0, 0, 0, .08); 
+	
+	background: #ededed;
+	background: -moz-linear-gradient(top, #ededed 0%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(top, #ededed 0%,#ffffff 100%);
+	background: -o-linear-gradient(top, #ededed 0%,#ffffff 100%);
+	background: -ms-linear-gradient(top, #ededed 0%,#ffffff 100%);
+	background: linear-gradient(top, #ededed 0%,#ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 );
+}
+#tooltip h3, #tooltip div { margin: 0; }
+.pluginbuddy-nodecor a {
+	text-decoration: none;
+}
+.pluginbuddy_tip img {
+	vertical-align: -2px;
+}
+.form-table span.description {
+	display: inline !important;
+}
+/* Scrollable text for displaying default dirs, etc. */
+.pb_scroll {
+	display: inline-block;
+	overflow-x: scroll;
+	white-space: nowrap;
+}
+.pb_scroll::-webkit-scrollbar {
+	-webkit-appearance: none;
+	width: 11px;
+	height: 11px;
+}
+.pb_scroll::-webkit-scrollbar-thumb {
+	border-radius: 8px;
+	border: 2px solid white; /* should match background, can't be transparent */
+	background-color: rgba(0, 0, 0, .1);
+}
+.pb_scroll::-webkit-scrollbar-corner{
+	background-color:rgba(0,0,0,0.0);
+}
+
+
+
+.advanced-toggle {
+	display: none;
+}
+.advanced-toggle-title h3 {
+	margin-left: -5px;
+	cursor: pointer;
+	//margin-bottom: 0;
+	margin-top: 6px !important;
+}
+.advanced-toggle-title .dashicons {
+	font-size: 1.5em;
+	padding-right: 10px;
+	margin-left: -5px;
+	vertical-align: -7px;
+}
+//.advanced-toggle-title .dashicons-arrow-down {
+//	margin-left: -11px;
+//}
+
+
+
+h3.title {
+	font-weight: 300;
+}
+.pb_form th, h3 {
+	font-weight: normal;
+}
+
+td.pb_draghandle {
+	cursor: move;
+	text-align: center;
+	vertical-align: middle;
+}
+
+tr.tDnD_whileDrag td,tr.tDnD_whileDrag th{
+	background: #EEEEEE;
+	border-top: 1px solid #BBBBBB !important;
+	border-bottom: 1px solid #BBBBBB !important;
+	padding-top: 2px;
+}
+.pb_debug {
+	float: right;
+	background: #FF8989;
+	border: 2px solid red;
+	padding: 8px;
+	width: 40px;
+	position: absolute;
+	right: 0;
+	z-index: 9000;
+}
+.pb_debug_show {
+	cursor: pointer;
+	float: right;
+}
+.pb_debug_hide {
+	cursor: pointer;
+	display: none;
+	float: right;
+}
+.pb_debug_content {
+	display: none;
+}
+.pb_debug textarea {
+	width: 100%;
+	height: 100px;
+}
+
+.pb_htitle {
+	font-size: 18px;
+	border-bottom: 1px solid #DFDFDF;
+	padding-bottom: 4px;
+}
+
+.pb_toggle {
+	cursor: pointer;
+}
+.pb_toggled {
+	display: none;
+	border: 1px solid #CCCCCC;
+	margin: 4px;
+	padding: 8px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#pb_backupbuddy_status {
+	width: 100%;
+	height: 200px;
+}
+
+
+.backupbuddy-tab-blocks .backupbuddy-tab {
+	display: none;
+	padding-top: 10px; // 25px
+}
+.backupbuddy-tab-blocks .backupbuddy-tab:first-child {
+	display: block;
+}
+
+
+
+
+
+/* Tabs ----------------------------------*/
+.ui-tabs {
+	border-top: 1px solid #DFDFDF; margin-top: 20px; } /* padding: .2em; zoom: 1; */
+.ui-tabs .ui-tabs-nav { z-index: 15; list-style: none; position: relative; padding: 0px 0px 0px; margin-top: -28px; margin-left: 10px; }
+.ui-tabs .ui-tabs-nav li { margin: -12px 7px -1px 0px; position: relative; float: left; padding: 0; text-align: center; }
+.ui-tabs .ui-tabs-nav li a {
+	background-color: #FFFFFF; /* #EDEDED Inactive bg. */
+	height: 27px;
+	float: left; text-decoration: none; padding-left: 15px; padding-right: 15px;
+	-moz-border-radius: 3px 3px 0px 0px;
+	-webkit-border-radius: 3px 3px 0px 0px;
+	border-radius: 3px 3px 0px 0px;
+	border: 1px solid #dfdfdf; outline: none; padding-top: 5px;
+	border-bottom: 0px;
+	display: inline-block;
+	padding-top: 10px;
+	font-weight: 200;
+	font-size: 20px;
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+	//color: #464646 !important;
+	color: #aaa;
+	
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-active {
+	margin-top: -12px;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-active a {
+	background-color: #ffffff;
+	height: 28px;
+	border-color: #CCC;
+	color: #464646;
+}
+.ui-tabs .ui-tabs-nav .ui-tabs-active a:hover {
+	background-color: #ffffff;
+	//cursor: default;
+	//border-color: #CCC;
+}
+
+.ui-tabs .ui-tabs-nav li a:hover {
+	//background-color: #DFDFDF;
+	border-color: #CCC;
+	color: #d54e21;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {  } /* padding-bottom: 0px; */
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a {
+	height: 28px; cursor: text;
+	background-color: #FFFFFF; // F9F9F9
+	border-bottom: 1px solid #FFFFFF;
+}
+
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { padding: 0; padding-top: 10px; display: block; border-width: 0; background: none; }
+.ui-tabs .ui-tabs-hide { display: none !important; }
+
+
+
+/*
+.ui-tabs-nav li a span .pb_backupbuddy_fancytab {
+	
+}
+*/
+
+
+
+.pb_label {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.pb_label {
+	display: inline-block;
+	padding: 2px 4px;
+	font-size: 11.844px;
+	font-weight: bold;
+	line-height: 14px;
+	color: white;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	white-space: nowrap;
+	vertical-align: baseline;
+	background-color: #999;
+}
+.pb_label-success {
+	background-color: #468847;
+}
+.pb_label-warning {
+	background-color: #F89406;
+}
+.pb_label-error {
+	background-color: red;
+}
+.pb_label-important {
+	background-color: #dd4542; //#B94A48;
+}
+.pb_label-info {
+	background-color: #3A87AD;
+}
+.pb_label-inverse {
+	background-color: #333;
+}
+.pb_label-subtle {
+	text-shadow: none;
+	background-color: #dedede;
+	color: #555;
+}
+
+

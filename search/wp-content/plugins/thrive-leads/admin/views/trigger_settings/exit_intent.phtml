@@ -1,0 +1,66 @@
+<h4><?php echo __( 'Mobile Settings', 'thrive-leads' ) ?></h4>
+
+<p>
+	<?php echo __( 'We can\'t detect this trigger on a mobile device so here you can choose an alternative trigger just for mobile devices', 'thrive-leads' ) ?>
+</p>
+<div class="tvd-row tvd-collapse">
+	<div class="tvd-col tvd-s2">
+		<p style="margin-top: 0;">
+			<?php echo __( 'SmartExit', 'thrive-leads' ) ?>
+		</p>
+	</div>
+	<div class="tvd-col tvd-s10">
+		<div class="tvd-switch">
+			<label>
+                <span class="tvd-on-large-and-down">
+                    <?php echo __( 'Off', 'thrive-leads' ) ?>
+                </span>
+				<input type="checkbox" class="trigger-config" value="timer" id="exit-mobile"
+				       name="m"<?php echo ! empty( $config['m'] ) && $config['m'] == 'timer' ? ' checked="checked"' : '' ?>>
+				<span class="tvd-lever"></span>
+                <span class="tvd-on-large-and-down">
+                    <?php echo __( 'On', 'thrive-leads' ) ?>
+                </span>
+			</label>
+		</div>
+	</div>
+</div>
+<div id="trigger-mobile-settings"<?php if ( empty( $config['m'] ) )
+	echo ' style="display: none"' ?>>
+	<p>
+		<?php echo __( 'Seconds after page load', 'thrive-leads' ) ?>
+	</p>
+	<div class="tvd-row tvd-collapse">
+		<div class="tvd-col tvd-s8">
+			<div class="tvd-slider-widget" data-min="0" data-max="100" data-connect-to="#slider-m-timer-input"
+			     data-value="<?php echo (int) $config['ms'] ?>"></div>
+		</div>
+		<div class="tvd-col tvd-s4">
+			<div class="tvd-input-field">
+				<label for="slider-m-timer-input"
+				       class="tvd-active"><?php echo __( 'Seconds', 'thrive-leads' ) ?></label>
+				<input class="trigger-config" type="text" name="ms" id="slider-m-timer-input"
+				       value="<?php echo (int) $config['ms'] ?>" size="3">
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	(
+		function ( $ ) {
+			$( function () {
+				$( '#exit-mobile' ).change( function () {
+					var $this = $( this ),
+						$target = $( '#trigger-mobile-settings' );
+					if ( $this.attr( 'checked' ) ) {
+						$target.show().find( 'input' ).prop( 'disabled', false ).focus();
+					} else {
+						$target.hide().find( 'input' ).prop( 'disabled', true );
+					}
+					ThriveLeads.resize_thickbox();
+				} ).change();
+			} );
+		}
+	)( jQuery );
+</script>

@@ -1,0 +1,66 @@
+.ega-col-left,
+.ega-col-right {
+	float: left;
+	width: 48%;
+	*width: 47.4%;
+}
+
+.ega-col-left {
+	margin-right: 2%;
+}
+
+table.eg-attach-custom-format {
+	font-size: small;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+	.ega-col-left,
+	.ega-col-right {
+		width: 100%;
+		margin-right: 0;
+	}
+}
+
+@media only screen and (min-width: 769px) {
+
+	.ega-col-left,
+	.ega-col-right {
+		width: 48%;
+		*width: 47.4%;
+	}
+	.ega-col-left {
+		margin-right: 2%;
+	}
+}
+
+.mandatory {
+	border-color: red !important;
+}
+
+
+table.eg-attach-list {
+	border: 1px solid #CCC;
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+table.eg-attach-list td,
+table.eg-attach-list th {
+	border: 1px solid #CCC;
+	padding: 2px 10px;
+}
+
+table.eg-attach-list th {
+	background-color: #EEE;
+}
+
+.eg-form-table td, .eg-form-table th {
+	border: 1px solid black;
+}
+
+.eg-forms-check-column {
+	width: 3em;
+}
+

@@ -1,0 +1,242 @@
+/*
+ * jQuery FlexSlider v2.2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+
+ 
+/* Browser Resets */
+.flex-container a:active,
+.flex-container a:focus,
+.flexslider a:active,
+.flexslider a:focus,
+.properties-flexslider a:active,
+.properties-flexslider a:focus,
+.portfolio-flexslider a:active,
+.portfolio-flexslider a:focus { outline: none; }
+.slides,
+.flex-control-nav,
+.flex-direction-nav { margin: 0; padding: 0; list-style: none; } 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider, .blog-flexslider, .properties-flexslider, .home-flexslider, 
+.home-thumb-flexslider, .testimonial-flexslider, .featured-flexslider, .partners-flexslider, .portfolio-flexslider  { margin: 0; padding: 0; }
+.flexslider .slides > li, .blog-flexslider .slides > li, .properties-flexslider .slides > li, 
+.home-flexslider .slides > li, .home-thumb-flexslider .slides > li,
+.testimonial-flexslider .slides > li, .featured-flexslider .slides > li, 
+.partners-flexslider .slides > li, .portfolio-flexslider .slides > li { display: none; -webkit-backface-visibility: hidden; } 
+.flexslider .slides img, .blog-flexslider .slides img, .properties-flexslider .slides img, 
+.home-flexslider .slides img, .home-thumb-flexslider .slides img,
+.featured-flexslider .slides img, .partners-flexslider .slides img, .portfolio-flexslider .slides img { display: block; }
+.home-flexslider .slides img { width: 100%; }
+.featured-flexslider .slides li { width: 230px; }
+.flex-pauseplay span {text-transform: capitalize; }
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block; }
+
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider, .blog-flexslider, .properties-flexslider, .home-flexslider, 
+.home-thumb-flexslider, .testimonial-flexslider, .featured-flexslider, .partners-flexslider, .portfolio-flexslider { position: relative; zoom: 1; }
+.blog-flexslider, .properties-flexslider, .portfolio-flexslider { overflow:hidden; }
+.flex-viewport { max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+.loading .flex-viewport {max-height: 300px;}
+.flexslider .slides, .blog-flexslider .slides, .properties-flexslider .slides, 
+.home-flexslider .slides, .home-thumb-flexslider .slides, 
+.testimonial-flexslider .slides, .featured-flexslider .slides, .partners-flexslider .slides,
+.portfolio-flexslider .slides { zoom: 1; margin-top:0; }
+
+#carousel-flex img { cursor:pointer; }
+
+
+/* Direction Nav */
+.flex-direction-nav {*height: 0;}
+.flex-direction-nav a { 
+	text-decoration:none; display: block; position: absolute; top: 50%; 
+	z-index: 10; overflow: hidden; opacity: 0; cursor: pointer; color: rgba(0,0,0,0.8); 
+	-webkit-transition: all .3s ease; 
+	-moz-transition: all .3s ease; 
+	transition: all .3s ease; 
+}
+.flex-direction-nav .flex-prev { left: -50px; }
+.flex-direction-nav .flex-next { right: -50px; text-align: right; }
+.flexslider:hover .flex-prev, 
+.home-flexslider:hover .flex-direction-nav .flex-prev,
+.properties-flexslider:hover .flex-direction-nav .flex-prev,
+.blog-flexslider:hover .flex-direction-nav .flex-prev,
+.portfolio-flexslider:hover .flex-direction-nav .flex-prev { opacity: 0.7; left: 10px; }
+.flexslider:hover .flex-next, 
+.home-flexslider:hover .flex-direction-nav .flex-next,
+.properties-flexslider:hover .flex-direction-nav .flex-next,
+.blog-flexslider:hover .flex-direction-nav .flex-next,
+.portfolio-flexslider:hover .flex-direction-nav .flex-next { opacity: 0.7; right: 10px; }
+.flexslider:hover .flex-next:hover, 
+.flexslider:hover .flex-prev:hover,
+.home-flexslider:hover .flex-direction-nav .flex-prev,
+.home-flexslider:hover .flex-direction-nav .flex-next,
+.properties-flexslider:hover .flex-direction-nav .flex-prev,
+.properties-flexslider:hover .flex-direction-nav .flex-next,
+.blog-flexslider:hover .flex-direction-nav .flex-prev,
+.blog-flexslider:hover .flex-direction-nav .flex-next,
+.portfolio-flexslider:hover .flex-direction-nav .flex-prev,
+.portfolio-flexslider:hover .flex-direction-nav .flex-next { opacity: 1; }
+.flex-direction-nav .flex-disabled { opacity: 0!important; filter:alpha(opacity=0); cursor: default; }
+.properties-flexslider ul.slides, .portfolio-flexslider ul.slides { background: #CCC; }
+.properties-flexslider .flex-viewport ul.slides { background: #f8f8f8 !important; }
+
+
+/* Control Nav */
+.flex-control-nav { width: 100%; position: absolute; bottom: -40px; text-align: center; }
+.flex-control-nav li { margin: 0 6px; display: inline-block; zoom: 1; *display: inline; }
+.flex-control-paging li a { 
+	width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; 
+	-webkit-border-radius: 20px; 
+	-moz-border-radius: 20px; 
+	-o-border-radius: 20px; 
+	border-radius: 20px; 
+	box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+}
+.flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
+.flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
+
+.flex-control-thumbs { margin: 2px 0 0; position: static; overflow: hidden; }
+.flex-control-thumbs li { width: 25%; float: left; margin: 0;}
+.flex-control-thumbs img { width: 100%; display: block; opacity: .7; cursor: pointer; }
+.flex-control-thumbs img:hover { opacity: 1; }
+.flex-control-thumbs .flex-active,
+.properties-flexslider .flex-active { opacity: 1; cursor: default; }
+
+
+/* Caption style */
+/* IE rgba() hack */
+.flex-caption { background:none; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000); zoom: 1;}
+.flex-caption  { 
+	padding: 8px 12px; position: absolute; left:10px; bottom:10px; background: rgba(0,0,0,.7); 
+	color: #fff; font-size: 14px; display:block; text-align: center; 
+}
+.flex-direction-nav li, .slides li { list-style:none; }
+
+
+.flex-loading { background: #CCC; }
+.flex-loading:before { 
+	content: 'LOADING'; display: block; padding: 300px 0; text-align: center; 
+	color: #000; font-weight: bold; font-size: 60px; opacity: 0.3; 
+}
+
+
+/************************************************
+HOME, BLOG, PORTFOLIO & PROPERTIES DIRECTION NAV 
+************************************************/
+
+.home-flexslider .flex-control-nav,
+.properties-flexslider .flex-control-nav,
+.blog-flexslider .flex-control-nav,
+.portfolio-flexslider .flex-control-nav { width:100%; position:absolute; bottom:150px; right:0; z-index:3; text-align:center; }
+.home-flexslider .flex-control-paging li a,
+.properties-flexslider .flex-control-paging li a,
+.blog-flexslider .flex-control-paging li a,
+.portfolio-flexslider .flex-control-paging li a { 
+	width:20px; height:3px; display: block; background:#DEDDDC; text-indent:-9999px; box-shadow:none; border-radius:0; 
+}
+.home-flexslider .flex-control-paging li a:hover,
+.properties-flexslider .flex-control-paging li a:hover,
+.blog-flexslider .flex-control-paging li a:hover,
+.portfolio-flexslider .flex-control-paging li a:hover { background:#EEE; }
+.home-flexslider .flex-control-paging li a.flex-active,
+.properties-flexslider .flex-control-paging li a.flex-active,
+.blog-flexslider .flex-control-paging li a.flex-active,
+.portfolio-flexslider .flex-control-paging li a.flex-active { background:#DD6363; cursor: default; }
+
+.home-flexslider .flex-direction-nav,
+.properties-flexslider .flex-direction-nav,
+.blog-flexslider .flex-direction-nav,
+.portfolio-flexslider .flex-direction-nav { position:absolute; top:45%; left:0; width:100%; z-index:9; }
+.home-flexslider .flex-direction-nav li,
+.properties-flexslider .flex-direction-nav li,
+.blog-flexslider .flex-direction-nav li,
+.portfolio-flexslider .flex-direction-nav li { background:none !important; float:left; }
+.home-flexslider .flex-direction-nav li a,
+.properties-flexslider .flex-direction-nav li a,
+.blog-flexslider .flex-direction-nav li a,
+.portfolio-flexslider .flex-direction-nav li a { display: block; margin-right:6px; padding:10px 17px; }
+.home-flexslider .flex-direction-nav li .flex-next, 
+.home-flexslider .flex-direction-nav li .flex-prev,
+.properties-flexslider .flex-direction-nav li .flex-next, 
+.properties-flexslider .flex-direction-nav li .flex-prev,
+.blog-flexslider .flex-direction-nav li .flex-next, 
+.blog-flexslider .flex-direction-nav li .flex-prev,
+.portfolio-flexslider .flex-direction-nav li .flex-next, 
+.portfolio-flexslider .flex-direction-nav li .flex-prev { position:absolute; color:#FFF; font-size:18px; background:#1C1B1A; }
+.home-flexslider .flex-direction-nav li .flex-prev,
+.properties-flexslider .flex-direction-nav li .flex-prev,
+.blog-flexslider .flex-direction-nav li .flex-prev,
+.portfolio-flexslider .flex-direction-nav li .flex-prev { left:0; }
+.home-flexslider .flex-direction-nav li .flex-next,
+.properties-flexslider .flex-direction-nav li .flex-next,
+.blog-flexslider .flex-direction-nav li .flex-next,
+.portfolio-flexslider .flex-direction-nav li .flex-next { right:-6px; }
+.home-flexslider .flex-direction-nav li .flex-next:hover, 
+.home-flexslider .flex-direction-nav li .flex-prev:hover,
+.properties-flexslider .flex-direction-nav li .flex-next:hover, 
+.properties-flexslider .flex-direction-nav li .flex-prev:hover,
+.blog-flexslider .flex-direction-nav li .flex-next:hover, 
+.blog-flexslider .flex-direction-nav li .flex-prev:hover,
+.portfolio-flexslider .flex-direction-nav li .flex-next:hover, 
+.portfolio-flexslider .flex-direction-nav li .flex-prev:hover { background:#88C354; }
+.home-flexslider .flex-direction-nav li .flex-prev:before,
+.properties-flexslider .flex-direction-nav li .flex-prev:before,
+.blog-flexslider .flex-direction-nav li .flex-prev:before,
+.portfolio-flexslider .flex-direction-nav li .flex-prev:before { 
+	content: "\f104"; font-family: FontAwesome; font-style: normal; font-weight: normal; text-decoration: inherit;
+}
+.home-flexslider .flex-direction-nav li .flex-next:before,
+.properties-flexslider .flex-direction-nav li .flex-next:before,
+.blog-flexslider .flex-direction-nav li .flex-next:before,
+.portfolio-flexslider .flex-direction-nav li .flex-next:before { 
+	content: "\f105"; font-family: FontAwesome; font-style: normal; font-weight: normal; text-decoration: inherit;  
+}
+
+
+/*************************************
+HOME SLIDER THUMB DIRECTION NAV 
+*************************************/
+
+.slider-block-thumb .home-flexslider { width:1080px; margin:0 auto !important; padding:4px !important; background:#FFF; }
+.slider-block-thumb .home-flexslider .slider-actions { position: absolute; top: 30%; left: 60px; font-size:14px; }
+
+
+/*************************************
+FEATURED PROPERTY DIRECTION NAV 
+*************************************/
+
+.featured-flexslider .flex-direction-nav { position:absolute; top:-60px; right:0; }
+.featured-flexslider .flex-direction-nav li { background:none !important; float:left; }
+.featured-flexslider .flex-direction-nav li a { display: block; margin-left:1px; padding:0 8px; opacity: 1; left: 0; }
+.featured-flexslider .flex-direction-nav li .flex-next, 
+.featured-flexslider .flex-direction-nav li .flex-prev { 
+	background:#F8F8F8; position:relative; color:#AAA; font-size:12px; border:2px solid #AAA; 
+}
+.featured-flexslider .flex-direction-nav li .flex-next:hover, 
+.featured-flexslider .flex-direction-nav li .flex-prev:hover { background:#AAA; color:#FFF; position:relative; }
+.featured-flexslider .flex-direction-nav li .flex-prev:before { 
+	content: "\f104"; font-family: FontAwesome; font-style: normal; font-weight: normal; 
+}
+.featured-flexslider .flex-direction-nav li .flex-next:before { 
+	content: "\f105"; font-family: FontAwesome; font-style: normal; font-weight: normal; 
+}

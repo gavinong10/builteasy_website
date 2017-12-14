@@ -1,0 +1,1515 @@
+# Copyright (C) 2011 EG-Attachments
+# This file is distributed under the same license as the EG-Attachments package.
+msgid ""
+msgstr ""
+"Project-Id-Version: EG-Attachments 1.8.8\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/eg-attachments\n"
+"POT-Creation-Date: 2013-02-10 23:52:03+00:00\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Emmanuel Georjon <blog@emmanuelgeorjon.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: inc/eg-attachment-keywords-help.inc.php:2
+msgid "General help"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:5
+msgid "Fields with <font color=\"red\">red border</font> are mandatory"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:8
+msgid "Available keywords"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:11
+#, fuzzy
+msgid "Labels:"
+msgstr "القائمة الكبيرة"
+
+#: inc/eg-attachment-keywords-help.inc.php:17
+msgid "Label for title (title in english, titre in french, Titolo in italian, ..."
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:21
+msgid "Label for caption (caption in english)"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:25
+msgid "Label for description (description in english)"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:29
+msgid "Label for filename (filename in english)"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:33
+msgid "Label for the size of the file (<strong>size</strong> in english)"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:37
+msgid "Label for the type of the file"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:41
+msgid "Label for the date"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:45
+msgid "Label of the counter (number of downloads of the document"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:50
+msgid "Values:"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:56
+#, fuzzy
+msgid "ID of the attachment"
+msgstr "Links to attachments"
+
+#: inc/eg-attachment-keywords-help.inc.php:60
+msgid "caption of the document"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:64
+msgid "Number of downloads recorded on the document."
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:68
+msgid "Date of last modification"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:72
+msgid "description of the document"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:76
+msgid "Specific URL, pointing directly to the file, but without showing the file name and path (recommended)"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:80
+msgid "Name of the attached file"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:84
+msgid "Size of the attached document"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:88
+msgid "Direct link (url) to the document (media file).The URL is the document's address. For example: <code>http://blog url/wp-content/upload/2011/09/file name.file extension/</code>"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:92
+msgid "Link (url) to document as stored in the WordPress database"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:96
+msgid "Full icon tags (including A and IMG tag. <code>WW</code> is the width of the icon, and <code>HH</code> is the heigth."
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:100
+msgid "URL of icon"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:104
+#, fuzzy
+msgid "The URL of the attachment, as defined by the permalink structure chosen. For example: <code>http://blog url/post url/attachment slug/</code>, or <code>http://blog url/?p=xx</code>."
+msgstr "<strong>Permalink</strong>. <br /><em>The URL of the attachment is using defined permalink structure. For example: <code>http://blog url/post url/attachment slug/</code>, or <code>http://blog url/?p=xx</code>.<br/>The attachment will be displayed inside your blog, as a post.</em>"
+
+#: inc/eg-attachment-keywords-help.inc.php:108
+msgid "HTML attribut <code>rel=\"nofollow\"</code>"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:112
+msgid "Show the lock icon for documents that require login or password"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:116
+msgid "HTML attribut <code>target=\"_blank\"</code>"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:120
+msgid "HTML attribut <code>target=\"value\"</code>"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:124
+#, fuzzy
+msgid "Title of the document"
+msgstr "عنوان القائمة"
+
+#: inc/eg-attachment-keywords-help.inc.php:128
+msgid "Type of the documents"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:132
+msgid "Same than %LINK_URL%, %FILE_URL%, or %DIRECT_URL%, according the option choosen in the Settings/Options menu."
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:37
+#, fuzzy
+msgid "EG-Attachment templates"
+msgstr "EG-Attachments Stats"
+
+#: inc/eg-attachments-admin.inc.php:38
+#, fuzzy
+msgid "EG-Attachment template"
+msgstr "EG-Attachments Stats"
+
+#: inc/eg-attachments-admin.inc.php:76
+#, fuzzy
+msgid "EGA Stats"
+msgstr "EG-Attachments Stats"
+
+#: inc/eg-attachments-admin.inc.php:77
+msgid "EG-Attachments Stats"
+msgstr "EG-Attachments Stats"
+
+#: inc/eg-attachments-admin.inc.php:90
+msgid "EGA templates"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:91
+#, fuzzy
+msgid "EG-Attachments templates"
+msgstr "EG-Attachments Stats"
+
+#: inc/eg-attachments-admin.inc.php:105
+#: inc/eg-attachments-admin.inc.php:109
+msgid "EG-Attachments"
+msgstr "EG-Attachments"
+
+#: inc/eg-attachments-admin.inc.php:137
+msgid "No document attached to this post/page"
+msgstr "لا يوجد مرفقات للتدوينة التالية"
+
+#: inc/eg-attachments-admin.inc.php:140
+msgid "Attachments available for this post/page"
+msgstr "التدوينات لهذة التدوينة"
+
+#: inc/eg-attachments-admin.inc.php:144
+msgid "ID"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:145
+#, fuzzy
+msgid "File Name"
+msgstr "أسم الملف"
+
+#: inc/eg-attachments-admin.inc.php:146
+#: inc/eg-attachments-public.inc.php:621
+msgid "Type"
+msgstr "النوع"
+
+#: inc/eg-attachments-admin.inc.php:147
+#: inc/eg-attachments-public.inc.php:618
+msgid "Size"
+msgstr "الحجم"
+
+#: inc/eg-attachments-admin.inc.php:148
+#: inc/eg-attachments-public.inc.php:623
+#: inc/eg-attachments-tools-form.inc.php:30
+msgid "Date"
+msgstr "التاريخ"
+
+#: inc/eg-attachments-admin.inc.php:243
+msgid "You are not allowed to create/edit templates."
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:260
+#: inc/eg-attachments-admin.inc.php:496
+#: inc/eg-attachments-admin.inc.php:650
+msgid "New_template"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:306
+msgid "You are not allowed to copy templates."
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:314
+msgid "Copy of "
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:344
+#: inc/eg-attachments-admin.inc.php:368
+msgid "You are not allowed to delete templates."
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:365
+#: inc/eg-attachments-tools-form.inc.php:19
+msgid "Templates"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:389
+#: inc/eg-attachments-tools-form.inc.php:18
+msgid "Template"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:413
+msgid "Add New"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:498
+msgid "Description of the new template"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:545
+msgid "Save"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:547
+msgid "Go back to the list"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:579
+msgid "Name of the template"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:583
+msgid "Choose a shortname, with standard characters (like a-z, 0-9, -_)"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:588
+#: inc/eg-attachments-public.inc.php:614
+#: inc/eg-attachments-tools-form.inc.php:28
+msgid "Description"
+msgstr "الوصف المختصر"
+
+#: inc/eg-attachments-admin.inc.php:592
+#: inc/eg-attachments-tools-form.inc.php:27
+msgid "Slug"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:596
+msgid "Before"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:600
+msgid "Loop"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:604
+msgid "After"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:642
+msgid "Error during template saving"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:643
+msgid "Error during template copy"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:644
+msgid "Template successfully saved."
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:645
+msgid "Template successfully created"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:646
+msgid "Template sucessfully deleted"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:647
+msgid "Error during template deletion"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:648
+msgid "Bulk deletion done: %s on %s template(s) were deleted"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:649
+msgid "Title is empty"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:650
+msgid "Title is still \"%s\""
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:651
+msgid "The field \"loop\" cannot be empty."
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:652
+msgid "Error during the copy operation"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:653
+msgid "The initial post is unknown or doesn't exist"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:654
+msgid "Purge of statistics: %d lines deleted (Retention: %d months)."
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:796
+#: inc/eg-attachments-settings.inc.php:44
+#: inc/eg-attachments-settings.inc.php:xx
+msgid "Custom format"
+msgstr "صيغة مخصصة"
+
+#: inc/eg-attachments-admin.inc.php:797
+#, fuzzy
+msgid "Custom format from previous version %s"
+msgstr "Custom format, before list: "
+
+#: inc/eg-attachments-admin.inc.php:930
+#: inc/eg-attachments-admin.inc.php:977
+msgid "Month"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:935
+msgid "\\W"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:936
+#: inc/eg-attachments-admin.inc.php:976
+#, fuzzy
+msgid "Week"
+msgstr "اين تظهر ؟"
+
+#: inc/eg-attachments-admin.inc.php:942
+#: inc/eg-attachments-admin.inc.php:975
+#, fuzzy
+msgid "Day"
+msgstr "مايو"
+
+#: inc/eg-attachments-admin.inc.php:967
+#, fuzzy
+msgid "Start date: "
+msgstr "الترتيب :"
+
+#: inc/eg-attachments-admin.inc.php:970
+msgid "End date: "
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:973
+msgid "by "
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:979
+#, fuzzy
+msgid "Display chart"
+msgstr "عرض الايقونة"
+
+#: inc/eg-attachments-public.inc.php
+#, fuzzy
+msgid "click"
+msgstr "Clicks"
+
+#: inc/eg-attachments-public.inc.php:654
+#, fuzzy
+msgid "clicks"
+msgstr "Clicks"
+
+#: inc/eg-attachments-public.inc.php inc/eg-attachments-admin.inc.php:992
+#: inc/eg-attachments-admin.inc.php:1029
+#: inc/eg-attachments-admin.inc.php:1037
+#, fuzzy
+msgid "click(s)"
+msgstr "Clicks"
+
+#: inc/eg-attachments-admin.inc.php:1010
+#, fuzzy
+msgid "Number of downloads"
+msgstr "عدد المرفقات المعروضة"
+
+#: inc/eg-attachments-admin.inc.php:1030
+#: inc/eg-attachments-admin.inc.php:1038
+#, fuzzy
+msgid "% Clicks"
+msgstr "Clicks"
+
+#: inc/eg-attachments-admin.inc.php:1100
+msgid "1 item"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1100
+msgid "%s items"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1102
+#, fuzzy
+msgid "Go to the first page"
+msgstr "صفحة تحرير التدوينات"
+
+#: inc/eg-attachments-admin.inc.php:1103
+msgid "Go to the previous page"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1105
+msgid "of"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1107
+msgid "Go to the next page"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1108
+msgid "Go to the last page"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1123
+msgid "Global"
+msgstr "Global"
+
+#: inc/eg-attachments-admin.inc.php:1182
+#, fuzzy
+msgid "Multiple custom formats"
+msgstr "صيغة مخصصة"
+
+#: inc/eg-attachments-admin.inc.php:1183
+msgid "EG-Attachments can now manage multiple custom formats. A new menu allows you to edit &laquo;templates&raquo;"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1192
+#, fuzzy
+msgid "New statistics"
+msgstr "تفعيل الاحصائيات"
+
+#: inc/eg-attachments-admin.inc.php:1193
+msgid "The statistics module is using <strong>Google Chart Tools</strong> for better graphes."
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1202
+msgid "Show or hide TinyMCE button"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1203
+msgid "You can now show or hide TinyMCE button in the new/edit post/page "
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1212
+msgid "Exclude thumbnail"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1213
+msgid "You can now, automatically exclude the featured image from the list of attachments to be displayed."
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1222
+msgid "Keywords"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1223
+msgid "Use these keywords to build you own template."
+msgstr ""
+
+#: inc/eg-attachments-public.inc.php:50
+msgid "Something is going wrong. Bad address, or perhaps you try to access to a private document."
+msgstr ""
+
+#: inc/eg-attachments-public.inc.php:81
+msgid "This post is private. You must be a user of the site, and logged in, to display this file."
+msgstr ""
+
+#: inc/eg-attachments-public.inc.php:86
+msgid "This post is password protected. Please go to the site, and enter the password required to display the document"
+msgstr ""
+
+#: inc/eg-attachments-public.inc.php:217
+msgid "unknown"
+msgstr "غير معروف"
+
+#: inc/eg-attachments-public.inc.php:420
+msgid "Template doesn't exists. Use default"
+msgstr ""
+
+#: inc/eg-attachments-public.inc.php:430
+msgid "Error during processing shortcode template"
+msgstr ""
+
+#: inc/eg-attachments-public.inc.php:539
+msgid "You need to login to access to the attachments"
+msgstr ""
+
+#: inc/eg-attachments-public.inc.php:546
+msgid "Private document: please login to access"
+msgstr ""
+
+#: inc/eg-attachments-public.inc.php:555
+msgid "Document protected: please enter the password to access"
+msgstr ""
+
+#: inc/eg-attachments-public.inc.php:612
+msgid "Caption"
+msgstr "الوصف"
+
+#: inc/eg-attachments-public.inc.php:616
+#, fuzzy
+msgid "Filename"
+msgstr "أسم الملف"
+
+#: inc/eg-attachments-settings.inc.php:22
+#: inc/eg-attachments-widgets.inc.php:26
+#, fuzzy
+msgid "Custom templates"
+msgstr "صيغة مخصصة"
+
+#: inc/eg-attachments-settings.inc.php:228
+msgid "If you leave the field empty, the usual WordPress login form will be used (<code>%s</code>)."
+msgstr ""
+
+#: inc/eg-attachments-tools-form.inc.php:83
+#: inc/eg-attachments-tools-form.inc.php:128
+#, fuzzy
+msgid "Delete"
+msgstr "التاريخ"
+
+#: inc/eg-attachments-tools-form.inc.php:116
+msgid "Edit template"
+msgstr ""
+
+#: inc/eg-attachments-tools-form.inc.php:116
+msgid "Edit"
+msgstr ""
+
+#: inc/eg-attachments-tools-form.inc.php:117
+msgid "Copy template"
+msgstr ""
+
+#: inc/eg-attachments-tools-form.inc.php:117
+msgid "Copy"
+msgstr ""
+
+#: inc/eg-attachments-tools-form.inc.php:123
+msgid "View template"
+msgstr ""
+
+#: inc/eg-attachments-tools-form.inc.php:123
+msgid "View"
+msgstr ""
+
+#: inc/eg-attachments-tools-form.inc.php:128
+msgid "Delete template"
+msgstr ""
+
+#: inc/eg-attachments-tools-form.inc.php:133
+msgid "Edit &#8220;%s&#8221;"
+msgstr ""
+
+#: inc/eg-attachments-widgets.inc.php:17
+#, fuzzy
+msgid "Display attachments of the current post"
+msgstr "Show metabox to display list of attachments of the current post/page"
+
+#: inc/eg-attachments-widgets.inc.php:35
+#, fuzzy
+msgid "Document type"
+msgstr "نوع الملف :"
+
+#: inc/eg-attachments-widgets.inc.php:38
+msgid "Check to exclude the feature image from the attachments list"
+msgstr ""
+
+#: inc/eg-attachments-widgets.inc.php:39
+msgid "Order by"
+msgstr "ترتيب حسب"
+
+#: inc/eg-attachments-widgets.inc.php:41
+msgid "Order"
+msgstr "الترتيب"
+
+#: inc/eg-attachments-widgets.inc.php:42
+msgid "Ascending"
+msgstr "تصاعدي"
+
+#: inc/eg-attachments-widgets.inc.php:42
+msgid "Descending"
+msgstr "تنازلي"
+
+#: inc/eg-attachments-widgets.inc.php:43
+msgid "\"Save As\" activation"
+msgstr ""
+
+#: inc/eg-attachments-widgets.inc.php:44
+msgid "Force \"Save As\" when users click on the attachments"
+msgstr ""
+
+#: inc/eg-attachments-widgets.inc.php:45
+msgid "Number of documents to display"
+msgstr "عدد المرفقات المعروضة"
+
+#: inc/eg-attachments-widgets.inc.php:46
+msgid "&laquo;Nofollow&raquo; attribute"
+msgstr ""
+
+#: inc/eg-attachments-widgets.inc.php:47
+msgid "Check if you want to automatically add <code>rel=\"nofollow\"</code> to attachment links"
+msgstr ""
+
+#: inc/eg-attachments-widgets.inc.php:48
+msgid "&laquo;Target&raquo; attribute"
+msgstr ""
+
+#: inc/eg-attachments-widgets.inc.php:49
+msgid "Check if you want to automatically add <code>target=\"_blank\"</code> to attachment links"
+msgstr ""
+
+#: inc/eg-attachments-widgets.inc.php:50
+msgid "Attachments access"
+msgstr "صلاحيات المرفقات"
+
+#: inc/eg-attachments-widgets.inc.php:60
+msgid "Attachments"
+msgstr "المرفقات"
+
+#: inc/tinymce/eg_attach_popup.php:12
+msgid "You are not allowed to access this file."
+msgstr ""
+
+#: inc/tinymce/eg_attach_popup.php:34
+#: inc/tinymce/eg_attach_popup.php:253
+msgid "All"
+msgstr "الكل"
+
+#: inc/tinymce/eg_attach_popup.php:35
+msgid "Documents"
+msgstr "الملفات"
+
+#: inc/tinymce/eg_attach_popup.php:36
+msgid "Images"
+msgstr "الصور"
+
+#: inc/tinymce/eg_attach_popup.php:39
+#: inc/tinymce/eg_attach_popup.php:44
+#: inc/eg-attachments-widgets.inc.php:51
+msgid "Use default parameter"
+msgstr "أستخدم المتغير الافتراضى"
+
+#: inc/tinymce/eg_attach_popup.php:40
+msgid "No"
+msgstr "لا"
+
+#: inc/tinymce/eg_attach_popup.php:41
+msgid "Yes"
+msgstr "نعم"
+
+#: inc/tinymce/eg_attach_popup.php:45
+msgid "All users"
+msgstr "كل الاعضاء"
+
+#: inc/tinymce/eg_attach_popup.php:46
+msgid "Only logged users"
+msgstr "فقط المسجلين"
+
+#: inc/tinymce/eg_attach_popup.php:195
+msgid "Title: "
+msgstr "العنوان :"
+
+#: inc/tinymce/eg_attach_popup.php:200
+msgid "HTML Tag for title: "
+msgstr "كود HTML للعنوان :"
+
+#: inc/tinymce/eg_attach_popup.php:205
+msgid "List size: "
+msgstr "الاحجام :"
+
+#: inc/tinymce/eg_attach_popup.php:209
+msgid "Template (for custom size): "
+msgstr ""
+
+#: inc/tinymce/eg_attach_popup.php:213
+msgid "Document type: "
+msgstr "نوع الملف :"
+
+#: inc/tinymce/eg_attach_popup.php:217
+msgid "Number of documents to display: "
+msgstr "عدد المرفقات المعروضة :"
+
+#: inc/tinymce/eg_attach_popup.php:224
+msgid "Add &laquo;Nofollow&raquo; attribut"
+msgstr ""
+
+#: inc/tinymce/eg_attach_popup.php:229
+msgid "Add target=\"blank\" attribut"
+msgstr ""
+
+#: inc/tinymce/eg_attach_popup.php:232
+msgid "Force \"saveas\": "
+msgstr "Force \"saveas\": "
+
+#: inc/tinymce/eg_attach_popup.php:236
+msgid "Attachments access: "
+msgstr "صلاحيات المرفقات :"
+
+#: inc/tinymce/eg_attach_popup.php:243
+#, fuzzy
+msgid "Filter attachments using tags"
+msgstr "أعدادت المرفقات EG-Attachments"
+
+#: inc/tinymce/eg_attach_popup.php:245
+msgid "Check if you want posts linked to ALL tags"
+msgstr ""
+
+#: inc/tinymce/eg_attach_popup.php:250
+msgid "No attachment available for this post"
+msgstr "التدوينة لا تحتوي مرفقات"
+
+#: inc/tinymce/eg_attach_popup.php:262
+msgid "Document list: "
+msgstr "قائمة الملفات :"
+
+#: inc/tinymce/eg_attach_popup.php:269
+msgid "Insert"
+msgstr "أدخال"
+
+#: inc/tinymce/eg_attach_popup.php:270
+msgid "Cancel"
+msgstr "الغاء"
+
+#: lib/eg-plugin.inc.php:238
+msgid "Settings"
+msgstr "الاعدادات"
+
+#: lib/eg-plugin.inc.php:300
+msgid "EG-Plugins"
+msgstr ""
+
+#: lib/eg-plugin.inc.php:468
+msgid "Plugin's homepage"
+msgstr "صفحة الاضافة"
+
+#: lib/eg-plugin.inc.php:473
+msgid "Frequently Asked Questions"
+msgstr "أسئلة و أجابات حول الاضافة"
+
+#: lib/eg-plugin.inc.php:478
+msgid "Support forum"
+msgstr "منتدى الدعم"
+
+#: lib/eg-plugin.inc.php:483
+msgid "Last changes"
+msgstr "ألتطويرات"
+
+#: lib/eg-plugin.inc.php:494
+msgid "This plugin required and requires many hours of work. If you use the plugin, and like it, feel free to show your appreciation to the author."
+msgstr "This plugin required and requires many hours of work. If you use the plugin, and like it, feel free to show your appreciation to the author."
+
+#: lib/eg-plugin.inc.php:506
+msgid "PayPal - The safer, easier way to pay online!"
+msgstr "PayPal - The safer, easier way to pay online!"
+
+#: lib/eg-plugin.inc.php:515
+msgid "Links"
+msgstr "الروابط"
+
+#: lib/eg-plugin.inc.php:521
+msgid "Donate"
+msgstr "التبرع"
+
+#: inc/eg-attachments-settings.inc.php:24
+#, fuzzy
+msgid "Shortcodes behavior"
+msgstr "General shortcode behavior"
+
+#: inc/eg-attachments-settings.inc.php:25
+msgid "Auto shortcode"
+msgstr "خيارات الظهور التلقائي"
+
+#: inc/eg-attachments-settings.inc.php:26
+#, fuzzy
+msgid "Admin interface"
+msgstr "واجهة الادارة"
+
+#: inc/eg-attachments-settings.inc.php:31
+#, fuzzy
+msgid "Link"
+msgstr "الروابط"
+
+#: inc/eg-attachments-settings.inc.php:32
+msgid "Behavior"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:34
+msgid "CAUTION: the parameters of this section are impacting the default behavior of the shortcode. For example: if you activate &laquo; Nofollow &raquo; here, this attribut will be automatically add to the shortcode, evenif you don't specify it. If you don't check the option &laquo; Nofollow &raquo;, the attribut will appear only if you put the parameter nofollow=1 in the shortcode."
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:37
+#, fuzzy
+msgid "Statistics"
+msgstr "تفعيل الاحصائيات"
+
+#: inc/eg-attachments-settings.inc.php:38
+msgid "Security"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:40
+msgid "CAUTION: the parameter <strong>Attachments access</strong> is impacting the default behavior of the shortcode."
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:43
+msgid "Format"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:45
+msgid "Activation"
+msgstr "مكان العرض"
+
+#: inc/eg-attachments-settings.inc.php:48
+#, fuzzy
+msgid "Administration bar"
+msgstr "الادارة"
+
+#: inc/eg-attachments-settings.inc.php:49
+msgid "Post editor page"
+msgstr "صفحة تحرير التدوينات"
+
+#: inc/eg-attachments-settings.inc.php:50
+#, fuzzy
+msgid "Paths"
+msgstr "التدوينات"
+
+#: inc/eg-attachments-settings.inc.php:51
+msgid "Styles"
+msgstr "الثيم"
+
+#: inc/eg-attachments-settings.inc.php:52
+#, fuzzy
+msgid "Uninstallation"
+msgstr "الغاء التنصيب"
+
+#: inc/eg-attachments-settings.inc.php:58
+msgid "Links to attachments"
+msgstr "Links to attachments"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "<br />All features cannot be implemented with all of these modes.<br /><table class=\"eg-attach-help\"><tr><th>Link type</th><th>Statistics</th><th>Force \"Save as\"</th><th>Security</th></tr><tr><th class=\"row\">Permalink</th><td>x</td><td>x</td><td>x</td></tr><tr><th class=\"row\">File</th><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><th class=\"row\">Direct</th><td>x</td><td>x</td><td>x</td></tr></table>"
+msgstr "<br />All features cannot be implemented with all of these modes.<br /><table class=\"eg-attach-help\"><tr><th>Link type</th><th>Statistics</th><th>Force \"Save as\"</th><th>Security</th></tr><tr><th class=\"row\">Permalink</th><td>x</td><td>x</td><td>x</td></tr><tr><th class=\"row\">File</th><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><th class=\"row\">Direct</th><td>x</td><td>x</td><td>x</td></tr></table>"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "<strong>Direct</strong>.<br /><em>It's the default behavior of the plugin. The URL is pointing to the file, but in this case, the link is encoded. When you click on the attachment, it is displayed as a document, and not as a page of blog. WordPress mechanisms are used</em>"
+msgstr "<strong>Direct</strong>. <br /><em>It's the default behavior of the plugin. The URL is pointing to the file, but in this case, the link is encoded. When you click on the attachment, it is displayed as a document, and not as a page of blog. WordPress mechanisms are used</em>"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "<strong>Permalink</strong>.<br /><em>The URL of the attachment is using defined permalink structure. For example: <code>http://blog url/post url/attachment slug/</code>, or <code>http://blog url/?p=xx</code>.<br/>The attachment will be displayed inside your blog, as a post.</em>"
+msgstr "<strong>Permalink</strong>. <br /><em>The URL of the attachment is using defined permalink structure. For example: <code>http://blog url/post url/attachment slug/</code>, or <code>http://blog url/?p=xx</code>.<br/>The attachment will be displayed inside your blog, as a post.</em>"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "<strong>File</strong>.<br /><em>The URL is the document's address. For example: <code>http://blog url/wp-content/upload/2011/09/file name.file extension/</code>.<br />When you click on the attachment, it is displayed directly, as a document, and not as a page of blog. WordPress mechanisms are not used</em>"
+msgstr "<strong>File</strong>. <br /><em>The URL is the document's address. For example: <code>http://blog url/wp-content/upload/2011/09/file name.file extension/</code>.<br />When you click on the attachment, it is displayed directly, as a document, and not as a page of blog. WordPress mechanisms are not used</em>"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "In normal mode, when you click on the attachments' links, according their mime type, documents are displayed, or a dialog box appears to choose 'run with' or 'Save As'. By activating the following option, the dialog box will appear for all cases."
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "&laquo;target=blank&raquo; attribute"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Featured image"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Check if you want to exclude featured image (thumbnail) from the list of attachments"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Click counter"
+msgstr "عداد النقرات"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Record all clicks occuring in the listed attachements."
+msgstr "تسجيل جميع الضغطات"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Activate statistics"
+msgstr "تفعيل الاحصائيات"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Statistics, IP to exclude"
+msgstr "أستثناء IP محدد من الاحصائيات"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "List of IP address you want to exclude"
+msgstr "List of IP address you want to exclude"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Maintenance"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Delete records after"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "months"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Enter 0 (zero), if you wand to disable the maintenance"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Restrict access to the attachments to logged users only!"
+msgstr "المرفقات متاحة للاعضا فقط"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Url to login or register page"
+msgstr "رابط التسجيل او تسجيل الدخول"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Date format"
+msgstr "صيغة التاريخ"
+
+# eg-attachments-admin.inc.php:
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Default value: %s (%s)"
+msgstr "Default value: "
+
+# eg-attachments-admin.inc.php:
+#: inc/eg-attachments-settings.inc.php:
+msgid "Use PHP <strong>date()</strong> parameters to configure the date:<br />d&nbsp;&nbsp;&nbsp;&nbsp;Day of the month, 2 digits with leading zeros<br />D&nbsp;&nbsp;&nbsp;&nbsp;A textual representation of a day, three letters<br />j&nbsp;&nbsp;&nbsp;&nbsp;Day of the month without leading zeros<br />S&nbsp;&nbsp;&nbsp;&nbsp;English ordinal suffix for the day of the month, 2 characters<br />F&nbsp;&nbsp;&nbsp;&nbsp;A full textual representation of a month, such as January or March<br />m&nbsp;&nbsp;&nbsp;&nbsp;Numeric representation of a month, with leading zeros<br />M&nbsp;&nbsp;&nbsp;&nbsp;A short textual representation of a month, three letters<br />n&nbsp;&nbsp;&nbsp;&nbsp;Numeric representation of a month, without leading zeros<br />Y&nbsp;&nbsp;&nbsp;&nbsp;A full numeric representation of a year, 4 digits<br />y&nbsp;&nbsp;&nbsp;&nbsp;A two digit representation of a year"
+msgstr "Use PHP <strong>date()</strong> parameters to configure the date:<br />d&nbsp;&nbsp;&nbsp;&nbsp;Day of the month, 2 digits with leading zeros<br />D&nbsp;&nbsp;&nbsp;&nbsp;A textual representation of a day, three letters<br />j&nbsp;&nbsp;&nbsp;&nbsp;Day of the month without leading zeros<br />S&nbsp;&nbsp;&nbsp;&nbsp;English ordinal suffix for the day of the month, 2 characters<br />F&nbsp;&nbsp;&nbsp;&nbsp;A full textual representation of a month, such as January or March<br />m&nbsp;&nbsp;&nbsp;&nbsp;Numeric representation of a month, with leading zeros<br />M&nbsp;&nbsp;&nbsp;&nbsp;A short textual representation of a month, three letters<br />n&nbsp;&nbsp;&nbsp;&nbsp;Numeric representation of a month, without leading zeros<br />Y&nbsp;&nbsp;&nbsp;&nbsp;A full numeric representation of a year, 4 digits<br />y&nbsp;&nbsp;&nbsp;&nbsp;A two digit representation of a year"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "<strong>Custom format has been changed</strong>.<br />To make the custom formats more flexible, they are now manage in a specific menu. You can go to the menu <strong>Tools &gt; EGA Templates</strong> to discover the new way of managing them. During the update, your custom format were saved into a template."
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "With this option, you can automaticaly add the list of attachments in your blog, without using shortcode"
+msgstr "من هنا يمكنك جعل المرفقات تظهر تلقائي فى كل تدوينة بدون الحاجة لاستخدام الكود المختصر"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Not activated"
+msgstr "لا تعرض"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "At the end"
+msgstr "فى النهاية"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Before the excerpt"
+msgstr "قبل الجزء المختصر"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Between excerpt and content"
+msgstr "بين الجزء المختصر و محتوي التدوينة"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Auto / Manual"
+msgstr "اتوماتيكى / يدوي"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "If this option is activated, auto shortcode won't be generated if a manual shortcode is detected in the post being displayed"
+msgstr "عند تفعيل هذا الاختيار سيتم الغاء العرض التلقائي للمرفقات فى حالة استخدام الكود المختصر لعرضها"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Disable auto-shortcode when a manual shortcode is detected"
+msgstr "الغاء العرض التلقائي فى حالة استخدام الكود المختصر"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Where"
+msgstr "اين تظهر ؟"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Activate automatic shortcode only on the following cases"
+msgstr "Activate automatic shortcode on the following cases"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Homepage,"
+msgstr "الرئيسية"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Posts,"
+msgstr "التدوينات"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Pages,"
+msgstr "الصفحات"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Lists of posts (archives, categories, ...)."
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Title of the list"
+msgstr "عنوان القائمة"
+
+#: inc/eg-attachments-settings:
+#, fuzzy
+msgid "HTML Tag for title"
+msgstr "كود HTML للعنوان :"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "(tag like h2, or h3, ...)"
+msgstr "وسم HTML مثل ( h2,h3,h4,h5 )"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "List format"
+msgstr "صيغة القائمة"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "No template available"
+msgstr "لا يوجد بيانات لعرضها"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Sort Order"
+msgstr "الترتيب :"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "(Default: -1, for all document are listed)"
+msgstr "أكتب القيمة ( 1- ) لعرض جميع المرفقات"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Default options?"
+msgstr "القيم الافتراضية ؟"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Do you want that auto shortcode options become the default options for the TinyMCE EG-Attachments Editor?"
+msgstr "Do you want that auto shortcode options become the default options for the TinyMCE EG-Attachments Editor?"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Display a <strong>EG-Attachments</strong> menu in the administration bar"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Metaboxes"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Show metabox to display list of attachments of the current post/page"
+msgstr "Show metabox to display list of attachments of the current post/page"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "EG-Attachments button"
+msgstr "أعدادت المرفقات - EG Attachments"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Show EG-Attachments button in post text editor ?"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Tags assigments"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "If you select this option, you will be able to select attachments by using the <strong>tags</strong> parameter in the shortcode."
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Do you want to assign tags to attachments?"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Icon path"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Additional path where the plugin can get icons"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Icon_url"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Additional url where the plugin can get icons"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Stylesheet"
+msgstr "الثيم"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Check if you want to use the plugin stylesheet file, uncheck if you want to use your own styles, or include styles on the theme stylesheet."
+msgstr "Check if you want to use the plugin stylesheet file, uncheck if you want to use your own styles, or include styles on the theme stylesheet."
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Automatically load plugins' stylesheet"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Data"
+msgstr "التاريخ"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Be careful: these actions cannot be cancelled. All plugin's datas, including options, templates, and statistics will be deleted while plugin uninstallation."
+msgstr "Be careful: these actions cannot be cancelled. All plugin's options will be deleted while plugin uninstallation."
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Delete data during uninstallation."
+msgstr "Delete options during uninstallation."
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Display attachments for all users"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Show attachments for everyone, but the url, for logged users only"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Display attachments for logged users only"
+msgstr "المرفقات متاحة للاعضا فقط"
+
+#: /inc/eg-attachments-settings.inc.php:
+msgid "Some comments about security:<ul><li>- &laquo;Private&raquo; Attachments, or documents attached to a &laquo;Private&raquo; post, are not displayed, if the user is not logged,</li><li>- &laquo;Protected&raquo; Attachments, or documents attached to a &laquo;Protected&raquo; post, are not displayed, if users don't give the right password,</li><li>- For non private, and non protected posts, you can choose with the following options, to display attachments, to display without link, or hide attachments.</li></ul>"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "List with details, and big icon"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Large list of attachments without icon"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "List with details, and medium size icon"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Medium list of attachments without icon"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "List with details, and small size icon"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Small list of attachments without icon"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php
+msgid "The number of downloads is displayed only when if the attachment was downloaded at least 1 time"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php
+msgid "The &laquo; nofollow &raquo; attribut is displayed only if the option &laquo; nofollow &raquo; is checked in the <a href=\"%s\">Settings / EG-Attachments</a> menu"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php
+msgid "The &laquo; target &raquo; attributs are displayed only if the option &laquo; target &raquo; is checked in the <a href=\"%s\">Settings / EG-Attachments</a> menu"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:
+msgid "Extension"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:
+#, fuzzy
+msgid "Cache"
+msgstr "الغاء"
+
+#: inc/eg-attachments-admin.inc.php:
+msgid "Clear plugin cache"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:
+msgid "The plugin is using cache to store the list of attachments. If the changes you make in the administration interface, are not seen in the front-end, you can use this option to clear the cache"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:
+msgid "Clear cache entries"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:
+msgid "Check the options, if you want to delete the following cache entries"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "When a list of attachments includes images, do you want to display"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "The thumbnail will be displayed with the size specified in the template"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "The icon of the file type"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "The Thumbnail of the image"
+msgstr ""
+
+#: inc/eg-attachments-popup.inc.php:
+msgid "Icons for the images:"
+msgstr ""
+
+#~ msgid "Clicks"
+#~ msgstr "Clicks"
+#~ msgid "Title"
+#~ msgstr "العنوان"
+#~ msgid "Cannot display attachments. Current post or page is protected."
+#~ msgstr "لا يمكن عرض المرفقات فى التدوينات المحمية"
+#~ msgid "First"
+#~ msgstr "الاول"
+#~ msgid "Last"
+#~ msgstr "الاخير"
+#~ msgid "Large"
+#~ msgstr "كبير"
+#~ msgid "Medium"
+#~ msgstr "متوسط"
+#~ msgid "Small"
+#~ msgstr "صغير"
+#~ msgid "Document title"
+#~ msgstr "عنوان الملف"
+#~ msgid "Order by: "
+#~ msgstr "ترتيب حسب :"
+#~ msgid "Document label: "
+#~ msgstr "أسم الملف :"
+#~ msgid "Fields: "
+#~ msgstr "الحقول :"
+#~ msgid "Display default fields?"
+#~ msgstr "عرض الحقول الافتراضية ؟"
+#~ msgid "Nofollow: "
+#~ msgstr "Nofollow: "
+#~ msgid "Attachments restricted to register users only"
+#~ msgstr "المرفقات متاحة للاعضاء فقط"
+#~ msgid "Document locked"
+#~ msgstr "الملف مغلق"
+#~ msgid "TB"
+#~ msgstr "تيرا بايت"
+#~ msgid "MB"
+#~ msgstr "ميجا بايت"
+#~ msgid "kB"
+#~ msgstr "كيلو بايت"
+#~ msgid "B"
+#~ msgstr "بايت"
+#~ msgid ""
+#~ "Security problem. Try again. If this problem persist, contact <a href=\"%s"
+#~ "\">plugin author</a>."
+#~ msgstr ""
+#~ "Security problem. Try again. If this problem persist, contact <a href=\"%s"
+#~ "\">plugin author</a>."
+#~ msgid ""
+#~ "You cannot access to the synchronization page. You haven't the \"%1s\" "
+#~ "capability. Please contact <a href=\"%2s\">the blog administrator</a>."
+#~ msgstr ""
+#~ "You cannot access to the synchronization page. You haven't the \"%1s\" "
+#~ "capability. Please contact <a href=\"%2s\">the blog administrator</a>."
+#~ msgid " cannot run with "
+#~ msgstr "لا يمكن ان تعمل مع"
+#~ msgid " requires "
+#~ msgstr "مطلوب"
+#~ msgid " and later."
+#~ msgstr "وبعد"
+#~ msgid " to "
+#~ msgstr "الى"
+#~ msgid ""
+#~ "The plugin <strong>%1s</strong> requires the following PHP extensions: %2s"
+#~ msgstr ""
+#~ "الاضافة تحتاج الى <strong>%1s</strong> القيم التالية لتعمل بشكل سليم على "
+#~ "استضافتك : %2s"
+#~ msgid ""
+#~ "The plugin <strong>%1s</strong> requires the following PHP options: %2s."
+#~ msgstr ""
+#~ "الاضافة <strong>%1s</strong> تحتاج الى الاعدادت التالية لتعمل بشكل سليم : "
+#~ "%2s."
+#~ msgid "Save changes"
+#~ msgstr "حفظ التعديلات"
+#~ msgid "Cancel changes"
+#~ msgstr "الغاء التعديلات"
+#~ msgid "Reset to defaults"
+#~ msgstr "أستعادة القيم الافتراضية"
+#~ msgid "Error "
+#~ msgstr "خطاء"
+#~ msgid ""
+#~ "Lists of attachments can be displayed everywhere posts are displayed, or "
+#~ "only when a single post or a single page is displayed"
+#~ msgstr ""
+#~ "Lists of attachments can be displayed everywhere posts are displayed, or "
+#~ "only when a single post or a single page is displayed"
+#~ msgid "in all pages"
+#~ msgstr "فى كل الصفحات"
+#~ msgid "Only for posts and pages"
+#~ msgstr "فقط فى التدوينات والصفحات"
+#~ msgid "Auto Shortcode Options"
+#~ msgstr "خيارات العرض التلقائي"
+#~ msgid "Document label"
+#~ msgstr "عنوان الملف"
+#~ msgid "Small size"
+#~ msgstr "حجم صغير"
+#~ msgid "Display icons: "
+#~ msgstr "عرض الايقونات"
+#~ msgid "Check the box to display icons"
+#~ msgstr "ضع علامة لتفعيل عرض الايقونات"
+#~ msgid "Documents label: "
+#~ msgstr "أسم الملف"
+#~ msgid "Choose the field that will be displayed as title of documents"
+#~ msgstr "اختر الحقل الذى سيتم استخدامة كعنوان للملف"
+#~ msgid "The default list is: "
+#~ msgstr "The default list is: "
+#~ msgid "Do you want to display default fields?"
+#~ msgstr "Do you want to display default fields?"
+#~ msgid "Fields to be displayed"
+#~ msgstr "الحقول المعروضة"
+#~ msgid "Small list:"
+#~ msgstr "القائمة الصغيرة"
+#~ msgid "Medium list:"
+#~ msgstr "القائمة المتوسطة"
+#~ msgid "Position"
+#~ msgstr "المكان"
+#~ msgid "Field"
+#~ msgstr "الحقل"
+#~ msgid "Custom"
+#~ msgstr "مخصص"
+#~ msgid ""
+#~ "You can define your own display format, using <strong>custom</strong>. "
+#~ "Parameters of this section will be applied only if you use <em>Custom</"
+#~ "em> as display format for auto-shortcode (fifth option of this page), or "
+#~ "if you specify <em>size=custom</em> in the shortcodes in your post.<br /"
+#~ ">Keywords you can use are listed below."
+#~ msgstr ""
+#~ "You can define your own display format, using <strong>custom</strong>. "
+#~ "Parameters of this section will be applied only if you use <em>Custom</"
+#~ "em> as display format for auto-shortcode (fifth option of this page), or "
+#~ "if you specify <em>size=custom</em> in the shortcodes in your post.<br /"
+#~ ">Keywords you can use are listed below."
+#~ msgid ""
+#~ "Available keywords:<br /><table class=\"eg-attach-custom-format"
+#~ "\"><tr><td><strong>%LINK%</strong></td><td>Full link of document (such as "
+#~ "&lt;a href=\"...\"&gt;...), </td></tr><tr><td><strong>%URL%</strong></"
+#~ "td><td>url of document (permalink),</td></tr><tr><td><strong>%GUID%</"
+#~ "strong></td><td>direct link to document as stored in the WP database,</"
+#~ "td></tr><tr><td><strong>%ICONURL%</strong></td><td>URL of icon,</td></"
+#~ "tr><tr><td><strong>%TITLE%</strong></td><td>Title of the document,</td></"
+#~ "tr><tr><td><strong>%CAPTION%</strong></td><td>caption of the document,</"
+#~ "td></tr><tr><td><strong>%DESCRIPTION%</strong></td><td>description of the "
+#~ "document,</td></tr><tr><td><strong>%FILENAME%</strong></td><td>Name of "
+#~ "the attached file,</td></tr><tr><td><strong>%FILESIZE%</strong></"
+#~ "td><td>Size of the attached document,</td></tr><tr><td><strong>%ATTID%</"
+#~ "strong></td><td>ID of the attachment.</td></tr><tr><td><strong>%TYPE%</"
+#~ "strong></td><td>Type of the documents</td></tr><tr><td><strong>%DATE%</"
+#~ "strong></td><td>Date of last modification</td></tr></table>"
+#~ msgstr ""
+#~ "Available keywords:<br /><table class=\"eg-attach-custom-format"
+#~ "\"><tr><td><strong>%LINK%</strong></td><td>Full link of document (such as "
+#~ "&lt;a href=\"...\"&gt;...), </td></tr><tr><td><strong>%URL%</strong></"
+#~ "td><td>url of document (permalink),</td></tr><tr><td><strong>%GUID%</"
+#~ "strong></td><td>direct link to document as stored in the WP database,</"
+#~ "td></tr><tr><td><strong>%ICONURL%</strong></td><td>URL of icon,</td></"
+#~ "tr><tr><td><strong>%TITLE%</strong></td><td>Title of the document,</td></"
+#~ "tr><tr><td><strong>%CAPTION%</strong></td><td>caption of the document,</"
+#~ "td></tr><tr><td><strong>%DESCRIPTION%</strong></td><td>description of the "
+#~ "document,</td></tr><tr><td><strong>%FILENAME%</strong></td><td>Name of "
+#~ "the attached file,</td></tr><tr><td><strong>%FILESIZE%</strong></"
+#~ "td><td>Size of the attached document,</td></tr><tr><td><strong>%ATTID%</"
+#~ "strong></td><td>ID of the attachment.</td></tr><tr><td><strong>%TYPE%</"
+#~ "strong></td><td>Type of the documents</td></tr><tr><td><strong>%DATE%</"
+#~ "strong></td><td>Date of last modification</td></tr></table>"
+#~ msgid "Custom format, before list: "
+#~ msgstr "Custom format, before list: "
+#~ msgid "Custom list format: "
+#~ msgstr "Custom list format: "
+#~ msgid "Custom list format"
+#~ msgstr "Custom list format: "
+#~ msgid "Custom format, after list: "
+#~ msgstr "Custom format, after list: "
+#~ msgid "Custom format, after list"
+#~ msgstr "Custom format, after list: "
+#~ msgid ""
+#~ "This option sets the default behavior of all shortcodes and auto-"
+#~ "shortcode. You can change the behavior of specific shortcodes by adding "
+#~ "<code>logged_users</code> parameter."
+#~ msgstr ""
+#~ "This option sets the default behavior of all shortcodes and auto-"
+#~ "shortcode. You can change the behavior of specific shortcodes by adding "
+#~ "<code>logged_users</code> parameter."
+#~ msgid "EG-Attachments Statistics"
+#~ msgstr "أحصائيات المرفقات EG-Attachments"
+#~ msgid "Details of %s"
+#~ msgstr "Details of %s"
+#~ msgid "Top 10"
+#~ msgstr "Top 10"
+#~ msgid "Top 25"
+#~ msgstr "Top 25"
+#~ msgid "History of \"%s\" "
+#~ msgstr "History of \"%s\" "
+#~ msgid "Q1"
+#~ msgstr "Q1"
+#~ msgid "Q2"
+#~ msgstr "Q2"
+#~ msgid "Q3"
+#~ msgstr "Q3"
+#~ msgid "Q4"
+#~ msgstr "Q4"
+#~ msgid "Jan"
+#~ msgstr "يناير"
+#~ msgid "Feb"
+#~ msgstr "فبراير"
+#~ msgid "Mar"
+#~ msgstr "مارس"
+#~ msgid "Apr"
+#~ msgstr "أبريل"
+#~ msgid "Jun"
+#~ msgstr "يونيو"
+#~ msgid "Jul"
+#~ msgstr "يوليو"
+#~ msgid "Aug"
+#~ msgstr "أغسطس"
+#~ msgid "Sep"
+#~ msgstr "سيبتمبر"
+#~ msgid "Oct"
+#~ msgstr "أكتوبر"
+#~ msgid "Nov"
+#~ msgstr "نوفمبر"
+#~ msgid "Dec"
+#~ msgstr "ديسمبر"
+#~ msgid "Total"
+#~ msgstr "المجموع"
+#~ msgid "All<br />time"
+#~ msgstr "All<br />time"
+#~ msgid "Last<br />month"
+#~ msgstr "Last<br />month"
+#~ msgid "Current<br />month"
+#~ msgstr "Current<br />month"
+#~ msgid "Last<br />week"
+#~ msgstr "Last<br />week"
+#~ msgid "Current<br />week"
+#~ msgstr "Current<br />week"
+#~ msgid "Yesterday"
+#~ msgstr "أمس"
+#~ msgid "Today"
+#~ msgstr "اليوم"
+#~ msgid "No statistics available yet"
+#~ msgstr "لا يوجد أى تسجيلات حاليا"
+#~ msgid "Display label of fields"
+#~ msgstr "Display label of fields"
+#~ msgid "For Small size only, check the box if you want display labels"
+#~ msgstr "For Small size only, check the box if you want display labels"
+#~ msgid "(For the other sizes, labels are always displayed)"
+#~ msgstr "(For the other sizes, labels are always displayed)"
+#~ msgid "Display label: "
+#~ msgstr "Display label: "
+#~ msgid "(for size=small only)"
+#~ msgstr "(for size=small only)"
+#~ msgid "Custom fields"
+#~ msgstr "حقول مخصصة"
+#~ msgid "or display the following fields"
+#~ msgstr "او عرض الحقول التالية"
+#~ msgid "Lists of posts."
+#~ msgstr "Lists of posts."
+#~ msgid "Automatic Shortcode"
+#~ msgstr "Automatic Shortcode"
+#~ msgid ""
+#~ "All of the following parameters are applied on manual AND automatic "
+#~ "shortcode."
+#~ msgstr ""
+#~ "All of the following parameters are applied on manual AND automatic "
+#~ "shortcode."
+

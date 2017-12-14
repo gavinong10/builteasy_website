@@ -1,0 +1,147 @@
+<td>
+    <input type="hidden" id="variation-key-<#= key #>" value="<#= key #>">
+    <div class="tvd-row tvd-collaspe">
+        <div class="tvd-col tvd-l8 tvd-s12">
+            <span class="form-title"><#= post_title #></span>
+            <# if (post_status === 'publish') { #>
+                <div class="tvd-input-field tve-edit-title-input" style="display: none;">
+                    <input type="text"/>
+                </div>
+                <a href="javascript:void(0)" class="tve-edit-title">
+                    <span class="tvd-icon-pencil"></span>
+                </a>
+            <# } #>
+        </div>
+        <div class="tvd-col tvd-l4 tvd-s12">
+            <# if (post_status === 'publish') { #>
+                <# if (is_control) { #> (<?php echo __('control', 'thrive-leads') ?>) <# } #>
+            <# } #>
+        </div>
+    </div>
+</td>
+<# if (post_status != 'publish' || is_control) { #>
+    <td><#= impressions #></td>
+    <td><#= conversions #></td>
+    <td><#= conversion_rate #></td>
+<# } else { #>
+    <td colspan="3">
+        <div class="inline-message">
+            <?php echo __('No traffic is currently being sent to this form. Start an A/B Test to start tracking statistics', 'thrive-leads') ?>
+        </div>
+    </td>
+<# } #>
+<# if (has_trigger_settings) { #>
+    <td>
+        <# if (post_status == 'publish' && has_trigger_options) { #>
+            <a href="#triggers/<#= post_parent #>/<#= key #>">
+                <strong>
+        <# } #>
+        <#= trigger_nice_name #>
+        <# if (post_status == 'publish') { #>
+                </strong>
+            </a>
+        <# } #>
+    </td>
+<# } #>
+<# if (has_frequency_settings) { #>
+    <td>
+        <# if (post_status == 'publish') { #>
+        <a href="javascript:void(0)" class="tve-leads-display-frequency">
+            <strong>
+            <# } #>
+            <#= display_frequency_nice_name #>
+            <# if (post_status == 'publish') { #>
+            </strong>
+        </a>
+    <# } #>
+    </td>
+<# } #>
+
+<# if (has_position_settings) { #>
+<td>
+    <# if (post_status == 'publish') { #>
+        <a href="#position/<#= post_parent #>/<#= key #>">
+            <strong>
+        <# } #>
+        <#= display_position_nice_name #>
+        <# if (post_status == 'publish') { #>
+            </strong>
+    </a>
+    <# } #>
+</td>
+<# } #>
+
+<# if (has_animation_settings) { #>
+    <td>
+        <# if (post_status == 'publish') { #>
+        <a href="javascript:void(0)" class="tve-leads-display-animation">
+            <strong>
+            <# } #>
+            <#= display_animation_nice_name #>
+            <# if (post_status == 'publish') { #>
+            </strong>
+        </a>
+    <# } #>
+    </td>
+<# } #>
+
+<# if (content_locking) { #>
+    <td>
+        <# if (post_status == 'publish') { #>
+            <a href="javascript:void(0)" class="tve-leads-lock-display">
+                <strong>
+        <# } #>
+        <#= content_lock_display #>
+            <# if (post_status == 'publish') { #>
+                </strong>
+        </a>
+            <# } #>
+    </td>
+<# } #>
+
+<td class="table-row-actions">
+    <div class="tvd-right">
+        <# if ( typeof hide_buttons != 'undefined' && !hide_buttons) { #>
+            <# if (post_status == ThriveLeads.const.test_status.archived) { #>
+                <a href="<#= tcb_preview_url #>" target="_blank" title="<?php echo __('View Form', 'thrive-leads') ?>"
+                   class="tvd-btn-icon tvd-btn-icon-blue">
+                    <span class="tvd-icon-view"></span>
+                    <span class="tvd-on-large-and-down">
+                        <?php echo __('View Form', 'thrive-leads') ?>
+                    </span>
+                </a>
+                <a href="javascript:void(0)" title="<?php echo __('Re-add', 'thrive-leads') ?>"
+                   class="tvd-btn-icon tvd-btn-icon-green variation-publish">
+                    <span class="tvd-icon-add2"></span>
+                    <span class="tvd-on-large-and-down">
+                        <?php echo __('Re-add', 'thrive-leads') ?>
+                    </span>
+                </a>
+                <a href="javascript:void(0)" title="<?php echo __('Delete', 'thrive-leads') ?>"
+                   class="tvd-btn-icon tvd-btn-icon-red variation-delete">
+                    <span class="tvd-icon-trash-o"></span>
+                    <span class="tvd-on-large-and-down">
+                        <?php echo __('Delete', 'thrive-leads') ?>
+                    </span>
+                </a>
+            <# } else { #>
+                <a href="<#= tcb_edit_url #>" target="_blank" title="<?php echo __('Edit Design', 'thrive-leads') ?>"
+                   class="tvd-btn-icon-solid tvd-btn-icon-solid-blue tvd-tooltipped" data-tooltip="<?php echo __('Edit Design', 'thrive-leads') ?>" data-position="top">
+                    <i class="tvd-icon-pencil"></i>
+                </a>
+                <a href="javascript:void(0)" title="<?php echo __('Clone', 'thrive-leads') ?>"
+                   class="tvd-btn-icon-solid tvd-btn-icon-solid-purple variation-clone tvd-tooltipped" data-tooltip="<?php echo __('Clone', 'thrive-leads') ?>" data-position="top">
+                    <i class="tvd-icon-clone2"></i>
+                </a>
+                <a href="javascript:void(0)" title="<?php echo __('Reset Stats', 'thrive-leads') ?>"
+                   class="tvd-btn-icon-solid tvd-btn-icon-solid-orange variation-reset tvd-tooltipped" data-tooltip="<?php echo __('Reset Stats', 'thrive-leads') ?>" data-position="top">
+                    <i class="tvd-icon-undo"></i>
+                </a>
+                <a href="javascript:void(0)" title="<?php echo __('Archive', 'thrive-leads') ?>"
+                   class="tvd-btn-icon-solid tvd-btn-icon-solid-teal variation-archive tvd-tooltipped" data-tooltip="<?php echo __('Archive', 'thrive-leads') ?>" data-position="top">
+                    <i class="tvd-icon-box-add"></i>
+                </a>
+            <# } #>
+        <# } #>
+    </div>
+</td>

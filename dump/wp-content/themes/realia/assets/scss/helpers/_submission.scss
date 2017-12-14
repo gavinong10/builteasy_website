@@ -1,0 +1,110 @@
+.add-submission { margin-top: 25px; }
+.submission-box {
+  ul {
+    list-style: none;
+  }
+}
+.submission-form {
+  .form-actions {
+    clear: both; width: 100%; padding-left:30px;
+
+  }
+}
+
+.submission-box { @include shadow(); background-color: #fff; margin-bottom: 20px; min-height: 610px; padding: 20px;
+  .ui-sortable {
+    .ui-sortable-helper {
+
+    }
+
+    margin: 0px; padding: 0px; list-style: none; width: 100%;
+
+    li {
+      float: left;
+      img {
+        float: left;
+      }
+      padding: 5px; padding-left: 0px; width: 100%; margin-bottom: 5px;
+      input {
+        float: left; line-height: 18px; padding-top: 5px;
+      }
+      .actions {
+        > div {
+          display: inline-block; float: right;
+        }
+        .remove {
+          background: url('../img/remove.png') top left no-repeat transparent; cursor: pointer; height: 16px; width: 16px;
+        }
+        .drag {
+          background: url('../img/drag.png') top left no-repeat transparent; cursor: pointer; height: 16px; width: 16px;
+        }
+      }
+
+      &.img-container {
+        .actions {
+          margin-top: 30px;
+        }
+      }
+    }
+
+  }
+
+  label {
+    &.control-label { font-weight: bold; }
+  }
+
+  input[type=text], input[type=number],
+  textarea { @include box-sizing(border-box); min-height: 34px; width: 100%; }
+
+  ul.unstyled {
+    li { float: left; width: 50%; }
+  }
+
+  input[type=text].location { @include box-sizing(border-box); float: left; height: 34px; width: 100%;  margin-bottom: 10px; }
+  input[type=text].latitude { @include box-sizing(border-box); float: left; height: 34px; width: 100%; margin-bottom: 10px; }
+  input[type=text].longitude { @include box-sizing(border-box); float: right; height: 34px; width: 100%; margin-bottom: 10px; }
+  .chzn-container { width: 100% !important; }
+}
+
+.submissions-table { border-collapse: separate;
+  thead {
+    tr {
+      th { padding: 10px; white-space: nowrap; }
+    }
+  }
+  tbody {
+    tr {
+      td { background-color: #fff; border: 0px; border-bottom: 1px solid #cccccc; vertical-align: middle; padding: 10px;
+        &.thumbnail { border-radius: 0px; display: table-cell; }
+        &.title { font-weight: bold; }
+        &.status {
+          strong { color: red; }
+          .publish { color: #58b85a; }
+        }
+        &.actions {
+          a { margin: 0px 5px; }
+          .edit { @include transition(opacity .2s linear); background-image: url('../img/edit.png'); background-position: center center; background-repeat: no-repeat; display: inline-block; height: 18px; opacity: 0.7; text-indent: -9999px; width: 18px;
+            &:hover { opacity: 1; }
+          }
+          .remove { @include transition(opacity .2s linear); background-image: url('../img/remove.png'); background-position: center center; background-repeat: no-repeat; display: inline-block; height: 18px; opacity: 0.7; text-indent: -9999px; width: 18px;
+            &:hover { opacity: 1; }
+          }
+          .publish { @include transition(opacity .2s linear); background-image: url('../img/publish.png'); background-position: center center; background-repeat: no-repeat; display: inline-block; height: 20px; opacity: 0.7; text-indent: -9999px; width: 19px;
+            &:hover { opacity: 1; }
+          }
+          .unpublish { @include transition(opacity .2s linear); background-image: url('../img/unpublish.png'); background-position: center center; background-repeat: no-repeat; display: inline-block; height: 20px; opacity: 0.7; text-indent: -9999px; width: 19px;
+            &:hover { opacity: 1; }
+          }
+          .view { @include transition(opacity .2s linear); background-image: url('../img/view.png'); background-position: center center; background-repeat: no-repeat; display: inline-block; height: 11px; opacity: 0.7; text-indent: -9999px; width: 22px;
+            &:hover { opacity: 1; }
+          }
+        }
+      }
+
+      &.sep {
+        td { background-color: transparent; border: 0px; }
+      }
+    }
+  }
+}
+

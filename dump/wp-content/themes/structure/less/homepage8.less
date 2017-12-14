@@ -1,0 +1,309 @@
+@import (reference) "_elements";
+
+/*--------------------------------------------------------------
+Homepage 8
+--------------------------------------------------------------*/
+#home8_worldmap {
+  background-size: auto !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  .home8_worldmap_heading {
+    p {
+      color: #111111;
+      text-align: center;
+      font-size: 70px;
+      font-family: 'Montserrat' !important;
+      font-weight: 800 !important;
+      line-height: 80px !important;
+      .yellow {
+        color: #FDC500
+      }
+    }
+  }
+}
+
+.home8_parallax1 {
+  background-size: cover;
+  .home8_parallax1_title {
+    text-align: center;
+    div {
+      padding: 0 2px 4px 2px;
+      border-bottom: 2px solid #FDC502;
+      display: inline-block;
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+.home8_testimonials.testimonial {
+  &:before {
+    display: none !important;
+  }
+  blockquote {
+    &:after {
+      display: none !important;
+    }
+    &:before {
+      top: 8px;
+    }
+  }
+}
+
+.home8_leading {
+  .home8_leading_button {
+    margin: 36px 0;
+    a, button {
+      font-family: 'Montserrat' !important;
+      margin-top: 5px !important;
+      display: inline-block !important;
+      font-size: 13px !important;
+      font-weight: 600 !important;
+      background: none !important;
+      border-radius: 0 !important;
+      letter-spacing: 1px !important;
+      color: #FDC502 !important;
+      border: 2px solid #FDC502 !important;
+      padding: 10px 14px !important;
+      text-transform: uppercase !important;
+      &:hover {
+        color: #dddddd !important;
+        border: 2px solid #dddddd !important;
+      }
+    }
+  }
+  .home8_leading_text {
+    p {
+      position: relative;
+      font-family: 'Montserrat' !important;
+      vertical-align: middle;
+      line-height: 42px;
+      font-size: 36px;
+      color: #111111;
+      font-weight: 800;
+      margin-top: 140px;
+      .yellow {
+        color: #FDC501;
+      }
+      &:after {
+        content: '';
+        width: 100px;
+        height: 3px;
+        background-color: #FDC501;
+        position: absolute;
+        left: 0;
+        bottom: -16px;
+      }
+    }
+  }
+}
+
+.home8_whychooseus {
+  .home8_whychooseus_img {
+    a {
+      display: block;
+      background: #FDC502;
+      img {
+        .transit;
+      }
+      &:hover {
+        img {
+          opacity: .7;
+        }
+      }
+    }
+  }
+  .home8_whychooseus_text {
+    padding: 35px;
+    position: relative;
+    &:before {
+      content: url('http://dccontructure.com/wp-content/uploads/2015/08/whychooseus_conner1.png');
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &:after {
+      content: url('http://dccontructure.com/wp-content/uploads/2015/08/whychooseus_conner2.png');
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+    h2 {
+      font-size: 32px;
+      font-weight: bold;
+      color: #333333;
+    }
+    ul {
+      margin: 15px 0;
+      li {
+        list-style: none;
+        margin: 0;
+        &:before {
+          content: '\f00c';
+          .iconfont;
+          color: #FDC502;
+          margin-right: 10px;
+        }
+      }
+    }
+    a.readmore {
+      font-family: 'Montserrat' !important;
+      margin-top: 10px;
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #FDC502;
+      border: 2px solid #FDC502;
+      padding: 6px 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      &:hover {
+        color: #dddddd;
+        border: 2px solid #dddddd;
+      }
+    }
+  }
+}
+
+.header-preset-08 {
+  .eg-home-8-news-element-19 {
+    &:before {
+      content: "\f017";
+      .iconfont;
+      margin-right: 5px;
+    }
+  }
+
+  .eg-home-8-news-element-20-a a {
+    &:before {
+      content: "\f086";
+      .iconfont;
+      margin-right: 5px;
+    }
+  }
+  .clients {
+    position: relative;
+    .home8_clients_heading {
+      position: relative;
+      text-align: center;
+      display: block;
+      margin-bottom: 30px !important;
+      h2 {
+        color: rgb(17, 17, 17);
+        display: inline-block;
+        font-family: Montserrat, sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        padding: 4px 0px;
+        border-bottom: 2px solid #FFB600;
+        text-transform: uppercase;
+      }
+      .esg-left, .esg-right {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        background: #EEEEEE;
+        text-align: center;
+        line-height: 32px;
+        cursor: pointer;
+        &:hover {
+          background: #FFB500;
+          color: #ffffff;
+        }
+      }
+      .esg-left {
+        left: 0;
+        top: 0;
+        i:before {
+          content: '\f104';
+          .iconfont;
+        }
+      }
+      .esg-right {
+        right: 0;
+        top: 0;
+        i:before {
+          content: '\f105';
+          .iconfont;
+        }
+      }
+    }
+  }
+  .home8_projects {
+    .esg-filterbutton {
+      .transit;
+      span {
+        color: #AAAAAA;
+        .transit;
+      }
+      &.selected, &:hover {
+        border-color: #DDDDDD !important;
+        span {
+          color: #111111;
+        }
+      }
+    }
+  }
+  .footer {
+    background-color: #FFFFFF !important;
+    .widget-title {
+      color: #222222 !important;
+    }
+    a {
+      color: #888888 !important;
+      &:hover {
+        color: #222222 !important;
+      }
+    }
+    .menu li:before {
+      color: #888888 !important;
+      &:hover {
+        color: #222222 !important;
+      }
+    }
+  }
+  .copyright {
+    background-color: #222222 !important;
+    color: #888888 !important;
+    a {
+      color: #888888 !important;
+      &:hover {
+        color: #ffffff !important;
+      }
+    }
+  }
+}
+
+@media screen and @md-max {
+  .home8_leading .home8_leading_text p {
+    margin-top: 30px;
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .home8_whychooseus .home8_whychooseus_text h2 {
+    font-size: 26px;
+  }
+
+  #home8_worldmap {
+    background-size: contain !important;
+    padding: 50px 0 !important;
+  }
+
+  #home8_parallax1 {
+    padding: 50px 0 20px 0 !important;
+  }
+
+  #home8_whychooseus {
+    padding: 50px 0 35px 0 !important;
+  }
+
+  #home8_projects {
+    padding: 50px 0 0px 0 !important;
+  }
+
+  #home8_news {
+    padding: 50px 0 50px 0 !important;
+  }
+}

@@ -1,0 +1,5 @@
+<textarea type="text" name="{{ args.id }}" id="{{ args.id }}" class="<?php print $args['option']->class; ?>" cols="60" rows="3">{{ value }}</textarea>
+
+{% if option.description %}
+    <p class="description">{{ option.description }}</p>
+{% endif %}

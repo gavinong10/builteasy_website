@@ -1,0 +1,27 @@
+<div class="content-box">
+    <div class="row">
+        {% if icon %}
+            <div class="icon span1">
+                <img src="{{ icon }}" alt="{{ title }}">
+            </div>
+        {% endif %}
+
+        {% if icon_pictopro_class %}
+            <div class="span1">
+                <div class="pictopro-icon">
+                    <i class="icon {{ icon_pictopro_class }}"></i>
+                </div>
+            </div>
+        {% endif %}
+
+        <div class="content span{{ columns_for_content }}">
+            {% if title %}
+                <h3>{{ title }}</h3>
+            {% endif %}
+
+            {{ content|raw }}
+        </div>
+        <!-- /.content -->
+    </div>
+    <!-- /.row -->
+</div><!-- /.content-box -->

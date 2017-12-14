@@ -1,0 +1,1 @@
+<img class="tve_image alignleft" src="<?php echo $_POST['url']; ?>" alt="<?php echo $_POST['alt_text']; ?>"/>

@@ -1,0 +1,194 @@
+#backupbuddy_messages {
+	border: 1px solid #CFCFCF;
+	-moz-border-radius:25px; /* Firefox 3.6 and earlier */
+	
+	height: 475px;
+	overflow: scroll;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 6px;
+	white-space: pre;
+	width: 793px;
+}
+
+.messages_error {
+	background: #FFB5B5;
+	padding: 2px;
+	display: inline-block;
+	min-width: 100%;
+	margin-left: -2px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+.messages_error_link:hover {
+	color: #082633;
+}
+.messages_error_link,.messages_error_link:active {
+	color: #13455B;
+}
+
+
+.pb_backupbuddy_status {
+	background: #636363 url('../images/status/bg_dark.png') top repeat-x;
+	border: 1px solid #636363;
+	min-width: 20px;
+	height: 29px;
+	float: left;
+	padding-bottom: 8px;
+	text-align: right;
+	-moz-border-radius: 8px 0 0 8px;
+	border-radius: 8px 0 0 8px;
+	margin-top: 20px;
+	z-index: 0;
+	position: relative;
+}
+
+
+.pb_backupbuddy_progress {
+	background: #FFFFFF;
+	margin: 0;
+	display: inline-block;
+	border-radius: 5px;
+	padding: 0;
+	border-radius: 5px;
+	border: 1px solid #d6d6d6;
+	border-top: 1px solid #ebebeb;
+	box-shadow: 0px 3px 0px 0px #aaaaaa;
+	box-shadow: 0px 2px 0px 0px #CFCFCF;
+	font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+	font-size: 16px;
+}
+.pb_backupbuddy_step {
+/*	background: url('blue.png') 0 5px no-repeat; */
+	padding: 12px 30px 12px 45px;
+	width: 130px;
+	color: #464646;
+	display: block;
+	float: left;
+}
+.pb_backupbuddy_step.pb_backupbuddy_settings {
+	background: url('../images/status/settings.png') 6px 4px no-repeat;
+}
+.pb_backupbuddy_step.pb_backupbuddy_database {
+	background: url('../images/status/database.png') 6px 4px no-repeat;
+}
+.pb_backupbuddy_step.pb_backupbuddy_files {
+	background: url('../images/status/files.png') 6px 4px no-repeat;
+}
+.pb_backupbuddy_glow {
+	background: url('../images/status/blue.png') -4px 1px no-repeat;
+	width: 35px;
+	height: 40px;
+	float: left;
+	border-right: 1px solid #d6d6d6;
+}
+.pb_backupbuddy_step.pb_backupbuddy_end {
+	width: 20px;
+	height: 18px;
+	padding: 11px;
+	border: none;
+	border-radius: 0 4px 4px 0;
+}
+.pb_backupbuddy_empty {
+	background: url('../images/status/empty.png') -4px 1px no-repeat;
+	width: 35px;
+	height: 40px;
+	float: left;
+	border-right: 1px solid #d6d6d6;
+}
+.pb_backupbuddy_end.pb_backupbuddy_empty {
+	background: url('../images/status/empty.png') 1px 1px no-repeat;
+}
+.pb_backupbuddy_step.pb_backupbuddy_end.pb_backupbuddy_win {
+	background: #ffffff url('../images/status/green.png') 1px 1px no-repeat;
+}
+.pb_backupbuddy_step.pb_backupbuddy_end.pb_backupbuddy_fail {
+	background: #ffffff url('../images/status/yellow.png') 1px 1px no-repeat;
+}
+.pb_backupbuddy_step.pb_backupbuddy_end.pb_backupbuddy_codered {
+	background: #ffffff url('../images/status/red.png') 1px 1px no-repeat;
+}
+.pb_backupbuddy_activate {
+	background-color: #fff !important;
+}
+.pb_backupbuddy_afterbackupoptionswp {
+	margin: 10px 0;
+}
+.pb_backupbuddy_afterbackupoptions a {
+	font-size: 16px;
+	color: #21759B;
+	margin-right: 20px;
+	font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+	text-decoration: none;
+}
+.pb_backupbuddy_afterbackupoptionswp a {
+	background: #f5f5f5;
+	text-shadow: rgba(255, 255, 255, 1) 0 1px 0;
+	border: 1px solid #BBB;
+	border-radius: 11px;
+	color: #464646;
+	text-decoration: none;
+	font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+	font-size: 12px;
+	line-height: 13px;
+	padding: 3px 8px;
+	cursor: pointer;
+}
+
+.ui-tabs-panel {
+	padding: 15px !important;
+}
+
+
+
+#backupbuddy_messages::-webkit-scrollbar {
+	-webkit-appearance: none;
+	width: 11px;
+	height: 11px;
+}
+#backupbuddy_messages::-webkit-scrollbar-thumb {
+	border-radius: 8px;
+	border: 2px solid white; /* should match background, can't be transparent */
+	background-color: rgba(0, 0, 0, .5);
+}​
+
+
+
+.backup-steps {
+	width: 100%;
+}
+.backup-step {
+	background: #ECECEC;
+	padding: 9px;
+	margin-bottom: 5px;
+}
+.backup-step-primary {
+}
+.backup-step-secondary {
+	margin-left: 20px;
+	background: #F9F9F9;
+}
+.backup-step-status {
+	float: right;
+	margin-left: 10px;
+}
+.backup-step-status-working:before {
+	content: url( '../images/loading.gif' );
+}
+.backup-step-status-warning {
+	width: 16px;
+	height: 16px;
+	background-image: url( '../images/warning.png' );
+	background-size: 16px 16px;
+}
+.backup-step-status-error {
+	width: 16px;
+	height: 16px;
+	background-image: url( '../images/warning.png' );
+	background-size: 16px 16px;
+}
+.backup-step-status-finished:before {
+	content: 'OK';
+}

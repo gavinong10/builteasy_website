@@ -1,0 +1,7 @@
+<div class="tvd-col tvd-s3 tvd-center-align">
+	<a href="javascript:void(0)" data-key="<#= item.get('key') #>" class="tvd-nm-connection tvd-nm-connection-<#= item.get('key') #> <#= item.get('connected') ? 'tvd-nm-connected' : '' #>"></a>
+	<span class="tvd-nm-connection-name">
+		<#= item.get('title') #><br>
+		<span class=""><#= item.get('connected') ? '(connected)' : '&nbsp;' #></span>
+	</span>
+</div>

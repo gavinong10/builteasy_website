@@ -1,0 +1,236 @@
+/*! jQuery UI - v1.10.4 - 2014-06-18
+* http://jqueryui.com
+* Includes: jquery.ui.core.css, jquery.ui.slider.css, jquery.ui.theme.css
+* To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Trebuchet%20MS%2CTahoma%2CVerdana%2CArial%2Csans-serif&fwDefault=bold&fsDefault=1.1em&cornerRadius=4px&bgColorHeader=f6a828&bgTextureHeader=gloss_wave&bgImgOpacityHeader=35&borderColorHeader=e78f08&fcHeader=ffffff&iconColorHeader=ffffff&bgColorContent=eeeeee&bgTextureContent=highlight_soft&bgImgOpacityContent=100&borderColorContent=dddddd&fcContent=333333&iconColorContent=222222&bgColorDefault=f6f6f6&bgTextureDefault=glass&bgImgOpacityDefault=100&borderColorDefault=cccccc&fcDefault=1c94c4&iconColorDefault=ef8c08&bgColorHover=fdf5ce&bgTextureHover=glass&bgImgOpacityHover=100&borderColorHover=fbcb09&fcHover=c77405&iconColorHover=ef8c08&bgColorActive=ffffff&bgTextureActive=glass&bgImgOpacityActive=65&borderColorActive=fbd850&fcActive=eb8f00&iconColorActive=ef8c08&bgColorHighlight=ffe45c&bgTextureHighlight=highlight_soft&bgImgOpacityHighlight=75&borderColorHighlight=fed22f&fcHighlight=363636&iconColorHighlight=228ef1&bgColorError=b81900&bgTextureError=diagonals_thick&bgImgOpacityError=18&borderColorError=cd0a0a&fcError=ffffff&iconColorError=ffd27a&bgColorOverlay=666666&bgTextureOverlay=diagonals_thick&bgImgOpacityOverlay=20&opacityOverlay=50&bgColorShadow=000000&bgTextureShadow=flat&bgImgOpacityShadow=10&opacityShadow=20&thicknessShadow=5px&offsetTopShadow=-5px&offsetLeftShadow=-5px&cornerRadiusShadow=5px
+* Copyright 2014 jQuery Foundation and other contributors; Licensed MIT */
+
+/* Interaction Cues
+----------------------------------*/
+.noo-control .ui-state-disabled {
+	cursor: default !important;
+}
+
+.noo-control .ui-slider {
+	position: relative;
+	text-align: left;
+}
+.noo-control .ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 1.2em;
+	height: 1.2em;
+	cursor: default;
+}
+.noo-control .ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+	background-position: 0 0;
+}
+
+/* For IE8 - See #6727 */
+.noo-control .ui-slider.ui-state-disabled .ui-slider-handle,
+.noo-control .ui-slider.ui-state-disabled .ui-slider-range {
+	filter: inherit;
+}
+
+.noo-control .ui-slider-horizontal {
+	height: .8em;
+}
+.noo-control .ui-slider-horizontal .ui-slider-handle {
+	top: -.3em;
+	margin-left: -.6em;
+}
+.noo-control .ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+.noo-control .ui-slider-horizontal .ui-slider-range-min {
+	left: 0;
+}
+.noo-control .ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+
+/*.ui-slider-vertical {
+	width: .8em;
+	height: 100px;
+}
+.noo-control .ui-slider-vertical .ui-slider-handle {
+	left: -.3em;
+	margin-left: 0;
+	margin-bottom: -.6em;
+}
+.noo-control .ui-slider-vertical .ui-slider-range {
+	left: 0;
+	width: 100%;
+}
+.noo-control .ui-slider-vertical .ui-slider-range-min {
+	bottom: 0;
+}
+.noo-control .ui-slider-vertical .ui-slider-range-max {
+	top: 0;
+}*/
+
+/* Component containers
+----------------------------------*/
+.noo-control .ui-widget {
+	font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+	font-size: 1.1em;
+}
+.noo-control .ui-widget .ui-widget {
+	font-size: 1em;
+}
+
+.noo-control .ui-widget-content {
+	border: 1px solid #dddddd;
+	background: #eeeeee url("images/ui-bg_highlight-soft_100_eeeeee_1x100.png") 50% top repeat-x;
+	color: #333333;
+}
+.noo-control .ui-widget-content a {
+	color: #333333;
+}
+.noo-control .ui-widget-header {
+	border: 1px solid #e78f08;
+	background: #47bfa9;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+/* Interaction states
+----------------------------------*/
+.noo-control .ui-state-default,
+.noo-control .ui-widget-content .ui-state-default,
+.noo-control .ui-widget-header .ui-state-default {
+	border: 1px solid #cccccc;
+	background: #f6f6f6 url("images/ui-bg_glass_100_f6f6f6_1x400.png") 50% 50% repeat-x;
+	font-weight: bold;
+	color: #1c94c4;
+}
+.noo-control .ui-state-default a,
+.noo-control .ui-state-default a:link,
+.noo-control .ui-state-default a:visited {
+	color: #1c94c4;
+	text-decoration: none;
+}
+.noo-control .ui-state-hover,
+.noo-control .ui-widget-content .ui-state-hover,
+.noo-control .ui-widget-header .ui-state-hover,
+.noo-control .ui-state-focus,
+.noo-control .ui-widget-content .ui-state-focus,
+.noo-control .ui-widget-header .ui-state-focus {
+	border: 1px solid #47bfa9;
+	background: #def4f0;
+	font-weight: bold;
+	color: #369d8a;
+}
+.noo-control .ui-state-hover a,
+.noo-control .ui-state-hover a:hover,
+.noo-control .ui-state-hover a:link,
+.noo-control .ui-state-hover a:visited,
+.noo-control .ui-state-focus a,
+.noo-control .ui-state-focus a:hover,
+.noo-control .ui-state-focus a:link,
+.noo-control .ui-state-focus a:visited {
+	color: #c77405;
+	text-decoration: none;
+}
+.noo-control .ui-state-active,
+.noo-control .ui-widget-content .ui-state-active,
+.noo-control .ui-widget-header .ui-state-active {
+	border: 1px solid #47bfa9;
+	background: #def4f0;
+	font-weight: bold;
+	color: #369d8a;
+}
+.noo-control .ui-state-active a,
+.noo-control .ui-state-active a:link,
+.noo-control .ui-state-active a:visited {
+	color: #eb8f00;
+	text-decoration: none;
+}
+
+/* Interaction Cues
+----------------------------------*/
+.noo-control .ui-state-highlight,
+.noo-control .ui-widget-content .ui-state-highlight,
+.noo-control .ui-widget-header .ui-state-highlight {
+	border: 1px solid #fed22f;
+	background: #ffe45c url("images/ui-bg_highlight-soft_75_ffe45c_1x100.png") 50% top repeat-x;
+	color: #363636;
+}
+.noo-control .ui-state-highlight a,
+.noo-control .ui-widget-content .ui-state-highlight a,
+.noo-control .ui-widget-header .ui-state-highlight a {
+	color: #363636;
+}
+.noo-control .ui-state-error,
+.noo-control .ui-widget-content .ui-state-error,
+.noo-control .ui-widget-header .ui-state-error {
+	border: 1px solid #cd0a0a;
+	background: #b81900 url("images/ui-bg_diagonals-thick_18_b81900_40x40.png") 50% 50% repeat;
+	color: #ffffff;
+}
+.noo-control .ui-state-error a,
+.noo-control .ui-widget-content .ui-state-error a,
+.noo-control .ui-widget-header .ui-state-error a {
+	color: #ffffff;
+}
+.noo-control .ui-state-error-text,
+.noo-control .ui-widget-content .ui-state-error-text,
+.noo-control .ui-widget-header .ui-state-error-text {
+	color: #ffffff;
+}
+.noo-control .ui-priority-primary,
+.noo-control .ui-widget-content .ui-priority-primary,
+.noo-control .ui-widget-header .ui-priority-primary {
+	font-weight: bold;
+}
+.noo-control .ui-priority-secondary,
+.noo-control .ui-widget-content .ui-priority-secondary,
+.noo-control .ui-widget-header .ui-priority-secondary {
+	opacity: .7;
+	filter:Alpha(Opacity=70);
+	font-weight: normal;
+}
+.noo-control .ui-state-disabled,
+.noo-control .ui-widget-content .ui-state-disabled,
+.noo-control .ui-widget-header .ui-state-disabled {
+	opacity: .35;
+	filter:Alpha(Opacity=35);
+	background-image: none;
+}
+.noo-control .ui-state-disabled .ui-icon {
+	filter:Alpha(Opacity=35); /* For IE8 - See #6059 */
+}
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+.noo-control .ui-corner-all,
+.noo-control .ui-corner-top,
+.noo-control .ui-corner-left,
+.noo-control .ui-corner-tl {
+	border-top-left-radius: 4px;
+}
+.noo-control .ui-corner-all,
+.noo-control .ui-corner-top,
+.noo-control .ui-corner-right,
+.noo-control .ui-corner-tr {
+	border-top-right-radius: 4px;
+}
+.noo-control .ui-corner-all,
+.noo-control .ui-corner-bottom,
+.noo-control .ui-corner-left,
+.noo-control .ui-corner-bl {
+	border-bottom-left-radius: 4px;
+}
+.noo-control .ui-corner-all,
+.noo-control .ui-corner-bottom,
+.noo-control .ui-corner-right,
+.noo-control .ui-corner-br {
+	border-bottom-right-radius: 4px;
+}

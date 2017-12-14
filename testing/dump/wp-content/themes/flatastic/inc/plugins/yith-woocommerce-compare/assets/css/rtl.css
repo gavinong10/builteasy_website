@@ -1,0 +1,6 @@
+
+body {
+	direction: rtl;
+}
+
+	table.compare-list th { text-align: right; }

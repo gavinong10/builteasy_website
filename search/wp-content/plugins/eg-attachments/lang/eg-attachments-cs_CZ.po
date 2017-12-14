@@ -1,0 +1,1562 @@
+# Copyright (C) 2011 EG-Attachments
+# This file is distributed under the same license as the EG-Attachments package.
+# Josef Šabata <josef.sabata@meulovo.cz>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: EG-Attachments 1.8.8\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/eg-attachments\n"
+"POT-Creation-Date: 2013-02-10 23:52:03+00:00\n"
+"PO-Revision-Date: 2013-12-03 06:34+0100\n"
+"Last-Translator: Emmanuel Georjon <blog@emmanuelgeorjon.com>\n"
+"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: cs\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: inc/eg-attachment-keywords-help.inc.php:2
+msgid "General help"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:5
+msgid "Fields with <font color=\"red\">red border</font> are mandatory"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:8
+msgid "Available keywords"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:11
+#, fuzzy
+msgid "Labels:"
+msgstr "Velký seznam:"
+
+#: inc/eg-attachment-keywords-help.inc.php:17
+msgid "Label for title (title in english, titre in french, Titolo in italian, ..."
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:21
+msgid "Label for caption (caption in english)"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:25
+msgid "Label for description (description in english)"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:29
+msgid "Label for filename (filename in english)"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:33
+msgid "Label for the size of the file (<strong>size</strong> in english)"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:37
+msgid "Label for the type of the file"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:41
+msgid "Label for the date"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:45
+msgid "Label of the counter (number of downloads of the document"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:50
+msgid "Values:"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:56
+#, fuzzy
+msgid "ID of the attachment"
+msgstr "Odkazy na přílohy"
+
+#: inc/eg-attachment-keywords-help.inc.php:60
+msgid "caption of the document"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:64
+msgid "Number of downloads recorded on the document."
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:68
+msgid "Date of last modification"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:72
+msgid "description of the document"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:76
+msgid "Specific URL, pointing directly to the file, but without showing the file name and path (recommended)"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:80
+msgid "Name of the attached file"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:84
+msgid "Size of the attached document"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:88
+msgid "Direct link (url) to the document (media file).The URL is the document's address. For example: <code>http://blog url/wp-content/upload/2011/09/file name.file extension/</code>"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:92
+msgid "Link (url) to document as stored in the WordPress database"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:96
+msgid "Full icon tags (including A and IMG tag. <code>WW</code> is the width of the icon, and <code>HH</code> is the heigth."
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:100
+msgid "URL of icon"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:104
+#, fuzzy
+msgid "The URL of the attachment, as defined by the permalink structure chosen. For example: <code>http://blog url/post url/attachment slug/</code>, or <code>http://blog url/?p=xx</code>."
+msgstr "<strong>Permalink</strong>. <br /><em>URL přílohy používá strukturu permalinku . Například: <code>http://blog url/post url/attachment slug/</code>, nebo <code>http://blog url/?p=xx</code>.<br/>Příloha bude zobrazena jako příspěvek na vašem blogu.</em>"
+
+#: inc/eg-attachment-keywords-help.inc.php:108
+msgid "HTML attribut <code>rel=\"nofollow\"</code>"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:112
+msgid "Show the lock icon for documents that require login or password"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:116
+msgid "HTML attribut <code>target=\"_blank\"</code>"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:120
+msgid "HTML attribut <code>target=\"value\"</code>"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php:124
+#, fuzzy
+msgid "Title of the document"
+msgstr "Nadpis seznamu: "
+
+#: inc/eg-attachment-keywords-help.inc.php:128
+#, fuzzy
+msgid "Type of the documents"
+msgstr "Povolit komentáře"
+
+#: inc/eg-attachment-keywords-help.inc.php:132
+msgid "Same than %LINK_URL%, %FILE_URL%, or %DIRECT_URL%, according the option choosen in the Settings/Options menu."
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:37
+#, fuzzy
+msgid "EG-Attachment templates"
+msgstr "Nastavení EG-Attachments"
+
+#: inc/eg-attachments-admin.inc.php:38
+#, fuzzy
+msgid "EG-Attachment template"
+msgstr "Nastavení EG-Attachments"
+
+#: inc/eg-attachments-admin.inc.php:76
+msgid "EGA Stats"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:77
+msgid "EG-Attachments Stats"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:90
+msgid "EGA templates"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:91
+#, fuzzy
+msgid "EG-Attachments templates"
+msgstr "Nastavení EG-Attachments"
+
+#: inc/eg-attachments-admin.inc.php:105
+#: inc/eg-attachments-admin.inc.php:109
+msgid "EG-Attachments"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:137
+msgid "No document attached to this post/page"
+msgstr "Stránka/příspěvek nemá připojenu přílohu"
+
+#: inc/eg-attachments-admin.inc.php:140
+msgid "Attachments available for this post/page"
+msgstr "Stránka/příspěvek má přílohy"
+
+#: inc/eg-attachments-admin.inc.php:144
+msgid "ID"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:145
+#, fuzzy
+msgid "File Name"
+msgstr "Název souboru"
+
+#: inc/eg-attachments-admin.inc.php:146
+#: inc/eg-attachments-public.inc.php:621
+msgid "Type"
+msgstr "Typ"
+
+#: inc/eg-attachments-admin.inc.php:147
+#: inc/eg-attachments-public.inc.php:618
+msgid "Size"
+msgstr "Velikost"
+
+#: inc/eg-attachments-admin.inc.php:148
+#: inc/eg-attachments-public.inc.php:623
+#: inc/eg-attachments-tools-form.inc.php:30
+msgid "Date"
+msgstr "Datum"
+
+#: inc/eg-attachments-admin.inc.php:243
+msgid "You are not allowed to create/edit templates."
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:260
+#: inc/eg-attachments-admin.inc.php:496
+#: inc/eg-attachments-admin.inc.php:650
+msgid "New_template"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:306
+msgid "You are not allowed to copy templates."
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:314
+msgid "Copy of "
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:344
+#: inc/eg-attachments-admin.inc.php:368
+msgid "You are not allowed to delete templates."
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:365
+#: inc/eg-attachments-tools-form.inc.php:19
+msgid "Templates"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:389
+#: inc/eg-attachments-tools-form.inc.php:18
+msgid "Template"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:413
+msgid "Add New"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:498
+msgid "Description of the new template"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:545
+msgid "Save"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:547
+msgid "Go back to the list"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:579
+msgid "Name of the template"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:583
+msgid "Choose a shortname, with standard characters (like a-z, 0-9, -_)"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:588
+#: inc/eg-attachments-public.inc.php:614
+#: inc/eg-attachments-tools-form.inc.php:28
+msgid "Description"
+msgstr "Popis"
+
+#: inc/eg-attachments-admin.inc.php:592
+#: inc/eg-attachments-tools-form.inc.php:27
+msgid "Slug"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:596
+msgid "Before"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:600
+msgid "Loop"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:604
+msgid "After"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:642
+msgid "Error during template saving"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:643
+msgid "Error during template copy"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:644
+msgid "Template successfully saved."
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:645
+msgid "Template successfully created"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:646
+msgid "Template sucessfully deleted"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:647
+msgid "Error during template deletion"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:648
+msgid "Bulk deletion done: %s on %s template(s) were deleted"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:649
+msgid "Title is empty"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:650
+msgid "Title is still \"%s\""
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:651
+msgid "The field \"loop\" cannot be empty."
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:652
+msgid "Error during the copy operation"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:653
+msgid "The initial post is unknown or doesn't exist"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:654
+msgid "Purge of statistics: %d lines deleted (Retention: %d months)."
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:796
+#: inc/eg-attachments-settings.inc.php:44
+#: inc/eg-attachments-settings.inc.php:xx
+msgid "Custom format"
+msgstr "Vlastní formát"
+
+#: inc/eg-attachments-admin.inc.php:797
+#, fuzzy
+msgid "Custom format from previous version %s"
+msgstr "Vlastní formát před seznamem"
+
+#: inc/eg-attachments-admin.inc.php:930
+#: inc/eg-attachments-admin.inc.php:977
+msgid "Month"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:935
+msgid "\\W"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:936
+#: inc/eg-attachments-admin.inc.php:976
+#, fuzzy
+msgid "Week"
+msgstr "Kde"
+
+#: inc/eg-attachments-admin.inc.php:942
+#: inc/eg-attachments-admin.inc.php:975
+#, fuzzy
+msgid "Day"
+msgstr "kvě"
+
+#: inc/eg-attachments-admin.inc.php:967
+#, fuzzy
+msgid "Start date: "
+msgstr "Pořadí řazení: "
+
+#: inc/eg-attachments-admin.inc.php:970
+msgid "End date: "
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:973
+msgid "by "
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:979
+#, fuzzy
+msgid "Display chart"
+msgstr "Zobrazit ikonu"
+
+#: inc/eg-attachments-public.inc.php
+#, fuzzy
+msgid "click"
+msgstr "Kliknutí"
+
+#: inc/eg-attachments-public.inc.php:654
+#, fuzzy
+msgid "clicks"
+msgstr "Kliknutí"
+
+#: inc/eg-attachments-public.inc.php inc/eg-attachments-admin.inc.php:992
+#: inc/eg-attachments-admin.inc.php:1029
+#: inc/eg-attachments-admin.inc.php:1037
+#, fuzzy
+msgid "click(s)"
+msgstr "Kliknutí"
+
+#: inc/eg-attachments-admin.inc.php:1010
+#, fuzzy
+msgid "Number of downloads"
+msgstr "Počet dokumentů k zobrazení"
+
+#: inc/eg-attachments-admin.inc.php:1030
+#: inc/eg-attachments-admin.inc.php:1038
+#, fuzzy
+msgid "% Clicks"
+msgstr "Kliknutí"
+
+#: inc/eg-attachments-admin.inc.php:1100
+msgid "1 item"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1100
+msgid "%s items"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1102
+#, fuzzy
+msgid "Go to the first page"
+msgstr "Stránka editoru příspěvků"
+
+#: inc/eg-attachments-admin.inc.php:1103
+msgid "Go to the previous page"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1105
+msgid "of"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1107
+msgid "Go to the next page"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1108
+msgid "Go to the last page"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1123
+msgid "Global"
+msgstr "Celkem"
+
+#: inc/eg-attachments-admin.inc.php:1182
+#, fuzzy
+msgid "Multiple custom formats"
+msgstr "Vlastní formát"
+
+#: inc/eg-attachments-admin.inc.php:1183
+msgid "EG-Attachments can now manage multiple custom formats. A new menu allows you to edit &laquo;templates&raquo;"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1192
+#, fuzzy
+msgid "New statistics"
+msgstr "Aktivovat statistiku"
+
+#: inc/eg-attachments-admin.inc.php:1193
+msgid "The statistics module is using <strong>Google Chart Tools</strong> for better graphes."
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1202
+msgid "Show or hide TinyMCE button"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1203
+msgid "You can now show or hide TinyMCE button in the new/edit post/page "
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1212
+msgid "Exclude thumbnail"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1213
+msgid "You can now, automatically exclude the featured image from the list of attachments to be displayed."
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1222
+msgid "Keywords"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:1223
+msgid "Use these keywords to build you own template."
+msgstr ""
+
+#: inc/eg-attachments-public.inc.php:50
+msgid "Something is going wrong. Bad address, or perhaps you try to access to a private document."
+msgstr ""
+
+#: inc/eg-attachments-public.inc.php:81
+msgid "This post is private. You must be a user of the site, and logged in, to display this file."
+msgstr ""
+
+#: inc/eg-attachments-public.inc.php:86
+msgid "This post is password protected. Please go to the site, and enter the password required to display the document"
+msgstr ""
+
+#: inc/eg-attachments-public.inc.php:217
+msgid "unknown"
+msgstr "neznámý"
+
+#: inc/eg-attachments-public.inc.php:420
+msgid "Template doesn't exists. Use default"
+msgstr ""
+
+#: inc/eg-attachments-public.inc.php:430
+msgid "Error during processing shortcode template"
+msgstr ""
+
+#: inc/eg-attachments-public.inc.php:539
+#, fuzzy
+msgid "You need to login to access to the attachments"
+msgstr "Chcete přidávat štítky k přílohám?"
+
+#: inc/eg-attachments-public.inc.php:546
+msgid "Private document: please login to access"
+msgstr ""
+
+#: inc/eg-attachments-public.inc.php:555
+msgid "Document protected: please enter the password to access"
+msgstr ""
+
+#: inc/eg-attachments-public.inc.php:612
+msgid "Caption"
+msgstr "Titulek"
+
+#: inc/eg-attachments-public.inc.php:616
+#, fuzzy
+msgid "Filename"
+msgstr "Název souboru"
+
+#: inc/eg-attachments-settings.inc.php:22
+#: inc/eg-attachments-widgets.inc.php:26
+#, fuzzy
+msgid "Custom templates"
+msgstr "Vlastní formát"
+
+#: inc/eg-attachments-settings.inc.php:228
+msgid "If you leave the field empty, the usual WordPress login form will be used (<code>%s</code>)."
+msgstr ""
+
+#: inc/eg-attachments-tools-form.inc.php:83
+#: inc/eg-attachments-tools-form.inc.php:128
+#, fuzzy
+msgid "Delete"
+msgstr "Datum"
+
+#: inc/eg-attachments-tools-form.inc.php:116
+msgid "Edit template"
+msgstr ""
+
+#: inc/eg-attachments-tools-form.inc.php:116
+msgid "Edit"
+msgstr ""
+
+#: inc/eg-attachments-tools-form.inc.php:117
+msgid "Copy template"
+msgstr ""
+
+#: inc/eg-attachments-tools-form.inc.php:117
+msgid "Copy"
+msgstr ""
+
+#: inc/eg-attachments-tools-form.inc.php:123
+msgid "View template"
+msgstr ""
+
+#: inc/eg-attachments-tools-form.inc.php:123
+msgid "View"
+msgstr ""
+
+#: inc/eg-attachments-tools-form.inc.php:128
+msgid "Delete template"
+msgstr ""
+
+#: inc/eg-attachments-tools-form.inc.php:133
+msgid "Edit &#8220;%s&#8221;"
+msgstr ""
+
+#: inc/eg-attachments-widgets.inc.php:17
+#, fuzzy
+msgid "Display attachments of the current post"
+msgstr "Zobrazit metabox se seznamem příloh aktuální stránky/příspěvku"
+
+#: inc/eg-attachments-widgets.inc.php:35
+#, fuzzy
+msgid "Document type"
+msgstr "Typ dokumentu: "
+
+#: inc/eg-attachments-widgets.inc.php:38
+msgid "Check to exclude the feature image from the attachments list"
+msgstr ""
+
+#: inc/eg-attachments-widgets.inc.php:39
+msgid "Order by"
+msgstr "Seřadit podle"
+
+#: inc/eg-attachments-widgets.inc.php:41
+msgid "Order"
+msgstr "Seřadit"
+
+#: inc/eg-attachments-widgets.inc.php:42
+msgid "Ascending"
+msgstr "Vzestupně"
+
+#: inc/eg-attachments-widgets.inc.php:42
+msgid "Descending"
+msgstr "Sestupně"
+
+#: inc/eg-attachments-widgets.inc.php:43
+msgid "\"Save As\" activation"
+msgstr "Aktivace \"Uložit jako\""
+
+#: inc/eg-attachments-widgets.inc.php:44
+msgid "Force \"Save As\" when users click on the attachments"
+msgstr "Vynutit \"Uložit jako\" když uživatel klikne na přílohy"
+
+#: inc/eg-attachments-widgets.inc.php:45
+msgid "Number of documents to display"
+msgstr "Počet dokumentů k zobrazení"
+
+#: inc/eg-attachments-widgets.inc.php:46
+msgid "&laquo;Nofollow&raquo; attribute"
+msgstr "Atribut &laquo;nofollow&raquo;"
+
+#: inc/eg-attachments-widgets.inc.php:47
+msgid "Check if you want to automatically add <code>rel=\"nofollow\"</code> to attachment links"
+msgstr "Zaškrtněte, pokud chcete automaticky přidávat atribut <code>rel=\"nofollow\"</code> k odkazům na přílohy"
+
+#: inc/eg-attachments-widgets.inc.php:48
+#, fuzzy
+msgid "&laquo;Target&raquo; attribute"
+msgstr "atribut &laquo;target=blank&raquo;"
+
+#: inc/eg-attachments-widgets.inc.php:49
+msgid "Check if you want to automatically add <code>target=\"_blank\"</code> to attachment links"
+msgstr "Zaškrtněte, pokud chcete automaticky přidat  <code>target=\"_blank\"</code> do odkazů příloh"
+
+#: inc/eg-attachments-widgets.inc.php:50
+msgid "Attachments access"
+msgstr "Přístup k přílohám"
+
+#: inc/eg-attachments-widgets.inc.php:60
+msgid "Attachments"
+msgstr "Přílohy"
+
+#: inc/tinymce/eg_attach_popup.php:12
+msgid "You are not allowed to access this file."
+msgstr ""
+
+#: inc/tinymce/eg_attach_popup.php:34
+#: inc/tinymce/eg_attach_popup.php:253
+msgid "All"
+msgstr "Vše"
+
+#: inc/tinymce/eg_attach_popup.php:35
+msgid "Documents"
+msgstr "Dokumenty"
+
+#: inc/tinymce/eg_attach_popup.php:36
+msgid "Images"
+msgstr "Obrázky"
+
+#: inc/tinymce/eg_attach_popup.php:39
+#: inc/tinymce/eg_attach_popup.php:44
+#: inc/eg-attachments-widgets.inc.php:51
+msgid "Use default parameter"
+msgstr "Použít výchozí parametr"
+
+#: inc/tinymce/eg_attach_popup.php:40
+msgid "No"
+msgstr "Ne"
+
+#: inc/tinymce/eg_attach_popup.php:41
+msgid "Yes"
+msgstr "Ano"
+
+#: inc/tinymce/eg_attach_popup.php:45
+msgid "All users"
+msgstr "Všichni uživatelé"
+
+#: inc/tinymce/eg_attach_popup.php:46
+msgid "Only logged users"
+msgstr "Pouze přihlášení uživatelé"
+
+#: inc/tinymce/eg_attach_popup.php:195
+msgid "Title: "
+msgstr "Název: "
+
+#: inc/tinymce/eg_attach_popup.php:200
+msgid "HTML Tag for title: "
+msgstr "HTML tag pro název: "
+
+#: inc/tinymce/eg_attach_popup.php:205
+msgid "List size: "
+msgstr "Velikost seznamu: "
+
+#: inc/tinymce/eg_attach_popup.php:209
+msgid "Template (for custom size): "
+msgstr ""
+
+#: inc/tinymce/eg_attach_popup.php:213
+msgid "Document type: "
+msgstr "Typ dokumentu: "
+
+#: inc/tinymce/eg_attach_popup.php:217
+msgid "Number of documents to display: "
+msgstr "Počet dokumentů k zobrazení: "
+
+#: inc/tinymce/eg_attach_popup.php:224
+#, fuzzy
+msgid "Add &laquo;Nofollow&raquo; attribut"
+msgstr "Atribut &laquo;nofollow&raquo;"
+
+#: inc/tinymce/eg_attach_popup.php:229
+#, fuzzy
+msgid "Add target=\"blank\" attribut"
+msgstr "atribut &laquo;target=blank&raquo;"
+
+#: inc/tinymce/eg_attach_popup.php:232
+msgid "Force \"saveas\": "
+msgstr "Vynutit \"uložit jako\": "
+
+#: inc/tinymce/eg_attach_popup.php:236
+msgid "Attachments access: "
+msgstr "Přístup k přílohám: "
+
+#: inc/tinymce/eg_attach_popup.php:243
+msgid "Filter attachments using tags"
+msgstr "Filtrovat přílohy pomocí štítků"
+
+#: inc/tinymce/eg_attach_popup.php:245
+msgid "Check if you want posts linked to ALL tags"
+msgstr ""
+
+#: inc/tinymce/eg_attach_popup.php:250
+msgid "No attachment available for this post"
+msgstr "Tento příspěvek nemá žádné přílohy"
+
+#: inc/tinymce/eg_attach_popup.php:262
+msgid "Document list: "
+msgstr "Seznam dokumentů: "
+
+#: inc/tinymce/eg_attach_popup.php:269
+msgid "Insert"
+msgstr "Vložit"
+
+#: inc/tinymce/eg_attach_popup.php:270
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: lib/eg-plugin.inc.php:238
+msgid "Settings"
+msgstr "Nastavení"
+
+#: lib/eg-plugin.inc.php:300
+msgid "EG-Plugins"
+msgstr ""
+
+#: lib/eg-plugin.inc.php:468
+msgid "Plugin's homepage"
+msgstr "Domovská stránka pluginu"
+
+#: lib/eg-plugin.inc.php:473
+msgid "Frequently Asked Questions"
+msgstr "Často kladené otázky"
+
+#: lib/eg-plugin.inc.php:478
+msgid "Support forum"
+msgstr "Fórum podpory"
+
+#: lib/eg-plugin.inc.php:483
+msgid "Last changes"
+msgstr "Poslední změny"
+
+#: lib/eg-plugin.inc.php:494
+msgid "This plugin required and requires many hours of work. If you use the plugin, and like it, feel free to show your appreciation to the author."
+msgstr "Tento plugin si již vyžádal a stále vyžaduje mnoho hodin práce. Pokud jej používáte a líbí se vám, neostýchejte se vyjádřit uznání autorovi."
+
+#: lib/eg-plugin.inc.php:506
+msgid "PayPal - The safer, easier way to pay online!"
+msgstr "PayPal - Bezpečnější a snadnější způsob online placení!"
+
+#: lib/eg-plugin.inc.php:515
+msgid "Links"
+msgstr "Odkazy"
+
+#: lib/eg-plugin.inc.php:521
+msgid "Donate"
+msgstr "Přispějte"
+
+#: inc/eg-attachments-settings.inc.php:24
+#, fuzzy
+msgid "Shortcodes behavior"
+msgstr "Obecné chování shortkódu"
+
+#: inc/eg-attachments-settings.inc.php:25
+msgid "Auto shortcode"
+msgstr "Atomatický shortkód"
+
+#: inc/eg-attachments-settings.inc.php:26
+#, fuzzy
+msgid "Admin interface"
+msgstr "Rozhraní administrace"
+
+#: inc/eg-attachments-settings.inc.php:31
+#, fuzzy
+msgid "Link"
+msgstr "Odkazy"
+
+#: inc/eg-attachments-settings.inc.php:32
+msgid "Behavior"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:34
+msgid "CAUTION: the parameters of this section are impacting the default behavior of the shortcode. For example: if you activate &laquo; Nofollow &raquo; here, this attribut will be automatically add to the shortcode, evenif you don't specify it. If you don't check the option &laquo; Nofollow &raquo;, the attribut will appear only if you put the parameter nofollow=1 in the shortcode."
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:37
+#, fuzzy
+msgid "Statistics"
+msgstr "Aktivovat statistiku"
+
+#: inc/eg-attachments-settings.inc.php:38
+msgid "Security"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:40
+msgid "CAUTION: the parameter <strong>Attachments access</strong> is impacting the default behavior of the shortcode."
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:43
+msgid "Format"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:45
+msgid "Activation"
+msgstr "Umístění"
+
+#: inc/eg-attachments-settings.inc.php:48
+msgid "Administration bar"
+msgstr "Panel administrace"
+
+#: inc/eg-attachments-settings.inc.php:49
+msgid "Post editor page"
+msgstr "Stránka editoru příspěvků"
+
+#: inc/eg-attachments-settings.inc.php:50
+#, fuzzy
+msgid "Paths"
+msgstr "Příspěvky"
+
+#: inc/eg-attachments-settings.inc.php:51
+msgid "Styles"
+msgstr "Styly"
+
+#: inc/eg-attachments-settings.inc.php:52
+#, fuzzy
+msgid "Uninstallation"
+msgstr "Volby odinstalace"
+
+#: inc/eg-attachments-settings.inc.php:58
+msgid "Links to attachments"
+msgstr "Odkazy na přílohy"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "<br />All features cannot be implemented with all of these modes.<br /><table class=\"eg-attach-help\"><tr><th>Link type</th><th>Statistics</th><th>Force \"Save as\"</th><th>Security</th></tr><tr><th class=\"row\">Permalink</th><td>x</td><td>x</td><td>x</td></tr><tr><th class=\"row\">File</th><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><th class=\"row\">Direct</th><td>x</td><td>x</td><td>x</td></tr></table>"
+msgstr "<br />Všechny vlastnosti nezle použít ve všech modech.<br /><table class=\"eg-attach-help\"><tr><th>Typ odkazu</th><th>Statistika</th><th>Vynutit \"Uložit jako\"</th><th>Zabezpečení</th></tr><tr><th class=\"row\">Permalink</th><td>x</td><td>x</td><td>x</td></tr><tr><th class=\"row\">Soubor</th><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><th class=\"row\">Přímý přístup</th><td>x</td><td>x</td><td>x</td></tr></table>"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "<strong>Direct</strong>.<br /><em>It's the default behavior of the plugin. The URL is pointing to the file, but in this case, the link is encoded. When you click on the attachment, it is displayed as a document, and not as a page of blog. WordPress mechanisms are used</em>"
+msgstr "<strong>Přímý přístup</strong>. <br /><em>je výchozí chování pluginu. URL směřuje na soubor, ale v tomto případě je odkaz kódován. Když kliknete na přílohu, je zobrazena jako dokument a nikoli jako stránka v blogu. Mechanismus WordPressu je použit.</em>"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "<strong>Permalink</strong>.<br /><em>The URL of the attachment is using defined permalink structure. For example: <code>http://blog url/post url/attachment slug/</code>, or <code>http://blog url/?p=xx</code>.<br/>The attachment will be displayed inside your blog, as a post.</em>"
+msgstr "<strong>Permalink</strong>. <br /><em>URL přílohy používá strukturu permalinku . Například: <code>http://blog url/post url/attachment slug/</code>, nebo <code>http://blog url/?p=xx</code>.<br/>Příloha bude zobrazena jako příspěvek na vašem blogu.</em>"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "<strong>File</strong>.<br /><em>The URL is the document's address. For example: <code>http://blog url/wp-content/upload/2011/09/file name.file extension/</code>.<br />When you click on the attachment, it is displayed directly, as a document, and not as a page of blog. WordPress mechanisms are not used</em>"
+msgstr "<strong>Soubor</strong>. <br /><em>URL je adresa dokumentu. Například: <code>http://blog url/wp-content/upload/2011/09/file name.file extension/</code>.<br />Když kliknete na přilohu, tato se přímo zobrazí jako dokument a ne jako stránka na blogu. Nepoužívá mechanismus WordPressu</em>"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "In normal mode, when you click on the attachments' links, according their mime type, documents are displayed, or a dialog box appears to choose 'run with' or 'Save As'. By activating the following option, the dialog box will appear for all cases."
+msgstr "V normální módu se po kliknutí na odkaz přílohy podle jejího mime typu buď zobrazí přímo dokument, nebo dialogové okno které nabízí spuštění, nebo uložení přílohy. Touto volbou vynutíte vždy zobrazení dialogového okna."
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "&laquo;target=blank&raquo; attribute"
+msgstr "atribut &laquo;target=blank&raquo;"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Featured image"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Check if you want to exclude featured image (thumbnail) from the list of attachments"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Click counter"
+msgstr "Počítadlo kliknutí"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Record all clicks occuring in the listed attachements."
+msgstr "Zaznamenat všechna kliknutí na zobrazené přílohy."
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Activate statistics"
+msgstr "Aktivovat statistiku"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Statistics, IP to exclude"
+msgstr "Statistika, vyloučit IP"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "List of IP address you want to exclude"
+msgstr "Seznam IP adres, které chcete vyloučit"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Maintenance"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Delete records after"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "months"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Enter 0 (zero), if you wand to disable the maintenance"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Restrict access to the attachments to logged users only!"
+msgstr "Omezit přístup k přílohám jen pro přihlášené uživatele!"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Url to login or register page"
+msgstr "URL na stránku pro přihlášení nebo registraci:"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Date format"
+msgstr "Formát data"
+
+# eg-attachments-admin.inc.php:
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Default value: %s (%s)"
+msgstr "Výchozí hodnota: "
+
+# eg-attachments-admin.inc.php:
+#: inc/eg-attachments-settings.inc.php:
+msgid "Use PHP <strong>date()</strong> parameters to configure the date:<br />d&nbsp;&nbsp;&nbsp;&nbsp;Day of the month, 2 digits with leading zeros<br />D&nbsp;&nbsp;&nbsp;&nbsp;A textual representation of a day, three letters<br />j&nbsp;&nbsp;&nbsp;&nbsp;Day of the month without leading zeros<br />S&nbsp;&nbsp;&nbsp;&nbsp;English ordinal suffix for the day of the month, 2 characters<br />F&nbsp;&nbsp;&nbsp;&nbsp;A full textual representation of a month, such as January or March<br />m&nbsp;&nbsp;&nbsp;&nbsp;Numeric representation of a month, with leading zeros<br />M&nbsp;&nbsp;&nbsp;&nbsp;A short textual representation of a month, three letters<br />n&nbsp;&nbsp;&nbsp;&nbsp;Numeric representation of a month, without leading zeros<br />Y&nbsp;&nbsp;&nbsp;&nbsp;A full numeric representation of a year, 4 digits<br />y&nbsp;&nbsp;&nbsp;&nbsp;A two digit representation of a year"
+msgstr "Použijte PHP parametry <strong>date()</strong> pro konfiguraci data:<br />d&nbsp;&nbsp;&nbsp;&nbsp;den měsíce, 2 číslice s úvodní nulou<br />D&nbsp;&nbsp;&nbsp;&nbsp;název dne, tři písmena<br />j&nbsp;&nbsp;&nbsp;&nbsp;den měsíce bez úvodní nuly<br />S&nbsp;&nbsp;&nbsp;&nbsp;anglická řadová přípona dne v měsíci, 2 znaky<br />F&nbsp;&nbsp;&nbsp;&nbsp;textová reprezentace názvu měsíce, např Leden nebo Březen<br />m&nbsp;&nbsp;&nbsp;&nbsp;číselná reprezentace měsíce s úvodní nulou<br />M&nbsp;&nbsp;&nbsp;&nbsp;zkrácený název měsíce, tři znaky<br />n&nbsp;&nbsp;&nbsp;&nbsp;číselná reprezentace měsíce bez úvodní nuly<br />Y&nbsp;&nbsp;&nbsp;&nbsp;plné číselné vyjádření roku, 4 číslice<br />y&nbsp;&nbsp;&nbsp;&nbsp;dvojčíselné vyjádření roku"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "<strong>Custom format has been changed</strong>.<br />To make the custom formats more flexible, they are now manage in a specific menu. You can go to the menu <strong>Tools &gt; EGA Templates</strong> to discover the new way of managing them. During the update, your custom format were saved into a template."
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "With this option, you can automaticaly add the list of attachments in your blog, without using shortcode"
+msgstr "Tato volba automaticky přidá seznam příloh do vašeho blogu bez použití shortkódu"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Not activated"
+msgstr "Neaktivní"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "At the end"
+msgstr "Na konec"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Before the excerpt"
+msgstr "Před stručný výpis"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Between excerpt and content"
+msgstr "Mezi stručný výpis a obsah"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Auto / Manual"
+msgstr "Automaticky / Ručně"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "If this option is activated, auto shortcode won't be generated if a manual shortcode is detected in the post being displayed"
+msgstr "Touto volbou nebude generován automatický shortkód, pokud je v zobrazovaném příspěvku detekován ručně vložený"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Disable auto-shortcode when a manual shortcode is detected"
+msgstr "Vypnout automatický shortkód, pokud je detekován ručně vložený"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Where"
+msgstr "Kde"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Activate automatic shortcode only on the following cases"
+msgstr "Aktivovat automatický shortkód jen v následujících případech"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Homepage,"
+msgstr "Domovská stránka,"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Posts,"
+msgstr "Příspěvky,"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Pages,"
+msgstr "Stránky,"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Lists of posts (archives, categories, ...)."
+msgstr "Seznamy příspěvků (archivy, rubriky, ...)."
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Title of the list"
+msgstr "Nadpis seznamu: "
+
+#: inc/eg-attachments-settings:
+#, fuzzy
+msgid "HTML Tag for title"
+msgstr "HTML tag pro název: "
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "(tag like h2, or h3, ...)"
+msgstr "(značka např h2, nebo h3, ...)"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "List format"
+msgstr "Formát seznamu: "
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "No template available"
+msgstr "Data nedostupná"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Sort Order"
+msgstr "Pořadí řazení: "
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "(Default: -1, for all document are listed)"
+msgstr "(Výchozí: -1, zobrazí všechny dokumenty)"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Default options?"
+msgstr "Výchozí nastavení? "
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Do you want that auto shortcode options become the default options for the TinyMCE EG-Attachments Editor?"
+msgstr "Chcete aby se tento automatický shortkód stal výchozí volbou pro TinyMCE EG-Attachments Editor?"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Display a <strong>EG-Attachments</strong> menu in the administration bar"
+msgstr "Zobrazit menu <strong>EG-Attachments</strong> v panelu administrace"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Metaboxes"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Show metabox to display list of attachments of the current post/page"
+msgstr "Zobrazit metabox se seznamem příloh aktuální stránky/příspěvku"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "EG-Attachments button"
+msgstr "Nastavení EG-Attachments"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Show EG-Attachments button in post text editor ?"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Tags assigments"
+msgstr "Přiřazení štítků"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "If you select this option, you will be able to select attachments by using the <strong>tags</strong> parameter in the shortcode."
+msgstr "Když povolíte tuto volbu, budete moci vybírat přílohy pomocí parametru <strong>tags</strong> ve shortkódu."
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Do you want to assign tags to attachments?"
+msgstr "Chcete přidávat štítky k přílohám?"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Icon path"
+msgstr "cesta k ikonám"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Additional path where the plugin can get icons"
+msgstr "Další cesta kde může plugin získat ikony"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Icon_url"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Additional url where the plugin can get icons"
+msgstr "Další URL kde může plugin získat ikony"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Stylesheet"
+msgstr "Styly"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Check if you want to use the plugin stylesheet file, uncheck if you want to use your own styles, or include styles on the theme stylesheet."
+msgstr "Zaškrtněte, pokud chcete použít soubor stylů pluginu, odškrtněte, pokud máte styl vlastní, nebo je obsažený v tématu vzhledu."
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Automatically load plugins' stylesheet"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Data"
+msgstr "Datum"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Be careful: these actions cannot be cancelled. All plugin's datas, including options, templates, and statistics will be deleted while plugin uninstallation."
+msgstr "Buďte opatrní: tyto akce nelze přerušit. Při odinstalaci budou smazána všechna nastavení pluginu."
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Delete data during uninstallation."
+msgstr "Smazat při odinstalaci"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Display attachments for all users"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Show attachments for everyone, but the url, for logged users only"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Display attachments for logged users only"
+msgstr "Omezit přístup k přílohám jen pro přihlášené uživatele!"
+
+#: /inc/eg-attachments-settings.inc.php:
+msgid "Some comments about security:<ul><li>- &laquo;Private&raquo; Attachments, or documents attached to a &laquo;Private&raquo; post, are not displayed, if the user is not logged,</li><li>- &laquo;Protected&raquo; Attachments, or documents attached to a &laquo;Protected&raquo; post, are not displayed, if users don't give the right password,</li><li>- For non private, and non protected posts, you can choose with the following options, to display attachments, to display without link, or hide attachments.</li></ul>"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "List with details, and big icon"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Large list of attachments without icon"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "List with details, and medium size icon"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Medium list of attachments without icon"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "List with details, and small size icon"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Small list of attachments without icon"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php
+msgid "The number of downloads is displayed only when if the attachment was downloaded at least 1 time"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php
+msgid "The &laquo; nofollow &raquo; attribut is displayed only if the option &laquo; nofollow &raquo; is checked in the <a href=\"%s\">Settings / EG-Attachments</a> menu"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php
+msgid "The &laquo; target &raquo; attributs are displayed only if the option &laquo; target &raquo; is checked in the <a href=\"%s\">Settings / EG-Attachments</a> menu"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:
+msgid "Extension"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:
+#, fuzzy
+msgid "Cache"
+msgstr "Zrušit"
+
+#: inc/eg-attachments-admin.inc.php:
+msgid "Clear plugin cache"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:
+msgid "The plugin is using cache to store the list of attachments. If the changes you make in the administration interface, are not seen in the front-end, you can use this option to clear the cache"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:
+msgid "Clear cache entries"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:
+msgid "Check the options, if you want to delete the following cache entries"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "When a list of attachments includes images, do you want to display"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "The thumbnail will be displayed with the size specified in the template"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "The icon of the file type"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "The Thumbnail of the image"
+msgstr ""
+
+#: inc/eg-attachments-popup.inc.php:
+msgid "Icons for the images:"
+msgstr ""
+
+#~ msgid "Clicks"
+#~ msgstr "Kliknutí"
+#~ msgid "Title"
+#~ msgstr "Titul"
+#~ msgid "Cannot display attachments. Current post or page is protected."
+#~ msgstr "Přílohy nelze zobrazit. Příspěvek, nebo stránka jsou chráněny."
+#~ msgid "First"
+#~ msgstr "První"
+#~ msgid "Last"
+#~ msgstr "Poslední"
+#~ msgid "Large"
+#~ msgstr "Velký"
+#~ msgid "Medium"
+#~ msgstr "Střední"
+#~ msgid "Small"
+#~ msgstr "Malý"
+#~ msgid "Document id"
+#~ msgstr "ID dokumentu"
+#~ msgid "Document title"
+#~ msgstr "Jméno dokumentu"
+#~ msgid "Order by: "
+#~ msgstr "Seřadit podle: "
+#~ msgid "Document label: "
+#~ msgstr "Štítek dokumentu: "
+#~ msgid "Fields: "
+#~ msgstr "Pole: "
+#~ msgid "Display default fields?"
+#~ msgstr "Zobrazit výchozí pole?"
+#~ msgid "Nofollow: "
+#~ msgstr "Nofoloow: "
+#~ msgid "Attachments restricted to register users only"
+#~ msgstr "Přílohy pouze pro registrované uživatele"
+#~ msgid "Document locked"
+#~ msgstr "Dokument uzamčen"
+#~ msgid ""
+#~ "Security problem. Try again. If this problem persist, contact <a href=\"%s"
+#~ "\">plugin author</a>."
+#~ msgstr ""
+#~ "Problém zabezpečení. Zkuste to znovu. Pokud přetrvává, kontaktujte <a "
+#~ "href=\"%s\">autora pluginu</a>."
+#~ msgid ""
+#~ "You cannot access to the synchronization page. You haven't the \"%1s\" "
+#~ "capability. Please contact <a href=\"%2s\">the blog administrator</a>."
+#~ msgstr ""
+#~ "Nemůžete přistupovat na stránku synchronizace. Nemáte oprávnění  \"%1s\". "
+#~ "Prosím obraťte se na <a href=\"%2s\">administrátora blogu</a>."
+#~ msgid " cannot run with "
+#~ msgstr " nelze spustit s "
+#~ msgid " requires "
+#~ msgstr " vyžaduje "
+#~ msgid " and later."
+#~ msgstr " a novější."
+#~ msgid " to "
+#~ msgstr " až "
+#~ msgid ""
+#~ "The plugin <strong>%1s</strong> requires the following PHP extensions: %2s"
+#~ msgstr "Plugin <strong>%1s</strong> vyžaduje následující rozšíření PHP: %2s"
+#~ msgid ""
+#~ "The plugin <strong>%1s</strong> requires the following PHP options: %2s."
+#~ msgstr "Plugin <strong>%1s</strong> vyžaduje toto nastavení PHP: %2s."
+#~ msgid "Save changes"
+#~ msgstr "Uložit změny"
+#~ msgid "Cancel changes"
+#~ msgstr "Zrušit změny"
+#~ msgid "Reset to defaults"
+#~ msgstr "Obnovit výchozí nastavení"
+#~ msgid "Error "
+#~ msgstr "Chyba "
+#~ msgid ""
+#~ "Lists of attachments can be displayed everywhere posts are displayed, or "
+#~ "only when a single post or a single page is displayed"
+#~ msgstr ""
+#~ "Seznam příloh může být zobrazen kdekoli spolu s příspěvkem, nebo jen v "
+#~ "pohledu samotné stránky nebo příspěvku"
+#~ msgid "in all pages"
+#~ msgstr "na všech stránkách"
+#~ msgid "Only for posts and pages"
+#~ msgstr "Pouze pro příspěvky a stránky"
+#~ msgid "Auto Shortcode Options"
+#~ msgstr "Volby auto shortkódu"
+#~ msgid "Random"
+#~ msgstr "Náhodně"
+#~ msgid "Menu order"
+#~ msgstr "Pořadí menu"
+#~ msgid "Document label"
+#~ msgstr "Štítek dokumentu"
+#~ msgid "Small size"
+#~ msgstr "Malá velikost"
+#~ msgid "Display icons: "
+#~ msgstr "Zobrazit ikony: "
+#~ msgid "Check the box to display icons"
+#~ msgstr "Zaškrtněte pro zobrazení ikon"
+#~ msgid "Documents label: "
+#~ msgstr "Štítek dokumentů: "
+#~ msgid "Choose the field that will be displayed as title of documents"
+#~ msgstr "Vyberte pole, které se zobrazí jako titul dokumentů"
+#~ msgid "The default list is: "
+#~ msgstr "výchozí seznam je: "
+#~ msgid "Do you want to display default fields?"
+#~ msgstr "Chcete zobrazit výchozí pole?"
+#~ msgid "Fields to be displayed"
+#~ msgstr "Zobrazí se pole"
+#~ msgid "Small list:"
+#~ msgstr "Malý seznam:"
+#~ msgid "Medium list:"
+#~ msgstr "Střední seznam:"
+#~ msgid "Position"
+#~ msgstr "Pozice"
+#~ msgid "Field"
+#~ msgstr "Pole"
+#~ msgid "Custom"
+#~ msgstr "Vlastní"
+#~ msgid ""
+#~ "You can define your own display format, using <strong>custom</strong>. "
+#~ "Parameters of this section will be applied only if you use <em>Custom</"
+#~ "em> as display format for auto-shortcode (fifth option of this page), or "
+#~ "if you specify <em>size=custom</em> in the shortcodes in your post.<br /"
+#~ ">Keywords you can use are listed below."
+#~ msgstr ""
+#~ "Můžete definovat vlastní formát při volbě <strong>vlastní</strong>. "
+#~ "Parametry v této sekci budou uplatněny pouze pokud zvolíte <em>Vlastní</"
+#~ "em> jako formát zobrazení u auto shortkódu, nebo nastavíte "
+#~ "<em>size=custom</em> přímo v shortkódu ve vašem příspěvku.<br />Můžete "
+#~ "použít tato klíčová slova."
+#~ msgid ""
+#~ "Available keywords:<br /><table class=\"eg-attach-custom-format"
+#~ "\"><tr><td><strong>%LINK%</strong></td><td>Full link of document (such as "
+#~ "&lt;a href=\"...\"&gt;...), </td></tr><tr><td><strong>%URL%</strong></"
+#~ "td><td>url of document (permalink),</td></tr><tr><td><strong>%GUID%</"
+#~ "strong></td><td>direct link to document as stored in the WP database,</"
+#~ "td></tr><tr><td><strong>%ICONURL%</strong></td><td>URL of icon,</td></"
+#~ "tr><tr><td><strong>%TITLE%</strong></td><td>Title of the document,</td></"
+#~ "tr><tr><td><strong>%CAPTION%</strong></td><td>caption of the document,</"
+#~ "td></tr><tr><td><strong>%DESCRIPTION%</strong></td><td>description of the "
+#~ "document,</td></tr><tr><td><strong>%FILENAME%</strong></td><td>Name of "
+#~ "the attached file,</td></tr><tr><td><strong>%FILESIZE%</strong></"
+#~ "td><td>Size of the attached document,</td></tr><tr><td><strong>%ATTID%</"
+#~ "strong></td><td>ID of the attachment.</td></tr><tr><td><strong>%TYPE%</"
+#~ "strong></td><td>Type of the documents</td></tr><tr><td><strong>%DATE%</"
+#~ "strong></td><td>Date of last modification</td></tr></table>"
+#~ msgstr ""
+#~ "Dostupná klíčová slova:<br /> <table class=\"eg-attach-custom-format"
+#~ "\"><tr><td><strong>%LINK%</strong></td><td>Celý odkaz na dokument (např  "
+#~ "&lt;a href=\"...\"&gt;...), </td></tr><tr><td><strong>%URL%</strong></"
+#~ "td><td>url dokumentu (permalink),</td></tr><tr><td><strong>%GUID%</"
+#~ "strong></td><td>přímý odkaz na dokument, tak jak je uložen v databázi WP,"
+#~ "</td></tr><tr><td><strong>%ICONURL%</strong></td><td>URL ikony,</td></"
+#~ "tr><tr><td><strong>%TITLE%</strong></td><td>titul dokumentu,</td></"
+#~ "tr><tr><td><strong>%CAPTION%</strong></td><td>titulek dokumentu,</td></"
+#~ "tr><tr><td><strong>%DESCRIPTION%</strong></td><td>popis dokumentu,</td></"
+#~ "tr><tr><td><strong>%FILENAME%</strong></td><td>jméno připojeného souboru,"
+#~ "</td></tr><tr><td><strong>%FILESIZE%</strong></td><td>velikost "
+#~ "připojeného dokumentu,</td></tr><tr><td><strong>%ATTID%</strong></"
+#~ "td><td>ID přílohy,</td></tr><tr><td><strong>%TYPE%</strong></td><td>typ "
+#~ "dokumentu</td></tr><tr><td><strong>%DATE%</strong></td><td>datum poslední "
+#~ "změny</td></tr></table>"
+#~ msgid "Custom format, before list: "
+#~ msgstr "Vlastní formát před seznamem "
+#~ msgid "Custom list format: "
+#~ msgstr "Vlastní formát seznamu: "
+#~ msgid "Custom list format"
+#~ msgstr "Vlastní formát seznamu"
+#~ msgid "Custom format, after list: "
+#~ msgstr "Vlastní formát za seznamem: "
+#~ msgid "Custom format, after list"
+#~ msgstr "Vlastní formát za seznamem"
+#~ msgid "General behavior of shortcodes"
+#~ msgstr "Obecné chování shortkódů"
+#~ msgid ""
+#~ "This option sets the default behavior of all shortcodes and auto-"
+#~ "shortcode. You can change the behavior of specific shortcodes by adding "
+#~ "<code>logged_users</code> parameter."
+#~ msgstr ""
+#~ "Toto nastavení určuje výchozí chování všech shortkódů a auto shortódu. "
+#~ "Můžete změnit chování určitých shortkódů přidáním parametru "
+#~ "<code>logged_users</code>."
+#~ msgid "Options"
+#~ msgstr "Volby"
+#~ msgid "EG-Attachments Statistics"
+#~ msgstr "Statistika EG-Attachments"
+#~ msgid "Details of %s"
+#~ msgstr "Detail %s"
+#~ msgid "History of \"%s\" "
+#~ msgstr "Historie \"%s\" "
+#~ msgid "Jan"
+#~ msgstr "led"
+#~ msgid "Feb"
+#~ msgstr "úno"
+#~ msgid "Mar"
+#~ msgstr "bře"
+#~ msgid "Apr"
+#~ msgstr "dub"
+#~ msgid "Jun"
+#~ msgstr "črv"
+#~ msgid "Jul"
+#~ msgstr "čnc"
+#~ msgid "Aug"
+#~ msgstr "srp"
+#~ msgid "Sep"
+#~ msgstr "zář"
+#~ msgid "Oct"
+#~ msgstr "říj"
+#~ msgid "Nov"
+#~ msgstr "lis"
+#~ msgid "Dec"
+#~ msgstr "pro"
+#~ msgid "Total"
+#~ msgstr "Celkem"
+#~ msgid "All<br />time"
+#~ msgstr "Celé<br />období"
+#~ msgid "Last<br />month"
+#~ msgstr "Poslední<br />měsíc"
+#~ msgid "Current<br />month"
+#~ msgstr "Tento<br />měsíc"
+#~ msgid "Last<br />week"
+#~ msgstr "Poslední<br />týden"
+#~ msgid "Current<br />week"
+#~ msgstr "Tento<br />týden"
+#~ msgid "Yesterday"
+#~ msgstr "Včera"
+#~ msgid "Today"
+#~ msgstr "Dnes"
+#~ msgid "No statistics available yet"
+#~ msgstr "Zatím není žádná statistika"
+#~ msgid "Display label of fields"
+#~ msgstr "Zobrazit názvy polí"
+#~ msgid "For Small size only, check the box if you want display labels"
+#~ msgstr "Pouze pro formát Malý, zaškrtněte, pokud chcete zobrazit názvy polí"
+#~ msgid "(For the other sizes, labels are always displayed)"
+#~ msgstr "(U ostatních velikostí jsou názvy vždy zobrazeny)"
+#~ msgid "Display label: "
+#~ msgstr "Zobrazit název: "
+#~ msgid "(for size=small only)"
+#~ msgstr "(pouze pro size=small)"
+#~ msgid "Custom fields"
+#~ msgstr "Vlastní pole"
+#~ msgid "Custom fields:"
+#~ msgstr "Vlastní pole:"
+#~ msgid "or display the following fields"
+#~ msgstr "nebo zobrazit tato pole"
+#~ msgid "Activate automatic shortcode on the following cases"
+#~ msgstr "Aktivovat automatický shortkód v těchto případech"
+#~ msgid "Lists of posts."
+#~ msgstr "Seznam příspěvků."
+#~ msgid "Automatic Shortcode"
+#~ msgstr "Automatický shortkód"
+#~ msgid "Administration"
+#~ msgstr "Administrace"
+#~ msgid ""
+#~ "All of the following parameters are applied on manual AND automatic "
+#~ "shortcode."
+#~ msgstr ""
+#~ "Všechny následující parametry jsou uplatněny na ruční A automatický "
+#~ "shortkód."
+#~ msgid "EG-Attachments settings"
+#~ msgstr "Nastavení EG-Attachments"
+#~ msgid "Comments"
+#~ msgstr "Komentáře"
+#~ msgid ""
+#~ "When you upload an attachment file, which behavior do you want for "
+#~ "comments"
+#~ msgstr ""
+#~ "Jak chcete aby se chovaly komentáře, když nahrajete soubor s přílohou"
+#~ msgid "Keep default"
+#~ msgstr "Nechat výchozí"
+#~ msgid "Closed the comments"
+#~ msgstr "Zakázat komentáře"
+#~ msgid "Pingbacks/Trackbacks"
+#~ msgstr "Pingbacky/trackbacky"
+#~ msgid "Allow the pings"
+#~ msgstr "Povolit ping"
+#~ msgid "Closed the pings"
+#~ msgstr "Zakázat ping"
+#~ msgid ""
+#~ "When you upload an attachment file, which behavior do you want for "
+#~ "pingbacks / trackbacks"
+#~ msgstr ""
+#~ "Jak chcete, aby se chovaly pingbacky/trackbacky, když nahrajete soubor s "
+#~ "přílohou"
+#~ msgid "Icon height: "
+#~ msgstr "Výška ikon: "
+#~ msgid "Icon width: "
+#~ msgstr "Šířka ikon: "
+#~ msgid "Menu Order"
+#~ msgstr "Pořadí menu"
+#~ msgid ""
+#~ "EG-Attachments provides icons, to complete the existing WordPress' list. "
+#~ "You can add your own icons, by specifying a directory/url were these "
+#~ "icons are stored."
+#~ msgstr ""
+#~ "EG-Attachments obsahuje ikony pro doplnění existujícího seznamu "
+#~ "WordPressu. Můžete přidat vlasní ikony zadáním cesty/složky kde jsou tyto "
+#~ "ikony uloženy."
+#~ msgid ""
+#~ "Please enter a location outside of EG-Attachments directories. By this "
+#~ "way, your icons won't be deleted while a plugin upgrade"
+#~ msgstr ""
+#~ "Prosím zadejte umístění mimo složky EG-Attachments. Jinak by byly smazány "
+#~ "při aktualizaci pluginu."
+#~ msgid "Icon path (beta)"
+#~ msgstr "Cesta k ikonám (beta)"
+#~ msgid "Icon urlh (beta)"
+#~ msgstr "URL ikon (beta)"
+

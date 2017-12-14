@@ -1,0 +1,4513 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPBakery Visual Composer v4.1.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-09 22:08+0800\n"
+"PO-Revision-Date: 2014-05-14 20:26+0800\n"
+"Last-Translator: oberon <m615926@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=1;\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"Language: zh_TW\n"
+"X-Poedit-SearchPath-0: .\n"
+
+# @ js_composer
+#: composer/lib/build.php:54
+msgid "Download new version from CodeCanyon."
+msgstr "請前往 CodeCanyon 下載最新版本。"
+
+# @ js_composer
+#: composer/lib/build.php:56
+msgid "Update Visual Composer now."
+msgstr "立刻更新"
+
+# @ js_composer
+#: composer/lib/build.php:163
+#, php-format
+msgid ""
+"Hola! Please <a href=\"%s\">activate your copy</a> of Visual Composer to "
+"receive automatic updates."
+msgstr "您好！請先 <a href=\"%s\">啟用帳號</a> ，啟用後日後將自動安裝更新。"
+
+# @ js_composer
+#: composer/lib/build.php:181
+#, php-format
+msgid ""
+"There is a new version of Visual Composer available. <a href=\"http://bit.ly/"
+"vcomposer\" target=\"_blank\">Download version <b>%s</b></a>."
+msgstr ""
+"有新版本可使用。<a href=\"http://bit.ly/vcomposer\" target=\"_blank\">前往下"
+"載<b>%s</b></a>！"
+
+# @ js_composer
+#: composer/lib/build.php:366
+msgid "Add/remove picture"
+msgstr "新增/移除圖片"
+
+# @ js_composer
+#: composer/lib/build.php:367
+msgid "Finish Adding Images"
+msgstr "完成新增圖片"
+
+# @ js_composer
+#: composer/lib/build.php:368
+msgid "Add Image"
+msgstr "新增圖片"
+
+# @ js_composer
+#: composer/lib/build.php:369
+msgid "Add Images"
+msgstr "加入圖片"
+
+# @ js_composer
+#: composer/lib/build.php:370 composer/lib/build.php:436
+#: composer/lib/settings.php:88 composer/lib/settings.php:94
+#: inline/templates/editor.tpl.php:31
+msgid "Visual Composer"
+msgstr "輕鬆排版拖、拉、酷！"
+
+# @ js_composer
+#: composer/lib/build.php:371
+msgid "BACKEND EDITOR"
+msgstr "啟用輕鬆排版功能"
+
+# @ js_composer
+#: composer/lib/build.php:372
+msgid "FRONTEND EDITOR"
+msgstr "啟用前臺輕鬆排版功能"
+
+# @ js_composer
+#: composer/lib/build.php:373
+msgid "CLASSIC MODE"
+msgstr "傳統編輯器"
+
+# @ js_composer
+#: composer/lib/build.php:374
+msgid "Please enter template name"
+msgstr "取一個模版名稱"
+
+# @ js_composer
+#: composer/lib/build.php:375
+msgid ""
+"Confirm deleting \"{template_name}\" template, press Cancel to leave. This "
+"action cannot be undone."
+msgstr "確定刪除樣版？"
+
+# @ js_composer
+#: composer/lib/build.php:376
+msgid "Press OK to delete section, Cancel to leave"
+msgstr "是否確定要刪除？"
+
+# @ js_composer
+#: composer/lib/build.php:377
+msgid "Drag and drop me in the column"
+msgstr "移動"
+
+# @ js_composer
+#: composer/lib/build.php:378
+msgid "Press OK to delete \"{tab_name}\" tab, Cancel to leave"
+msgstr "是否刪除頁籤- \"{tab_name}\"?"
+
+# @ js_composer
+#: composer/lib/build.php:379 composer/lib/shortcodes/tour.php:4
+msgid "Slide"
+msgstr "頁籤"
+
+# @ js_composer
+#: composer/lib/build.php:380 composer/lib/shortcodes/tabs.php:4
+#: config/map.php:986
+msgid "Tab"
+msgstr "頁籤"
+
+# @ js_composer
+#: composer/lib/build.php:381 composer/lib/build.php:384
+#: composer/shortcodes_templates/vc_accordion_tab.php:5
+msgid "Section"
+msgstr "區塊"
+
+# @ js_composer
+#: composer/lib/build.php:382
+msgid "Please enter new tab title"
+msgstr "請輸入頁籤標題"
+
+# @ js_composer
+#: composer/lib/build.php:383
+msgid "Press OK to delete \"{tab_name}\" section, Cancel to leave"
+msgstr "是否刪除區塊- \"{tab_name}\"?"
+
+# @ js_composer
+#: composer/lib/build.php:385
+msgid "Please enter new section title"
+msgstr "請輸入區塊標題"
+
+# @ js_composer
+#: composer/lib/build.php:386
+msgid "Error. Please try again."
+msgstr "發生錯誤！請再試一遍！"
+
+# @ js_composer
+#: composer/lib/build.php:387
+msgid ""
+"If you close this window all shortcode settings will be lost. Close this "
+"window?"
+msgstr "確定要關閉？"
+
+# @ js_composer
+#: composer/lib/build.php:388
+msgid "Select element type"
+msgstr "選擇標題樣式"
+
+# @ js_composer
+#: composer/lib/build.php:389
+msgid "Media gallery"
+msgstr "媒體庫"
+
+# @ js_composer
+#: composer/lib/build.php:390
+msgid "Element settings"
+msgstr "元素設定"
+
+# @ js_composer
+#: composer/lib/build.php:391
+msgid "Add tab"
+msgstr "加入頁籤"
+
+# @ js_composer
+#: composer/lib/build.php:392
+msgid "Are you sure you want to convert to new version?"
+msgstr "確定要轉換為新版本？\t"
+
+# @ js_composer
+#: composer/lib/build.php:393 composer/lib/layouts.php:230
+msgid "Loading..."
+msgstr "載入中..."
+
+# @ js_composer
+#: composer/lib/build.php:395
+msgid "Set Image"
+msgstr "設定圖片"
+
+# @ js_composer
+#: composer/lib/build.php:396
+msgid "Are you sure taht you want to remove all your data?"
+msgstr "確定要移除所有資料？"
+
+# @ default
+#: composer/lib/build.php:397
+msgid "Loop settings"
+msgstr "循環設定"
+
+# @ js_composer
+#: composer/lib/build.php:398
+msgid "Enter custom layout for your row:"
+msgstr "輸入欄位數目"
+
+# @ js_composer
+#: composer/lib/build.php:399
+msgid "Wrong row layout format! Example: 1/2 + 1/2 or span6 + span6."
+msgstr "請輸入正確的欄位格式。譬如：1/2 + 1/2 或 span6 + span6。"
+
+# @ js_composer
+#: composer/lib/build.php:400
+msgid "Row background color"
+msgstr "背景顏色"
+
+# @ js_composer
+#: composer/lib/build.php:401
+msgid "Row background image"
+msgstr "背景圖片"
+
+# @ js_composer
+#: composer/lib/build.php:402 inline/templates/editor.tpl.php:45
+msgid "Guides ON"
+msgstr "輔助說明 啟用"
+
+# @ js_composer
+#: composer/lib/build.php:403
+msgid "Guides OFF"
+msgstr "輔助說明 關閉"
+
+# @ js_composer
+#: composer/lib/build.php:404
+msgid "New template successfully saved!"
+msgstr "新樣版儲存完成！"
+
+# @ js_composer
+#: composer/lib/build.php:405
+msgid "Template added to the page."
+msgstr "樣版加入頁面"
+
+# @ js_composer
+#: composer/lib/build.php:406
+msgid "Nothing to save. Template is empty."
+msgstr "儲存失敗，樣版是空的"
+
+# @ js_composer
+#: composer/lib/build.php:407
+msgid "Page settings updated!"
+msgstr "更新完成！"
+
+# @ js_composer
+#: composer/lib/build.php:408
+msgid "Update all"
+msgstr "更新"
+
+# @ js_composer
+#: composer/lib/build.php:409
+msgid "The changes you made will be lost if you navigate away from this page."
+msgstr "變更尚未儲存！"
+
+# @ js_composer
+#: composer/lib/build.php:410
+#, php-format
+msgid "%s saved!"
+msgstr "%s已儲存！"
+
+# @ js_composer
+#: composer/lib/build.php:411
+#, php-format
+msgid "%s deleted!"
+msgstr "%s已刪除！"
+
+# @ js_composer
+#: composer/lib/build.php:412
+#, php-format
+msgid ""
+"%s cloned. <a href=\"#\" class=\"vc-edit-cloned\" data-model-id=\"%s\">Edit "
+"now?</a>"
+msgstr ""
+"%s已複製。 <a href=\"#\" class=\"vc-edit-cloned\" data-model-id=\"%s\">開始編"
+"輯?</a>"
+
+# @ js_composer
+#: composer/lib/helpers.php:246
+msgid "Added"
+msgstr "已增加"
+
+# @ js_composer
+#: composer/lib/helpers_api.php:4
+msgid "Wrong wpb_map object. Base attribute is required"
+msgstr "請檢查必填欄位"
+
+# @ js_composer
+#: composer/lib/layouts.php:14
+msgid "Wrong layout params"
+msgstr "錯誤的版面參數"
+
+# @ js_composer
+#: composer/lib/layouts.php:41
+msgid "Delete template"
+msgstr "刪除樣版"
+
+# @ js_composer
+#: composer/lib/layouts.php:96
+msgid "Save current page as a Template"
+msgstr "將現有版面存為樣版"
+
+# @ js_composer
+#: composer/lib/layouts.php:98 inline/templates/editor.tpl.php:366
+msgid "Load Template"
+msgstr "套用樣版"
+
+# @ js_composer
+#: composer/lib/layouts.php:111
+msgid "No custom templates yet."
+msgstr "無自訂樣版"
+
+# @ js_composer
+#: composer/lib/layouts.php:167
+msgid "Show all"
+msgstr "全部元素"
+
+# @ js_composer
+#: composer/lib/layouts.php:182
+msgid "Other"
+msgstr "其它"
+
+# @ js_composer
+#: composer/lib/layouts.php:191 inline/templates/editor.tpl.php:105
+msgid "Search by element name"
+msgstr "搜尋元素"
+
+# @ js_composer
+#: composer/lib/layouts.php:201
+msgid "Select Content Element"
+msgstr "請選擇要增加的元素"
+
+# @ js_composer
+#: composer/lib/layouts.php:213 composer/lib/params/options/options.php:6
+#: inline/templates/editor.tpl.php:315 inline/templates/editor.tpl.php:329
+#: inline/templates/editor.tpl.php:344 inline/templates/editor.tpl.php:375
+msgid "Close"
+msgstr "關閉"
+
+# @ js_composer
+#: composer/lib/layouts.php:234 composer/lib/layouts.php:250
+#: composer/lib/shortcodes.php:488
+msgid "Save"
+msgstr "儲存"
+
+# @ js_composer
+#: composer/lib/automapper.php:131 composer/lib/automapper.php:185
+#: composer/lib/layouts.php:235 composer/lib/layouts.php:251
+msgid "Cancel"
+msgstr "取消"
+
+# @ js_composer
+#: composer/lib/layouts.php:243 composer/lib/settings.php:69
+msgid "Custom CSS"
+msgstr "自訂 CSS"
+
+# @ js_composer
+#: composer/lib/layouts.php:247 inline/templates/editor.tpl.php:309
+msgid ""
+"Enter custom CSS code here. Your custom CSS will be outputted only on this "
+"particular page."
+msgstr "於此處所輸入之 CSS 僅會作用於本頁中。"
+
+# @ js_composer
+#: composer/lib/layouts.php:296
+msgid "Visual Composer for WordPress"
+msgstr "輕鬆排版拖、拉、酷！"
+
+# @ js_composer
+#: composer/lib/layouts.php:312 inline/templates/editor.tpl.php:106
+#: inline/templates/editor.tpl.php:395 inline/templates/editor.tpl.php:396
+msgid "Add element"
+msgstr "新增內容"
+
+# @ js_composer
+#: composer/lib/layouts.php:320
+msgid "Add row"
+msgstr "新增區塊"
+
+# @ js_composer
+#: composer/lib/layouts.php:328 inline/editor.php:191
+#: inline/templates/editor.tpl.php:354
+msgid "Templates"
+msgstr "套用樣版"
+
+# @ js_composer
+#: composer/lib/layouts.php:339
+msgid "Frontend Edit"
+msgstr "前臺編輯"
+
+# @ js_composer
+#: composer/lib/layouts.php:346 inline/templates/editor.tpl.php:78
+#: inline/templates/editor.tpl.php:85 inline/templates/editor.tpl.php:283
+msgid "Update"
+msgstr "更新"
+
+# @ js_composer
+#: composer/lib/layouts.php:352
+msgid "CSS"
+msgstr "自訂 CSS"
+
+# @ js_composer
+#: composer/lib/layouts.php:390
+msgid ""
+"Your page layout was created with previous Visual Composer version. Before "
+"converting your layout to the new version, make sure to <a target=\"_blank\" "
+"href=\"http://kb.wpbakery.com/index.php?"
+"title=Update_Visual_Composer_from_3.4_to_3.5\">read this page</a>."
+msgstr ""
+"您的樣版是由舊版編輯器所建立。在轉換為新版樣版前請先務必閱讀<a target="
+"\"_blank\" href=\"http://kb.wpbakery.com/index.php?"
+"title=Update_Visual_Composer_from_3.4_to_3.5\">此頁面</a>。"
+
+# @ js_composer
+#: composer/lib/layouts.php:392
+msgid "Convert to new version"
+msgstr "轉換為新版"
+
+# @ js_composer
+#: composer/lib/layouts.php:398 composer/lib/layouts.php:438
+msgid "Loading, please wait..."
+msgstr "載入中..."
+
+# @ js_composer
+#: composer/lib/layouts.php:403
+msgid "No content yet! You should add some..."
+msgstr "請開始建立頁面內容"
+
+# @ js_composer
+#: composer/lib/layouts.php:407
+msgid ""
+"This is a visual preview of your page. Currently, you don't have any content "
+"elements. Click or drag the button <a href='#' class='add-element-to-"
+"layout'><i class='icon'></i> Add element</a> on the top to add content "
+"elements on your page. Alternatively add <a href='#' class='add-text-block-"
+"to-content' parent-container='#visual_composer_content'><i class='icon'></i> "
+"Text block</a> with single click."
+msgstr ""
+"您可以點擊上方的 <a href='#' class='add-element-to-layout'><i class='icon'></"
+"i> 新增內容</a> 來增加元素，或是點選<a href='#' class='add-text-block-to-"
+"content' parent-container='#visual_composer_content'><i class='icon'></i> 新"
+"增區塊</a>來控制版面欄位數量。"
+
+# @ js_composer
+#: composer/lib/layouts.php:412
+msgid ""
+"Click the pencil icon on the content elements to change their properties."
+msgstr "點選鉛筆的圖案來編輯內容。"
+
+# @ js_composer
+#: composer/lib/layouts.php:439
+msgid "Crunching..."
+msgstr "處理中..."
+
+# @ js_composer
+#: composer/lib/mapper.php:120 composer/lib/mapper.php:235
+#: composer/lib/mapper.php:256 composer/lib/mapper.php:287
+#: composer/lib/mapper.php:346
+#, php-format
+msgid "Wrong name for shortcode:%s. Name required"
+msgstr "錯誤的名稱簡碼：%s，此為必填"
+
+# @ js_composer
+#: composer/lib/mapper.php:122
+#, php-format
+msgid "Wrong base for shortcode:%s. Base required"
+msgstr "錯誤的簡碼：%s，此為必填"
+
+# @ js_composer
+#: composer/lib/mapper.php:258 composer/lib/mapper.php:289
+#, php-format
+msgid "Wrong attribute for '%s' shortcode. Attribute 'param_name' required"
+msgstr "錯誤的屬性簡碼：%s，此為必填"
+
+# @ js_composer
+#: composer/lib/mapper.php:348
+#, php-format
+msgid "Wrong setting_name for shortcode:%s. Base can't be modified."
+msgstr "錯誤的設定名稱簡碼：%s，此處不可修改"
+
+# @ js_composer
+#: composer/lib/params/loop/loop.php:14
+msgid "Build query"
+msgstr "建立"
+
+# @ js_composer
+#: composer/lib/params/loop/loop.php:163
+msgid "Post Count"
+msgstr "文章數"
+
+# @ js_composer
+#: composer/lib/params/loop/loop.php:164
+msgid "Order By"
+msgstr "排序條件"
+
+# @ js_composer
+#: composer/lib/params/loop/loop.php:165
+msgid "Order"
+msgstr "排序邏輯"
+
+# @ js_composer
+#: composer/lib/params/loop/loop.php:166 config/map.php:1101
+#: config/map.php:1513
+msgid "Post types"
+msgstr "文章類型"
+
+# @ js_composer
+#: composer/lib/params/loop/loop.php:167 composer/lib/params/loop/loop.php:227
+#: config/map.php:1225 config/map.php:1587
+msgid "Author"
+msgstr "作者"
+
+# @ js_composer
+# @ default
+#: composer/lib/params/loop/loop.php:168
+#: composer/shortcodes_templates/vc_wp_categories.php:4 config/map.php:1213
+#: config/map.php:1575 config/map.php:2906
+msgid "Categories"
+msgstr "分類"
+
+# @ js_composer
+# @ default
+#: composer/lib/params/loop/loop.php:169
+#: composer/shortcodes_templates/vc_wp_tagcloud.php:4
+msgid "Tags"
+msgstr "標籤"
+
+# @ js_composer
+#: composer/lib/params/loop/loop.php:170 config/map.php:1183
+msgid "Taxonomies"
+msgstr "類型"
+
+# @ js_composer
+#: composer/lib/params/loop/loop.php:171
+msgid "Individual Posts/Pages"
+msgstr "自定義類型文章"
+
+# @ js_composer
+#: composer/lib/params/loop/loop.php:225 config/map.php:1223
+#: config/map.php:1585
+msgid "Date"
+msgstr "日期"
+
+# @ js_composer
+#: composer/lib/params/loop/loop.php:228
+#: composer/lib/params/vc_link/vc_link.php:6
+#: composer/lib/shortcodes/posts_grid.php:39 config/map.php:305
+#: config/map.php:308 config/map.php:994 config/map.php:1067
+#: config/map.php:1226 config/map.php:1299 config/map.php:1384
+#: config/map.php:1588
+msgid "Title"
+msgstr "標題"
+
+# @ js_composer
+#: composer/lib/params/loop/loop.php:230 config/map.php:1227
+#: config/map.php:1589
+msgid "Modified"
+msgstr "修改日期"
+
+# @ js_composer
+#: composer/lib/params/loop/loop.php:232 config/map.php:1228
+#: config/map.php:1590 config/map.php:2193 config/map.php:2877
+msgid "Random"
+msgstr "隨機"
+
+# @ js_composer
+#: composer/lib/params/loop/loop.php:233 config/map.php:1229
+#: config/map.php:1591
+msgid "Comment count"
+msgstr "留言數"
+
+# @ js_composer
+#: composer/lib/params/loop/loop.php:234 config/map.php:1230
+#: config/map.php:1592
+msgid "Menu order"
+msgstr "選單順序"
+
+# @ js_composer
+#: composer/lib/params/loop/loop.php:242 config/map.php:1240
+#: config/map.php:1602
+msgid "Ascending"
+msgstr "升冪"
+
+# @ js_composer
+#: composer/lib/params/loop/loop.php:243 config/map.php:1239
+#: config/map.php:1601
+msgid "Descending"
+msgstr "降冪"
+
+# @ js_composer
+#: composer/lib/params/options/options.php:5
+msgid "Manage options"
+msgstr "管理設定"
+
+# @ js_composer
+#: composer/lib/params/vc_link/vc_link.php:6
+msgid "Select URL"
+msgstr "選擇網址"
+
+# @ js_composer
+#: composer/lib/params/vc_link/vc_link.php:6
+msgid "URL"
+msgstr "網址"
+
+# @ js_composer
+#: composer/lib/shortcodes.php:157
+#, php-format
+msgid ""
+"Template file is missing for `%s` shortcode. Make sure you have `%s` file in "
+"your theme folder."
+msgstr "樣版遺失 `%s` 簡碼，請確認 `%s` 有包含於您的佈景主題資料夾中。"
+
+# @ js_composer
+#: composer/lib/shortcodes.php:362 inline/templates/editor.tpl.php:141
+#: inline/templates/editor.tpl.php:152 inline/templates/editor.tpl.php:169
+#: inline/templates/editor.tpl.php:179 inline/templates/editor.tpl.php:196
+#: inline/templates/editor.tpl.php:206 inline/templates/editor.tpl.php:223
+#: inline/templates/editor.tpl.php:233
+#, php-format
+msgid "Edit %s"
+msgstr "編輯%s"
+
+# @ js_composer
+#: composer/lib/shortcodes.php:363 inline/templates/editor.tpl.php:142
+#: inline/templates/editor.tpl.php:154 inline/templates/editor.tpl.php:171
+#: inline/templates/editor.tpl.php:198 inline/templates/editor.tpl.php:225
+#: inline/templates/editor.tpl.php:235
+#, php-format
+msgid "Clone %s"
+msgstr "複製%s"
+
+# @ js_composer
+#: composer/lib/shortcodes.php:363 inline/templates/editor.tpl.php:143
+#: inline/templates/editor.tpl.php:155 inline/templates/editor.tpl.php:172
+#: inline/templates/editor.tpl.php:199 inline/templates/editor.tpl.php:226
+#: inline/templates/editor.tpl.php:236
+#, php-format
+msgid "Delete %s"
+msgstr "刪除%s"
+
+# @ js_composer
+#: composer/lib/automapper.php:244 composer/lib/shortcodes.php:474
+#: composer/lib/shortcodes.php:771
+msgid "Edit"
+msgstr "編輯"
+
+# @ js_composer
+#: composer/lib/shortcodes/image_gallery.php:27
+#: composer/lib/shortcodes.php:623
+msgid "Add images"
+msgstr "加入圖片"
+
+# @ js_composer
+#: composer/lib/params/css_editor/css_editor.php:67
+#: composer/lib/shortcodes/single_image.php:22 composer/lib/shortcodes.php:638
+msgid "Add image"
+msgstr "增加圖片"
+
+# @ js_composer
+#: composer/lib/shortcodes/tabs.php:26 composer/lib/shortcodes.php:697
+#, php-format
+msgid "Append to this %s"
+msgstr "插入至%s"
+
+# @ js_composer
+#: composer/lib/shortcodes/tabs.php:27 composer/lib/shortcodes.php:698
+#, php-format
+msgid "Prepend to this %s"
+msgstr "插入至%s"
+
+# @ js_composer
+#: composer/lib/shortcodes/tabs.php:30 composer/lib/shortcodes.php:701
+#, php-format
+msgid "Edit this %s"
+msgstr "編輯%s"
+
+# @ js_composer
+#: composer/lib/shortcodes/tabs.php:31 composer/lib/shortcodes.php:702
+#, php-format
+msgid "Clone this %s"
+msgstr "複製%s"
+
+# @ js_composer
+#: composer/lib/shortcodes/tabs.php:33 composer/lib/shortcodes.php:704
+#, php-format
+msgid "Delete this %s"
+msgstr "刪除%s"
+
+# @ js_composer
+#: composer/lib/shortcodes/column.php:19
+msgid "Append to this column"
+msgstr "增加內容"
+
+# @ js_composer
+#: composer/lib/shortcodes/column.php:20
+msgid "Prepend to this column"
+msgstr "增加內容"
+
+# @ js_composer
+#: composer/lib/shortcodes/column.php:23
+msgid "Edit this column"
+msgstr "編輯欄位"
+
+# @ js_composer
+#: composer/lib/shortcodes/column.php:144 config/map.php:151
+msgid "Column"
+msgstr "欄"
+
+# @ js_composer
+#: composer/lib/shortcodes/column.php:156 config/map.php:111
+#: config/map.php:136 config/map.php:158 config/map.php:193 config/map.php:287
+#: config/map.php:353 config/map.php:401 config/map.php:557 config/map.php:653
+#: config/map.php:752 config/map.php:880 config/map.php:916 config/map.php:966
+#: config/map.php:1039 config/map.php:1246 config/map.php:1342
+#: config/map.php:1463 config/map.php:1608 config/map.php:1639
+#: config/map.php:1737 config/map.php:1801 config/map.php:1881
+#: config/map.php:2005 config/map.php:2036 config/map.php:2099
+#: config/map.php:2199 config/map.php:2270 config/map.php:2327
+#: config/map.php:2423 config/map.php:2471 config/map.php:2568
+#: config/map.php:2592 config/map.php:2622 config/map.php:2646
+#: config/map.php:2688 config/map.php:2727 config/map.php:2766
+#: config/map.php:2801 config/map.php:2838 config/map.php:2898
+#: config/map.php:2932 config/map.php:2966 config/map.php:3015
+msgid "Extra class name"
+msgstr "類別名稱"
+
+# @ js_composer
+#: composer/lib/shortcodes/column.php:159 config/map.php:113
+#: config/map.php:138 config/map.php:160 config/map.php:195 config/map.php:289
+#: config/map.php:355 config/map.php:403 config/map.php:559 config/map.php:655
+#: config/map.php:754 config/map.php:882 config/map.php:918 config/map.php:968
+#: config/map.php:1041 config/map.php:1248 config/map.php:1344
+#: config/map.php:1465 config/map.php:1610 config/map.php:1641
+#: config/map.php:1739 config/map.php:1803 config/map.php:1883
+#: config/map.php:2007 config/map.php:2038 config/map.php:2101
+#: config/map.php:2201 config/map.php:2272 config/map.php:2329
+#: config/map.php:2425 config/map.php:2473 config/map.php:2570
+#: config/map.php:2594 config/map.php:2624 config/map.php:2648
+#: config/map.php:2690 config/map.php:2729 config/map.php:2768
+#: config/map.php:2803 config/map.php:2840 config/map.php:2900
+#: config/map.php:2934 config/map.php:2968 config/map.php:3017
+msgid ""
+"If you wish to style particular content element differently, then use this "
+"field to add a class name and then refer to it in your css file."
+msgstr "控制 CSS 用"
+
+# @ js_composer
+#: composer/lib/shortcodes/example.php:94
+msgid "Hello World"
+msgstr "您好，世界！"
+
+# @ js_composer
+#: composer/lib/shortcodes/example.php:102
+msgid "Foo attribute"
+msgstr "foo 屬性"
+
+# @ js_composer
+#: composer/lib/shortcodes/example.php:104
+msgid "I'm foo attribute"
+msgstr "我是 foo 屬性"
+
+# @ js_composer
+#: composer/lib/shortcodes/example.php:105
+msgid "Enter foo value."
+msgstr "輸入 foo 值"
+
+# @ js_composer
+# @ default
+#: composer/lib/shortcodes/example.php:111
+#: composer/lib/shortcodes/posts_grid.php:37
+#: composer/lib/shortcodes/posts_grid.php:41
+#: composer/templates/teaser.html.php:38 config/map.php:186
+#: config/map.php:1300 config/map.php:1385 config/map.php:1820
+#: config/map.php:2774 config/map.php:2790
+msgid "Text"
+msgstr "文字"
+
+# @ js_composer
+#: composer/lib/shortcodes/example.php:113
+msgid "I'm hello world"
+msgstr "我是您好世界"
+
+# @ js_composer
+#: composer/lib/shortcodes/example.php:114 config/map.php:1823
+msgid "Enter your content."
+msgstr "請輸入按鈕的文字說明"
+
+# @ js_composer
+#: composer/lib/shortcodes/example.php:118
+msgid "Drop down example"
+msgstr "下拉選單範例"
+
+# @ js_composer
+#: composer/lib/shortcodes/example.php:121
+msgid "One, two or three?"
+msgstr "一、二或三？"
+
+# @ js_composer
+#: composer/lib/shortcodes/flickr.php:21
+#: composer/shortcodes_templates/vc_flickr.php:19
+msgid "View stream on flickr"
+msgstr "在 Flickr 上檢視照片"
+
+# @ js_composer
+#: composer/lib/shortcodes/posts_grid.php:24
+msgid "VC: Custom Teaser"
+msgstr "自訂圖文"
+
+# @ js_composer
+#: composer/lib/shortcodes/posts_grid.php:36
+msgid "Empty title"
+msgstr "標題"
+
+# @ js_composer
+#: composer/lib/shortcodes/posts_grid.php:38 config/map.php:581
+msgid "Image"
+msgstr "圖片"
+
+# @ js_composer
+#: composer/lib/shortcodes/posts_grid.php:40 config/map.php:1136
+#: config/map.php:1544
+msgid "Link"
+msgstr "連結"
+
+# @ js_composer
+#: composer/lib/shortcodes/posts_grid.php:42
+#: composer/templates/teaser.html.php:37
+msgid "Excerpt"
+msgstr "圖說"
+
+# @ js_composer
+#: composer/lib/shortcodes/posts_grid.php:43
+#: composer/lib/shortcodes/posts_grid.php:45
+#: composer/templates/teaser.html.php:22 composer/templates/teaser.html.php:39
+msgid "Custom"
+msgstr "自訂"
+
+# @ js_composer
+#: composer/lib/shortcodes/posts_grid.php:44
+msgid "Featered"
+msgstr "特色"
+
+# @ js_composer
+#: composer/lib/shortcodes/posts_grid.php:46
+msgid "Link text"
+msgstr "連結文字"
+
+# @ js_composer
+#: composer/lib/shortcodes/posts_grid.php:47
+#: composer/templates/teaser.html.php:11 composer/templates/teaser.html.php:27
+#: config/map.php:1142 config/map.php:1257 config/map.php:1550
+msgid "No link"
+msgstr "無連結"
+
+# @ js_composer
+#: composer/lib/shortcodes/posts_grid.php:48 config/map.php:1139
+#: config/map.php:1256 config/map.php:1547
+msgid "Link to post"
+msgstr "連結至文章"
+
+# @ js_composer
+#: composer/lib/shortcodes/posts_grid.php:49
+msgid "Link to big image"
+msgstr "點擊展開大圖"
+
+# @ js_composer
+#: composer/lib/shortcodes/posts_grid.php:50
+#: composer/templates/teaser.html.php:56
+msgid "Add custom image"
+msgstr "增加圖片"
+
+# @ js_composer
+#: composer/lib/shortcodes/posts_grid.php:52
+msgid "Enable custom teaser"
+msgstr "啟用自定圖文"
+
+# @ js_composer
+#: composer/lib/shortcodes/posts_grid.php:55
+msgid ""
+"Here you can customize teaser block design. It will be used instead of "
+"default settings in \"Posts Grid\" or \"Carousel\" content elements."
+msgstr "您可以自訂圖文區塊，它將會取代預設的矩陣排列與輪播方式。"
+
+# @ js_composer
+#: composer/lib/shortcodes/row.php:31
+msgid "Custom layout"
+msgstr "自定欄位"
+
+# @ js_composer
+#: composer/lib/shortcodes/row.php:32
+msgid "Drag row to reorder"
+msgstr "拖曳改變順序"
+
+# @ js_composer
+#: composer/lib/shortcodes/row.php:33
+msgid "Delete this row"
+msgstr "刪除區塊"
+
+# @ js_composer
+#: composer/lib/shortcodes/row.php:34
+msgid "Edit this row"
+msgstr "編輯區塊"
+
+# @ js_composer
+#: composer/lib/shortcodes/row.php:35
+msgid "Clone this row"
+msgstr "複製區塊"
+
+# @ js_composer
+#: composer/lib/shortcodes/teaser_grid.php:14
+#, php-format
+msgid "View all posts filed under %s"
+msgstr "查看%s下的所有文章"
+
+# @ js_composer
+#: composer/lib/shortcodes/teaser_grid.php:31
+#, php-format
+msgid "Feed for all posts filed under %s"
+msgstr "列出%s下的所有文章"
+
+# @ js_composer
+#: composer/lib/wpb_automatic_updater.php:16
+msgid "Error! Can't connect to filesystem"
+msgstr "發生錯誤！無法與系統連結！"
+
+# @ js_composer
+#: composer/lib/wpb_automatic_updater.php:42
+msgid "Error on unzipping package"
+msgstr "未解壓縮檔案發生錯誤"
+
+# @ js_composer
+#: composer/lib/wpb_automatic_updater.php:55
+msgid "Downloading package from envato market..."
+msgstr "從 envato 市集下載套件"
+
+# @ js_composer
+#: composer/lib/settings.php:63
+msgid "General Settings"
+msgstr "一般設定"
+
+# @ js_composer
+#: composer/lib/settings.php:67
+msgid "Design Options"
+msgstr "風格設定"
+
+# @ js_composer
+#: composer/lib/settings.php:72
+msgid "Product License"
+msgstr "序號註冊"
+
+# @ js_composer
+#: composer/lib/settings.php:34
+msgid "Main accent color"
+msgstr "主要色系"
+
+# @ js_composer
+#: composer/lib/settings.php:35
+msgid "Hover color"
+msgstr "滑鼠停留色系"
+
+# @ js_composer
+#: composer/lib/settings.php:36
+msgid "Call to action background color"
+msgstr "大按鈕背景色"
+
+# @ js_composer
+#: composer/lib/settings.php:38
+msgid "Google maps background color"
+msgstr "Google 地圖背景色"
+
+# @ js_composer
+#: composer/lib/settings.php:39
+msgid "Post slider caption background color"
+msgstr "文章圖說底色"
+
+# @ js_composer
+#: composer/lib/settings.php:40
+msgid "Progress bar background color"
+msgstr "進度條背景顏色"
+
+# @ js_composer
+#: composer/lib/settings.php:41
+msgid "Separator border color"
+msgstr "分隔線色係"
+
+# @ js_composer
+#: composer/lib/settings.php:42
+msgid "Tabs navigation background color"
+msgstr "頁籤背景色"
+
+# @ js_composer
+#: composer/lib/settings.php:43
+msgid "Active tab background color"
+msgstr "所在頁籤背景色"
+
+# @ js_composer
+#: composer/lib/settings.php:87 composer/lib/settings.php:93
+#: composer/lib/settings.php:706
+msgid "Visual Composer Settings"
+msgstr "功能設定"
+
+# @ js_composer
+#: composer/lib/settings.php:121 composer/lib/settings.php:123
+msgid "Content types"
+msgstr "使用內容"
+
+# @ js_composer
+#: composer/lib/settings.php:125
+msgid "User groups access rules"
+msgstr "使用者權限"
+
+# @ js_composer
+#: composer/lib/settings.php:126
+msgid "Disable responsive content elements"
+msgstr "關閉響應式區塊元素"
+
+# @ js_composer
+#: composer/lib/settings.php:133
+msgid "Use custom design options"
+msgstr "啟用風格設定"
+
+# @ js_composer
+#: composer/lib/settings.php:146
+msgid "Elements bottom margin"
+msgstr "所有元素下方邊距"
+
+# @ js_composer
+#: composer/lib/settings.php:150
+msgid "Grid gutter width"
+msgstr "欄位間距"
+
+# @ js_composer
+#: composer/lib/settings.php:154
+msgid "Mobile screen width"
+msgstr "行動裝置預設寬度"
+
+# @ js_composer
+#: composer/lib/settings.php:182
+msgid "Paste your CSS code"
+msgstr "請輸入自訂 CSS 程式碼"
+
+# @ js_composer
+#: composer/lib/settings.php:188
+msgid "Envato Username"
+msgstr "Envato 帳號"
+
+# @ js_composer
+#: composer/lib/settings.php:189
+msgid "Secret API Key"
+msgstr "認證金鑰"
+
+# @ js_composer
+#: composer/lib/settings.php:190
+msgid "Visual Composer License Key"
+msgstr "序號輸入"
+
+# @ js_composer
+#: composer/lib/settings.php:282 composer/lib/settings.php:283
+msgid "Are you sure you want to reset to defaults?"
+msgstr "確定要將所有設定恢復為預設值？"
+
+# @ js_composer
+#: composer/lib/settings.php:284
+msgid "Something went wrong! Please try again later."
+msgstr "發生錯誤！請稍候再試！"
+
+# @ js_composer
+#: composer/lib/settings.php:285
+msgid "License successfully activated. Thank you!"
+msgstr "序號啟用成功，謝謝您！"
+
+# @ js_composer
+#: composer/lib/settings.php:286
+msgid "Your license key is deactivated."
+msgstr "您的授權金鑰已停止"
+
+# @ js_composer
+#: composer/lib/settings.php:287
+msgid "Envato username and license key are required."
+msgstr "Enavto 的使用者帳號與授權金鑰為必填欄位！"
+
+# @ js_composer
+#: composer/lib/settings.php:288
+msgid "Invalid liense key. Please check information in your envato profile."
+msgstr "錯誤的授權金鑰，請至 envato 的個人頁面確認。"
+
+# @ js_composer
+#: composer/lib/settings.php:289
+msgid "Wrong data. Please check your information or ask support for help."
+msgstr "資料發生錯誤！"
+
+# @ js_composer
+#: composer/lib/settings.php:290
+msgid "License successfully activated. Thank you! (401)"
+msgstr "授權成功啟用，謝謝您！"
+
+# @ js_composer
+#: composer/lib/settings.php:291
+#, php-format
+msgid ""
+"Your license key is already activated on another website ({site}), you "
+"should deactivate it first or <a href=\"%s\" target=\"_blank\">obtain new "
+"license key</a>."
+msgstr ""
+"您的授權金鑰已於其它網站 ({site})中啟用，您應該將其關閉或<a href=\"%s\" "
+"target=\"_blank\">取得新金鑰</a>。"
+
+# @ js_composer
+#: composer/lib/settings.php:292 composer/lib/settings.php:827
+msgid "Activate license"
+msgstr "啟用序號"
+
+# @ js_composer
+#: composer/lib/settings.php:293 composer/lib/settings.php:827
+msgid "Deactivate license"
+msgstr "停止授權"
+
+# @ js_composer
+#: composer/lib/settings.php:308
+msgid "Show Visual Composer & default editor"
+msgstr "顯示輕鬆排版編輯器與預設編輯器"
+
+# @ js_composer
+#: composer/lib/settings.php:309
+msgid "Show only Visual Composer"
+msgstr "只顯示輕鬆排版編輯器"
+
+# @ js_composer
+#: composer/lib/settings.php:310
+msgid "Don't allow to use Visual Composer"
+msgstr "禁止使用輕鬆排版編輯器"
+
+# @ js_composer
+#: composer/lib/settings.php:330
+msgid "Visual Composer access"
+msgstr "排版介面"
+
+# @ js_composer
+#: composer/lib/settings.php:338
+msgid "Enabled shortcodes"
+msgstr "可使用功能"
+
+# @ js_composer
+#: composer/lib/settings.php:352
+msgid "Select All"
+msgstr "全選"
+
+# @ js_composer
+#: composer/lib/settings.php:352
+msgid "Select none"
+msgstr "全部取消"
+
+# @ js_composer
+#: composer/lib/settings.php:381 composer/lib/settings.php:402
+msgid ""
+"Select for which content types Visual Composer should be available during "
+"post creation/editing."
+msgstr "選擇在何種內容型態下起用輕鬆排版功能。"
+
+# @ js_composer
+#: composer/lib/settings.php:408
+msgid ""
+"If you want to add some custom CSS code to the plugin and don't want to "
+"modify any files, then it's a good place to enter your code at this field."
+msgstr "由此新增 CSS 程式碼可免去修改本外掛程式，以利日後更新。"
+
+# @ js_composer
+#: composer/lib/settings.php:418 config/map.php:698 config/map.php:910
+#: config/map.php:960 config/map.php:1508
+msgid "Disable"
+msgstr "關閉"
+
+# @ js_composer
+#: composer/lib/settings.php:420
+msgid ""
+"Check this checkbox to prevent content elements from \"stacking\" one on top "
+"other (on small media screens, eg. mobile)."
+msgstr ""
+"勾選此項目時，在智慧型手機或可視範圍較小之裝置上，不會依裝置寬度改變內容排版"
+"方式。"
+
+# @ js_composer
+#: composer/lib/settings.php:428 composer/lib/settings.php:443
+msgid "Empty value"
+msgstr "空的值"
+
+# @ js_composer
+#: composer/lib/settings.php:464
+msgid "Enable"
+msgstr "啟用"
+
+# @ js_composer
+#: composer/lib/settings.php:466
+msgid ""
+"Enable the use of custom design options for your site. When checked, custom "
+"css file will be used."
+msgstr "在勾選情況下，自訂 CSS 功能將被使用。"
+
+# @ js_composer
+#: composer/lib/settings.php:478
+msgid ""
+"To change default vertical spacing between content elements, enter new value "
+"here. Example: 20px"
+msgstr "單位為像素，請輸入數字加單位，譬如 25px 。"
+
+# @ js_composer
+#: composer/lib/settings.php:483
+msgid ""
+"To change default horizontal spacing between columns, enter new value in "
+"pixels here."
+msgstr "每個欄位的間距，單位為像素，請輸入數字即可 。"
+
+# @ js_composer
+#: composer/lib/settings.php:496
+msgid "Your Envato username."
+msgstr "您的 Envato 使用者帳號。"
+
+# @ js_composer
+#: composer/lib/settings.php:503
+#, php-format
+msgid ""
+"Please enter your CodeCanyon Visual Composer license key, you can find your "
+"key by following the instructions on <a href=\"%s\" target=\"_blank\">this "
+"page</a>. License key looks similar to this: bjg759fk-"
+"kvta-6584-94h6-75jg8vblatftq."
+msgstr ""
+"您可以在 <a href=\"%s\" target=\"_blank\">此頁</a> 找到相關序號，序號看起來"
+"像 bjg759fk-kvta-6584-94h6-75jg8vblatftq 。"
+
+# @ js_composer
+#: composer/lib/settings.php:509
+#, php-format
+msgid ""
+"You can find API key by visiting your Envato Account page, then clicking the "
+"My Settings tab. At the bottom of the page you'll find your account's API "
+"key. <a href='%s' target='_blank'>Need help?</a>"
+msgstr ""
+"您可以在 Envato 的個人資料頁面取得，點選 My Settings 頁籤，即可在頁面下方取得"
+"金鑰。 <a href='%s' target='_blank'>需要幫忙嗎？</a>"
+
+# @ js_composer
+#: composer/lib/settings.php:527
+msgid ""
+"Here you can tweak default Visual Composer content elements visual "
+"appearance. By default Visual Composer is using neutral light-grey theme. "
+"Changing \"Main accent color\" will affect all content elements if no "
+"specific \"content block\" related color is set."
+msgstr "提供輕鬆排版所建立網頁元素之風格、色系設定。"
+
+# @ js_composer
+#: composer/lib/settings.php:534
+#, php-format
+msgid ""
+"A valid license key qualifies you for support and enables automatic updates. "
+"<strong>A license key may only be used for one Visual Composer installation "
+"on one WordPress site at a time.</strong> If you previosly activated your "
+"license key on another site, then you should deactivate it first or <a href="
+"\"%s\" target=\"_blank\">obtain new license key</a>."
+msgstr ""
+"完成序號註冊可享有技術支援與版本自動更新之權利。一組序號只能使用在一套 "
+"wordpress 網站中，如果您需要在其它網站啟用，則必須先將原網站停用序號或是 <a "
+"href=\"%s\" target=\"_blank\">取得新序號</a>。"
+
+# @ js_composer
+#: composer/lib/settings.php:617
+msgid "Invalid Margin value."
+msgstr "錯誤的邊界值"
+
+# @ js_composer
+#: composer/lib/settings.php:623
+msgid "Invalid Gutter value."
+msgstr "錯誤的間隔值"
+
+# @ js_composer
+#: composer/lib/settings.php:629
+msgid "Invalid \"Responsive max\" value."
+msgstr "錯誤的值"
+
+# @ js_composer
+#: composer/lib/settings.php:669
+#, php-format
+msgid ""
+"Visual Composer: Your css class names settings are deprecated. <a href=\"%s"
+"\">Click here to resolve</a>."
+msgstr "您的類別名稱設定已不適用，<a href=\"%s\">解決方案</a>。"
+
+# @ js_composer
+#: composer/lib/settings.php:720
+msgid ""
+"<strong>Deprecated:</strong> To override class names that are applied to "
+"Visual Composer content elements you should use WordPress "
+"add_filter('vc_shortcodes_css_class') function. <a "
+"class='vc_show_example'>See Example</a>."
+msgstr ""
+"<strong>不適用：</strong> 您應使用 WordPress "
+"add_filter('vc_shortcodes_css_class') 函式來取代類別名稱<a "
+"class='vc_show_example'>範例</a>。"
+
+# @ default
+#: composer/lib/settings.php:728
+msgid ""
+"You have used element class names settings to replace row and column css "
+"classes."
+msgstr "您已使用 css 類別名稱來取代列或欄的類別名稱"
+
+# @ default
+#: composer/lib/settings.php:729
+msgid ""
+"Below is code snippet which you should add to your functions.php file in "
+"your theme, to replace row and column classes with custom classes saved by "
+"you earlier."
+msgstr "請將下方程式碼加入至您主題的 function.php 中，可協助您節省許多時間。"
+
+# @ js_composer
+#: composer/lib/settings.php:803
+msgid "Remove all saved"
+msgstr "移除所有已儲存項目"
+
+# @ js_composer
+#: composer/lib/settings.php:820
+msgid "Save Changes"
+msgstr "儲存變更"
+
+# @ js_composer
+#: composer/lib/settings.php:823
+msgid "Restore to defaults"
+msgstr "重設為預設值"
+
+# @ js_composer
+#: composer/lib/settings.php:957
+msgid ""
+"Something went wrong: js_composer_front_custom.css could not be created."
+msgstr "發生錯誤：js_composer_front_custom.css 無法建立。"
+
+# @ js_composer
+#: composer/lib/settings.php:959
+msgid "js_composer_front_custom.css could not be created. Connection error."
+msgstr "js_composer_front_custom.css 無法建立，連線發生錯誤。"
+
+# @ js_composer
+#: composer/lib/settings.php:961
+#, php-format
+msgid ""
+"js_composer_front_custom.css could not be created. Cannot write custom css "
+"to \"%s\"."
+msgstr "js_composer_front_custom.css 無法建立，無法寫入\"%s\"。"
+
+# @ js_composer
+#: composer/lib/settings.php:963
+msgid "js_composer_front_custom.css could not be created. Problem with access."
+msgstr "js_composer_front_custom.css 無法建立，存取權限發生問題。"
+
+# @ js_composer
+#: composer/lib/settings.php:993
+msgid "Something went wrong: custom.css could not be created."
+msgstr "發生錯誤：custom.css 無法建立。"
+
+# @ js_composer
+#: composer/lib/settings.php:995
+msgid "custom.css could not be created. Connection error."
+msgstr "custom.css 無法建立，連線發生錯誤。"
+
+# @ js_composer
+#: composer/lib/settings.php:999
+msgid "custom.css could not be created. Problem with access."
+msgstr "custom.css 無法建立，存取權限發生問題。"
+
+# @ default
+#: composer/lib/settings.php:1030
+msgid "You do not have sufficient permissions to update plugins for this site."
+msgstr "您沒有足夠的權限更新本站的外掛。"
+
+# @ js_composer
+#: composer/lib/settings.php:1031
+msgid "Update Visual Composer Plugin"
+msgstr "更新輕鬆排版拖、拉、酷！"
+
+# @ js_composer
+#: composer/lib/settings.php:1044 composer/lib/settings.php:1050
+msgid "This is required to enable file writing for js_composer"
+msgstr "此為必要資料"
+
+# @ js_composer
+#: composer/lib/shortcodes/posts_grid.php:147
+#: composer/shortcodes_templates/post_block/_item.php:19
+#: composer/shortcodes_templates/vc_posts_slider.php:151
+#: composer/shortcodes_templates/vc_teaser_grid.php:182
+#: composer/shortcodes_templates/vc_teaser_grid.php:203
+#: composer/shortcodes_templates/vc_teaser_grid.php:204
+#: composer/shortcodes_templates/vc_teaser_grid.php:222
+#, php-format
+msgid "Permalink to %s"
+msgstr "連結%s"
+
+# @ js_composer
+#: composer/shortcodes_templates/post_block/_item.php:19
+msgid "Read more..."
+msgstr "閱讀更多..."
+
+# @ js_composer
+#: composer/shortcodes_templates/vc_accordion_tab.php:12
+#: composer/shortcodes_templates/vc_tab.php:9
+msgid "Empty section. Edit page to add content here."
+msgstr "空的區塊，編輯頁面以增加內容。"
+
+# @ js_composer
+#: composer/shortcodes_templates/vc_button.php:10
+#: composer/shortcodes_templates/vc_button2.php:4
+#: composer/shortcodes_templates/vc_cta_button.php:9
+#: composer/shortcodes_templates/vc_cta_button2.php:22 config/map.php:1693
+#: config/map.php:1697 config/map.php:1762 config/map.php:1766
+#: config/map.php:1827 config/map.php:1829 config/map.php:1954
+#: config/map.php:1958
+msgid "Text on the button"
+msgstr "按鈕文字"
+
+# @ js_composer
+#: composer/shortcodes_templates/vc_item.php:9
+msgid "Item"
+msgstr "項目"
+
+# @ js_composer
+#: composer/shortcodes_templates/vc_posts_grid.php:129
+#: composer/shortcodes_templates/vc_teaser_grid.php:321
+msgid "All"
+msgstr "所有"
+
+# @ js_composer
+#: composer/shortcodes_templates/vc_posts_grid.php:157
+#: composer/shortcodes_templates/vc_posts_slider.php:191
+#: composer/shortcodes_templates/vc_teaser_grid.php:333
+msgid "Nothing found."
+msgstr "無資料"
+
+# @ js_composer
+#: composer/shortcodes_templates/vc_tabs.php:44
+msgid "Previous slide"
+msgstr "上一頁"
+
+# @ js_composer
+#: composer/shortcodes_templates/vc_tabs.php:44
+msgid "Next slide"
+msgstr "下一頁"
+
+# @ js_composer
+#: composer/shortcodes_templates/vc_teaser_grid.php:182
+#: composer/templates/teaser.html.php:48
+msgid "Read more"
+msgstr "閱讀更多"
+
+# @ js_composer
+#: composer/shortcodes_templates/vc_toggle.php:4
+msgid "Click to toggle"
+msgstr "點擊展開/收起"
+
+# @ js_composer
+#: composer/shortcodes_templates/vc_tweetmeme.php:9
+msgid "Tweet"
+msgstr "推特"
+
+# @ js_composer
+#: composer/shortcodes_templates/vc_twitter.php:19
+msgid "Follow us on twitter"
+msgstr "追縱我們的推特"
+
+# @ default
+#: composer/shortcodes_templates/vc_wp_archives.php:4 config/map.php:2941
+msgid "Archives"
+msgstr "彙整"
+
+# @ default
+#: composer/shortcodes_templates/vc_wp_meta.php:4 config/map.php:2576
+msgid "Meta"
+msgstr "功能"
+
+# @ default
+#: composer/shortcodes_templates/vc_wp_pages.php:4 config/map.php:2654
+msgid "Pages"
+msgstr "頁面"
+
+# @ default
+#: composer/shortcodes_templates/vc_wp_posts.php:4 config/map.php:2810
+msgid "Recent Posts"
+msgstr "最新文章"
+
+# @ default
+#: composer/shortcodes_templates/vc_wp_recentcomments.php:4
+#: config/map.php:2600
+msgid "Recent Comments"
+msgstr "最新評論"
+
+# @ js_composer
+#: composer/templates/teaser.html.php:11 composer/templates/teaser.html.php:27
+msgid "Link to"
+msgstr "連結至"
+
+# @ js_composer
+#: composer/templates/teaser.html.php:12 composer/templates/teaser.html.php:28
+msgid "On post"
+msgstr "在頁面中"
+
+# @ js_composer
+#: composer/templates/teaser.html.php:13 composer/templates/teaser.html.php:29
+msgid "Big image"
+msgstr "大圖"
+
+# @ js_composer
+#: composer/templates/teaser.html.php:21
+msgid "Featured"
+msgstr "特色"
+
+# @ js_composer
+#: config/map.php:13 config/map.php:2240
+msgid "Grey"
+msgstr "灰色"
+
+# @ js_composer
+#: config/map.php:14 config/map.php:2241
+msgid "Blue"
+msgstr "藍色"
+
+# @ js_composer
+#: config/map.php:15 config/map.php:2242
+msgid "Turquoise"
+msgstr "藍綠色"
+
+# @ js_composer
+#: config/map.php:16 config/map.php:2243
+msgid "Green"
+msgstr "綠色"
+
+# @ js_composer
+#: config/map.php:17 config/map.php:2244
+msgid "Orange"
+msgstr "橘色"
+
+# @ js_composer
+#: config/map.php:18 config/map.php:2245
+msgid "Red"
+msgstr "紅色"
+
+# @ js_composer
+#: config/map.php:19 config/map.php:2246
+msgid "Black"
+msgstr "黑色"
+
+# @ js_composer
+#: config/map.php:24
+msgid "Regular size"
+msgstr "正常"
+
+# @ js_composer
+#: config/map.php:25
+msgid "Large"
+msgstr "大"
+
+# @ js_composer
+#: config/map.php:26 config/map.php:473
+msgid "Small"
+msgstr "中"
+
+# @ js_composer
+#: config/map.php:27
+msgid "Mini"
+msgstr "小"
+
+# @ js_composer
+#: config/map.php:31
+msgid "Same window"
+msgstr "同一視窗"
+
+# @ js_composer
+#: config/map.php:32
+msgid "New window"
+msgstr "另開視窗"
+
+# @ js_composer
+#: config/map.php:37
+msgid "CSS Animation"
+msgstr "出現動畫"
+
+# @ js_composer
+#: config/map.php:41 config/map.php:2510 config/map.php:2521
+#: config/map.php:2532
+msgid "No"
+msgstr "無"
+
+# @ js_composer
+#: config/map.php:42
+msgid "Top to bottom"
+msgstr "由上方出現"
+
+# @ js_composer
+#: config/map.php:43
+msgid "Bottom to top"
+msgstr "由下方出現"
+
+# @ js_composer
+#: config/map.php:44
+msgid "Left to right"
+msgstr "由左方出現"
+
+# @ js_composer
+#: config/map.php:45
+msgid "Right to left"
+msgstr "由右方出現"
+
+# @ js_composer
+#: config/map.php:46
+msgid "Appear from center"
+msgstr "由中間出現"
+
+# @ js_composer
+#: config/map.php:48
+msgid ""
+"Select type of animation if you want this element to be animated when it "
+"enters into the browsers viewport. Note: Works only in modern browsers."
+msgstr "選擇內容出現方式"
+
+# @ js_composer
+#: config/map.php:52 config/map.php:126
+msgid "Row"
+msgstr "區塊"
+
+# @ js_composer
+#: composer/lib/automapper.php:198 config/map.php:57 config/map.php:180
+#: config/map.php:252 config/map.php:300 config/map.php:368 config/map.php:523
+#: config/map.php:570 config/map.php:673 config/map.php:765 config/map.php:897
+#: config/map.php:946 config/map.php:1015 config/map.php:1083
+#: config/map.php:1113 config/map.php:1357 config/map.php:1477
+#: config/map.php:1688 config/map.php:1750 config/map.php:1814
+#: config/map.php:1893 config/map.php:2018 config/map.php:2056
+#: config/map.php:2154 config/map.php:2213 config/map.php:2285
+#: config/map.php:2361 config/map.php:2404 config/map.php:2452
+#: config/map.php:2494
+msgid "Content"
+msgstr "內容"
+
+# @ js_composer
+#: config/map.php:58
+msgid "Place content elements inside the row"
+msgstr "放置元素之容器，可自訂分割欄位。"
+
+# @ wpb
+#: config/map.php:1935
+msgid "Custom Background Color"
+msgstr "背景顏色"
+
+# @ wpb
+#: config/map.php:62
+msgid "Font Color"
+msgstr "字體顏色"
+
+# @ wpb
+#: config/map.php:64
+msgid "Select font color"
+msgstr "選擇字體顏色"
+
+# @ wpb
+#: composer/lib/params/css_editor/css_editor.php:80
+msgid "Cover"
+msgstr "符合容器"
+
+# @ wpb
+#: composer/lib/params/css_editor/css_editor.php:81
+msgid "Contain"
+msgstr "完整大小"
+
+# @ wpb
+#: composer/lib/params/css_editor/css_editor.php:82
+msgid "No Repeat"
+msgstr "不重覆"
+
+# @ js_composer
+#: config/map.php:176
+msgid "Text Block"
+msgstr "文字"
+
+# @ js_composer
+#: config/map.php:181
+msgid "A block of text with WYSIWYG editor"
+msgstr "使用所見即所得編輯器插入文字、圖片、連結等內容。"
+
+# @ js_composer
+#: config/map.php:188
+msgid ""
+"<p>I am text block. Click edit button to change this text. Lorem ipsum dolor "
+"sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec "
+"ullamcorper mattis, pulvinar dapibus leo.</p>"
+msgstr "<p>請輸入文字</p>"
+
+# @ js_composer
+#: config/map.php:248
+msgid "Separator"
+msgstr "分隔線"
+
+# @ js_composer
+#: config/map.php:254
+msgid "Horizontal separator line"
+msgstr "水平分隔線。"
+
+# @ js_composer
+#: config/map.php:258 config/map.php:324 config/map.php:1715
+#: config/map.php:1778 config/map.php:1847 config/map.php:1970
+msgid "Color"
+msgstr "顏色"
+
+# @ js_composer
+#: config/map.php:262 config/map.php:328
+msgid "Separator color."
+msgstr "標題顏色"
+
+# @ wpb
+#: config/map.php:267 config/map.php:333
+msgid "Custom Border Color"
+msgstr "分隔線顏色"
+
+# @ wpb
+#: config/map.php:269 config/map.php:335
+msgid "Select border color for your element."
+msgstr "選擇分隔線顏色"
+
+# @ js_composer
+#: config/map.php:273 config/map.php:339 config/map.php:385
+#: config/map.php:1771
+msgid "Style"
+msgstr "類型"
+
+# @ js_composer
+#: config/map.php:276 config/map.php:342
+msgid "Separator style."
+msgstr "分隔線類型"
+
+# @ js_composer
+#: config/map.php:280 config/map.php:346 config/map.php:1921
+msgid "Element width"
+msgstr "分隔線寬度"
+
+# @ js_composer
+#: config/map.php:283 config/map.php:349
+msgid "Separator element width in percents."
+msgstr "單位為百分比"
+
+# @ js_composer
+#: config/map.php:297
+msgid "Separator with Text"
+msgstr "文字分隔線"
+
+# @ js_composer
+#: config/map.php:301
+msgid "Horizontal separator line with heading"
+msgstr "附有可輸入文字區塊的水平分隔線。"
+
+# @ js_composer
+#: config/map.php:309
+msgid "Separator title."
+msgstr "標題分隔線"
+
+# @ js_composer
+#: config/map.php:313
+msgid "Title position"
+msgstr "標題位置"
+
+# @ js_composer
+#: config/map.php:316 config/map.php:600
+msgid "Align center"
+msgstr "置中"
+
+# @ js_composer
+#: config/map.php:317 config/map.php:598 config/map.php:1873
+#: config/map.php:1997
+msgid "Align left"
+msgstr "置左"
+
+# @ js_composer
+#: config/map.php:318 config/map.php:599 config/map.php:1872
+#: config/map.php:1996
+msgid "Align right"
+msgstr "置右"
+
+# @ js_composer
+#: config/map.php:320
+msgid "Select title location."
+msgstr "選擇標題位置"
+
+# @ js_composer
+#: config/map.php:364
+msgid "Message Box"
+msgstr "提示標題"
+
+# @ js_composer
+#: config/map.php:369
+msgid "Notification box"
+msgstr "可置入提示區塊，如注意訊息、已完成訊息。"
+
+# @ js_composer
+#: config/map.php:373
+msgid "Message box type"
+msgstr "樣式"
+
+# @ js_composer
+#: config/map.php:376
+msgid "Informational"
+msgstr "通用"
+
+# @ js_composer
+#: config/map.php:377
+msgid "Warning"
+msgstr "警告"
+
+# @ js_composer
+#: config/map.php:378
+msgid "Success"
+msgstr "成功"
+
+# @ js_composer
+#: config/map.php:379
+msgid "Error"
+msgstr "錯誤"
+
+# @ js_composer
+#: config/map.php:381
+msgid "Select message type."
+msgstr "選擇樣式"
+
+# @ js_composer
+#: config/map.php:388
+msgid "Alert style."
+msgstr "選擇類型"
+
+# @ js_composer
+#: config/map.php:394
+msgid "Message text"
+msgstr "文字"
+
+# @ js_composer
+#: config/map.php:396
+msgid "<p>I am message box. Click edit button to change this text.</p>"
+msgstr "請輸入文字"
+
+# @ js_composer
+#: config/map.php:412
+msgid "Facebook Like"
+msgstr "Facebook 讚！"
+
+# @ js_composer
+#: config/map.php:415 config/map.php:439 config/map.php:463 config/map.php:500
+msgid "Social"
+msgstr "社群"
+
+# @ js_composer
+#: config/map.php:416
+msgid "Facebook like button"
+msgstr "Facebook 讚按鈕。"
+
+# @ js_composer
+#: config/map.php:420 config/map.php:444
+msgid "Button type"
+msgstr "樣式"
+
+# @ js_composer
+#: config/map.php:424 config/map.php:472
+msgid "Standard"
+msgstr "無計數"
+
+# @ js_composer
+#: config/map.php:425
+msgid "Button count"
+msgstr "右方計數"
+
+# @ js_composer
+#: config/map.php:426
+msgid "Box count"
+msgstr "上方計數"
+
+# @ js_composer
+#: config/map.php:428 config/map.php:452
+msgid "Select button type."
+msgstr "選擇按鈕樣式"
+
+# @ js_composer
+#: config/map.php:436
+msgid "Tweetmeme Button"
+msgstr "Twitter 分享"
+
+# @ js_composer
+#: config/map.php:440
+msgid "Share on twitter button"
+msgstr "分享至 Twitter 按鈕。"
+
+# @ js_composer
+#: config/map.php:448 config/map.php:509 config/map.php:824
+#: config/map.php:1416
+msgid "Horizontal"
+msgstr "水平"
+
+# @ js_composer
+#: config/map.php:449 config/map.php:510 config/map.php:825
+#: config/map.php:1416
+msgid "Vertical"
+msgstr "垂直"
+
+# @ js_composer
+#: config/map.php:450 config/map.php:487 config/map.php:1649
+msgid "None"
+msgstr "無計數"
+
+# @ js_composer
+#: config/map.php:460
+msgid "Google+ Button"
+msgstr "Google Plus 分享"
+
+# @ js_composer
+#: config/map.php:464
+msgid "Recommend on Google"
+msgstr "分享至 Google Plus 按鈕。"
+
+# @ js_composer
+#: config/map.php:468
+msgid "Button size"
+msgstr "按鈕尺寸"
+
+# @ js_composer
+#: config/map.php:474
+msgid "Medium"
+msgstr "大"
+
+# @ js_composer
+#: config/map.php:475
+msgid "Tall"
+msgstr "寬"
+
+# @ js_composer
+#: config/map.php:477
+msgid "Select button size."
+msgstr "選擇按鈕尺寸"
+
+# @ js_composer
+#: config/map.php:481
+msgid "Annotation"
+msgstr "按鈕提示"
+
+# @ js_composer
+#: config/map.php:485
+msgid "Inline"
+msgstr "同行"
+
+# @ js_composer
+#: config/map.php:486
+msgid "Bubble"
+msgstr "上方計數"
+
+# @ js_composer
+#: config/map.php:489
+msgid "Select type of annotation"
+msgstr "選擇說明類型"
+
+# @ js_composer
+#: config/map.php:497
+msgid "Pinterest"
+msgstr "Pinterest 分享"
+
+# @ js_composer
+#: config/map.php:501
+msgid "Pinterest button"
+msgstr "分享至 Pinterest 按鈕。"
+
+# @ js_composer
+#: config/map.php:505
+msgid "Button layout"
+msgstr "按鈕樣式"
+
+# @ js_composer
+#: config/map.php:511
+msgid "No count"
+msgstr "無計數"
+
+# @ js_composer
+#: config/map.php:512
+msgid "Select button layout."
+msgstr "選擇按鈕樣式"
+
+# @ js_composer
+#: config/map.php:520
+msgid "FAQ"
+msgstr "常見問題列表"
+
+# @ js_composer
+#: config/map.php:524
+msgid "Toggle element for Q&A block"
+msgstr "常見問題展開、收合選單功能。"
+
+# @ js_composer
+#: config/map.php:530 config/map.php:532
+msgid "Toggle title"
+msgstr "題目名稱"
+
+# @ js_composer
+#: config/map.php:533
+msgid "Toggle block title."
+msgstr "名稱"
+
+# @ js_composer
+#: config/map.php:539
+msgid "Toggle content"
+msgstr "內容"
+
+# @ js_composer
+#: config/map.php:541
+msgid "<p>Toggle content goes here, click edit button to change this text.</p>"
+msgstr "問題內容"
+
+# @ js_composer
+#: config/map.php:542
+msgid "Toggle block content."
+msgstr "內容"
+
+# @ js_composer
+#: config/map.php:546
+msgid "Default state"
+msgstr "初始狀態"
+
+# @ js_composer
+#: config/map.php:549
+msgid "Closed"
+msgstr "關閉"
+
+# @ js_composer
+#: config/map.php:550
+msgid "Open"
+msgstr "展開"
+
+# @ js_composer
+#: config/map.php:552
+msgid "Select \"Open\" if you want toggle to be open by default."
+msgstr "選單是否預設展開"
+
+# @ js_composer
+#: config/map.php:567
+msgid "Single Image"
+msgstr "插入單張圖片"
+
+# @ js_composer
+#: config/map.php:571
+msgid "Simple image with CSS animation"
+msgstr "插入單一一張圖片。"
+
+# @ js_composer
+#: config/map.php:575 config/map.php:678 config/map.php:770 config/map.php:902
+#: config/map.php:952 config/map.php:1020 config/map.php:1087
+#: config/map.php:1268 config/map.php:1362 config/map.php:1482
+#: config/map.php:1627 config/map.php:2023 config/map.php:2061
+#: config/map.php:2159 config/map.php:2218 config/map.php:2290
+#: config/map.php:2409 config/map.php:2457 config/map.php:2562
+#: config/map.php:2586 config/map.php:2610 config/map.php:2640
+#: config/map.php:2664 config/map.php:2714 config/map.php:2752
+#: config/map.php:2784 config/map.php:2820 config/map.php:2916
+#: config/map.php:2951 config/map.php:2984
+msgid "Widget title"
+msgstr "標題"
+
+# @ js_composer
+#: config/map.php:577 config/map.php:680 config/map.php:772 config/map.php:904
+#: config/map.php:954 config/map.php:1022 config/map.php:1089
+#: config/map.php:1270 config/map.php:1364 config/map.php:1484
+#: config/map.php:1629 config/map.php:2025 config/map.php:2063
+#: config/map.php:2161 config/map.php:2220 config/map.php:2292
+#: config/map.php:2411 config/map.php:2459
+msgid ""
+"Enter text which will be used as widget title. Leave blank if no title is "
+"needed."
+msgstr "輸入標題"
+
+# @ js_composer
+#: config/map.php:584
+msgid "Select image from media library."
+msgstr "選擇圖片"
+
+# @ js_composer
+#: config/map.php:589 config/map.php:714 config/map.php:783
+msgid "Image size"
+msgstr "圖片尺寸"
+
+# @ js_composer
+#: config/map.php:595
+msgid "Image alignment"
+msgstr "對齊方式"
+
+# @ js_composer
+#: config/map.php:602
+msgid "Select image alignment."
+msgstr "選擇圖片對齊方式"
+
+# @ js_composer
+#: config/map.php:606
+msgid "Image style"
+msgstr "圖片風格"
+
+# @ js_composer
+#: config/map.php:612
+msgid "Border color"
+msgstr "框線顏色"
+
+# @ js_composer
+#: config/map.php:620
+msgid "Border color."
+msgstr "選擇框線顏色"
+
+# @ js_composer
+#: config/map.php:625
+msgid "Link to large image?"
+msgstr "點擊展開大圖"
+
+# @ js_composer
+#: config/map.php:627
+msgid "If selected, image will be linked to the larger image."
+msgstr "點擊開啟大圖"
+
+# @ js_composer
+# @ js_composerp
+#: config/map.php:628 config/map.php:848 config/map.php:855 config/map.php:862
+#: config/map.php:869 config/map.php:876 config/map.php:1321
+#: config/map.php:1431 config/map.php:1438 config/map.php:1445
+#: config/map.php:1452 config/map.php:1459 config/map.php:1536
+#: config/map.php:2834
+msgid "Yes, please"
+msgstr "開啟"
+
+# @ js_composer
+#: config/map.php:632
+msgid "Image link"
+msgstr "圖片連結"
+
+# @ js_composer
+#: config/map.php:634
+msgid "Enter URL if you want this image to have a link."
+msgstr "請輸入點擊圖片後將開啟之連結網址"
+
+# @ js_composer
+#: config/map.php:643
+msgid "Link Target"
+msgstr "開啟方式"
+
+# @ js_composer
+#: config/map.php:670
+msgid "Image Gallery"
+msgstr "插入多張圖片"
+
+# @ js_composer
+#: config/map.php:674
+msgid "Responsive image gallery"
+msgstr "插入多張圖片並附有播放效果。"
+
+# @ js_composer
+#: config/map.php:684
+msgid "Gallery type"
+msgstr "輪播樣式"
+
+# @ js_composer
+#: config/map.php:687 config/map.php:1492
+msgid "Flex slider fade"
+msgstr "淡入淡出"
+
+# @ js_composer
+#: config/map.php:688 config/map.php:1493
+msgid "Flex slider slide"
+msgstr "左右滑動"
+
+# @ js_composer
+#: config/map.php:689 config/map.php:1494
+msgid "Nivo slider"
+msgstr "左右滑動二"
+
+# @ js_composer
+#: config/map.php:690
+msgid "Image grid"
+msgstr "依序排列"
+
+# @ js_composer
+#: config/map.php:692
+msgid "Select gallery type."
+msgstr "選擇輪播樣式"
+
+# @ js_composer
+#: config/map.php:696 config/map.php:958 config/map.php:1506
+msgid "Auto rotate slides"
+msgstr "自動播放"
+
+# @ js_composer
+#: config/map.php:699 config/map.php:962 config/map.php:1509
+msgid "Auto rotate slides each X seconds."
+msgstr "設定每幾秒自動切換"
+
+# @ js_composer
+#: config/map.php:707 config/map.php:776
+msgid "Images"
+msgstr "圖片"
+
+# @ js_composer
+#: config/map.php:710 config/map.php:779
+msgid "Select images from media library."
+msgstr "選擇圖片"
+
+# @ js_composer
+#: config/map.php:720 config/map.php:789
+msgid "On click"
+msgstr "點擊事件"
+
+# @ js_composer
+#: config/map.php:723 config/map.php:792
+msgid "Open prettyPhoto"
+msgstr "燈箱效果"
+
+# @ js_composer
+#: config/map.php:724 config/map.php:793
+msgid "Do nothing"
+msgstr "無"
+
+# @ js_composer
+#: config/map.php:725 config/map.php:794 config/map.php:1549
+msgid "Open custom link"
+msgstr "開啟連結"
+
+# @ js_composer
+#: config/map.php:727
+msgid "Define action for onclick event if needed."
+msgstr "定義滑鼠點擊事件"
+
+# @ js_composer
+#: config/map.php:731 config/map.php:800 config/map.php:1556
+msgid "Custom links"
+msgstr "開啟連結"
+
+# @ js_composer
+#: config/map.php:1559
+msgid "Enter links for each slide here. Divide links with linebreaks (Enter)."
+msgstr "針對每張圖片設定連結，利用 Enter 換行進行設定"
+
+# @ js_composer
+#: config/map.php:741 config/map.php:810
+msgid "Custom link target"
+msgstr "開啟方式"
+
+# @ js_composer
+#: config/map.php:743 config/map.php:812
+msgid "Select where to open  custom links."
+msgstr "選擇連結開啟目標"
+
+# @ js_composer
+#: config/map.php:762
+msgid "Image Carousel"
+msgstr "插入輪播圖片"
+
+# @ js_composer
+#: config/map.php:766
+msgid "Animated carousel with images"
+msgstr "插入多張圖片增加多張輪播效果。"
+
+# @ js_composer
+#: config/map.php:796
+msgid "What to do when slide is clicked?"
+msgstr "選擇點擊事件"
+
+# @ js_composer
+#: config/map.php:821 config/map.php:1414
+msgid "Slider mode"
+msgstr "切換模式"
+
+# @ js_composer
+#: config/map.php:827 config/map.php:1417
+msgid ""
+"Slides will be positioned horizontally (for horizontal swipes) or vertically "
+"(for vertical swipes)"
+msgstr "選擇垂直或水平播放"
+
+# @ js_composer
+#: config/map.php:831 config/map.php:1407
+msgid "Slider speed"
+msgstr "播放速度"
+
+# @ js_composer
+#: config/map.php:834 config/map.php:1410
+msgid "Duration of animation between slides (in ms)"
+msgstr "每張播放間隔，單位為毫秒，1秒＝1000毫秒。"
+
+# @ js_composer
+#: config/map.php:838 config/map.php:1421
+msgid "Slides per view"
+msgstr "可見圖片張數"
+
+# @ js_composer
+#: config/map.php:845 config/map.php:1428
+msgid "Slider autoplay"
+msgstr "自動播放"
+
+# @ js_composer
+#: config/map.php:847 config/map.php:1430
+msgid "Enables autoplay mode."
+msgstr "勾選啟用自動播放功能"
+
+# @ js_composer
+#: config/map.php:852 config/map.php:1435
+msgid "Hide pagination control"
+msgstr "隱藏導覽功能"
+
+# @ js_composer
+#: config/map.php:854
+msgid "If YES pagination control will be removed."
+msgstr "勾選移除導覽功能"
+
+# @ js_composer
+#: config/map.php:859 config/map.php:1442
+msgid "Hide prev/next buttons"
+msgstr "隱藏上下張箭頭"
+
+# @ js_composer
+#: config/map.php:861
+msgid "If \"YES\" prev/next control will be removed."
+msgstr "勾選隱藏上下張箭頭"
+
+# @ js_composer
+#: config/map.php:866 config/map.php:1449
+msgid "Partial view"
+msgstr "局部顯示"
+
+# @ js_composer
+#: config/map.php:868
+msgid "If \"YES\" part of the next slide will be visible on the right side."
+msgstr "勾選時下一張圖片將局部顯示"
+
+# @ js_composer
+#: config/map.php:873 config/map.php:1456
+msgid "Slider loop"
+msgstr "循環播放"
+
+# @ js_composer
+#: config/map.php:875 config/map.php:1458
+msgid "Enables loop mode."
+msgstr "勾選啟用循環播放"
+
+# @ js_composer
+#: config/map.php:892
+msgid "Tabs"
+msgstr "頁籤"
+
+# @ js_composer
+#: config/map.php:898
+msgid "Tabbed content"
+msgstr "可切換式水平頁籤。"
+
+# @ js_composer
+#: config/map.php:908
+msgid "Auto rotate tabs"
+msgstr "自動播放頁籤"
+
+# @ js_composer
+#: config/map.php:912
+msgid "Auto rotate tabs each X seconds."
+msgstr "設定自動播放秒數"
+
+# @ js_composer
+#: config/map.php:929
+msgid "Tab 1"
+msgstr "頁籤一"
+
+# @ js_composer
+#: config/map.php:930
+msgid "Tab 2"
+msgstr "頁籤二"
+
+# @ js_composer
+#: config/map.php:940
+msgid "Tour Section"
+msgstr "垂直頁籤"
+
+# @ js_composer
+#: config/map.php:948
+msgid "Tabbed tour section"
+msgstr "可切換式垂直頁籤。"
+
+# @ js_composer
+#: config/map.php:979
+msgid "Slide 1"
+msgstr "頁籤一"
+
+# @ js_composer
+#: config/map.php:980
+msgid "Slide 2"
+msgstr "頁籤二"
+
+# @ js_composer
+#: config/map.php:996
+msgid "Tab title."
+msgstr "頁籤標題"
+
+# @ js_composer
+#: config/map.php:1000
+msgid "Tab ID"
+msgstr "頁籤 ID"
+
+# @ js_composer
+#: config/map.php:1010
+msgid "Accordion"
+msgstr "收合選單"
+
+# @ js_composer
+#: config/map.php:1016
+msgid "jQuery UI accordion"
+msgstr "連動式展開、收合選單。"
+
+# @ js_composer
+#: config/map.php:1026
+msgid "Active tab"
+msgstr "預設開啟項目"
+
+# @ js_composer
+#: config/map.php:1028
+msgid ""
+"Enter tab number to be active on load or enter false to collapse all tabs."
+msgstr "輸入數字指定展開頁籤"
+
+# @ js_composer
+#: config/map.php:1032
+msgid "Allow collapsible all"
+msgstr "全部展開"
+
+# @ js_composer
+#: config/map.php:1034
+msgid "Select checkbox to allow all sections to be collapsible."
+msgstr "勾選展開所有項目"
+
+# @ js_composer
+#: config/map.php:1035
+msgid "Allow"
+msgstr "啟用"
+
+# @ js_composer
+#: config/map.php:1049
+msgid "Add accordion section"
+msgstr "新增項目"
+
+# @ js_composer
+#: config/map.php:1053
+msgid "Section 1"
+msgstr "項目一"
+
+# @ js_composer
+#: config/map.php:1054
+msgid "Section 2"
+msgstr "項目二"
+
+# @ js_composer
+#: config/map.php:1059
+msgid "Accordion Section"
+msgstr "收合選單"
+
+# @ js_composer
+#: config/map.php:1069
+msgid "Accordion section title."
+msgstr "收合選單標題"
+
+# @ js_composer
+#: config/map.php:1079
+msgid "Teaser (posts) Grid"
+msgstr "圖文區塊"
+
+# @ js_composer
+#: config/map.php:1093 config/map.php:1284
+msgid "Columns count"
+msgstr "分欄數"
+
+# @ js_composer
+#: config/map.php:1097 config/map.php:1289
+msgid "Select columns count."
+msgstr "選擇分割欄位數目"
+
+# @ js_composer
+#: config/map.php:1103 config/map.php:1515
+msgid "Select post types to populate posts from."
+msgstr "選擇文章來源。"
+
+# @ js_composer
+#: config/map.php:1107
+msgid "Teasers count"
+msgstr "篇數"
+
+# @ js_composer
+#: config/map.php:1109
+msgid "How many teasers to show? Enter number or word \"All\"."
+msgstr "輸入文章數目"
+
+# @ js_composer
+#: config/map.php:1116 config/map.php:1523
+msgid "Teaser (Excerpt)"
+msgstr "摘要"
+
+# @ js_composer
+#: config/map.php:1117
+msgid "Full Content"
+msgstr "完整內文"
+
+# @ js_composer
+#: config/map.php:1119 config/map.php:1165 config/map.php:1179
+#: config/map.php:1332
+msgid "Teaser layout template."
+msgstr "選擇版面樣式"
+
+# @ js_composer
+#: config/map.php:1123
+msgid "Layout"
+msgstr "版面"
+
+# @ js_composer
+#: config/map.php:1126
+msgid "Title + Thumbnail + Text"
+msgstr "標題＋縮圖＋內文"
+
+# @ js_composer
+#: config/map.php:1127
+msgid "Thumbnail + Title + Text"
+msgstr "縮圖＋標題＋內文"
+
+# @ js_composer
+#: config/map.php:1128
+msgid "Thumbnail + Text"
+msgstr "縮圖＋內文"
+
+# @ js_composer
+#: config/map.php:1129
+msgid "Thumbnail + Title"
+msgstr "縮圖＋標題"
+
+# @ js_composer
+#: config/map.php:1130
+msgid "Thumbnail only"
+msgstr "僅縮圖"
+
+# @ js_composer
+#: config/map.php:1131
+msgid "Title + Text"
+msgstr "標題＋內文"
+
+# @ js_composer
+#: config/map.php:1132
+msgid "Teaser layout."
+msgstr "圖文版面"
+
+# @ js_composer
+#: config/map.php:1140 config/map.php:1258 config/map.php:1548
+msgid "Link to bigger image"
+msgstr "連結至特色圖片"
+
+# @ js_composer
+#: config/map.php:1141
+msgid "Thumbnail to bigger image, title to post"
+msgstr "點擊縮圖展開大圖、點擊標題連結文章"
+
+# @ js_composer
+#: config/map.php:1144 config/map.php:1552
+msgid "Link type."
+msgstr "連結類型"
+
+# @ js_composer
+#: config/map.php:1148 config/map.php:1309 config/map.php:1394
+msgid "Link target"
+msgstr "開啟連結"
+
+# @ js_composer
+#: config/map.php:1158
+msgid "Teaser grid layout"
+msgstr "圖文以網格版面"
+
+# @ js_composer
+#: config/map.php:1161
+msgid "Grid"
+msgstr "網格排列"
+
+# @ js_composer
+#: config/map.php:1162
+msgid "Grid with filter"
+msgstr "有分類功能的網格排列"
+
+# @ js_composer
+# @ vc_extend
+#: config/map.php:1163 config/map.php:1353
+msgid "Carousel"
+msgstr "文章多篇輪播"
+
+# @ js_composer
+#: config/map.php:1169 config/map.php:1326
+msgid "Layout mode"
+msgstr "版面設定"
+
+# @ js_composer
+#: config/map.php:1172 config/map.php:1329
+msgid "Fit rows"
+msgstr "齊行"
+
+# @ js_composer
+#: config/map.php:1173 config/map.php:1330
+msgid "Masonry"
+msgstr "高低差"
+
+# @ js_composer
+#: config/map.php:1191
+msgid "Select taxonomies from."
+msgstr "選擇已建立類別"
+
+# @ js_composer
+#: config/map.php:1195 config/map.php:1336 config/map.php:1401
+#: config/map.php:1563
+msgid "Thumbnail size"
+msgstr "圖片尺寸"
+
+# @ js_composer
+#: config/map.php:1201 config/map.php:1569
+msgid "Post/Page IDs"
+msgstr "文章/頁面 ID"
+
+# @ js_composer
+#: config/map.php:1203
+msgid ""
+"Fill this field with page/posts IDs separated by commas (,) to retrieve only "
+"them. Use this in conjunction with \"Post types\" field."
+msgstr "使用 「,」分隔多篇文章與頁面的ID。"
+
+# @ js_composer
+#: config/map.php:1207
+msgid "Exclude Post/Page IDs"
+msgstr "排除文章/頁面 ID"
+
+# @ js_composer
+#: config/map.php:1209
+msgid ""
+"Fill this field with page/posts IDs separated by commas (,) to exclude them "
+"from query."
+msgstr "使用 「,」分隔多篇文章與頁面的 ID 以排除內容。"
+
+# @ js_composer
+#: config/map.php:1219 config/map.php:1581 config/map.php:1598
+msgid "Order by"
+msgstr "排序條件"
+
+# @ js_composer
+#: config/map.php:1224 config/map.php:1586
+msgid "ID"
+msgstr "ID"
+
+# @ js_composer
+#: config/map.php:1232 config/map.php:1594
+#, php-format
+msgid "Select how to sort retrieved posts. More at %s."
+msgstr "選擇文章排序條件。了解更多-->%s."
+
+# @ js_composer
+#: config/map.php:1236
+msgid "Order way"
+msgstr "排序方式"
+
+# @ js_composer
+#: config/map.php:1242 config/map.php:1604
+#, php-format
+msgid "Designates the ascending or descending order. More at %s."
+msgstr "選擇排序邏輯。了解更多--->%s."
+
+# @ js_composer
+#: config/map.php:1261
+msgid "Posts Grid"
+msgstr "文章列表"
+
+# @ js_composer
+#: config/map.php:1264
+msgid "Posts in grid view"
+msgstr "以陣列方式排序文章清單。"
+
+# @ js_composer
+#: config/map.php:1274
+msgid "Grids content"
+msgstr "內容來源"
+
+# @ js_composer
+#: config/map.php:1280 config/map.php:1374
+msgid "Create WordPress loop, to populate content from your site."
+msgstr "建立文章列表"
+
+# @ js_composer
+#: config/map.php:1293 config/map.php:1378
+msgid "Teaser layout"
+msgstr "文章資訊"
+
+# @ js_composer
+#: config/map.php:1295 config/map.php:1380
+msgid ""
+"Control teasers look. Enable blocks and place them in desired order. Note: "
+"This setting can be overrriden on post to post basis."
+msgstr "設定文章顯示相關欄位"
+
+# @ js_composer
+#: config/map.php:1298 config/map.php:1383
+msgid "Thumbnail"
+msgstr "圖片"
+
+# @ js_composer
+#: config/map.php:1301 config/map.php:1386
+msgid "Teaser/Excerpt"
+msgstr "顯示摘要"
+
+# @ js_composer
+#: config/map.php:1302 config/map.php:1387
+msgid "Full content"
+msgstr "顯示全文"
+
+# @ js_composer
+#: config/map.php:1304 config/map.php:1389
+msgid "Read more link"
+msgstr "閱讀更多連結"
+
+# @ js_composer
+#: config/map.php:1319
+msgid "Show filter"
+msgstr "顯示分類"
+
+# @ js_composer
+#: config/map.php:1322
+msgid "Select to add animated category filter to your posts grid."
+msgstr "勾選顯示文章分類"
+
+# @ js_composer
+#: config/map.php:1358
+msgid "Animated carousel with posts"
+msgstr "插入文章列表並以多篇輪播方式呈現。"
+
+# @ js_composer
+#: config/map.php:1368
+msgid "Carousel content"
+msgstr "內容"
+
+# @ js_composer
+#: config/map.php:1444
+msgid "If \"YES\" prev/next control will be removed"
+msgstr "如果勾選\"YES\"，上下篇導覽將被移除。"
+
+# @ js_composer
+#: config/map.php:1474
+msgid "Posts Slider"
+msgstr "文章單篇輪播"
+
+# @ js_composer
+#: config/map.php:1478
+msgid "Slider with WP Posts"
+msgstr "插入文章列表並以單篇輪播方式呈現。"
+
+# @ js_composer
+#: config/map.php:1488
+msgid "Slider type"
+msgstr "輪播類型"
+
+# @ js_composer
+#: config/map.php:1496
+msgid "Select slider type."
+msgstr "選擇輪播類型"
+
+# @ js_composer
+#: config/map.php:1500
+msgid "Slides count"
+msgstr "輪播張數"
+
+# @ js_composer
+#: config/map.php:1502
+msgid "How many slides to show? Enter number or word \"All\"."
+msgstr "輸入數字決定廣告張數，或輸入「All」 顯示全部。"
+
+# @ js_composer
+#: composer/lib/automapper.php:230 config/map.php:1519
+msgid "Description"
+msgstr "描述"
+
+# @ js_composer
+#: config/map.php:1522
+msgid "No description"
+msgstr "無"
+
+# @ js_composer
+#: config/map.php:1525
+msgid "Some sliders support description text, what content use for it?"
+msgstr "廣告圖說文字來源"
+
+# @ js_composer
+#: config/map.php:1533
+msgid "Output post title?"
+msgstr "是否輸出標題？"
+
+# @ js_composer
+#: config/map.php:1535
+msgid "If selected, title will be printed before the teaser text."
+msgstr "在勾選狀況下，標題會顯示於圖文之前"
+
+# @ js_composer
+#: config/map.php:1571
+msgid ""
+"Fill this field with page/posts IDs separated by commas (,), to retrieve "
+"only them. Use this in conjunction with \"Post types\" field."
+msgstr "使用 「,」分隔多篇文章與頁面的ID。"
+
+# @ js_composer
+#: config/map.php:1618
+msgid "Widgetised Sidebar"
+msgstr "側欄選單"
+
+# @ js_composer
+#: config/map.php:1622 config/map.php:2112 config/map.php:2133
+msgid "Structure"
+msgstr "結構"
+
+# @ js_composer
+#: config/map.php:1623
+msgid "Place widgetised sidebar"
+msgstr "插入 Wordpress 小工具。"
+
+# @ js_composer
+#: config/map.php:1633
+msgid "Sidebar"
+msgstr "側欄選單"
+
+# @ js_composer
+#: config/map.php:1635
+msgid "Select which widget area output."
+msgstr "選擇顯示側欄選單"
+
+# @ js_composer
+#: config/map.php:1650
+msgid "Address book icon"
+msgstr "電話簿"
+
+# @ js_composer
+#: config/map.php:1651
+msgid "Alarm clock icon"
+msgstr "鬧鐘"
+
+# @ js_composer
+#: config/map.php:1652
+msgid "Anchor icon"
+msgstr "錨"
+
+# @ js_composer
+#: config/map.php:1653
+msgid "Application Image icon"
+msgstr "應用程式"
+
+# @ js_composer
+#: config/map.php:1654
+msgid "Arrow icon"
+msgstr "箭頭"
+
+# @ js_composer
+#: config/map.php:1655
+msgid "Asterisk icon"
+msgstr "星號"
+
+# @ js_composer
+#: config/map.php:1656
+msgid "Hammer icon"
+msgstr "槌子"
+
+# @ js_composer
+#: config/map.php:1657
+msgid "Balloon icon"
+msgstr "對話框"
+
+# @ js_composer
+#: config/map.php:1658
+msgid "Balloon Buzz icon"
+msgstr "Google Buzz"
+
+# @ js_composer
+#: config/map.php:1659
+msgid "Balloon Facebook icon"
+msgstr "Facebook 對話框"
+
+# @ js_composer
+#: config/map.php:1660
+msgid "Balloon Twitter icon"
+msgstr "推特對話框"
+
+# @ js_composer
+#: config/map.php:1661
+msgid "Battery icon"
+msgstr "電池"
+
+# @ js_composer
+#: config/map.php:1662
+msgid "Binocular icon"
+msgstr "望遠鏡"
+
+# @ js_composer
+#: config/map.php:1663
+msgid "Document Excel icon"
+msgstr "Excel 文件"
+
+# @ js_composer
+#: config/map.php:1664
+msgid "Document Image icon"
+msgstr "文件圖片"
+
+# @ js_composer
+#: config/map.php:1665
+msgid "Document Music icon"
+msgstr "音樂"
+
+# @ js_composer
+#: config/map.php:1666
+msgid "Document Office icon"
+msgstr "微軟 Office"
+
+# @ js_composer
+#: config/map.php:1667
+msgid "Document PDF icon"
+msgstr "PDF 文件"
+
+# @ js_composer
+#: config/map.php:1668
+msgid "Document Powerpoint icon"
+msgstr "Powerpoint 文件"
+
+# @ js_composer
+#: config/map.php:1669
+msgid "Document Word icon"
+msgstr "Word 文件"
+
+# @ js_composer
+#: config/map.php:1670
+msgid "Bookmark icon"
+msgstr "書籤"
+
+# @ js_composer
+#: config/map.php:1671
+msgid "Camcorder icon"
+msgstr "攝影機"
+
+# @ js_composer
+#: config/map.php:1672
+msgid "Camera icon"
+msgstr "相機"
+
+# @ js_composer
+#: config/map.php:1673
+msgid "Chart icon"
+msgstr "聊天"
+
+# @ js_composer
+#: config/map.php:1674
+msgid "Chart pie icon"
+msgstr "圓餅圖"
+
+# @ js_composer
+#: config/map.php:1675
+msgid "Clock icon"
+msgstr "時鐘"
+
+# @ js_composer
+#: config/map.php:1676
+msgid "Fire icon"
+msgstr "火"
+
+# @ js_composer
+#: config/map.php:1677
+msgid "Heart icon"
+msgstr "愛心"
+
+# @ js_composer
+#: config/map.php:1678
+msgid "Mail icon"
+msgstr "郵件"
+
+# @ js_composer
+#: config/map.php:1679
+msgid "Play icon"
+msgstr "播放"
+
+# @ js_composer
+#: config/map.php:1680
+msgid "Shield icon"
+msgstr "盾牌"
+
+# @ js_composer
+#: config/map.php:1681
+msgid "Video icon"
+msgstr "影片"
+
+# @ js_composer
+#: config/map.php:1685 config/map.php:1746
+msgid "Button"
+msgstr "按鈕"
+
+# @ js_composer
+#: config/map.php:1689 config/map.php:1752
+msgid "Eye catching button"
+msgstr "插入點擊按鈕。"
+
+# @ js_composer
+#: config/map.php:1698 config/map.php:1767 config/map.php:1830
+#: config/map.php:1959
+msgid "Text on the button."
+msgstr "請輸入按鈕要顯示的文字"
+
+# @ js_composer
+#: config/map.php:1702 config/map.php:1756 config/map.php:1834
+#: config/map.php:1948
+msgid "URL (Link)"
+msgstr "按鈕連結"
+
+# @ js_composer
+#: config/map.php:1704 config/map.php:1758 config/map.php:1836
+#: config/map.php:1950
+msgid "Button link."
+msgstr ""
+"請輸入網址 或  <a href='#' id='insert-media-button' class='button insert-"
+"media add_media' data-editor='content' target='_blank'>選擇檔案</a>"
+
+# @ js_composer
+#: config/map.php:1708 config/map.php:1840
+msgid "Target"
+msgstr "目標"
+
+# @ js_composer
+#: config/map.php:1718 config/map.php:1781 config/map.php:1850
+#: config/map.php:1973
+msgid "Button color."
+msgstr "按鈕的顏色"
+
+# @ js_composer
+#: config/map.php:1723 config/map.php:1855
+msgid "Icon"
+msgstr "圖標"
+
+# @ js_composer
+#: config/map.php:1726 config/map.php:1858
+msgid "Button icon."
+msgstr "按鈕圖示"
+
+# @ js_composer
+#: config/map.php:1730 config/map.php:1793 config/map.php:1862
+#: config/map.php:1985
+msgid "Size"
+msgstr "尺寸"
+
+# @ js_composer
+#: config/map.php:1733 config/map.php:1797 config/map.php:1865
+#: config/map.php:1989
+msgid "Button size."
+msgstr "按鈕大小"
+
+# @ js_composer
+#: config/map.php:1751 config/map.php:1893
+msgid "New elements"
+msgstr "新元素"
+
+# @ js_composer
+#: config/map.php:1774 config/map.php:1966
+msgid "Button style."
+msgstr "按鈕樣式"
+
+# @ js_composer
+#: config/map.php:1811 config/map.php:1890
+msgid "Call to Action Button"
+msgstr "大按鈕"
+
+# @ js_composer
+#: config/map.php:1815 config/map.php:1894
+msgid "Catch visitors attention with CTA block"
+msgstr "行動訴求按鈕。"
+
+# @ js_composer
+#: config/map.php:1822
+msgid "Click edit button to change this text."
+msgstr "文字說明"
+
+# @ js_composer
+#: config/map.php:1869 config/map.php:1993
+msgid "Button position"
+msgstr "按鈕位置"
+
+# @ js_composer
+#: config/map.php:1874 config/map.php:1998
+msgid "Align bottom"
+msgstr "置底"
+
+# @ js_composer
+#: config/map.php:1876 config/map.php:2000
+msgid "Select button alignment."
+msgstr "選擇按鈕位置"
+
+# @ js_composer
+#: config/map.php:1898
+msgid "Heading first line"
+msgstr "標題"
+
+# @ js_composer
+#: config/map.php:1901
+msgid "Hey! I am first heading line feel free to change me"
+msgstr "請輸入標題"
+
+# @ js_composer
+#: config/map.php:1902
+msgid "Text for the first heading line."
+msgstr "標題文字"
+
+# @ js_composer
+#: config/map.php:1906
+msgid "Heading second line"
+msgstr "次標題"
+
+# @ js_composer
+#: config/map.php:1910
+msgid "Optional text for the second heading line."
+msgstr "次標題文字(選填)"
+
+# @ js_composer
+#: config/map.php:1914
+msgid "CTA style"
+msgstr "樣式"
+
+# @ js_composer
+#: config/map.php:1917
+msgid "Call to action style."
+msgstr "大按鈕"
+
+# @ js_composer
+#: config/map.php:1924
+msgid "Call to action element width in percents."
+msgstr "元素寬度，單位為百分比"
+
+# @ js_composer
+#: config/map.php:1928
+msgid "Text align"
+msgstr "對齊方式"
+
+# @ js_composer
+#: config/map.php:1931
+msgid "Text align in call to action block."
+msgstr "文字對齊"
+
+# @ wpb
+#: config/map.php:1937
+msgid "Select background color for your element."
+msgstr "選擇背景顏色"
+
+# @ js_composer
+#: config/map.php:1942
+msgid "Promotional text"
+msgstr "推銷文字"
+
+# @ js_composer
+#: config/map.php:1944
+msgid ""
+"<p>I am promo text. Click edit button to change this text. Lorem ipsum dolor "
+"sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec "
+"ullamcorper mattis, pulvinar dapibus leo.</p>"
+msgstr "請輸入文字"
+
+# @ js_composer
+#: config/map.php:1963
+msgid "Button style"
+msgstr "按鈕樣式"
+
+# @ js_composer
+#: config/map.php:2015
+msgid "Video Player"
+msgstr "影片"
+
+# @ js_composer
+#: config/map.php:2019
+msgid "Embed YouTube/Vimeo player"
+msgstr "插入 YouTube 或 Vimeo 影片。"
+
+# @ js_composer
+#: config/map.php:2029
+msgid "Video link"
+msgstr "影片連結"
+
+# @ js_composer
+#: config/map.php:2032
+#, php-format
+msgid "Link to the video. More about supported formats at %s."
+msgstr "請輸入 youtube 網址。了解更多 %s"
+
+# @ js_composer
+#: config/map.php:2053
+msgid "Google Maps"
+msgstr "Google 地圖"
+
+# @ js_composer
+#: config/map.php:2057
+msgid "Map block"
+msgstr "插入地圖區塊。"
+
+# @ js_composer
+#: config/map.php:2067
+msgid "Map embed iframe"
+msgstr "嵌入 iframe 地圖"
+
+# @ js_composer
+#: config/map.php:2069
+#, php-format
+msgid ""
+"Visit %s to create your map. 1) Find location 2) Click \"Share\" and make "
+"sure map is public on the web 3) Click folder icon to reveal \"Embed on my "
+"site\" link 4) Copy iframe code and paste it here."
+msgstr ""
+"造訪  %s 建立地圖。<br/>1.尋找地點<br/>2.選擇分享，並確認地圖權限為公開<br/"
+">3.選擇「嵌入到我的網站」連結<br/>4.複製 iframe 程式碼並貼於此處<br/>"
+
+# @ js_composer
+#: config/map.php:2073
+msgid "Map height"
+msgstr "地圖高度"
+
+# @ js_composer
+#: config/map.php:2075
+msgid ""
+"Enter map height in pixels. Example: 200 or leave it empty to make map "
+"responsive."
+msgstr "輸入地圖高度，單位為像素。譬如輸入 200 或留白此欄位保持自動高度。"
+
+# @ js_composer
+#: config/map.php:2109 config/map.php:2119
+msgid "Raw HTML"
+msgstr "插入 HTML"
+
+# @ js_composer
+#: config/map.php:2114
+msgid "Output raw html code on your page"
+msgstr "在頁面中插入自訂 HTML 程式碼。"
+
+# @ js_composer
+#: config/map.php:2122
+msgid "Enter your HTML content."
+msgstr "請輸入 HTML"
+
+# @ js_composer
+#: config/map.php:2130
+msgid "Raw JS"
+msgstr "插入 JS"
+
+# @ js_composer
+#: config/map.php:2135
+msgid "Output raw javascript code on your page"
+msgstr "在頁面中插入自訂 javascript 程式碼。"
+
+# @ js_composer
+#: config/map.php:2140
+msgid "Raw js"
+msgstr "插入 JS"
+
+# @ js_composer
+#: config/map.php:2143
+msgid "Enter your JS code."
+msgstr "輸入您的 JS 程式碼"
+
+# @ js_composer
+#: config/map.php:2152
+msgid "Flickr Widget"
+msgstr "Flickr 小工具"
+
+# @ js_composer
+#: config/map.php:2155
+msgid "Image feed from your flickr account"
+msgstr "顯示特定 Flickr 帳號之圖片。"
+
+# @ js_composer
+#: config/map.php:2165
+msgid "Flickr ID"
+msgstr "Flickr 相簿 ID"
+
+# @ js_composer
+#: config/map.php:2168
+#, php-format
+msgid "To find your flickID visit %s."
+msgstr "前往 %s 取得 flickr 相簿 ID"
+
+# @ js_composer
+#: config/map.php:2172
+msgid "Number of photos"
+msgstr "照片張數"
+
+# @ js_composer
+#: config/map.php:2175
+msgid "Number of photos."
+msgstr "照片張數"
+
+# @ js_composer
+#: config/map.php:2179
+msgid "Type"
+msgstr "類型"
+
+# @ js_composer
+#: config/map.php:2182
+msgid "User"
+msgstr "個人"
+
+# @ js_composer
+#: config/map.php:2183
+msgid "Group"
+msgstr "社團"
+
+# @ js_composer
+#: config/map.php:2185
+msgid "Photo stream type."
+msgstr "照片來源類型"
+
+# @ js_composer
+#: config/map.php:2189
+msgid "Display"
+msgstr "顯示"
+
+# @ js_composer
+#: config/map.php:2192
+msgid "Latest"
+msgstr "最新"
+
+# @ js_composer
+#: config/map.php:2195
+msgid "Photo order."
+msgstr "照片順序"
+
+# @ js_composer
+#: config/map.php:2210
+msgid "Progress Bar"
+msgstr "長條圖"
+
+# @ js_composer
+#: config/map.php:2214
+msgid "Animated progress bar"
+msgstr "插入長條圖。"
+
+# @ js_composer
+#: config/map.php:2224
+msgid "Graphic values"
+msgstr "長條圖顯示比例 / 項目"
+
+# @ js_composer
+#: config/map.php:2226
+msgid ""
+"Input graph values here. Divide values with linebreaks (Enter). Example: 90|"
+"Development"
+msgstr ""
+"請輸入長條圖所佔比例 | 項目 <br/> 示範寫法 : 項目【電視收視率】佔比70% ---> "
+"70|電視收視率<br/>使用 Enter 鍵換行增加項目"
+
+# @ js_composer
+#: config/map.php:2231 config/map.php:2312
+msgid "Units"
+msgstr "單位"
+
+# @ js_composer
+#: config/map.php:2233 config/map.php:2314
+msgid ""
+"Enter measurement units (if needed) Eg. %, px, points, etc. Graph value and "
+"unit will be appended to the graph title."
+msgstr "計算單位 : % (百分比)、px (像素)，留白為預設單位 % (百分比)。"
+
+# @ js_composer
+#: config/map.php:2237 config/map.php:2318
+msgid "Bar color"
+msgstr "顏色"
+
+# @ js_composer
+#: config/map.php:2247
+msgid "Custom Color"
+msgstr "自訂顏色"
+
+# @ js_composer
+#: config/map.php:2249
+msgid "Select bar background color."
+msgstr "選擇長條圖的顏色"
+
+# @ js_composer
+#: config/map.php:2254
+msgid "Bar custom color"
+msgstr "自訂顏色"
+
+# @ js_composer
+#: config/map.php:2256
+msgid "Select custom background color for bars."
+msgstr "選擇顏色"
+
+# @ js_composer
+#: config/map.php:2261 config/map.php:2882 config/map.php:2922
+#: config/map.php:2957 config/map.php:3005
+msgid "Options"
+msgstr "選項"
+
+# @ js_composer
+#: config/map.php:2264
+msgid "Add Stripes?"
+msgstr "增加斜紋"
+
+# @ js_composer
+#: config/map.php:2265
+msgid "Add animation? Will be visible with striped bars."
+msgstr "增加斜紋動畫"
+
+# @ vc_extend
+#: config/map.php:2281
+msgid "Pie chart"
+msgstr "圓餅圖"
+
+# @ js_composer
+#: config/map.php:2286
+msgid "Animated pie chart"
+msgstr "插入圓餅圖。"
+
+# @ js_composer
+#: config/map.php:2297
+msgid "Pie value"
+msgstr "圓餅圖值"
+
+# @ js_composer
+#: config/map.php:2299
+msgid "Input graph value here. Choose range between 0 and 100."
+msgstr "輸入 0~100 值"
+
+# @ js_composer
+#: config/map.php:2305
+msgid "Pie label value"
+msgstr "標籤"
+
+# @ js_composer
+#: config/map.php:2307
+msgid "Input integer value for label. If empty \"Pie value\" will be used."
+msgstr "輸入值的標籤，未填則顯示預設值。"
+
+# @ js_composer
+#: config/map.php:2321
+msgid "Select pie chart color."
+msgstr "選擇圓餅圖顏色"
+
+# @ js_composer
+#: config/map.php:2359
+msgid "Contact Form 7"
+msgstr "聯絡表單"
+
+# @ js_composer
+#: config/map.php:2362
+msgid "Place Contact Form7"
+msgstr "置入聯絡表單(Contact Form 7)"
+
+# @ js_composer
+#: config/map.php:2366
+msgid "Form title"
+msgstr "標題"
+
+# @ js_composer
+#: config/map.php:2369
+msgid "What text use as form title. Leave blank if no title is needed."
+msgstr "請輸入表單標題"
+
+# @ js_composer
+#: config/map.php:2373
+msgid "Select contact form"
+msgstr "選擇已建立表單"
+
+# @ js_composer
+#: config/map.php:2376
+msgid "Choose previously created contact form from the drop down list."
+msgstr "選擇已建立表單"
+
+# @ js_composer
+#: config/map.php:2402
+msgid "Layer Slider"
+msgstr "Layer Slider"
+
+# @ js_composer
+#: config/map.php:2405
+msgid "Place LayerSlider"
+msgstr "置入 LayerSlider"
+
+# @ js_composer
+#: config/map.php:2415
+msgid "LayerSlider ID"
+msgstr "廣告 ID"
+
+# @ js_composer
+#: config/map.php:2419
+msgid "Select your LayerSlider."
+msgstr "選擇廣告"
+
+# @ js_composer
+#: config/map.php:2450 config/map.php:2463
+msgid "Revolution Slider"
+msgstr "Revolution Slider"
+
+# @ js_composer
+#: config/map.php:2453
+msgid "Place Revolution slider"
+msgstr "置入 Revolution Slider"
+
+# @ js_composer
+#: config/map.php:2467
+msgid "Select your Revolution Slider."
+msgstr "選擇廣告"
+
+# @ js_composer
+#: config/map.php:2480
+msgid "No Gravity forms found."
+msgstr "無 Gravity forms"
+
+# @ js_composer
+#: config/map.php:2484
+msgid "Select a form to display."
+msgstr "選擇表單"
+
+# @ js_composer
+#: config/map.php:2491
+msgid "Gravity Form"
+msgstr "Gravity Form"
+
+# @ js_composer
+#: config/map.php:2495
+msgid "Place Gravity form"
+msgstr "置入 Gravity Form"
+
+# @ js_composer
+#: config/map.php:2499
+msgid "Form"
+msgstr "表單"
+
+# @ js_composer
+#: config/map.php:2502
+msgid "Select a form to add it to your post or page."
+msgstr "選擇表單"
+
+# @ js_composer
+#: config/map.php:2507
+msgid "Display Form Title"
+msgstr "顯示表單標題"
+
+# @ js_composer
+#: config/map.php:2511 config/map.php:2522 config/map.php:2533
+msgid "Yes"
+msgstr "是"
+
+# @ js_composer
+#: config/map.php:2513
+msgid "Would you like to display the forms title?"
+msgstr "是否顯示表單標題？"
+
+# @ js_composer
+#: config/map.php:2518
+msgid "Display Form Description"
+msgstr "顯示表單描述"
+
+# @ js_composer
+#: config/map.php:2524
+msgid "Would you like to display the forms description?"
+msgstr "是否顯示表單描述"
+
+# @ js_composer
+#: config/map.php:2529
+msgid "Enable AJAX?"
+msgstr "是否啟用 AJAX?"
+
+# @ js_composer
+#: config/map.php:2535
+msgid "Enable AJAX submission?"
+msgstr "是否啟用 AJAX 送出表單？"
+
+# @ js_composer
+#: config/map.php:2540
+msgid "Tab Index"
+msgstr "頁籤編號"
+
+# @ js_composer
+#: config/map.php:2542
+msgid ""
+"(Optional) Specify the starting tab index for the fields of this form. Leave "
+"blank if you're not sure what this is."
+msgstr "指定表單顯示特定頁籤編號(選填)"
+
+# @ default
+#: config/map.php:2552
+msgid "Search"
+msgstr "搜尋"
+
+# @ js_composer
+#: config/map.php:2555 config/map.php:2579 config/map.php:2603
+#: config/map.php:2633 config/map.php:2657 config/map.php:2707
+#: config/map.php:2745 config/map.php:2777 config/map.php:2813
+#: config/map.php:2857 config/map.php:2909 config/map.php:2944
+#: config/map.php:2977
+msgid "WordPress Widgets"
+msgstr "小工具"
+
+# @ js_composer
+#: config/map.php:2558
+msgid "A search form for your site"
+msgstr "插入搜尋功能。"
+
+# @ js_composer
+#: config/map.php:2564 config/map.php:2588 config/map.php:2612
+#: config/map.php:2642 config/map.php:2666 config/map.php:2716
+#: config/map.php:2754 config/map.php:2786 config/map.php:2822
+#: config/map.php:2918 config/map.php:2953 config/map.php:2986
+msgid ""
+"What text use as a widget title. Leave blank to use default widget title."
+msgstr "小工具標題，留空為預設值。"
+
+# @ js_composer
+#: config/map.php:2582
+msgid "Log in/out, admin, feed and WordPress links"
+msgstr "管理者介面。"
+
+# @ js_composer
+#: config/map.php:2606
+msgid "The most recent comments"
+msgstr "最新評論清單。"
+
+# @ js_composer
+#: config/map.php:2616
+msgid "Number of comments to show"
+msgstr "顯示留言篇數"
+
+# @ default
+#: config/map.php:2630
+msgid "Calendar"
+msgstr "文章日曆"
+
+# @ js_composer
+#: config/map.php:2636
+msgid "A calendar of your sites posts"
+msgstr "文章發佈日曆"
+
+# @ js_composer
+#: config/map.php:2660
+msgid "Your sites WordPress Pages"
+msgstr "插入其它頁面。"
+
+# @ js_composer
+#: config/map.php:2670 config/map.php:2871
+msgid "Sort by"
+msgstr "排序條件"
+
+# @ js_composer
+#: config/map.php:2673 inline/templates/editor.tpl.php:299
+msgid "Page title"
+msgstr "頁面標題"
+
+# @ js_composer
+#: config/map.php:2674
+msgid "Page order"
+msgstr "頁面順序"
+
+# @ js_composer
+#: config/map.php:2675
+msgid "Page ID"
+msgstr "頁面 ID"
+
+# @ js_composer
+#: config/map.php:2681
+msgid "Exclude"
+msgstr "排除"
+
+# @ js_composer
+#: config/map.php:2683
+msgid "Page IDs, separated by commas."
+msgstr "頁面 ID，使用英數逗號「,」間隔輸入多筆。"
+
+# @ default
+#: config/map.php:2704
+msgid "Tag Cloud"
+msgstr "標籤雲"
+
+# @ js_composer
+#: config/map.php:2710
+msgid "Your most used tags in cloud format"
+msgstr "顯示最常使用標籤。"
+
+# @ js_composer
+#: config/map.php:2720
+msgid "Taxonomy"
+msgstr "分類"
+
+# @ default
+#: config/map.php:2742
+msgid "Custom Menu"
+msgstr "選單"
+
+# @ js_composer
+#: config/map.php:2748
+msgid "Use this widget to add one of your custom menus as a widget"
+msgstr "新增自訂選單。"
+
+# @ js_composer
+#: config/map.php:2758
+msgid "Menu"
+msgstr "選單"
+
+# @ js_composer
+#: config/map.php:2761
+msgid ""
+"Custom menus not found. Please visit <b>Appearance > Menus</b> page to "
+"create new menu."
+msgstr "無自訂選單，請前往 外觀->選單 進行設定。"
+
+# @ js_composer
+#: config/map.php:2780
+msgid "Arbitrary text or HTML"
+msgstr "插入文字或 HTML 。"
+
+# @ js_composer
+#: config/map.php:2816
+msgid "The most recent posts on your site"
+msgstr "插入最新文章列表。"
+
+# @ js_composer
+#: config/map.php:2826
+msgid "Number of posts to show"
+msgstr "文章顯示篇數"
+
+# @ js_composer
+#: config/map.php:2832
+msgid "Display post date?"
+msgstr "是否顯示文章日期？"
+
+# @ js_composer
+#: config/map.php:2846
+msgid "All Links"
+msgstr "連結"
+
+# @ default
+#: config/map.php:2854
+msgid "Links"
+msgstr "連結"
+
+# @ js_composer
+#: config/map.php:2860
+msgid "Your blogroll"
+msgstr "插入網站連結。"
+
+# @ js_composer
+#: config/map.php:2864
+msgid "Link Category"
+msgstr "依分類"
+
+# @ js_composer
+#: config/map.php:2874
+msgid "Link title"
+msgstr "依標題"
+
+# @ js_composer
+#: config/map.php:2875
+msgid "Link rating"
+msgstr "依評分"
+
+# @ js_composer
+#: config/map.php:2876
+msgid "Link ID"
+msgstr "依 ID"
+
+# @ js_composer
+#: config/map.php:2885
+msgid "Show Link Image"
+msgstr "顯示連結圖片"
+
+# @ js_composer
+#: config/map.php:2886
+msgid "Show Link Name"
+msgstr "顯示連結名稱"
+
+# @ js_composer
+#: config/map.php:2887
+msgid "Show Link Description"
+msgstr "顯示連結描述"
+
+# @ js_composer
+#: config/map.php:2888
+msgid "Show Link Rating"
+msgstr "顯示連結評分"
+
+# @ js_composer
+#: config/map.php:2893
+msgid "Number of links to show"
+msgstr "顯示連結數"
+
+# @ js_composer
+#: config/map.php:2912
+msgid "A list or dropdown of categories"
+msgstr "插入文章分類清單。"
+
+# @ js_composer
+#: config/map.php:2925 config/map.php:2960
+msgid "Display as dropdown"
+msgstr "以下拉選單顯示"
+
+# @ js_composer
+#: config/map.php:2926 config/map.php:2961
+msgid "Show post counts"
+msgstr "顯示文章數"
+
+# @ js_composer
+#: config/map.php:2927
+msgid "Show hierarchy"
+msgstr "顯示階層"
+
+# @ js_composer
+#: config/map.php:2947
+msgid "A monthly archive of your sites posts"
+msgstr "每月發佈文章彙整。"
+
+# @ default
+#: config/map.php:2974
+msgid "RSS"
+msgstr "RSS 連結"
+
+# @ js_composer
+#: config/map.php:2980
+msgid "Entries from any RSS or Atom feed"
+msgstr "訂閱本站 RSS 。"
+
+# @ js_composer
+#: config/map.php:2990
+msgid "RSS feed URL"
+msgstr "RSS 網址"
+
+# @ js_composer
+#: config/map.php:2992
+msgid "Enter the RSS feed URL."
+msgstr "輸入 RSS 網址"
+
+# @ js_composer
+#: config/map.php:2997
+msgid "Items"
+msgstr "文章數"
+
+# @ js_composer
+#: config/map.php:2999
+msgid "10 - Default"
+msgstr "預設值(10)"
+
+# @ js_composer
+#: config/map.php:3000
+msgid "How many items would you like to display?"
+msgstr "選擇顯示多少篇文章"
+
+# @ js_composer
+#: config/map.php:3008
+msgid "Display item content?"
+msgstr "是否顯示文章內容？"
+
+# @ js_composer
+#: config/map.php:3009
+msgid "Display item author if available?"
+msgstr "是否顯示作者？"
+
+# @ js_composer
+#: config/map.php:3010
+msgid "Display item date?"
+msgstr "是否顯示日期？"
+
+# @ js_composer
+#: inline/editor.php:189
+msgid "Add new element"
+msgstr "新增元素"
+
+# @ js_composer
+#: inline/editor.php:195
+#, php-format
+msgid "Edit %s with Visual Composer"
+msgstr "使用輕鬆排版編輯%s"
+
+# @ js_composer
+#: inline/editor.php:209 inline/editor.php:214 inline/editor.php:241
+msgid "Edit with Visual Composer"
+msgstr "前臺編輯"
+
+# @ js_composer
+#: inline/editor.php:396
+msgid "settings"
+msgstr "設定"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:52
+msgid "Responsive preview"
+msgstr "各類型裝置視窗預覽"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:65
+msgid "Cancel all changes and return to WP dashboard"
+msgstr "取消所有變更並返回控制台"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:65
+msgid "Backend editor"
+msgstr "切換至後臺編輯"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:68 inline/templates/editor.tpl.php:82
+msgid "Save draft"
+msgstr "儲存草稿"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:70
+msgid "Save as Pending"
+msgstr "存為草稿"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:73 inline/templates/editor.tpl.php:83
+msgid "Publish"
+msgstr "發佈"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:75
+msgid "Submit for Review"
+msgstr "待審中"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:139 inline/templates/editor.tpl.php:151
+#: inline/templates/editor.tpl.php:167 inline/templates/editor.tpl.php:177
+#: inline/templates/editor.tpl.php:194 inline/templates/editor.tpl.php:204
+#: inline/templates/editor.tpl.php:221 inline/templates/editor.tpl.php:231
+#, php-format
+msgid "Drag to move %s"
+msgstr "拖曳移動%s"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:153 inline/templates/editor.tpl.php:180
+#: inline/templates/editor.tpl.php:207 inline/templates/editor.tpl.php:234
+#, php-format
+msgid "Prepend to %s"
+msgstr "插入至%s"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:159 inline/templates/editor.tpl.php:186
+#: inline/templates/editor.tpl.php:213 inline/templates/editor.tpl.php:242
+#, php-format
+msgid "Append to %s"
+msgstr "插入至%s"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:170
+#, php-format
+msgid "Prpend to %s"
+msgstr "加入至 %s"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:174 inline/templates/editor.tpl.php:182
+#: inline/templates/editor.tpl.php:201 inline/templates/editor.tpl.php:209
+#: inline/templates/editor.tpl.php:228 inline/templates/editor.tpl.php:238
+#, php-format
+msgid "Show %s controls"
+msgstr "顯示%s設定"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:197
+#, php-format
+msgid "Change %s layout"
+msgstr "改變%s版面"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:224
+msgid "Add new Tab"
+msgstr "加入頁籤"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:263 inline/templates/editor.tpl.php:292
+#: inline/templates/editor.tpl.php:321 inline/templates/editor.tpl.php:336
+#: inline/templates/editor.tpl.php:351
+msgid "Close panel"
+msgstr "關閉"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:264 inline/templates/editor.tpl.php:293
+#: inline/templates/editor.tpl.php:322 inline/templates/editor.tpl.php:337
+#: inline/templates/editor.tpl.php:352
+msgid "Hide panel"
+msgstr "隱藏"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:265 inline/templates/editor.tpl.php:270
+msgid "Row layout"
+msgstr "自定欄位"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:278
+msgid "Choose row layout from predefined options."
+msgstr "選擇欄位數目"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:281
+msgid "Enter custom layout for your row"
+msgstr "輸入欄位數目"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:284
+msgid ""
+"Change particular row layout manually by specifying number of columns and "
+"their size value."
+msgstr "輸入特定數目指定欄位。譬如兩欄式，請輸入 1/2 + 1/2 。"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:43 inline/templates/editor.tpl.php:294
+msgid "Page settings"
+msgstr "頁面設定"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:302
+msgid "Please enter page title"
+msgstr "請輸入頁面標題"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:306
+msgid "Custom CSS settings"
+msgstr "自訂 CSS"
+
+# @ js_composer
+#: composer/lib/automapper.php:184 inline/templates/editor.tpl.php:316
+#: inline/templates/editor.tpl.php:330 inline/templates/editor.tpl.php:345
+msgid "Save changes"
+msgstr "儲存"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:338
+msgid "Edit elements"
+msgstr "編輯內容"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:359
+msgid "Save current layout as a template"
+msgstr "將現有版面存為樣版。"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:361
+msgid "Template name"
+msgstr "樣版名稱"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:361
+msgid "Save template"
+msgstr "儲存樣版"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:363
+msgid "Save your layout and reuse it on different sections of your website"
+msgstr "已儲存之樣版可套用於其它頁面中。"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:367
+msgid "Append previosly saved template to the current layout"
+msgstr "套用已儲存樣版"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:392
+msgid "Welcome to Blank Page"
+msgstr "內容空白中"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:393
+msgid "You Have No Content Yet! Add Some..."
+msgstr "請開始建立頁面內容"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:397
+msgid "Add text block"
+msgstr "插入文字"
+
+# @ js_composer
+#: composer/lib/automapper.php:82 composer/lib/settings.php:269
+msgid "My shortcodes"
+msgstr "自訂 shortcode"
+
+# @ js_composer
+#: composer/lib/automapper.php:103
+msgid ""
+"Use Visual Composer Shortcode Mapper in order to add your custom or 3rd "
+"party vendors shortcodes to the list of Visual Composer elements menu. In "
+"order to map shortcode you need it to be already installed on your WordPress "
+"site."
+msgstr ""
+"如需新增小工具或第三方開發之功能，需先確認已安裝 Visual Composer Shortcode "
+"Mapper。"
+
+# @ js_composer
+#: composer/lib/automapper.php:105
+msgid "Map shortcode"
+msgstr "建立 shortocde"
+
+# @ js_composer
+#: composer/lib/automapper.php:124
+msgid "Please enter shortcode string"
+msgstr "請輸入自訂 shortcode 字串"
+
+# @ default
+#: composer/lib/automapper.php:127
+msgid "Please enter valid shortcode"
+msgstr "輸入自訂 shortcode 字串"
+
+# @ js_composer
+#: composer/lib/automapper.php:130
+msgid "Parse shortcode"
+msgstr "新增"
+
+# @ js_composer
+#: composer/lib/automapper.php:134
+msgid ""
+"Please enter valid shortcode like [my_shortcode first_param="
+"\"first_param_value\"]My shortcode content[/my_shortcode]"
+msgstr ""
+"輸入格式範例：[my_shortcode first_param=\"first_param_value\"]My shortcode "
+"content[/my_shortcode]"
+
+# @ default
+#: composer/lib/automapper.php:159
+msgid "General information"
+msgstr "Shortcode 資訊"
+
+# @ js_composer
+#: composer/lib/automapper.php:161
+msgid "Tag:"
+msgstr "標籤："
+
+# @ js_composer
+#: composer/lib/automapper.php:165
+msgid "Description:"
+msgstr "描述："
+
+# @ js_composer
+#: composer/lib/automapper.php:169
+msgid "Category:"
+msgstr "類別："
+
+# @ default
+#: composer/lib/automapper.php:171
+msgid "Comma separated categories names"
+msgstr "使用逗號「,」分隔多項類別"
+
+# @ js_composer
+#: composer/lib/automapper.php:174
+msgid "Include content param into shortcode"
+msgstr "包含內容的 shortcode"
+
+# @ default
+#: composer/lib/automapper.php:179
+msgid "Shortcode parameters"
+msgstr "Shortcode 參數"
+
+# @ js_composer
+#: composer/lib/automapper.php:186 composer/lib/automapper.php:243
+msgid "Delete"
+msgstr "刪除"
+
+# @ js_composer
+#: composer/lib/automapper.php:196
+msgid "Param name"
+msgstr "參數名稱"
+
+# @ js_composer
+#: composer/lib/automapper.php:199 composer/lib/automapper.php:202
+#: composer/lib/automapper.php:208
+msgid "Required value"
+msgstr "必要值"
+
+# @ js_composer
+#: composer/lib/automapper.php:200 composer/lib/automapper.php:203
+msgid "Please use only letters, numbers and underscore."
+msgstr "僅限字母、數字與下底線"
+
+# @ js_composer
+#: composer/lib/automapper.php:207
+msgid "Heading"
+msgstr "標題"
+
+# @ js_composer
+#: composer/lib/automapper.php:209
+msgid "Heading for field in shortcode edit form."
+msgstr "shortcode 欄位中的標題"
+
+# @ js_composer
+#: composer/lib/automapper.php:212
+msgid "Field type"
+msgstr "欄位類型"
+
+# @ js_composer
+#: composer/lib/automapper.php:214
+msgid "Select field type"
+msgstr "選擇欄位類型"
+
+# @ js_composer
+#: composer/lib/automapper.php:215
+msgid "Textfield"
+msgstr "文字"
+
+# @ js_composer
+#: composer/lib/automapper.php:216
+msgid "Dropdown"
+msgstr "下拉選單"
+
+# @ js_composer
+#: composer/lib/automapper.php:217
+msgid "Textarea"
+msgstr "文字區域"
+
+# @ js_composer
+#: composer/lib/automapper.php:219
+msgid "Textarea HTML"
+msgstr "HTML"
+
+# @ js_composer
+#: composer/lib/automapper.php:222
+msgid "Field type for shortcode edit form."
+msgstr "shortdocde 欄位類型"
+
+# @ js_composer
+#: composer/lib/automapper.php:225
+msgid "Default value"
+msgstr "預設值"
+
+# @ js_composer
+#: composer/lib/automapper.php:227
+msgid "Default value or list of values for dropdown type(separate by comma)."
+msgstr "下拉選單內容(使用逗後「,」分隔)"
+
+# @ js_composer
+#: composer/lib/automapper.php:232
+msgid "Explain param."
+msgstr "屬性"
+
+# @ js_composer
+#: composer/lib/params/css_editor/css_editor.php:41
+msgid "Border"
+msgstr "邊框"
+
+# @ js_composer
+#: composer/lib/params/css_editor/css_editor.php:44
+msgid "Background"
+msgstr "背景"
+
+# @ js_composer
+#: composer/lib/params/css_editor/css_editor.php:48
+msgid "Box controls"
+msgstr "區塊控制"
+
+# @ js_composer
+#: composer/lib/params/css_editor/css_editor.php:49
+msgid "Simplify controls"
+msgstr "簡易"
+
+# @ js_composer
+#: composer/lib/params/css_editor/css_editor.php:70
+#: composer/lib/params/css_editor/css_editor.php:78
+msgid "Theme defaults"
+msgstr "預設"
+
+# @ wpb
+#: composer/lib/params/css_editor/css_editor.php:83
+msgid "Repeat"
+msgstr "重覆"
+
+# @ js_composer
+#: composer/lib/settings.php:267
+msgid "Are you sure you want to delete this shortcode?"
+msgstr "確定刪除 shortcode ？"
+
+# @ js_composer
+#: composer/lib/settings.php:268
+msgid "Are you sure you want to delete the shortcode's param?"
+msgstr "確定刪除 shortcode 參數？"
+
+# @ js_composer
+#: composer/lib/settings.php:270
+msgid "Shortcode name is required."
+msgstr "Shortcode 名稱為必填"
+
+# @ js_composer
+#: composer/lib/settings.php:271
+msgid "Please enter valid shortcode tag."
+msgstr "請輸入有效的 shortcode 標籤"
+
+# @ js_composer
+#: composer/lib/settings.php:272
+msgid "Please enter all required fields for params."
+msgstr "請輸入所有欄位"
+
+# @ js_composer
+#: composer/lib/settings.php:273
+msgid "New shortcode mapped from string!"
+msgstr "新的 shortcode !"
+
+# @ js_composer
+#: composer/lib/settings.php:274
+msgid "Shortcode updated!"
+msgstr "已更新"
+
+# @ js_composer
+#: composer/lib/settings.php:275
+msgid "Content param can not be added manually, please use checkbox."
+msgstr "請使用圈選欄位新增內容"
+
+# @ js_composer
+#: composer/lib/settings.php:276
+#, php-format
+msgid "Param %s already exists. Param names must be unique."
+msgstr "參數 %s 已存在，請使用獨一無二的名稱。"
+
+# @ js_composer
+#: composer/lib/settings.php:277
+msgid "Please use only letters, numbers and underscore for param name"
+msgstr "僅限字母、數字與下底線"
+
+# @ js_composer
+#: composer/lib/settings.php:278
+msgid "Please enter valid shortcode to parse!"
+msgstr "請輸入有效的 shortcode"
+
+# @ js_composer
+#: composer/lib/settings.php:344 composer/lib/shortcodes.php:649
+msgid "name"
+msgstr "名稱"
+
+# @ js_composer
+#: composer/lib/settings.php:489
+msgid ""
+"By default content elements \"stack\" one on top other when screen size is "
+"smaller then 768px. Here you can change that value if needed."
+msgstr "行動裝置寬度預設值"
+
+# @ js_composer
+#: composer/lib/settings.php:997
+msgid "custom.css could not be created. Cannot write custom css to \"\"."
+msgstr "custom.css 無法建立，無法將自訂 css 寫入 \"\" 。"
+
+# @ js_composer
+#: composer/lib/shortcodes/accordion.php:163
+#: composer/lib/shortcodes/accordion.php:168
+#: composer/lib/shortcodes/tabs.php:72 composer/lib/shortcodes/tabs.php:78
+#: composer/lib/shortcodes.php:173 composer/lib/shortcodes.php:178
+msgid "value"
+msgstr "值"
+
+# @ js_composer
+#: composer/lib/shortcodes/column.php:163 config/map.php:117
+#: config/map.php:142 config/map.php:164 config/map.php:199 config/map.php:659
+#: config/map.php:2042
+msgid "Css"
+msgstr "CSS"
+
+# @ js_composer
+#: composer/lib/shortcodes/column.php:166 config/map.php:120
+#: config/map.php:145 config/map.php:167 config/map.php:202 config/map.php:662
+#: config/map.php:2045
+msgid "Design options"
+msgstr "外觀選項"
+
+# @ js_composer
+#: composer/lib/shortcodes.php:421 composer/lib/shortcodes.php:500
+msgid "heading"
+msgstr "標題"
+
+# @ js_composer
+#: composer/lib/shortcodes.php:504
+msgid "description"
+msgstr "描述"
+
+# @ js_composer
+#: composer/lib/shortcodes.php:795
+msgid "General"
+msgstr "一般"
+
+# @ js_composer
+#: composer/lib/wpb_automatic_updater.php:27
+msgid "Error! Envato API errorerror: error."
+msgstr "Envato API 發生錯誤"
+
+# @ js_composer
+#: config/map.php:591
+msgid ""
+"Enter image size. Example: \"thumbnail\", \"medium\", \"large\", \"full\" or "
+"other sizes defined by current theme. Alternatively enter image size in "
+"pixels: 200x100 (Width x Height). Leave empty to use \"thumbnail\" size."
+msgstr ""
+"自定圖片尺寸<br/>1.使用縮圖請輸入--->thumbnail<br/>2.使用小圖請輸入---"
+">medium<br/>3.使用大圖請輸入--->large<br/>4.使用原始大小請輸入--->full<br/>5."
+"使用自定義尺寸如 200px x 100px 請輸入--->200x100"
+
+# @ js_composer
+#: config/map.php:716 config/map.php:785
+msgid ""
+"Enter image size. Example: thumbnail, medium, large, full or other sizes "
+"defined by current theme. Alternatively enter image size in pixels: 200x100 "
+"(Width x Height). Leave empty to use \"thumbnail\" size."
+msgstr "<br/>"
+
+# @ js_composer
+#: config/map.php:733 config/map.php:802
+msgid ""
+"Enter links for each slide here. Divide links with linebreaks (Enter) . "
+msgstr ""
+"自定圖片尺寸<br/>1.使用縮圖請輸入--->thumbnail<br/>2.使用小圖請輸入---"
+">medium<br/>3.使用大圖請輸入--->large<br/>4.使用原始大小請輸入--->full<br/>5."
+"使用自定義尺寸如 200px x 100px 請輸入--->200x100"
+
+# @ js_composer
+#: config/map.php:841
+msgid ""
+"Set numbers of slides you want to display at the same time on slider's "
+"container for carousel mode. Supports also \"auto\" value, in this case it "
+"will fit slides depending on container's width. \"auto\" mode isn't "
+"compatible with loop mode."
+msgstr ""
+"設定輪播模式下的播放篇數，輸入「auto」會依容器寬度顯示最適合的篇數，但"
+"「auto」不支援循環播放模式。"
+
+# @ js_composer
+#: config/map.php:1197 config/map.php:1338 config/map.php:1403
+#: config/map.php:1565
+msgid ""
+"Enter thumbnail size. Example: thumbnail, medium, large, full or other sizes "
+"defined by current theme. Alternatively enter image size in pixels: 200x100 "
+"(Width x Height) . "
+msgstr ""
+"自定圖片尺寸<br/>1.使用縮圖請輸入--->thumbnail<br/>2.使用小圖請輸入---"
+">medium<br/>3.使用大圖請輸入--->large<br/>4.使用原始大小請輸入--->full<br/>5."
+"使用自定義尺寸如 200px x 100px 請輸入--->200x100"
+
+# @ js_composer
+#: config/map.php:1215 config/map.php:1577
+msgid ""
+"If you want to narrow output, enter category names here. Note: Only listed "
+"categories will be included. Divide categories with linebreaks (Enter) . "
+msgstr ""
+"如要縮小範圍，可於此處輸入分類名稱。如需輸入多筆分類以 Enter 鍵換行即可。"
+
+# @ js_composer
+#: config/map.php:1424
+msgid ""
+"Set numbers of slides you want to display at the same time on slider's "
+"container for carousel mode. Also supports for \"auto\" value, in this case "
+"it will fit slides depending on container's width. \"auto\" mode doesn't "
+"compatible with loop mode."
+msgstr ""
+"設定輪播模式下的播放篇數，輸入「auto」會依容器寬度顯示最適合的篇數，但"
+"「auto」不支援循環播放模式。"
+
+# @ js_composer
+#: config/map.php:1437
+msgid "If \"YES\" pagination control will be removed"
+msgstr "關閉分頁導覽"
+
+# @ js_composer
+#: config/map.php:1451
+msgid "If \"YES\" part of the next slide will be visible on the right side"
+msgstr "開啟預覽下則廣告功能"
+
+# @ js_composer
+#: config/map.php:2355
+msgid "No contact forms found"
+msgstr "無資料"
+
+# @ js_composer
+#: config/map.php:2398 config/map.php:2446
+msgid "No sliders found"
+msgstr "無資料"
+
+# @ js_composer
+#: config/map.php:2761
+msgid "Select menu"
+msgstr "選擇選單"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:45
+msgid "Toggle editor's guides"
+msgstr "操作說明"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:54
+msgid "Desktop"
+msgstr "桌上型電腦"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:55
+msgid "Tablet landscape mode"
+msgstr "平版電腦(橫式)"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:56
+msgid "Tablet portrait mode"
+msgstr "平版電腦(直式)"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:57
+msgid "Smartphone landscape mode"
+msgstr "智慧型手機(橫式)"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:58
+msgid "Smartphone portrait mode"
+msgstr "智慧型手機(直式)"
+
+# @ js_composer
+#: inline/templates/editor.tpl.php:91
+msgid "Exit Visual Composer edit mode"
+msgstr "關閉編輯模式"

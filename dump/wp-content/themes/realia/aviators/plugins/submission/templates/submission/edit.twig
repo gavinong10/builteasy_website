@@ -1,0 +1,16 @@
+<h1 class="page-header">{{ post.post_title }}</h1>
+
+<form method="post" action="" enctype="multipart/form-data" class="submission-form">
+    {{ form.content|raw }}
+
+    <div class="span4">
+        <div class="submission-box clearfix">
+            {{ form.metabox._setup() }}
+        </div>
+    </div>
+
+    <div class="form-actions">
+        {% set value = wp.__('Save', 'aviators') %}
+        <input type="submit" class="btn btn-primary" value="{{ value }}">
+    </div>
+</form>

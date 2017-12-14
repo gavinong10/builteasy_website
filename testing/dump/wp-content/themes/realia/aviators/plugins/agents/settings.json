@@ -1,0 +1,30 @@
+{
+	"title": "Agents",
+	"slug" : "agents",
+
+	"tabs": [
+		{
+			"settings": {
+				"slug"        : "agents",
+				"title"       : "Archive Page",
+				"subpage_slug": "agents"
+			},
+
+			"sections": [
+				{
+					"settings": {
+						"id": "agents"
+					},
+					"options" : [
+						{
+							"id"     : "per_page",
+							"label"  : "Agents per page",
+							"type"   : "textinput",
+							"default": 9
+						}
+					]
+				}
+			]
+		}
+	]
+}

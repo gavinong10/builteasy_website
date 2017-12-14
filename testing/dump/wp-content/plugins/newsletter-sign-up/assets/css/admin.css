@@ -1,0 +1,21 @@
+#nsu-admin { }
+#nsu-main { width:65%; float:left; }
+#nsu-sidebar{ width:30%; float:right; }
+
+#nsu-sidebar > div{ margin-bottom:40px; }
+#nsu-sidebar > div h3 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#nsu-admin li.has-icon { list-style:none; padding-left:25px; margin-left:-25px; background-position:left center; background-repeat: no-repeat; }
+#nsu-admin li.dvk-email{ background-image:url("../img/email-icon.png"); }
+#nsu-admin li.dvk-twitter{ background-image:url("../img/twitter-icon.png")}
+#nsu-admin li.mc4wp{ background-image:url("../img/mailchimp-for-wp-icon.png"); }
+#nsu-admin li.rfb{ background-image:url("../img/recent-facebook-posts-icon.png"); }
+
+#nsu-admin .help {
+    display: block;
+    font-style: italic;
+    font-weight: normal;
+}

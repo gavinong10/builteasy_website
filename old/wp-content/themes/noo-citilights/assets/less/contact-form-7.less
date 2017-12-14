@@ -1,0 +1,145 @@
+// Extend the bootstrap form style
+
+.wpcf7-form {
+	&:extend(.form-horizontal);
+}
+.wpcf7-form-control:not(.wpcf7-submit) {
+	// Extend the bootstrap form-control
+	&:extend(.form-control all);
+	margin-top: 5px;
+	margin-bottom: 5px;
+
+	&.wpcf7-checkbox,
+	&.wpcf7-radio {
+		height: auto;
+	}
+}
+.wpcf7-form-control-wrap {
+	display: block !important;
+	width: 100% !important;
+	margin-bottom: @padding-xlarge-horizontal;
+}
+div.wpcf7 .screen-reader-response {
+	border: 0 none;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.wpcf7-submit {
+	&:extend(.btn all);
+	.btn-secondary();
+	padding: @padding-small-vertical @padding-large-horizontal;
+	margin-top: 0;
+	width: 100%;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: @font-size-base + 8;
+}
+.wpcf7-not-valid-tip {
+	color: #f56e6e;
+	font-size: @font-size-small;
+	display: block;
+}
+.wpcf7-display-none {
+	display: none;
+}
+div.wpcf7-response-output {
+	padding: @padding-xsmall-vertical @padding-xsmall-horizontal;
+	text-align: right;
+	margin-top: 5px;
+	font-size: @font-size-small;
+}
+div.wpcf7-validation-errors {
+	border: 1px solid #f56e6e;
+}
+.contact-actions {
+	display: block;
+	text-align: right;
+}
+.contact-form {
+	&:before {
+		content: "";
+		background: #eee;
+		width: 98%;
+		margin-right: @grid-gutter-width/2;
+		height: 1px;
+		margin-top: -50px;
+		left: 0;
+		z-index: 999;
+		margin-bottom: 50px;
+	}
+	@media (max-width:@screen-xs-max) {
+		.contact-desc {
+			padding-left: 0 !important0;
+		}
+	}
+}
+.contact-info {
+	background: #f8f8f8;
+	border: 1px solid #eeeeee;
+	font-size: @font-size-small;
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li {
+			line-height: 100%;
+			b {
+				width: 40%;
+				text-align: right;
+				padding-right: 40px;
+				display: inline-block;
+			}
+		}
+	}
+}
+.contact-info1 {
+	position: absolute !important;
+	right: 60%;
+	top: 150px;
+	z-index: 999;
+	background: #f8f8f8;
+	border: 1px solid #eeeeee;
+	font-size: @font-size-small;
+	padding: 10px !important;
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li {
+			line-height: 180%;
+			b {
+				width: 40%;
+				text-align: right;
+				padding-right: 40px;
+				display: inline-block;
+			}
+		}
+	}
+	@media (max-width:@screen-xs-max) {
+		right: 20%;
+		top: 550px;
+	}
+	@media (max-width:@screen-sm-max) {
+		top: 550px;
+	}
+}
+.contact-desc1 {
+	width: 65%;
+	.wpcf7-textarea {
+		max-height: 150px;
+	}
+	@media (max-width:@screen-xs-max) {
+		width: 100%;
+		padding-top: 30px !important;
+		padding-left: 30px !important;
+	}
+	@media (max-width:@screen-sm-max) {
+		padding-top: 30px !important;
+		padding-left: 30px !important;
+	}
+}

@@ -1,0 +1,340 @@
+/* GENERAL
+----------------------------------------------- */
+.jp-jplayer {
+	width: 0px;
+	height: 0px;
+	background-color: #000000;
+	position: absolute;
+
+	a:hover {
+		text-decoration: none;
+	}
+}
+
+.jp-controls-container {
+	margin: 0 auto;
+	width: @jp-width;
+	max-width: 100%;
+	// padding: 0 @jp-gutter;	
+}
+
+.jp-video {
+	position: absolute;
+	bottom: 0;
+}
+
+.jp-audio {
+	.format-audio.has-featured & {
+		
+	}
+}
+
+.jp-interface {
+	position: relative;
+	height: 30px;
+	width: 100%;
+	#gradient.vertical(@jp-bg-gradient-color-1, @jp-bg-gradient-color-2);
+	.box-shadow(0px 1px 1px rgba(0,0,0,0.5));
+	border-radius: 3px;
+}
+
+
+/* CONTROLS
+----------------------------------------------- */
+.jp-controls {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	
+	a {
+		display: block;
+		position: absolute;
+		top: 0;
+		overflow: hidden;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		color: @gray-light;
+		z-index: 1;
+	
+		&:hover {
+			color: @link-color;
+		}
+
+		span {
+			&:extend(.sr-only all);
+		}
+
+		&:before {
+			.add-icon("");
+			display: block;
+			line-height: 30px;
+		}
+	}
+
+	.jp-play,
+	.jp-pause {
+		border-right: 1px solid @jp-border-color;
+	}
+
+	.jp-play {
+		&:before {
+			content: "\f04b";
+		}
+	}
+
+	.jp-pause {
+		display: none;
+		&:before {
+			content: "\f04c";
+		}
+	}
+
+	.jp-mute,
+	.jp-unmute {
+		border-left: 1px solid @jp-border-color;
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 55px;
+	}
+
+	.jp-mute {
+		&:before {
+			content: "\f028";
+		}
+	}
+	.jp-unmute {
+		&:before {
+			content: "\f026";
+		}
+	}
+}
+
+
+
+/* PROGRESS BAR
+----------------------------------------------- */
+
+.jp-progress {
+	position: absolute;
+	padding: 0 95px 0 40px;
+	margin-top: 11px;
+	margin-bottom: 11px;
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+	height: 10px;
+}
+
+.jp-seek-bar,
+.jp-play-bar {
+	width: 0px;
+	height: 8px;
+	border-radius: 1px;
+}
+
+.jp-seek-bar {
+	cursor: pointer;
+	position: relative;
+	z-index: 999;
+	background: @jp-seek-bar-bg-color;
+}
+
+.jp-play-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: @link-color;
+	
+	.animation( progress .75s linear infinite );
+}
+
+
+/* VOLUME BAR
+----------------------------------------------- */
+
+.jp-volume-bar {
+	float: right;
+	z-index: 99;
+	position: relative;
+	margin: 11px 10px 11px;
+	width: 40px;
+	height: 8px;
+	cursor: pointer;
+	background-color: @jp-volume-bar-bg-color;
+	.box-shadow(0 1px 1px rgba(255,255,255,0.1));
+	border-radius: 1px;
+}
+
+.jp-volume-bar-value {
+	background-color: @link-color;
+	width: 0px;
+	height: 8px;
+	margin: 1px;
+	border-radius: 1px;
+}
+
+
+/* Diagonal Background Bars: got it from Premium Pixels
+https://github.com/lukemcdonald/jplayer-skins
+/*/
+.jp-play-bar,
+.jp-volume-bar-value {
+	.box-shadow(inset 0 1px 2px rgba(255,255,255,0.3));
+	
+	// Diagonal Background Bar Size
+	@bg_size: 7px;
+	-webkit-background-size: @bg_size @bg_size;
+    -moz-background-size: @bg_size @bg_size;
+    -o-background-size: @bg_size @bg_size;
+    background-size: @bg_size @bg_size;
+    
+    // Diagonal Background Bar Colors
+	/*#gradient.vertical(@jp-diagonal-bar-color-1, @jp-diagonal-bar-color-2);
+	background-image: -webkit-gradient(
+	                      linear, 0 0, 100% 100%,
+	                      color-stop(.25, @jp-diagonal-bar-color-3), 
+	                      color-stop(.25, transparent),
+	                      color-stop(.50, transparent), 
+	                      color-stop(.50, @jp-diagonal-bar-color-3),
+	                      color-stop(.75, @jp-diagonal-bar-color-3), 
+	                      color-stop(.75, transparent),
+	                      to(transparent)
+	                  );
+	background-image: -webkit-linear-gradient(
+	                      -45deg, @jp-diagonal-bar-color-3 25%, 
+	                      transparent 25%,
+	                      transparent 50%, 
+	                      @jp-diagonal-bar-color-3 50%, 
+	                      @jp-diagonal-bar-color-3 75%,
+	                      transparent 75%, 
+	                      transparent
+	                  );
+	background-image: -moz-linear-gradient(
+	                      -45deg, 
+	                      @jp-diagonal-bar-color-3 25%, 
+	                      transparent 25%,
+	                      transparent 50%, 
+	                      @jp-diagonal-bar-color-3 50%, 
+	                      @jp-diagonal-bar-color-3 75%,
+	                      transparent 75%, 
+	                      transparent
+	                  );
+	background-image: -ms-linear-gradient(
+	                      -45deg, 
+	                      @jp-diagonal-bar-color-3 25%, 
+	                      transparent 25%,
+	                      transparent 50%, 
+	                      @jp-diagonal-bar-color-3 50%, 
+	                      @jp-diagonal-bar-color-3 75%,
+	                      transparent 75%, 
+	                      transparent
+	                  );
+	background-image: -o-linear-gradient(
+	                      -45deg, 
+	                      @jp-diagonal-bar-color-3 25%, 
+	                      transparent 25%,
+	                      transparent 50%, 
+	                      @jp-diagonal-bar-color-3 50%, 
+	                      @jp-diagonal-bar-color-3 75%,
+	                      transparent 75%, 
+	                      transparent
+	                  );
+	background-image: linear-gradient(
+	                      -45deg, 
+	                      @jp-diagonal-bar-color-3 25%, 
+	                      transparent 25%,
+	                      transparent 50%,
+	                      @jp-diagonal-bar-color-3 50%,
+	                      @jp-diagonal-bar-color-3 75%,
+	                      transparent 75%,
+	                      transparent
+	                  );*/
+}
+
+/* CSS3 ANIMATIONS
+----------------------------------------------- */
+/* Progress Bar Animation */
+@-webkit-keyframes progress {
+	0% { background-position: 0; }
+	100% { background-position: -7px; }
+}
+@-moz-keyframes progress {
+	0% { background-position: 0; }
+	100% { background-position: -7px; }
+}
+@-ms-keyframes progress {
+	0% { background-position: 0; }
+	100% { background-position: -7px; }
+}
+@-o-keyframes progress {
+	0% { background-position: 0; }
+	100% { background-position: -7px; }
+}
+
+/* Video Container */
+.noo-video-container {
+	position: relative;
+	.jp-video-play-icon{
+		position: absolute;
+		color: #fff;
+	    font-size: 100px;
+	    left: 50%;
+	    position: absolute;
+	    top: 50%;
+	    .translate(-50%,-50%);
+	    z-index: 1000;
+
+	    a{
+	    	&,
+	    	&:hover,
+	    	&:focus{
+	    		color: #fff;
+	    		outline: none;
+	    		i {
+	    			 border: 5px solid #fff;
+				     .border-radius(50%);
+				    height: 200px;
+				    line-height: 200px;
+				    text-align: center;
+				    width: 200px;
+	    		}
+				
+				i:before {
+					margin-left: 25px;
+				}
+	    	}
+	    }
+	}
+	.video-inner {
+		position: relative;
+		padding-bottom: 56.25%;
+		height: 0;
+		overflow: hidden;
+		video, iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&.16-9-ratio .video-inner {
+		padding-bottom: 56.25%;
+	}
+	&.5-3-ratio .video-inner {
+		padding-bottom: 60%;
+	}
+	&.5-4-ratio .video-inner {
+		padding-bottom: 80%;
+	}
+	&.4-3-ratio .video-inner {
+		padding-bottom: 75%;
+	}
+	&.3-2-ratio .video-inner {
+		padding-bottom: 66.6666667%;
+	}
+}

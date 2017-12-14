@@ -1,0 +1,24 @@
+/**
+ * NOO Customizer Package.
+ *
+ * StyleSheet used in NOO-Customizer Live Preview
+ * This file contains all the style used on Preview part of NOO-Customizer.
+ *
+ * @package    NOO Framework
+ * @subpackage NOO Customizer
+ * @version    1.0.0
+ * @author     Kan Nguyen <khanhnq@nootheme.com>
+ * @copyright  Copyright (c) 2014, NooTheme
+ * @license    http://opensource.org/licenses/gpl-2.0.php GPL v2 or later
+ * @link       http://nootheme.com
+ */
+ /* ============================================================================= */
+
+/* Fix bug: Logo not vertical centering on Customize */
+.is-customize-preview  .navbar-brand img {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translate(0,-50%);
+		-ms-transform: translate(0,-50%);
+	    	transform: translate(0,-50%);
+}

@@ -1,0 +1,17 @@
+{{ before_widget|raw }}
+
+<a class="{{ class }} decoration" href="{{ link }}"></a>
+
+{% if title %}
+    {{ before_title|raw }}{{ title }}{{ after_title|raw }}
+{% endif %}
+
+{% if text %}
+    <p>{{ text }}</p>
+{% endif %}
+
+{% if link %}
+    <a href="{{ link }}" class="btn btn-primary">{{ wp.__('Read more', 'aviators') }}</a>
+{% endif %}
+
+{{ after_widget|raw }}

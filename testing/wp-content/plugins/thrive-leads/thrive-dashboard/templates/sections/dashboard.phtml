@@ -1,0 +1,96 @@
+<?php require_once( TVE_DASH_PATH . '/templates/header.phtml' ); ?>
+<div class="tvd-container">
+    <h3 class="tvd-section-title"><?php echo __("Your installed products", TVE_DASH_TRANSLATE_DOMAIN) ?></h3>
+
+    <div class="tvd-row" id="tvd-installed-products">
+        <?php /** @var TVE_Dash_Product_Abstract $item */ ?>
+        <?php foreach ($products as $item) : ?>
+            <?php $item->render(); ?>
+        <?php endforeach; ?>
+    </div>
+
+    <?php if (!empty($thrive_features)) : ?>
+        <h3 class="tvd-section-title"><?php echo __('Thrive features', TVE_DASH_TRANSLATE_DOMAIN) ?></h3>
+        <div class="tvd-row">
+            <?php foreach ($thrive_features as $key => $thrive_feature) : ?>
+                <div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3">
+                    <div class="tvd-card tvd-white tvd-medium">
+                        <div class="tvd-card-content">
+                            <div class="tvd-center-align">
+                                <i class="<?php echo $thrive_feature['icon'] ?> tvd-icon-large tvd-icon-fix"></i>
+                            </div>
+                            <h2 class="tvd-card-title"><?php echo $thrive_feature['title'] ?></h2>
+                            <p class="tvd-center"><?php echo $thrive_feature['description'] ?></p>
+                            <div class="tvd-card-action">
+                                <a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-full-btn" href="<?php echo $thrive_feature['btn_link'] ?>"><?php echo $thrive_feature['btn_text'] ?></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach ?>
+        </div>
+    <?php endif ?>
+    <?php /* these are examples of the current feature set:
+    <div class="tvd-row">
+        <div class="tvd-col tvd-s12 tvd-m6 tvd-l3">
+            <div class="tvd-card tvd-white tvd-medium">
+                <div class="tvd-card-content">
+                    <div class="tvd-center-align">
+                        <i class="tvd-icon-exchange tvd-icon-large"></i>
+                    </div>
+                    <h2 class="tvd-card-title"><?php echo __("API Connections", TVE_DASH_TRANSLATE_DOMAIN) ?></h2>
+                    <p><?php echo __("Connect to your email marketing system, reCaptcha, email delivery services & more.", TVE_DASH_TRANSLATE_DOMAIN) ?></p>
+                    <div class="tvd-card-action">
+                        <a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-full-btn" href="<?php echo add_query_arg('page', 'tve_dash_api_connect', admin_url('admin.php')) ?>"><?php echo __("Manage Connections", TVE_DASH_TRANSLATE_DOMAIN) ?></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tvd-col tvd-s12 tvd-m6 tvd-l3">
+            <div class="tvd-card tvd-white tvd-medium">
+                <div class="tvd-card-content">
+                    <div class="tvd-center-align">
+                        <i class="tvd-icon-font tvd-icon-large"></i>
+                    </div>
+                    <h2 class="tvd-card-title"><?php echo __("Custom Fonts", TVE_DASH_TRANSLATE_DOMAIN) ?></h2>
+                    <p><?php echo __("Add & edit Google Fonts and other custom fonts to use in your Thrive products.", TVE_DASH_TRANSLATE_DOMAIN) ?></p>
+                    <div class="tvd-card-action">
+                        <a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-full-btn" href="<?php echo add_query_arg('page', 'tve_dash_font_manager', admin_url('admin.php')) ?>"><?php echo __("Manage Fonts", TVE_DASH_TRANSLATE_DOMAIN); ?></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tvd-col tvd-s12 tvd-m6 tvd-l3">
+            <div class="tvd-card tvd-white tvd-medium">
+                <div class="tvd-card-content">
+                    <div class="tvd-center-align">
+                        <i class="tvd-icon-rocket tvd-icon-large"></i>
+                    </div>
+                    <h2 class="tvd-card-title"><?php echo __("Retina Icons", TVE_DASH_TRANSLATE_DOMAIN) ?></h2>
+                    <p><?php echo __("Add & edit fully scalable icons with our font icon manager.", TVE_DASH_TRANSLATE_DOMAIN) ?></p>
+                    <div class="tvd-card-action">
+                        <a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-full-btn" href="<?php echo add_query_arg('page', 'tve_dash_icon_manager', admin_url('admin.php')) ?>"><?php echo __("Manage Icons", TVE_DASH_TRANSLATE_DOMAIN); ?></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tvd-col tvd-s12 tvd-m6 tvd-l3">
+            <div class="tvd-card tvd-white tvd-medium">
+                <div class="tvd-card-content">
+                    <div class="tvd-center-align">
+                        <i class="tvd-icon-cogs tvd-icon-large"></i>
+                    </div>
+                    <h2 class="tvd-card-title"><?php echo __("General Settings", TVE_DASH_TRANSLATE_DOMAIN) ?></h2>
+                    <p><?php echo __("Shared settings between multiple themes and plugins.", TVE_DASH_TRANSLATE_DOMAIN) ?></p>
+                    <div class="tvd-card-action">
+                        <a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-full-btn" href="<?php echo add_query_arg('page', 'tve_dash_general_settings_section', admin_url('admin.php')) ?>"><?php echo __("Manage Settings", TVE_DASH_TRANSLATE_DOMAIN); ?></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    END: examples of the current feature set */ ?>
+</div>

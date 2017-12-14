@@ -1,0 +1,240 @@
+#dsidx-disclaimer,
+.dsidx-standalone-disclaimer { display: none; }
+
+#dsidx-listings {
+  hr { display: none; }
+
+  .dsidx-listing { @include shadow(); background-color: $white; margin-bottom: 30px !important;
+    .dsidx-media {
+      .dsidx-photo { border: 0px; }
+    }
+    .dsidx-primary-data { background-color: transparent;  float: none; padding-left: 270px; padding-top: 20px; padding-right: 20px; padding-bottom: 0px; width: auto;
+      .dsidx-address {
+        a { font-size: 24px; font-weight: normal;
+          &:hover { text-decoration: none; }
+        }
+      }
+      .dsidx-price { background-image: url("../img/border.png"); background-position: left bottom; background-repeat: repeat-x; font-size: 24px; font-weight: normal; margin-bottom: 10px; padding: 10px 0px; }
+    }
+    .dsidx-secondary-data { padding-left: 270px; width: auto;
+      > div { background-image: url("../img/icons/nike.png"); background-position: left 6px; background-repeat: no-repeat; background-size: 11px 9px; display: inline-block; padding-left: 20px; width: 40%; }
+    }
+
+    @media (max-width: 767px) {
+      .dsidx-media { width: 100%; 
+        .dsidx-photo { max-height: inherit; position: relative; width: 100%; 
+          img { width: 100%; }
+        }
+      }
+
+      .dsidx-primary-data { padding-left: 20px; }
+      .dsidx-secondary-data { padding-bottom: 20px; padding-left: 20px; }
+    }
+  }
+}
+
+.dsidx-search-widget {
+  @media (max-width: 1200px) {
+    .chzn-container {
+      max-width: 172px;
+    }
+    #idx_q_Cities_chzn {
+        max-width: 118px
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 970px) {
+    .chzn-container {
+      max-width: 118px
+    }
+    #idx_q_Cities_chzn {
+      max-width: 64px
+    }
+  }
+}
+
+#dsidx {
+  hr { display: none; }
+
+  .dsidx-sorting-control { @include shadow(); background-color: $white; color: $black; font-size: 14px; font-weight: bold; line-height: 40px; margin: 0px 0px 15px 0px; padding: 10px;
+    .chzn-container { font-weight: normal; margin-left: 20px;
+      a { text-align: left; text-decoration: none; }
+      .chzn-results { text-align: left; }
+    }
+  }
+
+  .dsidx-paging-control { @include shadow(); background-color: $white; margin-bottom: 20px; padding: 10px; }
+
+  #dsidx-map-control {
+    img { display: none; }
+    a { background-image: url("../img/icons/bubble-address.png"); background-position: left center; background-repeat: no-repeat; background-size: 34px 35px; display: block; height: 50px; line-height: 50px; padding-left: 50px;
+      &:hover { text-decoration: none; }
+    }
+  }
+}
+
+#dsidx-map {
+  img { max-width: inherit; }
+}
+
+.dsidx-map { height: auto !important;
+  .dsidx-details { @include shadow(); background-color: $white; height: auto !important; margin: 0px 0px 10px 0px;
+    img { padding: 10px !important; }
+    p { padding: 10px !important; }
+  }
+
+  .dsidx-container {
+    img { max-width: inherit; }
+  }
+}
+
+
+ul.dsidx-list,
+ul.dsidx-widget { @include shadow(); background-color: $white; margin: 0px; padding: 20px;
+  li { background-image: url('../img/block-nav-border.png'); background-position: left bottom; background-repeat: repeat-x;  background-size: 270px 1px; color: $blue-dark; list-style: disc; list-style-position: inside;
+    a { color: $blue; display: inline-block; line-height: 23px; padding: 6px 0px;
+      &:hover { background-color: transparent; color: $footer-top-link-color-hover; text-decoration: none; }
+    }
+    @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+      background-image: url('../img/footer-border@2x.png')
+    }
+    &:first-child { padding-top: 0px; }
+    &:last-child { background-image: none; }
+  }
+}
+
+.dsidx-search-widget { background-color: $blue-light; padding: 20px;
+  form { margin: 0px;
+    label { color: $white; line-height: 40px; margin: 0px; padding: 0px; }
+    input { border: 0px;
+      &:focus { border: 0px; }
+    }
+    .chzn-container { width: 100%; }
+    input[type=text] { @include box-sizing(border-box); height: 40px; width: 100%; }
+    .dsidx-search-button { margin: 0px !important; width: 100% !important; }
+    input[type=submit] { background-color: $blue-dark; border: 0px; color: $white; display: block; font-size: 16px !important; font-weight: normal; margin: 0px; padding: 11px 19px !important; width: 100%; }
+    br { display: none; }
+    .chzn-single { border: 0px; }
+    .separator { display: none; }
+    .dsidx-price { width: 70px; }
+    #idx-q-PriceMin { margin-bottom: 5px; }
+  }
+}
+
+div.dsidx-results-widget {
+  a.dsidx-slideshow-control { @include transition(background-color .2s linear); background-color: $blue; border: 0px; color: $white !important; font-size: 12px; margin: 0px; padding: 5px 7px; text-align: center;
+    &:hover { background-color: $blue-light; text-decoration: none; }
+  }
+  ul { background-color: $white;
+    .dsidx-photo { display: block; float: left; margin-top: 10px !important;
+      img { border: 0px !important; height: 60px !important; margin-right: 15px; }
+    }
+    li {
+      p { margin-bottom: 20px !important; margin-top: 20px !important; }
+      div { background-image: url("../img/icons/nike.png"); background-position: left 6px; background-repeat: no-repeat; background-size: 11px 9px; clear: both; float: left; padding-left: 20px;  }
+    }
+  }
+}
+
+div.dsidx-results-widget .dsidx-slideshow { padding: 20px 0px !important; }
+div.dsidx-results-widget .dsidx-slideshow.dsidx-panel ul { padding-left: 10px !important; padding-right: 10px !important; }
+
+#dsidx-actions { @include shadow(); background-color: $white; margin: 0px 0px 30px 0px; padding: 10px; }
+#dsidx h3 { font-size: 18px; font-weight: normal; line-height: 28px; margin-bottom: 20px; }
+
+a[name=dsidx-contact-form] { display: none; }
+.dsidx-media-td { padding: 0px; }
+.jcbx-glry-classic { @include shadow(); background-color: $white !important; }
+.jb-dt-main-image { box-shadow: none !important; top: 0px !important; }
+#dsidx-media { height: 275px !important; }
+.jb-classifier-thumb-area { margin-top: -50px !important;
+  .jbn-nav-button { top: 45px !important; }
+  .jb-idx-thumb { box-shadow: none !important; }
+}
+
+.dsidx-contact-form {
+  input[type=text] { height: 40px; line-height: 40px;  }
+  input[type=button] { background-color: $blue-dark; border: 0px; color: $white; font-size: 16px; padding: 9px 11px; }
+  td { vertical-align: middle !important;
+    label { display: inline; }
+  }
+}
+
+#dsidx .dsidx-secondary-row { background-color: transparent; }
+.dsidx-contact-form-schedule-date-row {
+  .chzn-container { margin-right: 10px !important; margin-left: 10px !important; width: 85px !important; }
+}
+
+.dsidx-supplemental-data { background-color: transparent !important; border: 0px !important; border-collapse: separate !important; border-spacing: 0px 20px !important;
+  tr {
+    th { background-color: #fff; border-bottom: 1px solid #ccc !important; font-weight: bold !important; vertical-align: middle !important; padding: 20px !important; }
+    td { background-color: #fff; border-bottom: 1px solid #ccc !important; padding: 20px !important; vertical-align: middle !important; }
+    &.dsidx-secondary-row {
+
+    }
+  }
+}
+
+table#dsidx-secondary-data { background-color: transparent !important; border: 0px !important; border-collapse: separate !important; border-spacing: 0px 20px !important;
+  tr {
+    th { background-color: #fff; border-bottom: 1px solid #ccc !important; font-weight: bold !important; vertical-align: middle !important; padding: 20px !important; }
+    td { background-color: #fff; border-bottom: 1px solid #ccc !important; padding: 20px !important; vertical-align: middle !important; }
+    &.dsidx-secondary-row {
+
+    }
+  }
+}
+
+#affordability_div { height: auto; padding: 20px; width: auto;
+  table { margin-left: -8px; 
+    .affordability_title { border-bottom: 0px; font-family: $font-family-default-light; font-size: 24px; font-weight: lighter !important; }
+    .affordability_option_text { font-family: $font-family-default-light !important; font-size: 12px; line-height: 26px; }
+    .affordability_label { color: $black; }
+    .affordability_button_cell { background-color: transparent; border: 0px; }
+    .affordability_button { @include buttonize; @include box-sizing(border-box); border: 0px; font-weight: normal; width: 100%; }
+    input[type=text] { @include box-sizing(border-box); height: 34px; width: 100%; }
+  }
+}
+
+.QuickSearch_div {
+  .quicksearch_vert_div { height: auto; padding: 20px; width: auto;
+    .quicksearch_header { border-bottom: 0px; font-family: $font-family-default-light; font-size: 24px; font-weight: lighter !important; }
+    .quicksearch_value {
+      select { width: 55px; }    
+    }
+    .quicksearch_vert_button_cell {
+      .quicksearch_button { @include buttonize; @include box-sizing(border-box); border: 0px; font-weight: normal; width: 100%; }
+    }
+  }
+
+  .quicksearch_div { height: auto; padding: 20px; width: auto;
+    .quicksearch_spacer { display: none; }
+    .quicksearch_header { border-bottom: 0px; font-family: $font-family-default-light; font-size: 24px; font-weight: lighter !important; }
+    .quicksearch_value {
+      select { width: 80px; }    
+    }
+    .quicksearch_button_cell { border: 0px;
+      .quicksearch_button { @include buttonize; border: 0px; font-weight: normal; }
+    }    
+  }
+}
+
+.mapsearch_header {
+  .mapsearch_data_value { font-size: 12px; }
+}
+
+.mapsearch_footer_div { background-image: none; height: 125px; top: -170px; 
+  .mapsearch_data_table {
+    .mapsearch_data_label_alt { font-size: 12px; text-align: left; }
+    td { display: block; }  
+  }
+}
+
+.mapsearch_modify_cell { left: auto; position: absolute; right: 0px; top: 45px; }
+
+.dsidx-widget-mapsearch {
+  > div { width: 100% !important; }
+  .mapsearch_div { width: 100% !important; }
+  .mapsearch_footer_div { width: 100% !important; }
+  .mapsearch_header { width: 100% !important; }
+}

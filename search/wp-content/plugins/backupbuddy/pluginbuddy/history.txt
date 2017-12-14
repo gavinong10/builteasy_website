@@ -1,0 +1,83 @@
+1.0.0 - 2011-12-13 - Dustin Bolton
+	Initial push.
+1.0.1 - 2011-12-13 - Dustin Bolton
+	Fixed UI title() not showing image.
+	Fixed non-series Getting Started page undefined index.
+	pb_backupbuddy::settings() returns blank for series tag if not found.
+1.0.2 - 2011-02-12 - Dustin Bolton
+	Added updater.
+1.0.3 - 2012-01-04 - Dustin Bolton
+	Fixed various widget things.
+	Using UI elements on pages that aren't our own.
+1.0.4 - 2012-01-05 - Dustin Bolton
+	Added optional ability to specific the first parameter ($tag) for add_shortcut, add_filter, add_action, etc that allows passing a custom method callback name that differs from the tag. Some actions have characters disallowed in PHP method names so they need to differ.
+1.0.5 - 2012-01-05 - Dustin Bolton
+	Fixed form validation for empty form elements.
+	Fixed missing tooltips in settings forms.
+1.0.6 - 2012-01-05 - Dustin Bolton
+	Added better error reporting on form validation failure.
+	Now allowing partial form saving on validtion failure.
+	Added red border around form items that fail validation for easier recognition.
+1.0.7 - 2012-01-06 - Dustin Bolton
+	Form validation function number rule was inproperly named num.
+1.0.8 - 2012-01-13 - Dustin Bolton
+	Added error message if updater settings parameter missing.
+	Fixed version number.
+1.0.9 - 2012-01-13 - Dustin Bolton
+	Fixed pluginbuddy_settings form setting form name statically.
+	Custom processing added into pluginbuddy_settings class via process(); just set savepoint in constructor to false to activate this mode.
+1.0.11 - 2012-01-18 - Dustin Bolton
+	Added initial startings for new media library system.
+	Tweaked downsizer loader system.
+	Renamed pluginbuddy class to pb class. All references to pb_backupbuddy:: should change to pb_backupbuddy::
+1.0.12 - 2012-01-18 - Dustin Bolton	
+	_init_core_controller() cleanup.
+1.0.13 - 2012-01-19 - Dustin Bolton	
+	Fixed lack of return in pb_backupbuddy::tip() and pb_backupbuddy::video().
+1.0.14 - 2012-01-19 - Dustin Bolton
+	Moved all framework-required JS and CSS into pluginbuddy directory.
+1.0.15 - 2012-01-25 - Dustin Bolton
+	Fixed core controller for dashboard widget being able to access private static var.
+	Added pb_backupbuddy::anti_directory_browsing().
+	Added pb_backupbuddy::mkdir().
+	Added pb_backupbuddy::status().
+	Added pb_backupbuddy::get_status().
+	Added pb_backupbuddy::debug().
+1.0.16 - 2012-01-26 - Dustin Bolton
+	Added pb_backupbuddy::$filesystem class controller for interfacing with file system.
+	Added pb_backupbuddy::$format class controller for formatting data / text in human readable formats.
+	downsizer, updater, filesystem, and format 'modules' now controlled via modules key in the $settings array.  See new init.php.
+1.0.19 - 2012-01-31 - Dustin Bolton
+	Form fix.
+	Settings fix.
+	Added CSS options for group list in UI class.
+	Added title type for form/settings classes.
+	Updated admin.css for title settings form type.
+1.0.20 - 2012-01-01 - Dustin Bolton
+	Added error code lookup function to filesystem class. For exit codes from exec() and such.
+	Fixed status() bugs with newlines, arrays (changed delimiter).
+1.0.21 - 2012-01-01 - Dustin Bolton
+	Added wysiwyg object you form & settings system.
+	Touchup to filesystem class.
+	Added hidden form object.
+	Setting the title of any form/settings object to '' will hide its left column (collapses left).
+	Added title form object type for formatting.
+1.0.22 - 2012-01-03 - Dustin Bolton
+	Added pb::$start_time to use to compare passage of time.
+1.0.23 - 2012-02-08 - Dustin Bolton
+	Updated updater.
+1.0.24 - 2012-02-08 - Dustin Bolton
+	Fixed checkbox "YES!" debug output.
+	Fixed radio input default checked selection not being applied.
+1.0.25 - 2012-02-09 - Dustin Bolton
+	Added orientation option to radio buttons.  Possible vals: horizontal, vertical
+1.0.26 - 2012-02-09 - Dustin Bolton
+	Added tabbed interfaces into $ui class.
+1.0.27 - 2012-02-10 - Dustin Bolton
+	Fixed Getting Started page with older series conflicting.
+1.0.28 - 2012-02-17 - Dustin Bolton
+	strstr() used 3rd param which required PHP >= 5.3 in form::test_rule().
+	Cleaned up init.php a bit.
+	Color picker: Added color type to form/settings.
+	
+	Added settings class method: set_value() to overwrite values.

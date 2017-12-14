@@ -1,0 +1,175 @@
+body.pattern-cloth-alike {
+  &.layout-boxed { background-image: url('../img/patterns/large/cloth-alike.png'); background-repeat: repeat; background-size: 102px 78px;
+      @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+        background-image: url('../img/patterns/large/cloth-alike@2x.png');
+      }
+  }
+
+  &.layout-wide {
+    #content { background-image: url('../img/patterns/large/cloth-alike.png'); background-repeat: repeat; background-size: 102px 78px;
+      @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+        background-image: url('../img/patterns/large/cloth-alike@2x.png');
+      }
+    } 
+  }
+}
+
+body.pattern-corrugation {
+  &.layout-boxed { background-image: url('../img/patterns/large/corrugation.png'); background-repeat: repeat; background-size: 8px 5px;
+    @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+      background-image: url('../img/patterns/large/corrugation@2x.png');
+    }
+  }
+
+  &.layout-wide {
+    #content { background-image: url('../img/patterns/large/corrugation.png'); background-repeat: repeat; background-size: 8px 5px;
+      @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+        background-image: url('../img/patterns/large/corrugation@2x.png');
+      }
+    }    
+  }
+}
+
+body.pattern-diagonal-noise {
+  &.layout-boxed { background-image: url('../img/patterns/large/diagonal-noise.png'); background-repeat: repeat; background-size: 100px 100px;
+    @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+      background-image: url('../img/patterns/large/diagonal-noise@2x.png');
+    }
+  }
+
+  &.layout-wide {
+    #content { background-image: url('../img/patterns/large/diagonal-noise.png'); background-repeat: repeat; background-size: 100px 100px;
+      @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+        background-image: url('../img/patterns/large/diagonal-noise@2x.png');
+      }
+    }    
+  }  
+}
+
+body.pattern-dust {
+  &.layout-boxed { background-image: url('../img/patterns/large/dust.png'); background-repeat: repeat; background-size: 400px 300px;
+    @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+      background-image: url('../img/patterns/large/dust@2x.png');
+    }
+  }
+
+  &.layout-wide {
+    #content { background-image: url('../img/patterns/large/dust.png'); background-repeat: repeat; background-size: 400px 300px;
+      @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+        background-image: url('../img/patterns/large/dust@2x.png');
+      }
+    }    
+  }  
+}
+
+body.pattern-fabric-plaid {
+  &.layout-boxed { background-image: url('../img/patterns/large/fabric-plaid.png'); background-repeat: repeat; background-size: 102px 78px;
+    @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+      background-image: url('../img/patterns/large/fabric-plaid@2x.png');
+    }
+  }
+
+  &.layout-wide {
+    #content { background-image: url('../img/patterns/large/fabric-plaid.png'); background-repeat: repeat; background-size: 102px 78px;
+      @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+        background-image: url('../img/patterns/large/fabric-plaid@2x.png');
+      }
+    }    
+  }
+}
+
+body.pattern-farmer {
+  &.layout-boxed { background-image: url('../img/patterns/large/farmer.png'); background-repeat: repeat; background-size: 200px 200px;
+    @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+      background-image: url('../img/patterns/large/farmer@2x.png');
+    }
+  }
+
+  &.layout-wide {
+    #content { background-image: url('../img/patterns/large/farmer.png'); background-repeat: repeat; background-size: 200px 200px;
+      @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+        background-image: url('../img/patterns/large/farmer@2x.png');
+      }
+    }    
+  }
+}
+
+body.pattern-grid-noise {
+  &.layout-boxed { background-image: url('../img/patterns/large/grid-noise.png'); background-repeat: repeat; background-size: 98px 98px;
+    @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+      background-image: url('../img/patterns/large/grid-noise@2x.png');
+    }
+  }
+
+  &.layout-wide {
+    #content { background-image: url('../img/patterns/large/grid-noise.png'); background-repeat: repeat; background-size: 98px 98px;
+      @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+        background-image: url('../img/patterns/large/grid-noise@2x.png');
+      }
+    }    
+  }
+}
+
+body.pattern-lightpaperfibers {
+  &.layout-boxed { background-image: url('../img/patterns/large/lightpaperfibers.png'); background-repeat: repeat; background-size: 500px 300px;
+    @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+      background-image: url('../img/patterns/large/lightpaperfibers@2x.png');
+    }
+  }
+
+  &.layout-wide {
+    #content { background-image: url('../img/patterns/large/lightpaperfibers.png'); background-repeat: repeat; background-size: 500px 300px;
+      @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+        background-image: url('../img/patterns/large/lightpaperfibers@2x.png');
+      }
+    }    
+  }
+}
+
+body.pattern-retina-wood {
+  &.layout-boxed { background-image: url('../img/patterns/large/retina-wood.png'); background-repeat: repeat; background-size: 512px 512px;
+    @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+      background-image: url('../img/patterns/large/retina-wood@2x.png');
+    }
+  }
+
+  &.layout-wide {
+    #content { background-image: url('../img/patterns/large/retina-wood.png'); background-repeat: repeat; background-size: 512px 512px;
+      @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+        background-image: url('../img/patterns/large/retina-wood@2x.png');
+      }
+    }    
+  }
+}
+
+body.pattern-lghtmesh {
+  &.layout-boxed { background-image: url('../img/patterns/large/lghtmesh.png'); background-repeat: repeat; background-size: 256px 256px;
+    @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+      background-image: url('../img/patterns/large/lghtmesh@2x.png');
+    }
+  }
+
+  &.layout-wide {
+    #content { background-image: url('../img/patterns/large/lghtmesh.png'); background-repeat: repeat; background-size: 256px 256px;
+      @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+        background-image: url('../img/patterns/large/lghtmesh@2x.png');
+      }
+    }    
+  }
+}
+
+body.pattern-pw-maze-white {
+  &.layout-boxed { background-image: url('../img/patterns/large/pw-maze-white.png'); background-repeat: repeat; background-size: 46px 23px;
+    @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+      background-image: url('../img/patterns/large/pw-maze-white@2x.png');
+    }
+  }
+
+  &.layout-wide {
+    #content { background-image: url('../img/patterns/large/pw-maze-white.png'); background-repeat: repeat; background-size: 46px 23px;
+      @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+        background-image: url('../img/patterns/large/pw-maze-white@2x.png');
+      }
+    }    
+  }  
+}

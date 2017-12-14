@@ -1,0 +1,101 @@
+<div class="tve-header">
+    <nav id="tl-nav">
+        <div class="nav-wrapper">
+            <div class="tve-logo tvd-left">
+                <a href="<?php menu_page_url( 'thrive_leads_dashboard' ); ?>"
+                   title="<?php echo __( 'Thrive Leads Home', 'thrive-leads' ) ?>">
+					<?php echo '<img src="' . plugins_url( 'thrive-leads/admin/img' ) . '/tl-logo-full-white.png" > '; ?>
+                </a>
+            </div>
+            <?php
+                $dashboard_data = array(
+                    'global_settings'            => array(
+                        'ajax_load' => tve_leads_get_option( 'ajax_load' ),
+                    )
+                );
+                include( dirname( dirname( dirname( __FILE__ ) ) ) . '/leads_menu.php' )
+            ?>
+        </div>
+    </nav>
+</div>
+<?php require_once( TVE_DASH_PATH . '/templates/share.phtml' ); ?>
+<h1>
+    <# if(parent.post_title) { #>
+    <#= parent.post_title #> -
+    <# } #>
+    <#= post_title #>
+    <a class="tve-leads-button button button-primary tve-add-form" href="javascript:void(0)"><?php echo __('Add New Form', 'thrive-leads') ?></a>
+</h1>
+
+<div id="tve-lead-forms">
+    <h2><?php echo __('Forms', 'thrive-leads') ?></h2>
+
+    <p><?php echo __('Here you can create the designs for your opt in form. You can create as many forms as you like, and the traffic will be distributed randomly to each of them.', 'thrive-leads') ?></p>
+
+    <table class="tve-table hide-no-groups" style="display: none">
+        <thead>
+            <tr>
+                <th>&nbsp;</th>
+                <th><?php echo __('Form Impressions', 'thrive-leads') ?></th>
+                <th><?php echo __('Conversions', 'thrive-leads') ?></th>
+                <th><?php echo __('Conversion Rate', 'thrive-leads') ?></th>
+                <th><?php echo __('Trigger', 'thrive-leads') ?></th>
+                <th>&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody id="tve-variation-list"></tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5"></td>
+                <td>
+                    <a style="display: none" class="tve-btn tve-btn-green tve-start-variation-test" href="javascript:void(0)"
+                    title="<?php echo __('Start A/B Test', 'thrive-leads') ?>">
+                    <?php echo __('Start A/B Test', 'thrive-leads') ?>
+                </a>
+            </td>
+        </tr>
+    </tfoot>
+</table>
+<p class="show-no-groups" style="display: none">
+    <?php echo __("You don't have any active forms", 'thrive-leads') ?> -
+    <a href="javascript:void(0)" class="tve-add-form"><?php echo __('click here to create one', 'thrive-leads') ?></a>
+</p>
+<div>
+    <h2><?php echo __('Completed Tests', 'thrive-leads') ?></h2>
+    <table class="tve-table show-completed-tests" style="display: none">
+        <thead>
+            <tr>
+                <th><?php echo __('Test Name', 'thrive-leads') ?></th>
+                <th><?php echo __('Test Description', 'thrive-leads') ?></th>
+                <th><?php echo __('Start Date', 'thrive-leads') ?></th>
+                <th><?php echo __('End Date', 'thrive-leads') ?></th>
+                <th>&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody id="tve-completed-test-list"></tbody>
+    </table>
+    <div class="show-no-completed-tests" style="display: none">
+        <?php echo __('You don\'t have any completed split tests yet.', 'thrive-leads') ?>
+    </div>
+</div>
+<div>
+    <h2><?php echo __('Archived Forms', 'thrive-leads') ?></h2>
+    <table class="tve-table show-archived-tests" style="display: none">
+        <thead>
+            <tr>
+                <th>&nbsp;</th>
+                <th><?php echo __('Form Impressions', 'thrive-leads') ?></th>
+                <th><?php echo __('Conversions', 'thrive-leads') ?></th>
+                <th><?php echo __('Conversion Rate', 'thrive-leads') ?></th>
+                <th><?php echo __('Trigger', 'thrive-leads') ?></th>
+                <th>&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody id="tve-archive-list"></tbody>
+        <div class="show-no-archived-tests margin-bottom-10" style="display: none">
+            <?php echo __('You don\'t have any archived forms yet.', 'thrive-leads') ?>
+        </div>
+    </table>
+</div>
+</div>
+<a href="#dashboard" class="button button-secondary"><?php echo __('Back to Dashboard', 'thrive-leads') ?></a>

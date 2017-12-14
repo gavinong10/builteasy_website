@@ -1,0 +1,376 @@
+.mce-ico.mce-i-idxquicksearch:before {
+    content: '\e603';
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    font: normal 24px/22px 'dsidx-icons';
+    vertical-align: top;
+    color: #00aeef;
+    margin-left: -2px;
+}
+
+.mce-ico.mce-i-idxlinkbuilder:before {
+    content: '\e600';
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    font: normal 20px/20px 'dsidx-icons';
+    vertical-align: top;
+    color: #00aeef;
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: fliph; /*IE*/
+    filter: fliph; /*IE*/
+}
+
+.mce-ico.mce-i-idxlisting:before {
+    content: '\e601';
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    font: normal 22px/20px 'dsidx-icons';
+    vertical-align: top;
+    color: #00aeef;
+}
+
+.mce-ico.mce-i-idxlistings:before {
+    content: '\e602';
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    font: normal 26px/22px 'dsidx-icons';
+    vertical-align: top;
+    color: #00aeef;
+}
+
+#icon-dsidxpress
+{
+	background: transparent url(../../../../wp-admin/images/icons32.png?ver=20111206) no-repeat -492px -5px;
+}
+
+#option-FullApiKey {
+	width: 370px;
+}
+.dsidx-status
+{
+	font-weight: bold;
+	text-transform: uppercase; 
+}
+.dsidx-success
+{
+	color: green;
+}
+.dsidx-failure
+{
+	color: red;
+}
+#dsidx-activation-notice
+{
+	background-color:#EEEEEE;
+	border:1px solid #999999;
+	margin:0 100px;
+	padding:10px;
+	text-align:center;
+}
+
+.dsidxpress-SitemapLocations {
+	margin: 10px 10px;
+	max-width: 800px;
+}
+
+.dsidxpress-SitemapLocations .priority{
+	width: 105px;
+	line-height:24px;
+	float:left;
+	margin: 0 5px;
+}
+
+.dsidxpress-SitemapLocations .value{
+	height: 24px;
+	line-height:24px;
+	float:left;
+}
+
+.dsidxpress-SitemapLocations .value input{
+	width: 190px;	
+}
+
+.dsidxpress-SitemapLocations .type{
+	width: 150px;
+	line-height:24px;
+	float:left;
+}
+
+.dsidxpress-SitemapLocations .type select{
+	width: 144px;	
+	margin: 0px;
+}
+
+.dsidxpress-SitemapLocations .action{
+	width: 80px;
+	float:left;
+	text-align:center;
+}
+
+#dsidxpress-SitemapLocations li{
+	margin: 0;
+	padding: 6px 0 6px 0;
+}
+
+#dsidxpress-SitemapLocations li:nth-child(even) { background: #eee; }
+
+#dsidxpress-CustomTitleText{
+	width: 300px;
+}
+
+.dsidxpress-SitemapLocations h4 { margin: 5px 0; }
+
+.dsidxpress-SitemapLocationsNew .inside { overflow: hidden; }
+
+.dsidxpress-SitemapLocationsNew .action {
+	width: auto;
+	clear: left;
+	float: right;
+	margin: 10px 0;
+}
+
+.dsidxpress-SitemapLocationsNew .type { 
+	width: 23%; 
+	margin-right: 2%; 
+}
+.dsidxpress-SitemapLocationsNew .value { width: 75%; }
+.dsidxpress-SitemapLocationsNew .type select, .dsidxpress-SitemapLocationsNew .value input { width: 100%; }
+
+@media screen and (max-width: 550px) {
+	.dsidxpress-SitemapLocations .priority { line-height: 36px; }
+	.dsidxpress-SitemapLocations .value { 
+		font-size: 16px; 
+		clear: left;
+		padding: 0 10px;
+	}
+	.dsidxpress-SitemapLocationsNew .value { clear: left; }
+	.dsidxpress-SitemapLocationsNew .value, .dsidxpress-SitemapLocationsNew .type { 
+		width: 100%;
+		margin: 5px 0;
+		padding: 0;
+		height: auto;
+	}
+}
+
+
+
+/* Styles for the link builder */
+#dsidxpress-link-builder .dsidxpress-item-wrap {
+	margin: 0 0 1em;
+	min-height: 1px;
+}
+
+.customlinkdiv .howto select,
+.customlinkdiv .howto textarea,
+#dsidxpress-link-builder .dsidxpress-checkbox,
+#dsidxpress-link-builder #dsidxpress-filter-list
+{
+	width: 200px;
+	float: right;
+}
+#dsidxpress-filter-list
+{
+	margin:0;
+}
+#dsidxpress-link-builder .dsidxpress-checkbox input,
+#dsidxpress-link-builder .dsidxpress-checkbox span
+{
+	float: none;
+	display: inline;
+	width: auto;
+}
+
+#dsidxpress-link-builder .filter-autocomplete{
+	clear:both;
+	padding-bottom:5px;
+	text-align:right;
+}
+
+#dsidxpress-link-builder .filter-autocomplete input, #dsidxpress-link-builder .filter-autocomplete label, {
+	display:inline;
+}
+
+#dsidxpress-link-builder .filter-autocomplete label:after{
+	display:inline;
+}
+
+#dsidxpress-filters-wrap span {
+	font-style: italic;
+	color: #666;
+}
+#dsidxpress-show-url, #postbox .inside input[type=checkbox]{
+	display: inline-block !important;
+	width:16px !important;
+	height:16px !important;
+}
+#dsidxpress-link-builder #dsidxpress-filter-list li
+{
+	position: relative;
+	float: left;
+	padding: 4px 19px 4px 8px;
+	margin: 0 4px 4px 0;
+	background: #b7b7b7;
+	color: #fff;
+	line-height: 1em;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+#dsidxpress-link-builder #dsidxpress-filter-list li:hover
+{
+	background: #dadada;
+	background: -moz-linear-gradient(top, #ddd 0%, #a3a3a3 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ddd), color-stop(1, #a3a3a3));
+	background: -webkit-linear-gradient(top, #ddd 0%, #a3a3a3 100%);
+	background: -o-linear-gradient(top, #ddd 0%, #a3a3a3 100%);
+	background: -ms-linear-gradient(top, #ddd 0%, #a3a3a3 100%);
+	background: linear-gradient(top, #ddd 0%, #a3a3a3 100%);
+}
+
+#dsidxpress-link-builder #dsidxpress-filter-list li a
+{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	right: 5px;
+	top: 6px;
+	background: url(../images/link-builder-sprite.png) no-repeat -12px -1px;
+}
+
+#dsidxpress-link-builder #dsidxpress-filter-list li a:hover
+{
+	background: url(../images/link-builder-sprite.png) no-repeat -12px -12px;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor
+{
+	padding: 9px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	background: url(../images/pinstripe.png);
+	min-height: 1px;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor .dsidxpress-editor-header
+{
+	position: relative;
+	padding: 0 1px;
+	margin: 0 0 17px;
+	border-bottom: 1px solid #ccc;
+	min-height: 1px;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor .dsidxpress-editor-header h4
+{
+	margin: 0 0 8px;
+	font: 1.083em/1em Helvetica, Arial, sans-serif;
+	color: #36c;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor .dsidx-editor-cancel a
+{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 11px;
+	height: 11px;
+	background: url(../images/link-builder-sprite.png) no-repeat 0 0;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor .dsidx-editor-cancel a:hover
+{
+	background: url(../images/link-builder-sprite.png) no-repeat 0 -11px;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor .dsidxpress-editor-main
+{
+	margin: 0 5px;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor .dsidxpress-editor-main p.howto
+{
+	font-size: 0.9em;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor .dsidxpress-editor-main p.howto code
+{
+	font-style: normal;
+	font-weight: bold;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor .dsidxpress-editor-main textarea
+{
+	width: 100%;
+	margin: 0;
+	height: 75px;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor .dsidxpress-editor-main select
+{
+	width: 100%;
+	margin: 0 0 0.5em;
+}
+
+.dsidxpress-filter-editor .dsidxpress-editor-main select.narrow{
+	float:right;
+	width:auto !important;
+	margin: 0px !important;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor label
+{
+	min-height: 1px;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor label.howto
+{
+	font-style: normal;
+	margin: 0 0px 0.5em;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor label input
+{
+	float: right;
+	width: 119px;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor label.radius-search input{
+	width:40%;
+	margin:8px 0px;
+}
+#dsidxpress-editor-wrap .dsidxpress-filter-editor label.radius-search input.button{
+	width:auto;
+	margin-left:3px;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor label span
+{
+	float: right;
+	margin-right: 8px;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor div.buttons
+{
+	margin: 17px 0 0;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor div.buttons input[type=button]
+{
+	float: right;
+	margin: 0 5px;
+}
+
+#dsidxpress-link-builder .dsidxpress-item-wrap:after,
+#dsidxpress-editor-wrap .dsidxpress-filter-editor:after,
+#dsidxpress-editor-wrap .dsidxpress-filter-editor .dsidxpress-editor-header:after,
+#dsidxpress-editor-wrap .dsidxpress-filter-editor label:after
+{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}

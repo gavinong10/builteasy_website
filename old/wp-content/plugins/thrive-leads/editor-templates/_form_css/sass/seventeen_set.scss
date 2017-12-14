@@ -1,0 +1,220 @@
+@import "bourbon";
+
+@mixin opensanscondensed {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+@mixin sourcesans {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+}
+
+$white: #fff;
+$black: #000;
+
+[class*='seventeen_set'] {
+  &.tve_gray_bg {
+    background-image: none;
+    background: #c2c2c2;
+  }
+}
+
+#tve_seventeen_set {
+  [class*='seventeen_set'] {
+    @include clearfix();
+    .tve_editor_main_content {
+      max-width: 1250px;
+    }
+    .tve-screen-filler-close {
+      @include sourcesans();
+      border-radius: 50%;
+      border: 0;
+      background: #fff;
+      color: #000;
+      display: block;
+      font-size: 30px;
+      height: 35px;
+      line-height: 26px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      text-align: center;
+      text-decoration: none;
+      width: 35px;
+    }
+    a {
+      color: #943a3a;
+    }
+    h2 {
+      @include opensanscondensed();
+      color: #333333;
+      font-weight: 700;
+      font-size: 62px;
+      line-height: 1.161em;
+      letter-spacing: normal;
+    }
+    h4 {
+      @include sourcesans();
+      color: #333333;
+      font-size: 34px;
+      font-weight: 600;
+      line-height: 1.176em;
+      letter-spacing: normal;
+    }
+    h5 {
+      @include sourcesans();
+      color: #333;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 1.250em;
+      letter-spacing: normal;
+    }
+    p {
+      @include sourcesans();
+      color: #666;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 1.4em;
+      letter-spacing: normal;
+      margin-bottom: 20px;
+    }
+    h2, h4, h5 {
+      clear: none;
+      padding-bottom: 0;
+    }
+  }
+}
+
+#tve_seventeen_set {
+  @include sourcesans();
+  text-shadow: none;
+  article {
+    padding-bottom: 0;
+  }
+  .thrv_contentbox_shortcode {
+    margin-top: 0;
+    margin-bottom: 0;
+    .tve_cb5 {
+      box-shadow: 0 5px 35px 0 rgba(#000, .12);
+      border: 0;
+    }
+  }
+  .thrv_lead_generation {
+    &.thrv_lead_generation_vertical {
+      input[type="text"], input[type="email"] {
+        margin-bottom: 20px;
+      }
+    }
+    &.tve_white {
+      button {
+        color: #fff;
+        &:hover, &:active {
+          color: #333;
+        }
+      }
+    }
+    button {
+      border-radius: 5px;
+      @include sourcesans();
+      box-shadow: 0 1px 0 0 rgba(#fff, .16) inset;
+      text-shadow: none;
+      color: $white;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 30px;
+      padding: 14px 10px;
+    }
+    input[type="text"], input[type="email"] {
+      border-radius: 0;
+      @include sourcesans();
+      box-shadow: 0 0 0 1px #c6c6c6 inset;
+      background: $white;
+      border: 0;
+      color: #999;
+      font-size: 18px;
+      font-weight: 300;
+      height: auto;
+      line-height: 28px;
+      padding: 16px 20px !important;
+      &:focus {
+        color: #333333;
+      }
+    }
+  }
+}
+
+$color-pallete: 'blue' #3d5c6e #293e4a #44677b #22333d #2e4553 #3d5c6e,
+'black' #3d3d3d #292929 #444444 #222222 #2e2e2e #3d3d3d,
+'green' #49834b #315933 #4f8f52 #2b4d2c #376339 #bbd8b4,
+'white' #adadad #858585 #bbbbbb #777777 #898989 #fff,
+'orange' #fb9315 #f9630f #fca017 #f8570d #e16e10 #fb9315,
+'purple' #665074 #44364e #725a82 #392d41 #4c3c57 #665074,
+'red' #e02b2c #d01d1e #e42f30 #cc1a1a #c22021 #e02b2c,
+'teal' #359da3 #236d77 #3baeb3 #1d5c67 #28777f #359da3;
+
+@each $color in $color-pallete {
+  #tve_seventeen_set {
+    .thrv-leads-screen-filler.tve_#{nth($color, 1)} {
+      background: nth($color, 7);
+    }
+    .tve_cb.tve_cb5.tve_#{nth($color, 1)} {
+      background: nth($color, 7);
+    }
+    .thrv_lead_generation.tve_#{nth($color, 1)} {
+      input[type="text"], input[type="email"] {
+        &:focus {
+          box-shadow: 0 0 0 6px nth($color, 7) inset;
+        }
+      }
+      button {
+        @include linear-gradient(nth($color, 2) 0%, nth($color, 3) 100%);
+        border: 1px solid nth($color, 3);
+        &:hover {
+          @include linear-gradient(nth($color, 4) 0%, nth($color, 5) 100%);
+        }
+        &:active {
+          background: nth($color, 6);
+        }
+      }
+    }
+  }
+}
+
+@import "_responsive";
+
+@media only screen and (max-width: 1250px) {
+  #tve_seventeen_set {
+    [class*="tve_seventeen_set"] {
+      .tve_editor_main_content {
+        padding: 0 10px;
+      }
+      .thrv_columns {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  #tve_seventeen_set {
+    [class*="tve_seventeen_set"] {
+      .seventeen_set_arrow {
+        display: none;
+      }
+    }
+  }
+}
+
+
+

@@ -1,0 +1,39 @@
+<div class="agency">
+    <div class="row">
+        <div class="image span2">
+            <a href="{{ wp.get_permalink(wp.get_the_ID()) }}">
+                {% if wp.get_the_post_thumbnail(wp.get_the_ID()) %}
+                    {{ wp.get_the_post_thumbnail(wp.get_the_ID())|raw }}
+                {% else %}
+                    <img src="{{ wp.get_template_directory_uri() }}/assets/img/agency-tmp.png" alt="{{ property.post_title }}">
+                {% endif %}
+            </a>
+        </div><!-- /.image -->
+
+        <div class="body span4">
+            <h3>
+                <a href="{{ wp.get_permalink(wp.get_the_ID()) }}">{{ wp.the_title() }}</a>
+            </h3>
+
+            <p>{{ wp.aviators_core_get_post_teaser(wp.get_the_ID()) }}</p>
+        </div><!-- /.body -->
+
+        <div class="info span3">
+            <div class="box">
+                <div class="address">
+                    {{ wp.get_post_meta(wp.get_the_ID(), '_agency_address', TRUE)|nl2br  }}
+                </div><!-- /.address -->
+
+                <div class="email">
+                    <a href="mailto:{{ wp.get_post_meta(wp.get_the_ID(), '_agency_email', TRUE)  }}">{{ wp.get_post_meta(wp.get_the_ID(), '_agency_email', TRUE)  }}</a>
+                </div><!-- /.email -->
+
+                <div class="phone">
+                    {{ wp.get_post_meta(wp.get_the_ID(), '_agency_phone', TRUE)  }}
+                </div><!-- /.phone -->
+            </div><!-- /.box -->
+        </div><!-- /.info -->
+    </div><!-- /.row -->
+</div><!-- /.agency -->
+
+

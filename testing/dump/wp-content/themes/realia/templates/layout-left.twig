@@ -1,0 +1,42 @@
+{{ wp.get_header() }}
+
+<div id="content" class="clearfix">
+    {% if wp.is_active_sidebar('top') %}
+        {{ wp.get_sidebar('top') }}
+    {% endif %}
+
+    <div class="container">
+        <div class="row">
+            {% include 'helpers/messages.twig' %}
+
+            {% if wp.is_active_sidebar('content-top') %}
+                {{ wp.get_sidebar('content-top') }}
+            {% endif %}
+
+            {% if wp.is_active_sidebar('sidebar-primary') or wp.is_active_sidebar('property-detail') %}
+                <div class="sidebar span3">
+                    {% if wp.is_singular('property') %}
+                        {% if not wp.dynamic_sidebar('property-detail') %}{% endif %}
+                    {% endif %}
+
+                    {{ wp.get_sidebar('sidebar-primary') }}
+                </div><!-- /#sidebar -->
+            {% endif %}
+            
+            <div id="main" class="{% if wp.is_active_sidebar('sidebar-primary') %}span9{% else %}span12{% endif %}">
+                {% block content %}{% endblock %}
+            </div><!-- /#main -->
+        </div><!-- /.row -->
+
+        {% if wp.is_active_sidebar('content-bottom') %}        
+    
+                {{ wp.get_sidebar('content-bottom') }}
+        {% endif %}
+    </div><!-- /.container -->
+
+    {% if wp.is_active_sidebar('bottom') %}    
+        {{ wp.get_sidebar('bottom') }}
+    {% endif %}
+</div><!-- /#content -->
+
+{{ wp.get_footer() }}

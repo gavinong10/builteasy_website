@@ -1,0 +1,23 @@
+@mixin shadow {
+  @include box-shadow(0px 1px 1px rgba(0, 0, 0, .10));
+}
+
+@mixin buttonize {
+  @include transition(background-color .2s ease-in); @include background-image(none); @include border-radius(0px); @include box-shadow(none); @include text-shadow(none);
+  &:hover, &:active, &:focus {
+    @include border-radius(0px); @include box-shadow(none); @include text-shadow(none);
+  }
+  background-color: $forms-submit-background-color; background-image: url('../img/arrow-right-white.png'); background-position: 90% center; background-repeat: no-repeat; background-size: 8px 11px; border: 0px; color: $forms-submit-color; padding: 7px 30px 7px 15px;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+    background-image: url('../img/arrow-right-white@2x.png');
+  }
+
+  &:hover { background-color: darken($forms-submit-background-color, 10%); }
+  a { color: #fff; }
+}
+
+@mixin clearfix-normal {
+  display: inline-block; zoom: 1;
+  &:after { height: 0; content: "."; display: block; clear: both; visibility: hidden; }
+}

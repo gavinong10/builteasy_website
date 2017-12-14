@@ -1,0 +1,78 @@
+<div class="palette">
+    <div class="toggle">
+        <a href="#">{{ wp.__('Toggle', 'aviators') }}</a>
+    </div><!-- /.toggle -->
+
+    <div class="inner">
+        <div class="headers">
+            <h2>{{ wp.__('Header styles', 'aviators') }}</h2>
+            <ul>
+                <li><a class="header-light">{{ wp.__('Light', 'aviators') }}</a></li>
+                <li><a class="header-normal">{{ wp.__('Normal', 'aviators') }}</a></li>
+                <li><a class="header-dark">{{ wp.__('Dark', 'aviators') }}</a></li>
+            </ul>
+        </div><!-- /.headers -->
+
+        <div class="patterns">
+            <h2>{{ wp.__('Patterns', 'aviators') }}</h2>
+            <ul>
+                <li><a class="pattern-cloth-alike">cloth-alike</a></li>
+                <li><a class="pattern-corrugation">corrugation</a></li>
+                <li><a class="pattern-diagonal-noise">diagonal-noise</a></li>
+                <li><a class="pattern-dust">dust</a></li>
+                <li><a class="pattern-fabric-plaid">fabric-plaid</a></li>
+                <li><a class="pattern-farmer">farmer</a></li>
+                <li><a class="pattern-grid-noise">grid-noise</a></li>
+                <li><a class="pattern-lghtmesh">lghtmesh</a></li>
+                <li><a class="pattern-pw-maze-white">pw-maze-white</a></li>
+                <li><a class="pattern-none">none</a></li>
+            </ul>
+        </div>
+
+        <div class="colors">
+            <h2>{{ wp.__('Color variants', 'aviators') }}</h2>
+            <ul>
+                <li><a href="{{ wp.get_template_directory_uri() }}/assets/css/realia-red.css" class="red">{{ wp.__('Red', 'aviators') }}</a></li>
+                <li><a href="{{ wp.get_template_directory_uri() }}/assets/css/realia-magenta.css" class="magenta">{{ wp.__('Magenta', 'aviators') }}</a></li>
+                <li><a href="{{ wp.get_template_directory_uri() }}/assets/css/realia-brown.css" class="brown">{{ wp.__('Brown', 'aviators') }}</a></li>
+                <li><a href="{{ wp.get_template_directory_uri() }}/assets/css/realia-orange.css" class="orange">{{ wp.__('Orange', 'aviators') }}</a></li>
+                <li><a href="{{ wp.get_template_directory_uri() }}/assets/css/realia-brown-dark.css" class="brown-dark">{{ wp.__('Brown dark', 'aviators') }}</a></li>
+
+                <li><a href="{{ wp.get_template_directory_uri() }}/assets/css/realia-gray-red.css" class="gray-red">{{ wp.__('Gray Red', 'aviators') }}</a></li>
+                <li><a href="{{ wp.get_template_directory_uri() }}/assets/css/realia-gray-magenta.css" class="gray-magenta">{{ wp.__('Gray Magenta', 'aviators') }}</a></li>
+                <li><a href="{{ wp.get_template_directory_uri() }}/assets/css/realia-gray-brown.css" class="gray-brown">{{ wp.__('Gray Brown', 'aviators') }}</a></li>
+                <li><a href="{{ wp.get_template_directory_uri() }}/assets/css/realia-gray-orange.css" class="gray-orange">{{ wp.__('Gray Orange', 'aviators') }}</a></li>
+                <li><a href="{{ wp.get_template_directory_uri() }}/assets/css/realia-gray-brown-dark.css" class="gray-brown-dark">{{ wp.__('Gray Brown dark', 'aviators') }}</a></li>
+
+                <li><a href="{{ wp.get_template_directory_uri() }}/assets/css/realia-green-light.css" class="green-light">{{ wp.__('Green light', 'aviators') }}</a></li>
+                <li><a href="{{ wp.get_template_directory_uri() }}/assets/css/realia-green.css" class="green">{{ wp.__('Green', 'aviators') }}</a></li>
+                <li><a href="{{ wp.get_template_directory_uri() }}/assets/css/realia-turquiose.css" class="turquiose">{{ wp.__('Turquiose', 'aviators') }}</a></li>
+                <li><a href="{{ wp.get_template_directory_uri() }}/assets/css/realia-blue.css" class="blue">{{ wp.__('Blue', 'aviators') }}</a></li>
+                <li><a href="{{ wp.get_template_directory_uri() }}/assets/css/realia-violet.css" class="violet">{{ wp.__('Violet', 'aviators') }}</a></li>
+
+                <li><a href="{{ wp.get_template_directory_uri() }}/assets/css/realia-gray-green-light.css" class="gray-green-light">{{ wp.__('Gray Green light', 'aviators') }}</a></li>
+                <li><a href="{{ wp.get_template_directory_uri() }}/assets/css/realia-gray-green.css" class="gray-green">{{ wp.__('Gray Green', 'aviators') }}</a></li>
+                <li><a href="{{ wp.get_template_directory_uri() }}/assets/css/realia-gray-turquiose.css" class="gray-turquiose">{{ wp.__('Gray Turquiose', 'aviators') }}</a></li>
+                <li><a href="{{ wp.get_template_directory_uri() }}/assets/css/realia-gray-blue.css" class="gray-blue">{{ wp.__('Gray Blue', 'aviators') }}</a></li>
+                <li><a href="{{ wp.get_template_directory_uri() }}/assets/css/realia-gray-violet.css" class="gray-violet">{{ wp.__('Gray Violet', 'aviators') }}</a></li>
+            </ul>
+        </div><!-- /.colors -->
+
+        <div class="layouts clearfix">
+            <h2>{{ wp.__('Layouts', 'aviators') }}</h2>
+            <p>
+                <label>
+                    <input type="radio" name="layout" value="wide" checked="checked"> {{ wp.__('Wide', 'aviators') }}
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <input type="radio" name="layout" value="boxed"> {{ wp.__('Boxed', 'aviators') }}
+                </label>
+            </p>
+        </div><!-- /.layouts -->
+
+        <a href="#" class="btn btn-primary reset">{{ wp.__('Reset default', 'aviators') }}</a>
+    </div><!-- /.inner -->
+</div><!-- /.palette -->

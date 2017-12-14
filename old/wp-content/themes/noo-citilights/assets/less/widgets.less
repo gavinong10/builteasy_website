@@ -1,0 +1,446 @@
+//----------------------------------------------------------------------------//
+// NOO Framework / Less / Wordpress / Widgets
+//
+// This file is less styling for widgets of Wordpress
+//
+//----------------------------------------------------------------------------//
+
+
+// ---------------------------------------------------------
+// Widget Area
+// ---------------------------------------------------------
+
+.widget-area {
+
+}
+
+
+
+// ---------------------------------------------------------
+// Widget Common Style
+// ---------------------------------------------------------
+.widget {
+ 	+ .widget {
+ 		margin-top: @grid-gutter-width;
+ 	}
+
+	// text-shadow: @widget-text-shadow;
+
+	.widget-title:before {
+		.opacity(@icon-opacity-base);
+	}
+
+	a:hover,
+	a:focus {
+		text-decoration: none;
+	}
+
+	p,
+	ul,
+	ol {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	ul,
+	ol {
+		overflow: hidden;
+		margin-left: 0;
+		padding: 0;
+		// border: 1px solid @widget-border-color;
+		// border: 1px solid @widget-border-color-rgba;
+		list-style: none;
+		// border-radius: @widget-border-radius;
+		background-color: @widget-block-bg;
+		//.box-shadow( @widget-block-box-shadow );
+
+		li {
+			border-bottom: 1px solid @border-color-base;
+			padding: (@widget-item-padding-vertical / 2) @widget-item-padding-horizontal;
+			line-height: @widget-item-line-height;
+			// .box-shadow( @widget-item-box-shadow );
+			color: #8E8E8E;
+		    font-weight: @font-weight-small;
+			&:hover {
+				//background-color: @widget-item-hover-bg;
+			}
+
+			a {
+				// border-bottom: 1px dotted;
+			    font-size: @widget-link-size;
+			    font-weight: @font-weight-small;
+			    line-height: @widget-item-line-height;
+			}
+
+			&:first-child{
+				padding-top: 0;
+			}
+			&:last-child {
+				border-bottom: 0;
+			}
+		}
+	}
+
+	select {
+		width: 100%;
+	}
+}
+
+.widget-title {
+	color: @widget-title-color;
+    font-size: 24px; 
+    font-weight: 300;
+    line-height: @widget-item-line-height;
+    margin:0px 0 @grid-gutter-width;
+}
+
+.widget_search{
+	form{
+		position: relative;
+		.add-icon-before("\f002",0,1);
+		&:before{
+			position: absolute;
+		    right: 0;
+		    text-align: center;
+		    text-decoration: inherit;
+		    top: 0;
+		    width: @input-height;
+		    cursor: pointer;
+		    height: @input-height;
+		    line-height: @input-height;
+		    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.56);
+		    color: #b8b8b8;
+		}
+	}
+	#s{
+	    box-shadow:none !important;
+	    -webkit-box-shadow:none !important;
+	    -moz-box-shadow:none !important;
+	    padding-right: @input-height;
+	}
+}
+.widget_calendar {
+	
+	#wp-calendar {
+		border-collapse: collapse;
+	    border-spacing: 0;
+	    background-color: #f8f8f8;
+	    max-width: 100%;
+	    margin-bottom: 20px;
+	    width: 100%;
+		position: relative;
+		font-size: @widget-link-size;		
+		border-radius:@border-radius-small;
+
+		caption {
+			border-color: #f8f8f8;
+		    border-style: solid;
+		    border-width: 1px 1px 0;
+		    font-size: @font-size-base;
+		    font-weight: @font-weight-small;
+		    padding: 8px;
+		    text-transform: uppercase;
+		    background-color: #f8f8f8;
+		    border-bottom: 1px solid #e5e5e5;
+		}
+
+		th,
+		td {
+			text-align: center;
+			line-height: 26px;
+			padding: 10px
+		}
+		> thead{
+			background-color: rgba(0, 0, 0, 0);
+		}
+		> thead > tr > th {
+			// border: 0;
+			border-bottom: 1px solid @border-color-base; 
+			font-weight: @font-weight-small;
+			font-size: @font-size-base;
+			padding: 8px;
+		}
+
+		> tbody > tr > td {
+			border: none;
+			line-height: 26px;
+			padding: 5px;
+
+			&.pad {
+				background-color: transparent;
+				.box-shadow(none);
+
+				&:first-child {
+					border-left: 0;
+				}
+
+				&:last-child {
+					border-right: 0;
+				}
+			}
+			> a {
+				background: @link-color;
+				color: #ffffff;
+				display: block;
+				border-radius:@border-radius-small;
+			}
+		}
+		
+		> tfoot > tr > td {
+			
+		}
+		> tfoot{
+			position: absolute;
+			width: 100%;
+			top: 0;
+			left: 0;
+			.pad{
+				border: none;
+			}
+		}
+		#prev,
+		#next {
+			font-weight: @font-weight-small;
+		    padding: 5px 10px;
+		    text-shadow: none;
+		    text-transform: uppercase;
+		    position: absolute;
+		    top:0;
+		    > a {
+		    	display: block;
+		    	width: 40px;
+		    	height: 40px;
+		    	text-indent: -9999em;
+		    	position: absolute;
+		    	top: 0;
+		    }
+		}
+		#next{
+			right: 0;
+			padding-left: 15px;
+			.add-icon-before("\f105",5,1);
+			> a {
+				right: 0;
+			}
+		}
+		#prev{
+			left: 0;
+			padding-left: 15px;
+			.add-icon-before("\f104",5,1);
+			> a {
+				left: 0;
+			}
+		}
+	}
+}
+
+
+// 3, Categories
+
+// 4,5,6. Custom Menu, Mega, Page: Multi-level widgets.
+
+.widget_nav_menu ul,
+.widget_meta ul,
+.widget_pages ul {
+	li {
+		// border: 0;
+		// padding: 0;
+		// .box-shadow(none);
+
+		&:hover {
+			
+		}
+
+		a {
+			display: block;
+			// border-bottom: 1px dashed @widget-border-color;
+			// padding: @widget-item-padding-vertical @widget-item-padding-horizontal;
+			// .box-shadow(@widget-item-box-shadow);
+			// .add-icon-before ("\f0da");
+			&:hover {
+				
+			}
+		}
+
+		ul,
+		.sub-menu {
+			border: 0;
+			background-color: transparent;
+			border-radius: 0;
+			
+
+			li {
+				a {
+					padding-left: 35px;
+				}
+
+				&:first-child {
+					a {
+						border-radius: 0;
+					}
+				}
+			}
+
+			ul li a {
+				padding-left: 60px;
+			}
+		}
+	}
+}
+
+.widget_nav_menu .menu {
+	> li:last-child a:first-child {
+		border-bottom: 0;
+	}
+}
+
+.widget_nav_menu .current-menu-item > a {
+	background-color: @widget-menu-current-item-bg;
+}
+
+.widget.widget_meta ul {
+	border-bottom: 0;
+}
+
+.widget.widget_meta li {
+	abbr[title] {
+		border-bottom: 0;
+	}
+}
+
+.widget.widget_pages ul {
+	border-bottom: 0;
+}
+
+// 7, 8, 9 have large padding
+.widget.widget_recent_comments li,
+.widget.widget_recent_entries li,
+.widget.widget_rss li {
+	font-size: @widget-link-size;
+}
+
+// 7. Recent Comments
+.widget.widget_recent_comments li {
+	a:last-child {
+		// display: block;
+		// margin-top: @padding-small-vertical;
+		// border-bottom: 0;
+		// font-size: @font-size-large;
+		// font-weight: 400;
+		// line-height: 1.2;
+	}
+}
+
+// .widget.widget_recent_comments .url {
+// 	.add-icon-before("\f08e");
+// }
+
+// 8. Recent Posts
+.widget.widget_recent_entries li {
+	a {
+		display: block;
+		border-bottom: 0;
+		font-size: @widget-link-size;
+		font-weight: @font-weight-small;
+		line-height: @widget-item-line-height;
+		color: @link-color;
+		&:hover{
+			color: @link-color;
+		}
+	}
+
+	.post-date {
+		display: block;
+		color: #8e8e8e;
+		font-weight: @font-weight-small;
+		font-size: @font-size-small;
+	}
+}
+
+ 
+// 9. RSS
+// Hide the RSS icon
+.widget.widget_rss .widget-title img[alt=RSS] {
+	.hidden();
+}
+
+.widget.widget_rss .widget-title {
+	a:last-child {
+		.add-icon-before("\f143", @icon-padding-large);
+	}
+}
+
+.widget.widget_rss li {
+	a {
+		display: block;
+		margin-top: @padding-small-vertical;
+		border-bottom: 0;
+		font-size: @font-size-large;
+		font-weight: @font-weight-base;
+		.add-icon-before("\f08e");
+	}
+}
+
+.widget_rss .rss-date {
+	display: block;
+	margin-top: @padding-small-vertical;
+	text-transform: uppercase;
+	&:not(:empty) {
+		.add-icon-before("\f133");
+	}
+}
+
+.widget_rss .rssSummary {
+	margin: 10px 0;
+	font-size: @widget-link-size;
+}
+
+.widget_rss cite {
+	display: block;
+	text-transform: uppercase;
+
+	&:not(:empty){
+		.add-icon-before("\f007");
+	}
+}
+
+// 10. Search
+
+// 11. Tag Cloud
+.widget_tag_cloud,
+.widget_product_tag_cloud {
+	text-shadow: none;
+}
+
+.widget_tag_cloud .tagcloud,
+.widget_product_tag_cloud .tagcloud {
+	&:extend(.clearfix all);
+}
+
+.widget_tag_cloud .tagcloud a,
+.widget_product_tag_cloud .tagcloud a {
+	.tag();
+}
+.recent-tweets{
+	.twitter_time{
+		font-size: @font-size-small;
+		border-bottom: 1px dotted #8d8d8d;
+		color: #c2c2c2 !important;
+		
+		&:hover{
+			color: lighten(@link-color, 10%);
+		}
+	}
+}
+
+.widget_newsletterwidget{
+	.newsletter-email{
+		&:extend(.form-control all);
+	}
+	.newsletter-submit{
+		&:extend(.btn all);
+		&:extend(.btn-primary all);
+		&:extend(.pressable all);
+	}
+}

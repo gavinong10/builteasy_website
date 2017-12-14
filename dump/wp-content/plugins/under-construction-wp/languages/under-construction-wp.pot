@@ -1,0 +1,230 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Under Construction Pro by SeedProd\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-14 15:47-0500\n"
+"PO-Revision-Date: 2015-08-14 15:48-0500\n"
+"Last-Translator: John Turner <john@seedprod.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-Basepath: ../\n"
+"X-Generator: Poedit 1.8.1\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: framework/field-types/date.php:8 framework/field-types/daterange.php:8
+msgid "01-Jan"
+msgstr ""
+
+#: framework/field-types/date.php:9 framework/field-types/daterange.php:9
+msgid "02-Feb"
+msgstr ""
+
+#: framework/field-types/date.php:10 framework/field-types/daterange.php:10
+msgid "03-Mar"
+msgstr ""
+
+#: framework/field-types/date.php:11 framework/field-types/daterange.php:11
+msgid "04-Apr"
+msgstr ""
+
+#: framework/field-types/date.php:12 framework/field-types/daterange.php:12
+msgid "05-May"
+msgstr ""
+
+#: framework/field-types/date.php:13 framework/field-types/daterange.php:13
+msgid "06-Jun"
+msgstr ""
+
+#: framework/field-types/date.php:14 framework/field-types/daterange.php:14
+msgid "07-Jul"
+msgstr ""
+
+#: framework/field-types/date.php:15 framework/field-types/daterange.php:15
+msgid "08-Aug"
+msgstr ""
+
+#: framework/field-types/date.php:16 framework/field-types/daterange.php:16
+msgid "09-Sep"
+msgstr ""
+
+#: framework/field-types/date.php:17 framework/field-types/daterange.php:17
+msgid "10-Oct"
+msgstr ""
+
+#: framework/field-types/date.php:18 framework/field-types/daterange.php:18
+msgid "11-Nov"
+msgstr ""
+
+#: framework/field-types/date.php:19 framework/field-types/daterange.php:19
+msgid "12-Dec"
+msgstr ""
+
+#: framework/field-types/date.php:29 framework/field-types/daterange.php:29
+#: framework/field-types/daterange.php:42
+msgid "day"
+msgstr ""
+
+#: framework/field-types/date.php:32 framework/field-types/daterange.php:32
+#: framework/field-types/daterange.php:45
+msgid "year"
+msgstr ""
+
+#: framework/field-types/upload.php:12
+msgid "Media Image Library"
+msgstr ""
+
+#: framework/framework.php:77
+msgid "Settings reset."
+msgstr ""
+
+#: framework/framework.php:116 framework/framework.php:117
+#: inc/config-settings.php:22 under-construction.php:21
+msgid "Under Construction"
+msgstr ""
+
+#: framework/framework.php:177
+msgid "&larr; Close Window"
+msgstr ""
+
+#: framework/framework.php:177
+msgid "Live Preview"
+msgstr ""
+
+#: framework/validations/color.php:13
+msgid "Please enter a valid color value."
+msgstr ""
+
+#: framework/validations/email.php:10 framework/validations/escurlraw.php:11
+msgid "Please enter a valid email."
+msgstr ""
+
+#: framework/validations/number.php:11
+msgid "Please enter a valid number."
+msgstr ""
+
+#: framework/validations/required.php:10
+msgid "is required."
+msgstr ""
+
+#: inc/class-seed-ucp.php:67
+msgid "Under Construction Mode Active"
+msgstr ""
+
+#: inc/class-seed-ucp.php:69
+msgid "Maintenance Mode Active"
+msgstr ""
+
+#: inc/class-seed-ucp.php:104
+msgid "Please enter your settings."
+msgstr ""
+
+#: inc/config-settings.php:33
+msgid "Content"
+msgstr ""
+
+#: inc/config-settings.php:44
+msgid "General"
+msgstr ""
+
+#: inc/config-settings.php:50
+msgid "Status"
+msgstr ""
+
+#: inc/config-settings.php:52
+msgid "Disabled"
+msgstr ""
+
+#: inc/config-settings.php:53
+msgid "Enable Under Construction Mode"
+msgstr ""
+
+#: inc/config-settings.php:54
+msgid "Enable Maintenance Mode"
+msgstr ""
+
+#: inc/config-settings.php:56
+msgid ""
+"When you are logged in you'll see your normal website. Logged out visitors "
+"will see the Under Construction or Maintenance page. Under Construction Mode "
+"will be available to search engines if your site is not private. Maintenance "
+"Mode will notify search engines that the site is unavailable."
+msgstr ""
+
+#: inc/config-settings.php:66
+msgid "Use maintenance.php"
+msgstr ""
+
+#: inc/config-settings.php:67
+msgid ""
+"maintenance.php detected, would you like to use this for your maintenance "
+"page?"
+msgstr ""
+
+#: inc/config-settings.php:69
+msgid "Yes"
+msgstr ""
+
+#: inc/config-settings.php:79
+msgid "Page Settings"
+msgstr ""
+
+#: inc/config-settings.php:86
+msgid "Message"
+msgstr ""
+
+#: inc/config-settings.php:87
+msgid "Tell the visitor what to expect from your site."
+msgstr ""
+
+#: inc/config-settings.php:94
+msgid "Optional Background Image"
+msgstr ""
+
+#: inc/config-settings.php:100
+msgid "Disable Default Excluded URLs"
+msgstr ""
+
+#: inc/config-settings.php:101
+msgid ""
+"By default we exclude urls with the terms: login, admin, dashboard and "
+"account to prevent lockouts. Check to disable."
+msgstr ""
+
+#: inc/config-settings.php:103
+msgid "Disable"
+msgstr ""
+
+#: inc/config-settings.php:110
+msgid "Powered By SeedProd"
+msgstr ""
+
+#: inc/config-settings.php:111
+msgid "Nope - Got No Love"
+msgstr ""
+
+#: inc/config-settings.php:111
+msgid "Yep - I Love You Man"
+msgstr ""
+
+#: inc/config-settings.php:112
+msgid ""
+"Can we show a <strong>cool stylish</strong> footer credit at the bottom the "
+"page."
+msgstr ""
+
+#: inc/config-settings.php:119
+msgid "Custom HTML"
+msgstr ""
+
+#: inc/config-settings.php:126
+msgid "HTML"
+msgstr ""
+
+#: inc/config-settings.php:127
+msgid ""
+"This will replace the entire page's output with your custom html. Leave "
+"empty if you are not using custom html."
+msgstr ""

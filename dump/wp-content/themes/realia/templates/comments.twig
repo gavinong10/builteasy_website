@@ -1,0 +1,25 @@
+{% if not wp.post_password_required() %}
+    <div id="comments" class="comments-area">
+        {% if wp.have_comments() %}
+            <h2 class="comments-title">{{ title|raw }}</h2>
+
+            <ol class="comment-list">
+                {{ wp_list_comments("array('style' => 'ol', 'format' => 'html5', 'short_ping' => 'true', 'avatar_size' => 74 )") }}
+            </ol>
+
+            {% if wp.get_comment_pages_count() > 1 and wp.get_option('page_comments') %}
+                <nav class="navigation comment-navigation" role="navigation">
+                    <h1 class="screen-reader-text section-heading">{{ wp.__('Comment navigation', 'aviators') }}</h1>
+                    <div class="nav-previous">{{ wp.previous_comments_link(wp.__( '&larr; Older Comments', 'aviators')) }}</div>
+                    <div class="nav-next">{{ wp.next_comments_link(wp.__('Newer Comments &rarr;', 'aviators')) }}</div>
+                </nav><!-- .comment-navigation -->
+            {% endif %}
+
+            {% if not wp.comments_open() and wp.get_comments_number() %}
+                <p class="no-comments">{{ wp.__('Comments are closed.', 'aviators') }}</p>
+            {% endif %}
+        {% endif %}
+
+        {{ comment_form("array('format' => 'html5')") }}
+    </div><!-- /#comments -->
+{% endif %}

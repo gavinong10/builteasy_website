@@ -1,0 +1,38 @@
+{
+	"title": "Templates",
+	"slug" : "templates",
+
+	"tabs": [
+		{
+			"settings": {
+				"slug"        : "cache",
+				"title"       : "Cache",
+				"subpage_slug": "templates"
+			},
+
+			"sections": [
+				{
+					"settings": {
+						"id": "cache"
+					},
+					"options" : [
+						{
+							"id"         : "debug",
+							"label"      : "Enable Twig Debug",
+							"type"       : "boolean",
+							"default"    : false,
+							"description": "If checked theme will stop using cached version of templates. In production please disable debug mode for Twig to improve site performance."
+						},
+						{
+							"id"         : "clear",
+							"label"      : "Clear Twig Templates",
+							"type"       : "boolean",
+							"default"    : false,
+							"description": "Enabled option after save will cause that all files under templates/cache will be flushed. Be aware that this option will be unchecked after successful flush."
+						}
+					]
+				}
+			]
+		}
+	]
+}

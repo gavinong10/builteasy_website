@@ -1,0 +1,257 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: YITH Woocommerce Compare\n"
+"POT-Creation-Date: 2015-09-03 10:31+0200\n"
+"PO-Revision-Date: 2015-09-03 10:31+0200\n"
+"Last-Translator: YIThemes <support@yithemes.com>\n"
+"Language-Team: Your Inspiration Themes <support@yithemes.com>\n"
+"Language: English\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-Basepath: ./\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../class.yith-woocompare-admin.php:130
+msgid "Products Compare"
+msgstr "Comparaison de produits"
+
+#: ../class.yith-woocompare-admin.php:143 ../yith-woocompare-options.php:24
+msgid "General Settings"
+msgstr "Réglages"
+
+#: ../class.yith-woocompare-admin.php:377
+msgid "Hard Crop?"
+msgstr ""
+
+#: ../class.yith-woocompare-frontend.php:145
+msgid "Added"
+msgstr "Ajouté"
+
+#: ../class.yith-woocompare-frontend.php:146 ../templates/compare.php:45
+msgid "Product Comparison"
+msgstr "Comparaison de produits"
+
+#: ../class.yith-woocompare-frontend.php:259
+msgid "In stock"
+msgstr "En stock"
+
+#: ../class.yith-woocompare-frontend.php:264
+msgid "N/A"
+msgstr ""
+
+#: ../class.yith-woocompare-frontend.php:355 ../yith-woocompare-options.php:47
+msgid "Compare"
+msgstr "Comparer"
+
+#: ../class.yith-woocompare-frontend.php:536
+msgid "No products to compare"
+msgstr "Aucun produits à comparer"
+
+#: ../class.yith-woocompare-frontend.php:554 ../templates/compare.php:167
+msgid "Remove"
+msgstr "Retirer"
+
+#: ../class.yith-woocompare-helper.php:39
+msgid "Image"
+msgstr ""
+
+#: ../class.yith-woocompare-helper.php:40
+#: ../widgets/class.yith-woocompare-widget.php:65
+msgid "Title"
+msgstr "Titre"
+
+#: ../class.yith-woocompare-helper.php:41
+msgid "Price"
+msgstr "Prix"
+
+#: ../class.yith-woocompare-helper.php:42
+msgid "Description"
+msgstr ""
+
+#: ../class.yith-woocompare-helper.php:43
+msgid "Availability"
+msgstr "Disponibilité"
+
+#: ../class.yith-woocompare-helper.php:44
+msgid "SKU"
+msgstr ""
+
+#: ../class.yith-woocompare-helper.php:45
+msgid "Attributes"
+msgstr ""
+
+#: ../class.yith-woocompare-helper.php:46
+msgid "Action"
+msgstr ""
+
+#: ../yith-woocompare-options.php:44
+msgid "Link/Button text"
+msgstr "texte du lien ou bouton"
+
+#: ../yith-woocompare-options.php:45
+msgid "Type the text to use for the button or the link of the compare."
+msgstr "inscriver le texte pour le bouton ou le lien pour comparer"
+
+#: ../yith-woocompare-options.php:70
+msgid "Open automatically lightbox"
+msgstr "ouverture lightbox auto"
+
+#: ../yith-woocompare-options.php:71
+msgid "Open link after click into \"Compare\" button\"."
+msgstr "ouvrir lien apres le click sur bouton"
+
+#: ../yith-woocompare-options.php:83
+msgid "Table Settings"
+msgstr "reglages panneau"
+
+#: ../yith-woocompare-options.php:90
+msgid "Table title"
+msgstr ""
+
+#: ../yith-woocompare-options.php:91
+msgid "Type the text to use for the table title."
+msgstr ""
+
+#: ../yith-woocompare-options.php:93
+#, fuzzy
+msgid "Compare Products"
+msgstr "Comparer les produits"
+
+#: ../yith-woocompare-options.php:98
+msgid "Fields to show"
+msgstr "champs a montrer"
+
+#: ../yith-woocompare-options.php:99
+msgid ""
+"Select the fields to show in the comparison table and order them by "
+"drag&drop (are included also the woocommerce attributes)"
+msgstr ""
+"selectionnez les champs a montrer dans le tabelau de comparaison (en faisant "
+"glisser deposer)"
+
+#: ../templates/compare.php:76
+msgid "Close window [X]"
+msgstr "Fermer ce tableau"
+
+#: ../templates/compare.php:102
+msgid "No products added in the compare table."
+msgstr "Aucun produit à comparer"
+
+#: ../widgets/class.yith-woocompare-widget.php:21
+msgid "The widget show the list of products added in the compare table."
+msgstr "le widget montre les produits à comparer"
+
+#: ../widgets/class.yith-woocompare-widget.php:22
+msgid "YITH Woocommerce Compare Widget"
+msgstr ""
+
+#: ../widgets/class.yith-woocompare-widget.php:45
+#, fuzzy
+msgid "Go to Compare"
+msgstr "Comparer"
+
+#: ../widgets/class.yith-woocompare-widget.php:46
+msgid "Clear all"
+msgstr "Retirer tout"
+
+#: ../yit-common/yith-panel.php:406
+msgid "Select a date"
+msgstr "Choisir une date"
+
+#: ../yit-common/yith-panel.php:407
+msgid "Hours"
+msgstr "Heures"
+
+#: ../yit-common/yith-panel.php:408 ../yit-common/yith-panel.php:409
+msgid "Minutes"
+msgstr "Minutes"
+
+#: ../yit-common/yith-panel.php:417
+msgid "Upload"
+msgstr "Mettre en ligne"
+
+#: ../yit-common/yith-panel.php:444
+msgid "px"
+msgstr ""
+
+#: ../yit-common/yith-panel.php:445
+msgid "em"
+msgstr ""
+
+#: ../yit-common/yith-panel.php:446
+msgid "pt"
+msgstr ""
+
+#: ../yit-common/yith-panel.php:447
+msgid "rem"
+msgstr ""
+
+#: ../yit-common/yith-panel.php:457
+msgid "Select a font family"
+msgstr ""
+
+#: ../yit-common/yith-panel.php:465
+msgid "Regular"
+msgstr ""
+
+#: ../yit-common/yith-panel.php:466
+msgid "Bold"
+msgstr ""
+
+#: ../yit-common/yith-panel.php:467
+msgid "Extra bold"
+msgstr ""
+
+#: ../yit-common/yith-panel.php:468
+msgid "Italic"
+msgstr ""
+
+#: ../yit-common/yith-panel.php:469
+msgid "Italic bold"
+msgstr ""
+
+#: ../yit-common/yith-panel.php:481
+msgid "Click to preview"
+msgstr "Cliquer pour previsualiser"
+
+#~ msgid "Add to cart"
+#~ msgstr "Ajouter au panier"
+
+#~ msgid "Link or Button"
+#~ msgstr "Lien ou bouton"
+
+#~ msgid "Choose if you want to use a link or a button for the action button."
+#~ msgstr "utiliser un lien ou un bouton"
+
+#~ msgid "Link"
+#~ msgstr "lien"
+
+#~ msgid "Button"
+#~ msgstr "bouton"
+
+#~ msgid "Show button in single product page"
+#~ msgstr "montrer le bouton sur page produit"
+
+#~ msgid "Say if you want to show the button in the single product page."
+#~ msgstr "dites si vous souhaitez montrer le bouton sur page produit"
+
+#~ msgid "Show button in products list"
+#~ msgstr "montrer le bouton sur liste de produit"
+
+#~ msgid "Say if you want to show the button in the products list."
+#~ msgstr "dites si vous souhaitez montrer le bouton sur liste de produit"
+
+#~ msgid "Repeat \"Price\" field at the end of the table"
+#~ msgstr "Repeter le prix à la fin du tabelau"
+
+#~ msgid "Repeat \"Add to cart\" field at the end of the table"
+#~ msgstr "repeter ajout au panier a la fin du tableau"
+
+#~ msgid "Image size"
+#~ msgstr "taille image"
+
+#~ msgid "Set the size for the images"
+#~ msgstr "ajuster tialle image"

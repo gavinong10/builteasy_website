@@ -1,0 +1,14 @@
+[title]Small[/title]
+[description]List with details, and small size icon[/description]
+[before][/before]
+[loop]<dl class="attachments attachments-small">
+	<dt class="icon">
+		<a title="%TITLE%" href="%URL%" %NOFOLLOW%>
+			%ICON-16x16%
+		</a>
+	</dt>
+	<dd class="caption">
+		<a title="%TITLE%" href="%URL%" %NOFOLLOW%>%FILENAME%</a> (%FILESIZE%)
+	</dd>
+</dl>[/loop]
+[after][/after]

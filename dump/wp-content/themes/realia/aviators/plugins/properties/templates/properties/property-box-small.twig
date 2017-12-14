@@ -1,0 +1,75 @@
+<div class="property">
+    <div class="image">
+        <div class="content">
+            <a href="{{ wp.get_permalink(property.ID) }}"></a>
+
+            {% if wp.get_the_post_thumbnail(property.ID) %}
+                <img src="{{ wp.aq_resize(wp.wp_get_attachment_url(wp.get_post_thumbnail_id(property.ID), 'full'), 270, 200, 'true') }}" alt="{{ property.post_title }}">
+            {% else %}
+                <img src="{{ wp.get_template_directory_uri() }}/assets/img/property-tmp-small.png" alt="{{ property.post_title }}">
+            {% endif %}
+        </div><!-- /.content -->
+
+        {% if wp.aviators_settings_get_value('properties', 'common', 'disable_contract_type_label') != 'on' %}
+            {% if property.property_contracts.0 %}
+                <div class="rent-sale">
+                    {{ property.property_contracts.0.name }}
+                </div><!-- /.rent-sale -->
+            {% endif %}
+        {% endif %}
+
+        <div class="price">
+            {% if property.meta._property_custom_text.0 %}
+                {{ property.meta._property_custom_text.0 }}
+            {% else %}
+                {{ wp.aviators_price_format(property.meta._property_price.0) }}
+
+                {% if property.meta._property_price_suffix.0 %}
+                    <span class="suffix">{{ property.meta._property_price_suffix.0 }}</span>
+                {% endif %}
+            {% endif %}
+        </div><!-- /.price -->
+
+        {% if property.meta._property_reduced.0 %}
+            <div class="reduced">{{ wp.__('Reduced', 'aviators') }}</div><!-- /.reduced -->
+        {% endif %}
+    </div>
+    <!-- /.image -->
+
+    <div class="title">
+        <h2><a href="{{ wp.get_permalink(property.ID) }}">
+                {% if property.meta._property_title.0 %}
+                    {{ property.meta._property_title.0 }}
+                {% else %}
+                    {{ property.post_title }}
+                {% endif %}
+            </a></h2>
+    </div>
+    <!-- /.title -->
+
+    <div class="location">{{ property.location.0.name }}</div>
+    <!-- /.location -->
+
+    {% if property.meta._property_area.0 %}
+        <div class="area">
+            <span class="key">{{ wp.__('Area', 'aviators') }}:</span><!-- /.key -->
+            <span class="value">{{ property.meta._property_area.0 }}{{ wp.aviators_settings_get_value('properties', 'units', 'area')|raw }}</span><!-- /.value -->
+        </div><!-- /.area -->
+    {% endif %}
+
+    {% if property.meta._property_hide_baths.0 != '1' %}
+        {% if property.meta._property_bathrooms.0 %}
+            <div class="bathrooms" title="{{ wp.__('Bathrooms', 'aviators') }}">
+                <div class="content">{{ property.meta._property_bathrooms.0 }}</div>
+            </div><!-- /.bathrooms -->
+        {% endif %}
+    {% endif %}
+
+    {% if property.meta._property_hide_beds.0 != '1' %}
+        {% if property.meta._property_bedrooms.0 %}
+            <div class="bedrooms" title="{{ wp.__('Bedrooms', 'aviators') }}">
+                <div class="content">{{ property.meta._property_bedrooms.0 }}</div>
+            </div><!-- /.bedrooms -->
+        {% endif %}
+    {% endif %}
+</div>

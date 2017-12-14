@@ -1,0 +1,40 @@
+<div class="tvd-row">
+    <div class="tvd-col tvd-s2">
+        <span class="tvd-vertical-align">
+            <#= test.get('title') #>
+        </span>
+    </div>
+    <div class="tvd-col tvd-s2">
+        <span class="tvd-vertical-align">
+            <# if(test.get('type') !== undefined) { #>
+                <#= test.get('type').join(' v ') #>
+            <# } else { #>
+            &nbsp;
+            <#}#>
+        </span>
+
+    </div>
+    <div class="tvd-col tvd-s2">
+        <span class="tvd-vertical-align">
+            <#= test.get('notes')? test.get('notes') : '&nbsp;' #>
+        </span>
+    </div>
+    <div class="tvd-col tvd-s2">
+        <span class="tvd-vertical-align">
+            <#= test.get('date_started') #>
+        </span>
+    </div>
+    <div class="tvd-col tvd-s2">
+        <span class="tvd-vertical-align">
+            <#= test.get('date_completed') #>
+        </span>
+    </div>
+    <div class="tvd-col tvd-s2">
+        <div class="tvd-right">
+            <a class="tve-form-type-test tvd-btn-icon tvd-btn-icon-purple" href="#test/<#= test.get('id') #>">
+                <span class="tvd-icon-view"></span><span class="tvd-on-large-and-down"><?php echo __('View Test', 'thrive-leads') ?></span></a>
+            <a class="tve-form-type-test-delete tvd-btn-icon tvd-btn-icon-red" data-id="<#= test.get('id') #>" href="javascript:void(0)">
+                <span class="tvd-icon-trash-o"></span><span class="tvd-on-large-and-down">Delete</span></a>
+        </div>
+    </div>
+</div>

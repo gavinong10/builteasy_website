@@ -1,0 +1,28 @@
+body {
+	min-width: 300px;
+	background: #fff;
+}
+
+#wpbody {
+	padding: 10px;
+}
+
+.inside:after
+{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+input[type=radio]{
+	display:inline-block;
+	width:17px !important;
+	height:17px !important;
+	margin-top: -1px;
+}
+input[type=radio]:checked:before{
+	margin: 3px 0 0 3px;
+	font-size:21px;
+}

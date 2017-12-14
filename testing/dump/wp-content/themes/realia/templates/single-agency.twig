@@ -1,0 +1,63 @@
+{% extends 'layout.twig' %}
+
+{% block content %}
+    <h1 class="page-header">{{ post.post_title }}</h1>
+
+    <div class="agency">
+        <div class="row">
+            <div class="image span3">
+                <a href="{{ wp.get_permalink(wp.get_the_ID()) }}">
+                    {% if wp.get_the_post_thumbnail(wp.get_the_ID()) %}
+                        {{ wp.get_the_post_thumbnail(wp.get_the_ID())|raw }}
+                    {% else %}
+                        <img src="{{ wp.get_template_directory_uri() }}/assets/img/agency-tmp.png" alt="{{ property.post_title }}">
+                    {% endif %}
+                </a>
+            </div><!-- /.image -->
+
+            <div class="info span6">
+                <div class="box">
+                    <div class="address">
+                        {{ wp.get_post_meta(wp.get_the_ID(), '_agency_address', TRUE)|nl2br  }}
+                    </div><!-- /.address -->
+
+                    <div class="email">
+                        <a href="mailto:{{ wp.get_post_meta(wp.get_the_ID(), '_agency_email', TRUE)  }}">{{ wp.get_post_meta(wp.get_the_ID(), '_agency_email', TRUE)  }}</a>
+                    </div><!-- /.email -->
+
+                    <div class="phone">
+                        {{ wp.get_post_meta(wp.get_the_ID(), '_agency_phone', TRUE)  }}
+                    </div><!-- /.phone -->
+                </div><!-- /.box -->
+            </div><!-- /.info -->
+        </div><!-- /.row -->
+
+        <div class="row">
+            <div class="span9">
+                <h2>{{ wp.__('About Agency', 'aviators') }}</h2>
+
+                {{ wp.do_shortcode(wp.apply_filters('the_content', post.post_content))|raw }}
+            </div><!-- /.span9 -->
+        </div><!-- /.row -->
+    </div><!-- /.agent -->
+
+    {% if properties %}
+        <hr>
+
+        <h2 class="page-header">{{ wp.__('Assigned Properties', 'aviators') }}</h2>
+
+        <div class="properties-grid">
+            <div class="row-fluid">
+                {% for property in properties %}
+                <div class="span3">
+                    {% include 'properties/property-box-small.twig' %}
+                </div>
+                {% if loop.index % 4  == 0 %}
+            </div>
+            <div class="row-fluid">
+                {% endif %}
+                {% endfor %}
+            </div><!-- /.row -->
+        </div><!-- /.properties -->
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,106 @@
+<div class="tvd-modal-content">
+    <p>
+        <?php echo __('Using our link builder, you can decide which forms are displayed depending on where your visits are coming from.', 'thrive-leads') ?>
+    </p>
+    <p>
+        <?php echo __("For instance, if you're sending a broadcast to your email list, and you don't want any of your visitors to see forms on the site, then you can use this tool to build a link to send them to. You can even target by lead group, if you prefer.", 'thrive-leads') ?>
+    </p>
+
+    <h4><?php echo __('Step 1 - Define where you want to send your visitors', 'thrive-leads') ?></h4>
+    <?php
+    $all_post_types = get_post_types(array(
+        'public' => true
+        ));
+    $exceptionList = apply_filters('tve_leads_inbound_post_types_blacklist', array('attachment', 'focus_area', 'thrive_optin', 'tcb_lightbox', 'wysijap'));
+    $post_types = array_diff($all_post_types, $exceptionList);
+    $home_url = get_home_url();
+    $blog_index_url = get_permalink(get_option('page_for_posts'));
+    ?>
+    <div class="tve-form tve-Inbound-links">
+        <input class="home-base-url" type="hidden" value="<?php echo $home_url ?>"/>
+        <div class="tvd-input-field">
+            <select class="tl-post-type-select" id="tl-post-type-select">
+                <option value="home" rel="<?php echo $home_url ?>"><?php echo __('Homepage', 'thrive-leads') ?></option>
+                <?php if ($blog_index_url) { ?>
+                    <option value="blog-index" rel="<?php echo $blog_index_url ?>"><?php echo __('Blog Index', 'thrive-leads') ?></option>
+                <?php } ?>
+                <?php foreach ($post_types as $key => $post_type) : ?>
+                    <option class="request-posts" value="<?php echo $key ?>"><?php echo $post_type; ?></option>
+                <?php endforeach ?>
+                <option value="custom-url"><?php echo __('Custom URL', 'thrive-leads') ?></option>
+            </select>
+        </div>
+
+        <div class="tl-find-content" style="display: none">
+            <div class="tvd-input-field">
+                <input name="find-content" class="tl-find-content-input tve-leads-autocomplete" type="text" value="" id="find-content"/>
+                <label for="find-content"><?php echo __('Start typing to find content', 'thrive-leads') ?></label>
+            </div>
+            <div class="tl-selected-posts"></div>
+        </div>
+        <div class="tl-custom-url" style="display: none">
+            <div class="tvd-input-field">
+                <input class="tl-custom-url-input" type="text" class="tl-custom-url-input"/>
+                <label for="tl-custom-url-input"><?php echo __('Add a custom URL', 'thrive-leads') ?></label>
+            </div>
+            <a href="javascript:void(0)" class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-btn-small tl-update-inbound-link"><?php echo __('Update', 'thrive-leads') ?></a>
+        </div>
+        <div class="tvd-v-spacer vs-2"></div>
+        <h4><?php echo __('Step 2 - Tell us which Lead Groups you would like to target:', 'thrive-leads') ?></h4>
+
+        <input type="radio" name="targetAll" value="1" checked id="tl-targetAllGroups"/>
+        <label for="tl-targetAllGroups"><?php echo __('I want to target all forms on my site', 'thrive-leads') ?></label>
+
+        <input type="radio" name="targetAll" value="0" id="tl-targetCertainGroups"/>
+        <label class="tl-targetCertainGroups" for="tl-targetCertainGroups"><?php echo __('I only want to target certain lead groups', 'thrive-leads') ?></label>
+
+        <div class="tvd-v-spacer vs-2"></div>
+        <h4><?php echo __('Step 3 - Tell us which lead groups to target', 'thrive-leads') ?></h4>
+        <div class="tl-step3-wrapper-options"></div>
+        <div class="tvd-v-spacer vs-2"></div>
+        <h4><?php echo __('Step 4 - What should be the behaviour of the forms?', 'thrive-leads') ?></h4>
+        <div class="tvd-input-field">
+            <select class="tl-form-behaviour">
+                <option value="0"><?php echo __('Hide the forms', 'thrive-leads') ?></option>
+                <option value="1"><?php echo __('Displaying the "Already subscribed" state of the form', 'thrive-leads') ?></option>
+            </select>
+        </div>
+        <p><?php echo __('If the "already subscribed" state doesn\'t exist for any given form, then nothing will be shown.', 'thrive-leads') ?></p>
+        <div class="tvd-v-spacer"></div>
+        <h4><?php echo __('Step 5 - How long should this behaviour last for?', 'thrive-leads') ?></h4>
+        <div class="tvd-input-field">
+            <select class="tl-behaviour-period">
+                <option value="0"><?php echo __('Only once', 'thrive-leads') ?></option>
+                <option value="1"><?php echo __('Until the visitor closes the browser tab', 'thrive-leads') ?></option>
+                <option value="2" rel="custom"><?php echo __('A custom period of time', 'thrive-leads') ?></option>
+                <option value="3"><?php echo __('For as long as possible', 'thrive-leads') ?></option>
+            </select>
+        </div>
+        <div class="tl-custom-period" style="display: none">
+            <div class="tvd-input-field">
+                <input type="text" class="tl-custom-period-input" name="custom-period" value="0" id="tl-custom-period-input"/>
+                <label for="tl-custom-period-input" class="tvd-active"><?php echo __('days', 'thrive-leads') ?></label>
+            </div>
+        </div>
+        <div class="tvd-v-spacer vs-2"></div>
+        <div class="tvd-row">
+            <div class="tvd-col tvd-s8 tvd-offset-s2">
+                <h4 class="tvd-center-align"><?php echo __('Here is your Link', 'thrive-leads') ?></h4>
+                <div class="tvd-v-spacer"></div>
+                <div class="tvd-row tve-leads-copy-row tvd-collapse">
+                    <div class="tvd-col tvd-s9">
+                        <div class="tvd-input-field">
+                            <input readonly="readonly" class="tvd-no-margin tl-inbound-link-input tve-php-code tve-shortcode tve-leads-copy" type="text" value="<?php echo $home_url ?>" />
+                        </div>
+                    </div>
+                    <div class="tvd-col tvd-s3">
+                        <a class="tl-inbound-link-copy-btn tve-copy-to-clipboard tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-small tvd-btn-blue tvd-full-btn"
+                           href="javascript:void(0)">
+                            <span class="tl-copy-text"><?php echo __( 'Copy', 'thrive-leads' ) ?></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

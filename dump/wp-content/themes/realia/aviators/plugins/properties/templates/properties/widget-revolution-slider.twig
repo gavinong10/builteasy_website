@@ -1,0 +1,36 @@
+<div class="revolution-slider-wrapper" style="position: relative;">
+    <div class="revolution-slider">
+        {{  wp.do_shortcode(wp.putRevSlider(revolution_slider)) }}
+        {% if show_filter %}
+
+            {% if horizontal_filter %}
+                <div class="rs-filter-horizontal">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            {% include 'properties/filter-horizontal.twig' %}
+                        </div>
+                        <!-- /.span12 -->
+                    </div>
+                    <!-- /.row -->
+                </div><!-- /.container -->
+                </div>
+
+            {% else %}
+                <div class="rs-filter-vertical">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="span3">
+                            {% include 'properties/filter.twig' %}
+                        </div>
+                        <!-- /.span3 -->
+                    </div>
+                    <!-- /.row -->
+                </div><!-- /.container -->
+                </div>
+            {% endif %}
+        {% endif %}
+    </div>
+</div>

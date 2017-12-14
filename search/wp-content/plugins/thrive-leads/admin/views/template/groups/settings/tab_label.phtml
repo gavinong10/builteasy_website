@@ -1,0 +1,5 @@
+<a href="#<#= tab.getTabIdFromIdentifier() #>">
+	<# if (tab.countCheckedOptions()) { #><strong> <# }#>
+	<#= tab.get('label') #> (<#= tab.countCheckedOptions() #>)
+	<# if (tab.countCheckedOptions()) { #></strong> <# }#>
+</a>

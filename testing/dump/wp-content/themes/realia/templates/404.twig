@@ -1,0 +1,19 @@
+{% extends 'layout-fullwidth.twig' %}
+
+{% block content %}
+	<div class="container">
+    <div id="main">
+        <div class="not-found">
+            <strong>404</strong>
+            <h1>{{ wp.__('The page cannot be found', 'aviators') }}</h1>
+            <hr>
+            
+            {{ wp.get_search_form() }}            
+
+            <p>
+                Please use search box or <a href="javascript: window.history.go(-1)">return back</a>
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

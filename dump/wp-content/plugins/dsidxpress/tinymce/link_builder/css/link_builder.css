@@ -1,0 +1,45 @@
+body {
+	min-width: 300px;
+	background: #fff;
+}
+
+#wpbody {
+	padding: 10px;
+}
+
+label span {
+	display: block;
+	float: left;
+	margin-top: 4px;
+	line-height: 16px;
+	height: 16px;
+}
+
+.customlinkdiv .howto select,
+.customlinkdiv .howto textarea,
+#dsidxpress-link-builder .dsidxpress-checkbox,
+#dsidxpress-link-builder #dsidxpress-menu-item-label,
+#dsidxpress-link-builder #dsidxpress-filter-list
+{
+	width: 240px;
+	float: right;
+}
+
+.inside:after
+{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+input[type=checkbox]{
+	display:inline-block;
+	width:16px !important;
+	height:16px !important;
+}
+input[type=checkbox]:checked:before{
+	margin: -3px 0 0 -4px;
+	font-size:21px;
+}

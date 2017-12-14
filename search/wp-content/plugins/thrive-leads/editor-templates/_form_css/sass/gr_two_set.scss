@@ -1,0 +1,591 @@
+@import "bourbon";
+@mixin opensans {
+  font-family: 'Open Sans', sans-serif;
+}
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+}
+$white: #fff;
+$black: #000;
+
+[class*='gr_two_set'] {
+  &.tve_gray_bg {
+    background-image: none;
+    background: #c2c2c2;
+  }
+}
+#tve_gr_two_set {
+  [class*='gr_two_set'] {
+    @include clearfix();
+    a {
+      color: #282828;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    h1 {
+      @include opensans();
+      color: #fff;
+      font-weight: 800;
+      font-size: 70px;
+      line-height: 1.2em;
+      letter-spacing: normal;
+    }
+    h2 {
+      @include opensans();
+      color: #fff;
+      font-weight: 800;
+      font-size: 70px;
+      line-height: 1.2em;
+      letter-spacing: normal;
+    }
+    h3 {
+      @include opensans();
+      color: #fff;
+      font-weight: 800;
+      font-size: 60px;
+      line-height: 1.222em;
+      letter-spacing: normal;
+    }
+    h4 {
+      @include opensans();
+      color: #fff;
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 1.222em;
+      letter-spacing: normal;
+    }
+    h5 {
+      @include opensans();
+      color: #fff;
+      font-weight: 800;
+      font-size: 36px;
+      line-height: 1.222em;
+      letter-spacing: normal;
+    }
+    h6 {
+      @include opensans();
+      color: #fff;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 1.222em;
+      letter-spacing: normal;
+    }
+    p {
+      @include opensans();
+      color: #fff;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1.5em;
+      margin-bottom: 20px;
+      &.bold_text {
+        font-weight: 700;
+      }
+    }
+  }
+  blockquote {
+    @include opensans();
+    background: transparent;
+    border: 0;
+    color: #fff;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 400;
+    padding-left: 90px;
+    position: relative;
+    &:before {
+      content: '\0201C';
+      color: #282828;
+      display: block;
+      font-size: 142px;
+      font-weight: 900;
+      line-height: 142px;
+      position: absolute;
+      left: 0;
+      top: -20px;
+    }
+  }
+  ol.thrv_wrapper {
+    li {
+      @include opensans();
+      color: #fff;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 36px;
+      &.bold_text {
+        font-weight: 700;
+      }
+    }
+  }
+  ul.thrv_wrapper {
+    li {
+      @include opensans();
+      color: #fff;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 36px;
+      &.bold_text {
+        font-weight: 700;
+      }
+    }
+  }
+}
+#tve_gr_two_set {
+  @include opensans();
+  text-shadow: none;
+  position: relative;
+  article {
+    padding-bottom: 0;
+  }
+  .gr-close-button {
+    @include transform(translateX(-50%));
+    cursor: pointer;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+  }
+  .thrv-greedy-ribbon {
+    padding-top: 15vh;
+  }
+  .tve-greedy-ribbon-content {
+    @include clearfix();
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .thrv_icon {
+    border-radius: 100px;
+    .tve_sc_icon {
+      border-radius: 100px;
+      padding: 15px;
+    }
+  }
+  .thrv_button_shortcode {
+    .tve_btn3.tve_btn {
+      background: none;
+      border-radius: 0;
+      .tve_btnLink {
+        > span {
+          color: inherit;
+        }
+      }
+      &.tve_normalBtn {
+        font-size: 30px;
+        line-height: 35px !important;
+        .tve_btnLink {
+          padding: 24px 10px;
+          text-shadow: none;
+        }
+      }
+    }
+  }
+  .thrv_lead_generation {
+    .thrv_lead_generation_container {
+      .tve_lead_generated_inputs_container {
+        .thrv_icon.thrv_wrapper {
+          top: 40%;
+        }
+      }
+    }
+    &.tve_white {
+      .tve_lg_submit {
+        button {
+          color: #282828;
+        }
+      }
+    }
+    &.thrv_lead_generation_horizontal {
+      &.tve_2 {
+        .tve_lg_input.tve_lg_2 {
+          width: 66%;
+        }
+        .tve_lg_submit.tve_lg_2 {
+          width: 34%;
+        }
+      }
+    }
+    button {
+      @include opensans();
+      border-radius: 0;
+      border: 0;
+      color: $white;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 24px;
+      padding: 28px 10px;
+      text-shadow: none;
+    }
+    input[type="text"], input[type="email"] {
+      @include opensans();
+      border-radius: 0;
+      border: 2px solid #d0d0d0;
+      background: $white;
+      color: #5e5d5d;
+      font-size: 30px;
+      font-weight: 400;
+      height: auto;
+      line-height: 42px;
+      margin-bottom: 20px;
+      padding: 17px 20px !important;
+      &:hover {
+        color: #5e5d5d;
+      }
+      &:focus {
+        color: #282828;
+      }
+    }
+  }
+  /*
+    autoresponder elements
+  */
+  .tve_lg_radio_wrapper {
+    display: inline-block;
+    position: relative;
+    padding: 5px 20px 5px 0;
+    input[type="radio"] {
+      cursor: pointer;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 5;
+      width: 100%;
+      &:checked {
+        + label {
+          &:before {
+            border: 2px solid #191919;
+          }
+          &:after {
+            background: #191919;
+          }
+        }
+      }
+      + label {
+        @include opensans();
+        color: #fff;
+        display: inline-block;
+        position: relative;
+        font-size: 24px;
+        font-weight: 400;
+        &:before {
+          background-color: transparent;
+          border: 2px solid #fff;
+          border-radius: 100%;
+          content: '';
+          display: inline-block;
+          height: 20px;
+          margin-right: 10px;
+          position: relative;
+          top: -3px;
+          vertical-align: middle;
+          width: 20px;
+        }
+        &:after {
+          @include transition(background-color .3s, border .3s);
+          background-color: transparent;
+          border-radius: 100%;
+          content: '';
+          height: 16px;
+          position: absolute;
+          @media screen and(-webkit-min-device-pixel-ratio:0) {
+            top: 9px;
+          }
+          top: 8px;
+          left: 4px;
+          width: 16px;
+        }
+      }
+    }
+  }
+  .tve_lg_checkbox_wrapper {
+    display: inline-block;
+    position: relative;
+    padding: 5px 20px 5px 0;
+    width: auto;
+    input[type="checkbox"] {
+      &:not(:checked),
+      &:checked {
+        position: absolute;
+        visibility: hidden;
+        + label {
+          @include opensans();
+          color: #fff;
+          cursor: pointer;
+          font-size: 24px;
+          font-weight: 400;
+          position: relative;
+          padding-left: 35px;
+          &:before {
+            border-radius: 5px;
+            background-color: transparent;
+            border: 2px solid #fff;
+            content: '';
+            height: 25px;
+            position: absolute;
+            left: 0;
+            top: 4px;
+            width: 25px;
+          }
+          &:after {
+            @include transition(all, .2s);
+            content: "\02713";
+            font-size: 20px;
+            font-weight: 600;
+            position: absolute;
+            top: 4px;
+            left: 7px;
+          }
+        }
+      }
+      &:not(:checked) + label:after {
+        @include transform(scale(0));
+        opacity: 0;
+      }
+      &:checked + label:after {
+        @include transform(scale(1));
+        color: #fff;
+        opacity: 1;
+      }
+      &:checked + label:before {
+        background: #191919;
+        border: 2px solid #191919;
+      }
+    }
+  }
+  .tve_lg_dropdown {
+    position: relative;
+    select {
+      @include appearance(none);
+      @include opensans();
+      background-color: #fff;
+      border: 2px solid #282828;
+      color: #5e5d5d;
+      border-radius: 0;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 40px;
+      height: 80px;
+      margin: 0;
+      outline: none;
+      padding-right: 40px !important;
+      option {
+        color: #232323;
+        font-size: 38px;
+        font-weight: 400;
+      }
+      &:hover {
+        background: #f9f9f9;
+      }
+    }
+    .tve_sc_icon {
+      margin-right: 20px;
+    }
+    &:after {
+      color: #5e5d5d;
+      content: "\002C7";
+      font-size: 40px;
+      font-weight: 700;
+      height: 20px;
+      line-height: 40px;
+      pointer-events: none;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      text-align: center;
+      width: 20px;
+    }
+  }
+}
+$color-pallete: 'blue' #1956a2 #094084 #3067ab #094084,
+'black' #282828 #191919 #535353 #191919,
+'green' #26850c #1c6309 #439f2a #1c6309,
+'white' #fdf0e8 #ffffff #fad9c4 #ffffff,
+'orange' #ffcb17 #f4ac00 #ffd43e #ed6614,
+'purple' #503293 #3d2475 #6a4eaa #3d2475,
+'red' #9d270c #761600 #b2462d #761600,
+'teal' #21a6be #1291a8 #4cb9cd #1291a8;
+
+@each $color in $color-pallete {
+  #tve_gr_two_set {
+    .thrv-greedy-ribbon.tve_#{nth($color, 1)} {
+      background: nth($color, 5);
+    }
+    .thrv_icon.thrv_wrapper {
+      span.tve_sc_icon.tve_#{nth($color, 1)} {
+        color: nth($color, 2);
+      }
+    }
+    .thrv_button_shortcode {
+      .tve_btn3.tve_#{nth($color, 1)} {
+        .tve_btnLink {
+          color: rgba(nth($color, 3), .40);
+        }
+        &:hover {
+          .tve_btnLink {
+            color: rgba(nth($color, 3), .75);
+          }
+        }
+        &:active {
+          .tve_btnLink {
+            color: nth($color, 3);
+          }
+        }
+      }
+    }
+    .thrv_lead_generation.tve_#{nth($color, 1)} {
+      input[type="text"], input[type="email"] {
+        border: 2px solid nth($color, 2);
+      }
+      button {
+        background: nth($color, 2);
+        &:hover {
+          background: nth($color, 3);
+        }
+        &:active {
+          background: nth($color, 4);
+        }
+      }
+    }
+  }
+}
+@font-face {
+  font-family: 'tve-leads-gr-two-set-icons';
+  src: url('fonts/gr_one_set/gr_one_set_icons.eot?o8i8n4');
+  src: url('fonts/gr_one_set/gr_one_set_icons.eot?#iefixo8i8n4') format('embedded-opentype'),
+  url('fonts/gr_one_set/gr_one_set_icons.woff?o8i8n4') format('woff'),
+  url('fonts/gr_one_set/gr_one_set_icons.ttf?o8i8n4') format('truetype'),
+  url('fonts/gr_one_set/gr_one_set_icons.svg?o8i8n4#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="gr-two-set"], [class*=" gr-two-set"] {
+  color: inherit;
+  font-family: 'tve-leads-gr-two-set-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.gr-two-set-close:before {
+  content: "\f078";
+}
+@media only screen and (max-width: 800px) {
+  #tve_gr_two_set {
+    .thrv-greedy-ribbon {
+      padding: 50px 20px 20px;
+    }
+    .thrv_lead_generation {
+      input[type="text"], input[type="email"] {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 5px;
+        padding: 10px!important;
+      }
+      button {
+        font-size: 20px;
+        line-height: 25px;
+        padding: 10px;
+      }
+    }
+    .thrv_button_shortcode {
+      margin-top: 0;
+      margin-bottom: 0;
+      .tve_btn3.tve_btn.tve_normalBtn {
+        font-size: 20px;
+        line-height: 25px!important;
+        .tve_btnLink {
+          padding: 10px;
+        }
+      }
+    }
+    .gr-close-button {
+      bottom: 40px;
+      .tve_sc_icon {
+        font-size: 15px!important;
+        padding: 5px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  #tve_gr_two_set {
+    h2, p {
+      margin-bottom: 15px!important;
+    }
+    p {
+      font-size: 15px!important;
+    }
+    .gr-close-button {
+      bottom: 10px;
+    }
+  }
+}
+@media only screen and (max-height: 940px) {
+  #tve_gr_two_set {
+    h2, p {
+      margin-bottom: 15px!important;
+    }
+    .gr-close-button {
+      bottom: 10px;
+      .tve_sc_icon {
+        font-size: 15px!important;
+        padding: 5px;
+      }
+    }
+  }
+}
+@media only screen and (max-height: 600px) {
+  #tve_gr_two_set {
+    .thrv-greedy-ribbon {
+      padding-top: 10px;
+    }
+    h2 {
+      font-size: 20px!important;
+    }
+    p {
+      font-size: 15px!important;
+    }
+    .thrv_lead_generation {
+      input[type="text"], input[type="email"] {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 5px;
+        padding: 5px!important;
+      }
+      button {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 5px;
+      }
+    }
+    .thrv_button_shortcode {
+      .tve_btn3.tve_btn.tve_normalBtn {
+        font-size: 15px;
+        line-height: 20px!important;
+        .tve_btnLink {
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
+@import "_responsive";

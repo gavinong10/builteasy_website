@@ -1,0 +1,180 @@
+
+.heapBox {
+	position: relative;
+	display: block;
+	min-width: 110px;
+}
+
+.section-line .heapBox {
+	display: inline-block;
+	width: 175px;
+	line-height: 1.3em;
+}
+
+	.heapBox * {
+		margin: 0;
+		padding: 0;
+		outline: none;
+		list-style: none;
+	}
+
+	.heapBox.disabled .holder  { color: #989898; }
+	.heapBox.disabled .handler { }
+
+	.heapBox a {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.heapBox .holder {
+		overflow: hidden;
+		display: block;
+		padding: 9px 10px;
+		width: 100%;
+		min-width: 75px;
+		border: 2px solid #e4e4e2;
+		background-color: #f5f7f8;
+		color: #696e6e;
+
+		-webkit-border-radius: 4px;
+				border-radius: 4px;
+		-webkit-transition: all .25s ease;
+				transition: all .25s ease;
+	}
+
+	.select-small-size .heapBox .holder { padding: 3px 10px; }
+
+	.heapBox.open .holder { background-color: #fff; }
+
+	.heapBox .handler {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 10;
+		display: block;
+		height: 100%;
+	}
+
+	.heapBox .handler:before {
+		position: absolute;
+		height: 27px;
+		right: 35px;
+		top: 9px;
+		margin-top: 0;
+		content: "";
+		border-left: 1px solid #e4e4e2;
+	}
+
+	.select-small-size .heapBox .handler:before { height: 14px; }
+
+	.heapBox .handler:after {
+		position: absolute;
+		right: 12px;
+		top: 50%;
+		display: inline-block;
+		margin-top: -10px;
+		content: "\f107";
+		font-family: fontawesome;
+		line-height: inherit;
+		font-size: 18px;
+		color: #292f38;
+	}
+
+	.heapBox.open .handler:after { content: "\f106"; }
+
+	.select-small-size .heapBox .handler:after { font-size: 15px; }
+
+	.heapBox div.heap {
+		position: absolute;
+		left: 0;
+		top: calc(100% - 1px);
+		overflow: hidden;
+		cursor: pointer;
+		z-index: 22;
+		display: none;
+		width: 100%;
+		background: #fff;
+		border-left: 2px solid #e4e4e2;
+		border-right: 2px solid #e4e4e2;
+		border-bottom: 2px solid #e4e4e2;
+		list-style-type: none;
+
+		-webkit-border-bottom-left-radius: 4px;
+				border-bottom-left-radius: 4px;
+		-webkit-border-bottom-right-radius: 4px;
+				border-bottom-right-radius: 4px;
+	}
+
+	.heapBox .heap .heapOptions {
+		display: block;
+		overflow: hidden;
+		z-index: 20;
+		position: relative;
+	}
+
+	.heapBox .heap a.sliderUp,
+	.heapBox .heap a.sliderDown {
+		position: absolute;
+		z-index: 30;
+		display: block;
+		width: 100%;
+		height: 20px;
+		background-color: #fff;
+	}
+
+	.heapBox .heap a.sliderUp    {
+		top: 0;
+		border-bottom: 1px solid #e4e4e2;
+	}
+
+	.heapBox .heap a.sliderDown {
+		bottom: 0;
+		border-top: 1px solid #e4e4e2;
+	}
+
+	.heapBox .heap a.sliderUp:hover,
+	.heapBox .heap a.sliderDown:hover { background-color: #ecf0f1; }
+
+	.heapBox .heap a.sliderUp:after,
+	.heapBox .heap a.sliderDown:after {
+		display: block;
+		text-align: center;
+		font-family: 'fontawesome';
+		font-size: 18px;
+		line-height: 20px;
+		color: #292f38;
+	}
+
+	.heapBox .heap a.sliderUp:after   { content: "\f106"; }
+	.heapBox .heap a.sliderDown:after { content: "\f107"; }
+
+	.heapBox .heap .heapOptions .heapOption { }
+
+		.heapBox .heap .heapOptions .heapOption a {
+			display: block;
+			padding: 7px 10px;
+			width: 100%;
+			background-color: #fff;
+			color: #6a6a6a;
+
+			-webkit-transition: color 1s ease, background-color 1s ease, box-shadow 1s ease;
+					transition: color 1s ease, background-color 1s ease, box-shadow 1s ease;
+		}
+
+		.select-small-size .heapBox .heap .heapOptions .heapOption a { padding: 3px 10px; }
+
+	.heapBox .heap .heapOptions .heapOption a:hover {
+		color: #000;
+		background-color: #ecf0f1;
+
+		-webkit-transition: color .1s ease, background-color .1s ease, box-shadow .1s ease;
+				transition: color .1s ease, background-color .1s ease, box-shadow .1s ease;
+	}
+
+	.heapBox .heap .heapOptions .heapOption a.selected {
+		color: #000;
+		background-color: #ecf0f1;
+	}
+
+	.heapBox .heap .heapOptions .heapOption a.disabled { }
+	.heapBox .heap .heapOptions .heapOption a.disabled:hover { }

@@ -1,0 +1,9 @@
+<input type="text" name="{{ args.id }}" id="{{ args.id }}" value="{{ value }}">
+
+<a href="media-upload.php?tab=library&amp;TB_iframe=1&amp;width=640&amp;height=480" class="mediabutton-img-n0 thickbox button {label:'Insert'}">
+    {{ wp.__('Select Media', 'aviators') }}
+</a>
+
+{% if option.description %}
+    <p class="description">{{ option.description }}</p>
+{% endif %}

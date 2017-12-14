@@ -1,0 +1,10 @@
+<select name="{{ args.id }}" id="{{ args.id }}">
+    <option value="">---</option>
+    {% for key, choice in user_roles %}
+        <option value="{{ key }}" {% if value == key %}selected="selected"{% endif %}>{{ choice.name }}</option>
+    {% endfor %}
+</select>
+
+{% if option.description %}
+    <p class="description">{{ option.description }}</p>
+{% endif %}

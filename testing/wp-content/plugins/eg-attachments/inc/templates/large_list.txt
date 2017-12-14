@@ -1,0 +1,13 @@
+[title]Large list[/title]
+[description]Large list of attachments without icon[/description]
+[before]<ul>[/before]
+[loop]<li  class="attachments-large">
+	<strong>%TITLE_LABEL%</strong>:	<a title="%TITLE%" href="%URL%" %NOFOLLOW%>%TITLE%</a>
+	<br/>
+	<strong>%CAPTION_LABEL%</strong>: %CAPTION%
+	<br/>
+	<strong>%FILENAME_LABEL%</strong>:  <a title="%TITLE%" href="%URL%" %NOFOLLOW%>%FILENAME%</a>
+	<br/>
+	<strong>%FILESIZE_LABEL%</strong>: %FILESIZE%
+</li>[/loop]
+[after]</ul>[/after]

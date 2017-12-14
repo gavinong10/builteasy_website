@@ -1,0 +1,38 @@
+<div class="agent">
+    <div class="row">
+        <div class="image span2">
+            <a href="{{ wp.get_permalink(wp.get_the_ID()) }}">
+                {% if wp.get_the_post_thumbnail(wp.get_the_ID()) %}
+                    {{ wp.get_the_post_thumbnail(wp.get_the_ID())|raw }}
+                {% else %}
+                    <img src="{{ wp.get_template_directory_uri() }}/assets/img/agent-tmp.png" alt="{{ property.post_title }}">
+                {% endif %}
+            </a>
+        </div><!-- /.image -->
+
+        <div class="body span6">
+            <h3>
+                <a href="{{ wp.get_permalink(wp.get_the_ID()) }}">{{ wp.the_title() }}</a>
+            </h3>
+
+            {{ wp.the_content() }}
+        </div><!-- /.body -->
+
+        <div class="info span4">
+            <div class="box">
+                <div class="phone">
+                    {{ wp.get_post_meta(wp.get_the_ID(), '_agent_mobile', TRUE) }}
+                </div><!-- /.phone -->
+                <div class="office">
+                    {{ wp.get_post_meta(wp.get_the_ID(), '_agent_phone', TRUE) }}
+                </div><!-- /.office -->
+
+                <div class="email">
+                    <a href="mailto:{{ wp.get_post_meta(wp.get_the_ID(), '_agent_email', TRUE) }}">
+                        {{ wp.get_post_meta(wp.get_the_ID(), '_agent_email', TRUE) }}
+                    </a>
+                </div><!-- /.email -->
+            </div><!-- /.box -->
+        </div><!-- /.info -->
+    </div><!-- /.row -->
+</div><!-- /.agent -->

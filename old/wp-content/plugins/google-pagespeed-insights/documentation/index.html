@@ -1,0 +1,354 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Google Pagespeed Insights for Wordpress Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">Google Pagespeed Insights for Wordpress v1.03 Documentation by Matt Keys</h3>
+		
+		<hr>
+		
+		<h1 class="center">Google Pagespeed Insights for Wordpress</h1>
+		
+		<br />
+		<img src="assets/images/feature-image-large.jpg" alt="Google Pagespeed Insights for Wordpress" />
+		<br />
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 09/28/2013<br>
+					Updated: 02/03/2014<br>
+					By: Matt Keys<br>
+					<a href="http://mattkeys.me">mattkeys.me</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for downloading Google Pagespeed Insights for Wordpress. If you have any questions that are beyond the scope of this help file, please visit <a href="http://mattkeys.me">mattkeys.me</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#overview">Overview</a></li>
+			<li><a href="#installation">Installation</a></li>
+			<li><a href="#required_configuration"><font style="color: red;">Required Configuration (Google API Key)</font></a></li>
+			<li><a href="#recommended_configuration">Recommended Configuration</a></li>
+			<li><a href="#view_reports">Report List</a></li>
+			<li><a href="#report_summary">Report Summary</a></li>
+			<li><a href="#snapshots">Snapshots</a></li>
+			<li><a href="#custom_urls">Custom URLs</a></li>
+			<li><a href="#ignored_urls">Ignored URLs</a></li>
+			<li><a href="#troubleshooting">Troubleshooting</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="overview"><strong>A) Overview</strong> - <a href="#toc">top</a></h3>
+
+		<p>Google Pagespeed Insights is a tool that empowers you to make decisions that increase the performance of your website by expanding on the existing technology of Google Pagespeeds recommendations for current industry best practices for desktop and mobile web performance.</p>
+
+		<p>Through the addition of advanced data visualization, tagging, filtering, and snapshot technology, Google Pagespeed Insights for WordPress provides a comprehensive solution for any webmaster looking to increase their site performance, search engine ranking, and visitors browsing experience.</p>
+
+		<hr>
+		
+		<h3 id="installation"><strong>B) Installation</strong> - <a href="#toc">top</a></h3>
+		<p>To install Google Pagespeed Insights for Wordpress:</p>
+		
+		<ol>
+			<li>Login to your Wordpress Admin page (usually http://yourdomain.com/wp-admin)</li>
+			<li>Navigate to the Plugins screen and then click the "Add New" button</li>
+			<li>Click on the "Upload" link near the top of the page and browse for the Google Pagespeed Insights for Wordpress zip file</li>
+			<li>Upload the file, and click "Activate Plugin" after the installation completes</li>
+			<li>Congratulations, installation is complete!</li>
+		</ol>
+
+		<hr>
+
+		<h3 id="required_configuration"><strong>C) Required Configuration</strong> - <a href="#toc">top</a></h3>
+
+		<h4 style="color: red; font-weight: bold;">Required - Obtain and Enter a Google API Key:</h4>
+
+		<p>Google API Key's are free, and can be obtained from Google. In order to get a key, you will need a Google account such as a GMail account. If you do not already have a Google account you can create one here: <a href="https://accounts.google.com/SignUp" target="_blank">https://accounts.google.com/SignUp</a>.</p>
+		
+		<div style="text-align:center"><img style="border: 1px solid #ccc;" src="assets/images/api_key_1.png" alt="" /></div>
+		<p>Navigate to <a href="http://code.google.com/apis/console" target="_blank">http://code.google.com/apis/console</a>. If you are not already logged into your google account, log in now. Once logged in you should see the "create project" button. If you have already created a project you can skip ahead to enabling the PageSpeed Insights API.</p>
+
+		<div style="text-align:center"><img style="border: 1px solid #ccc;" src="assets/images/api_key_2.png" alt="" /></div>
+		<p>Google will have automaticly generated a Project name and Project ID for you. You can leave these as-is. You must agree to google's Terms of Service, then click "create".
+
+		<div style="text-align:center"><img style="border: 1px solid #ccc;" src="assets/images/api_key_3.png" alt="" /></div>
+		<p>If this is a new account, google may require you to verify you are not a spammer by having them call or text your phone. You will be given a verification number that you must enter on the next screen to continue.</p>
+
+		<div style="text-align:center"><img style="border: 1px solid #ccc;" src="assets/images/api_key_5.png" alt="" /></div>
+		<p>If you had to verify your account, you will be directed back to this screen after verification, click create to continue.</p>
+
+		<div style="text-align:center"><img style="border: 1px solid #ccc;" src="assets/images/api_key_6.png" alt="" /></div>
+		<p>Google will now create your project, it took about 20 seconds or so on my computer until the project creation finished. After your project has been created, you can enable the google services you want to use. Find "PageSpeed Insights API" in the list, and click it.</p>
+
+		<div style="text-align:center"><img style="border: 1px solid #ccc;" src="assets/images/api_key_7.png" alt="" /></div>
+		<p>You must accept Google's Terms of Service to continue.</p>
+
+		<div style="text-align:center"><img style="border: 1px solid #ccc;" src="assets/images/api_key_8.png" alt="" /></div>
+		<p>Click the "Credentials" menu item from the left to move on to the API key creation. Click "Create New Key" under the Public API access area.</p>
+
+		<div style="text-align:center"><img style="border: 1px solid #ccc;" src="assets/images/api_key_9.png" alt="" /></div>
+		<p>Select "Browser key" from the key types.</p>
+
+		<div style="text-align:center"><img style="border: 1px solid #ccc;" src="assets/images/api_key_10.png" alt="" /></div>
+		<p>Google will ask you if you would like to limit the domains that are allowed to interact with this API key. This is optional, and I leave this field blank. Click Create to continue.</p>
+
+		<div style="text-align:center"><img style="border: 1px solid #ccc;" src="assets/images/api_key_11.png" alt="" /></div>
+		<p>You will now see the Alpha-Numeric API Key which we will need for the last step. Copy this key.</p>
+
+		<div style="text-align:center"><img style="border: 1px solid #ccc;" src="assets/images/api_key_12.png" alt="" /></div>
+		<p>Paste your API key into the Google Pagespeed Insights plugin, and Save.</p>
+
+		<hr>
+		
+		<h3 id="recommended_configuration"><strong>D) Recommended Configuration</strong> - <a href="#toc">top</a></h3>
+		
+		<br />
+		<img src="assets/images/configure2.png" alt="Recommended Configuration" />
+		<br />
+
+		<p>The following items are not required, but it is recommended that you review them to match their options to your preferences</p>
+		
+		<h4 style="font-weight: bold;">Google Pagespeed Options:</h4>
+
+		<ol>
+			<li><strong>Google Response Language</strong>: Select which language you would like to receive Pagespeed recommendations in.</li>
+			<li><strong>Report Type(s)</strong>: Which types of recommendations do you want to receive? (Mobile, Desktop, or Both)</li>
+		</ol>
+
+		<h4 style="font-weight: bold;">Scheduling and URL Configuration:</h4>
+
+		<h5 style="color: red;">Note: Features Marked with Asterisk are not available in the free version.</h5>
+
+		<ol>
+			<li><strong><span style="color:red;">*</span>Automatically re-check Pagespeed Insights scores using a schedule</strong>: Schedule the Google Pagespeed Insights plugin to automatically find new pages, and recheck existing pages.</li>
+			<li><strong><span style="color:red;">*</span>Recheck Schedule</strong>: Recheck Schedule can be set to Daily, Weekly, Bi-Monthly, and Monthly.</li>
+			<li><strong>Configure which types of URLs to check</strong>: Choices include: Pages, Posts, Category Indexes, <span style="color:red;">*</span>Custom URLs, Custom Post Types</li>
+		</ol>
+
+		<h5 style="color: red;">Note: It takes a number of seconds for Google to check each page. Checking 500 pages may take approximately 30+ minutes for example. Keep this in mind when choosing which types of pages you wish to include in your reports. Some Custom Post Types generate MANY posts and should probably be avoided. Such as the bbPress Reply Custom Post Type.</h5>		
+		  
+		<hr>
+		
+		<h3 id="view_reports"><strong>E) Report List</strong> - <a href="#toc">top</a></h3>
+
+		<br />
+		<img src="assets/images/report_list.png" alt="Report List" /></li>
+		<br />
+
+		<p>Once you have configured the options, Google Pagespeed Insights for Wordpress will start generating reports for your pages. Click on the "Report List" tab to view a list of all page reports.</p>
+
+		<p>If you do not see any reports listed, wait a bit and refresh the page. If problems persist, please see the troubleshooting section.</p>
+
+		<p>Page Reports can be sorted by type as well as score. The reports can also be filtered to show only reports from a particular type of URL. Click into any page report to see a detailed Pagespeed Report showing your biggest areas for improvement.</p>
+		
+		<hr>
+		
+		<h3 id="report_summary"><strong>F) Report Summary</strong> - <a href="#toc">top</a></h3>
+		
+		<br />
+		<img src="assets/images/report_summary.png" alt="Report Summary" /></li>
+		<br />
+
+		<p>The Report Summary tab shows a unique view of your sites Google Pagespeed performance. From this tab you will find averages for all of your performance data, including your largest areas of opportunity from accross your site. The Report Summary page can be filtered to show summaries of any particular Report type.</p>
+
+		<p>If you have Mobile and Desktop reporting on, use the 'Mobile Mode' and 'Desktop Mode' buttons in the top right of the screen to toggle between the two reports.</p>
+		
+		<hr>
+
+		<h3 id="snapshots"><strong>G) Snapshots</strong> - <a href="#toc">top</a></h3>
+		
+		<br />
+		<img src="assets/images/snapshots.png" alt="Snapshots" /></li>
+		<br />
+
+		<h5 style="color: red;">Note: This feature is not available in the free version of Google Pagespeed Insights for Wordpress</h5>
+
+		<p>The Report Snapshot tool builds on the power of Report Summaries, to provide historical “Point In Time” data about your website.</p>
+
+		<p>Take a snapshot of any Report Summary screen to store that data for future retrieval. Add comments to your snapshots to provide additional meaning, such as “Before Installing W3 Total Cache.” Additionally, filter a Report Summary before taking a Snapshot to save a summary of the filtered data.</p>
+
+		<p>To Take a Snapshot:</p>
+
+		<ol>
+			<li>Navigate to the "Report Summary" Tab.</li>
+			<li>(Optional) Filter the Report Summary Page if you would like to take a Snapshot for a particular report type.</li>
+			<li>If you have Mobile and Desktop reporting on, use the 'Mobile Mode' and 'Desktop Mode' buttons in the top right of the screen to select the report type you wish to Snapshot</li>
+			<li>(Optional) Add a comment to the textbox just left of the "Save Report Snapshot" button. This comment will be viewable later to help identify your snapshots.</li>
+			<li>Click "Save Report Snapshot"</li>
+		</ol>
+
+		<p>To View a Snapshot:</p>
+
+		<ol>
+			<li>Navigate to the "Snapshots" Tab.</li>
+			<li>From the list of available Snapshots, click on the one you wish to view.</li>
+		</ol>
+
+		<p>To Compare a Snapshot:</p>
+
+		<p>A Snapshot can be compared side by side with any other Snapshot of the same type. For instance you can compare a Desktop snapshot of the "All Reports" type, with another Desktop Snapshot of the "All Reports" type. Use the Snapshot comparison tool to measure the effect of changes in plugins, or your code.
+		<ol>
+			<li>Navigate to the "Snapshots" Tab.</li>
+			<li>From the list of available Snapshots, click on the first Snapshot that you would like to compare against.</li>
+			<li>If there are any similiar snapshots available, they will appear in the top right dropdown menu. Otherwise it will state "No SImiliar Snapshots Found". Select your snapshot and click "Compare".</li>
+		</ol>
+		
+		<hr>
+
+		<h3 id="custom_urls"><strong>H) Custom URLs</strong> - <a href="#toc">top</a></h3>
+		
+		<br />
+		<img src="assets/images/custom_urls.png" alt="Custom URLs" /></li>
+		<br />
+
+		<h5 style="color: red;">Note: This feature is not available in the free version of Google Pagespeed Insights for Wordpress</h5>
+
+		<p>Easily add additional URLs for inclusion in Pagespeed Reports. Even add URLs for non-Wordpress sites, even if they are not hosted on your server. URLs can be added manually, or upload a properly formatted XML sitemap to add multiple pages at once.</p>
+
+		<p>Custom URLs can be tagged and filtered in Report Summaries. Take Report Snapshots of your Custom URLs just like you would with any other report type.</p>
+		
+		<p>To Add Custom URLs manually:</p>
+
+		<ol>
+			<li>Navigate to the "Custom URLs" tab</li>
+			<li>Click the "Add New URLs" button from the top.</li>
+			<li>Give your custom URLs as label. If you are adding URLs from you sister-companies website, you might label the custom URLs "Sister Company". Using a descriptive Label is important because it will be used throughout the site when filtering your reports and creating Snapshots.</li>
+			<li>Enter up to 10 custom URLs in the provided fields and click "Submit" when you are done.</li>
+		</ol>
+
+		<p>To Add Custom URLs in Bulk:</p>
+
+		<ol>
+			<li>Navigate to the "Custom URLs" tab</li>
+			<li>Click the "Bulk Upload New URLs" button from the top.</li>
+			<li>Give your custom URLs as label. If you are adding URLs from you sister-companies website, you might label the custom URLs "Sister Company". Using a descriptive Label is important because it will be used throughout the site when filtering your reports and creating Snapshots.</li>
+			<li>Upload a properly formatted XML file containing the URLs that you wish to add. XML Sitemaps like this can be created by many Wordpress plugins and web services. <a href="http://www.xml-sitemaps.com/" target="_blank">http://www.xml-sitemaps.com/</a> is one such web service.</li>
+		</ol>
+		
+		<hr>
+
+		<h3 id="ignored_urls"><strong>I) Ignored URLs</strong> - <a href="#toc">top</a></h3>
+		
+		<br />
+		<img src="assets/images/ignored_urls.png" alt="Ignored URLs" /></li>
+		<br />
+
+		<p>Sometimes reports may appear in your Report List or Report Summary that you do not wish to include in your results. For these pages the "Ignored URLs" section exists.</p>
+
+		<p>To Ignore a URL:</p>
+
+		<ol>
+			<li>Find the URL that you wish to ignore from the Report List tab.</li>
+			<li>Either hover over the URL and click "Ignore"; Or if you have many pages to ignore, you can check the box for each URL to ignore and then select "Ignore" from the bulk actions dropdown.</li>
+			<li>Ignored pages will no longer appear in your reports, and they will be skipped on future report scans.</li>
+		</ol>
+
+		<p>To Reactivate an Ignored URL:</p>
+
+		<ol>
+			<li>Find the URL that you wish to reactivate from the Ignored URLs tab.</li>
+			<li>Either hover over the URL and click "Reactive"; Or if you have many pages to reactivate, you can check the box for each URL and then select "Reactivate" from the bulk actions dropdown.</li>
+			<li>Pages will be rescanned the next time Google Pagespeed checks your sites pages. Afterwords the pages will start showing up in your reports again.</li>
+		</ol>
+
+		<hr>
+
+		<h3 id="troubleshooting"><strong>J) Troubleshooting</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Please find the below list of potential issues that you may encounter, and the recommended next steps.</p>
+
+		<p><strong>I entered my API Key and saved the Options, but no Reports are showing up in the Report List.</strong></p>
+
+		<ol>
+			<li>Google Pagespeed needs to be able to load each page to create its report. Make sure that your pages are publicly accessible over the internet.</li>
+			<li>Ensure that your API key is entered correctly, and that you have enabled the "PageSpeed Insights API" from the Google API Console.</li>
+			<li>If problems persist, your server may not support the default method used to check pages. There are two alternate methods available that you can try.
+				<ol>
+					<li>Navigate to the "Options" tab</li>
+					<li>Expand the "Advanced Configuration" section.</li>
+					<li>Find the "Scan Technique" dropdown</li>
+					<li>Try "Ajax" next, If problems persist try "Session Flush"</li>
+					<li>Click "Save Options &amp; Check Pages</li>
+				</ol>
+			</li>
+		</ol>
+
+		<p><strong>An error was reported while trying to check on of my pages, and it has been added to the Ignored Pages section.</strong></p>
+
+		<ol>
+			<li>Navigate to the Ignored Pages tab, find the page, and click "reactivate" to try it again.</li>
+			<li>If the page fails again, ensure that the page is publicly accessible from the internet. Non-public pages cannot be checked.</li>
+			<li>In some rare cases, pages are not able to be scanned by the Pagespeed API. Try checking your page manually here: <a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">https://developers.google.com/speed/pagespeed/insights/</a>. If the page fails to be checked, report the issue to Google so that they can diagnose further.</li>
+		</ol>
+
+		<p><strong>I received a Javascript or PHP error.</strong></p>
+
+		<ol>
+			<li>If the error appeared while Google Pagespeed was checking pages, you may have loaded the page while it was storing data. Refresh the page in a couple seconds to see if the issue has gone away.</li>
+			<li>If issues persist please report the problem with as much information as you can gather, including: What page you were on, the exact text of the error, or a screenshot of the error.</li>
+			<li>In the Options page, under "Advanced Configuration" there is a checkbox called "Log API Exceptions". Any API exception that is not caught and handled automatically will be stored to a log file. This log information can be very helpful when diagnosing issues</li>
+		</ol>
+
+		<p><strong>Page report checks never finish all of the way, I have to press "Save Options &amp; Check Pages" again and again to get it to finish checking all of my pages.</strong></p>
+
+		<ol>
+			<li>If the reports seem to always run for a certain length of time before stopping unexpectedly, you may be exceeding your servers Max Execution time. Try increasing the value in Options->Advanced Configuration "Maximum Execution Time". Note: If PHP is running in safe mode your Max Execution time cannot be changed from this option, you may need to contact your server administrator for further assistance.</li>
+			<li>If problems persist, your server may not fully support the default method used to check pages. There are two alternate methods available that you can try.
+				<ol>
+					<li>Navigate to the "Options" tab</li>
+					<li>Expand the "Advanced Configuration" section.</li>
+					<li>Find the "Scan Technique" dropdown</li>
+					<li>Try "Ajax" next, If problems persist try "Session Flush"</li>
+					<li>Click "Save Options &amp; Check Pages</li>
+				</ol>
+			</li>
+		</ol>
+
+		<p><strong>My Page Scores seem really low. When I click "Recheck Results" when viewing Report Details, the score jumps up dramatically.</strong></p>
+
+		<ol>
+			<li>Your server may have been responding slowly when the first report was generated. A slow server response time can have a large impact on your Page Speed Score. If these problems happen frequently you may want to talk with your hosting provider about the problem, or look into alternative hosting providers.</li>
+		</ol>
+
+		<p><strong>I want to clear out all of the current page reports and start over.</strong></p>
+
+		<ol>
+			<li>Navigate to the "Options" tab</li>
+			<li>Expand the "Advanced Configuration" section.</li>
+			<li>Find the "Delete Data" Dropdown</li>
+			<li>Select "Delete Reports Only" to remove all Page Reports</li>
+			<li>Or Select "Delete EVERYTHING" to remove all Page Reports, Custom URLs, Snapshots, and Ignored Pages</li>
+		</ol>
+
+		<p class="append-bottom alt large"><strong>Enjoy your plugin and thank you for downloading!</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+
+		<hr class="space">
+
+	</div><!-- end div .container -->
+</body>
+</html>

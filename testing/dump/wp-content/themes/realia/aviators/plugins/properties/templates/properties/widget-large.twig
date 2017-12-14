@@ -1,0 +1,22 @@
+{% if title %}
+    {{ before_title|raw }}{{ title|raw }}{{ after_title|raw }}
+{% endif %}
+
+<div class="content">
+    {% if properties %}
+        <div class="properties-grid">
+            <div class="row">
+                {% for property in properties %}
+                    <div class="span3">
+                        {% include 'properties/property-box-small.twig' %}
+                    </div><!-- /.span4 -->
+                {% endfor %}
+            </div>
+        </div><!-- /.properties-grid -->
+    {% endif %}
+</div><!-- /.content -->
+
+<div class="show-all">
+    <a href="{{ wp.get_post_type_archive_link('property') }}">{{ wp.__('Show all', 'aviators') }}</a>
+    <hr>
+</div>

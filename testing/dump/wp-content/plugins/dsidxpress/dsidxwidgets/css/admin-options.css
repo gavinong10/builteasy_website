@@ -1,0 +1,289 @@
+#icon-dsidxpress
+{
+	background: transparent url(../../../../wp-admin/images/icons32.png?ver=20111206) no-repeat -492px -5px;
+}
+
+#option-FullApiKey {
+	width: 370px;
+}
+.dsidx-status
+{
+	font-weight: bold;
+	text-transform: uppercase; 
+}
+.dsidx-success
+{
+	color: green;
+}
+.dsidx-failure
+{
+	color: red;
+}
+#dsidx-activation-notice
+{
+	background-color:#EEEEEE;
+	border:1px solid #999999;
+	margin:0 100px;
+	padding:10px;
+	text-align:center;
+}
+
+.dsidxpress-SitemapLocations{
+	margin: 10px 10px;
+	width: 600px;
+}
+
+.dsidxpress-up_down{
+	background-image:url(../assets/222222_256x240_icons_icons.png);
+	background-position:-128px -48px;
+	background-repeat:no-repeat;
+	/*display:block;*/
+	display:none;
+	overflow:hidden;
+	text-indent:-99999px;
+	height:16px;
+	width:16px;
+	margin: 4px auto;
+}
+
+.dsidxpress-SitemapLocations .dsidxpress-SitemapLocationsNew {
+	padding: 6px 0;
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	background:#EAF2FA none repeat scroll 0 0;
+}
+
+.dsidxpress-SitemapLocations li .arrow, .dsidxpress-SitemapLocations li .value{
+	/*cursor: move;*/
+}
+
+.dsidxpress-SitemapLocations .arrow{
+	width:40px;
+	height: 24px;
+	line-height:24px;
+	text-align:center;
+	float:left;
+}
+
+.dsidxpress-SitemapLocations .priority{
+	width: 105px;
+	height: 24px;
+	line-height:24px;
+	float:left;
+}
+
+.dsidxpress-SitemapLocations .value{
+	width: 225px;
+	height: 24px;
+	line-height:24px;
+	float:left;
+}
+
+.dsidxpress-SitemapLocations .value input{
+	width: 190px;	
+}
+
+.dsidxpress-SitemapLocations .type{
+	width: 150px;
+	height: 24px;
+	line-height:24px;
+	float:left;
+}
+
+.dsidxpress-SitemapLocations .type select{
+	width: 144px;	
+	margin: 0px;
+}
+
+.dsidxpress-SitemapLocations .action{
+	width: 80px;
+	height: 24px;
+	line-height:24px;
+	float:left;
+	text-align:center;
+}
+
+#dsidxpress-SitemapLocations li{
+	margin: 0;
+	padding: 6px 0 6px 0;
+	background-color:white;
+}
+
+#dsidxpress-CustomTitleText{
+	width: 300px;
+}
+
+/* Styles for the link builder */
+#dsidxpress-link-builder .dsidxpress-item-wrap {
+	margin: 0 0 1em;
+}
+
+.customlinkdiv .howto select,
+.customlinkdiv .howto textarea,
+#dsidxpress-link-builder .dsidxpress-checkbox,
+#dsidxpress-link-builder #dsidxpress-filter-list
+{
+	width: 200px;
+	float: right;
+}
+
+#dsidxpress-link-builder .dsidxpress-checkbox input,
+#dsidxpress-link-builder .dsidxpress-checkbox span
+{
+	float: none;
+	display: inline;
+	width: auto;
+}
+
+#dsidxpress-filters-wrap span {
+	font-style: italic;
+	color: #666;
+}
+
+#dsidxpress-link-builder #dsidxpress-filter-list li
+{
+	position: relative;
+	float: left;
+	padding: 4px 19px 4px 8px;
+	margin: 0 4px 4px 0;
+	background: #b7b7b7;
+	color: #fff;
+	line-height: 1em;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+#dsidxpress-link-builder #dsidxpress-filter-list li:hover
+{
+	background: #dadada;
+	background: -moz-linear-gradient(top, #ddd 0%, #a3a3a3 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ddd), color-stop(1, #a3a3a3));
+	background: -webkit-linear-gradient(top, #ddd 0%, #a3a3a3 100%);
+	background: -o-linear-gradient(top, #ddd 0%, #a3a3a3 100%);
+	background: -ms-linear-gradient(top, #ddd 0%, #a3a3a3 100%);
+	background: linear-gradient(top, #ddd 0%, #a3a3a3 100%);
+}
+
+#dsidxpress-link-builder #dsidxpress-filter-list li a
+{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	right: 5px;
+	top: 6px;
+	background: url(../images/link-builder-sprite.png) no-repeat -12px -1px;
+}
+
+#dsidxpress-link-builder #dsidxpress-filter-list li a:hover
+{
+	background: url(../images/link-builder-sprite.png) no-repeat -12px -12px;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor
+{
+	padding: 9px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	background: url(../images/pinstripe.png);
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor .dsidxpress-editor-header
+{
+	position: relative;
+	padding: 0 1px;
+	margin: 0 0 17px;
+	border-bottom: 1px solid #ccc;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor .dsidxpress-editor-header h4
+{
+	margin: 0 0 8px;
+	font: 1.083em/1em Helvetica, Arial, sans-serif;
+	color: #36c;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor .dsidx-editor-cancel a
+{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 11px;
+	height: 11px;
+	background: url(../images/link-builder-sprite.png) no-repeat 0 0;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor .dsidx-editor-cancel a:hover
+{
+	background: url(../images/link-builder-sprite.png) no-repeat 0 -11px;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor .dsidxpress-editor-main
+{
+	margin: 0 5px;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor .dsidxpress-editor-main p.howto
+{
+	font-size: 0.9em;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor .dsidxpress-editor-main p.howto code
+{
+	font-style: normal;
+	font-weight: bold;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor .dsidxpress-editor-main textarea
+{
+	width: 100%;
+	margin: 0;
+	height: 75px;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor .dsidxpress-editor-main select
+{
+	width: 100%;
+	margin: 0 0 0.5em;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor label.howto
+{
+	font-style: normal;
+	margin: 0 5px 0.5em;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor label input
+{
+	float: right;
+	width: 65px;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor label span
+{
+	float: right;
+	margin-right: 8px;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor div.buttons
+{
+	margin: 17px 0 0;
+}
+
+#dsidxpress-editor-wrap .dsidxpress-filter-editor div.buttons input[type=button]
+{
+	float: right;
+	margin: 0 5px;
+}
+
+#dsidxpress-link-builder .dsidxpress-item-wrap:after,
+#dsidxpress-editor-wrap .dsidxpress-filter-editor:after,
+#dsidxpress-editor-wrap .dsidxpress-filter-editor .dsidxpress-editor-header:after,
+#dsidxpress-editor-wrap .dsidxpress-filter-editor label:after
+{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}

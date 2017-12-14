@@ -1,0 +1,8 @@
+.partners {
+    .span3 {
+      margin-bottom: 30px;
+    }
+	.content { @include clearfix-normal; @include shadow; background-color: $partners-background-color; display: block; padding: 30px; text-align: center;
+		.partner { display: inline-block; margin: 0px 30px; vertical-align: middle; }
+	}
+}

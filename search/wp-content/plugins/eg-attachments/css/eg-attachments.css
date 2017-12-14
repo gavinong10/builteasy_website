@@ -1,0 +1,11 @@
+
+.attachments {	width: 80%;	margin: 0.5em auto 0.5em auto;}
+.attachments-large,dl.attachments-medium,dl.attachments-small {	border: 1px dashed black;}
+.attachments:after {	content:".";	display:block;	height:0;	clear:both;	visibility:hidden;}
+.attachments img{	margin: 1%;}
+.attachments .icon {	float: left;}
+.attachments dd {	width: 80%;}
+.attachments .caption {	float: left;	margin: 0;	padding: 0 0 0 0.5em;}
+.attachments img.lock {	margin: 0;	float: right;}
+div.widget dl.attachments {	width: 100%;}
+div.widget dl.attachments-large {	border: 0;}

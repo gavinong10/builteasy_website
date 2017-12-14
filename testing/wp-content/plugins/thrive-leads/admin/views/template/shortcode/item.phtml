@@ -1,0 +1,105 @@
+<div class="tvd-row">
+	<div class="tvd-col tvd-s2">
+		<div class="tvd-row tvd-collapse">
+			<div class="tvd-col tvd-s7">
+				<span class="tvd-vertical-align">
+					<a href="javascript:void(0)" class="tve-edit-title tvd-left tvd-margin-right-small">
+						<span class="tvd-icon-pencil"></span>
+					</a>
+					<span class="group-title tvd-truncate">
+						<#= shortcode.get('post_title') #>
+					</span>
+					<div class="tvd-input-field tve-edit-title-input" style="display: none;">
+						<input type="text"/>
+					</div>
+				</span>
+			</div>
+			<div class="tvd-col tvd-s5">
+				<span class="tve-copy-code-container tvd-vertical-align">
+			        <a href="javascript:void(0)" class="tve-leads-php-code"
+			            title="<?php echo __( 'Get PHP Code', 'thrive-leads' ) ?>"><?php echo __( 'Get PHP Code', 'thrive-leads' ) ?></a>
+		        </span>
+				<# if(shortcode.get('active_test')) { #>
+					<span class="testing tvd-vertical-align"><?php echo __( '(test in progress)', 'thrive-leads' ) ?></span>
+				<# } #>
+			</div>
+		</div>
+	</div>
+	<div class="tvd-col tvd-s3">
+		<div class="tvd-row tve-leads-copy-row">
+			<div class="tvd-col tvd-s7">
+				<div class="tvd-input-field">
+					<input readonly="readonly"
+					       class="tve-shortcode tve-shortcode-<#= shortcode.get('ID') #> tve-leads-copy"
+					       type="text"
+					       value="<#= shortcode.getCode() #>"/>
+				</div>
+			</div>
+			<div class="tvd-col tvd-s5">
+				<span class="tve-leads-copy-container">
+		            <a class="tve-copy-to-clipboard tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue tvd-btn-small"
+		               href="javascript:void(0)">
+			            <span class="tl-copy-text"><?php echo __( 'Copy', 'thrive-leads' ) ?></span>
+		            </a>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="tvd-col tvd-s1">
+		<span class="tvd-vertical-align">
+		<#= shortcode.get('impressions') #>
+		</span>
+	</div>
+	<div class="tvd-col tvd-s1">
+		<span class="tvd-vertical-align">
+		<#= shortcode.get('conversions') #>
+		</span>
+	</div>
+	<div class="tvd-col tvd-s1">
+		<span class="tvd-vertical-align">
+		<#= shortcode.get('conversion_rate') #>
+		</span>
+	</div>
+	<div class="tvd-col tvd-s1">
+		<div class="tvd-vertical-align tvd-switch <#= (shortcode.get('active_test')) ?'tvd-tooltipped tl-disabled':'' #>"
+		<# if(shortcode.get('active_test')){ #>
+			data-tooltip="<?php echo __( 'You can\'t change the content locking setting while a test is in progress in order to protect the integrity of the test!', 'thrive-leads' ) ?>" data-position="top"
+			<# } #>>
+			<label>
+				<input type="checkbox" class="tve-shortcode-content-locking"
+				<#= shortcode.get('content_locking')==1?'checked':'' #>
+					<# if(shortcode.get('active_test')){ #> disabled="disabled"
+						<# } #> />
+				<span class="tvd-lever"></span>
+			</label>
+		</div>
+	</div>
+	<div class="tvd-col tvd-s3">
+            <span class="tvd-right">
+                <# if(shortcode.get('active_test')) { #>
+	                <a data-shortcode-test-id="<#= shortcode.get('active_test').get('id') #>"
+	                   href="#test/<#= shortcode.get('active_test').get('id') #>/completed"
+	                   title="<?php echo __( 'View Test', 'thrive-leads' ) ?>"
+	                   class="tve-form-type-test tvd-btn-icon tvd-btn-icon-purple">
+		                <span class="tvd-icon-view"></span>
+		                <span class="tvd-on-large-and-down"><?php echo __( 'View Test', 'thrive-leads' ) ?></span>
+	                </a>
+	                <# } else { #>
+		                <a style="float: left;" href="javascript:void(0)"
+		                   title="<?php echo __( 'Reset Stats', 'thrive-leads' ) ?>"
+		                   class="shortcode-reset tvd-btn-icon tvd-btn-icon-orange">
+			                <span class="tvd-icon-undo"></span>
+			                <span class="tvd-on-large-and-down"><?php echo __( 'Reset Stats', 'thrive-leads' ) ?></span></a>
+		                <a class="tve-shortcode-settings tvd-btn-icon tvd-btn-icon-blue"
+		                   href="#shortcode/<#= shortcode.get('ID')#>"
+		                   title="<?php echo __( 'Edit', 'thrive-leads' ) ?>">
+			                <span class="tvd-icon-edit7"></span> <span class="tvd-on-large-and-down"><?php echo __( 'Edit', 'thrive-leads' ) ?></span></a>
+		                <a class="tve-shortcode-delete tvd-btn-icon tvd-btn-icon-red"
+		                   href="javascript:void(0)"
+		                   title="<?php echo __( 'Delete Shortcode', 'thrive-leads' ) ?>"
+		                   data-id="<#= shortcode.get('ID') #>"><span class="tvd-icon-delete2"></span><span class="tvd-on-large-and-down"><?php echo __( 'Delete', 'thrive-leads' ) ?></span></a>
+		                <# } #>
+            </span>
+	</div>
+</div>
+

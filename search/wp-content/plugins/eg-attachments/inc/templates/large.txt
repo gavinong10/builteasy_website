@@ -1,0 +1,18 @@
+[title]Large[/title]
+[description]List with details, and big icon[/description]
+[before][/before]
+[loop]<dl class="attachments attachments-large"><dt class="icon">
+	<a title="%TITLE%" href="%URL%" %NOFOLLOW%>
+		%ICON-48x48%
+	</a>
+</dt>
+<dd class="caption">
+	%SHOWLOCK%<strong>%TITLE_LABEL%</strong>: <a title="%TITLE%" href="%URL%" %NOFOLLOW%>%TITLE%</a> (%COUNTER% %COUNTER_LABEL%)
+	<br/>
+	<strong>%CAPTION_LABEL%</strong>: %CAPTION%
+	<br/>
+	<strong>%FILENAME_LABEL%</strong>: %FILENAME%
+	<br/>
+	<strong>%FILESIZE_LABEL%</strong>: %FILESIZE%
+</dd>
+</dl>[/loop][after][/after]

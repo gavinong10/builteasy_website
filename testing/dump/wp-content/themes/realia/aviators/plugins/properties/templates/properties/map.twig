@@ -1,0 +1,55 @@
+<div class="map-wrapper">
+    {% if show_filter %}
+        {% if not horizontal_filter %}
+            <div class="container">
+                <div class="row">
+                    <div class="span3">
+                        {% include 'properties/filter.twig' %}
+                    </div>
+                    <!-- /.span3 -->
+                </div>
+                <!-- /.row -->
+            </div><!-- /.container -->
+        {% endif %}
+    {% endif %}
+
+    <div class="map">
+
+        <script type="text/javascript">
+            jQuery(document).ready(function ($) {
+                var map = $('#map').aviators_map({
+                    locations              : {% include 'properties/helpers/locations.twig' %},
+                    types                  : {% include 'properties/helpers/types.twig' %},
+                    contents               : {% include 'properties/helpers/contents.twig' %},
+                    transparentMarkerImage : '{{ wp.get_template_directory_uri() }}/assets/img/marker-transparent.png',
+                    transparentClusterImage: '{{ wp.get_template_directory_uri() }}/assets/img/markers/cluster-transparent.png',
+                    zoom                   : {{ zoom }},
+                    center                 : {
+                        latitude : {{ latitude }},
+                        longitude: {{ longitude }}
+                    },
+                    filterForm             : '.map-filtering',
+                    enableGeolocation      : '{{ enable_geolocation }}'
+                });
+            });
+        </script>
+
+        <div id="map" class="map-inner" style="height: {{ height }}"></div>
+        <!-- /.map-inner -->
+
+        {% if show_filter %}
+            {% if horizontal_filter %}
+                <div class="container">
+                    <div class="row">
+                        <div class="span12">
+                            {% include 'properties/filter-horizontal.twig' %}
+                        </div>
+                        <!-- /.span12 -->
+                    </div>
+                    <!-- /.row -->
+                </div><!-- /.container -->
+            {% endif %}
+        {% endif %}
+    </div>
+    <!-- /.map -->
+</div><!-- /.map-wrapper -->

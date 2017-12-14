@@ -1,0 +1,600 @@
+@import "bourbon";
+@mixin roboto {
+  font-family: 'Roboto', sans-serif;
+}
+@mixin raleway {
+  font-family: 'Raleway', sans-serif;
+}
+$white: #fff;
+$black: #000;
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+}
+[class*='56_set'] {
+  @include clearfix();
+  &.tve_gray_bg {
+    background-image: none;
+    background: #c2c2c2;
+  }
+}
+#tve_56_set {
+  [class*='56_set'] {
+    a {
+      color: #fff;
+    }
+    h1 {
+      @include roboto();
+      color: #5d5d5d;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 1.25em;
+      letter-spacing: normal;
+      margin-bottom: 20px;
+      &.bold_text {
+        font-weight: 700;
+      }
+    }
+    h2 {
+      @include roboto();
+      color: #5d5d5d;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 1.25em;
+      letter-spacing: normal;
+      margin-bottom: 20px;
+      &.bold_text {
+        font-weight: 700;
+      }
+    }
+    h3 {
+      @include raleway();
+      color: #5d5d5d;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25em;
+      letter-spacing: normal;
+      margin-bottom: 20px;
+      &.bold_text {
+        font-weight: 700;
+      }
+    }
+    h4 {
+      @include raleway();
+      color: #5d5d5d;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.286em;
+      letter-spacing: normal;
+      margin-bottom: 20px;
+      &.bold_text {
+        font-weight: 700;
+      }
+    }
+    h5 {
+      @include raleway();
+      color: #5d5d5d;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 1.364em;
+      letter-spacing: normal;
+      margin-bottom: 20px;
+      &.bold_text {
+        font-weight: 700;
+      }
+    }
+    h6 {
+      @include raleway();
+      color: #5d5d5d;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 1.364em;
+      letter-spacing: normal;
+      margin-bottom: 20px;
+      &.bold_text {
+        font-weight: 700;
+      }
+    }
+    p {
+      @include roboto();
+      color: #5d5d5d;
+      font-weight: 400;
+      font-size: 18px;
+      letter-spacing: normal;
+      line-height: 1.333em;
+      margin-bottom: 20px;
+      &.bold_text {
+        font-weight: 500;
+      }
+    }
+    blockquote {
+      @include roboto();
+      background: transparent;
+      border: 0;
+      color: #5d5d5d;
+      font-style: italic;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.333em;
+      padding-left: 80px;
+      position: relative;
+      &:before {
+        content: '\0201C';
+        color: #81ccf6;
+        display: block;
+        font-size: 160px;
+        font-weight: 700;
+        font-style: normal;
+        line-height: 120px;
+        position: absolute;
+        left: 0;
+        top: 10px;
+      }
+    }
+    ol.thrv_wrapper {
+      counter-reset: ol-counter;
+      list-style-type: none;
+      li {
+        @include roboto();
+        color: #5d5d5d;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        &:before {
+          color: #71b6d5;
+          content: counter(ol-counter) '.' !important;
+          counter-increment: ol-counter;
+          font-weight: 400;
+          padding-right: 10px;
+        }
+        &.bold_text {
+          font-weight: 700;
+        }
+      }
+    }
+    ul.thrv_wrapper {
+      list-style-type: none;
+      li {
+        @include roboto();
+        color: #5d5d5d;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 30px;
+        &:before {
+          content: '\02218';
+          color: #71b6d5;
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 15px;
+          padding-right: 10px;
+          position: relative;
+          top: 4px;
+        }
+        &.bold_text {
+          font-weight: 700;
+        }
+      }
+    }
+    h1, h2, h3, h4, h5, h6 {
+      clear: none;
+      padding-bottom: 0;
+      text-transform: none;
+    }
+  }
+}
+#tve_56_set {
+  @include roboto();
+  text-shadow: none;
+  [class*='56_set'] {
+    .tve_p_lb_close {
+      border: 2px solid #fff;
+      background: #71b6d5;
+      box-shadow: none;
+      color: #fff;
+      font-family: Arial;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 20px;
+      top: -10px;
+      right: -10px;
+    }
+  }
+  .thrv_wrapper.thrv_icon.tve_brdr_solid {
+    border: 5px solid #fff;
+    border-radius: 65%;
+    .tve_sc_icon {
+      border-radius: 60px;
+      color: #fff;
+      padding: 17px;
+    }
+  }
+  .tve-leads-lightbox {
+    .tve_p_lb_background .tve_p_lb_content {
+      background-color: #fff;
+      border-radius: 9px;
+      box-shadow: none;
+      max-width: 740px;
+      padding: 0 !important;
+    }
+    #tve_editor {
+      .tve_p_lb_control {
+        padding: 20px 40px;
+      }
+    }
+  }
+  .thrv-leads-form-box {
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    position: relative;
+    padding: 25px 0;
+    p {
+      font-weight: 300;
+      .bold_text {
+        font-weight: 500;
+      }
+    }
+  }
+  article {
+    padding-bottom: 0;
+  }
+  .thrv_contentbox_shortcode {
+    margin-top: 0;
+    margin-bottom: 0;
+    .tve_cb.tve_cb5 {
+      border-radius: 5px;
+      .tve_cb_cnt {
+        padding: 20px 20px;
+      }
+      p {
+        text-shadow: none;
+      }
+    }
+  }
+  .thrv_lead_generation {
+    &.tve_white.thrv_wrapper {
+      button {
+        border: 1px solid #d5d5d5;
+        color: #787878;
+      }
+    }
+    button {
+      @include roboto();
+      border-radius: 5px;
+      border: 0;
+      color: #fff;
+      font-weight: 300;
+      font-size: 21px;
+      line-height: 32px;
+      padding: 7px 10px;
+      text-shadow: none;
+    }
+    input[type="text"], input[type="email"] {
+      @include roboto();
+      border-radius: 5px;
+      box-shadow: none;
+      border: 1px solid #e4e4e4;
+      background: #fff;
+      color: #575757;
+      font-size: 14px;
+      font-weight: 400;
+      font-style: italic;
+      height: auto;
+      line-height: 32px;
+      margin-bottom: 10px;
+      padding: 4px 20px !important;
+      &:hover {
+        color: #9f9f9f;
+      }
+      &:focus {
+        color: #9f9f9f;
+      }
+    }
+  }
+  .tve_lg_radio_wrapper {
+    display: inline-block;
+    position: relative;
+    padding: 5px 20px 5px 0;
+    input[type="radio"] {
+      cursor: pointer;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 5;
+      width: 100%;
+      &:checked {
+        + label {
+          &:before {
+            background: #fff;
+          }
+        }
+      }
+      + label {
+        @include roboto();
+        color: #707070;
+        display: inline-block;
+        position: relative;
+        font-size: 14px;
+        font-weight: 300;
+        &:before {
+          background-color: #fff;
+          border-radius: 100%;
+          content: '';
+          display: inline-block;
+          height: 14px;
+          margin-right: 10px;
+          vertical-align: middle;
+          position: relative;
+          top: -1px;
+          width: 14px;
+        }
+        &:after {
+          @include transition(background-color .3s);
+          background-color: transparent;
+          border-radius: 100%;
+          content: '';
+          height: 8px;
+          position: absolute;
+          top: 6px;
+          left: 4px;
+          width: 8px;
+        }
+      }
+    }
+  }
+  .tve_lg_checkbox_wrapper {
+    display: inline-block;
+    position: relative;
+    padding: 5px 20px 5px 0;
+    width: auto;
+    input[type="checkbox"] {
+      &:not(:checked),
+      &:checked {
+        position: absolute;
+        visibility: hidden;
+        + label {
+          @include roboto();
+          color: #575757;
+          cursor: pointer;
+          font-size: 14px;
+          font-weight: 300;
+          position: relative;
+          padding-left: 27px;
+          &:before {
+            border-radius: 1px;
+            background-color: #fff;
+            content: '';
+            height: 14px;
+            position: absolute;
+            left: 0;
+            top: 3px;
+            width: 14px;
+          }
+          &:after {
+            @include transition(all, .2s);
+            content: "\02713";
+            font-size: 13px;
+            font-weight: 600;
+            position: absolute;
+            top: 1px;
+            left: 3px;
+          }
+        }
+      }
+      &:not(:checked) + label:after {
+        @include transform(scale(0));
+        opacity: 0;
+      }
+      &:checked + label:after {
+        @include transform(scale(1));
+        color: #fff;
+        opacity: 1;
+      }
+    }
+  }
+  .thrv_lead_generation {
+    .tve_lg_dropdown {
+      select {
+        &:hover {
+          background: #fff;
+          color: #232323;
+        }
+      }
+    }
+  }
+  .tve_lg_dropdown {
+    position: relative;
+    select {
+      @include appearance(none);
+      @include roboto();
+      border: 0;
+      color: #fff;
+      border-radius: 2px;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 33px;
+      height: 62px;
+      margin: 0;
+      outline: none;
+      padding-right: 40px !important;
+      option {
+        background: #ffffff;
+        color: #232323;
+        font-size: 19px;
+        font-weight: 300;
+      }
+    }
+    .tve_sc_icon {
+      margin-right: 20px;
+    }
+    &:after {
+      border: 1px solid #fff;
+      border-radius: 50%;
+      color: #fff;
+      content: "\002C7";
+      font-size: 30px;
+      font-weight: 700;
+      height: 20px;
+      line-height: 37px;
+      pointer-events: none;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      text-align: center;
+      width: 20px;
+    }
+  }
+  .thrv_progress_bar {
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+  }
+  .tve_progress_bar {
+    background: #fff;
+    border-radius: 4px;
+    height: 40px;
+    .tve_progress_bar_fill {
+      height: 40px;
+    }
+    .tve_data_element_label {
+      background: none;
+      color: #000;
+      font-size: 18px;
+      line-height: 25px;
+      left: auto;
+      right: 10px;
+    }
+  }
+}
+@font-face {
+  font-family: 'tve-leads-56-set-icons';
+  src: url('fonts/55_set/55_set_icons.eot?tm9238');
+  src: url('fonts/55_set/55_set_icons.eot?#iefixtm9238') format('embedded-opentype'),
+  url('fonts/55_set/55_set_icons.woff?tm9238') format('woff'),
+  url('fonts/55_set/55_set_icons.ttf?tm9238') format('truetype'),
+  url('fonts/55_set/55_set_icons.svg?tm9238#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="set-56"], [class*=" set-56"] {
+  color: inherit;
+  font-family: 'tve-leads-56-set-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.set-56-download:before {
+  content: "\f0ed";
+}
+$color-pallete:
+'blue' #71b6d5 #4799bd #4698bd #2582ac #71b6d5,
+'black' #3b3c3d #2b2c2d #2b2c2d #171717 #3b3c3d,
+'green' #71d5c2 #5abfac #5abfac #40a491 #71d5c2,
+'white' #ffffff #f0f0f0 #d5d5d5 #dddddd #d5d5d5,
+'orange' #f1654c #e2553c #e2553c #c6432b #f1654c,
+'purple' #9684a3 #856d97 #856d97 #6f5285 #9684a3,
+'red' #8a2d3c #701624 #701624 #4d0812 #8a2d3c,
+'teal' #00b5b5 #01a4a4 #01a4a4 #038c8c #00b5b5;
+
+@each $color in $color-pallete {
+  #tve_56_set {
+    .thrv_icon.thrv_wrapper {
+      span.tve_sc_icon.tve_#{nth($color, 1)} {
+        background: nth($color, 2);
+      }
+    }
+    .thrv-leads-form-box.tve_#{nth($color, 1)} {
+      background: nth($color, 2);
+    }
+    .tve_cb.tve_cb5.tve_#{nth($color, 1)} {
+      background: nth($color, 2);
+    }
+    .thrv_progress_bar.tve_#{nth($color, 1)} {
+      .tve_progress_bar_fill {
+        background: nth($color, 6);
+      }
+    }
+    .thrv_lead_generation.tve_#{nth($color, 1)} {
+      input[type='text'], input[type='email'] {
+        &:hover {
+          border: 1px solid nth($color, 2);
+        }
+        &:focus {
+          border: 1px solid nth($color, 3);
+        }
+      }
+      button {
+        background: nth($color, 2);
+        border: 1px solid nth($color, 2);
+        box-shadow: 0 2px 0 0 nth($color, 4);
+        &:hover {
+          background: nth($color, 3);
+          border: 1px solid nth($color, 3);
+          box-shadow: 0 2px 0 0 nth($color, 5);
+        }
+        &:active {
+          box-shadow: 0 2px 0 0 nth($color, 3);
+        }
+      }
+      .tve_lg_dropdown {
+        &:hover {
+          &:after {
+            border-color: nth($color, 5);
+            color: nth($color, 5);
+          }
+        }
+      }
+      select {
+        background: nth($color, 5);
+        border: 1px solid nth($color, 5);
+      }
+      input[type="radio"] {
+        + label {
+          &:before {
+            border: 1px solid nth($color, 2);
+          }
+        }
+        &:checked + label {
+          &:after {
+            background-color: nth($color, 2);
+          }
+        }
+      }
+      input[type="checkbox"] {
+        + label {
+          &:before {
+            border: 1px solid nth($color, 2);
+          }
+        }
+        &:checked {
+          + label {
+            &:before {
+              background: nth($color, 2);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@import "_responsive";

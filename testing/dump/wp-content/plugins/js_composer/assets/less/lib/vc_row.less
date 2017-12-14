@@ -1,0 +1,27 @@
+/**
+ * Row styles
+ */
+
+.vc_row {
+  &.vc_row-o-full-height {
+    min-height: 100vh;
+  }
+
+  &.vc_row-o-content-middle {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .vc_row-full-height-fixer {
+    content: '';
+    width: 0;
+    visibility: hidden;
+    float: left;
+  }
+}

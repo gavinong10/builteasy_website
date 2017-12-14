@@ -1,0 +1,15 @@
+#toplevel_page_pb_backupbuddy_backup div.wp-menu-image:before,
+#toplevel_page_pb_backupbuddy_multisite_export div.wp-menu-image:before {
+	font-family: 'backupbuddy' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+	content: "\e600" !important;
+}

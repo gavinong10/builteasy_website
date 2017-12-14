@@ -1,0 +1,147 @@
+# Copyright (C) 2010 
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version:  \n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/header-footer\n"
+"POT-Creation-Date: 2011-11-28 08:30:40+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2010-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: options.php:87
+msgid ""
+"Detailed documentation and FAQs can be found online on <a href=\"http://www."
+"satollo.net/plugins/header-footer\"><strong>Header and Footer plugin "
+"official page</strong></a>."
+msgstr ""
+
+#: options.php:88
+msgid "PHP is allowed on textareas below."
+msgstr ""
+
+#: options.php:88
+msgid "If you use bbPress, read the official page."
+msgstr ""
+
+#: options.php:97
+msgid "Page head and footer"
+msgstr ""
+
+#: options.php:98
+msgid "Post content"
+msgstr ""
+
+#: options.php:99
+msgid "Page content"
+msgstr ""
+
+#: options.php:100
+msgid "Facebook"
+msgstr ""
+
+#: options.php:101
+msgid "Snippets"
+msgstr ""
+
+#: options.php:102
+msgid "Notes and..."
+msgstr ""
+
+#: options.php:107
+msgid "Code to be added on HEAD section of the home"
+msgstr ""
+
+#: options.php:108
+msgid "Code to be added on HEAD section of every page"
+msgstr ""
+
+#: options.php:109
+msgid "Code to be added before the end of the page"
+msgstr ""
+
+#: options.php:118
+msgid "Code to be inserted before each post"
+msgstr ""
+
+#: options.php:119
+msgid "Code to be inserted after each post"
+msgstr ""
+
+#: options.php:125
+msgid "Code to be inserted before each page"
+msgstr ""
+
+#: options.php:126
+msgid "Code to be inserted after each page"
+msgstr ""
+
+#: options.php:133
+msgid "Facebook page type for the generic web page"
+msgstr ""
+
+#: options.php:133
+msgid "Usually \"article\" is the right choice, if empty will be skipped"
+msgstr ""
+
+#: options.php:134
+msgid "Facebook page type for the home"
+msgstr ""
+
+#: options.php:134
+msgid ""
+"Usually \"blog\" is a good choice, if empty will be used the generic type"
+msgstr ""
+
+#: options.php:135
+msgid "Facebook Open Graph Image"
+msgstr ""
+
+#: options.php:135
+msgid ""
+"Adds the Facebook Open Graph metatag with a reference to the first post image"
+msgstr ""
+
+#: options.php:138
+msgid "Facebook Open Graph default image"
+msgstr ""
+
+#: options.php:143
+msgid ""
+"If no image can be extracted from a post, that image URL will be used (if "
+"present)."
+msgstr ""
+
+#: options.php:144
+msgid ""
+"<strong>Warning.</strong> On some versions of WordPress after the image "
+"selection button is pressed the tabs above does not change anymore. Just "
+"save so\r\n"
+"                        this page is reloaded (<a href=\"http://wordpress."
+"org/support/topic/wp-32-thickbox-jquery-ui-tabs-conflict\" target=\"_blank"
+"\">reference</a>)."
+msgstr ""
+
+#: options.php:153
+msgid ""
+"Common snippets that can be used in any header or footer area referring them "
+"as [snippet_N] where N is the snippet number\r\n"
+"            from 1 to 5. Snippets are inserted before PHP evaluation."
+msgstr ""
+
+#: options.php:155
+msgid ""
+"Useful for social button to be placed before and after the post or in posts "
+"and pages."
+msgstr ""
+
+#: options.php:166
+msgid "Notes and parked codes"
+msgstr ""
+
+#: options.php:170
+msgid "save"
+msgstr ""

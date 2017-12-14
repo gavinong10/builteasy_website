@@ -1,0 +1,148 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: YITH WooCommerce Ajax Search\n"
+"POT-Creation-Date: 2013-07-29 18:57+0100\n"
+"PO-Revision-Date: 2013-07-29 18:58+0100\n"
+"Last-Translator: \n"
+"Language-Team: Your Inspiration Themes <plugins@yithemes.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+
+#: ../class.yith-wcas-admin.php:124
+msgid "Ajax Search"
+msgstr ""
+
+#: ../class.yith-wcas-admin.php:173 ../class.yith-wcas-admin.php:213
+msgid "General Settings"
+msgstr ""
+
+#: ../class.yith-wcas-admin.php:220
+msgid "Search input label"
+msgstr ""
+
+#: ../class.yith-wcas-admin.php:221
+msgid "Label for Search input field."
+msgstr ""
+
+#: ../class.yith-wcas-admin.php:223 ../class.yith-wcas-admin.php:224
+msgid "Search for products"
+msgstr ""
+
+#: ../class.yith-wcas-admin.php:230
+msgid "Search submit label"
+msgstr ""
+
+#: ../class.yith-wcas-admin.php:231
+msgid "Label for Search submit field."
+msgstr ""
+
+#: ../class.yith-wcas-admin.php:233 ../class.yith-wcas-admin.php:234
+msgid "Search"
+msgstr ""
+
+#: ../class.yith-wcas-admin.php:240
+msgid "Minimum number of characters"
+msgstr ""
+
+#: ../class.yith-wcas-admin.php:241
+msgid "Minimum number of characters required to trigger autosuggest."
+msgstr ""
+
+#: ../class.yith-wcas-admin.php:256
+msgid "Maximum number of results"
+msgstr ""
+
+#: ../class.yith-wcas-admin.php:257
+msgid "Maximum number of results showed within the autosuggest box."
+msgstr ""
+
+#: ../class.yith-wcas-admin.php:430
+msgid "Settings"
+msgstr ""
+
+#: ../class.yith-wcas-admin.php:431
+msgid "Docs"
+msgstr ""
+
+#: ../class.yith-wcas.php:137
+msgid "No results"
+msgstr ""
+
+#: ../templates/yith-woocommerce-ajax-search.php:20
+msgid "Search for:"
+msgstr ""
+
+#: ../widgets/class.yith-wcas-ajax-search.php:29
+msgid "An Ajax Search box for products only."
+msgstr ""
+
+#: ../widgets/class.yith-wcas-ajax-search.php:31
+msgid "YITH WooCommerce Ajax Product Search"
+msgstr ""
+
+#: ../widgets/class.yith-wcas-ajax-search.php:90
+msgid "Title:"
+msgstr ""
+
+#: ../yit-common/yith-panel.php:396
+msgid "Select a date"
+msgstr ""
+
+#: ../yit-common/yith-panel.php:397
+msgid "Hours"
+msgstr ""
+
+#: ../yit-common/yith-panel.php:398 ../yit-common/yith-panel.php:399
+msgid "Minutes"
+msgstr ""
+
+#: ../yit-common/yith-panel.php:407
+msgid "Upload"
+msgstr ""
+
+#: ../yit-common/yith-panel.php:434
+msgid "px"
+msgstr ""
+
+#: ../yit-common/yith-panel.php:435
+msgid "em"
+msgstr ""
+
+#: ../yit-common/yith-panel.php:436
+msgid "pt"
+msgstr ""
+
+#: ../yit-common/yith-panel.php:437
+msgid "rem"
+msgstr ""
+
+#: ../yit-common/yith-panel.php:447
+msgid "Select a font family"
+msgstr ""
+
+#: ../yit-common/yith-panel.php:455
+msgid "Regular"
+msgstr ""
+
+#: ../yit-common/yith-panel.php:456
+msgid "Bold"
+msgstr ""
+
+#: ../yit-common/yith-panel.php:457
+msgid "Extra bold"
+msgstr ""
+
+#: ../yit-common/yith-panel.php:458
+msgid "Italic"
+msgstr ""
+
+#: ../yit-common/yith-panel.php:459
+msgid "Italic bold"
+msgstr ""
+
+#: ../yit-common/yith-panel.php:471
+msgid "Click to preview"
+msgstr ""

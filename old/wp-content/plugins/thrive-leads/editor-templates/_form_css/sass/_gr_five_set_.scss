@@ -1,0 +1,552 @@
+@import "bourbon";
+@mixin montserrat {
+  //todo change this
+  //font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+}
+$white: #fff;
+$black: #000;
+
+[class*='gr_five_set'] {
+  &.tve_gray_bg {
+    background-image: none;
+    background: #c2c2c2;
+  }
+}
+#tve_gr_five_set {
+  [class*='gr_five_set'] {
+    @include clearfix();
+    a {
+      color: #12d2d2;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    h1 {
+      @include montserrat();
+      color: #000;
+      font-weight: 100;
+      font-size: 55px;
+      line-height: 1.2em;
+      letter-spacing: normal;
+    }
+    h2 {
+      @include montserrat();
+      color: #000;
+      font-weight: 100;
+      font-size: 51px;
+      line-height: 1.2em;
+      letter-spacing: normal;
+    }
+    h3 {
+      @include montserrat();
+      color: #000;
+      font-weight: 100;
+      font-size: 44px;
+      line-height: 1.222em;
+      letter-spacing: normal;
+    }
+    h4 {
+      @include montserrat();
+      color: #000;
+      font-weight: 100;
+      font-size: 37px;
+      line-height: 1.222em;
+      letter-spacing: normal;
+    }
+    h5 {
+      @include montserrat();
+      color: #000;
+      font-weight: 100;
+      font-size: 30px;
+      line-height: 1.222em;
+      letter-spacing: normal;
+    }
+    h6 {
+      @include montserrat();
+      color: #000;
+      font-weight: 100;
+      font-size: 24px;
+      line-height: 1.222em;
+      letter-spacing: normal;
+    }
+    p {
+      @include montserrat();
+      color: #232323;
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 1.364em;
+      margin-bottom: 20px;
+    }
+    blockquote {
+      @include montserrat();
+      background: transparent;
+      border: 0;
+      color: #555555;
+      font-style: normal;
+      font-size: 22px;
+      font-weight: 300;
+      padding-left: 90px;
+      position: relative;
+      &:before {
+        content: '\0201C';
+        color: #bfc0c2;
+        display: block;
+        font-size: 210px;
+        line-height: 210px;
+        position: absolute;
+        left: 0;
+        top: -20px;
+      }
+    }
+    ol.thrv_wrapper {
+      li {
+        @include montserrat();
+        color: #232323;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 44px;
+        &.bold_text {
+          font-weight: 700;
+        }
+      }
+    }
+    ul.thrv_wrapper {
+      list-style-type: circle;
+      li {
+        @include montserrat();
+        color: #232323;
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 44px;
+        &.bold_text {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+#tve_gr_five_set {
+  @include montserrat();
+  text-shadow: none;
+  position: relative;
+  article {
+    padding-bottom: 0;
+  }
+  .gr-close-button {
+    @include transform(translateX(-50%));
+    cursor: pointer;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+  }
+  .thrv-greedy-ribbon {
+    padding-top: 30vh;
+  }
+  .tve-greedy-ribbon-content {
+    @include clearfix();
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+  .thrv_button_shortcode {
+    margin-top: 0;
+    margin-bottom: 0;
+    .tve_btn3.tve_btn {
+      background: #18191e;
+      border-radius: 0;
+      border: 1px solid #18191e;
+      box-shadow: 1px 1px 0 0 rgba(#000, .2), 1px 1px 0 0 rgba(#fff, .04) inset;
+      &:hover {
+        border: 1px solid #2b2c34;
+        background: #2b2c34;
+      }
+      &:active {
+        border: 1px solid #4f5057;
+        background: #4f5057;
+      }
+      &.tve_white {
+        background: rgba(#fff, .5);
+        border: 1px solid #111215;
+        &:hover {
+          background: rgba(#fff, .78);
+        }
+        &:active {
+          background: rgba(#fff, .8);
+        }
+      }
+      &.tve_black {
+        background: rgba(#18191e, .9);
+        border: 1px solid #111215;
+        &:hover {
+          background: rgba(#18191e, .75);
+        }
+        &:active {
+          background: rgba(#18191e, .55);
+        }
+      }
+      .tve_btnLink {
+        > span {
+          color: inherit;
+        }
+      }
+      &.tve_normalBtn {
+        font-size: 30px;
+        line-height: 30px !important;
+        .tve_btnLink {
+          padding: 24px 60px;
+          text-shadow: none;
+        }
+      }
+    }
+  }
+  .thrv_lead_generation {
+    &.tve_white {
+      .tve_lg_submit {
+        button {
+          background: rgba(#fff, .5);
+          border: 1px solid #111215;
+          &:hover {
+            background: rgba(#fff, .78);
+          }
+          &:active {
+            background: rgba(#fff, .8);
+          }
+        }
+      }
+    }
+    &.tve_black {
+      .tve_lg_submit {
+        button {
+          background: rgba(#18191e, .9);
+          border: 1px solid #111215;
+          &:hover {
+            background: rgba(#18191e, .75);
+          }
+          &:active {
+            background: rgba(#18191e, .55);
+          }
+        }
+      }
+    }
+    &.thrv_lead_generation_horizontal {
+      &.tve_2 {
+        .tve_lg_input.tve_lg_2 {
+          width: 60%;
+        }
+        .tve_lg_submit.tve_lg_2 {
+          width: 40%;
+        }
+      }
+    }
+    button {
+      @include montserrat();
+      background: #18191e;
+      border-radius: 0;
+      border: 1px solid #18191e;
+      box-shadow: 1px 1px 0 0 rgba(#000, .2), 1px 1px 0 0 rgba(#fff, .04) inset;
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 30px;
+      padding: 24px 10px;
+      text-shadow: none;
+      &:hover {
+        border: 1px solid #2b2c34;
+        background: #2b2c34;
+      }
+      &:active {
+        border: 1px solid #4f5057;
+        background: #4f5057;
+      }
+    }
+    input[type="text"], input[type="email"] {
+      @include montserrat();
+      background: transparent;
+      border-radius: 0;
+      border-width: 0 0 1px 0;
+      border-color: transparent transparent #5b5c5d transparent;
+      border-style: solid;
+      box-shadow: 1px 0 0 0 #5b5c5d inset;
+      color: #9c9c9c;
+      font-size: 23px;
+      font-weight: 100;
+      font-style: italic;
+      height: auto;
+      line-height: 43px;
+      margin-bottom: 20px;
+      padding: 18px 20px !important;
+      text-indent: 1px;
+      &:hover {
+        box-shadow: 4px 0 0 0 #5b5c5d inset;
+      }
+      &:focus {
+        box-shadow: 4px 0 0 0 #18191e inset;
+        color: #363636;
+      }
+    }
+  }
+  /*
+    autoresponder elements
+  */
+  .tve_lg_radio_wrapper {
+    display: inline-block;
+    position: relative;
+    padding: 5px 20px 5px 0;
+    input[type="radio"] {
+      cursor: pointer;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 5;
+      width: 100%;
+      &:checked {
+        + label {
+          &:before {
+            border: 3px solid #232323;
+          }
+          &:after {
+            background: #232323;
+          }
+        }
+      }
+      + label {
+        @include montserrat();
+        color: #232323;
+        display: inline-block;
+        position: relative;
+        font-size: 22px;
+        font-weight: 300;
+        &:before {
+          background-color: transparent;
+          border: 1px solid #232323;
+          border-radius: 100%;
+          content: '';
+          display: inline-block;
+          height: 18px;
+          margin-right: 10px;
+          position: relative;
+          top: -3px;
+          vertical-align: middle;
+          width: 18px;
+        }
+        &:after {
+          @include transition(background-color .3s);
+          background-color: transparent;
+          border-radius: 100%;
+          content: '';
+          height: 10px;
+          position: absolute;
+          top: 10px;
+          left: 7px;
+          width: 10px;
+        }
+      }
+    }
+  }
+  .tve_lg_checkbox_wrapper {
+    display: inline-block;
+    position: relative;
+    padding: 5px 20px 5px 0;
+    width: auto;
+    input[type="checkbox"] {
+      &:not(:checked),
+      &:checked {
+        position: absolute;
+        visibility: hidden;
+        + label {
+          @include montserrat();
+          color: #232323;
+          cursor: pointer;
+          font-size: 22px;
+          font-weight: 300;
+          position: relative;
+          padding-left: 35px;
+          &:before {
+            border-radius: 2px;
+            background-color: transparent;
+            border: 1px solid #232323;
+            content: '';
+            height: 18px;
+            position: absolute;
+            left: 0;
+            top: 6px;
+            width: 18px;
+          }
+          &:after {
+            @include transition(all, .2s);
+            content: "\02713";
+            font-size: 20px;
+            font-weight: 600;
+            position: absolute;
+            top: 2px;
+            left: 4px;
+          }
+        }
+      }
+      &:not(:checked) + label:after {
+        @include transform(scale(0));
+        opacity: 0;
+      }
+      &:checked + label:after {
+        @include transform(scale(1));
+        color: #fff;
+        opacity: 1;
+      }
+      &:checked + label:before {
+        background: #4d4e53;
+        border: 1px solid #4d4e53;
+      }
+    }
+  }
+  .tve_lg_dropdown {
+    position: relative;
+    select {
+      @include appearance(none);
+      @include montserrat();
+      background-color: transparent;
+      border: 1px solid #232323;
+      color: #232323;
+      border-radius: 0;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 33px;
+      height: 60px;
+      margin: 0;
+      outline: none;
+      padding-right: 40px !important;
+      option {
+        color: #232323;
+        font-size: 19px;
+        font-weight: 300;
+      }
+      &:hover {
+        background: rgba(#fff, .5);
+      }
+    }
+    .tve_sc_icon {
+      margin-right: 20px;
+    }
+    &:after {
+      border: 1px solid #232323;
+      border-radius: 50%;
+      color: #232323;
+      content: "\022C1";
+      font-size: 12px;
+      font-weight: 700;
+      height: 20px;
+      line-height: 20px;
+      pointer-events: none;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      text-align: center;
+      width: 20px;
+    }
+  }
+}
+$color-pallete: 'blue' #4e9ef8 #4e9ef8,
+'black' #ffffff #18191e,
+'green' #5ee03b #5ee03b,
+'white' #18191e #fff,
+'orange' #fbdf26 #fbdf26,
+'purple' #c875fd #c875fd,
+'red' #eb3030 #eb3030,
+'teal' #26e6e6 #26e6e6;
+
+@each $color in $color-pallete {
+  #tve_gr_five_set {
+    .thrv-greedy-ribbon.tve_#{nth($color, 1)} {
+      background: nth($color, 3);
+    }
+    .thrv_button_shortcode {
+      .tve_btn3.tve_#{nth($color, 1)} {
+        .tve_btnLink {
+          color: nth($color, 2);
+        }
+      }
+    }
+    .thrv_lead_generation.tve_#{nth($color, 1)} {
+      button {
+        color: nth($color, 2);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  #tve_gr_five_set {
+    .thrv-greedy-ribbon {
+      padding: 50px 20px 20px;
+    }
+    .thrv_lead_generation.thrv_lead_generation_vertical .tve_lg_submit {
+      width: 100%;
+    }
+    .thrv_lead_generation {
+      input[type="text"], input[type="email"] {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 5px;
+        padding: 10px!important;
+      }
+      button {
+        font-size: 20px;
+        line-height: 25px;
+        padding: 10px;
+      }
+    }
+    .thrv_button_shortcode {
+      margin-top: 0;
+      margin-bottom: 0;
+      &.gr-five-button {
+        width: 100%;
+      }
+      .tve_btn3.tve_btn.tve_normalBtn {
+        font-size: 20px;
+        line-height: 25px!important;
+        .tve_btnLink {
+          padding: 10px;
+        }
+      }
+    }
+    .gr-close-button {
+      bottom: 40px;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  #tve_gr_five_set {
+    h2, p {
+      margin-bottom: 15px!important;
+    }
+    .gr-close-button {
+      bottom: 10px;
+    }
+  }
+}
+@media only screen and (max-height: 600px) {
+  #tve_gr_five_set {
+    h2, p {
+      margin-bottom: 15px!important;
+    }
+    .gr-close-button {
+      bottom: 10px;
+    }
+  }
+}
+@import "_responsive";

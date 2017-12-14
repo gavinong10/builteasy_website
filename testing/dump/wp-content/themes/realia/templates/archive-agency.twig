@@ -1,0 +1,18 @@
+{% extends 'layout.twig' %}
+
+{% block content %}
+    <h1 class="page-header">{{ wp.__('Agencies', 'aviators') }}</h1>
+
+    <div class="agencies">
+        {% if wp.have_posts() %}
+            {% for post in posts %}
+                {{ wp_query.the_post() }}
+                {{ wp.get_template_part('content-agency', wp.get_post_format()) }}
+            {% endfor %}
+        {% else %}
+            {{ wp.__('No agencies found.', 'aviators') }}
+        {% endif %}
+    </div><!-- /.agencies -->
+
+    {{ wp.aviators_paging_nav() }}
+{% endblock %}

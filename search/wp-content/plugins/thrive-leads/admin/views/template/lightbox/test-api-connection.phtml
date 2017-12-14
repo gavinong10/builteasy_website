@@ -1,0 +1,59 @@
+<div class="tvd-modal-content">
+	<div class="tve-leads-delivery-step0 tvd-modal-step">
+		<div class="tve-form-add-new-connection">
+			<p>
+				<?php echo __( 'Your connections', 'thrive-leads' ) ?>
+			</p>
+		</div>
+		<ul id="tve-leads-test-connections"></ul>
+		<button class="tvd-btn-flat-blue tvd-btn-flat tve-leads-go-step-1 tvd-modal-next-step tve-hide-when-edit tvd-waves-effect"><span
+				class="tvd-icon-plus tvd-icon-small"></span><?php echo __( 'Add New', 'thrive-leads' ); ?></button>
+		<div class="tvd-modal-footer-inside">
+			<div class="tvd-row">
+				<div class="tvd-col tvd-s12">
+					<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tve-leads-asset-save-continue tvd-modal-close tvd-right"
+					   tabindex="3" href="javascript:void(0)"><?php echo __( 'Save & Close', 'thrive-leads' ); ?></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="tve-leads-delivery-step1 tvd-modal-step">
+		<p class="tve-form-description larger-text"><?php echo __( 'Select the email delivery service you want to use for the Asset Delivery feature. Integrating with one of these services ensures that your emails get delivered without you needing to deal with email server setups and spam protection', 'thrive-leads' ) ?></p>
+		<p class="tvd-center-align tvd-text-green">
+			<strong><?php echo __( 'Select to continue', 'thrive-leads' ); ?></strong></p>
+		<div class="tvd-row">
+			<div id="tve-leads-add-connections"></div>
+		</div>
+		<button
+			class="tvd-btn-flat-blue tvd-btn-flat tve-leads-asset-back-connection tvd-modal-prev-step tvd-waves-effect">&lsaquo; <?php echo __( "Back", 'thrive-leads' ) ?></button>
+	</div>
+	<div class="tve-leads-delivery-step2 tvd-modal-step">
+		<?php foreach ( Thrive_Dash_List_Manager::getAvailableAPIsByType( false, array( 'email' ) ) as $key => $api ) : ?>
+			<?php /** @var $api Thrive_Dash_List_Connection_Abstract */ ?>
+			<div class="tve-leads-connection-form" data-key="<?php echo $key ?>" style="">
+				<?php echo $api->outputSetupForm() ?>
+			</div>
+		<?php endforeach; ?>
+	</div>
+	<div class="tve-leads-delivery-success tvd-modal-step">
+		<div class="tvd-row">
+			<div class="tvd-col tvd-s10 tvd-offset-s1 tvd-center-align">
+				<img src="<?php echo plugins_url( 'thrive-leads/admin/img/succes_image.png' ) ?>">
+				<p><?php echo __( 'You have successfully connected to', 'thrive-leads' ) ?> <span
+						class="tve-leads-connection-name-success"></span> <?php echo __( 'for your email asset delivery', 'thrive-leads' ) ?>
+					!</p>
+			</div>
+		</div>
+		<div class="tvd-modal-footer-inside">
+			<div class="tvd-row">
+				<div class="tvd-col tvd-s6 tvd-offset-s3">
+					<button
+						class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-full-btn tve-leads-asset-close">
+						<?php echo __( 'Save & Continue', 'thrive-leads' ) ?>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

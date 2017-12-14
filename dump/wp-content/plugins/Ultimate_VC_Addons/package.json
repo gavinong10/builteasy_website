@@ -1,0 +1,28 @@
+{
+  "name": "ultimate-addons",
+  "version": "1.0.0",
+  "description": "Includes Visual Composer premium addon elements like Icon, Info Box, Interactive Banner, Flip Box, Info List & Counter. Best of all - provides A Font Icon Manager allowing users to upload / delete custom icon fonts.",
+  "main": "gruntfile.js",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.12.3",
+    "grunt-contrib-uglify": "^0.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brainstormforce/ultimate.git"
+  },
+  "keywords": [
+    "Ultimate"
+  ],
+  "author": "Brainstorm Force",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brainstormforce/ultimate/issues"
+  },
+  "homepage": "https://github.com/brainstormforce/ultimate"
+}

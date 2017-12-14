@@ -1,0 +1,338 @@
+//----------------------------------------------------------------------------//
+// NOO Framework / Less / Wordpress / Comments
+//
+// This file is less styling for Comments
+//
+//----------------------------------------------------------------------------//
+
+
+// Basic Structure
+//----------------------------------------------------------
+
+// Comments Area
+.comments-area { 
+	> h2 {
+		font-size: @font-size-base;
+		font-weight: 600;
+	}
+
+	> .comment-respond{
+		.comment-form-fields{
+			&:extend(.clearfix all);
+			.comment-form-input {
+				// width: 100%;
+				float: left;
+			}
+			.comment-form-textarea{
+				
+				label {
+					display: none;
+				}
+				textarea {
+					// margin-bottom: 0;
+					// margin-top: 24px;
+				}
+			}
+
+			@media (max-width:767px) {
+				.comment-form-input,
+				.comment-form-textarea{
+					float: none;
+					// width: 100%;
+					padding: 0;
+				}
+				.comment-form-textarea{
+					label {
+						display: block;
+					}
+					textarea {
+						margin-bottom: 20px;
+						margin-top: 0px;
+					}
+				}
+			}
+			&.comment-form-in-as{
+				.comment-form-textarea{
+					float: none;
+					// width: 100%;
+					padding: 0;
+					label {
+						display: block;
+					}
+					textarea {
+						margin-bottom: 20px;
+						margin-top: 0px;
+					}
+				}
+			}
+		}
+	}
+
+	a:hover,
+	a:focus {
+		text-decoration: none;
+	}
+}
+
+// Comment Title
+
+.comments-title {
+	text-transform: uppercase;
+	span {
+		color: @brand-primary;
+	}
+}
+
+// Comments List
+//----------------------------------------------------------
+.comments-list,
+.comments-list .children {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+// Child comments.
+.comments-list .children {
+	@media (min-width: @grid-float-breakpoint) {
+	    // border-left: 1px solid @comment-boder-color;
+	    padding-left: 50px;
+		margin-left: 35px;
+	    position: relative;
+		.comment {
+			position: relative;
+			&:before{
+				border-top: 1px solid @comment-boder-color;
+			    content: " ";
+			    left: -50px;
+			    position: absolute;
+			    top: 60px;
+				width: 50px;
+			}
+			&:after{
+				border-left: 1px solid @comment-boder-color;;
+			    content: " ";
+			    left: -50px;
+			    position: absolute;
+			    top: -109px;
+				width: 40px;
+				height: 170px;
+			}
+		}
+	    
+	}
+}
+
+// Comment wrapper ( Li )
+li.comment {
+	margin: 0;
+	padding: 0;
+}
+
+li.comment.odd {}
+
+li.comment.even {}
+
+li.comment.depth-1 {}
+
+li.comment.depth-2 {}
+
+li.comment.depth-3 {}
+
+
+// Gravatar image.
+.comment-img {
+	float: left;
+	img {
+		border-bottom: 3px solid @gray-lightest;
+		border-right: 2px solid @gray-lightest;
+	}
+}
+
+
+// Comment content
+.comment-wrap{
+	position: relative;
+	margin: 0 0 10px 0px;
+	padding: 20px 100px 10px 0;
+	border: 0;
+	@media (max-width: @grid-float-breakpoint-max) {
+		padding: 7%;
+	}
+}
+.comment-block {
+	padding: 0;
+	margin: 0 0 0 87px;
+	@media (max-width: @screen-xs-max) {
+		margin: @grid-gutter-width/2 0;
+	}
+}
+
+.comment-header {
+	padding-bottom: @padding-base-vertical;
+	display: inline-flex;
+	span.pull-right{
+		margin-top: 6px;
+	}
+}
+
+.comment-content {
+	position: relative;
+	line-height: 1.7;
+	font-size: 16px;
+}
+
+.comment-author {
+	font-family: @font-family-alt;
+	font-size: 16px;
+	line-height: 1.7;
+	font-weight: 500;
+	margin-right: 10px;
+
+	a {
+		color: @text-color;
+
+		&:hover {
+			color: @link-hover-color;
+		}
+	}
+}
+
+.ispostauthor {
+	background: none repeat scroll 0 0 @brand-primary;
+    color: #FFFFFF;
+    font-size: @font-size-small;
+    padding: 0px 5px;
+    margin-left: 10px;
+    border-radius:@border-radius-base;
+}
+
+.comment-meta {
+	position: relative;
+	margin: 5px 0;
+	padding-left: 15px;
+	font-size: @font-size-small;
+	time:before {
+		content: ".";
+		position: absolute;
+		font-size: 30px;
+		top: -20px;
+		left: 0;
+	}
+}
+
+.comment-pending {
+	padding: @padding-base-vertical @padding-base-horizontal;
+	text-align: center;
+	color: @link-color;
+	background-color: @gray-lighter;
+	border-radius: @border-radius-base;
+}
+
+
+// Comment Reply
+//----------------------------------------------------------
+.comment-reply-link{
+	border-radius:@border-radius-base;
+	color: @gray-light;
+	padding: 5px 0;
+	&:hover{
+		color: @brand-primary;
+	}
+}
+#respond {
+	margin-bottom: 50px;
+	margin-top: 50px;
+
+	.required {
+		position: relative;
+		color: @link-color;
+	}
+}
+.comment-reply-title{
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: @font-size-base;
+	span {
+		color: @brand-primary;
+	}
+}
+
+#commentform {
+	margin-bottom: 0;
+}
+
+.comment-notes{
+	.clearfix();
+}
+.comment-notes,
+.logged-in-as {
+	margin-bottom: 20px;
+	font-size: @font-size-small;
+}
+
+.comment-form-author,
+.comment-form-email,
+.comment-form-url,
+.comment-form-rating,
+.comment-form-comment {
+	margin: 0;
+	label {
+		font-size: @font-size-small;
+		font-weight: 300;
+		.required {
+		}
+	}
+}
+
+
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+	input {
+		margin-bottom: 20px;
+		font-size: @font-size-base;
+	 	background: transparent;
+	    border-radius:@border-radius-base;
+	    // .box-shadow(0 -2px 0 #E6E6E6);
+	    padding: 10px 20px;
+	    width: 100%;
+	    border: 1px solid @gray-lighter;
+	}
+}
+
+.comment-form-comment {
+	textarea {
+		font-size: @font-size-base;
+		background: transparent;
+	    border-radius:@border-radius-base;
+	    // .box-shadow(0 -2px 0 #E6E6E6);
+	    margin-bottom: 20px;
+	    margin-top: 0px;
+	    height: 197px;
+	    padding: 20px;
+	    resize: none;
+	    width: 100%;	    
+	    border: 1px solid @gray-lighter;
+	}
+}
+
+.form-submit {
+	margin: 0;
+	input[type="submit"] {
+		.btn();
+		.btn-secondary();
+		.transition( @button-transitions-base );	
+		font-size: @font-size-base + 8;
+		width: 100%;
+		padding: 6px 20px;
+		text-transform: uppercase;
+		font-weight: bold;
+		&:hover,
+		&:focus {
+			background:@link-color;
+			color: #ffffff;
+			border-color: @link-color;
+		}
+	}
+}

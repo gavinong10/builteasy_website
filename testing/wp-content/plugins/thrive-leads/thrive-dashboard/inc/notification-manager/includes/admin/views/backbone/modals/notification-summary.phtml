@@ -1,0 +1,23 @@
+<div class="tvd-col tvd-s4">
+	<div class="tvd-card tvd-white tvd-small tvd-valign-wrapper">
+		<div class="tvd-card-content tvd-center-align tvd-valign">
+			<span class="tvd-nm-large-icon tvd-green-text <#= trigger.get('icon') #>"></span>
+			<p>
+				<#= trigger.get('label') #>
+			</p>
+		</div>
+	</div>
+</div>
+
+<# if(action !== null){ #>
+	<div class="tvd-col tvd-s4">
+		<div class="tvd-card tvd-white tvd-small tvd-valign-wrapper">
+			<div class="tvd-card-content tvd-center-align tvd-valign">
+				<span class="tvd-nm-large-icon tvd-green-text <#= action.get('icon') #>"></span>
+				<p>
+					<#= action.get('label') #>
+				</p>
+			</div>
+		</div>
+	</div>
+<# } #>

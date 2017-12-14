@@ -1,0 +1,52 @@
+.iconmanager-messages {
+    padding: 20px 0 10px 0;
+}
+
+.iconmanager-messages div.error, .iconmanager-messages div.updated {
+    margin: 0;
+}
+
+.iconmanager-messages div.error p {
+    color: #dd3d36;
+}
+
+.icomoon-icon {
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    padding: 20px 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 30px;
+    line-height: 30px;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    color: #444;
+    background-color: #eee;
+    vertical-align: middle;
+}
+
+.icomoon-icon:hover {
+    background: #ccc;
+    color: #000;
+}
+
+.dash-icon-manager-settings {
+    background: #fff;
+    border: 1px solid #E1E1E1;
+    margin: 0 20px 0 0;
+    padding: 25px;
+    color: #323232;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.dash-icon-manager-settings h3 {
+    border-bottom: 1px solid #e1e1e1;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+    margin: 0;
+}

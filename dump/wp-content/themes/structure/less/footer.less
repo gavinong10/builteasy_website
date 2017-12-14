@@ -1,0 +1,118 @@
+@import (reference) "_elements";
+
+/*--------------------------------------------------------------
+Footer
+--------------------------------------------------------------*/
+.bottom-wrapper {
+  width: 100%;
+}
+
+.footer {
+  padding: 60px 0 40px;
+  position: relative;
+  .social .menu li {
+    margin-left: 0;
+    margin-right: 15px;
+    a:before {
+      font-size: 20px;
+    }
+  }
+  [class*='col-'] {
+    margin-bottom: 20px;
+  }
+  .widget-title {
+    color: #111;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    @media @xs-max{
+      margin-bottom: 20px;
+      padding-bottom: 13px;
+    }
+    &:after {
+      content: '';
+      width: 100%;
+      height: 2px;
+      left: 0;
+      bottom: 10px;
+      position: absolute;
+    }
+  }
+  .menu {
+    font-size: 0;
+    li {
+      vertical-align: top;
+      margin-bottom: 10px;
+      list-style-type: none;
+      .transit;
+      &:hover {
+        .translate(10px, 0)
+      }
+      &:before {
+        content: "\f101";
+        margin-right: 10px;
+        .iconfont;
+        .opacity(0.4);
+
+      }
+    }
+  }
+  .textwidget {
+    img {
+      margin-bottom: 6px;
+    }
+    i {
+      margin-right: 10px;
+      font-size: 20px;
+      width: 20px;
+      @media @md{
+        margin-right: 25px;
+      }
+    }
+    p {
+      margin-bottom: 0.7em;
+    }
+  }
+  .social {
+    margin-top: 20px;
+    .clear;
+    .menu {
+      text-align: left;
+    }
+  }
+}
+
+.copyright {
+  padding: 25px 0;
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+}
+
+///////////////768px//////////////////
+@media @sm {
+  .footer {
+    .menu {
+      font-size: 0;
+      li {
+        display: inline-block;
+        width: 50%;
+      }
+    }
+  }
+}
+
+///////////////1024px//////////////////
+@media @md {
+
+}
+
+///////////////1200px//////////////////
+@media @lg {
+
+}

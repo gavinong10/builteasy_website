@@ -1,0 +1,68 @@
+{% if properties %}
+    <div class="container">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <div class="slider-inner">
+                    <div class="row">
+                        <div class="images span9">
+                            <div class="iosSlider">
+                                <div class="slider-content">
+                                    {% for property in properties %}
+                                        <div class="slide">
+                                            <img src="{{ property.slider_image }}" alt="{{ property.post_title }}">
+
+                                            <div class="slider-info">
+                                                <div class="price" style="width: 100%;">
+                                                    <h2 style="width: 100%;"> {% if property.meta._property_custom_text.0 %}
+                                                            {{ property.meta._property_custom_text.0 }}
+                                                        {% else %}
+                                                            {{ wp.aviators_price_format(property.meta._property_price.0)|raw }}
+
+                                                            {% if property.meta._property_price_suffix.0 %}
+                                                                {{ property.meta._property_price_suffix.0 }}
+                                                            {% endif %}
+                                                        {% endif %}
+                                                    </h2>
+                                                </div>
+                                                <!-- /.price -->
+                                                <h2>
+                                                    <a href="{{ wp.get_permalink(property.ID) }}">{{ property.post_title }}</a>
+                                                </h2>
+
+                                                <div class="bathrooms">{{ property.meta._property_bathrooms.0 }}</div>
+                                                <!-- /.bathrooms -->
+                                                <div class="bedrooms">{{ property.meta._property_bedrooms.0 }}</div>
+                                                <!-- /.bedrooms -->
+
+                                            </div>
+                                            <!-- /.slider-info -->
+                                        </div><!-- /.slide -->
+                                    {% endfor %}
+                                </div>
+                                <!-- /.slider-content -->
+                            </div>
+                            <!-- .iosSlider -->
+
+                            <ul class="navigation">
+                                {% for property in properties %}
+                                    <li {% if loop.first %}class="active"{% endif %}><a>{{ loop.index }}</a></li>
+                                {% endfor %}
+                            </ul>
+                            <!-- /.navigation-->
+                        </div>
+                        <!-- /.images -->
+
+                        <div class="span3">
+                            {% include 'properties/filter.twig' %}
+                        </div>
+                        <!-- /.span3 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.slider-inner -->
+            </div>
+            <!-- /.slider -->
+        </div>
+        <!-- /.slider-wrapper -->
+    </div><!-- /.container -->
+{% endif %}

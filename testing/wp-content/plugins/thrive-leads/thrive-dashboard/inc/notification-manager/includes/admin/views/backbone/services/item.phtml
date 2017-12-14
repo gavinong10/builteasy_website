@@ -1,0 +1,48 @@
+<ul class="tvd-collection <#= item.get('active') ? 'tvd-nm-selected-service' : '' #>">
+	<li class="tvd-collection-item">
+		<div class="tvd-row tvd-collapse">
+			<div class="tvd-col tvd-s3">
+				<div class="tvd-vertical-align">
+					<img src="<?php echo TVE_DASH_URL . '/inc/auto-responder/views/images/' ?><#= item.get('key') #>_small.jpg">
+					<strong class="tvd-capitalize">
+						<#= item.get('title') #>
+					</strong>
+				</div>
+			</div>
+			<div class="tvd-col tvd-s4">
+				<div class="tvd-row">
+					<div class="tvd-col tvd-l4">
+						<div class="tvd-switch tvd-vertical-align">
+							<label>
+								<input data-key="<#= item.get('key') #>"
+								<#= item.get('active') ? 'checked' : '' #> class="tvd-nm-activate-service" type="checkbox" autocomplete="off">
+									<span class="tvd-lever"></span>
+							</label>
+						</div>
+					</div>
+					<div class="tvd-col tvd-l8">
+						<strong class="tvd-vertical-align tvd-capitalize">
+							<#= item.get('status') #>,
+								<#= item.get('active') ? TD_NM.t.active : TD_NM.t.inactive #>
+						</strong>
+					</div>
+				</div>
+			</div>
+			<div class="tvd-col tvd-s4">
+		        <span class="tvd-vertical-align">
+		            <span class="tvd-icon-exchange tvd-text-gray"></span>
+		            <a class="tvd-underline tvd-nm-connection-test" data-key="<#= item.get('key') #>" title="<?php echo __( 'Test connection', TVE_DASH_TRANSLATE_DOMAIN ) ?>" href="javascript:void(0)">
+			            <?php echo __( 'Test connection', TVE_DASH_TRANSLATE_DOMAIN ) ?>
+		            </a>
+		        </span>
+			</div>
+			<div class="tvd-col tvd-s1">
+				<div class="tvd-vertical-align">
+					<a href="javascript:void(0)" class="tvd-right tvd-nm-connection" data-key="<#= item.get('key') #>">
+						<span class="tvd-icon-pencil"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</li>
+</ul>

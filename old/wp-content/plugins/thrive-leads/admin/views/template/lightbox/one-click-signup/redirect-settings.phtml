@@ -1,0 +1,172 @@
+<?php
+$wordpress_timezone = tve_get_timezone_string();
+$current_time       = current_time( 'H:i', get_option( 'gmt_offset' ) );
+?>
+<div class="tvd-modal-content">
+	<div class="tl-segue-settings-step1">
+		<h3><?php echo __( 'Set your thank you page settings here', 'thrive-leads' ) ?></h3>
+		<p><?php echo __( 'Use the controls to tell us where the registrants should be redirected after being signed up for your service.', 'thrive-leads' ) ?></p>
+		<p><?php echo __( 'You can use a conditional redirect to specify multiple locations depending on when the registration occurs. This can
+	        be useful if you have an event occuring at a specific time because the location of the redirect can change depending
+	        on the whether the registration occurs before, during or after the event.', 'thrive-leads' ) ?>
+		</p>
+		<div class="tvd-row tvd-collapse">
+			<div class="tvd-col tvd-s6">
+				<div class="tvd-input-field">
+					<select class="tl-post-type-select" id="tl-post-type-select">
+						<option
+							value=""><?php echo __( 'Type of redirect', 'thrive-leads' ) ?></option>
+						<option
+							value="single-redirect"><?php echo __( 'Single Redirect', 'thrive-leads' ) ?></option>
+						<option
+							value="conditional-redirect"><?php echo __( 'Conditional Redirect', 'thrive-leads' ) ?></option>
+					</select>
+					<label for="tl-post-type-select"
+					       data-error="<?php echo __( 'Choose type of redirect' ) ?>"></label>
+				</div>
+			</div>
+		</div>
+
+		<div class="tve-oneclick-redirect">
+			<div class="tl-single-redirect-box" style="display: none;">
+				<?php
+				$redirect_url_type = 'single';
+				include plugin_dir_path( __FILE__ ) . 'search-content.phtml';
+				?>
+			</div>
+			<div class="tl-conditional-redirect-box" style="display: none">
+				<h4><?php echo __( 'Event Schedule', 'thrive-leads' ) ?></h4>
+
+				<p><?php echo __( 'Tell us when your event is happening and how long it lasts for. Important note: It\'s important that you make sure that the times you provide are correct given the timezone that your WordPress installation is using.', 'thrive-leads' ) ?></p>
+
+				<div class="tl-time-section">
+					<div class="tvd-row tvd-collapse">
+						<div class="tvd-col tvd-s6">
+							<p>
+								<?php echo __( 'WordPress timezone:', 'thrive-leads' ) ?>
+								<strong><?php echo $wordpress_timezone; ?></strong>
+							</p>
+						</div>
+						<div class="tvd-col tvd-s6">
+							<p>
+								<?php echo __( 'Current time in this timezone:', 'thrive-leads' ) ?>
+								<strong><?php echo $current_time; ?></strong>
+							</p>
+						</div>
+					</div>
+					<div class="tvd-row tvd-collapse">
+						<div class="tvd-col tvd-s6">
+							<div class="tvd-row tvd-collapse">
+								<div class="tvd-col tvd-s11">
+									<div class="tvd-input-field">
+										<input
+											class="tl-event-start-date tvd-no-margin-bottom tvd-no-focus"
+											id="tl-event-start-date"
+											value="<#= model.get('redirect_url').event_start_date #>"
+											type="date">
+										<label for="tl-event-start-date"
+										       class="<# if(model.get('redirect_url').event_start_date) {#> tvd-active <#} #>"><?php echo __( 'Event start date', 'thrive-leads' ) ?>
+											&nbsp;(<?php echo $wordpress_timezone; ?>)</label>
+									</div>
+								</div>
+								<div class="tvd-col tvd-s1 tvd-center-align">
+									<div class="tvd-vertical-align">
+										<span
+											class="tvd-icon-calendar tl-redirect-start-date tvd-pointer"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tvd-col tvd-s3">
+							<div class="tvd-row tvd-collapse">
+								<div class="tvd-col tvd-s11">
+									<div class="timepicker-append-to tvd-input-field">
+										<input
+											class="tl-event-time tl-event-start-time tvd-no-margin-bottom tvd-no-focus"
+											id="tl-event-start-time" name="event_start_time"
+											value="<#= model.get('redirect_url').event_start_time #>"
+											type="text">
+										<label for="tl-event-start-time"
+										       class=""><?php echo __( 'Event start time', 'thrive-leads' ) ?></label>
+									</div>
+								</div>
+								<div class="tvd-col tvd-s1">
+									&nbsp;
+								</div>
+							</div>
+						</div>
+						<div class="tvd-col tvd-s3">
+							<div class="tvd-row tvd-collapse">
+								<div class="tvd-col tvd-s11">
+									<div class="timepicker-append-to tvd-input-field">
+										<input
+											class="tl-event-time tl-event-duration-time tvd-no-margin-bottom tvd-no-focus"
+											id="tl-event-duration-time" name="event_duration_time"
+											value="<#= model.get('redirect_url').event_duration_time #>"
+											type="text">
+										<label for="tl-event-duration-time"
+										       class="<# if(model.get('redirect_url').event_duration_time) {#> tvd-active <#} #>"><?php echo __( 'Event duration', 'thrive-leads' ) ?></label>
+									</div>
+								</div>
+								<div class="tvd-col tvd-s1">
+									&nbsp;
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tl-segue-settings-step2" style="display: none;">
+		<h3><?php echo __( 'Specify your redirects', 'thrive-leads' ) ?></h3>
+		<div class="tve-oneclick-redirect">
+			<?php $redirect_url_type = 'before'; ?>
+			<div id="tl-<?php echo $redirect_url_type; ?>">
+				<div class="tvd-v-spacer"></div>
+				<h4 class="tve-segue-redirect-<?php echo $redirect_url_type; ?>"><?php echo __( 'Before Event', 'thrive-leads' ) ?></h4>
+				<?php include plugin_dir_path( __FILE__ ) . 'search-content.phtml'; ?>
+			</div>
+
+			<?php $redirect_url_type = 'during'; ?>
+			<div id="tl-<?php echo $redirect_url_type; ?>">
+				<div class="tvd-v-spacer"></div>
+				<h4 class="tve-segue-redirect-<?php echo $redirect_url_type; ?>"><?php echo __( 'During Event', 'thrive-leads' ) ?></h4>
+				<?php include plugin_dir_path( __FILE__ ) . 'search-content.phtml'; ?>
+			</div>
+
+			<?php $redirect_url_type = 'after'; ?>
+			<div id="tl-<?php echo $redirect_url_type; ?>">
+				<div class="tvd-v-spacer"></div>
+				<h4 class="tve-segue-redirect-<?php echo $redirect_url_type; ?>"><?php echo __( 'After Event', 'thrive-leads' ) ?></h4>
+				<?php include plugin_dir_path( __FILE__ ) . 'search-content.phtml'; ?>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="tvd-modal-footer">
+	<div class="tvd-row tl-segue-settings-controlls1">
+		<div class="tvd-col tvd-s12 tvd-m6">
+			<a href="javascript:void(0)"
+			   class="tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-dark tvd-modal-close tvd-waves-effect"><?php echo __( 'Cancel', 'thrive-leads' ) ?></a>
+		</div>
+		<div class="tvd-col tvd-s12 tvd-m6">
+			<a href="javascript:void(0)"
+			   class="tl-specify-redirects tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-right"><?php echo __( 'Specify your redirects', 'thrive-leads' ) ?></a>
+		</div>
+	</div>
+	<div class="tvd-row tl-segue-settings-controlls2" style="display: none;">
+		<div class="tvd-col tvd-s12 tvd-m6">
+			<a href="javascript:void(0)"
+			   class="tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-dark tvd-modal-close tvd-waves-effect"><?php echo __( 'Cancel', 'thrive-leads' ) ?></a>
+			&nbsp;
+		</div>
+		<div class="tvd-col tvd-s12 tvd-m6">
+			<a href="javascript:void(0)"
+			   class="tl-save-redirect-url tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-right"><?php echo __( 'Save & Close', 'thrive-leads' ) ?></a>
+			<a href="javascript:void(0)"
+			   class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-gray tl-segue-back-button tvd-right tvd-margin-right"><?php echo __( 'Back', 'thrive-leads' ) ?></a>
+		</div>
+	</div>
+</div>
+

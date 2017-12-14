@@ -1,0 +1,130 @@
+<div class="tvd-row">
+	<div class="tvd-col tvd-s2">
+		<span class="tvd-vertical-align">
+			<#= form.get('post_title') #>
+			<# if (form.get('group_test_id')) { #>
+				<span class="testing"><?php echo __( '(test in progress)', 'thrive-leads' ) ?></span>
+			<# } #>
+			<# if (form.get('tve_form_type') == 'php_insert' && form.get('ID')) { #>
+				(<a href="javascript:void(0)" class="tve-leads-php-code"
+				    title="<?php echo __( 'Get PHP Code', 'thrive-leads' ) ?>"><?php echo __( 'Get PHP Code', 'thrive-leads' ) ?></a>)
+			<# } #>
+			<# if (form.get('video_link')) { #>
+				<a href="<#= form.get('video_link') #>" class="wistia-popover[height=450,playerColor=2bb914,width=800]"><span class="tvd-icon-play"></span></a>
+			<# } #>
+		</span>
+	</div>
+	<div class="tvd-col tvd-s1">
+        <span class="tvd-vertical-align">
+			<#= form.get('impressions') #>
+        </span>
+	</div>
+	<div class="tvd-col tvd-s1">
+        <span class="tvd-vertical-align">
+			<#= form.get('conversions') #>
+        </span>
+	</div>
+	<div class="tvd-col tvd-s1">
+		<span class="tvd-vertical-align">
+			<#= form.get('conversion_rate') #>
+		</span>
+	</div>
+	<div class="tvd-col tvd-s2">
+		<# var isValid = form.hasValidVariation() #>
+			<div class="tvd-vertical-align tvd-switch <#= (form.get('active_test').get('id') || form.get('group_test_id') || !isValid) ? 'tvd-tooltipped' : '' #>"
+			<# if(form.get('active_test').get('id') || form.get('group_test_id')) { #>
+				data-tooltip="<?php echo __( "You can't change the 'display on desktop' setting while a test is in progress in order to protect the integrity of the test!", 'thrive-leads' ) ?>" data-position="top"
+				<# } else if(!isValid) { #>
+					data-tooltip="<?php echo __( 'To change display settings you need to create at least one form for this opt-in!', 'thrive-leads' ) ?>" data-position="top"
+					<# } #>>
+						<label>
+	            <span class="tvd-on-large-and-down">
+	                <?php echo __( 'Off', 'thrive-leads' ) ?>
+	            </span>
+							<input data-title="ds" data-display="display_status" type="checkbox" class="tve-form-type-status"
+							<#= form.get('display_status')== 1 && isValid ? 'checked="checked"' : '' #>
+								<# if(form.get('active_test').get('id') || form.get('group_test_id') || !isValid) { #> disabled="disabled"
+									<# } #> />
+										<span class="tvd-lever"></span>
+										<span class="tvd-on-large-and-down">
+                    <?php echo __( 'On', 'thrive-leads' ) ?>
+                </span>
+						</label>
+	</div>
+</div>
+<div class="tvd-col tvd-s2">
+	<div class="tvd-vertical-align tvd-switch <#= (form.get('active_test').get('id') || form.get('group_test_id') || !isValid) ?'tvd-tooltipped':'' #>"
+	<# if(form.get('active_test').get('id') || form.get('group_test_id')){ #>
+		data-tooltip="<?php echo __( "You can't change the 'display on mobile' setting while a test is in progress in order to protect the integrity of the test!", 'thrive-leads' ) ?>" data-position="top"
+		<# } else if(!isValid) { #>
+			data-tooltip="<?php echo __( 'To change display settings you need to create at least one form for this opt-in!', 'thrive-leads' ) ?>" data-position="top"
+			<# } #>>
+				<label>
+		            <span class="tvd-on-large-and-down">
+		                <?php echo __( 'Off', 'thrive-leads' ) ?>
+		            </span>
+					<input data-title="dm" data-display="display_on_mobile" type="checkbox" class="tve-form-type-mobile"
+					<#= form.get('display_on_mobile')==1 && isValid?'checked':'' #>
+						<# if(form.get('active_test').get('id') || form.get('group_test_id') || !isValid){ #> disabled="disabled"
+							<# } #> />
+								<span class="tvd-lever"></span>
+								<span class="tvd-on-large-and-down">
+	                    <?php echo __( 'On', 'thrive-leads' ) ?>
+	                </span>
+				</label>
+</div>
+</div>
+<div class="tvd-col tvd-s3">
+		<span class="tvd-right" style="position:relative">
+			<# if(!form.get('group_test_id') && !form.get('active_test').get('id') && form.get('variations').length ) { #>
+				<a href="javascript:void(0)" title="<?php echo __( 'Reset Stats', 'thrive-leads' ) ?>"
+				   class="tvd-btn-icon tvd-btn-icon-orange form-type-reset">
+					<span class="tvd-icon-undo"></span>
+					<span class="tvd-on-large-and-down"><?php echo __( 'Reset Stats', 'thrive-leads' ) ?></span>
+				</a>
+				<# } else { #>
+					&nbsp;
+					<#}#>
+		<# if(form.get('group_test_id')) { #>
+			<a data-group-test-id="<#= form.group_test_id #>" href="#test/<#= form.get('group_test_id') #>"
+			   title="<?php echo __( 'View Test', 'thrive-leads' ) ?>"
+			   class="tve-form-type-test tvd-btn-icon tvd-btn-icon-purple">
+				<span class="tvd-icon-view"></span>
+				<span class="tvd-on-large-and-down"><?php echo __( 'View Test', 'thrive-leads' ) ?></span>
+			</a>
+			<# } else if (form.get('active_test').get('id')) { #>
+				<a href="#test/<#= form.get('active_test').get('id') #>/completed"
+				   title="<?php echo __( 'Test In Progress', 'thrive-leads' ) ?>"
+				   class="tvd-btn-icon tvd-btn-icon-purple tve-form-type-edit">
+					<span class="tvd-icon-view"></span>
+					<span class="tvd-on-large-and-down"><?php echo __( 'Test In Progress', 'thrive-leads' ) ?></span>
+				</a>
+				<# } else { if (form.get('variations').length) { #>
+					<a href="#form-type/<#= form.get('ID') #>" title="<?php echo __( 'Edit', 'thrive-leads' ) ?>"
+					   class="tvd-btn-icon tvd-btn-icon-blue tve-form-type-edit">
+						<span class="tvd-icon-edit7"></span>
+						<span class="tvd-on-large-and-down"><?php echo __( 'Edit', 'thrive-leads' ) ?></span>
+					</a>
+					<# } else { #>
+						<a href="javascript:void(0)" title="<?php echo __( 'Add', 'thrive-leads' ) ?>"
+						   class="tvd-btn-icon tvd-btn-icon-green tve-form-type-add">
+							<span class="tvd-icon-add2"></span>
+							<span class="tvd-on-large-and-down"><?php echo __( 'Add', 'thrive-leads' ) ?></span>
+						</a>
+						<div class="tvd-form-tooltip" data-form="<#= form.get('ID') #>">
+							<div class="tvd-tooltip-visible tve-form-type-add">
+								<span><?php echo __( 'Next step: Add a form', 'thrive-leads' ) ?></span>
+							</div>
+						</div>
+					<# } #>
+						<a class="tve-form-type-delete tvd-btn-icon tvd-btn-icon-red"
+						   href="javascript:void(0)"
+						   title="<?php echo __( 'Delete Form Type', 'thrive-leads' ) ?>"
+						   data-id="<#= form.get('ID') #>">
+                            <span class="tvd-icon-delete2"></span>
+							<span class="tvd-on-large-and-down"><?php echo __( 'Delete', 'thrive-leads' ) ?></span>
+						</a>
+						<# } #>
+			</span>
+</div>
+</div>

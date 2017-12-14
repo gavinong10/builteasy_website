@@ -1,0 +1,22 @@
+<div class="tvd-modal-content">
+    <h5><?php echo __('This is an advanced feature that you should only use if you know what you\'re doing.', 'thrive-leads') ?></h5>
+
+    <p>
+        <?php echo __('If you\'re not technical or familiar with how PHP code works, then ignore this section or ask a developer to handle this for you. If you make a mistake while adding this code, it has the potential to bring down your entire site.', 'thrive-leads') ?>
+    </p>
+
+    <p><?php echo __('Use the code below to load the form anywhere on your site:', 'thrive-leads') ?></p>
+
+    <div class="tvd-row tve-leads-copy-row">
+        <div class="tvd-col tvd-s7">
+            <div class="tvd-input-field">
+                <input readonly="readonly" class="tve-php-code tve-shortcode tvd-no-margin tve-leads-copy" type="text" value="<#= model.getPHPCode() #>"/>
+            </div>
+        </div>
+        <div class="tvd-col tvd-s5">
+            <a class="tve-copy-to-clipboard tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue tvd-btn-small" href="javascript:void(0)">
+                <span class="tl-copy-text"><?php echo __('Copy', 'thrive-leads') ?></span>
+            </a>
+        </div>
+    </div>
+</div>

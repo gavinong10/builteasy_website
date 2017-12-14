@@ -1,0 +1,41 @@
+{% if wp.get_post_meta(post.ID, '_property_slides', TRUE) %}
+    <div class="carousel property">
+        <div class="preview">
+
+
+            {% for slide in wp.get_post_meta(post.ID, '_property_slides', TRUE) %}
+                {% if loop.first %}
+                    <a class="active colorbox gallery" id="slide-{{ loop.index }}" href="{{ slide.imgurl }}">
+                        <img src="{{ slide.imgurl  }}" alt="">
+                    </a>
+                {% else %}
+                    <a class="colorbox gallery" id="slide-{{ loop.index }}" href="{{ slide.imgurl }}">
+                        <img src="{{ slide.imgurl }}" alt="">
+                    </a>
+                {% endif %}
+            {% endfor %}
+
+        </div>
+        <!-- /.preview -->
+
+        <div class="content">
+            <ul>
+                {% for slide in wp.get_post_meta(post.ID, '_property_slides', TRUE) %}
+                    {% if loop.first %}
+                        <li data-index="{{ loop.index }}" class="active">
+                            <img src="{{ slide.imgurl }}" alt="#">
+                        </li>
+                    {% else %}
+                        <li data-index="{{ loop.index }}">
+                            <img src="{{ slide.imgurl }}" alt="">
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+
+            <a class="carousel-prev" href="#">{{ wp.__('Previous', 'aviators') }}</a>
+            <a class="carousel-next" href="#">{{ wp.__('Next', 'aviators') }}</a>
+        </div>
+        <!-- /.content -->
+    </div><!-- /.carousel -->
+{% endif %}

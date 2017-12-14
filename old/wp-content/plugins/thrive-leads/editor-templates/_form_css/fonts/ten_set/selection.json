@@ -1,0 +1,75 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"M576 384h-320v64h320v-64zM384 256h-128v64h128v-64zM768 228.531v-100.531h-140.812l-179.188-128-179.188 128h-140.812v100.531l-128 91.469v640h896v-640l-128-91.469zM192 192h512v244.812l-256 211.188-256-211.188v-244.812zM64 448l252.031 191.625-252.031 192.375v-384zM128 896l254-206.25 66 50.25 65.875-50.125 254.125 206.125h-640zM832 832l-252.375-192.062 252.375-191.938v384z"
+				],
+				"width": 896,
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"mail-read"
+				],
+				"defaultCode": 61500,
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"id": 103,
+				"order": 107,
+				"prevSize": 32,
+				"code": 61500,
+				"name": "mail-read"
+			},
+			"setIdx": 22,
+			"setId": 53,
+			"iconIdx": 2
+		}
+	],
+	"height": 1024,
+	"metadata": {
+		"name": "icomoon"
+	},
+	"preferences": {
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {
+				"fontFamily": "icomoon",
+				"majorVersion": 1,
+				"minorVersion": 0
+			},
+			"showGlyphs": true,
+			"metrics": {
+				"emSize": 1024,
+				"baseline": 6.25,
+				"whitespace": 50
+			},
+			"resetPoint": 62976,
+			"showQuickUse": true,
+			"quickUsageToken": false,
+			"showMetrics": true,
+			"showMetadata": false
+		},
+		"imagePref": {
+			"color": 0,
+			"height": 32,
+			"columns": 16,
+			"margin": 16,
+			"png": false,
+			"sprites": true,
+			"prefix": "icon-"
+		},
+		"historySize": 100,
+		"showCodes": true,
+		"gridSize": 16,
+		"showLiga": false,
+		"showGrid": true,
+		"showGlyphs": true,
+		"showQuickUse": true,
+		"showQuickUse2": true,
+		"showSVGs": true,
+		"search": ""
+	}
+}

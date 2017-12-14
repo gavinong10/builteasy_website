@@ -1,0 +1,548 @@
+@import "_common";
+@import "bourbon";
+@import "animation";
+
+html.tve-html-editor {
+  overflow: auto;
+  body {
+    overflow: auto;
+  }
+}
+
+body {
+  &:before {
+    display: none !important;
+  }
+  /* states manager expanded / collapsed */
+  .tl-state-minimized {
+    display: none;
+    position: fixed;
+    top: 80%;
+    .multistep-lightbox-heading {
+      cursor: move;
+    }
+    &.ui-draggable {
+      right: auto;
+    }
+  }
+  &.tve_editor_page.tl-state-collapse {
+    .multistep-lightbox {
+      display: none;
+    }
+    .tl-state-minimized {
+      display: block;
+    }
+    .tve_p_lb_background {
+      bottom: 0;
+    }
+  }
+  &.tve-l-open .tve_p_lb_background {
+    padding-top: 100px !important;
+    padding-bottom: 150px;
+  }
+  &.tve_editor_page .tve_p_lb_background {
+    bottom: 140px;
+  }
+  &.custom-background {
+    background: transparent none no-repeat 0% 0% !important;
+  }
+}
+
+/* ribbon styles */
+.tve-leads-ribbon {
+  .tve_editor_collapse & {
+    right: 77px;
+  }
+  .tve_cpanelFlip & {
+    right: 0;
+  }
+  .tve_cpanelFlip.tve_editor_collapse & {
+    left: 77px;
+  }
+}
+
+/* Widget - editor page */
+.tve-leads-widget {
+  margin: 0 auto;
+  padding-top: 20px;
+  max-width: 300px;
+  .thrv_leads_widget {
+    outline: 1px dotted #dedede;
+  }
+}
+
+/* Slide in - editor page */
+.tve-leads-slide-in {
+  position: static !important;
+  &.tl_bot_left {
+    //    bottom: 20px;
+    //    left: 20px;
+    .tve_editor_page & {
+      //      bottom: 170px;
+    }
+    .tve_editor_page.tl-state-collapse & {
+      //    bottom: 20px;
+    }
+    .thrv-leads-slide-in {
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
+
+  &.tl_bot_right {
+    //    bottom: 20px;
+    //    right: 20px;
+    .tve_editor_page & {
+      //      bottom: 170px;
+    }
+    .tve_editor_page.tl-state-collapse & {
+      //    bottom: 20px;
+    }
+    .thrv-leads-slide-in {
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+
+  &.tl_top_right {
+    //    top: 20px;
+    //    right: 20px;
+    .tve_editor_page & {
+      //padding-bottom: 170px;
+    }
+    .tve_editor_page.tl-state-collapse & {
+      //padding-bottom: 0;
+    }
+    .thrv-leads-slide-in {
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+
+  &.tl_top_left {
+    //    top: 20px;
+    //    left: 20px;
+    .tve_editor_page & {
+      //      padding-bottom: 170px;
+    }
+    .tve_editor_page.tl-state-collapse & {
+      //    padding-bottom: 0;
+    }
+    .thrv-leads-slide-in {
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
+}
+
+/* Post footer and In content - editor page */
+.tve-leads-post-footer, .tve-leads-in-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+
+.admin-bar .tve-screen-filler-content {
+  top: 32px;
+}
+
+/*
+  tl template chooser
+  */
+.tve_tl_tpl {
+  height: 100%;
+  .tve_grid.tve_landing_pages {
+    .tve_grid_cell {
+      .tve_cell_caption_holder {
+        border-top: 1px solid #bbbbbb;
+      }
+      > img {
+        border-bottom: 0;
+        max-height: 152px;
+        max-width: 180px;
+        margin: 0 auto;
+      }
+    }
+  }
+  #tve_landing_page_selector {
+    height: 93%;
+    .tve_scT {
+      height: 100%;
+      .tve_scTC {
+        height: 92%;
+        .tve_overflow_y {
+          height: 97%;
+          max-height: 70vh;
+        }
+      }
+    }
+  }
+}
+
+// lightbox-multistep
+.multistep-lightbox-heading {
+  height: 30px;
+  background-color: #c8c6c6;
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  button.multistep-lightbox-minimize {
+    float: right;
+    height: 30px;
+    vertical-align: middle;
+    line-height: 30px;
+    color: #fff;
+    font-size: 14px;
+    background-color: #b1b1b1;
+    padding: 0;
+    > .tve_icm {
+      @include icon-size(16px);
+      color: #f5f5f5;
+      display: inline-block;
+      padding: 7px;
+    }
+  }
+}
+
+.multistep-lightbox-steps-body {
+  background-color: #d3d3d3;
+  padding: 18px;
+  text-align: center;
+  .tl-body-shadow {
+    color: #f5f5f5;
+    font-size: 18px;
+    line-height: 18px;
+    text-shadow: 1px 1px rgba(0, 0, 0, .3);
+    .tve_icm {
+      color: #f5f5f5;
+      @include icon-size(18px);
+    }
+  }
+}
+
+.multistep-lightbox {
+  font-family: 'Open Sans', sans-serif;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  .tve_editor_page.tve_editor_collapse & {
+    right: 80px;
+  }
+  .tve_editor_page.tve_cpanelFlip & {
+    right: 0;
+  }
+  .tve_editor_page.tve_cpanelFlip.tve_editor_collapse & {
+    left: 80px;
+  }
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  ul.multistep-lightbox-steps {
+    list-style: none;
+    &.tl-smaller {
+      > li {
+        padding: 12px 16px;
+        font-size: 13px;
+        &.lightbox-step-add {
+          padding: 11px 16px;
+        }
+        &.tl-multistep-open {
+          .lightbox-step-add-menu {
+            bottom: 52px;
+          }
+        }
+      }
+      .lightbox-step-duplicate,
+      .lightbox-step-delete {
+        top: 2px;
+        left: 2px;
+      }
+      .lightbox-step-delete {
+        left: auto;
+        right: 3px;
+      }
+    }
+    > li {
+      background-color: #fff;
+      position: relative;
+      padding: 30px 35px;
+      display: inline-block;
+      margin: 0 0 10px 10px;
+      font-size: 18px;
+      cursor: pointer;
+      box-shadow: 0px 0px 3px 0px #999999;
+      border-radius: 5px;
+      &.lightbox-step-active, &.lightbox-step-active:hover {
+        background-color: #3399cc;
+        .lightbox-step-name {
+          color: #fff;
+        }
+        .lightbox-step-duplicate {
+          &:before {
+            color: #fff;
+          }
+          &:hover {
+            border-color: #fff;
+          }
+        }
+      }
+      &.tl-multistep-open {
+        .lightbox-step-add-menu {
+          @include transition(all .2s ease);
+          opacity: 1;
+          visibility: visible;
+          bottom: 96px;
+        }
+      }
+      &.lightbox-step-add {
+        background-color: #dddddd;
+        border: 1px dashed #aeadad;
+        cursor: pointer;
+        padding-top: 29px;
+        padding-bottom: 29px;
+        .lightbox-step-add-title {
+          color: #666666;
+          &:before {
+            font-family: 'tveicomoon';
+            content: "\e63a";
+          }
+        }
+      }
+      //Show (duplicate, delete) buttons on list hover
+      &:hover {
+        background-color: #def1ff;
+        .lightbox-step-delete,
+        .lightbox-step-duplicate {
+          display: block;
+        }
+      }
+    }
+    .lightbox-step-delete,
+    .lightbox-step-duplicate {
+      top: 7px;
+      height: 17px;
+      width: 17px;
+      position: absolute;
+      font-family: 'tveicomoon';
+      padding: 0;
+      display: none;
+      &:before {
+        display: block;
+        font-size: 12px;
+      }
+      &:hover {
+        border: 1px dashed #fff;
+      }
+    }
+    .lightbox-step-delete {
+      right: 7px;
+      &:before {
+        content: "\e615";
+        color: #b71d1d;
+      }
+      &:hover {
+        border-color: #b71d1d;
+      }
+    }
+    .lightbox-step-duplicate {
+      left: 7px;
+      &:before {
+        content: "\e604";
+        color: #666666;
+      }
+      &:hover {
+        border-color: #666666;
+      }
+    }
+    .lightbox-step-visibility {
+      .tve-icon-visible {
+        &:before {
+          font-family: 'tveicomoon';
+          content: "\e632";
+          color: #666666;
+          font-size: 18px;
+        }
+      }
+      .tve-icon-invisible {
+        &:before {
+          font-family: 'tveicomoon';
+          content: "\e633";
+          color: #666666;
+          font-size: 18px;
+        }
+      }
+      &:hover {
+        border-color: #666666;
+      }
+    }
+    .lightbox-step-name {
+      color: #666666;
+    }
+  }
+  .lightbox-step-add-menu {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 200px;
+    border: 1px solid #d4d4d4;
+    padding: 20px 14px;
+    @include transition(all .20s ease);
+    border-radius: 5px;
+    &:after, &:before {
+      top: 100%;
+      left: 20px;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+    &:after {
+      border-color: rgba(255, 255, 255, 0);
+      border-top-color: #fff;
+      border-width: 10px;
+      margin-left: -10px;
+    }
+    &:before {
+      border-color: rgba(212, 212, 212, 0);
+      border-top-color: #d4d4d4;
+      border-width: 11px;
+      margin-left: -11px;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      li {
+        border-bottom: 1px solid #e3e3e3;
+        padding: 12px 0;
+        font-size: 18px;
+        a {
+          color: #666666;
+          &:before {
+            content: "\00BB \0020";
+            font-size: 16px;
+            float: left;
+            padding-right: 5px;
+          }
+          &:hover {
+            color: #78ac49;
+          }
+        }
+        &:first-child {
+          padding-top: 0;
+        }
+        &:last-child {
+          border-bottom: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.tl-state-minimized, .multistep-lightbox {
+  z-index: 1000;
+  .multistep-lightbox-steps-body {
+    padding: 12px 25px;
+  }
+}
+
+/*
+  screen filler
+*/
+
+.tve-leads-screen-filler {
+  .tve_editor_page & {
+    bottom: 150px;
+  }
+  .tve_editor_collapse & {
+    right: 77px;
+  }
+  .tve_cpanelFlip & {
+    right: 0;
+  }
+  .tve_cpanelFlip.tve_editor_collapse & {
+    left: 77px;
+  }
+  .tve_editor_page.tl-state-collapse & {
+    bottom: 0;
+  }
+}
+
+/*
+  removed position: fixed from lightbox to allow scroll
+*/
+.tve_editor_page {
+  .tve_p_lb_background {
+    position: relative;
+  }
+  .tve-leads-screen-filler {
+    position: absolute;
+    width: 100%;
+  }
+}
+
+/*
+  Scroll Mat
+*/
+.thrv-greedy-ribbon {
+  box-sizing: border-box;
+  height: 100vh;
+  &.thrv_wrapper {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+//edit mode conflict with theme
+.tve-html-editor {
+  .cnt {
+    background: #fff;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+    article {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+#tve-leads-empty-template {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+/* hide the save as template button for form elements */
+.tve_cpanel_onpage {
+  &.menu_elem_form_ribbon,
+  &.menu_elem_form_widget,
+  &.menu_elem_lead_form,
+  &.menu_elem_form_slide_in,
+  &.menu_elem_form_screen_filler,
+  &.menu_elem_form_greedy_ribbon {
+    #tve_submenu_save {
+      display: none;
+    }
+  }
+}
+
+.tve_leads_one_line {
+  display: block;
+  width: 100%;
+}

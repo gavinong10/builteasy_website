@@ -1,0 +1,116 @@
+<div class="tvd-modal-content">
+    <div class="tl-no-api-connection-box" style="display: none;">
+        <p><?php echo __("You currently don't have any API integrations set up.", 'thrive-leads') ?></p>
+        <a href="<?php echo admin_url('admin.php?page=tve_dash_api_connect') ?>" target="_blank"
+           class="tve_lightbox_link tve_lightbox_link_create"><?php echo __("Click here to set up a new API connection", "thrive-leads") ?></a>
+    </div>
+
+    <div class="tl-select-api-connection-box" style="display: none">
+        <div class="tl-existing-api-connection-box tl-one-click-signup-step1">
+            <p>
+                <?php echo __("Connections for this link:", 'thrive-leads') ?>
+            </p>
+            <ul class="tvd-collection tvd-with-header">
+                <li class="tvd-collection-header">
+                    <div class="tvd-row tvd-collapse">
+                        <div class="tvd-col tvd-s10">
+                            <h5>
+                                <?php echo __("Connection Name", 'thrive-leads') ?>
+                            </h5>
+                        </div>
+                        <div class="tvd-col tvd-s2">
+                            &nbsp;
+                        </div>
+                    </div>
+                </li>
+                <li class="tvd-collection-item tl-empty-connection-list" <# if(api_connections.length > 0){ #>style="display:none" <#}#>>
+                    <h5 class="asset-file-list-no-files tvd-center-align">
+                        <?php echo __("No Connections Yet", 'thrive-leads') ?>
+                    </h5>
+                    <a href="javascript:void(0)" class="tl-add-new-api-button tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue tvd-btn-small">
+                        <?php echo __('+ Add New', 'thrive-leads') ?>
+                    </a>
+                </li>
+                <li class="tvd-collection-item tl-connection-list" <# if(api_connections.length === 0 || !api_connections.length){ #>style="display:none" <#}#>">
+                    <# var api_connections = model.get('api_connections') #>
+                    <ul class="tl-added-connections">
+                        <# var api_connections = model.has('api_connections')?model.get('api_connections'):{};#>
+                        <# jQuery.each(api_connections, function(i, item) {var apiName=api_connections[i].apiName;#>
+                            <?php include plugin_dir_path(__FILE__) . 'selected-api-connection.phtml'; ?>
+                        <# }); #>
+                    </ul>
+                    <div class="tvd-v-spacer"></div>
+                    <a href="javascript:void(0)" class="tl-add-new-api-button tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue tvd-btn-small">
+                        <?php echo __('+ Add New', 'thrive-leads') ?>
+                    </a>
+                </li>
+            </ul>
+            <div class="tvd-modal-footer-inside">
+                <div class="tvd-row">
+                    <div class="tvd-col tvd-s12 tvd-m6">
+                        <a href="javascript:void(0)" class="tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-dark tvd-modal-close tvd-waves-effect"><?php echo __('Cancel', 'thrive-leads') ?></a>
+                    </div>
+                    <div class="tvd-col tvd-s12 tvd-m6">
+                        <a href="javascript:void(0)" class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-right tl-save-connection"><?php echo __('Save', 'thrive-leads') ?></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tl-add-connection-box tl-one-click-signup-step2" style="display: none;">
+            <div class="tvd-v-spacer"></div>
+            <p>
+                <?php echo __("Choose from your list of existing API connections or", 'thrive-leads') ?>
+                <a href="<?php echo admin_url('admin.php?page=tve_dash_api_connect') ?>" target="_blank" class="tvd-blue-text">
+                    <?php echo __("add a new integration", "thrive-leads") ?>
+                </a>
+            </p>
+            <div class="tvd-row tvd-collapse">
+                <div class="tvd-col tvd-s4">
+                    <div class="tl-dropdown-list">
+                        <div class="tvd-input-field tvd-no-margin">
+                            <select class="tl-api-connection-options tvd-select2">
+                                <option value=""><?php echo __("None", 'thrive-leads') ?></option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="tvd-col tvd-s8">
+                    <a href="javascript:void(0)" class="tl-reload-api-connections tvd-btn-icon tvd-btn-icon-green">
+                        <span class="tvd-icon-loop2"></span>
+                        <?php echo __('Reload', 'thrive-leads') ?>
+                    </a>
+                </div>
+            </div>
+            <div id="thrive-api-list-select" class="tl-api-connection-list-box" style="display: none">
+                <p>
+                    <?php echo __('Choose your mailing list', 'thrive-leads') ?>
+                </p>
+                <div class="tvd-row tvd-collapse">
+                    <div class="tvd-col tvd-s4">
+                        <div class="tvd-input-field tvd-no-margin">
+                            <select class="tl-api-connection-list tvd-select2"></select>
+                        </div>
+                    </div>
+                    <div class="tvd-col tvd-s8">
+                        <a href="javascript:void(0)" class="tl-reload-api-connections-list tvd-btn-icon tvd-btn-icon-green">
+                            <span class="tvd-icon-loop2"></span>
+                            <?php echo __('Reload', 'thrive-leads') ?>
+                        </a>
+                    </div>
+                </div>
+                <div class="tl-api-connection-extra"></div>
+            </div>
+            <div class="tvd-modal-footer-inside">
+                <div class="tvd-row">
+                    <div class="tvd-col tvd-s12 tvd-m6">
+                        <a href="javascript:void(0)" class="tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-dark tl-close-api-add-edit tvd-waves-effect" rel=""><?php echo __('Cancel', 'thrive-leads') ?></a>
+                    </div>
+                    <div class="tvd-col tvd-s12 tvd-m6">
+                        <a href="javascript:void(0)" class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-right tl-add-connection"><?php echo __('Save', 'thrive-leads') ?></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+.features {
+    .item { margin-bottom: 30px;
+        .icon { text-align: center;
+            img { }
+        }   
+        .text {
+            h3 { color: $features-title-color; margin: 0px 0px 20px; font-size: 18px; font-weight: normal; line-height: 22px; line-height: 22px; margin-top: 0px; margin-bottom: 20px; }
+            p { } 
+        }   
+    }   
+}
+
+@media (max-width: 767px) {
+	.features {
+		.item { text-align: center;
+ 			.icon { margin-bottom: 30px; 
+ 				img { width: auto; }
+ 			}
+		}
+	}
+}

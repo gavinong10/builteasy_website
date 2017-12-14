@@ -1,0 +1,89 @@
+.backupbuddy-recent-activity-details {
+	word-wrap: initial;
+	width: 100%;
+	height: 90px;
+	font-family: Andale Mono, monospace;
+}
+.backupbuddy-recent-activity-details::-webkit-scrollbar {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	width: 11px;
+	height: 11px;
+}
+.backupbuddy-recent-activity-details::-webkit-scrollbar-thumb {
+	border-radius: 8px;
+	border: 2px solid white; /* should match background, can't be transparent */
+	background-color: rgb(0, 0, 0 );
+	background-color: rgba(0, 0, 0, .5);
+}
+
+#toplevel_page_pb_backupbuddy_backup .wp-menu-image{
+	background-image:url('../images/icon_menu_16x16.png');background-size:16px 16px;background-position:6px 5px !important;
+}
+#toplevel_page_pb_backupbuddy_backup.wp-has-current-submenu .wp-menu-image{
+	background-image:url('../images/icon_menu_16x16.png');
+}
+@media print,(-o-min-device-pixel-ratio:5/4),(-webkit-min-device-pixel-ratio:1.25),(min-resolution:120dpi){
+	#toplevel_page_it-exchange .wp-menu-image{
+		background-image:url('../images/icon_menu_32x32.png');background-size:16px 16px;background-position:6px 5px !important;
+	}
+	#toplevel_page_pb_backupbuddy_backup.wp-has-current-submenu .wp-menu-image{
+		background-image:url('../images/icon_menu_32x32.png');
+	}
+}
+
+@font-face {
+	font-family: 'backupbuddy';
+	src:url('fonts/backupbuddy.eot');
+	src:url('fonts/backupbuddy.eot?#iefix') format('embedded-opentype'),
+		url('fonts/backupbuddy.ttf') format('truetype'),
+		url('fonts/backupbuddy.woff') format('woff'),
+		url('fonts/backupbuddy.svg#backupbuddy') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.backupbuddy-icon-drive:before {
+	font-family: 'backupbuddy' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	
+	content: "\e600" !important;
+}
+
+
+.backupbuddy-progressbar {
+	position: relative;
+	height: 1em !important;
+	padding: 1px !important;
+}
+.backupbuddy-progressbar-label {
+	position: absolute;
+	left: 50%;
+	font-weight: bold;
+	text-shadow: 1px 1px 0 #fff;
+	margin-left: -15px;
+	font-size: 0.7em;
+    top: -2px;
+}
+.backupbuddy-progressbar .ui-progressbar-value {
+	height: 100%;
+	background: #3A87AD;
+	background: rgba(58, 135, 173, 0.3);
+}
+
+/*
+.pb_form tr.advanced-toggle {
+	border-left: 6px solid #eee;
+}
+.pb_form th.advanced-toggle {
+	padding-left: 12px;
+}
+*/

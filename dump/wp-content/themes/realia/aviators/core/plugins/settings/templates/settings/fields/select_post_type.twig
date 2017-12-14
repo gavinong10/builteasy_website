@@ -1,0 +1,10 @@
+<select name="{{ args.id }}" id="{{ args.id }}">
+    <option value="">---</option>
+    {% for post_type in post_types %}
+        <option value="{{ post_type.name }}" {% if value == post_type.name %}selected="selected"{% endif %}>{{ post_type.labels.name }}</option>
+    {% endfor %}
+</select>
+
+{% if option.description %}
+    <p class="description">{{ option.description }}</p>
+{% endif %}

@@ -1,0 +1,56 @@
+.noo-property-state-highlight{
+	border: 1px dotted #ccc;
+	background: #f7f7f7;
+}
+.noo_property_custom_field_table tbody tr{
+	cursor: move;
+}
+.noo_property_feature_table tbody tr{
+	cursor: move;
+}
+#property_feature .noo-form-group {
+	width: 33.33%;
+	min-width: 250px;
+	display: inline-block;
+}
+#property_feature .noo-form-group > label {
+	width: 70%;
+}
+#property_feature .noo-form-group > .noo-control {
+	width: 20%;
+}
+.noo_property_google_map{
+	position: relative;
+}
+.noo_property_google_map_search {
+	position: absolute;
+	width: 50%;
+	margin: 0 auto;
+	top: 10px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	transform: translateX(-50%);
+	
+}
+#noo_property_google_map_search_input{
+	 margin-top: 16px;
+     border: 1px solid transparent;
+     border-radius: 2px 0 0 2px;
+     box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     height: 32px;
+     outline: none;
+     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+	 background-color: #fff;
+     padding: 0 11px 0 13px;
+     width: 400px;
+}
+table.wp-list-table .column-property_id,
+table.wp-list-table .column-featured {
+    text-align: center !important;
+    width: 70px;
+}
+.noo-property-feature{
+	display: inline-block;
+}

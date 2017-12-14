@@ -1,0 +1,70 @@
+<div class="tvd-modal-content">
+	<div class="tvd-row tvd-collapse">
+		<div class="tvd-col tvd-s12">
+			<div class="tvd-input-field">
+				<input type="text" class="tvd-validate" value="" name="test_title" id="test_title">
+				<label for="test_title" data-error="<?php echo __( 'Test title is required', 'thrive-leads' ) ?>"><?php echo __( 'Title', 'thrive-leads' ) ?></label>
+			</div>
+			<div class="tvd-input-field">
+				<textarea name="test_notes" tabindex="2" id="test_notes" class="tvd-materialize-textarea"></textarea>
+				<label for="test_notes"><?php echo __( 'Test Notes', 'thrive-leads' ) ?></label>
+			</div>
+		</div>
+	</div>
+	<div id="tve-form-types-list" style="display: none">
+		<p><?php echo __( 'Choose which type of form to test against each other: ', 'thrive-leads' ) ?></p>
+		<div class="tvd-row tvd-collapse"></div>
+	</div>
+	<div id="tve-winner-test-settings">
+		<h5 class="tve-toggle-dropdown tvd-pointer">
+			<span class="tvd-icon-expanded"></span>
+			<?php echo __( 'Automatic Winner Settings', 'thrive-leads' ) ?>
+		</h5>
+
+		<div style="display: none" id="tve-winner-test-container">
+			<p>
+				<?php echo __( 'Here you can set the conditions by which a form will be considered the winner. When a form is considered the winner, the remaining forms will be archived and all traffic will be sent to the winner', 'thrive-leads' ) ?>
+			</p>
+			<p>
+				<input id="tve-enable-test-settings" type="checkbox" name="auto_win_enabled" tabindex="4"/>
+				<label for="tve-enable-test-settings"><?php echo __( 'Enabled', 'thrive-leads' ) ?></label>
+			</p>
+			<div class="tve-winner-settings-input" style="display: none">
+				<div class="tvd-v-spacer vs-2"></div>
+				<div class="tvd-row">
+					<div class="tvd-col tvd-s4">
+						<div class="tvd-input-field">
+							<input type="text" name="auto_win_min_conversions" tabindex="5" value="100" id="auto_win_min_conversions">
+							<label for="auto_win_min_conversions" class="tvd-active"><?php echo __( 'Minimum conversions', 'thrive-leads' ) ?></label>
+						</div>
+					</div>
+					<div class="tvd-col tvd-s4">
+						<div class="tvd-input-field">
+							<input type="text" name="auto_win_min_duration" tabindex="6" value="14" id="auto_win_min_duration"/>
+							<label for="auto_win_min_duration" class="tvd-active"><?php echo __( 'Minimum duration (days)', 'thrive-leads' ) ?></label>
+						</div>
+					</div>
+					<div class="tvd-col tvd-s4">
+						<div class="tvd-input-field">
+							<input type="text" name="auto_win_chance_original" tabindex="7" value="95" id="auto_win_chance_original"/>
+							<label for="auto_win_chance_original" class="tvd-active"><?php echo __( 'Chance to beat original (%)', 'thrive-leads' ) ?></label>
+						</div>
+					</div>
+				</div>
+				<?php include dirname( __FILE__ ) . '/variation-winner-test-notice.phtml' ?>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="tvd-modal-footer">
+	<div class="tvd-row">
+		<div class="tvd-col tvd-s12 tvd-m6">
+			<a class="tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-dark tvd-modal-close tvd-waves-effect" tabindex="9"
+			   href="javascript:void(0)"><?php echo __( 'Cancel', 'thrive-leads' ) ?></a>
+		</div>
+		<div class="tvd-col tvd-s12 tvd-m6">
+			<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tve-start-variation-test tvd-modal-submit tvd-right" tabindex="8"
+			   href="javascript:void(0)"><?php echo __( 'Start Test', 'thrive-leads' ) ?></a>
+		</div>
+	</div>
+</div>

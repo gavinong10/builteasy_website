@@ -1,0 +1,9 @@
+<p><?php echo __('Insert the ID or the class name of the element(s) that will trigger the display of this form (on click)', 'thrive-leads') ?></p>
+<div class="tvd-input-field">
+    <input type="text" name="c" class="trigger-config" value="<?php echo empty($config['c']) ? '' : $config['c'] ?>" id="trigger-config-class">
+    <label for="trigger-config-class"><?php echo __('Class', 'thrive-leads') ?></label>
+</div>
+<div class="tvd-input-field">
+    <input type="text" name="i" class="trigger-config" value="<?php echo empty($config['i']) ? '' : $config['i'] ?>" id="trigger-config-id">
+    <label for="trigger-config-id"><?php echo __('ID', 'thrive-leads') ?></label>
+</div>

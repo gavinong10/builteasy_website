@@ -1,0 +1,18 @@
+{% extends 'layout-fullwidth.twig' %}
+
+{% block content %}
+    <h1 class="page-header">{{ wp.__('Agents', 'aviators') }}</h1>
+
+    <div class="our-agents-large">
+        {% if wp.have_posts() %}
+            {% for post in posts %}
+                {{ wp_query.the_post() }}
+                {{ wp.get_template_part('content-agent', wp.get_post_format()) }}
+            {% endfor %}
+        {% else %}
+            {{ wp.get_template_part('content', 'none') }}
+        {% endif %}
+    </div><!-- /.our-agents-large -->
+
+    {{ wp.aviators_paging_nav() }}
+{% endblock %}

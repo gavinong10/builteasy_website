@@ -1,0 +1,42 @@
+/**
+ * Default Look and Feel
+ */
+.alertify,
+.alertify-log {
+	font-family: sans-serif;
+}
+.alertify {
+	background: #1F1F1F;
+	background: rgba(0,0,0,.9);
+	border-radius: 8px;
+	-webkit-background-clip: padding;     /* Safari 4? Chrome 6? */
+	   -moz-background-clip: padding;     /* Firefox 3.6 */
+	        background-clip: padding-box; /* Firefox 4, Safari 5, Opera 10, IE 9 */
+	color: #fff;
+}
+.alertify-inner {
+	text-align: left;
+}
+.alertify-buttons .btn + .btn {
+	margin-left: 10px;
+}
+.alertify-log {
+	background: #1F1F1F;
+	background: rgba(0,0,0,.9);
+	padding: 15px;
+	border-radius: 4px;
+	color: #FFF;
+	text-shadow: -1px -1px 0 rgba(0,0,0,.5);
+	font-size: 14px;
+}
+.alertify-log-error {
+	background: #FE1A00;
+	background: rgba(254,26,0,.9);
+}
+.alertify-log-success {
+	background: #5CB811;
+	background: rgba(92,184,17,.9);
+}
+.alertify-log-customize_control_log {
+	left: 300px;
+}

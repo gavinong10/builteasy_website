@@ -1,0 +1,6 @@
+<form method="get" class="site-search" action="{{ wp.get_bloginfo('wpurl') }}">
+    <div class="input-append">
+        <input class="search-query form-text" placeholder={{ '"' }}{{ wp.__('Search', 'aviators') }}{{ '"' }} type="text" name="s" id="s" value="{% if q.s %}{{ q.s }}{% endif %}">
+        <button type="submit" class="btn"><i class="icon-search"></i></button>
+    </div><!-- /.input-append -->
+</form><!-- /.site-search -->

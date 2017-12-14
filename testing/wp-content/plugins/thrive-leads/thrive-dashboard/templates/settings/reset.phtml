@@ -1,0 +1,39 @@
+
+<div class="tvd-container">
+    <?php if (!empty($message)) echo $message ?>
+    <h3 class="tvd-section-title">License reset</h3>
+
+    <form id="tvd-reset" method="post" action="<?php echo admin_url('admin.php?page=tve_dash_reset') ?>">
+        <p>
+            <input type="checkbox" id="tcb" value="tcb" name="products[]" checked/>
+            <label for="tcb">TCB</label>
+        </p>
+
+        <p>
+            <input type="checkbox" id="tl" value="tl" name="products[]" checked/>
+            <label for="tl">TL</label>
+        </p>
+
+        <p>
+            <input type="checkbox" id="tcw" value="tcw" name="products[]" checked/>
+            <label for="tcw">TCW</label>
+        </p>
+
+        <p>
+            <input type="checkbox" id="themes" value="themes" name="products[]" checked/>
+            <label for="themes">Themes</label>
+        </p>
+
+        <p>
+            <input type="checkbox" id="dash" value="dash" name="products[]" checked/>
+            <label for="dash">Dashboard (all)</label>
+        </p>
+
+        <input type="hidden" name="page" value="tve_dash_reset">
+        <input type="hidden" name="s" value="1">
+
+        <input type="submit" class="button button-primary button-large" value="Delete licenses">
+
+    </form>
+
+</div>

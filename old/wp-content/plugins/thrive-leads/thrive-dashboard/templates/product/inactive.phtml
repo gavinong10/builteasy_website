@@ -1,0 +1,98 @@
+<?php
+/** @var $this TVE_Dash_Product_Abstract */
+?>
+<div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3 tvd-inactive-product" id="tvd-product-<?php echo $this->getTag() ?>">
+    <div class="tvd-card tvd-gray tvd-medium tvd-disabled" data-state="inactive">
+        <div class="tvd-card-content">
+            <div class="tvd-center-align">
+                <img src="<?php echo $this->logoUrl; ?>" alt="" class="tvd-responsive-img">
+            </div>
+            <h2 class="tvd-card-title"><?php echo $this->title; ?></h2>
+            <p class="tvd-center">
+                <?php echo $this->description ?>
+            </p>
+            <div class="tvd-card-action">
+                <a class="tve-dash-show-license-form tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue tvd-full-btn">
+                    <?php echo __("Activate License", TVE_DASH_TRANSLATE_DOMAIN) ?>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="tvd-card tvd-gray tvd-medium tvd-disabled" data-state="form" style="display: none;">
+        <div class="tvd-card-content">
+            <div class="tvd-center-align">
+                <img src="<?php echo $this->logoUrl; ?>" alt="<?php echo $this->title ?>"
+                     class="tvd-responsive-img" height="50" width="50">
+            </div>
+            <h4 class="tvd-card-title"><?php echo __("Enter your license details:", TVE_DASH_TRANSLATE_DOMAIN) ?></h4>
+
+            <form class="tve-dash-item-license-form tvd-col tvd-s12">
+                <div class="tvd-row">
+                    <div class="tvd-input-field">
+                        <input id="email-<?php echo $this->getTag() ?>" type="email" name="email" class="tvd-validate" value="">
+                        <label for="email-<?php echo $this->getTag() ?>"><?php echo __("Email address", TVE_DASH_TRANSLATE_DOMAIN) ?></label>
+                    </div>
+                    <div class="tvd-input-field">
+                        <input id="license-<?php echo $this->getTag() ?>" type="text" name="license" class="tvd-validate" value="">
+                        <label for="license-<?php echo $this->getTag() ?>"><?php echo __("License key", TVE_DASH_TRANSLATE_DOMAIN) ?></label>
+                    </div>
+
+                    <input type="hidden" name="tag" value="<?php echo $this->getTag() ?>">
+
+                </div>
+                <div class="tvd-card-action">
+                    <button type="submit"
+                            class="tve-dash-item-license-btn tvd-waves-light tvd-btn tvd-btn-blue tvd-full-btn">
+                        <?php echo __("Validate", TVE_DASH_TRANSLATE_DOMAIN) ?>
+                    </button>
+                    <button type="button"
+                            class="tve-dash-show-inactive-state tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-dark tvd-full-btn tvd-btn-margin-top tvd-waves-effect">
+                        <?php echo __("Cancel", TVE_DASH_TRANSLATE_DOMAIN) ?>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="tvd-card tvd-green tvd-medium" data-state="success" style="display: none;">
+        <div class="tvd-card-content">
+            <div class="tvd-center-align">
+                <img src="<?php echo $this->logoUrlWhite ?>" alt="<?php echo $this->title ?>" class="tvd-responsive-img">
+            </div>
+            <div class="tvd-center-align">
+                <i class="tvd-icon-check tvd-icon-large tvd-icon-top"></i>
+            </div>
+            <h2 class="tvd-center"><?php echo __("License Activated", TVE_DASH_TRANSLATE_DOMAIN) ?></h2>
+        </div>
+    </div>
+
+    <div class="tvd-card tvd-orange tvd-medium" data-state="error" style="display: none;">
+        <div class="tvd-card-content">
+            <div class="tvd-center-align">
+                <img src="<?php echo $this->logoUrlWhite ?>" width="70" alt="<?php echo $this->title ?>" class="tvd-responsive-img">
+            </div>
+            <h3 class="tvd-card-title">
+                <?php echo __("We weren't able to validate your license.", TVE_DASH_TRANSLATE_DOMAIN) ?>
+            </h3>
+
+            <p class="tvd-center tvd-card-spacer">
+                <?php echo __("Reason:", TVE_DASH_TRANSLATE_DOMAIN) ?> <span class="tvd-license-error"></span>
+            </p>
+        </div>
+        <div class="tvd-card-action">
+            <div class="tvd-row tvd-no-margin">
+                <div class="tvd-col tvd-s12 tvd-m6">
+                    <a class="tve-dash-show-inactive-state tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-light tvd-waves-effect">
+                        <?php echo __("Cancel", TVE_DASH_TRANSLATE_DOMAIN) ?>
+                    </a>
+                </div>
+                <div class="tvd-col tvd-s12 tvd-m6">
+                    <a class="tve-dash-show-license-form tvd-btn-flat tvd-btn-flat-primary tvd-btn-flat-light tvd-waves-effect tvd-right">
+                        <?php echo __("Retry", TVE_DASH_TRANSLATE_DOMAIN) ?>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

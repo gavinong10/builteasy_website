@@ -1,0 +1,122 @@
+{{ before_widget|raw }}
+
+{% if title %}
+    {{ before_title|raw }}{{ title|raw }}{{ after_title|raw }}
+{% endif %}
+
+<div class="content">
+    <form method="post" action="">
+        <input type="hidden" name="form_id" value="enquire-form">
+
+        <div class="control-group hidden">
+            <div class="controls">
+                <input type="text" id="inputName" name="full_name">
+            </div>
+            <!-- /.controls -->
+        </div><!-- /.control-group -->
+
+        {% if not wp.aviators_settings_get_value('properties', 'fields', 'hide_name') %}
+            <div class="control-group">
+                <label class="control-label" for="inputName">
+                    {{ wp.__('Name', 'aviators') }}
+                    <span class="form-required" title="This field is required.">*</span>
+                </label>
+
+                <div class="controls">
+                    <input type="text" id="inputName" name="name" required="required">
+                </div>
+                <!-- /.controls -->
+            </div><!-- /.control-group -->
+        {% endif %}
+
+        {% if not wp.aviators_settings_get_value('properties', 'fields', 'hide_phone') %}
+            <div class="control-group">
+                <label class="control-label" for="inputPhone">
+                    {{ wp.__('Phone', 'aviators') }}
+                    <span class="form-required" title="This field is required.">*</span>
+                </label>
+
+                <div class="controls">
+                    <input type="text" id="inputPhone" name="phone" required="required">
+                </div>
+                <!-- /.controls -->
+            </div><!-- /.control-group -->
+        {% endif %}
+
+        {% if not wp.aviators_settings_get_value('properties', 'fields', 'hide_date') %}
+            <div class="control-group">
+                <label class="control-label" for="inputDate">
+                    {{ wp.__('Date', 'aviators') }}
+                    <span class="form-required" title="This field is required.">*</span>
+                </label>
+
+                <div class="controls">
+                    <input type="date" id="inputDate" name="date" required="required">
+                </div>
+                <!-- /.controls -->
+            </div><!-- /.control-group -->
+        {% endif %}
+
+        {% if not wp.aviators_settings_get_value('properties', 'fields', 'hide_date_from') %}
+            <div class="control-group">
+                <label class="control-label" for="inputDate">
+                    {{ wp.__('Date From', 'aviators') }}
+                </label>
+
+                <div class="controls">
+                    <input type="date" id="inputDate" name="date_from">
+                </div>
+                <!-- /.controls -->
+            </div><!-- /.control-group -->
+        {% endif %}
+
+        {% if not wp.aviators_settings_get_value('properties', 'fields', 'hide_date_to') %}
+            <div class="control-group">
+                <label class="control-label" for="inputDate">
+                    {{ wp.__('Date To', 'aviators') }}
+                </label>
+
+                <div class="controls">
+                    <input type="date" id="inputDate" name="date_to" >
+                </div>
+                <!-- /.controls -->
+            </div><!-- /.control-group -->
+        {% endif %}
+
+        {% if not wp.aviators_settings_get_value('properties', 'fields', 'hide_email') %}
+            <div class="control-group">
+                <label class="control-label" for="inputEmail">
+                    {{ wp.__('Email', 'aviators') }}
+                    <span class="form-required" title="This field is required.">*</span>
+                </label>
+
+                <div class="controls">
+                    <input type="email" id="inputEmail" name="email" required="required">
+                </div>
+                <!-- /.controls -->
+            </div><!-- /.control-group -->
+        {% endif %}
+
+        {% if not wp.aviators_settings_get_value('properties', 'fields', 'hide_message') %}
+            <div class="control-group">
+                <label class="control-label" for="inputMessage">
+                    {{ wp.__('Message', 'aviators') }}
+                    <span class="form-required" title="This field is required.">*</span>
+                </label>
+
+                <div class="controls">
+                    <textarea id="inputMessage" name="message" required="required"></textarea>
+                </div>
+                <!-- /.controls -->
+            </div><!-- /.control-group -->
+        {% endif %}
+
+        <div class="form-actions">
+            <input type="hidden" name="post_id" value="{{ post_id }}">
+            <button class="btn btn-primary arrow-right">{{ wp.__('Send', 'aviators') }}</button>
+        </div>
+        <!-- /.form-actions -->
+    </form>
+</div><!-- /.content -->
+
+{{ after_widget|raw }}

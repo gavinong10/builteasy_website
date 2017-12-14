@@ -1,0 +1,1 @@
+<p data-default="<?php echo __( 'Enter your text here...', 'thrive-cb' ) ?>"><?php echo __( 'Enter your text here...', 'thrive-cb' ) ?></p>

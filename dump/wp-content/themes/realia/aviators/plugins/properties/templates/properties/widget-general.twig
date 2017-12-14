@@ -1,0 +1,19 @@
+{{ before_widget|raw }}
+
+{% if title %}
+    {{ before_title|raw }}{{ title|raw }}{{ after_title|raw }}
+{% endif %}
+
+<div class="content">
+    {% if properties %}
+        {% set template = "properties/widget-properties-" ~ display ~ ".twig" %}
+
+        {% include template with { 'properties' : properties } %}
+    {% else %}
+        <p>
+            {{ wp.__('No properties found.', 'aviators') }}
+        </p>
+    {% endif %}
+</div><!-- /.content -->
+
+{{ after_widget|raw }}

@@ -1,0 +1,170 @@
+#header-wrapper { background-color: $header-background-color;
+  #header {
+    #header-inner {
+      .navbar { margin: 0px;
+        .navbar-inner {
+          filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+          @include background-image(none); @include border-radius(0px); @include box-shadow(none);
+          background-color: transparent; border: 0px; height: 90px; padding: 0px;
+          #btn-nav { background-image: url('../img/btn-nav.png'); background-position: center center; background-repeat: no-repeat; background-size: 35px 35px; display: none; float: left; height: 35px; margin-top: 30px; margin-right: 10px; text-indent: -9999px; width: 35px;
+            @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+              background-image: url('../img/btn-nav@2x.png');
+            }
+          }
+
+          .logo { float: left; height: 90px; margin: 0px 0px 0px 0px; line-height: 90px; }
+          .site-name { float: left; height: 90px; line-height: 90px; margin-left: 15px;
+            .brand { @include text-shadow(none); color: $header-brand-color; font-size: 24px; margin: 0px; padding: 0px;  }
+          }
+          .site-slogan { color: $gray; float: left; height: 90px; line-height: 90px; margin-left: 15px;
+            span { border-left: 2px solid $header-slogan-border-color; display: inline-block; line-height: 18px; padding-left: 15px; vertical-align: middle; }
+          }
+          .info { float: right; padding-top: 12px; }
+          .site-phone { float: none; line-height: 30px;
+            span { background-image: url('../img/icons/phone-gray.png'); background-position: left center; background-repeat: no-repeat; background-size: 20px 20px; color: $header-info-color; font-size: 18px; font-weight: 500; padding-left: 30px; }
+          }
+          .site-email { float: none; line-height: 30px;
+            a { background-image: url('../img/icons/mail-gray.png'); background-position: left center; background-repeat: no-repeat; background-size: 17px 11px; color: $header-info-color; font-size: 18px; font-weight: 500; padding-left:  30px; text-decoration: none; }
+          }
+          .list-your-property { float: right; margin-top: 24px; }
+        }
+      }
+    }
+  }
+}
+
+html.ie8 {
+  #header-wrapper {
+    #header {
+      #header-inner {
+        .navbar {
+          .navbar-inner {
+            .info { float: left; margin-left: 40px; }
+          }
+        }
+      }
+    }
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+  #header-wrapper {
+    #header {
+      #header-inner {
+        .navbar {
+          .navbar-inner {
+            .site-phone {
+              span { background-image:url('../img/icons/phone-gray@2x.png'); }
+            }
+            .site-email {
+              a { background-image: url('../img/icons/mail-gray@2x.png'); }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  #header-wrapper {
+    #header {
+      #header-inner {
+        .navbar {
+          .navbar-inner {
+            .info { float: none; padding-top: 0px; }
+            .site-phone { float: left; line-height: 88px; margin-left: 40px; }
+            .site-email { float: left; line-height: 88px; margin-left: 40px; }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  #header-wrapper {
+    #header {
+      #header-inner {
+        .navbar {
+          .navbar-inner {
+            .info { float: left; margin-left: 40px; padding-top: 12px; }
+            .site-phone { float: none; line-height: 30px; margin-left: 0px;
+              span { font-size: 16px; padding-top: 1px; padding-bottom: 1px; }
+            }
+            .site-email { float: none; line-height: 30px; margin-left: 0px;
+              a { font-size: 16px; }
+            }
+            .site-search {
+                input { width: 186px; }
+                button { margin: 0px 0px 0px -9px; }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 979px) {
+  #header-wrapper {
+    #header {
+      #header-inner {
+        .navbar {
+          .navbar-inner {
+            #btn-nav { display: block; }
+            .logo-wrapper { width: auto; }
+            .info { display: none; }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #header-wrapper {
+    #header {
+      #header-inner {
+        .navbar {
+          .navbar-inner { padding-left: 20px; padding-right: 20px;
+            .site-slogan { display: none; }
+            .site-search { display: none; }
+            .list-your-property { display: none; }
+          }
+        }
+      }
+    }
+  }
+}
+
+.breadcrumb-wrapper { background-color: $breadcrumb-background-color; border-bottom: 1px solid $white; line-height: 24px;
+  .breadcrumb { @include border-radius(0px); background-color: transparent; color: $white; font-size: 12px; margin: 0px; padding: 0px;
+    a { @include text-shadow(none); color: $breadcrumb-link-color; display: inline-block; padding: 0px 5px;
+      &:first-child { padding-left: 0px; }
+    }
+  }
+  .account {
+    ul { margin: 0px;
+      li {
+        a { @include border-radius(0px); border-left: 1px solid $breadcrumb-text-color; color: $breadcrumb-text-color; font-size: 12px; line-height: 1; margin-bottom: 6px; margin-top: 6px; padding-bottom: 0px; padding-top: 0px;
+          &:hover { background-color: transparent; text-decoration: underline; }
+        }
+        &:first-child {
+          a { border-left: 0px; margin-right: 0px; padding-left: 0px; }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .breadcrumb-wrapper { padding-left: 20px; padding-right: 20px;
+    .breadcrumb {
+      li {
+        &:first-child {
+          a { padding-left: 0px; }
+        }
+      }
+    }
+  }
+}

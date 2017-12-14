@@ -1,0 +1,751 @@
+/********************************
+IPAD LANDSCAPE (1024x768)
+********************************/
+
+@media only screen and (max-width: 1200px) {
+	.logo { text-align:center; }
+	#container-boxed, #container-boxed header.sticky-header,
+	#container-boxed-left, #container-boxed-left header.sticky-header { width: 960px; }
+	.inside, .home-thumb-flexslider, 
+	.advance-search-block .dsidx-widget.dsidx-search-widget .dsidx-search-button,
+	.agent-contents, .slider-block-thumb .home-flexslider { width: 906px; }
+	.coming-soon .inside { width: 846px; }
+	.selectBox-dropdown { width: 205px !important; }
+	.advance-search-block select.small, .advance-search-block a.small { width: 178px !important; }
+	.portfolio-slide-desc { padding:20px; font-size:14px; line-height:26px; }
+	.portfolio-slide-desc h2 { font-size:25px; }
+	.portfolio-slide-desc p { margin-bottom:0; }
+	.search-title, .property-four-cols .view-details a, .search-count { display:none; }
+	.pactions label, .pactions a:link, .pactions a:visited { font-size:20px; }
+	.home-flexslider .slider-actions { top:20%; }
+	.theme-menu ul li a:link, .theme-menu ul li a:visited, 
+	.sf-menu li.sfHover ul a:link, 
+	.sf-menu li.sfHover ul a:visited { padding-left:25px !important; padding-right:25px !important; }
+	.agent-block, .featured-block, .blog-block, .grid li { width:268px; }
+	.bdesc { width:175px; }
+	.feat-thumb, .featured-pass-thumb { width:128px; }
+	.featured-list figcaption a i { top: 32%; }
+	.widget-column, .sliding-bar .widget { width:204px; }
+	.homeland_widget-contact-info ul li label { width:86%; }
+	.home-thumb-flexslider .slides { width:748px; }
+	.slider-block-thumb .home-flexslider .slides { width: 100%; }
+	.property-list-box .grid li, .property-image, .services-list, 
+	.property-three-cols .property-cols, .blist-fullwidth, .grid ul li.portfolio-cols { width:272px; }
+	.es-carousel ul li { width: 272px !important; }
+	.theme-fullwidth .services-page-desc { width: 680px; }
+	.services-block-two .services-list { text-align: center; }
+	.services-block-two .services-icon { width: 100%; text-align: center; padding-bottom: 30px; }
+	.featured-block-two-cols { width:587px; }
+	.featured-block-two-cols .featured-list { width:193px; }
+	.left-container { width:610px; }
+	.agent-about-list { width:104%; }
+	.agent-about-list .agent-image { width:190px; margin-right:20px; }
+	.agent-fullwidth .agent-image { width:203px; margin-right:30px; }
+	.agent-social ul li { margin-right:18px; }
+	.services-page-desc { width:390px; }
+	.agent-property-desc { width:308px; }
+	.property-two-cols .property-cols, .blist-two-cols { width:433px; }
+	.property-four-cols .property-cols { width:196px; }
+	.property-page-price, .property-page-status { padding-right:20px; padding-left:20px; }
+	.agent-desc, .single-property .agent-desc { width:350px; }
+	.video-js { width:100% !important; height:370px !important; }
+	.comment-details { width:460px; }
+	.comment-list .children .comment-details { width:388px; }
+	.comment-list .children .children .comment-details { width:308px; }
+	#commentform ul li,
+	.left-container .wpcf7 ul li { margin-bottom:20px; margin-right:20px; }
+	#commentform input[type="text"],
+	.left-container .wpcf7 input[type="text"], 
+	.left-container .wpcf7 input[type="email"], 
+	.left-container .wpcf7 input[type="tel"], 
+	.left-container .wpcf7 input[type="url"], 
+	.left-container .wpcf7 input[type="number"], 
+	.left-container .wpcf7 input[type="date"] { width:158px; }
+	#commentform textarea,
+	.left-container .wpcf7 textarea { width:577px; }
+	.contact-form input[type="text"], .contact-form input[type="email"], 
+	.theme-fullwidth .single-property #commentform input[type="text"],
+	.theme-fullwidth .single-blog #commentform input[type="text"] { width:250px; }
+	.contact-form textarea, .theme-fullwidth .single-property #commentform textarea,
+	.theme-fullwidth .single-blog #commentform textarea { width:874px; }
+	.single-property .agent-list { width:100%; }
+	.agent-form { width:100%; float:left; margin-bottom:30px; }
+	.agent-form ul li input[type="text"], .agent-form ul li input[type="email"], .agent-form ul li textarea { width:588px; }
+	.blist-grid { margin-right:20px; margin-bottom:20px; width:190px; }
+	.blog-grid .sticky { margin-bottom:20px !important; }
+	a.continue { padding:6px 12px; }
+	.testi-desc { width:440px; }
+	#dsidx-listings .dsidx-secondary-data div { width: 100%; }
+	.dsidx-prop-summary { margin-bottom: 30px !important; }
+	.dsidx-details .dsidx-contact-form table td.column-one { width: 20%; }
+	#dsidx.dsidx-details .dsidx-contact-form table input.dsidx-text { width: 365px; }
+	#dsidx.dsidx-details .dsidx-contact-form table textarea { width: 575px; }
+	.advance-search-block .dsidx-search-widget table tr { width: 282px; }
+	.advance-search-block .dsidx-search-widget input[type="text"] { width: 265px; }
+	.advance-search-block .dsidx-search-widget input.dsidx-price { width: 115px; }
+	.advance-search-block.advance-search-block-page .dsidx-widget.dsidx-search-widget .dsidx-search-button { width: 846px !important; }
+	.advance-search-block.advance-search-block-page .dsidx-search-widget table tr { width: 268px; }
+	.advance-search-block.advance-search-block-page .dsidx-search-widget .selectBox-dropdown { width: 264px !important; }
+	.advance-search-block.advance-search-block-page .dsidx-search-widget input[type="text"] { width: 212px !important; }
+	.advance-search-block.advance-search-block-page .dsidx-search-widget input.dsidx-price { width: 108px !important; }
+	.advance-search-block .dsidx-search-widget .dsidx-search-widget-propertyTypes, 
+	.dsidx-search-widget .dsidx-search-widget-propertyTypes, 
+	.dsidx-search-widget .idx-q-Location-Filter { width: 284px !important; }
+	.advance-search-block .dsidx-search-widget input[type="text"], 
+	.advance-search-block .dsidx-search-widget select { width: 218px !important; }
+	.advance-search-block .dsidx-search-widget input.dsidx-improvedsqft[type="text"], 
+	.advance-search-block .dsidx-search-widget input.dsidx-beds[type="text"], 
+	.advance-search-block .dsidx-search-widget input.dsidx-baths[type="text"] { width: 173px !important; }
+	.advance-search-block-page .dsidx-search-widget input.dsidx-improvedsqft[type="text"], 
+	.advance-search-block-page .dsidx-search-widget input.dsidx-beds[type="text"], 
+	.advance-search-block-page .dsidx-search-widget input.dsidx-baths[type="text"] { width: 103px !important; }
+	.countdown_section { width: 183px; }
+	.agent-fullwidth a.view-profile { display: inline-block; }
+	#bbpress-forums #bbp-search-form #bbp_search { width: 488px; }
+	.advance-search-block input.property-id[type="text"] { width: 180px; }
+	.sb-search-input { width: 856px; } 
+	.blog-timeline-image, .blog-timeline-content { width: 405px; }
+	.blog-timeline .even .blog-timeline-image { padding-right: 45px; }
+	.blog-timeline-content { padding-bottom: 40px; }
+	.property-list-page .property-info-agent span { padding: 6px; width: 30.3%; }
+	.single-homeland_properties .theme-fullwidth .property-list-page .property-info-agent span { width: 23%; }
+	.property-info-agent i { margin-right: 2px; }
+	.single-homeland_properties .property-four-cols ul li,
+	.property-grid-sidebar .masonry ul li { margin-right: 10px; margin-bottom: 10px; }
+	.theme-fullwidth .single-property .agent-desc { width: 390px; }
+	.theme-fullwidth .single-property .agent-list { width: 650px; }
+	.theme-fullwidth .single-property .agent-form { float: right; width: 220px; }
+	.theme-fullwidth .agent-form ul li input[type="text"], 
+	.theme-fullwidth .agent-form ul li input[type="email"], 
+	.theme-fullwidth .agent-form ul li textarea { width: 190px; }
+	.theme-fullwidth #commentform ul li { margin-right: 30px; margin-bottom: 30px; }
+	.theme-fullwidth .comment-details { width: 764px; }
+	.theme-fullwidth .comment-list .children .comment-details { width: 680px; }
+	.theme-fullwidth .comment-list .children .children .comment-details { width: 603px; }
+	#map-homepage, #map-property, #map-property-street, #map { height: 500px !important; }
+	.contact-info-alt { width: 400px; }
+	.contact-alt-background #map { width: 470px; height: 350px !important; }
+	.contact-alternate-two .contact-form { width: 465px; }
+	.contact-alternate-two .contact-form input[type="text"], 
+	.contact-alternate-two .contact-form input[type="email"], 
+	.contact-alternate-two .contact-form input[type="url"], 
+	.contact-alternate-two .contact-form input[type="tel"], 
+	.contact-alternate-two .contact-form input[type="number"], 
+	.contact-alternate-two .contact-form input[type="date"], 
+	.contact-alternate-two .contact-form textarea { width: 433px; }
+	.contact-alternate-two .contact-form textarea { height: 150px; }
+	footer .wpcf7 input[type="text"], footer .wpcf7 input[type="email"], 
+	footer .wpcf7 input[type="url"], footer .wpcf7 input[type="tel"], 
+	footer .wpcf7 input[type="number"], footer .wpcf7 input[type="date"], 
+	footer .wpcf7 textarea { width: 182px; }
+	footer .wpcf7-select { width: 204px; }
+
+
+	/*Vertical IDX search*/
+	.dsidx-widget-quick-search .dsidx-resp-vertical .dsidx-resp-area, 
+	.dsidx-widget-quick-search .dsidx-resp-vertical .dsidx-resp-area.dsidx-resp-area-half { width: 200px !important; }
+	.dsidx-widget-guided-search .dsidx-resp-vertical .selectBox-dropdown { width: 100% !important; }
+	.dsidx-widget-guided-search .dsidx-resp-vertical .dsidx-resp-area { width: 205px !important; }
+	.sidebar .dsidx-resp-vertical .dsidx-resp-area, 
+	.sidebar .dsidx-resp-vertical .dsidx-resp-area.dsidx-resp-area-half { width: 188px !important; }
+
+	.dual-container, .dual-container .dual-property-list .grid ul li { width: 305px; }
+	footer .widget-column ul li .pp-image { margin-right: 10px; }
+	footer .advance-search-widget ul li select { margin-left: 0; width: 163px !important; }
+	footer .advance-search-widget ul li input.property-id { margin-left: 0; width: 154px !important; }
+	footer .property-desc-slide { width: 81%; }
+	footer .widget_search #searchform input[type='text'] { width: 157px; }
+	.more-info span { display: block; }
+	.list-fullwidth .agent-desc { width: 646px; }
+	.testi-fullwidth .testi-page-list { width: 438px; }
+	.testi-fullwidth .testi-desc { width: 307px; }
+	.services-grid-fullwidth .services-page-list { width: 272px; }
+	.services-grid-fullwidth .services-page-desc { width: 85%; }
+}
+
+
+/********************************
+IPAD PORTRAIT (768x1024)
+********************************/
+
+@media only screen and (max-width: 960px) {
+	#container-boxed, #container-boxed header.sticky-header,
+	#container-boxed-left, #container-boxed-left header.sticky-header { width:690px; }
+	.inside, .home-thumb-flexslider, .left-container, 
+	.advance-search-block .dsidx-widget.dsidx-search-widget .dsidx-search-button, 
+	.coming-soon .inside, .agent-contents,
+	.dual-container, .dual-container .dual-property-list .grid ul li,
+	.slider-block-thumb .home-flexslider { width:600px; }
+	.slider-block-thumb .portfolio-slide-desc { width: 400px; }
+	.header-five .call-info { border-left: 1px solid #E1E1E1; }
+	.advance-search-block.advance-search-block-page .dsidx-widget.dsidx-search-widget .dsidx-search-button { 
+		width:540px !important; margin-top: 30px; margin-bottom: 0;
+	}
+	.home-thumb-flexslider .slides { width:485px; }
+	.home-thumb-flexslider .flex-control-thumbs li { width:110px; }
+	#main-menu, .blog-timeline-content .blog-icon { display:none; }
+	.slicknav_menu, .search-count { display: block; }
+	.select-menu { 
+		display:block; border:1px solid #E1E1E1; width:290px; position:relative; top:45px; padding:4px; 
+	}
+	.portfolio-slide-desc { width: 500px; line-height:22px; font-size: 13px; }
+	.portfolio-slide-desc h2 { font-size: 20px; margin-bottom: 10px; }
+	.pactions label i, .pactions a i { padding: 14px; }
+	.pactions label span, .pactions a span { top: 0; font-size: 16px; }
+	.selectBox-dropdown { width:140px !important; }
+	.property-id { width:150px !important; }
+	.advance-search-block ul li { margin-right:20px; margin-bottom:20px; }
+	.advance-search-block select.small, .advance-search-block a.small { width:111px !important; }
+	.grid li, .agent-block, .featured-block, .blog-block, 
+	.services-block-two .services-desc, .blog-timeline-content, 
+	.blog-timeline-image, .theme-fullwidth .single-property .agent-list,
+	.theme-fullwidth .single-property .agent-form, .services-grid-fullwidth .services-page-list { width:100%; }
+	.featured-block, .blog-block { border-left:0px; padding-top:0; padding-left:0; margin-left: 0; }
+	.feat-desc, .bdesc { width:auto; }
+	.es-carousel ul li { width: 278px !important; }
+	.widget-column, .sliding-bar .widget { width:135px; margin-right:20px; margin-bottom:20px; }
+	footer .widget h5, .agent-block h3, .featured-block h3, 
+	.featured-block-two-cols h3, .blog-block h3, 
+	.property-list-box h2 { font-size:18px; }
+	.homeland_widget-contact-info ul li label { width:77%; }
+	.nsu-form input[type="email"] { width:112px; }
+	.services-list { margin-right:20px; margin-bottom:20px; width:186px; }
+	.theme-fullwidth .services-page-desc { width: 380px; }
+	.feat-desc h5 a:link, .feat-desc h5 a:visited, .feat-desc span.price { font-size:16px; }
+	.feat-desc span { font-size:12px; }
+	.feat-desc span.price { padding-top:20px; }
+	.featured-block-two-cols { padding-top:50px; }
+	.advance-search-block select.small, .advance-search-block a.small { width:135px !important; }
+	.agent-about-list .agent-image { width:186px; }
+	.sidebar { width:93%; margin-bottom:40px; }
+	.pp-desc { width:83%; }
+	.services-page-desc { width:380px; }
+	.agent-property-desc { width:280px; }
+	.property-two-cols .property-cols, .blist-two-cols { width:279px; }
+	.property-three-cols .property-cols, .blist-fullwidth, .grid ul li.portfolio-cols { width:186px; }	
+	.property-three-cols .property-cols figcaption a i,
+	.property-four-cols .property-cols figcaption a i { top: 38%; }
+	.property-three-cols ul li, .property-four-cols ul li, .blist-fullwidth { margin-right:20px; }
+	.property-four-cols .property-cols { width:135px; }
+	.property-four-cols ul li, .agent-block { margin-bottom:20px; }
+	.property-four-cols .property-desc { padding:15px; }
+	.single-property .property-four-cols .property-cols,
+	.property-grid-sidebar .masonry ul li { width: 192px; }
+	.agent-desc, .single-property .agent-desc { width:340px; }
+	.comment-details { width:455px; }
+	.comment-list .children .comment-details { width:378px; }
+	.comment-list .children .children .comment-details { width:298px; }
+	#commentform input[type="text"],
+	.left-container .wpcf7 input[type="text"], 
+	.left-container .wpcf7 input[type="email"], 
+	.left-container .wpcf7 input[type="tel"], 
+	.left-container .wpcf7 input[type="url"], 
+	.left-container .wpcf7 input[type="number"], 
+	.left-container .wpcf7 input[type="date"] { width:154px; }
+	#commentform textarea, .left-container .wpcf7 textarea { width:566px; }
+	.contact-form ul li, .theme-fullwidth #commentform ul li { margin-right:20px; margin-bottom:20px; }
+	.contact-form input[type="text"], .contact-form input[type="email"],
+	.theme-fullwidth .single-property #commentform input[type="text"],
+	.theme-fullwidth .single-blog #commentform input[type="text"] { width:154px; }
+	.contact-form textarea, .theme-fullwidth .single-property #commentform textarea,
+	.theme-fullwidth .single-blog #commentform textarea { width:566px; }
+	.agent-form ul li input[type="text"], 
+	.agent-form ul li input[type="email"], .agent-form ul li textarea { width:578px; }
+	.advance-search-widget ul li select { width:517px; }
+	.dsidx-search-widget input[type="text"] { width:434px; }
+	.dsidx-search-widget select { width: 446px; }
+	.blist-grid { width:186px; }
+	.blog-fullwidth .sticky { margin-bottom:20px !important; }
+	.testi-desc { width:430px; }
+	.dsidx-search-widget { max-width:100%; }
+	.advance-search-block .dsidx-search-widget table tr { width: 186px; }
+	.advance-search-block .dsidx-search-widget input[type="text"] { width: 168px; }
+	.advance-search-block .dsidx-search-widget input.dsidx-price { width: 65px; }
+	.advance-search-block .dsidx-search-widget table tr { margin-right: 20px; }
+	.advance-search-block.advance-search-block-page .dsidx-search-widget table tr { width: 165px !important; }
+	.advance-search-block.advance-search-block-page .dsidx-search-widget .dsidx-search-widget-propertyTypes { width: 126px !important; }
+	.advance-search-block.advance-search-block-page .dsidx-search-widget .selectBox-dropdown { width: 540px !important; }
+	
+	.advance-search-block.advance-search-block-page .dsidx-search-widget input[type="text"],
+	.advance-search-block.advance-search-block-page .dsidx-search-widget input.dsidx-improvedsqft[type="text"], 
+	.advance-search-block.advance-search-block-page .dsidx-search-widget input.dsidx-beds[type="text"], 
+	.advance-search-block.advance-search-block-page .dsidx-search-widget input.dsidx-baths[type="text"] { width: 483px !important; }
+	.advance-search-block.advance-search-block-page .dsidx-search-widget input.dsidx-price { width: 228px !important; }
+
+	.advance-search-block-page.advance-search-block-page .dsidx-widget-search { padding-bottom: 10px; }
+	.advance-search-block .dsidx-search-widget .dsidx-search-widget-propertyTypes, 
+	.dsidx-search-widget .dsidx-search-widget-propertyTypes, 
+	.dsidx-search-widget .idx-q-Location-Filter { width: 600px !important; }
+	.selectBox-dropdown .selectBox-label { width: 78% !important; }
+	.advance-search-block .dsidx-search-widget .selectBox-dropdown .selectBox-label { width: 91% !important; }
+	.advance-search-block .dsidx-search-widget label { width: 8%; }
+	.advance-search-block .dsidx-search-widget input.dsidx-improvedsqft[type="text"], 
+	.advance-search-block .dsidx-search-widget input.dsidx-beds[type="text"], 
+	.advance-search-block .dsidx-search-widget input.dsidx-baths[type="text"] { width: 132px !important; }
+	.advance-search-block-page .dsidx-search-widget label { width: 10%; }
+	.call-info { float: left; }
+	.countdown_section { width: 135px; margin-right: 20px; }
+	.social ul li a:link, .social ul li a:visited { width: 26px; padding: 10px 0; }
+	.call-info .call-us, .call-info a.login { padding: 10px 9.5px; }
+	.call-info { float: right; }
+	.sidebar .dsidx-search-widget select { width: 516px !important; }
+	.agent-fullwidth .agent-image { margin-right:20px; }
+	#bbpress-forums #bbp-search-form #bbp_search { width: 478px; }
+	.advance-search-block input.property-id[type="text"] { width: 100px !important; }
+	.property-home.portfolio-cols { margin-right: 20px !important; }
+	.property-home.portfolio-cols.last { margin-right: 0 !important; }
+	.sidebar .wpcf7 input[type='text'], 
+	.sidebar .wpcf7 input[type='email'], .sidebar .wpcf7 input[type='url'],
+	.sidebar .wpcf7 input[type='tel'], .sidebar .wpcf7 input[type='number'], 
+	.sidebar .wpcf7 input[type='date'], .sidebar .wpcf7 textarea { width: 535px; }
+	.sidebar .wpcf7-select { width: 558px; }
+	.sb-search-input { width: 550px; } 
+	.call-info { border-left: 0; }
+	.blog-timeline-image { padding: 0; border: 0 !important; }
+	.blog-timeline .even .blog-timeline-image { padding-right: 0; margin-bottom: 40px; }
+	.blog-timeline .odd .blog-timeline-image { padding-left: 0; margin-bottom: 40px; }
+	.sidebar #searchform input[type="text"] { width: 506px !important; }
+	.theme-fullwidth .single-property .agent-desc { width: 340px; }
+	.theme-fullwidth .agent-form ul li input[type="text"], 
+	.theme-fullwidth .agent-form ul li input[type="email"], 
+	.theme-fullwidth .agent-form ul li textarea { width: 578px; }
+	.single-homeland_properties .theme-fullwidth .property-four-cols ul li { margin-right: 20px; }
+	.theme-fullwidth .comment-details { width: 457px; }
+	.theme-fullwidth .comment-list .children .comment-details { width: 378px; }
+	.theme-fullwidth .comment-list .children .children .comment-details { width: 298px; }
+	#map-homepage, #map-property, #map-property-street, #map { height: 400px !important; }
+	.portfolio-image figcaption a i { top: 38%; }
+	.contact-info-alt, .contact-alt-background #map, 
+	.contact-alternate-two .contact-form, .testi-fullwidth .testi-page-list { width: 100%; }
+	.contact-info-alt { margin-bottom: 20px; }
+	.contact-alt-background { padding: 50px 0; }
+	.contact-info-alt label { margin-bottom: 6px; }
+	.contact-alternate-main { margin-right: 0; width: 100%; margin-bottom: 40px; text-align: center; }
+	.contact-alternate-main label { margin-bottom: 6px; }
+	.contact-alternate-two .contact-form input[type="text"], 
+	.contact-alternate-two .contact-form input[type="email"], 
+	.contact-alternate-two .contact-form input[type="url"], 
+	.contact-alternate-two .contact-form input[type="tel"], 
+	.contact-alternate-two .contact-form input[type="number"], 
+	.contact-alternate-two .contact-form input[type="date"], 
+	.contact-alternate-two .contact-form textarea { width: 568px; }
+	.header-six .select-menu { position: relative; top: 0; display: inline-table; }
+	.sticky-header-six { padding-top: 185px; }
+	.header-six nav { border-top: 0; text-align: center; margin-bottom: 30px; }
+	header.sticky-header-animate .select-menu { top: 27px; }
+	.single-homeland_properties .theme-fullwidth 
+	.property-list-page .property-info-agent span { width: 30.3%; }
+	footer .wpcf7 input[type="text"], footer .wpcf7 input[type="email"], 
+	footer .wpcf7 input[type="url"], footer .wpcf7 input[type="tel"], 
+	footer .wpcf7 input[type="number"], footer .wpcf7 input[type="date"], 
+	footer .wpcf7 textarea { width: 113px; }
+	footer .wpcf7-select { width: 135px; }
+	footer .homeland_widget-property-advance-search #searchform { padding: 10px; }
+	footer .advance-search-widget ul li input.property-id { width: 105px !important; }
+	footer .advance-search-widget ul li select { width: 114px !important; }
+	footer .pp-desc { width: 40%; }
+	footer .widget_search #searchform input[type="text"] { width: 88px; }
+	.list-fullwidth .agent-desc { width: 340px; }
+	.testi-fullwidth .testi-page-list { margin-right: 0; }
+	.testi-fullwidth .testi-desc { width: 470px; }
+	.services-grid-fullwidth .services-page-desc { width: 90%; }
+	.blist-two-cols iframe, .blist-two-cols .video-js { height: 188px !important; }
+
+	/*Horizontal IDX search*/
+	.dsidx-widget-quick-search .dsidx-resp-horizontal .dsidx-resp-search-form .dsidx-resp-area:last-child { margin-top: 20px !important; }
+
+	/*Vertical IDX search*/
+	.dsidx-widget-quick-search .dsidx-resp-vertical .dsidx-resp-area, 
+	.dsidx-widget-quick-search .dsidx-resp-vertical .dsidx-resp-area.dsidx-resp-area-half { 
+		width: 120px !important; 
+	}
+	.dsidx-widget-guided-search .dsidx-resp-vertical .dsidx-resp-area { 
+		width: 135px !important; margin-right: 20px !important; margin-bottom: 20px !important; 
+	}
+	.dsidx-widget-guided-search .dsidx-resp-vertical .selectBox-dropdown,
+	.dsidx-widget-guided-search .dsidx-resp-vertical .dsidx-resp-area-submit,
+	.dsidx-widget-guided-search .dsidx-resp-vertical .dsidx-resp-area-submit,
+	.dsidx-widget-quick-search .dsidx-resp-vertical .dsidx-resp-area-submit { width: 100% !important; }
+}
+
+
+/********************************
+IPHONE 4-4S-5 LANDSCAPE (568x320)
+********************************/
+
+@media only screen and (max-width: 760px) {
+	#container-boxed, #container-boxed header.sticky-header,
+	#container-boxed-left, #container-boxed-left header.sticky-header { width: 380px; }
+	.inside, .home-thumb-flexslider, .left-container,
+	.page-template-template-homepage3-php .property-list-box .grid li, 
+	.property-image, .property-three-cols .property-cols, 
+	.featured-block-two-cols, .property-two-cols .property-cols,
+	.advance-search-block .dsidx-widget.dsidx-search-widget .dsidx-search-button,
+	.coming-soon .inside, .advance-search-block input[type="submit"], .agent-contents,
+	.dual-container, .dual-container .dual-property-list .grid ul li,
+	.slider-block-thumb .home-flexslider, .blist-two-cols { width: 330px; }
+	.advance-search-block.advance-search-block-page .dsidx-widget.dsidx-search-widget .dsidx-search-button { 
+		width:270px !important; 
+	}
+	.add-email { border-right: 1px solid #E1E1E1; display: block; text-align: center; float: none; }
+	.sticky-header-container, .sticky-header2-container { padding-top: 0; }
+	header.sticky-header { position: relative; }
+	.home-thumb-flexslider .slides { width: 265px; }
+	.sb-search, .portfolio-slide-desc p, .slider-block-thumb .slider-actions { display: none; }
+	.portfolio-slide-desc { width: 280px; }
+	.portfolio-slide-desc h2 { margin-bottom: 0; }
+	.pactions label i, .pactions a i { padding: 9px; }
+	.pactions label { padding-right: 15px; }
+	.pactions label i { margin-right: 10px; }
+	.pactions a { padding-left: 15px; }
+	.pactions a i { margin-left: 10px; }
+	.logo { width:100%; text-align:center; }
+	nav { margin-bottom: 40px; }
+	.select-menu { width:330px; top:0; }
+	.es-carousel ul li { width: 330px !important; margin-right: 44px !important; }
+	.advance-search-block ul li, .call-info { margin-right:0; }
+	.selectBox-dropdown, .advance-search-block select.small, .advance-search-block a.small, 
+	.grid ul li.portfolio-cols { width: 330px !important; }
+	.property-id { width:315px !important; }
+	.selectBox-dropdown .selectBox-label { width:90% !important; }
+	.advance-search-block-page .property-id { width:255px !important; }
+	.services-list, .widget-column, .services-page-desc, .agent-property-desc, 
+	.sliding-bar .widget, .theme-fullwidth .comment-details, .comment-details, 
+	.comment-list .children .comment-details, 
+	.comment-list .children .children .comment-details,
+	.theme-fullwidth .comment-list .children .comment-details,
+	.theme-fullwidth .comment-list .children .children .comment-details, 
+	.featured-block-two-cols .featured-list, .list-fullwidth .agent-desc,
+	.testi-fullwidth .testi-desc { width: 100%; }
+	.sliding-bar { position: absolute; }
+	.welcome-block h2, .welcome-pb-block h2 { font-size:40px; margin-bottom:20px; }
+	.welcome-block label, .welcome-pb-block label { font-size:20px; line-height:32px; }
+	.feat-desc, .bdesc { width:64%; }
+	.widget-column { margin-right:0; }
+	.homeland_widget-contact-info ul li label { width:93%; }
+	.nsu-form input[type="email"] { width:235px; }
+	.call-info { float:left; border-top: 1px solid #e1e1e1; border-left: 1px solid #e1e1e1; }
+	.header-five .social { margin-right: 0; float: none; }
+	.header-six .call-info, .header-five .call-info { border-bottom: 1px solid #e1e1e1; }
+	.call-info .call-us, .call-info a.login { padding-left:12px; padding-right:11.8px; }
+	.home-flexslider .flex-direction-nav { top:40%; }
+	.services-block-bg, .services-pb-block { background-repeat:repeat; }
+	.home-thumb-flexslider .flex-control-thumbs li { width:60px; }
+	.property-home { margin-right:20px !important; width:250px !important; }	
+	.page-template-template-homepage3-php .property-home { width:330px !important; }	
+	a.view-property:link, a.view-property:visited { padding:10px 20px; }
+	.feat-desc, .bdesc { width:56%; }
+	.homeland_widget-contact-info ul li label { width:91%; }
+	.testimonial-block h3, .testimonial-pb-block h3 { font-size:30px; margin-bottom:20px; }
+	.ptitle { padding:20px; }
+	.subtitle { line-height:29px; }
+	.subtitle label { padding-left:20px; padding-right:20px; font-size:11px; }
+	.agent-about-list .agent-image { width:230px; }
+	.pp-desc { width:69%; }
+	.services-page-desc { text-align:center; }
+	.services-page-icon { margin-right:0; margin-left:20%; }
+	.property-image, .property-two-cols .property-cols { margin-right:0; margin-bottom:20px; }
+	.property-four-cols .property-cols { width:240px; margin-right:0; }
+	.property-three-cols .property-cols figcaption a i, 
+	.property-four-cols .property-cols figcaption a i,
+	.grid ul li.portfolio-cols figcaption a i, 
+	.featured-block-two-cols .featured-list figcaption a i { top: 43%; }
+	.property-grid-sidebar .masonry ul li { width: 240px; margin-right: 0; margin-bottom: 40px; }
+	.property-page-name { padding:10px; width:auto; }
+	.property-page-status span, .property-page-price span { font-size:14px; }
+	.property-page-name h3 { font-size:18px; }
+	.share span, .agent-image { margin-bottom:20px; }
+	.agent-social ul li { margin-right:30px; }
+	.comment-list .children .parent { margin-left:40px; }
+	.comment-list .children .children .parent { margin-left:80px; }
+	#commentform input[type="text"], #commentform textarea, .contact-form input[type="text"], 
+	.contact-form input[type="email"], .contact-form textarea,
+	.theme-fullwidth .single-property #commentform input[type="text"],
+	.theme-fullwidth .single-property #commentform textarea,
+	.theme-fullwidth .single-blog #commentform input[type="text"],
+	.theme-fullwidth .single-blog #commentform textarea,
+	.left-container .wpcf7 input[type="text"], 
+	.left-container .wpcf7 input[type="email"], 
+	.left-container .wpcf7 input[type="tel"], 
+	.left-container .wpcf7 input[type="url"], 
+	.left-container .wpcf7 input[type="number"], 
+	.left-container .wpcf7 input[type="date"],
+	.left-container .wpcf7 textarea { width:298px; }
+	.social ul li a:link, .social ul li a:visited { width:35px; }
+	.sidebar { width:88%; }
+	.agent-form ul li input[type="text"], .agent-form ul li input[type="email"], .agent-form ul li textarea,
+	.theme-fullwidth .agent-form ul li input[type="text"], 
+	.theme-fullwidth .agent-form ul li input[type="email"], 
+	.theme-fullwidth .agent-form ul li textarea { width:308px; }
+	.advance-search-widget ul li select { width: 249px; }
+	.dsidx-search-widget input[type="text"] { width:166px; }
+	.dsidx-search-widget select { width: 178px; }
+	.sitemap { width:100%; margin-right:0; }
+	.blist-grid, .blist-fullwidth { margin-right:0; width:330px; }
+	.testi-desc { width: 290px; }
+	.testi-page-list { text-align: center; }
+	.testi-page-list img { margin-right:0; margin-bottom:30px; text-align: center; float: none; }
+	.blist-grid img, .blist-fullwidth img, .countdown_row, .theme-fullwidth .services-page-desc,
+	.theme-fullwidth .single-property .agent-desc { width:100%; }
+	#dsidx-listings .dsidx-media .dsidx-photo { position: relative; width: 250px; }
+	#dsidx-listings .dsidx-primary-data, #dsidx-listings .dsidx-secondary-data { 
+		padding-left: 0; width: 100%; 
+	}
+	#dsidx.dsidx-details .dsidx-contact-form table input.dsidx-text { width: 200px; }
+	#dsidx.dsidx-details .dsidx-contact-form table textarea { width: 300px; }
+	.advance-search-block .dsidx-search-widget .dsidx-search-widget-propertyTypes, 
+	.dsidx-search-widget .dsidx-search-widget-propertyTypes, 
+	.dsidx-search-widget .idx-q-Location-Filter { 
+		width: 330px !important; position: relative; top: 0; 
+	}
+	.advance-search-block .dsidx-search-widget input[type="text"],
+	.advance-search-block.advance-search-block-page .dsidx-search-widget table tr,
+	.advance-search-block.advance-search-block-page .dsidx-search-widget 
+	.dsidx-search-widget-propertyTypes { width: 314px !important; }
+	.sidebar .dsidx-search-widget input[type="text"] { width: 165px !important; }
+	.advance-search-block.advance-search-block-page .dsidx-search-widget .selectBox-dropdown { width: 270px !important; }
+	.advance-search-block.advance-search-block-page .dsidx-search-widget input[type="text"] { width: 254px !important; }
+	.advance-search-block.advance-search-block-page .dsidx-search-widget input.dsidx-price { width: 112px !important; }
+	.advance-search-block-page.advance-search-block-page .dsidx-widget-search { padding-bottom: 10px; }
+	.advance-search-block .dsidx-search-widget label { width: 15%; }
+	.advance-search-block-page .dsidx-search-widget label { width: 20%; }
+	.advance-search-block .dsidx-search-widget input[type="text"], 
+	.advance-search-block.advance-search-block-page .dsidx-search-widget table tr, 
+	.advance-search-block.advance-search-block-page .dsidx-search-widget .dsidx-search-widget-propertyTypes,
+	.advance-search-block .dsidx-search-widget input.dsidx-improvedsqft[type="text"], 
+	.advance-search-block .dsidx-search-widget input.dsidx-beds[type="text"], 
+	.advance-search-block .dsidx-search-widget input.dsidx-baths[type="text"] { 
+		width: 280px !important; margin-right: 0; 
+	}
+	.advance-search-block.advance-search-block-page .dsidx-search-widget input[type="text"], 
+	.advance-search-block.advance-search-block-page .dsidx-search-widget input.dsidx-improvedsqft[type="text"], 
+	.advance-search-block.advance-search-block-page .dsidx-search-widget input.dsidx-beds[type="text"], 
+	.advance-search-block.advance-search-block-page .dsidx-search-widget input.dsidx-baths[type="text"] { 
+		width: 270px !important; margin-right: 0; 
+	}
+	.countdown_section { width: 100%; margin-right: 0; margin-bottom: 20px; }
+	.coming-soon .social { margin-bottom: 30px; margin-top: 20px; }
+	.coming-soon h2 span { line-height: 40px; }
+	.sidebar .dsidx-search-widget select { width: 248px !important; }
+	.advance-search-block .dsidx-search-widget .selectBox-dropdown .selectBox-label { width: 86% !important; }
+	.single-homeland_properties .property-info-agent span,
+	.property-page-id, .property-page-type, .property-page-status { 
+		display: block; border-right: 0; border-bottom: 1px solid #CCC; 
+	}
+	.single-homeland_properties .property-info-agent span:last-child { border-bottom: 0; }
+	.property-page-id, .property-page-type, .property-page-status { float: none; }
+	#bbpress-forums #bbp-search-form #bbp_search { width: 208px; }
+	#bbpress-forums fieldset.bbp-form { width: 100%; }
+	.advance-search-block input.property-id[type="text"] { width: 312px !important; }
+	.block_hints .block_free, .block_hints .block_time, 
+	.block_hints .block_booked, .block_hints .block_pending, 
+	.block_hints .block_check_in_out, .datepick-inline .datepick-days-cell { padding: 0 !important; }
+	.search-count { width: 100%; }
+	.filter-sort-order { float: left; margin-top: 55px; width: 100%; }
+	.sidebar .wpcf7 input[type='text'], .sidebar .wpcf7 input[type='email'], 
+	.sidebar .wpcf7 input[type='url'],
+	.sidebar .wpcf7 input[type='tel'], .sidebar .wpcf7 input[type='number'], 
+	.sidebar .wpcf7 input[type='date'], 
+	.sidebar .wpcf7 textarea { width: 268px; }
+	.sidebar .wpcf7-select { width: 290px; }
+	.sidebar .nsu-form input[type="email"], .sidebar .nsu-form input[type="text"] { width: 263px; }
+	.property-amenities a:link, .property-amenities a:visited, .amenities-list { width: 100%; }
+	.sidebar #searchform input[type="text"] { width: 238px !important; }
+	.share span { margin-right: 10px; }
+	#map-homepage, #map-property, #map-property-street, 
+	#map, .contact-alt-background #map { height: 300px !important; }
+	.property-one-cols .property-cols .property-info span { font-size: 11px; padding: 6px 10px; }
+	.footer-layout-two .copyright, .footer-layout-two .footer-menu,
+	.footer-layout-three .copyright, .footer-layout-three .footer-menu, 
+	.footer-layout-five .copyright, .footer-layout-five .footer-menu { width: 100%; text-align: center; }
+	.footer-layout-two .copyright, .footer-layout-three .copyright, 
+	.footer-layout-five .copyright { display: block; margin-top: 30px; }
+	.footer-layout-two .footer-menu ul, .footer-layout-three .footer-menu ul, 
+	.footer-layout-five .footer-menu ul { display: inline-table; text-align: center; }
+	.footer-layout-three .copyright { margin-top: 0; }
+	.footer-layout-three .footer-menu, .footer-layout-five .footer-menu { margin-bottom: 30px; }
+	.footer-layout-two a#toTop, .footer-layout-three a#toTop, .footer-layout-four a#toTop,
+	.footer-layout-five a#toTop { left: 45%; }
+	.property-list-page .property-info-agent span,
+	.single-homeland_properties .theme-fullwidth .property-list-page .property-info-agent span { 
+		width: 88.9%; border-right: 1px solid #CCC; padding: 8px 15px; 
+	}
+	.blog-text h4 { width: 200px; }
+	.contact-alternate-two .contact-form input[type="text"], 
+	.contact-alternate-two .contact-form input[type="email"], 
+	.contact-alternate-two .contact-form input[type="url"], 
+	.contact-alternate-two .contact-form input[type="tel"], 
+	.contact-alternate-two .contact-form input[type="number"], 
+	.contact-alternate-two .contact-form input[type="date"], 
+	.contact-alternate-two .contact-form textarea { width: 298px; }
+	footer .wpcf7 input[type="text"], footer .wpcf7 input[type="email"], 
+	footer .wpcf7 input[type="url"], footer .wpcf7 input[type="tel"], 
+	footer .wpcf7 input[type="number"], footer .wpcf7 input[type="date"], 
+	footer .wpcf7 textarea { width: 308px; }
+	footer .wpcf7-select { width: 330px; }
+	footer .homeland_widget-property-advance-search #searchform { padding: 20px; }
+	footer .advance-search-widget ul li input.property-id { width: 280px !important; }
+	footer .advance-search-widget ul li select { width: 290px !important; }
+	footer .pp-desc { width: 72%; }
+	footer .widget_search #searchform input[type="text"] { width: 282px; }
+	.services-grid-fullwidth .services-page-icon { float: none; margin-left: 0; margin-bottom: 30px; }
+	.blist-two-cols { margin-right: 0; }
+
+	/*Horizontal IDX search*/
+	.dsidx-widget-quick-search .dsidx-resp-horizontal .dsidx-resp-area.dsidx-resp-area-half { 
+		float: none !important; width: 100% !important; padding-right: 0 !important; padding-left: 0 !important;
+	}
+
+	/*Vertical IDX search*/
+	.dsidx-widget-quick-search .dsidx-resp-vertical .dsidx-resp-area, 
+	.dsidx-widget-quick-search .dsidx-resp-vertical .dsidx-resp-area.dsidx-resp-area-half,
+	.dsidx-widget-guided-search .dsidx-resp-vertical .dsidx-resp-area { width: 330px !important; }
+	.sidebar .dsidx-resp-vertical .dsidx-resp-area, 
+	.sidebar .dsidx-resp-vertical .dsidx-resp-area.dsidx-resp-area-half { width: 248px !important; }
+}
+
+
+/********************************
+IPHONE 4-4S-5 PORTRAIT (320x568)
+********************************/
+
+@media only screen and (max-width: 450px) {
+	#container-boxed, #container-boxed header.sticky-header,
+	#container-boxed-left, #container-boxed-left header.sticky-header { width:300px; }
+	.inside, .select-menu, .home-thumb-flexslider, .left-container, .featured-block-two-cols, 
+	.agent-desc, .single-property .agent-desc, .blist-grid, .blist-fullwidth,
+	.advance-search-block .dsidx-widget.dsidx-search-widget .dsidx-search-button, .coming-soon .inside,
+	.advance-search-block input[type="submit"], .agent-contents, 
+	.slider-block-thumb .home-flexslider, .blist-two-cols { width:250px; }
+	.testi-desc { width: 210px; }
+	.grid ul li.portfolio-cols, .es-carousel ul li { width: 250px !important; }
+	.sidebar { width:84%; }
+	.social { margin-left: 3px; }
+	.social ul li a:link, .social ul li a:visited { width:26px; }
+	.call-info .call-us { width:208px; text-align:center; padding-left: 20px; padding-right: 20px; }
+	.sb-search, .slider-actions { display:none; }
+	.call-info a.login { display: block; float: none; text-align: center; border-bottom: 1px solid #e1e1e1; }
+	.call-info .call-us { float: none; border-bottom: 1px solid #e1e1e1; }
+	.register.login { border-bottom: 0 !important; }
+	.home-flexslider .flex-direction-nav { top:28%; }
+	.selectBox-dropdown, .advance-search-block select.small, 
+	.advance-search-block a.small { width:250px !important; }
+	.selectBox-dropdown .selectBox-label { width:75% !important; }
+	.property-id { width:233px !important; }
+	.welcome-block h2, .welcome-pb-block h2 { font-size:26px; }
+	.welcome-block label, .welcome-pb-block label { font-size:18px; }
+	.feat-desc, .bdesc { width:42%; }
+	.homeland_widget-contact-info ul li label { width:88%; }
+	.copyright { width:200px; display:block; }
+	.home-thumb-flexslider .slides { width:206px; }
+	.home-thumb-flexslider .flex-control-thumbs li { width: 40px; }
+	.page-template-template-homepage3-php .property-home, 
+	.property-image, .property-cols { width:250px !important; }
+	.testimonial-block h3, .testimonial-pb-block h3 { font-size:22px; }
+	.testimonial-block label, .testimonial-pb-block label { font-size:14px; line-height:22px; }
+	.advance-search-block-page .property-id { width:173px !important; }
+	.advance-search-block.advance-search-block-page .search-title h4 { font-size:18px; }
+	.pp-desc { width:57%; }
+	.services-page-icon { margin-left:12%; }
+	.advance-search-block label { font-size:14px; }
+	.cat-toogles ul li { margin-bottom:1px; }
+	.cat-toogles ul li a:link, .cat-toogles ul li a:visited { font-size:12px; }
+	.property-four-cols .property-cols { width:240px !important; }
+	.comment-list .children .parent { margin-left:20px; }
+	.comment-list .children .children .parent { margin-left:40px; }
+	#commentform input[type="text"], #commentform textarea, 
+	.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea,
+	.theme-fullwidth .single-property #commentform input[type="text"],
+	.theme-fullwidth .single-property #commentform textarea,
+	.theme-fullwidth .single-blog #commentform input[type="text"],
+	.theme-fullwidth .single-blog #commentform textarea,
+	.left-container .wpcf7 input[type="text"], 
+	.left-container .wpcf7 input[type="email"], 
+	.left-container .wpcf7 input[type="tel"], 
+	.left-container .wpcf7 input[type="url"], 
+	.left-container .wpcf7 input[type="number"], 
+	.left-container .wpcf7 input[type="date"],
+	.left-container .wpcf7 textarea { width:218px; }
+	.contact-info label { display:block; }
+	.blog-text h4 { width:140px; }
+	.ptitle { font-size:25px; line-height:30px; }
+	.sidebar #dribbble li img, .sidebar .homeland_widget-flickr ul li img { width:46px; height:46px; }
+	.agent-form ul li input[type="text"], .agent-form ul li input[type="email"], .agent-form ul li textarea,
+	.theme-fullwidth .agent-form ul li input[type="text"], 
+	.theme-fullwidth .agent-form ul li input[type="email"], 
+	.theme-fullwidth .agent-form ul li textarea { width:228px; }
+	.advance-search-widget ul li select, .advance-search-widget ul li input.property-id { width:168px; margin-left:0; }
+	.dsidx-search-widget select { width: 98px; }
+	.dsidx-search-widget input[type="text"] { width: 86px; }
+	.advance-search-block .dsidx-widget.dsidx-search-widget .dsidx-search-button input[type='submit'],
+	.advance-search-block.advance-search-block-page .dsidx-widget.dsidx-search-widget .dsidx-search-button input[type='submit'] { 
+		font-size: 14px;
+	}
+	.advance-search-block .dsidx-search-widget .dsidx-search-widget-propertyTypes, 
+	.dsidx-search-widget .dsidx-search-widget-propertyTypes, 
+	.dsidx-search-widget .idx-q-Location-Filter { width: 250px !important; }
+	.advance-search-block .dsidx-search-widget label { width: 20%; }
+	.advance-search-block-page .dsidx-search-widget label { width: 30%; }
+	.advance-search-block .dsidx-search-widget input[type="text"], 
+	.advance-search-block.advance-search-block-page .dsidx-search-widget table tr, 
+	.advance-search-block.advance-search-block-page .dsidx-search-widget .dsidx-search-widget-propertyTypes,
+	.advance-search-block .dsidx-search-widget input.dsidx-improvedsqft[type="text"], 
+	.advance-search-block .dsidx-search-widget input.dsidx-beds[type="text"], 
+	.advance-search-block .dsidx-search-widget input.dsidx-baths[type="text"] { 
+		width: 200px !important; margin-right: 0; 
+	}
+	.advance-search-block.advance-search-block-page .dsidx-search-widget input[type="text"], 
+	.advance-search-block.advance-search-block-page .dsidx-search-widget input.dsidx-improvedsqft[type="text"], 
+	.advance-search-block.advance-search-block-page .dsidx-search-widget input.dsidx-beds[type="text"], 
+	.advance-search-block.advance-search-block-page .dsidx-search-widget input.dsidx-baths[type="text"] { width: 190px !important; }
+	.advance-search-block .dsidx-search-widget input.dsidx-price[type="text"] { width: 100px !important; }
+	.dsidx-search-widget input[type="text"] { width: 234px; }
+	.advance-search-block.advance-search-block-page .dsidx-search-widget table tr,
+	.advance-search-block.advance-search-block-page .dsidx-search-widget .selectBox-dropdown,
+	.advance-search-block.advance-search-block-page .dsidx-widget.dsidx-search-widget .dsidx-search-button { width: 190px !important; }
+	.advance-search-block.advance-search-block-page .dsidx-search-widget input[type="text"] { width: 174px !important; }
+	.sidebar .dsidx-search-widget input[type="text"] { width: 85px !important; }
+	.sidebar .dsidx-search-widget select { width: 168px !important; }
+	.featured-flexslider .slides li { width: 210px; }
+	.advance-search-block input.property-id[type="text"] { width: 232px !important; }
+	.filter-sort-order select { width: 100%; margin-left: 0; }
+	.filter-sort-order label { margin-left: 0; }
+	.sidebar .wpcf7 input[type='text'], .sidebar .wpcf7 input[type='email'], 
+	.sidebar .wpcf7 input[type='url'],
+	.sidebar .wpcf7 input[type='tel'], .sidebar .wpcf7 input[type='number'], 
+	.sidebar .wpcf7 input[type='date'], 
+	.sidebar .wpcf7 textarea { width: 188px; }
+	.sidebar .wpcf7-select { width: 210px; }
+	.call-info { border-left: 1px solid #e1e1e1; }
+	.sidebar .nsu-form input[type="email"], .sidebar .nsu-form input[type="text"] { width: 182px; }
+	.sidebar #searchform input[type="text"] { width: 158px !important; }
+	.featured-block-two-cols .featured-list figcaption a i { top: 40%; }
+	.contact-alt-background #map { height: 200px !important; }
+	.property-list-page .property-info-agent span,
+	.single-homeland_properties .theme-fullwidth .property-list-page .property-info-agent span { width: 85.5%; }
+	.contact-alternate-two .contact-form input[type="text"], 
+	.contact-alternate-two .contact-form input[type="email"], 
+	.contact-alternate-two .contact-form input[type="url"], 
+	.contact-alternate-two .contact-form input[type="tel"], 
+	.contact-alternate-two .contact-form input[type="number"], 
+	.contact-alternate-two .contact-form input[type="date"], 
+	.contact-alternate-two .contact-form textarea { width: 218px; }
+	footer .wpcf7 input[type="text"], footer .wpcf7 input[type="email"], 
+	footer .wpcf7 input[type="url"], footer .wpcf7 input[type="tel"], 
+	footer .wpcf7 input[type="number"], footer .wpcf7 input[type="date"], 
+	footer .wpcf7 textarea { width: 228px; }
+	footer .wpcf7-select { width: 250px; }
+	footer .pp-desc { width: 65%; }
+	footer .property-desc-slide { width: 84%; }
+	footer .widget_search #searchform input[type="text"] { width: 202px; }
+	footer .advance-search-widget ul li input.property-id { width: 200px !important; }
+	footer .advance-search-widget ul li select { width: 210px !important; }
+	a.view-profile { position: relative; }
+
+	/*Vertical IDX search*/
+	.dsidx-widget-quick-search .dsidx-resp-vertical .dsidx-resp-area, 
+	.dsidx-widget-quick-search .dsidx-resp-vertical .dsidx-resp-area.dsidx-resp-area-half,
+	.dsidx-widget-guided-search .dsidx-resp-vertical .dsidx-resp-area { width: 250px !important; }
+	.sidebar .dsidx-resp-vertical .dsidx-resp-area, 
+	.sidebar .dsidx-resp-vertical .dsidx-resp-area.dsidx-resp-area-half { width: 168px !important; }
+}

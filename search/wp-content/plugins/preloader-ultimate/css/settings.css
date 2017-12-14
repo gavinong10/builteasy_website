@@ -1,0 +1,192 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+body.preloader-ultimate:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; 
+  bottom: 0;
+  z-index: 1000000;
+  background-color: rgba(26,188,156,0.5) !important;
+}
+
+.preloader-ultimate-container{
+  background-color: rgba(26,188,156,0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0;
+  z-index: 1000000;
+  line-height: 0;
+}
+
+input[type=radio]:checked:before,
+input[type=checkbox]:checked:before{
+  color: #1abc9c;
+}
+input[type=radio]:checked:before{
+  background-color: #1abc9c;
+}
+.label{
+  color: #23282d;
+  font-size:14px;
+  font-weight:600;
+}
+.form-table p.description{
+	font-weight: normal;
+  font-size: 13px !important;
+}
+
+
+.nav-tab-wrapper{
+  margin-bottom: 5px;
+  margin-top: 12px;
+}
+.nav-tab-wrapper .nav-tab{
+  cursor: pointer;
+}
+.nav-tab-wrapper .nav-tab-active{
+  background-color: #fff;
+}
+
+.preloader-ultimate-settings.global-settings{
+  padding: 30px;
+  background-color: #fff;
+}
+.preloader-ultimate-settings{
+  padding: 10px 0;
+}
+.preloader-ultimate-settings .form-table th{
+  padding: 10px 10px 10px 0;
+}
+.preloader-ultimate-settings h2{
+  color: #0073aa;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #0073aa;
+}
+.preloader-ultimate-settings select,
+.preloader-ultimate-settings input[type="text"]{
+  width: 100%;
+}
+
+
+.save-options{
+	float: right;
+}
+.spinner-list{
+  margin-bottom: 20px;
+}
+.img-con{
+	width: 60px;
+	height: 60px;
+	padding: 5px;
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+  position: relative;
+  line-height: 0;
+	background-color: #1abc9c;
+}
+.img-con:hover{
+  border: 2px solid #F1C40F;
+}
+/*svg loader*/
+.img-con > img{
+  width: 100%;
+  height: 100%;
+} 
+/*css3 loader and custom loader upload*/
+.img-con > div, 
+.upload-preview > img{
+  position: absolute !important;
+  top: 0; left: 0; bottom: 0; right: 0;
+  margin: auto;
+}
+.custom-upload{
+  width: 300px;
+}
+.upload-preview{
+	height: 200px;
+	width: 100%;
+	margin: 10px 0;
+	position: relative;
+	border: 1px solid #ddd;
+}
+.upload-preview > img{
+	max-width: 200px;
+	max-height: 200px;
+}
+/*gif loader*/
+.gif-img-list .img-con {
+  padding: 0;
+  background-color: #fff;
+}
+/*custom html*/
+.custom-html{
+  width: 300px;
+}
+.custom-html textarea{
+  width: 100%;
+  height: 200px;
+  margin: 10px 0;
+}
+
+.center-spin{
+  position: absolute !important;
+  top: 0; left: 0; bottom: 0; right: 0;
+  margin: auto;
+}
+#spinner-preview,
+#ie-spinner-preview{
+	width: 100%;
+  line-height: 0;
+	min-height: 120px;
+	position: relative;
+	background-color: #1abc9c;
+	outline: 1px solid #ddd;
+}
+#css-width > div,
+#ie-css-width > div{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.required{
+  color: #888;
+  font-size: 13px;
+  font-style: italic;
+}
+.wp-list-table thead tr th:nth-child(5){
+  width: 240px;
+}
+.table-preview{
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 50px;
+  line-height: 0;
+  background-color: #1abc9c;
+}
+.slider-con{
+  position: relative;
+  padding-left: 60px;
+  width: 100%;
+}
+.slider-con > div:nth-child(2){
+  position: absolute;
+  left: 0;
+  top: 0;  
+  font-weight: bold;
+  font-size: 16px;
+}

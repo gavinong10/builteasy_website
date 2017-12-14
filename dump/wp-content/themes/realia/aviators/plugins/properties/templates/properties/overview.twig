@@ -1,0 +1,91 @@
+<div class="pull-left overview">
+    <div class="row">
+        <div class="span3">
+            <h2>{{ wp.__('Overview', 'aviators') }}</h2>
+
+            <table>
+                <tbody>
+                <tr>
+                    <th>{{ wp.__('ID', 'aviators') }}:</th>
+                    <td>
+                        <strong>#{% if wp.get_post_meta(post.ID, '_property_id').0 %}{{ wp.get_post_meta(post.ID, '_property_id').0 }}{% else %}{{ post.ID }}{% endif %}</strong
+                    </td>
+                </tr>
+
+                {% if wp.get_post_meta(post.ID, '_property_price').0 %}
+                    <tr>
+                        <th>{{ wp.__('Price', 'aviators') }}:</th>
+                        <td>
+                            {% if wp.get_post_meta(post.ID, '_property_custom_text').0 %}
+                                {{ wp.get_post_meta(post.ID, '_property_custom_text').0 }}
+                            {% else %}
+                                {{ wp.aviators_price_format(wp.get_post_meta(post.ID, '_property_price').0) }}
+
+                                {% if wp.get_post_meta(post.ID, '_property_price_suffix').0 %}
+                                    <span class="suffix">{{ wp.get_post_meta(post.ID, '_property_price_suffix').0 }}</span>
+                                {% endif %}
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% endif %}
+
+                <tr>
+                    <th>{{ wp.__('Type', 'aviators') }}:</th>
+                    <td>{{ wp.wp_get_post_terms(post.ID, 'property_types').0.name }}</td>
+                </tr>
+
+                {% if wp.wp_get_post_terms(post.ID, 'property_contracts').0 %}
+                    <tr>
+                        <th>{{ wp.__('Contract', 'aviators') }}:</th>
+                        <td>{{ wp.wp_get_post_terms(post.ID, 'property_contracts').0.name }}</td>
+                    </tr>
+                {% endif %}
+
+                <tr>
+                    <th>{{ wp.__('Location', 'aviators') }}:</th>
+                    <td>{{ wp.wp_get_post_terms(post.ID, 'locations').0.name }}</td>
+                </tr>
+
+                {% if wp.get_post_meta(post.ID, '_property_hide_baths').0 != '1' %}
+                    {% if wp.get_post_meta(post.ID, '_property_bathrooms').0 %}
+                        <tr>
+                            <th>{{ wp.__('Bathrooms', 'aviators') }}:</th>
+                            <td>{{ wp.get_post_meta(post.ID, '_property_bathrooms').0 }}</td>
+                        </tr>
+                    {% endif %}
+                {% endif %}
+
+                {% if wp.get_post_meta(post.ID, '_property_hide_beds').0 != '1' %}
+                    {% if wp.get_post_meta(post.ID, '_property_bedrooms').0 %}
+                        <tr>
+                            <th>{{ wp.__('Bedrooms', 'aviators') }}:</th>
+                            <td>{{ wp.get_post_meta(post.ID, '_property_bedrooms').0 }}</td>
+                        </tr>
+                    {% endif %}
+                {% endif %}
+
+                {% if wp.get_post_meta(post.ID, '_property_area').0 %}
+                    <tr>
+                        <th>{{ wp.__('Area', 'aviators') }}:</th>
+                        <td>{{ wp.get_post_meta(post.ID, '_property_area').0 }}{{ wp.aviators_settings_get_value('properties', 'units', 'area')|raw }}</td>
+                    </tr>
+                {% endif %}
+
+                {% if (wp.aviators_settings_get_value('properties', 'common', 'enable_rating')) %}
+                    <tr>
+                        <th>
+                            {{ wp.__('Rating', 'aviators') }}:
+                        </th>
+                        <td>
+                            {{  wp.aviators_templates_helpers_kk_star_ratings(post.ID)|raw }}
+                        </td>
+                    </tr>
+                {% endif %}
+
+                </tbody>
+            </table>
+        </div>
+        <!-- /.span2 -->
+    </div>
+    <!-- /.row -->
+</div><!-- /.overview -->

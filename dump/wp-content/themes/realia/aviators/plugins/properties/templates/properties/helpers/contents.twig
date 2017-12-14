@@ -1,0 +1,1 @@
+new Array({% for property in properties %}'{% include 'properties/map-infobox.twig' with {'property': property} %}'{% if not loop.last %},{% endif %}{% endfor %})

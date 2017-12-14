@@ -1,0 +1,45 @@
+.not-found { background-image: url('../img/icons/404.png'); background-position: center top; background-repeat: no-repeat; background-size: 197px 218px; margin-bottom: 100px; margin-top: 100px; padding-top: 120px;
+  @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+    background-image: url('../img/icons/404@2x.png');
+  }
+
+  strong { color: $body-heading-color; display: block; font-size: 222px; font-weight: normal; margin-bottom: 100px; text-align: center; 
+    @media (max-width: 767px) {
+      font-size: 130px;
+    }
+  }
+  h1 { font-size: 30px; font-weight: lighter; text-align: center; }
+  hr { margin: 20px auto; width: 365px; 
+    @media (max-width: 767px) {
+      width: auto;
+    }
+  }
+  form { float: none; margin: 27px auto 10px auto; width: 323px;
+    @media (max-width: 767px) {
+      width: 193px; 
+    } 
+    .input-append {
+      label { display: none; }
+      input { @include border-radius(0px); border-right: 0px; width: 280px; 
+        @media (max-width: 979px) {
+          height: 20px !important; 
+        }
+        @media (max-width: 767px) {
+          width: 150px;
+        }
+      }
+      input[type=submit] { @include background-image(none); @include border-radius(0px); @include box-shadow(none); @include text-shadow(none);
+        background-color: #fff; background-image: url('../img/icons/search.png'); background-position: center center; background-repeat: no-repeat; background-size: 13px 13px; border: 1px solid $forms-input-append-border-color; border-left: 0px; display: inline-block; margin: 0px 0px 0px -5px; padding-top: 6px; padding-bottom: 6px; text-indent: -9999px; width: 50px;
+
+        @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+          background-image: url('../img/icons/search@2x.png');
+        }
+      }
+
+      .control-group { display: inline-block; margin: 0px; }
+    }
+  }
+  p { font-size: 18px; text-align: center;
+    a { text-decoration: underline; }
+  }
+}

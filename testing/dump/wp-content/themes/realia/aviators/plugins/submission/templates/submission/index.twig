@@ -1,0 +1,70 @@
+<div class="clearfix">
+    <div class="pull-left">
+        <h1 class="page-header">{{ wp.get_the_title() }}</h1>
+    </div>
+    <!-- /.pull-left -->
+
+    <div class="pull-right">
+        <a href="?action=add" class="btn btn-primary arrow-right add-submission">{{ wp.__('Add new submission', 'aviators') }}</a>
+    </div>
+    <!-- /.pull-right -->
+</div><!-- /.clearfix -->
+
+{% if wp.have_posts() %}
+    <table class="table submissions-table">
+        <thead>
+        <tr>
+            <th>{{ wp.__('Image', 'aviators') }}</th>
+            <th>{{ wp.__('Title', 'aviators') }}</th>
+            <th>{{ wp.__('Created', 'aviators') }}</th>
+            <th>{{ wp.__('Status', 'aviators') }}</th>
+            <th>{{ wp.__('Actions', 'aviators') }}</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        {% for post in posts %}{{ wp_query.the_post() }}
+            <tr>
+                <td class="thumbnail">
+                    {% if wp.has_post_thumbnail(post.ID) %}
+                        <a href="{{ wp.get_permalink(post.ID) }}">
+                            {{ wp.get_the_post_thumbnail(post.ID, 'admin-thumb')|raw }}
+                        </a>
+                    {% else %}
+                        -
+                    {% endif %}
+                </td>
+
+                <td class="title">
+                    <a href="{{ wp.get_permalink(post.ID) }}">{{ post.post_title }}</a>
+                </td>
+
+                <td class="post-date">
+                    {{ wp.mysql2date(wp.get_option('date_format'), post.post_date) }}
+                </td>
+
+                <td class="status">
+                    <strong class="{{ wp.get_post_status(post.ID) }}">{{ wp.get_post_statuses[wp.get_post_status(post.ID)] }}</strong>
+                </td>
+
+                <td class="actions">
+
+                    {% set links = wp.aviators_properties_property_get_actions(post.ID) %}
+                    {% for link in links %}
+                        {{ link|raw }}
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr class="sep">
+                <td colspan="5"></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    {{ wp.aviators_paging_nav() }}
+{% else %}
+    <p>
+        {{ wp.__('No submisssions found.', 'aviators') }}
+    </p>
+{% endif %}

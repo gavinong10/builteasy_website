@@ -1,0 +1,9 @@
+{% if tabs %}{% if tabs|length > 1 %}
+    <h2 class="nav-tab-wrapper">
+        {% for tab in tabs %}
+            <a href="?page={{ tab.settings.subpage_slug }}&tab={{ tab.settings.slug }}" class="nav-tab {% if active_tab == tab.settings.slug %}nav-tab-active{% endif %}">
+                {{ tab.settings.title }}
+            </a>
+        {% endfor %}
+    </h2>
+{% endif %}{% endif %}

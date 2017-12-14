@@ -1,0 +1,1314 @@
+<?php
+/**
+ * UI page containing all components / typography / user interaction examples required in thrive admin UI
+ */ ?>
+<div class="tvd-container">
+	<h3 class="tvd-section-title">
+		Typography
+	</h3>
+
+	<h1>Thrive UI toolkit - this is a heading 1</h1>
+
+	<h2>H2 heading</h2>
+
+	<h3>H3 heading</h3>
+	<h4>H4 heading</h4>
+
+	<p>Paragraph Lorem ipsum dolor sit amet, <strong>consectetur</strong> <em>adipisicing</em> elit.
+		Commodi, non?</p>
+
+	<p>
+		All classes are prefixed with tvd-
+	</p>
+
+	<h3>Alignment classes</h3>
+
+	<p class="tvd-left-align">Add .left-align class</p>
+
+	<p class="tvd-right-align">Add .right-align class</p>
+
+	<p class="tvd-center-align">Add .center-align class</p>
+
+	<h3>Float classes</h3>
+
+	<div class="tvd-left">
+		<p>Add .left class</p>
+	</div>
+	<div class="tvd-right">
+		<p>Add .right class</p>
+	</div>
+	<div class="tvd-clearfix"></div>
+
+	<h3 class="tvd-section-title">
+		Forms
+	</h3>
+
+	<div class="tvd-row">
+		<form class="tvd-col tvd-s12">
+			<div class="tvd-row">
+				<div class="tvd-col tvd-s6">
+					<div class="tvd-input-field">
+						<input id="first_name" type="text" class="tvd-validate">
+						<label for="first_name">First name</label>
+					</div>
+				</div>
+				<div class="tvd-col tvd-s6">
+					<div class="tvd-input-field tvd-prefix">
+						<i class="tvd-icon-search"></i>
+						<input id="first_name" type="text" class="tvd-validate">
+						<label for="first_name">input with icon</label>
+					</div>
+				</div>
+				<div class="tvd-col tvd-s6">
+					<div class="tvd-input-field">
+						<input id="last_name" type="text" class="tvd-validate"
+						       placeholder="last name">
+						<label for="last_name" data-success="right">Last name</label>
+					</div>
+				</div>
+			</div>
+			<div class="tvd-row">
+				<div class="tvd-input-field tvd-col tvd-s12">
+					<input disabled value="I am not editable" id="disabled" type="text"
+					       class="tvd-validate">
+					<label for="disabled">Disabled</label>
+				</div>
+			</div>
+			<div class="tvd-row">
+				<div class="tvd-input-field tvd-col tvd-s12">
+					<textarea class="tvd-materialize-textarea" id="t-area">I am a textarea</textarea>
+					<label for="t-area">Textarea</label>
+				</div>
+			</div>
+			<div class="tvd-row">
+				<div class="tvd-input-field tvd-col tvd-s12">
+					<input id="password" type="password" class="tvd-validate" autocomplete="off"
+					       placeholder="password">
+					<label for="password">Password</label>
+				</div>
+			</div>
+			<div class="tvd-row">
+				<div class="tvd-input-field tvd-col tvd-s12">
+					<input id="email" type="email" class="tvd-validate">
+					<label for="email" data-error="error message here"
+					       data-success="success message here">Email</label>
+				</div>
+			</div>
+		</form>
+	</div>
+	<p>
+		<input name="group1" type="radio" id="test1"/>
+		<label for="test1">Red</label>
+	</p>
+
+	<p>
+		<input name="group1" type="radio" id="test2"/>
+		<label for="test2">Yellow</label>
+	</p>
+
+	<p>
+		<input name="group1" type="radio" id="test3"/>
+		<label for="test3">Green</label>
+	</p>
+
+	<p>
+		<input name="group1" type="radio" id="test4" disabled="disabled"/>
+		<label for="test4">Brown</label>
+	</p>
+
+	<form action="#">
+		<p>
+			<input type="checkbox" id="test5"/>
+			<label for="test5">Red</label>
+		</p>
+
+		<p>
+			<input type="checkbox" id="test6" checked="checked"/>
+			<label for="test6">Yellow</label>
+		</p>
+
+		<p>
+			<input type="checkbox" id="filled-in-box"/>
+			<label for="filled-in-box">Filled in</label>
+		</p>
+
+		<p>
+			<input type="checkbox" id="test7" checked="checked" disabled="disabled"/>
+			<label for="test7">Green</label>
+		</p>
+
+		<p>
+			<input type="checkbox" id="test8" disabled="disabled"/>
+			<label for="test8">Brown</label>
+		</p>
+	</form>
+	<p>
+		New select no search box
+	</p>
+	<div class="tvd-input-field">
+		<select class="tvd-select2 js-example-basic-single" data-placeholder="- Select something Select somethingSelect
+						somethingSelect somethingSelect something -" id="js-example-basic-single">
+			<option value=""></option>
+			<option value="AL">Alabama</option>
+			<option value="WY">Wyoming</option>
+		</select>
+		<label for="js-example-basic-single" data-error="dsadsadas" data-success="sadaskhsadjd">Label goes here</label>
+	</div>
+	<p>
+		New select search box
+	</p>
+	<select class="tvd-select2 js-example-basic-single1" data-placeholder="- Select something Select somethingSelect
+					somethingSelect somethingSelect something -">
+		<option value=""></option>
+		<option value="AL">Alabama</option>
+		<option value="WY">Wyoming</option>
+	</select>
+	<p>
+		New select optgroups
+	</p>
+	<select class="tvd-select2 js-example-basic-single2" data-placeholder="- Select something Select somethingSelect
+					somethingSelect somethingSelect something -">
+		<option value=""></option>
+		<optgroup label="Label here">
+			<option value="AL">Alabama</option>
+			<option value="WY">Wyoming</option>
+		</optgroup>
+		<optgroup label="Label here too">
+			<option value="CD">Cdsaasd</option>
+			<option value="ED">Eddsadsa</option>
+		</optgroup>
+	</select>
+	<p>
+		New select combobox
+	</p>
+	<select class="tvd-select2 js-example-basic-single3" data-placeholder="- Select something Select somethingSelect
+					somethingSelect somethingSelect something -" multiple="multiple">
+		<option value=""></option>
+		<option value="AL">Alabama</option>
+		<option value="WY">Wyoming</option>
+		<option value="CD">Cdsaasd</option>
+		<option value="ED">Eddsadsa</option>
+	</select>
+	<p>
+		New select data sources
+	</p>
+	<select class="tvd-select2 js-example-data-array"></select>
+	<br><br><br>
+	<div class="tvd-row">
+		<div class="tvd-input-field tvd-col tvd-s3">
+			<select>
+				<option value="" disabled selected>- Select something Select somethingSelect
+					somethingSelect somethingSelect something -
+				</option>
+				<option value="1">Option 1</option>
+				<option value="2">Option 2</option>
+				<option value="3">Option 3</option>
+			</select>
+		</div>
+	</div>
+	<div class="input-field col s12">
+		<select>
+			<optgroup label="Email Marketing">
+				<option value="1">Option 1</option>
+				<option value="2">Option 2</option>
+			</optgroup>
+			<optgroup label="Webinars">
+				<option value="3">Option 3</option>
+				<option value="4">Option 4</option>
+			</optgroup>
+		</select>
+	</div>
+
+	<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green">Button green</a>
+	<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green">
+		<i class="tvd-icon-spinner mdi-pulse tvd-icon-medium"></i>
+		Button green spinner
+	</a>
+	<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue">Button blue</a>
+	<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-gray">Button gray</a>
+	<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-red">Button red</a>
+	<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-red" disabled>Button red</a>
+
+	<a class="tvd-btn-flat tvd-btn-flat-primary tvd-btn-flat-dark tvd-waves-effect">Button flat
+		primary</a>
+	<a class="tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-dark tvd-waves-effect">Button flat
+		secondary</a>
+	<a class="tvd-btn-flat tvd-disabled tvd-btn-flat-dark tvd-waves-effect">Button flat disabled</a>
+	<a class="tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-dark tvd-waves-effect" disabled>Button
+		flat secondary</a>
+
+	<div style="background: #47c45f">
+		<a class="tvd-btn-flat tvd-btn-flat-primary tvd-btn-flat-light tvd-waves-effect">Button flat
+			primary</a>
+		<a class="tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-light tvd-waves-effect">Button
+			flat secondary</a>
+		<a class="tvd-btn-flat tvd-disabled tvd-btn-flat-light tvd-waves-effect">Button flat
+			disabled</a>
+	</div>
+	<br><br>
+
+	<div class="tvd-row">
+		<div class="tvd-input-field tvd-col tvd-s6">
+			<input id="combobox" type="text" value="" data-role="tvd-materialtags"
+			       class="typeahead"/>
+			<label for="combobox">Combobox label</label>
+		</div>
+		<div class="tvd-input-field tvd-col tvd-s6">
+			<input id="last_name" type="text" class="tvd-validate">
+			<label for="last_name" data-success="right">Last name</label>
+		</div>
+	</div>
+
+	<br><br>
+	<div class="tvd-row">
+		<div class="tvd-col tvd-s12">
+			<ul class="tvd-tabs">
+				<li class="tvd-tab"><a href="#tab1">Test 1</a></li>
+				<li class="tvd-tab"><a class="tvd-active" href="#tab2">Test 2</a></li>
+				<li class="tvd-tab tvd-disabled"><a href="#tab3">Disabled Tab</a></li>
+				<li class="tvd-tab"><a href="#tab4">Test 4</a></li>
+			</ul>
+		</div>
+		<div id="tab1" class="tvd-col tvd-s12">Test 1</div>
+		<div id="tab2" class="tvd-col tvd-s12">Test 2</div>
+		<div id="tab3" class="tvd-col tvd-s12">Test 3</div>
+		<div id="tab4" class="tvd-col tvd-s12">Test 4</div>
+	</div>
+
+	<div class="tvd-row">
+		<div class="tvd-col tvd-s12">
+			<ul class="tvd-tabs">
+				<li class="tvd-tab"><a href="#tab11">Test 1</a></li>
+				<li class="tvd-tab"><a class="tvd-active" href="#tab21">Test 2</a></li>
+				<li class="tvd-tab tvd-disabled"><a href="#tab31">Disabled Tab</a></li>
+				<li class="tvd-tab"><a href="#tab41">Test 4</a></li>
+			</ul>
+		</div>
+		<div id="tab11" class="tvd-col tvd-s12">Test 1</div>
+		<div id="tab21" class="tvd-col tvd-s12">Test 2</div>
+		<div id="tab31" class="tvd-col tvd-s12">Test 3</div>
+		<div id="tab41" class="tvd-col tvd-s12">Test 4</div>
+	</div>
+
+	<h3 class="tvd-section-title">
+		Cards
+	</h3>
+
+	<div class="tvd-row">
+		<div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3">
+			<div class="tvd-card tvd-white tvd-medium">
+				<div class="tvd-card-content">
+					<div class="tvd-center-align">
+						<img src="http://www.tonyhowell.co.uk/new/8/Z785.jpg" alt=""
+						     class="tvd-responsive-img" height="100" width="100">
+					</div>
+					<h2 class="tvd-card-title">Default State</h2>
+
+					<p class="tvd-center">
+						Lorem ipsum dolor sit amet elit adipiscing nunc ipsum lorem.
+					</p>
+
+					<div class="tvd-card-action">
+						<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-full-btn">
+							Default Button State
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3">
+			<div class="tvd-card tvd-gray tvd-medium tvd-disabled">
+				<div class="tvd-card-content">
+					<div class="tvd-center-align">
+						<img src="http://www.tonyhowell.co.uk/new/8/Z785.jpg" alt=""
+						     class="tvd-responsive-img" height="100" width="100">
+					</div>
+					<h2 class="tvd-card-title">Inactive State</h2>
+
+					<p class="tvd-center">
+						Lorem ipsum dolor sit amet elit adipiscing nunc ipsum lorem.
+					</p>
+
+					<div class="tvd-card-action">
+						<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue tvd-full-btn">
+							Activate License
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3">
+			<div class="tvd-card tvd-gray tvd-medium tvd-disabled">
+				<div class="tvd-card-content">
+					<div class="tvd-center-align">
+						<img src="http://www.tonyhowell.co.uk/new/8/Z785.jpg" alt=""
+						     class="tvd-responsive-img" height="50" width="50">
+					</div>
+					<h4 class="tvd-card-title">Enter your license details:</h4>
+
+					<div class="tvd-row">
+						<form class="tvd-col tvd-s12">
+							<div class="tvd-input-field">
+								<input id="email1" type="email" class="tvd-validate">
+								<label for="email1" data-error="error message here"
+								       data-success="success message here">Email
+									address</label>
+							</div>
+							<div class="tvd-input-field">
+								<input id="license" type="text" class="tvd-validate">
+								<label for="license" data-error="error message here"
+								       data-success="success message here">License key</label>
+							</div>
+						</form>
+					</div>
+					<div class="tvd-card-action">
+						<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue tvd-full-btn">
+							Validate
+						</a>
+						<a class="tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-dark tvd-full-btn tvd-btn-margin-top tvd-waves-effect">Cancel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3">
+			<div class="tvd-card tvd-white tvd-medium">
+				<div class="tvd-card-content">
+					<div class="tvd-center-align">
+						<img src="http://www.tonyhowell.co.uk/new/8/Z785.jpg" alt=""
+						     class="tvd-responsive-img" height="100" width="100">
+					</div>
+					<h2 class="tvd-card-title">No Dashboard</h2>
+
+					<p class="tvd-center">
+						Lorem ipsum dolor sit amet elit adipiscing nunc ipsum lorem.
+					</p>
+
+					<div class="tvd-card-action">
+						<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-gray tvd-full-btn">
+							Default Button
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3">
+			<div class="tvd-card tvd-white tvd-medium">
+				<div class="tvd-card-content">
+					<a class='tvd-dropdown-button tvd-btn-floating tvd-right tvd-card-options'
+					   href='#'
+					   data-activates='dropdown2' data-alignment="right" data-beloworigin="true"
+					   data-constrainwidth="false">
+						<i class="tvd-icon-more_vert"></i>
+					</a>
+					<ul id='dropdown2' class='tvd-dropdown-content'>
+						<li>
+							<a href="#!">
+								<i class="tvd-icon-line-chart"></i>
+								Reports
+							</a>
+						</li>
+						<li>
+							<a href="#!">
+								<i class="tvd-icon-cloud-download"></i>
+								Asset Delivery
+							</a>
+						</li>
+						<li>
+							<a href="#!">
+								<i class="tvd-icon-group"></i>
+								Leads Export
+							</a>
+						</li>
+						<li>
+							<a href="#!">
+								<i class="tvd-icon-graduation-cap"></i>
+								Tutorials
+							</a>
+						</li>
+						<li>
+							<a href="#!">
+								<i class="tvd-icon-life-bouy"></i>
+								Support
+							</a>
+						</li>
+					</ul>
+					<div class="tvd-center-align">
+						<img src="http://www.tonyhowell.co.uk/new/8/Z785.jpg" alt=""
+						     class="tvd-responsive-img" height="100" width="100">
+					</div>
+					<h2 class="tvd-card-title">Many options</h2>
+
+					<p class="tvd-center">
+						Lorem ipsum dolor sit amet elit adipiscing nunc ipsum lorem.
+					</p>
+
+					<div class="tvd-card-action">
+						<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-full-btn">
+							Default Button state
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h3 class="tvd-section-title">
+		Thrive Features
+	</h3>
+
+	<div class="tvd-row">
+		<div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3">
+			<div class="tvd-card tvd-white tvd-medium">
+				<div class="tvd-card-content">
+					<div class="tvd-center-align">
+						<i class="tvd-icon-exchange tvd-icon-large"></i>
+					</div>
+					<h2 class="tvd-card-title">API Connections</h2>
+
+					<p class="tvd-center">
+						Lorem ipsum dolor sit amet elit adipiscing nunc ipsum lorem.
+					</p>
+
+					<div class="tvd-card-action">
+						<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-full-btn">
+							Default Button State
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3">
+			<div class="tvd-card tvd-white tvd-medium">
+				<div class="tvd-card-content">
+					<div class="tvd-center-align">
+						<i class="tvd-icon-font tvd-icon-large"></i>
+					</div>
+					<h2 class="tvd-card-title">Custom Fonts</h2>
+
+					<p class="tvd-center">
+						Lorem ipsum dolor sit amet elit adipiscing nunc ipsum lorem.
+					</p>
+
+					<div class="tvd-card-action">
+						<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-full-btn">
+							Default Button State
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3">
+			<div class="tvd-card tvd-white tvd-medium">
+				<div class="tvd-card-content">
+					<div class="tvd-center-align">
+						<i class="tvd-icon-rocket tvd-icon-large"></i>
+					</div>
+					<h2 class="tvd-card-title">Retina Icons</h2>
+
+					<p class="tvd-center">
+						Lorem ipsum dolor sit amet elit adipiscing nunc ipsum lorem.
+					</p>
+
+					<div class="tvd-card-action">
+						<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-full-btn">
+							Default Button State
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3">
+			<div class="tvd-card tvd-white tvd-medium">
+				<div class="tvd-card-content">
+					<div class="tvd-center-align">
+						<i class="tvd-icon-cogs tvd-icon-large"></i>
+					</div>
+					<h2 class="tvd-card-title">General Settings</h2>
+
+					<p class="tvd-center">
+						Lorem ipsum dolor sit amet elit adipiscing nunc ipsum lorem.
+					</p>
+
+					<div class="tvd-card-action">
+						<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-full-btn">
+							Default Button State
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h3 class="tvd-section-title">
+		Other card states
+	</h3>
+
+	<div class="tvd-row">
+		<div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3">
+			<div class="tvd-card tvd-white">
+				<div class="tvd-card-content">
+					<h2 class="tvd-card-title">ArpReach</h2>
+					<div class="tvd-row">
+						<form class="">
+							<div class="tvd-col tvd-s10">
+								<div class="tvd-input-field">
+									<input id="tvd-ar-install-url" type="text"
+									       name="connection[url]">
+									<label for="tvd-ar-install-url">alala</label>
+								</div>
+							</div>
+							<div class="tvd-col tvd-s10">
+								<div class="tvd-input-field">
+									<input id="tvd-ar-api-key" type="text"
+									       name="connection[api_key]">
+									<label for="tvd-ar-api-key">lalalaalal</label>
+								</div>
+							</div>
+							<div class="tvd-col tvd-s10">
+								<div class="tvd-input-field">
+									<input id="tvd-ar-autoresponder" type="text"
+									       name="connection[lists][]">
+									<label for="tvd-ar-autoresponder">salkd</label>
+								</div>
+							</div>
+							<div class="tvd-col tvd-s2">
+								<i class="tvd-icon-question-circle tvd-tooltipped"
+								   data-position="top"
+								   data-tooltip="I am a tooltip"></i>
+							</div>
+							<div class="tvd-col tvd-s12">
+								<div class="tvd-chip">
+									Tag
+									<i class="tvd-icon-close2"> </i>
+								</div>
+								<div class="tvd-chip">
+									Tag
+									<i class="tvd-icon-close2"> </i>
+								</div>
+								<div class="tvd-chip">
+									Tag
+									<i class="tvd-icon-close2"> </i>
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="tvd-card-action">
+						<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue tvd-full-btn">
+							Activate License
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3">
+			<div class="tvd-card tvd-gray tvd-medium tvd-disabled">
+				<div class="tvd-card-content">
+					<div class="tvd-center-align">
+						<img src="http://www.tonyhowell.co.uk/new/8/Z785.jpg" alt=""
+						     class="tvd-responsive-img" height="100" width="100">
+					</div>
+					<h2 class="tvd-card-title">Inactive State</h2>
+
+					<p class="tvd-center">
+						Lorem ipsum dolor sit amet elit adipiscing nunc ipsum lorem.
+					</p>
+
+					<div class="tvd-card-action">
+						<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue tvd-full-btn">
+							Activate License
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3">
+			<div class="tvd-card tvd-gray tvd-medium tvd-disabled">
+				<div class="tvd-card-content">
+					<div class="tvd-center-align">
+						<img src="http://www.tonyhowell.co.uk/new/8/Z785.jpg" alt=""
+						     class="tvd-responsive-img" height="50" width="50">
+					</div>
+					<h4 class="tvd-card-title">Enter your license details:</h4>
+
+					<div class="tvd-row">
+						<form class="tvd-col tvd-s12">
+							<div class="tvd-input-field">
+								<input id="email1" type="email" class="tvd-validate">
+								<label for="email1" data-error="error message here"
+								       data-success="success message here">Email
+									address</label>
+							</div>
+							<div class="tvd-input-field">
+								<input id="license" type="text" class="tvd-validate">
+								<label for="license" data-error="error message here"
+								       data-success="success message here">License key</label>
+							</div>
+						</form>
+					</div>
+					<div class="tvd-card-action">
+						<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue tvd-full-btn">
+							Validate
+						</a>
+						<a class="tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-dark tvd-full-btn tvd-btn-margin-top tvd-waves-effect">Cancel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3">
+			<div class="tvd-card tvd-green tvd-medium">
+				<div class="tvd-card-content">
+					<div class="tvd-center-align">
+						<img src="http://www.tonyhowell.co.uk/new/8/Z785.jpg" alt=""
+						     class="tvd-responsive-img tvd-circle" height="70" width="70">
+					</div>
+					<div class="tvd-center-align">
+						<i class="tvd-icon-check tvd-icon-large tvd-icon-top"></i>
+					</div>
+
+					<h2 class="tvd-center">
+						License Activated!
+					</h2>
+
+				</div>
+			</div>
+		</div>
+		<div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3">
+			<div class="tvd-card tvd-orange tvd-medium">
+				<div class="tvd-card-content">
+					<div class="tvd-center-align">
+						<img src="http://www.tonyhowell.co.uk/new/8/Z785.jpg" alt=""
+						     class="tvd-responsive-img tvd-circle" height="70" width="70">
+					</div>
+					<h3 class="tvd-card-title">
+						We weren’t able to
+						validate your license.
+					</h3>
+
+					<p class="tvd-center tvd-card-spacer">
+						Reason: invalid key
+					</p>
+				</div>
+				<div class="tvd-card-action">
+					<div class="tvd-row tvd-no-margin">
+						<div class="tvd-col tvd-s12 tvd-m6">
+							<a class="tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-light tvd-waves-effect">Cancel</a>
+						</div>
+						<div class="tvd-col tvd-s12 tvd-m6">
+							<a class="tvd-btn-flat tvd-btn-flat-primary tvd-btn-flat-light tvd-waves-effect tvd-right">retry</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3">
+			<div class="tvd-card tvd-white tvd-medium tvd-preloader-overlay">
+				<div class="tvd-card-content">
+					<div class="tvd-card-preloader">
+						<div class="tvd-preloader-wrapper tvd-big tvd-active">
+							<div class="tvd-spinner-layer tvd-spinner-blue-only">
+								<div class="tvd-circle-clipper tvd-left">
+									<div class="tvd-circle"></div>
+								</div>
+								<div class="tvd-gap-patch">
+									<div class="tvd-circle"></div>
+								</div>
+								<div class="tvd-circle-clipper tvd-right">
+									<div class="tvd-circle"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tvd-center-align">
+						<img src="http://www.tonyhowell.co.uk/new/8/Z785.jpg" alt=""
+						     class="tvd-responsive-img" height="100" width="100">
+					</div>
+					<h2 class="tvd-card-title">Preloader card</h2>
+
+					<p class="tvd-center">
+						Lorem ipsum dolor sit amet elit adipiscing nunc ipsum lorem.
+					</p>
+
+					<div class="tvd-card-action">
+						<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue tvd-full-btn">
+							Activate License
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<h3 class="tvd-section-title">
+		API states
+	</h3>
+
+	<div class="tvd-row">
+		<div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3">
+			<div class="tvd-card tvd-white tvd-small">
+				<div class="tvd-card-image">
+					<img src="http://materializecss.com/images/sample-1.jpg" alt="">
+				</div>
+				<div class="tvd-card-action">
+					<div class="tvd-row">
+						<div class="tvd-col tvd-s12 tvd-m6">
+							<h4>
+								Default state
+							</h4>
+						</div>
+						<div class="tvd-col tvd-s12 tvd-m6">
+							<div class="tvd-right">
+								<a class="tvd-btn tvd-btn-green tvd-btn-toggle">
+									<i class="tvd-icon-exchange tvd-left"></i>
+											<span class="tvd-btn-text">
+												TEST
+											</span>
+								</a>
+								<a class="tvd-btn tvd-btn-blue tvd-btn-toggle">
+									<i class="tvd-icon-pencil tvd-left"></i>
+											<span class="tvd-btn-text">
+												Edit
+											</span>
+								</a>
+								<a class="tvd-btn tvd-btn-red tvd-btn-toggle">
+									<i class="tvd-icon-trash-o tvd-left"></i>
+											<span class="tvd-btn-text">
+												Delete
+											</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3">
+			<div class="tvd-card tvd-white tvd-small tvd-disabled-error">
+				<div class="tvd-card-image">
+					<img src="http://materializecss.com/images/sample-1.jpg" alt="">
+				</div>
+				<div class="tvd-card-action">
+					<div class="tvd-row">
+						<div class="tvd-col tvd-s12 tvd-m6">
+							<h4>
+								Connection Error
+							</h4>
+						</div>
+						<div class="tvd-col tvd-s12 tvd-m6">
+							<div class="tvd-right">
+								<a class="tvd-btn tvd-btn-green tvd-btn-toggle">
+									<i class="tvd-icon-exchange tvd-left"></i>
+											<span class="tvd-btn-text">
+												TEST
+											</span>
+								</a>
+								<a class="tvd-btn tvd-btn-blue tvd-btn-toggle">
+									<i class="tvd-icon-pencil tvd-left"></i>
+											<span class="tvd-btn-text">
+												Edit
+											</span>
+								</a>
+								<a class="tvd-btn tvd-btn-red tvd-btn-toggle">
+									<i class="tvd-icon-trash-o tvd-left"></i>
+											<span class="tvd-btn-text">
+												Delete
+											</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3">
+			<div class="tvd-card tvd-small tvd-card-new tvd-valign-wrapper">
+				<div class="tvd-card-content tvd-valign tvd-center-align">
+					<i class="tvd-icon-plus tvd-icon-rounded tvd-icon-medium"></i>
+					<h4>
+						Add new Connection
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3">
+			<div class="tvd-card tvd-small tvd-card-new tvd-valign-wrapper">
+				<div class="tvd-card-content tvd-valign tvd-center-align">
+					<div class="tvd-row">
+						<div class="tvd-col tvd-s10 tvd-offset-s1">
+							<div class="input-field2">
+								<select>
+									<optgroup label="Email Marketing">
+										<option value="1">Option 1</option>
+										<option value="2">Option 2</option>
+									</optgroup>
+									<optgroup label="Webinars">
+										<option value="3">Option 3</option>
+										<option value="4">Option 4</option>
+									</optgroup>
+								</select>
+							</div>
+						</div>
+					</div>
+					<h4 class="tvd-dark-text">
+						Add new Connection
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3">
+			<div class="tvd-card tvd-small tvd-green tvd-valign-wrapper">
+				<div class="tvd-card-content tvd-valign tvd-center-align">
+					<a href="" class="tvd-close-card">
+						<i class="tvd-icon-close2"></i>
+					</a>
+					<i class="tvd-icon-spinner mdi-pulse tvd-icon-medium"></i>
+					<h4>
+						Testing...
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3">
+			<div class="tvd-card tvd-small tvd-green tvd-valign-wrapper">
+				<div class="tvd-card-content tvd-valign tvd-center-align">
+					<a href="" class="tvd-close-card">
+						<i class="tvd-icon-close2"></i>
+					</a>
+					<i class="tvd-icon-check tvd-icon-medium"></i>
+					<h4>
+						Connection works!
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3">
+			<div class="tvd-card tvd-small tvd-orange tvd-valign-wrapper">
+				<div class="tvd-card-content tvd-valign tvd-center-align">
+					<a href="" class="tvd-close-card">
+						<i class="tvd-icon-close2"></i>
+					</a>
+					<i class="tvd-icon-exclamation tvd-icon-rounded tvd-icon-medium"></i>
+					<h4>
+						The connection failed.
+					</h4>
+					<a class="tvd-btn-flat tvd-btn-flat-primary tvd-btn-flat-light tvd-waves-effect">
+						Edit settings
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3">
+			<div class="tvd-card tvd-small tvd-red">
+				<div class="tvd-card-content tvd-center-align">
+					<h4 class="tvd-margin-top">
+						Are you sure you want to
+						delete this connection?
+					</h4>
+				</div>
+				<div class="tvd-card-action">
+					<div class="tvd-row">
+						<div class="tvd-col tvd-s12 tvd-m6">
+							<a class="tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-light tvd-left tvd-waves-effect">
+								YES, DELETE
+							</a>
+						</div>
+						<div class="tvd-col tvd-s12 tvd-m6">
+							<a class="tvd-btn-flat tvd-btn-flat-primary tvd-btn-flat-light tvd-right tvd-waves-effect">
+								NO, KEEP IT
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h2>Modals</h2>
+
+	<h3>Simple</h3>
+	<!-- Modal Trigger -->
+	<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-modal-trigger tvd-btn-blue"
+	   href="#tvd-modal1">Modal</a>
+
+	<!-- Modal Structure -->
+	<div id="tvd-modal1" class="tvd-modal">
+
+		<div class="tvd-modal-content">
+			<h3 class="tvd-modal-title">Create a new connection:</h3>
+			<a href="#!"
+			   class=" tvd-modal-action tvd-modal-close tvd-modal-close-x">
+				<i class="tvd-icon-close2"></i>
+			</a>
+			<form class="">
+				<div class="tvd-row">
+					<div class="tvd-input-field tvd-col tvd-s12">
+						<select>
+							<option value="" disabled selected>- Select something -</option>
+							<option value="1">Option 1</option>
+							<option value="2">Option 2</option>
+							<option value="3">Option 3</option>
+						</select>
+					</div>
+					<div class="tvd-input-field tvd-col tvd-s12">
+						<input id="first_name3" type="text" class="tvd-validate">
+						<label for="first_name3">Constant Contact username</label>
+					</div>
+					<div class="tvd-input-field tvd-col tvd-s12">
+						<input id="first_name4" type="text" class="tvd-validate">
+						<label for="first_name4">API key</label>
+					</div>
+				</div>
+				<div class="tvd-row">
+					<div class="tvd-col tvd-s12 tvd-m6">
+						<a href=""
+						   class="tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-dark tvd-waves-effect">TUTORIAL</a>
+					</div>
+					<div class="tvd-col tvd-s12 tvd-m6">
+						<a href="" class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green">CONNECT</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<h3>Modal width loader</h3>
+	<!-- Modal Trigger -->
+	<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-modal-trigger tvd-btn-blue"
+	   href="#tvd-modal2">Modal</a>
+
+	<!-- Modal Structure -->
+	<div id="tvd-modal2" class="tvd-modal tvd-modal-disable">
+		<div class="tvd-modal-preloader">
+			<div class="tvd-preloader-wrapper tvd-big tvd-active">
+				<div class="tvd-spinner-layer tvd-spinner-blue-only">
+					<div class="tvd-circle-clipper tvd-left">
+						<div class="tvd-circle"></div>
+					</div>
+					<div class="tvd-gap-patch">
+						<div class="tvd-circle"></div>
+					</div>
+					<div class="tvd-circle-clipper tvd-right">
+						<div class="tvd-circle"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="tvd-modal-content">
+			<h3 class="tvd-modal-title">Create a new connection:</h3>
+			<a href="#!"
+			   class=" tvd-modal-action tvd-modal-close tvd-modal-close-x">
+				<i class="tvd-icon-close2"></i>
+			</a>
+			<form class="">
+				<div class="tvd-row">
+					<div class="tvd-input-field tvd-col tvd-s12">
+						<select>
+							<option value="" disabled selected>- Select something -</option>
+							<option value="1">Option 1</option>
+							<option value="2">Option 2</option>
+							<option value="3">Option 3</option>
+						</select>
+					</div>
+					<div class="tvd-input-field tvd-col tvd-s12">
+						<input id="first_name3" type="text" class="tvd-validate">
+						<label for="first_name3">Constant Contact username</label>
+					</div>
+					<div class="tvd-input-field tvd-col tvd-s12">
+						<input id="first_name4" type="text" class="tvd-validate">
+						<label for="first_name4">API key</label>
+					</div>
+				</div>
+				<div class="tvd-row">
+					<div class="tvd-col tvd-s12 tvd-m6">
+						<a href=""
+						   class="tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-dark tvd-waves-effect">TUTORIAL</a>
+					</div>
+					<div class="tvd-col tvd-s12 tvd-m6">
+						<a href="" class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green">CONNECT</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<h3>Green modal</h3>
+	<!-- Modal Trigger -->
+	<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-modal-trigger tvd-btn-blue"
+	   href="#tvd-modal3">Modal</a>
+
+	<!-- Modal Structure -->
+	<div id="tvd-modal3" class="tvd-modal tvd-green">
+		<div class="tvd-modal-content tvd-center-align">
+			<i class="tvd-icon-check tvd-icon-big tvd-icon-border tvd-icon-rounded"></i>
+			<h3 class="tvd-modal-title">Connection Ready!</h3>
+			<p>
+				You can now connect your opt-in forms to Constant Contact. <a href="">See how it’s
+					done.</a>
+			</p>
+		</div>
+		<div class="tvd-modal-footer">
+			<div class="tvd-row">
+				<div class="tvd-col tvd-s12 tvd-m9">
+					<a href=""
+					   class="tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-light tvd-left tvd-waves-effect">
+						ADD ANOTHER CONNECTION
+					</a>
+				</div>
+				<div class="tvd-col tvd-s12 tvd-m3">
+					<a href="#!"
+					   class="tvd-btn-flat tvd-btn-flat-primary tvd-btn-flat-light tvd-right tvd-modal-close tvd-waves-effect">
+						DONE
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<h3>Orange modal</h3>
+	<!-- Modal Trigger -->
+	<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-modal-trigger tvd-btn-blue"
+	   href="#tvd-modal4">Modal</a>
+
+	<!-- Modal Structure -->
+	<div id="tvd-modal4" class="tvd-modal tvd-orange">
+		<div class="tvd-modal-content tvd-center-align">
+			<i class="tvd-icon-close tvd-icon-big tvd-icon-border tvd-icon-rounded"></i>
+			<h3 class="tvd-modal-title">The connection didn't work.</h3>
+			<p>
+				Error message: [whatever message we can show here].
+			</p>
+		</div>
+		<div class="tvd-modal-footer">
+			<div class="tvd-row">
+				<div class="tvd-col tvd-s12 tvd-m3">
+					<a href=""
+					   class="tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-light tvd-left tvd-modal-close tvd-waves-effect">
+						CANCEL
+					</a>
+				</div>
+				<div class="tvd-col tvd-s12 tvd-m9">
+					<a href="#!"
+					   class="tvd-btn-flat tvd-btn-flat-primary tvd-btn-flat-light tvd-right tvd-waves-effect">
+						TRY AGAIN
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h3>
+		Collapsible
+	</h3>
+	<ul class="tvd-collapsible" data-collapsible="accordion">
+		<li>
+			<div class="tvd-collapsible-header">
+				First
+			</div>
+			<div class="tvd-collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+		</li>
+		<li>
+			<div class="tvd-collapsible-header">
+				Second
+			</div>
+			<div class="tvd-collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+		</li>
+		<li>
+			<div class="tvd-collapsible-header">
+				Third
+			</div>
+			<div class="tvd-collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+		</li>
+	</ul>
+	<h3>
+		Collections
+	</h3>
+	<ul class="tvd-collection">
+		<li class="tvd-collection-item">Alvin</li>
+		<li class="tvd-collection-item">Alvin</li>
+		<li class="tvd-collection-item">Alvin</li>
+		<li class="tvd-collection-item">Alvin</li>
+	</ul>
+	<h3>
+		Collections with header
+	</h3>
+	<ul class="tvd-collection tvd-with-header">
+		<li class="tvd-collection-header"><h5>First Names</h5></li>
+		<li class="tvd-collection-item">Alvin</li>
+		<li class="tvd-collection-item">Alvin</li>
+		<li class="tvd-collection-item">Alvin</li>
+		<li class="tvd-collection-item">Alvin</li>
+	</ul>
+	<h3>Switch</h3>
+	<div class="tvd-switch">
+		<label>
+			Off
+			<input type="checkbox">
+			<span class="tvd-lever"></span>
+			On
+		</label>
+	</div>
+	<h3>Slider</h3>
+	<div class="tvd-row">
+		<div class="tvd-col tvd-s8">
+			<div class="tvd-slider-widget" data-min="0" data-max="100" data-connect-to=""
+			     data-value="30"></div>
+		</div>
+	</div>
+	<br><br><br>
+	<h3>
+		Date picker
+	</h3>
+	<div class="tvd-input-field">
+		<input type="text" id="date-picker" placeholder="sadads">
+		<label for="date-picker" class="tvd-active">aaaa</label>
+	</div>
+	<div class="tvd-row">
+		<div class="tvd-col tvd-s6 tvd-ms6 tvd-m4 tvd-l3">
+			<div class="tvd-card tvd-white tvd-medium">
+				<div class="tvd-card-content">
+					<div class="tvd-center-align">
+						<img src="http://www.tonyhowell.co.uk/new/8/Z785.jpg" alt=""
+						     class="tvd-responsive-img" height="100" width="100">
+					</div>
+					<h2 class="tvd-card-title">Default State</h2>
+
+					<p class="tvd-center">
+						Lorem ipsum dolor sit amet elit adipiscing nunc ipsum lorem.
+					</p>
+					<div class="tvd-input-field">
+						<input type="text" id="date-picker" placeholder="sadads">
+						<label for="date-picker" class="tvd-active">aaaa</label>
+					</div>
+					<div class="tvd-card-action">
+						<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-full-btn">
+							Default Button State
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<h3>
+		Date picker on an icon
+	</h3>
+	<div class="tvd-relative">
+		<div class="tvd-icon-clone2" id="date-picker-2"></div>
+	</div>
+	<h3>Toast</h3>
+	<a class="tvd-btn tvd-btn-green" id="btn-with-toast">Toast!</a>
+	<script type="text/javascript">
+		(function ( $ ) {
+			jQuery( '.js-example-basic-single' ).select2( {
+				minimumResultsForSearch: Infinity
+			} );
+			jQuery( '.js-example-basic-single1' ).select2( {} );
+			jQuery( '.js-example-basic-single2' ).select2( {} );
+			jQuery( '.js-example-basic-single3' ).select2( {} );
+			var data = [
+				{
+					id: 0,
+					text: 'enhancement'
+				},
+				{
+					id: 1,
+					text: 'bug'
+				},
+				{
+					id: 2,
+					text: 'duplicate'
+				},
+				{
+					id: 3,
+					text: 'invalid'
+				},
+				{
+					id: 4,
+					text: 'wontfix'
+				}
+			];
+
+			$( ".js-example-data-array" ).select2( {
+				data: data
+			} )
+			jQuery( '.tvd-slider-widget' ).each( function () {
+				$( this ).tvd_nouislider();
+			} );
+
+			$( '#btn-with-toast' ).on( 'click', function () {
+				Materialize.toast( 'I am a toast', 4000, 'tvd-toast tvd-red' );
+			} );
+			$( '#date-picker' ).pickadate();
+			$( '#date-picker-2' ).pickadate();
+
+			var slider = document.getElementById( 'test5' );
+			noUiSlider.create( slider, {
+				start: [20, 80], range: {
+					'min': 0, 'max': 100
+				}, setp: 1, connect: true, format: wNumb( {
+					decimals: 0
+				} )
+			} );
+			//$( 'select' ).material_select();
+			$( '.tvd-modal-trigger' ).leanModal( {
+				dismissible: true,
+				in_duration: 200,
+				out_duration: 300,
+				ready: function () { /* ready code */
+				},
+				complete: function () { /* called when closed */
+				}
+			} );
+
+			$( '#combobox' ).materialtags( {
+				itemValue: 'id', itemText: 'name', maxTags: 1, typeaheadjs: {
+					name: 'citynames',
+					displayKey: 'name',
+					async: true,
+					source: function ( query, syncResults, asyncResults ) {
+						// sync:
+						syncResults( [
+							{
+								id: 1, name: 'Alabama'
+							}, {
+								id: 2, name: 'Arizona'
+							}, {
+								id: 3, name: 'Arkansas'
+							}, {
+								id: 4, name: 'California'
+							}, {
+								id: 5, name: 'Connecticut'
+							}, {
+								id: 6, name: 'Delaware'
+							}, {
+								id: 7, name: 'Colorado'
+							}, {
+								id: 8, name: 'Illinois'
+							}
+						] );
+						return;
+						// async: ajax call can be made here
+						setTimeout( function () {
+							asyncResults( [
+								{
+									id: 1, name: 'Alabama'
+								}, {
+									id: 2, name: 'Arizona'
+								}, {
+									id: 3, name: 'Arkansas'
+								}, {
+									id: 4, name: 'California'
+								}, {
+									id: 5, name: 'Connecticut'
+								}, {
+									id: 6, name: 'Delaware'
+								}, {
+									id: 7, name: 'Colorado'
+								}, {
+									id: 8, name: 'Illinois'
+								}
+							] );
+						}, 1000 );
+					}
+				}
+			} );
+		})( jQuery );
+	</script>
+</div>

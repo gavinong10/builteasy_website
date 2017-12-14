@@ -1,0 +1,646 @@
+<style type="text/css">
+	.db_test_container {
+		clear: both;
+		display: none;
+		background-color: #FAFAFA;
+		
+		border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border: 1px solid #DFDFDF;
+		
+		margin-right:10px;
+		padding:8px;
+	}
+</style>
+
+<script type="text/javascript" src="importbuddy/js/jquery.leanModal.min.js"></script>
+
+
+
+<script type="text/javascript">
+	var databasePassed = false;
+	
+	jQuery(document).ready(function() {
+		
+		loadTooltips();
+		
+		jQuery( '#database-box input' ).change( function() {
+			jQuery( '#db_test_container' ).text('').hide();
+		});
+		
+		jQuery('.settingCopy a' ).click( function(e){
+			e.preventDefault();
+			if ( jQuery(this).hasClass( 'settingCopyAll' ) ) {
+				return;
+			}
+			sourceVal = jQuery(this).closest('td').prev('td').find('input[type="text"]').val();
+			destination = jQuery(this).closest('td').next('td').find('input[type="text"]');
+			destination.val( sourceVal );
+		});
+		jQuery('.settingCopyAll a' ).click( function(e){
+			e.preventDefault();
+			parentTable = jQuery(this).closest('table');
+			parentTable.find('tr').each( function(){
+				settingCopyItem = jQuery(this).find('.settingCopy');
+				if ( ! settingCopyItem.hasClass( 'settingCopyAll' ) ) {
+					settingCopyItem.find('a').trigger('click');
+				}
+			});
+		});
+		
+		
+		
+		jQuery('#pb_backupbuddy_malwarescanloading').slideToggle();
+		
+		jQuery( '.db_setting' ).change( function() {
+			jQuery('.pb_database_next_test').removeClass( 'it-attention' );
+		});
+		
+		jQuery('.pb_database_next_test').click( function(e) {
+			e.preventDefault();
+			
+			jQuery( '#db_test_container' ).text('').hide();
+			
+			if ( ( '' == jQuery('#mysql_server').val() ) || ( '' == jQuery('#mysql_database').val() ) || ( '' == jQuery('#mysql_username').val() ) || ( '' == jQuery('#mysql_prefix').val() ) ) {
+				jQuery( '#db_test_container' ).html( '<span class="pb_label pb_label-warning">Missing Fields</span> All database settings (except optional password) are required and must be entered to continue.' ).show();
+				jQuery('.pb_database_next_test').addClass( 'it-attention' );
+				return false;
+			}
+			
+			NProgress.start();
+			
+			jQuery('.input-attention' ).removeClass( 'input-attention' );
+			jQuery('.pb_database_next_test').removeClass( 'it-attention' );
+			
+			var server = jQuery('#mysql_server').val();
+			var database = jQuery('#mysql_database').val();
+			var username = jQuery('#mysql_username').val();
+			var password = jQuery('#mysql_password').val();
+			var prefix = jQuery('#mysql_prefix').val();
+			var databaseMethodStrategy = jQuery( '#databaseMethodStrategy').val();
+			
+			jQuery.ajax('importbuddy.php',
+				{
+					method: 'POST',
+					data: {
+							ajax: 'mysql_test',
+							server: server,
+							database: database,
+							username: username,
+							password: password,
+							prefix: prefix
+					},
+					error: function( jqXHR, textStatus ) {
+						message = 'ERROR #329723: Unexpected server response from AJAX. See Status Log for more details. Response: `' + textStatus + '`.';
+						alert( message );
+						backupbuddy_log( message );
+						jQuery('.pb_database_next_test').addClass( 'it-attention' );
+						return false;
+					},
+					success: function(data) {
+						NProgress.done();
+						data = jQuery.trim( data );
+						backupbuddy_log( 'MySQL test results: `' + data + '`.' );
+						if ( data.indexOf("must log in") != -1) {
+							alert( 'Your session has expired. Please return to the restore homepage and log back in.' );
+							jQuery('.pb_database_next_test').addClass( 'it-attention' );
+							return false;
+						}
+
+						// Parse json.
+						try {
+							response = JSON.parse( data );
+						} catch(e) {
+							message = 'ERROR #839983: Failure parsing returned server data. See Status Log for more details. Details: `' + e.message + '`. Response: `' + data + '`.';
+							alert( message );
+							backupbuddy_log( message );
+							jQuery('.pb_database_next_test').addClass( 'it-attention' );
+							return false;
+						}
+						console.log( response );
+						
+						
+						// OVERALL ERROR
+						if ( '' != response.overall_error ) {
+							jQuery( '#db_test_container' ).html( '<span class="pb_label pb_label-warning">Error</span> ' + response.overall_error ).show();
+							jQuery('.pb_database_next_test').addClass( 'it-attention' );
+							return false;
+						}
+						
+						
+						// ERRORS
+						if ( false === response.connect ) {
+							jQuery( '#mysql_server,#mysql_username,#mysql_password' ).addClass( 'input-attention' );
+							jQuery( '#db_test_container' ).html( '<span class="pb_label pb_label-warning">Database Error</span> Unable to connect / authenticate to MySQL server. ' + response.connect_error ).show();
+							jQuery('.pb_database_next_test').addClass( 'it-attention' );
+							return false;
+						}
+						
+						if ( false === response.selectdb ) {
+							jQuery( '#mysql_database' ).addClass( 'input-attention' );
+							jQuery( '#db_test_container' ).html( '<span class="pb_label pb_label-warning">Database Error</span> Unable to select database. Verify the database exists & the user was granted ALL privileges. ' + response.selectdb_error ).show();
+							jQuery('.pb_database_next_test').addClass( 'it-attention' );
+							return false;
+						}
+						
+						if ( false === response.createdroptable ) {
+							jQuery( '#db_test_container' ).html( '<span class="pb_label pb_label-warning">Database Error</span> Unable to create & drop test table. Verify the entered user has ALL privileges for the specified database. ' + response.createdroptable_error ).show();
+							jQuery('.pb_database_next_test').addClass( 'it-attention' );
+							return false;
+						}
+						if ( false === response.prefix ) {
+							jQuery( '#db_test_container' ).html( '<span class="pb_label pb_label-warning">Database Error</span> The specified prefix does not the bare minimum criteria for WordPress. It should be in the format of letters (or numbers, but not at the beginning) followed by an underscore. <b>Either change the prefix or select to ignore this warning below to proceed.</b> Examples: wp_, wp2_, mywordpress_, dustins2ndblog_' ).show();
+							jQuery( '#db_wipe_options' ).show();
+							jQuery('.pb_database_next_test').addClass( 'it-attention' );
+							return false;
+						}
+						
+						
+						
+						// PREFIX WARNINGS
+						prefix_warn_ignore = jQuery( '#ignore_prefix_warnings_checkbox' ).is(":checked");
+						
+						if ( ( true === response.prefix_warn ) && ( true === window.restoreData.restoreDatabase ) ) {
+							if ( !prefix_warn_ignore ) {
+								jQuery( '#db_test_container' ).html( '<span class="pb_label pb_label-warning">Database Warning</span> A prefix in the format of alphanumeric characters followed by an underscore is <b>highly recommended</b> to conform to WordPress & BackupBuddy conventions & expectations. This may also cause warnings of tables already existing that do not. <b>Either change the prefix or select to ignore this warning below to proceed.</b> Examples: wp_, wp2_, mywordpress_, dustins2ndblog_' ).show();
+								jQuery( '#db_wipe_options' ).show();
+								jQuery( '#ignore_prefix_warnings' ).show();
+								jQuery('.pb_database_next_test').addClass( 'it-attention' );
+								return false;
+							}
+						} else { // No prefix format warning so hide option to bypass.
+							jQuery( '#ignore_prefix_warnings_checkbox' ).attr('checked', false);
+							jQuery( '#ignore_prefix_warnings').hide();
+						}
+						
+						// Prefix exists.
+						if(  ( true === response.prefix_exists ) && ( true === window.restoreData.restoreDatabase ) ) {
+							if ( ( ! jQuery( '#wipe_prefix').is( ':checked' ) ) && ( ! jQuery( '#wipe_database').is( ':checked' ) ) ) {
+								jQuery( '#db_test_container' ).html( '<span class="pb_label pb_label-warning">Database Warning</span> The specified prefix appears to already exist in this database. Restoring may overwrite existing WordPress data. <b>Change the prefix, select to delete existing tables below, or use the advanced option to ignore SQL errors to proceed.</b>' ).show();
+								jQuery( '#db_wipe_options' ).show();
+								if (  jQuery('#ignore_sql_errors').is( ':checked' ) ) {
+									jQuery( '#db_test_container' ).html( '<span class="pb_label pb_label-warning">Database Warning</span> The specified prefix appears to already exist in this database. However, the advanced option to ignore existing tables & SQL errors was selected. Use extreme caution.' ).show();
+								} else {
+									jQuery('.pb_database_next_test').addClass( 'it-attention' );
+									return false;
+								}
+							}
+						}
+						
+						// Set up database settings in restoreData.
+						window.restoreData.databaseSettings.server = server;
+						window.restoreData.databaseSettings.database = database;
+						window.restoreData.databaseSettings.username = username;
+						window.restoreData.databaseSettings.password = password;
+						window.restoreData.databaseSettings.prefix = prefix;
+						window.restoreData.databaseSettings.databaseMethodStrategy = databaseMethodStrategy;
+					
+						if ( jQuery( '#wipe_prefix').is( ':checked' ) ) {
+							window.restoreData.databaseSettings.wipePrefix = true;
+						} else {
+							window.restoreData.databaseSettings.wipePrefix = false;
+						}
+						if ( jQuery( '#wipe_database').is( ':checked' ) ) {
+							window.restoreData.databaseSettings.wipeDatabase = true;
+						} else {
+							window.restoreData.databaseSettings.wipeDatabase = false;
+						}
+						if ( jQuery( '#ignore_sql_errors').is( ':checked' ) ) {
+							window.restoreData.databaseSettings.ignoreSqlErrors = true;
+						} else {
+							window.restoreData.databaseSettings.ignoreSqlErrors = false;
+						}
+						
+						// Determine SQL files to restore based on advanced checked items. Overwrites prior value of this var.
+						window.restoreData.databaseSettings.sqlFiles = [];
+						jQuery('.databaseFile:checked').each( function(){
+							window.restoreData.databaseSettings.sqlFiles.push( jQuery(this).val() );
+						});
+						
+						// Update max execution time.
+						window.restoreData.maxExecutionTime = jQuery('#max_execution_time').val();
+						
+						// Made it here so must have been success.
+						console.dir( window.restoreData );
+						
+						jQuery('#backupbuddy-dbSettingsForm-restoreData').val( window.btoa( encodeURIComponent( JSON.stringify( window.restoreData ) ) ) ); // window.btoa() base64 encodes to get around transfer issues + Chrome XSS auditor. encodeURIComponent needed to keep UTF8 from getting mucked up going over to PHP's json_decode(). Blech!
+						jQuery('#database-box').hide();	
+						jQuery('#database-box-working').html( new EJS({url: 'importbuddy/views/importingDatabase.ejs'}).render() );
+						jQuery( '#backupbuddy-dbSettingsForm').submit();
+						
+						return;
+					}
+				}
+			);
+			return false;
+		});
+		
+		
+		jQuery('.createdb_modal_link').click( function() {
+			url = jQuery('#site_url').val();
+			var hostname = jQuery('<a>').prop('href', url).prop('hostname');
+			//alert( hostname );
+			jQuery( '#cpanel_url' ).val( hostname );
+			//jQuery( '.cpanel_url_full' ).html( 'http://' + hostname + ':2082/' );
+			
+		});
+		jQuery( '#cpanel_url' ).change( function() {
+			//jQuery( '.cpanel_url_full' ).html( 'http://' + jQuery(this).val() + ':2082/' );
+		});
+		jQuery('.leanModal').leanModal(
+			{ top : 45, overlay : 0.4, closeButton: ".modal_close" }
+		);
+		
+		jQuery( '.cpanel_user' ).change(function(){
+			jQuery( '.cpanel_user_mirror' ).html( jQuery( '#cpanel_user' ).val() + '_' );
+		});
+		
+		jQuery( '.cpanel_createdb_create' ).click( function() {
+			// Validate db stuff is all alphanumeric.
+			if (
+				( false == /^[a-zA-Z0-9]+$/.test( jQuery('#cpanel_dbname').val() ) )
+				||
+				( false == /^[a-zA-Z0-9]+$/.test( jQuery('#cpanel_dbuser').val() ) )
+				) {
+				alert( 'Database values (except password) must contain alphanumeric characters only and no spaces. Correct this and try again.' );
+				return false;
+			}
+			
+			// Validate input lengths.
+			if ( jQuery('#cpanel_dbpass').val().length < 5 ) {
+				alert( 'Database passwords must be 5 or more characters in length.' );
+				return false;
+			}
+			
+			NProgress.start();
+			
+			jQuery.post(
+				'importbuddy.php?ajax=cpanel_createdb',
+				jQuery( '#cpanel_createdb_form' ).serialize(), function(data) {
+					NProgress.done();
+					
+					data = jQuery.trim( data );
+					jQuery('#ithemes_loading').html( data );
+					jQuery( '.cpanel_createdb_loading' ).hide();
+					
+					//alert( 'slice: ' + data.slice( -7 ) );
+					if ( data.slice( 0,7 ) == 'Success' ) {
+						
+						jQuery( '#mysql_database' ).val( jQuery( '#cpanel_user' ).val() + '_' + jQuery('#cpanel_dbname').val() );
+						jQuery( '#mysql_username' ).val( jQuery( '#cpanel_user' ).val() + '_' + jQuery('#cpanel_dbuser').val() );
+						jQuery( '#mysql_password' ).val( jQuery('#cpanel_dbpass').val() );
+						
+						alert( data + "\n\n" + 'Your database settings will now be set.' );
+						jQuery('.modal_close').trigger('click');
+						
+					} else {
+						alert( data );
+						//jQuery('.pb_database_next_test').addClass( 'button_disabled' );
+					}
+					
+				}
+			);
+			
+			return false;
+		});
+		
+	});
+</script>
+
+<div id="database-box">
+	<div class="database-description">
+		<p>Manually enter your database settings below or select one of the options below to assist you. The <i>cPanel Database Wizard</i> allows you to enter your cPanel credentials to create a database & auto-fill its settings below. The <i>cPanel Tutorial</i> button shows you the simplest way to manually create a database. See your host's documentation for non-cPanel hosting. If you are restoring a site back to its original location (for instance after being hacked) you may retain the same database settings by clicking the appropriate "copy" links between settings below.</p>
+		<div style="margin-left: 25px; text-align: center;">
+			<button href="#pb_createdb_modal" class="button button-secondary leanModal createdb_modal_link" style="font-size: 14px; margin-bottom: 13px;">cPanel Database Wizard</button>
+			<button href="#pb_cpaneltutorial_modal" class="button button-secondary leanModal createdb_modal_link" style="font-size: 14px;">cPanel Database Tutorial</button>
+		</div>
+		<br style="clear: both;">
+	</div>
+	
+	
+	
+	<hr>
+	
+	
+	<form action="?ajax=4" target="miniFrame" method="post" class="db_setting"  id="backupbuddy-dbSettingsForm"><!-- this form is only submitted after running through javascript. submitting actual form instead of using jQuery post so we can target iframe. -->
+		<input type="hidden" name="restoreData" value="" id="backupbuddy-dbSettingsForm-restoreData"><!-- this is the only thing that will need parsed by PHP on the receiving end. populated on submit after db test passes. -->
+		
+		
+		<table class="settingsTable">
+			
+			<tr><th style="width: 30%;">&nbsp;</th><th style="width: 30%;">Old Database</th>
+				<td class="settingCopy settingCopyAll" width="10%" style="padding: 10px;">
+					<a href="#" title="Click to copy all old database settings over.">&rarr;</a>
+				</td><th style="width: 30%;">New Database</th></tr>
+			
+			<tr><!-- MYSQL SERVER -->
+				<td>
+					Database Server <span class="light">(MySQL)</span> <%= tip( 'This is the address to the mySQL server where your database will be stored. 99% of the time this is localhost.  The location of your mySQL server will be provided to you by your host if it differs.' ) %>
+				</td>
+				<td>
+					<input class="db_setting old_setting" type="text" value="<%= dat.db_server %>" readonly="readonly">
+				</td>
+				<td class="settingCopy">
+					<a href="#" title="Click to copy old setting over.">&rarr;</a>
+				</td>
+				<td>
+					<input class="db_setting" type="text" id="mysql_server" value="" tabindex="1">
+				</td>
+			</tr>
+			
+			<tr><!-- DATABASE NAME -->
+				<td>
+					Database Name <%= tip( 'This is the name of the database you want to import your blog into. The database user must have permissions to be able to access this database.  If you are migrating this blog to a new host you will need to create this database (ie using CPanel or phpmyadmin) and create a mysql database user with permissions.' ) %>
+				</td>
+				<td>
+					<input class="db_setting old_setting" type="text" value="<%= dat.db_name %>" readonly="readonly">
+				</td>
+				<td class="settingCopy">
+					<a href="#" title="Click to copy old setting over.">&rarr;</a>
+				</td>
+				<td>
+					<input class="db_setting" type="text" id="mysql_database" value="" tabindex="2">
+				</td>
+			</tr>
+			
+			<tr><!-- DATABASE USER -->
+				<td>
+					Database User <%= tip( 'This is the database user account that has permission to access the database name in the input above.  This user must be given permission to this database for the import to work.' ) %>
+				</td>
+				<td>
+					<input class="db_setting old_setting" type="text" value="<%= dat.db_user %>" readonly="readonly">
+				</td>
+				<td class="settingCopy">
+					<a href="#" title="Click to copy old setting over.">&rarr;</a>
+				</td>
+				<td>
+					<input class="db_setting" type="text" id="mysql_username" value="" tabindex="3">
+				</td>
+			</tr>
+			
+			<tr><!-- DATABASE PASS -->
+				<td>
+					Database Password <%= tip( 'This is the password for the database user.' ) %>
+				</td>
+				<td>
+					<input class="db_setting old_setting" type="text" value="<%= dat.db_password %>" readonly="readonly">
+				</td>
+				<td class="settingCopy">
+					<a href="#" title="Click to copy old setting over.">&rarr;</a>
+				</td>
+				<td>
+					<input class="db_setting" type="text" id="mysql_password" value="" tabindex="4">
+				</td>
+			</tr>
+			
+			<tr><!-- DATABASE PREFIX -->
+				<td>
+					Database Prefix <%= tip( 'This is the prefix given to all tables in the database.  If you are cloning the site on the same server AND the same database name then you will want to change this or else the imported database will overwrite the existing tables. This should NOT include more than one underscore. Example 1: wp_, Example 2: wp4_, Example 3: dustinsblog_' ) %>
+				</td>
+				<td>
+					<input class="db_setting old_setting" type="text" value="<%= dat.db_prefix %>" readonly="readonly">
+				</td>
+				<td class="settingCopy">
+					<a href="#" title="Click to copy old setting over.">&rarr;</a>
+				</td>
+				<td>
+					<input class="db_setting" type="text" id="mysql_prefix" value="" tabindex="5">
+				</td>
+			</tr>
+			
+		</table>
+		
+		
+		
+		<div style="margin-top: 35px; margin-bottom: 35px; text-align: center;">
+			<div id="db_test_container" style="display: none; margin-bottom: 25px; padding: 25px; text-align: left;" class="round-wrap">
+			</div>
+
+
+			<% if ( false === restoreDatabase ) { %>
+				<div>
+					Database will <b>not</b> be restored from the backup based on your selection on Step 1.
+				</div>
+			<% } %>
+	
+			<div id="db_wipe_options" style="<% if ( false === restoreDatabase ) { %> display: none; <% } %>">
+				<b>Delete existing database tables?</b>
+				&nbsp;&nbsp;
+				<label>
+					<input class="db_setting" type="checkbox" value="1" name="wipe_prefix" id="wipe_prefix">
+					Matching Prefix <%= tip( 'When selected ImportBuddy will first delete any and all databases tables on the new server that begin with the new prefix. For example, if your new database prefix above is wp_, any table on the new server starting with wp_ in the name such as wp_options, wp_posts, wp_.*, will be dropped / deleted. The old database server is never modified ever (unless it is the same server as the new server).' ) %>
+				</label>
+				&nbsp;&nbsp;
+				<label>
+					<input class="db_setting" type="checkbox" value="1" name="wipe_database" id="wipe_database" onClick="jQuery(this).closest('label').find('span').toggle();">
+					Delete All <span class="pb_label pb_label-warning" style="display: none;">Use Caution</span>
+				</label>
+			</div>
+	
+			<div id="ignore_prefix_warnings" style="display: none;">
+				<b>Ignore prefix warnings?</b>
+				&nbsp;&nbsp;
+				<label>
+					<input class="db_setting" type="checkbox" name="ignore_dbtest_warnings" id="ignore_prefix_warnings_checkbox" value="1">
+					Yes, proceed with this prefix.
+				</label>
+			</div>
+	
+	
+	
+	
+	
+		</div><!-- /wrap -->
+		
+		<div class="main_box_foot">
+			<br>
+			<center>
+				<input type="submit" name="nextStep" value="Next Step" class="it-button pb_database_next_test">
+				<button href="#pb_advanced_modal" class="it-button it-secondary leanModal createdb_modal_link">Advanced Options</button>
+			</center>
+			
+		</div>
+	
+	
+	
+	
+		<div id="pb_advanced_modal" style="display: none;">
+			<div class="modal">
+				<div class="modal_header">
+					<a class="modal_close">&times;</a>
+					<h2>Advanced Options</h2>
+					Exercise caution using advanced options. Additional options available on subsequent steps.
+				</div>
+				<div class="modal_content">
+					
+					<label>Database Method Strategy: </label>
+					<select name="databaseMethodStrategy" id="databaseMethodStrategy">
+						<option value="php" SELECTED>PHP-based: Supports automated chunked resuming - default</option>
+						<option value="commandline">Commandline: Fast but does not support resuming</option>
+						<option value="all">All Available: ( PHP [chunking] > Commandline via exec()  )</option>
+					</select>
+						
+					<br>
+					
+					<input class="db_setting" type="checkbox" value="1" id="ignore_sql_errors" name="ignore_sql_errors"> Ignore SQL errors & existing WordPress tables. <%= tip( 'When checked ImportBuddy will allow importing database tables that have the same name as existing tables. This results in a merge of the existing data with the imported database being merged. Note that this is does NOT update existing data and only ADDS new database table rows. All other SQL conflict errors will be suppressed as well. Use this feature with caution.' ) %><br>
+					Maximum time per chunk when interacting with database: <input type="text" name="max_execution_time" id="max_execution_time" value="<%= maxExecutionTime %>" size="5"> seconds. <%= tip( 'The maximum amount of time ImportBuddy should allow a database import chunk to run. ImportBuddy by default limits each chunk to your Maximum PHP runtime. If your database import step is timing out then lowering this value will instruct the script to limit each `chunk` to allow it to finish within this time period. Raising this value above your servers limits will not increase or override server settings.' ) %>
+					
+					<br>
+					
+					<label>Database files to restore: </label>
+					<div class="database_restore_table_select">
+						<%
+						databaseSettings.sqlFiles.forEach(function(el, index) {
+							%>
+							<label><input class="databaseFile" type="checkbox" name="databaseFiles[]" value="<%= el %>" CHECKED> <%= el %></label><br>
+							<%
+						});
+						%>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	
+	
+	
+	</form>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div id="pb_createdb_modal" style="display: none;">
+		<div class="modal">
+			<div class="modal_header">
+				<a class="modal_close">&times;</a>
+				<h2>cPanel Database Wizard</h2>
+				Quickly create a new cPanel database right here.
+			</div>
+			<div class="modal_content">
+				
+				<form id="cpanel_createdb_form">
+					
+					<table width="100%">
+						<tr>
+							<td>
+								cPanel Login URL
+								<%= tip( '[Ex: mydomain.com] Enter the cPanel domain to complete the URL you go to to access cPanel.  For instance if your cPanel login is at http://mydomain.com:2082/ then your domain is mydomain.com.' ) %>
+							</td>
+							<td style="text-align: right;">
+								http://<input type="text" name="cpanel_url" id="cpanel_url" style="width: 186px;">:<input type="text" name="cpanel_port" id="cpanel_port" style="width: 62px;" value="2082">/
+							</td>
+						</tr>
+						<tr>
+							<td>
+								cPanel username
+								<%= tip( '[Ex: buddy] This is the username you use to log into your cPanel.' ) %>
+							</td>
+							<td style="text-align: right;">
+								<input type="text" name="cpanel_user" class="cpanel_user" id="cpanel_user" style="width: 265px;">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								cPanel password
+								<%= tip( '[Ex: i498hDsifH487hsS] This is the password you use to log into your cPanel.' ) %>
+							</td>
+							<td style="text-align: right;">
+								<input type="text" name="cpanel_pass" id="cpanel_pass" style="width: 265px;" />
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<hr style="margin: 8px;">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								New database name
+								<%= tip( '[Ex: bobsblog] The database name you want to create. Note: cPanel automatically prefixes databases with the cPanel account username and an underscore. ex if your cPanel username is "buddy": buddy_bobsblog' ) %>
+							</td>
+							<td style="text-align: right;">
+								<span class="cpanel_user_mirror"></span><input type="text" name="cpanel_dbname" id="cpanel_dbname" style="width: 265px;" maxlength="56">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								New database username
+								<%= tip( '[Ex: bob] The username you want to add to grant access to this database you want to create. Note: cPanel automatically prefixes database usernames with the cPanel account username and an underscore. ex if your cPanel username is "buddy": buddy_bob' ) %>
+							</td>
+							<td style="text-align: right;">
+								<span class="cpanel_user_mirror"></span><input type="text" name="cpanel_dbuser" id="cpanel_dbuser" style="width: 265px;" maxlength="7">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								New database user password
+								<%= tip( 'The password you would like to assign to the database user created.' ) %>
+							</td>
+							<td style="text-align: right;">
+								<input type="text" name="cpanel_dbpass" id="cpanel_dbpass" style="width: 265px;" value="<%= randomString(16, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ') %>">
+							</td>
+						</tr>
+					</table>
+					<br><br>
+					<center>
+						<input type="submit" name="submit" value="Create Database" class="button button-primary cpanel_createdb_create">
+					</center>
+	
+				</form>
+			</div>
+	
+		</div>
+	</div>
+	
+	
+	<div id="pb_cpaneltutorial_modal" style="display: none;">
+		<div class="modal">
+			<div class="modal_header">
+				<a class="modal_close">&times;</a>
+				<h2>cPanel Database Tutorial</h2>
+				Learn how to quickly create your own cPanel database.
+			</div>
+			<div class="modal_content">
+	
+				<ol>
+					<li>In cPanel, select <b>MySQL Database Wizard</b> from the <i>Databases</i> section. Next step.</li>
+					<li>Enter a <i>name</i> for the new database you wish to create. Next step.</li>
+					<li>Enter a <i>username</i> and <i>password</i> to create the database user. Next step.</li>
+					<li>Select <b>All Privileges</b> to set permissions the user has to the database. Done.</li>
+					<li>Back in ImportBuddy, enter those same database settings for the <i>New Database</i>.</li>
+				</ol>
+				<br>
+	
+				<div onClick="jQuery(this).html( new EJS({url: 'importbuddy/views/cpanelTutorial.ejs'}).render() );" style="text-align: center; cursor: pointer;"><h2>Click to display 30-second tutorial video.</h2></div>
+	
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<!-- -->
+<div id="database-box-working">
+</div>

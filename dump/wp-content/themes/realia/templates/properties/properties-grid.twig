@@ -1,0 +1,22 @@
+{% if wp.aviators_settings_get_value('properties', 'homepage', 'title') %}
+    {% if page.post_title is empty %}
+        <h1 class="page-header">{{ wp.aviators_settings_get_value('properties', 'homepage', 'title') }}</h1>
+    {% else %}
+        <h2>{{ wp.aviators_settings_get_value('properties', 'homepage', 'title') }}</h2>
+    {% endif %}
+{% endif %}
+
+<div class="properties-grid">
+    <div class="row">
+        {% for post in posts %}
+        <div class="span3">
+            {% include 'properties/property-box-small.twig' with {'property': post} %}
+        </div>
+        {% if loop.index % wp.aviators_settings_get_value('properties', 'homepage', 'cols')  == 0 %}
+    </div>
+    <div class="row">
+        {% endif %}
+        {% endfor %}
+    </div>
+    <!-- /.row -->
+</div><!-- /.properties-grid -->

@@ -1,0 +1,328 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Post Ratings\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-05-25 00:47+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Martin <hello@mjanmarsko.sk>\n"
+"Language-Team: mjanmarsko.sk <hello@mjanmarsko.sk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Language: sk\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-SearchPath-0: c:\\wamp\\www\\wpmu\\wp-content\\plugins\\post-"
+"ratings\n"
+"X-Poedit-SearchPath-1: .\n"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:233
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:332
+msgid "Post Ratings"
+msgstr "Hodnotenia príspevkov"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:261
+msgid "Settings"
+msgstr "Nastavenia"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:324
+msgid "Home"
+msgstr "Domov"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:325
+msgid "Archives"
+msgstr "Archív"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:326
+msgid "Single pages"
+msgstr "Jednotlivé stránky"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:327
+msgid "Search results"
+msgstr "Výsledky hľadania"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:337
+msgid "Global stats"
+msgstr "Súhrnná štatistika"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:339
+#, php-format
+msgid "%1$s votes (on %2$s posts)"
+msgstr "%1$s hlasov (na %2$s príspevkov)"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:340
+#, php-format
+msgid "Average vote count per post: %s"
+msgstr "Priemerný počet hlasov na príspevok: %s"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:341
+#, php-format
+msgid "Average rating per post: %s"
+msgstr "Priemerné hodnotenie na príspevok: %s"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:350
+msgid "Access level"
+msgstr "Úroveň prístupu"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:354
+msgid "Allow unregistered users to vote"
+msgstr "Povoliť neregistrovaním používateľom hlasovať"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:360
+msgid "Maximum rating"
+msgstr "Maximálne hodnotenie"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:363
+msgid "Changing this option will reset existing post rating records"
+msgstr "Zmena tejto možnosti zmaže existujúce hodnotenia príspevkov"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:369
+msgid "Bayesian rating (score) formula"
+msgstr "Vzorec Bayesovského hodnotenia (skóre) "
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:392
+msgid "I have my own formula:"
+msgstr "Mám svoj ​​vlastný vzorec:"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:394
+msgid "Legend"
+msgstr "Vysvetlivky"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:399
+msgid "Global average number of votes per post"
+msgstr "Globálny priemerný počet hlasov na príspevok"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:401
+msgid "Global number of votes (from all posts)"
+msgstr "Globálne počet hlasov (zo všetkých príspevkov)"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:403
+msgid "Number of votes from the current post"
+msgstr "Počet hlasov z aktuálneho príspevku"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:405
+#, php-format
+msgid "Global average rating per post (from 1 to %d)"
+msgstr "Globálne priemerné hodnotenie príspevkov (od 1 do %d)"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:407
+#, php-format
+msgid "Average rating of the current post (from 1 to %d)"
+msgstr "Priemerné hodnotenie súčasného príspevku (od 1 do %d)"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:409
+#, php-format
+msgid "Minimum vote count per post to consider (%d by default)"
+msgstr ""
+"Minimály počet hlasov na príspevok pre hodnotenie  (%d v predvolenom "
+"nastavení)"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:411
+#, php-format
+msgid "Maximum rating, see option above (currently %d)"
+msgstr "Maximálne hodnotenie, pozri nastavenia nižšie (v súčasnosti %d)"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:420
+msgid "Allow ratings on"
+msgstr "Povoliť hodnotenia na"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:436
+msgid "Locations of the rate links"
+msgstr "Umiestnenie odkazov hodnotenia"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:442
+msgid "Before post content"
+msgstr "Pred obsahom príspevku"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:447
+msgid "After post content "
+msgstr "Po obsahu príspevku"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:452
+msgid "I have my own action hook:"
+msgstr "Mám svoj vlastný action hook:"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:458
+#, php-format
+msgid "You can also add it manually anywhere by using the %s shortcode"
+msgstr "Môžete to tiež pridať ručne kdekoľvek pomocou shortcode %s "
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:465
+msgid "Page visibility"
+msgstr "Viditeľnosť stránky"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:485
+msgid "Save Changes"
+msgstr "Uložiť zmeny"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:489
+msgid "Delete rating records from all posts"
+msgstr "Odstrániť záznamy hodnotenia zo všetkých príspevkov"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:500
+#, php-format
+msgid ""
+"Found a bug, having a feature request or just looking for help on using this "
+"plugin? Then head on to the %s."
+msgstr ""
+"Našli ste nejakú chybu, máte požiadavku na doplnenie alebo len hľadáte pomoc "
+"s používaním tohto pluginu? Tak to zamierte na %s."
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:500
+msgid "Post Ratings support forums"
+msgstr "Post Ratings fóra podpory"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:671
+msgid "Invalid vote! Cheatin' uh?"
+msgstr "Neplatný hlas! Podvádzanie sa neopláca ;-)"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:744
+msgid "You cannot rate this post!"
+msgstr "Nemôžete hodnotiť tento príspevok!"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/post-ratings.php:812
+#, php-format
+msgid "Your '%s' action is must run in a post's context!"
+msgstr "Vašu '%s' akciu je nutné spustiť v rámci príspevku!"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:28
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:35
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:351
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:385
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:484
+msgid "Top Rated"
+msgstr "Najlepšie hodnotené"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:29
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:350
+msgid "The highest rated posts on your site"
+msgstr "Najvyššia hodnotené príspevky na vašom webe"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:117
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:120
+#, php-format
+msgid "%s out of 10"
+msgstr "%s z 10"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:194
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:298
+msgid "Show More"
+msgstr "Zobraziť viac"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:244
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:494
+msgid "Title:"
+msgstr "Názov:"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:249
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:499
+msgid "Get most rated:"
+msgstr "Získať najhodnotenejšie:"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:259
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:509
+msgid "Sort by:"
+msgstr "Zoradiť podľa:"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:261
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:511
+msgid "Overall bayesian rating (score)"
+msgstr "Celkové Bayeziánske hodnotenie (skóre)"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:262
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:512
+msgid "Average rating"
+msgstr "Priemerné hodnotenie"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:263
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:513
+msgid "Number of votes"
+msgstr "Počet hlasov"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:270
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:520
+msgid "Descending"
+msgstr "Klesajúco"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:275
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:525
+msgid "Ascending"
+msgstr "Vzostupne"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:280
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:530
+msgid "Ignore posts older than:"
+msgstr "Ignorovať príspevky staršie ako:"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:281
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:531
+msgid "days"
+msgstr "dni"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:283
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:533
+msgid "(0 to ignore date)"
+msgstr "(0 pre ignorovanie dátumu)"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:287
+msgid "Thumbnail Size:"
+msgstr "Veľkosť náhľadu:"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:288
+msgid "pixels"
+msgstr "pixeli"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:292
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:537
+msgid "Limit:"
+msgstr "Limit:"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:298
+#, php-format
+msgid "Display %s Link"
+msgstr "Zobraziť %s Odkaz"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:305
+#, php-format
+msgid "Read the %s to see all available keywords."
+msgstr "Prečítajte si %s pre zobrazenie všetkých dostupných kľúčových slov."
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:305
+msgid "documentation"
+msgstr "dokumentácia"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:314
+#, php-format
+msgid ""
+"<strong>Important:</strong> %1$s sized thumbnails have to be created if you "
+"just added this widget, or if you're changing the thumbnail size. Read more "
+"about thumbnail sizes %2$s"
+msgstr ""
+"<strong>Dôležité:</strong> %1$s veľkosti náhľadov sa musia vytvoriť, ak ste "
+"práve pridali tento widget, alebo ak meníte veľkosť náhľadu. Prečítajte si "
+"viac o veľkosti náhľadov %2$s"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:314
+msgid "here"
+msgstr "tu"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/widget.php:413
+#, php-format
+msgid "%d vote"
+msgid_plural "%d votes"
+msgstr[0] "%d hlas"
+msgstr[1] "%d hlasov"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/templates/post-ratings-control.php:52
+#, php-format
+msgid "Give %1$d out of %2$d stars"
+msgstr "Daj %1$d z %2$d hviezdičiek"
+
+#: c:\wamp\www\wpmu\wp-content\plugins\post-ratings/templates/post-ratings-control.php:65
+#, php-format
+msgid "%1$s vote, %2$s avg. rating (%3$s%% score)"
+msgid_plural "%1$s votes, %2$s avg. rating (%3$s%% score)"
+msgstr[0] "%1$s hlas, %2$s priem.hodnotenie (%3$s%% skóre)"
+msgstr[1] "%1$s hlasov, %2$s priem.hodnotenie (%3$s%% skóre)"

@@ -1,0 +1,56 @@
+.popw-collapse {
+	position: relative;
+	padding: 4px;
+	margin: 0;
+	border: 2px solid #fff;
+	cursor: pointer;
+	background-color: #f1f1f1;
+}
+
+	.popw-sortable { margin-bottom: 5px; }
+
+		.popw-collapse span:after {
+			position: absolute;
+			right: 6px;
+			top: 3px;
+			content: '\f140';
+			border: 0;
+			background: 0 0;
+			font: 400 17px/1 dashicons;
+			speak: none;
+			display: block;
+			padding: 0;
+			text-indent: 0;
+			text-align: center;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			text-decoration: none!important;
+		}
+
+	.popw-sortable label {
+		background-color: #eee;
+		border-bottom: 1px solid #f5f5f5;
+		cursor: move;
+		display: block;
+		padding: 3px 4px;
+	}
+
+	.popw-sortable label input {
+		float: right;
+		margin: 0;
+	}
+
+	.popw-inner { padding: 0 6px; }
+
+	.popw-tabs.disabled {
+		display: none;
+	}
+
+	body.js .popw-inner,
+	body.js .sort-tabs > span { display:none; }
+
+		/*.sort-tabs .disabled,*/
+		/*.sort-tabs .disabled a {*/
+			/*text-decoration:line-through;*/
+			/*color:#ccc;*/
+		/*}*/

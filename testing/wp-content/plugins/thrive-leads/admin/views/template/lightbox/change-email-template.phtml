@@ -1,0 +1,95 @@
+<div class="tvd-modal-content">
+    <p><?php echo __('Below, you can define what your default asset delivery email will look like. You can change this for individual emails, later', 'thrive-leads') ?>.</p>
+    <div class="tvd-input-field">
+        <# if(post_subject) { #>
+            <input class="tve-leads-asset-subject-input"  value="<#= post_subject #>" id="tve-leads-asset-subject-input" type="text">
+        <# } else { #>
+            <input class="tve-leads-asset-subject-input" placeholder="<?php echo __('Email Subject', 'thrive-leads') ?>" value="<#= ThriveLeads.objects.AssetsWizard.get('email_data').template_subject #>" id="tve-leads-asset-subject-input" type="text">
+        <# } #>
+        <label for="tve-leads-asset-subject-input" class="tvd-active"><?php echo __('Email subject', 'thrive-leads') ?></label>
+    </div>
+    <div class="tvd-v-spacer"></div>
+    <div class="tvd-input-field">
+        <textarea id="my-id-<#= ID #>" placeholder="<?php echo __('Email content', 'thrive-leads') ?>"></textarea>
+        <label for="my-id-<#= ID #>" class="tvd-active tve-edit-mail-label"><?php echo __('Email content', 'thrive-leads') ?></label>
+    </div>
+    <div class="tvd-v-spacer"></div>
+    <h4 class="tl-clickable tl-toggle-tab-display collapsed tvd-pointer" data-target="#tve-asset-group-shortcodes">
+        <?php echo __('Show available short codes', 'thrive-leads') ?>
+    </h4>
+    <div class="tvd-relative">
+        <ul class="tvd-collection tvd-not-visible" id="tve-asset-group-shortcodes">
+            <li class="tvd-collection-item">
+                <div class="tvd-row tve-leads-copy-row">
+                    <div class="tvd-col tvd-s3">
+                        <div class="tvd-input-field tvd-margin-top-small">
+                            <input readonly="readonly" type="text" value="[asset_name]" class="tvd-no-margin tve-leads-copy">
+                        </div>
+                    </div>
+                    <div class="tvd-col tvd-s3">
+                    <span class="tve-leads-copy-container">
+                        <a class="tve-copy-to-clipboard tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue tvd-btn-small tvd-margin-top-small" href="javascript:void(0)">
+                            <span class="tl-copy-text"><?php echo __('Copy', 'thrive-leads') ?></span>
+                        </a>
+                    </span>
+                    </div>
+                    <div class="tvd-col tvd-s6">
+                        <div class="tve-align-stupid-text">
+                            <?php echo __('Displays the name of your opt-in offer.', 'thrive-leads') ?>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="tvd-collection-item">
+                <div class="tvd-row tve-leads-copy-row">
+                    <div class="tvd-col tvd-s3">
+                        <div class="tvd-input-field tvd-margin-top-small">
+                            <input readonly="readonly" type="text" value="[lead_name]" class="tvd-no-margin tve-leads-copy">
+                        </div>
+                    </div>
+                    <div class="tvd-col tvd-s3">
+                    <span class="tve-leads-copy-container ">
+                        <a class="tve-copy-to-clipboard tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue tvd-btn-small tvd-margin-top-small" href="javascript:void(0)">
+                            <span class="tl-copy-text"><?php echo __('Copy', 'thrive-leads') ?></span>
+                        </a>
+                    </span>
+                    </div>
+                    <div class="tvd-col tvd-s6">
+                        <div class="tve-align-stupid-text">
+                            <?php echo __('Displays the name of the person receiving the email (if available).', 'thrive-leads') ?>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="tvd-collection-item">
+                <div class="tvd-row tve-leads-copy-row">
+                    <div class="tvd-col tvd-s3">
+                        <div class="tvd-input-field  tvd-margin-top-small">
+                            <input readonly="readonly" type="text" value="[asset_download]" class="tvd-no-margin tve-leads-copy">
+                        </div>
+                    </div>
+                    <div class="tvd-col tvd-s3">
+                    <span class="tve-leads-copy-container">
+                        <a class="tve-copy-to-clipboard tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue tvd-btn-small  tvd-margin-top-small" href="javascript:void(0)">
+                            <span class="tl-copy-text"><?php echo __('Copy', 'thrive-leads') ?></span>
+                        </a>
+                    </span>
+                    </div>
+                    <div class="tvd-col tvd-s6">
+                        <div class="tve-align-stupid-text">
+                            <?php echo __('Insert a download link or a list of download links.', 'thrive-leads') ?>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="tvd-modal-footer">
+    <div class="tvd-row">
+        <div class="tvd-col tvd-s12">
+            <button class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-right tve-leads-submit-template"
+                    value="mandrill"><?php echo __("Save Template & Continue", "thrive-cb") ?></button>
+        </div>
+    </div>
+</div>

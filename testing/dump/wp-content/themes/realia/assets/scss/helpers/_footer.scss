@@ -1,0 +1,133 @@
+#footer-wrapper { background-color: $footer-bottom-background-color; color: $footer-top-color; width: 100%;
+  .widget {
+    &.properties {
+      .property { background-color: $footer-top-widget-properties-background-color; 
+        .price { color: $footer-top-widget-properties-price-color; }
+      }
+    }
+    &.our-agents {
+      .agent { background-color: $blue-dark;
+        .name { color: $white; }
+      }
+    }
+  }
+  #footer-top { background-color: $footer-top-background-color; padding-top: 20px; padding-bottom: 30px;
+    h2 { color: $footer-top-header-color; font-size: 24px; font-weight: lighter; margin: 0px 0px 30px 0px;  }
+    .widget { margin-bottom: 0px; }
+
+    form { margin: 0px; 
+      label { font-weight: bold;
+        .form-required { color: red; }
+      }
+
+      input[type=text], input[type=email] { height: 34px; line-height: 34px; }
+      input[type=text], input[type=email],
+      textarea {
+        @include border-radius(0px); @include box-shadow(none); @include box-sizing(border-box);
+        border: 0px; resize: none; width: 100%;
+        &:focus, &:active { @include box-shadow(none); }
+      }
+      textarea { height: 60px; }
+      .form-actions { background-color: transparent; border: 0px; margin: 0px; padding: 0px; 
+        .btn { float: right; }
+      }
+    }
+
+    table.contact {
+      th { background-repeat: no-repeat; color: $footer-top-th-color; font-weight: bold; padding: 0px 10px 10px 30px; text-align: right; vertical-align: top;
+        &.address { background-image: url('../img/icons/address.png'); background-size: 12px 16px; background-position: 6px 2px; }
+        &.phone { background-image: url('../img/icons/mobile.png'); background-size: 16px 16px; background-position: 3px 1px; }
+        &.email { background-image: url('../img/icons/mail.png'); background-size: 17px 11px; background-position: 4px 4px;              }
+        &.skype { background-image: url('../img/icons/skype.png'); background-size: 18px 17px; background-position: 3px 1px; }
+        &.gps { background-image: url('../img/icons/gps.png'); background-size: 25px 24px; background-position: left 0px; }
+      }
+      @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+        th {
+          &.address { background-image: url('../img/icons/address@2x.png'); }
+          &.phone { background-image: url('../img/icons/mobile@2x.png'); }
+          &.email { background-image: url('../img/icons/mail@2x.png'); }
+          &.skype { background-image: url('../img/icons/skype@2x.png'); }
+          &.gps { background-image: url('../img/icons/gps@2x.png'); }
+        }
+      }
+      td { vertical-align: top; padding-bottom: 15px;
+        a { color: $footer-top-link-color; text-decoration: none;
+          &:hover { color: $footer-top-link-color-hover; text-decoration: none; }
+        }
+      }
+    }
+  }
+
+  #footer { border: 0px; margin-top: 0px; padding: 25px 0px;
+    #footer-inner {
+      p { margin: 0px;
+        a { text-decoration: none; }
+      }
+      .widget { margin: 0px; padding-top: 7px; }
+      #block-menu-menu-share {
+        .content { overflow: hidden; }
+      }
+
+      .nav { float: right; margin: 0px;
+        li { background-image: none; display: inline-block; margin-left: 20px;
+          a { @include transition(opacity .2s linear); background-position: center center; background-repeat: no-repeat; display: block; height: 25px; opacity: 0.8; text-indent: -99999px;
+            &.twitter { background-image: url('../img/share/twitter.png'); background-size: 24px 22px; width: 24px; }
+            &.facebook { background-image: url('../img/share/facebook.png'); background-size: 11px 22px; width: 11px; }
+            &.flickr { background-image: url('../img/share/flickr.png'); background-size: 23px 10px; width: 23px; }
+            &.vimeo { background-image: url('../img/share/vimeo.png'); background-size: 22px 20px; width: 22px; }
+            &.google { background-image: url('../img/share/google.png'); background-size: 27px 25px; width: 27px; }
+            &.linkedin { background-image: url('../img/share/linkedin.png'); background-size: 23px 22px; width: 23px; }
+            &:hover { background-color: transparent; opacity: 1; }
+          }
+          @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+            a {
+              &.twitter { background-image: url('../img/share/twitter@2x.png');  }
+              &.facebook { background-image: url('../img/share/facebook@2x.png'); }
+              &.flickr { background-image: url('../img/share/flickr@2x.png'); }
+              &.vimeo { background-image: url('../img/share/vimeo@2x.png'); }
+              &.google { background-image: url('../img/share/google@2x.png'); }
+              &.linkedin { background-image: url('../img/share/linkedin@2x.png'); }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  #footer-wrapper {
+    #footer-top {
+      table.contact {
+        th { background-position: left center !important; display: block; padding-bottom: 12px; padding-left: 35px; padding-top: 12px; text-align: left; }
+        td { display: table; padding-bottom: 10px; }
+
+        tr {
+          &:first-child {
+            th { background-position: left top !important; padding-top: 0px; }
+          }
+        }
+      }
+    }
+    #footer {
+      #footer-inner {}
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #footer-wrapper {
+    #footer-top { padding-left: 20px; padding-right: 20px;
+
+    }
+    #footer {
+      #footer-inner { padding-left: 20px; padding-right: 20px;
+        .nav { float: none; margin-top: 20px;
+          li {
+            &:first-child { margin-left: 0px; }
+          }
+        }
+      }
+    }
+  }
+}

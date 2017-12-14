@@ -1,0 +1,22 @@
+{% if wp.is_active_sidebar('bottom-1') or wp.is_active_sidebar('bottom-2') or wp.is_active_sidebar('bottom-3') %}
+    <div class="bottom-wrapper">
+        <div class="bottom container">
+            <div class="bottom-inner row">
+                <div class="span4">
+                    {% if not dynamic_sidebar('bottom-1') %}
+                    {% endif %}
+                </div>
+
+                <div class="span4">
+                    {% if not dynamic_sidebar('bottom-2') %}
+                    {% endif %}
+                </div>
+
+                <div class="span4">
+                    {% if not dynamic_sidebar('bottom-3') %}
+                    {% endif %}
+                </div>
+            </div><!-- /.bottom-inner -->
+        </div><!-- /.bottom -->
+    </div><!-- /.bottom-wrapper -->
+{% endif %}

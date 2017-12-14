@@ -1,0 +1,6 @@
+
+/* Newsletter Sign-Up - Checkbox */
+#nsu-checkbox { clear:both; display:block; }
+#nsu-checkbox-input { position:relative; margin:0 5px 0 0; padding:0; height:13px; width:13px; display:inline-block !important; -webkit-appearance: checkbox; }
+#nsu-checkbox-label { cursor:pointer; line-height:normal; }
+#registerform #nsu-checkbox{ margin-bottom:10px; }

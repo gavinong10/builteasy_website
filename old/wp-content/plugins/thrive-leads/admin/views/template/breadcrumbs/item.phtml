@@ -1,0 +1,9 @@
+<# if(last === 0 ) { #>
+    <# if(url !== '') { #>
+        <a href="<#= url #>" class="tve-breadcrumb-item"><#= name #></a>
+    <# } else { #>
+        <span class="tve-breadcrumb-item"><#= name #></span>
+    <# } #>
+<# } else { #>
+    <span class="tve-breadcrumb-item"><#= name #></span>
+<# } #>

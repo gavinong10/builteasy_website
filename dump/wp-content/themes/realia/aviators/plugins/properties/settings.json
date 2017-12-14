@@ -1,0 +1,591 @@
+{
+    "title": "Properties",
+    "slug": "properties",
+
+    "tabs": [
+        {
+            "settings": {
+                "slug": "common",
+                "title": "General",
+                "subpage_slug": "properties"
+            },
+
+            "sections": [
+                {
+                    "settings": {
+                        "id": "common"
+                    },
+                    "options": [
+                        {
+                            "id": "disable_contract_type_label",
+                            "label": "Disable Contract Type Label",
+                            "type": "boolean",
+                            "default": false,
+                            "description": "If checked all properties in grid version will have disabled label with information about the contract type."
+                        },
+                        {
+                            "id": "frontend_needs_submission",
+                            "label": "Approving frontend submission",
+                            "type": "boolean",
+                            "default": false,
+                            "description": "If checked, all fronted submissions need to be approved/published by administrator ( If paypal publishing is enabled, it will overwrite this setting )"
+                        },
+                        {
+                            "id": "enable_rating",
+                            "label": "Enable ratings for properties",
+                            "type": "boolean",
+                            "default": true,
+                            "description": "If checked ratings will be enabled for properties."
+                        },
+                        {
+                            "id": "show_only_checked",
+                            "label": "Show only checked amenities",
+                            "type": "boolean",
+                            "default": false,
+                            "description": "If checked only checked amenities will display, otherwise all amenities will display."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "settings": {
+                "slug": "homepage",
+                "title": "Properties Grid Template",
+                "subpage_slug": "properties"
+            },
+
+            "sections": [
+                {
+                    "settings": {
+                        "id": "homepage"
+                    },
+                    "options": [
+                        {
+                            "id": "title",
+                            "label": "Title",
+                            "type": "textinput",
+                            "default": "Recent Properties"
+                        },
+                        {
+                            "id": "rows",
+                            "label": "Of Rows",
+                            "type": "textinput",
+                            "default": "2"
+                        },
+                        {
+                            "id": "cols",
+                            "label": "Of Columns",
+                            "type": "textinput",
+                            "default": "3"
+                        },
+                        {
+                            "id": "hide_sidebar",
+                            "label": "Hide Sidebar",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "shuffle_results",
+                            "label": "Shuffle Results",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "type",
+                            "label": "Display type",
+                            "type": "select",
+                            "default": "recent",
+                            "choices": [
+                                {
+                                    "key": "recent",
+                                    "value": "Recent"
+                                },
+                                {
+                                    "key": "reduced",
+                                    "value": "Reduced"
+                                },
+                                {
+                                    "key": "featured",
+                                    "value": "Featured"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "settings": {
+                "slug": "properties-submission",
+                "title": "Frontend Submission",
+                "subpage_slug": "properties"
+            },
+
+            "sections": [
+                {
+                    "settings": {
+                        "id": "frontend-submission"
+                    },
+                    "options": [
+                        {
+                            "id": "hide_sublocation",
+                            "label": "Disable sublocation for frontend submission form",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "hide_subsublocation",
+                            "label": "Disable district for frontend submission form",
+                            "type": "boolean",
+                            "default": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "settings": {
+                "slug": "properties",
+                "title": "Archive Page",
+                "subpage_slug": "properties"
+            },
+
+            "sections": [
+                {
+                    "settings": {
+                        "id": "properties"
+                    },
+                    "options": [
+                        {
+                            "id": "per_page",
+                            "label": "Properties per page",
+                            "type": "textinput",
+                            "default": 9
+                        },
+                        {
+                            "id": "display_sort_bar",
+                            "label": "Display sort bar",
+                            "type": "boolean",
+                            "default": true
+                        },
+                        {
+                            "id": "type",
+                            "label": "Display type",
+                            "type": "select",
+                            "default": "grid",
+                            "choices": [
+                                {
+                                    "key": "grid",
+                                    "value": "Grid"
+                                },
+                                {
+                                    "key": "row",
+                                    "value": "Row"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "default_sort",
+                            "label": "Default sorting option",
+                            "type": "select",
+                            "default": "title",
+                            "choices": [
+                                {
+                                    "key": "title",
+                                    "value": "Title"
+                                },
+                                {
+                                    "key": "date",
+                                    "value": "Date"
+                                },
+                                {
+                                    "key": "beds",
+                                    "value": "Bedrooms"
+                                },
+                                {
+                                    "key": "baths",
+                                    "value": "Bathrooms"
+                                },
+                                {
+                                    "key": "price",
+                                    "value": "Price"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "settings": {
+                "slug": "filter",
+                "title": "Filter",
+                "subpage_slug": "properties"
+            },
+
+            "sections": [
+                {
+                    "settings": {
+                        "id": "filter"
+                    },
+                    "options": [
+                        {
+                            "id": "from",
+                            "label": "From",
+                            "type": "textarea",
+                            "default": "1000\n20000\n50000\n100000"
+                        },
+                        {
+                            "id": "to",
+                            "label": "To",
+                            "type": "textarea",
+                            "default": "1000\n20000\n50000\n100000"
+                        }
+                    ]
+                },
+
+                {
+                    "settings": {
+                        "id": "filter_visibility",
+                        "title": "Fields Visibility - Vertical Filter"
+                    },
+                    "options": [
+                        {
+                            "id": "hide_location",
+                            "label": "Hide location",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "hide_sublocation",
+                            "label": "Hide Sub-Location",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "hide_sub_sublocation",
+                            "label": "Hide Sub-Sub-Location",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "hide_type",
+                            "label": "Hide type",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "hide_contract",
+                            "label": "Hide contract",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id"     : "hide_beds",
+                            "label"  : "Hide beds",
+                            "type"   : "boolean",
+                            "default": false
+                        },
+                        {
+                            "id"     : "hide_baths",
+                            "label"  : "Hide baths",
+                            "type"   : "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "hide_price_from",
+                            "label": "Hide price from",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "hide_price_to",
+                            "label": "Hide price to",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "hide_area_from",
+                            "label": "Hide area from",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "hide_area_to",
+                            "label": "Hide area to",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "hide_property_id",
+                            "label": "Hide property id",
+                            "type": "boolean",
+                            "default": false
+                        }
+                    ]
+                },
+
+                {
+                    "settings": {
+                        "id": "filter_visibility_h",
+                        "title": "Fields Visibility - Horizontal Filter"
+                    },
+                    "options": [
+                        {
+                            "id": "hide_location",
+                            "label": "Hide location",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "hide_sublocation",
+                            "label": "Hide Sub-Location",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "hide_sub_sublocation",
+                            "label": "Hide Sub-Sub-Location",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+
+                            "id": "hide_type",
+                            "label": "Hide type",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id"     : "hide_type",
+                            "label"  : "Hide type",
+                            "type"   : "boolean",
+                            "default": false
+                        },
+                        {
+                            "id"     : "hide_contract",
+                            "label"  : "Hide contract",
+                            "type"   : "boolean",
+                            "default": false
+                        },
+                        {
+                            "id"     : "hide_beds",
+                            "label"  : "Hide beds",
+                            "type"   : "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "hide_baths",
+                            "label": "Hide baths",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "hide_price_from",
+                            "label": "Hide price from",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "hide_price_to",
+                            "label": "Hide price to",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "hide_area_from",
+                            "label": "Hide area from",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "hide_area_to",
+                            "label": "Hide area to",
+                            "type": "boolean",
+                            "default": false
+                        }
+                    ]
+                }
+
+            ]
+        },
+        {
+            "settings": {
+                "slug": "units",
+                "title": "Units",
+                "subpage_slug": "properties"
+            },
+
+            "sections": [
+                {
+                    "settings": {
+                        "id": "units"
+                    },
+                    "options": [
+                        {
+                            "id": "area",
+                            "label": "Area unit",
+                            "type": "textinput",
+                            "default": "m<sup>2</sup>"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "settings": {
+                "slug": "map",
+                "title": "Map",
+                "subpage_slug": "properties"
+            },
+
+            "sections": [
+                {
+                    "settings": {
+                        "id": "map"
+                    },
+                    "options": [
+                        {
+                            "id": "latitude",
+                            "label": "Default latitude",
+                            "type": "textinput",
+                            "default": "34.019194"
+                        },
+                        {
+                            "id": "longitude",
+                            "label": "Default longitude",
+                            "type": "textinput",
+                            "default": "-118.488042"
+                        }
+
+                    ]
+                }
+            ]
+        },
+        {
+            "settings": {
+                "slug": "enquire_form",
+                "title": "Enquire Form",
+                "subpage_slug": "properties"
+            },
+
+            "sections": [
+                {
+                    "settings": {
+                        "id": "enquire_form",
+                        "title": "Header E-mail Information"
+                    },
+                    "options": [
+                        {
+                            "id": "name",
+                            "label": "From name",
+                            "type": "textinput",
+                            "default": "Realia"
+                        },
+                        {
+                            "id": "email",
+                            "label": "From email",
+                            "type": "textinput",
+                            "default": "info@example.com"
+                        },
+                        {
+                            "id": "subject",
+                            "label": "Subject",
+                            "type": "textinput",
+                            "default": "Message from enquire form"
+                        }
+                    ]
+                },
+                {
+                    "settings": {
+                        "id": "enquire_form_receive",
+                        "title": "Who will receive e-mail"
+                    },
+                    "options": [
+                        {
+                            "id": "agent",
+                            "label": "Agents",
+                            "type": "boolean",
+                            "default": true
+                        },
+                        {
+                            "id": "author",
+                            "label": "Author",
+                            "type": "boolean",
+                            "default": true
+                        },
+                        {
+                            "id": "admin",
+                            "label": "Site Admin",
+                            "type": "boolean",
+                            "default": true
+                        },
+                        {
+                            "id": "custom",
+                            "label": "Additional email addresses - separate with \",\"",
+                            "type": "textinput"
+                        }
+                    ]
+                },
+
+                {
+                    "settings": {
+                        "id": "fields",
+                        "title": "Hide Form Fields"
+                    },
+                    "options": [
+                        {
+                            "id": "hide_link",
+                            "label": "Hide link to property",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "hide_name",
+                            "label": "Hide name",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "hide_phone",
+                            "label": "Hide phone",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "hide_date",
+                            "label": "Hide date",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "hide_date_from",
+                            "label": "Hide date from",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "hide_date_to",
+                            "label": "Hide date to",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "hide_email",
+                            "label": "Hide email",
+                            "type": "boolean",
+                            "default": false
+                        },
+                        {
+                            "id": "hide_message",
+                            "label": "Hide message",
+                            "type": "boolean",
+                            "default": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,287 @@
+.ztb-wrapper{
+    background: url("../images/bg_body.png") repeat fixed 30% 70% rgba(0, 0, 0, 0);
+    float: left;
+    height: 100%;
+    min-height: 600px;
+    min-width: 970px;
+    width: 100%;
+}
+div#message{
+    margin:10px 0 0;
+}
+.ztb-code-wrapper{
+	background-color: white;
+    margin-top: 10px;
+    padding: 0 50px;
+    text-align: center;
+    width: 600px;
+    min-height: 200px;
+    height: auto;
+}
+.ztb-title {
+    float: left;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 25px;
+    margin-top: 65px;
+    text-align: center;
+    width: 100%;
+}
+.ztb-logo {
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    width: 600px;
+    padding: 0 50px;
+}
+.ztb-logo img{
+    width: 130px;
+}
+.ztb-logo a{
+    display: inline-block;
+    line-height: 100px;
+}
+.ztb-button {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 30px;
+    float: left;
+    width: 100%;
+}
+.ztb-button a{
+    background-color: #196cca;
+    border: medium none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 17px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 25px;
+    position: relative;
+    text-decoration: none;
+    width: auto;
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+}
+.ztb-button a:hover{
+	background-color: #0066CC;
+    color: #fff;
+}
+.ztb-button a:focus{
+    box-shadow: none;
+}
+.ztb-button .disconect-ztb-wrapper{
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.ztb-button .disconect-ztb-wrapper span{
+    float: left;
+    text-align: right;
+    width: 55%;
+}
+
+.ztb-button #disconnect-ztb{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #9e9e9e;
+    display: inline-block;
+    float: none;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0;
+    text-decoration: underline;
+    width: auto;
+}
+.loading{
+    display:none;
+    float: left;
+    height: 20px;
+    padding-left: 10px;
+    width: 20px;
+}
+.loading img{
+    float: left;
+    height: 15px;
+    margin-top: 3px;
+}
+.ztb-button #disconnect-ztb:hover{
+    color: black;
+}
+.ztb-source{
+    background-color: #fef9cf;
+    font-family: "Lucida Console","Lucida Sans Typewriter",Monaco,"Bitstream Vera Sans Mono",monospace;
+    font-size: 12px;
+    width: 100%;
+    padding: 10px;
+    height: 140px;
+}
+.insert-code-wrapper {
+    display: inline-block;
+    padding-top: 20px;
+    text-align: center;
+    min-width: 60%;
+    float: left;
+    width: 100%;
+}
+.insert-code-wrapper span{
+    float: left;
+    font-size: 14px;
+    line-height: 14px;
+}
+.insert-code-wrapper .insert-code-content{
+    margin-right: 0;
+    float: left;
+    width: 100%;
+    margin-top: 0;
+}
+.insert-code-wrapper .insert-code{
+	margin-top: 15px;
+    color: #ffffff;
+    font-family: open-sans-bold;
+    font-weight: normal;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    background-color: #e03a3a;
+    border: medium none;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 #e03a3a inset, 0 2px 0 0 #bc2425, 0 3px 2px #999;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Open-Sans-Semibold",sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    position: relative;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #a61b1b;
+    -moz-user-select: none;
+    background-image: none;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    line-height: 1.42857;
+    margin-bottom: 50px;
+    display: inline-block;
+    width: 90px;
+    height: 40px;
+}
+.insert-code-wrapper .insert-code:hover{
+    background-color: #f24444;
+    box-shadow: 0 1px 0 #e03a3a inset, 0 2px 0 0 #bc2425, 0 3px 2px #999;
+    border: medium none;
+}
+.insert-code-content{
+	display: none;
+}
+.success-message{
+    background-color: #aace3b;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    margin-top: 7px;
+    padding: 10px;
+    display: none;
+}
+
+#button-open-insert-code{
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    font-size: 14px;
+    line-height: 14px;
+}
+.check-actived{
+    background: rgba(0, 0, 0, 0) url("../images/check.png") no-repeat scroll left 0 top -2px / 17px 17px;
+    float: left;
+    height: 17px;
+    margin-left: 2px;
+    margin-right: 0;
+    width: 17px;
+}
+.ztb-register-form .ztb-submit-button{
+    background-color: #196cca;
+    border: medium none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 17px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 25px;
+    position: relative;
+    text-decoration: none;
+    width: auto;
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    margin-top: 15px;
+    float: none;
+    margin: 0 auto;
+}
+.ztb-register-form  label{
+    float: left;
+    width: 200px;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 40px;
+    font-size: 16px;
+}
+.ztb-register-form .form-control{
+    height: 40px;
+    margin-bottom: 15px;
+    min-width: 200px;
+    float: left;
+}
+.button-wrapper{
+    display: inline-block;
+    width: 100%;
+}
+.progress-bar-strip {
+    -webkit-animation: progress 1s linear infinite !important;
+    -moz-animation: progress 1s linear infinite !important;
+    animation: progress 1s linear infinite !important;
+    background-repeat: repeat !important;
+    background-position: center center;
+    background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.35) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0.35) 75%, transparent 75%, transparent) !important;
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.35) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0.35) 75%, transparent 75%, transparent) !important;
+    background-size: 32px 32px;
+}
+
+@-webkit-keyframes progress {
+    from {
+        background-position: 0px 0
+    }
+    to {
+        background-position: 30px 0
+    }
+}
+@-moz-keyframes progress {
+    from {
+        background-position: 0px 0
+    }
+    to {
+        background-position: 30px 0
+    }
+}
+@keyframes progress {
+    from {
+        background-position: 0px 0
+    }
+    to {
+        background-position: 30px 0
+    }
+}

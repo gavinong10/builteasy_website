@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+
+.thumb_item {
+
+	background: none repeat scroll 0 0 white;
+
+	border-radius: 3px 3px 3px 3px;
+
+	box-shadow: 0px 0px 1px #5D4431;
+
+	float: left;
+
+	height: 100px;
+
+	margin-bottom: 5px;
+
+	margin-left: 12px;
+
+	min-height: 106px;
+
+	padding: 3px;
+
+	position: relative;
+
+	font-size: 11px;
+
+	font-family: arial;
+
+	width: 125px;
+
+	margin-bottom: 62px;
+
+	text-align:center;
+
+}
+
+
+
+.agent_titile { text-align: center;color: #666; }
+
+.agent_pic img { width: 100%; }
+
+.agent_pic { height:75px; overflow:hidden; }
+
+.agent_edit_button {
+
+	text-align: center;
+
+	background-color: #333;
+
+	color: white;
+
+	padding: 8px;
+
+	box-shadow: 0px 0px 3px #222;
+
+	border-radius: 10px;
+
+	margin-top: 11px !important;
+
+	border: 1px solid black;
+
+	width: 115px;
+
+	position: absolute;
+
+	font-size: 12px;
+
+	font-weight: bold;
+
+	text-transform: capitalize;
+
+	left: 0;
+
+	text-decoration: none;
+
+	text-shadow: 1px 1px 1px black;
+
+}
+
+
+
+/*Input type file CSS */
+
+
+
+#file_browse_wrapper {
+
+   width: 99px;
+
+   height: 30px;
+
+   background: url('file_browse_normal.png') 0 0 no-repeat;
+
+   border:none;
+
+   overflow:hidden;
+
+}
+
+#file_browse_wrapper:hover {
+
+   background: url('file_browse_hover.png') 0 0 no-repeat;
+
+}
+
+
+
+
+
+#file_browse{
+
+   margin-left:-145px;
+
+   opacity:0.0;
+
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+
+   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+
+}
+
+ 
+
+ .thumbnail
+
+ {
+
+	 margin-bottom: 49px; 
+
+	 height: 100px; 
+
+	 min-height: 163px;
+
+	 width: 200px;
+
+	 margin-left: 94px;
+
+ }
+ 
+ .delete_img {
+ text-decoration:none;
+ background: url("images/deleteImg.png") 0 0 no-repeat;
+ margin-left:5px;
+  }
+

@@ -1,0 +1,313 @@
+/* --------------------------------------------- */
+/* Author: http://codecanyon.net/user/CodingJack */
+/* --------------------------------------------- */
+
+/* thumbnail hover container */
+.jackbox-hover {
+				
+	width: 100%;
+	height: 100%;
+	
+	display: block;
+	position: absolute;
+	
+	background-position: center 75%;
+	background-repeat: no-repeat;
+	background-size: 45px 45px;
+	
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-o-box-sizing: content-box;
+	-ms-box-sizing: content-box;
+	box-sizing: content-box;
+	
+	-webkit-transition: all 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-moz-transition: all 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-o-transition: all 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-ms-transition: all 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	transition: all 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	
+}
+
+.jackbox-hover * {
+
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-o-box-sizing: content-box;
+	-ms-box-sizing: content-box;
+	box-sizing: content-box;
+	
+}
+
+.jackbox-hover:visited {
+
+	text-decoration: none !;
+	
+}
+
+/* black background */
+.jackbox-hover-black {
+
+	background-color: #000;
+	background-color: rgba(0, 0, 0, 0.65);
+	
+}
+
+/* white background */
+.jackbox-hover-white {
+	
+	background-color: #FFF;
+	background-color: rgba(255, 255, 255, 0.9);
+	
+}
+
+/* magnify icon */
+.jackbox-hover-magnify {
+
+	background-image: url(../img/graphics/hover_magnify.png);
+	
+}
+
+/* video play icon */
+.jackbox-hover-play {
+
+	background-image: url(../img/graphics/hover_play.png);
+	
+}
+
+/* document icon */
+.jackbox-hover-document {
+
+	background-image: url(../img/graphics/hover_document.png);
+	
+}
+
+/* The shade for the blur effect */
+.jackbox-hover-blur {
+
+	background-color: #000;
+	background-color: rgba(255, 255, 255, 0.25);
+	
+}
+
+/* The html5 canvas blur */
+.jackbox-canvas-blur {
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	
+	-webkit-transition: all 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-moz-transition: all 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-o-transition: all 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-ms-transition: all 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	transition: all 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	
+}
+
+/* on mouse over */
+.jackbox:hover > .jackbox-hover {
+	
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	
+	background-position: center center;
+	
+}
+
+/* on mouse over blur */
+.jackbox:hover > .jackbox-canvas-blur {
+
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	
+}
+
+/* black bg, blur text color */
+.jackbox > .jackbox-hover-black,
+.jackbox > .jackbox-hover-blur,
+.jackbox:visited > .jackbox-hover-black,
+.jackbox:visited > .jackbox-hover-blur {
+
+	color: #EEE;	
+	
+}
+
+/* white bg text color */
+.jackbox > .jackbox-hover-white,
+.jackbox:visited > .jackbox-hover-white {
+
+	color: #333;
+	
+}
+
+/* text reset */
+.jackbox {
+
+	font: 14px "Mako", sans-serif;
+	text-decoration: none;
+	line-height: 0;
+	
+}
+
+/* hover text container */
+.jackbox-hover p {
+	
+	margin: 0;
+	text-align: left;
+	padding: 10px 10px 0 10px;
+	line-height: normal;
+	
+}
+
+/* large thumb tooltip */
+.jackbox-tooltip {
+
+	position: absolute;
+	display: inline-block;
+	pointer-events: none;
+	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	
+	border: 1px solid #FFF;
+	border-bottom: none;
+	
+	background: #f5f5f5;
+	background: -moz-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5f5f5), color-stop(100%, #e5e5e5));
+	background: -webkit-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
+	background: -o-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
+	background: -ms-linear-gradient(top, #f5f5f5 0%, #e5e5e5 100%);
+	background: linear-gradient(to bottom, #f5f5f5 0%, #e5e5e5 100%);
+	
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+	opacity: 0;
+	
+	-webkit-transition: all 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-moz-transition: all 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-o-transition: all 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	-ms-transition: all 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	transition: all 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+	
+}
+
+/* large thumb tooltip text */
+.jackbox-tooltip p {
+
+	font: 14px "Mako", sans-serif;
+	line-height: normal;
+	white-space: nowrap;
+	
+	padding: 6px 10px 7px 10px;
+	margin: 0;
+	
+	color: #444;
+	text-shadow: 1px 1px 0 #FFF;
+	
+}
+
+/* large thumb tooltip arrow */
+.jackbox-tooltip p:after {
+	
+	width: 0; 
+	height: 0; 
+	content: "";
+	
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #E5E5E5;
+	
+	position: absolute;
+	bottom: -10px;
+	left: 65%;
+	
+}
+
+/* ----------------------------------------------------------- */
+/*                        RETINA ICONS                         */
+/* ----------------------------------------------------------- */
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) { 
+
+	/* magnify icon */
+	.jackbox-hover-magnify {
+	
+		background-image: url(../img/graphics/retina/hover_magnify@2x.png);
+		
+	}
+	
+	/* video play icon */
+	.jackbox-hover-play {
+	
+		background-image: url(../img/graphics/retina/hover_play@2x.png);
+		
+	}
+	
+	/* document icon */
+	.jackbox-hover-document {
+	
+		background-image: url(../img/graphics/retina/hover_document@2x.png);
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

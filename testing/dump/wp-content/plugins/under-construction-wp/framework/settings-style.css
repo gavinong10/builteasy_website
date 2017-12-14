@@ -1,0 +1,9 @@
+/* This is place for css you need to execute on the settings page. This file will only load on the menu pages you've define in the config file. */
+.seed-ucp .seed_ucp-version{
+	font-size:10px;
+}
+
+.seed-ucp .mceLayout{
+	background-color:#fff;
+}
+

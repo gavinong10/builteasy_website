@@ -1,0 +1,56 @@
+<ul class="tvd-collection asset-connection-list-item tve-leads-test-connection-<#= connection #> <# if(connection == active) {#> tve-leads-table-selected <# }#>">
+	<li class="tvd-collection-item tve-form-wrapper">
+		<div class="tvd-row tvd-collapse">
+			<div class="tvd-col tvd-s3">
+				<div class="tvd-vertical-align">
+					<img class="tve-asset-connection-img" height="31" width="31"
+					     src="<?php echo plugin_dir_url( dirname( dirname( dirname( dirname( __FILE__ ) ) ) ) ); ?>thrive-dashboard/inc/auto-responder/views/images/<#= connection #>_small.jpg">
+					<strong class="tve-leads-connection-name tvd-capitalize"><?php echo __( "<#= connection #>", "thrive-leads" ); ?></strong>
+				</div>
+			</div>
+			<div class="tvd-col tvd-s4">
+				<div class="tvd-row">
+					<div class="tvd-col tvd-l4">
+						<div class="tvd-switch tvd-vertical-align">
+							<label class="<# if(connection == active) {#> tvd-switch-disabled <# }#>">
+								<input type="checkbox" data="<#= connection #>"
+								<# if(connection == active) {#> checked="checked"
+									<# }#>
+										value="1" class="tve-leads-connection-setting-change" autocomplete="off">
+										<span class="tvd-lever"></span>
+							</label>
+						</div>
+					</div>
+					<div class="tvd-col tvd-l8">
+						<strong class="tvd-vertical-align">
+							<?php echo __( "Connected,", "thrive-leads" ); ?>
+							<# if(connection == active) {#><?php echo __( "active", "thrive-leads" ); ?>
+								<# } else {#> <?php echo __( "inactive", "thrive-leads" ); ?>
+									<# } #>
+						</strong>
+					</div>
+				</div>
+			</div>
+			<div class="tvd-col tvd-s4">
+		        <span class="tve-leads-connection-test-<#= connection #> tvd-vertical-align">
+		            <span class="tvd-icon-exchange tvd-text-gray"></span>
+		            <a id="tve-asset-group-test" class="tve-asset-group-test tvd-underline" data="<#= connection #>"
+		               title="Test connection"
+		               href="javascript:void(0)">
+			            <?php echo __( "Test connection", "thrive-leads" ); ?>
+		            </a>
+		        </span>
+			</div>
+			<div class="tvd-col tvd-s1">
+				<div class="tvd-vertical-align">
+					<span class="tve-asset-group-test-result tvd-left"></span>
+					<a href="javascript:void(0)"
+					   class="tve-leads-connection-edit tvd-right">
+						<span class="tvd-icon-pencil" data-key="<#= connection #>"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<span class="tve-leads-test-response"></span>
+	</li>
+</ul>

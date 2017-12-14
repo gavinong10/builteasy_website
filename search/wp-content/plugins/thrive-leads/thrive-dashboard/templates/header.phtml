@@ -1,0 +1,26 @@
+<div class="tvd-header">
+	<nav id="tvd-nav">
+		<div class="nav-wrapper">
+			<div class="tve-logo tvd-left">
+				<a href="<?php menu_page_url( 'tve_dash_section' ); ?>"
+				   class="tvd-users-dashboard-logo"
+				   title="<?php echo __( 'Thrive Dashboard', TVE_DASH_TRANSLATE_DOMAIN ) ?>">
+                            <span class="tvd-logo-container">
+                                <img class="thrive_admin_logo"
+                                     src="<?php echo TVE_DASH_URL ?>/css/images/thrive-logo.png"
+                                     alt="">
+                            </span>
+				</a>
+			</div>
+			<ul id="tvd-dash-submenu" class="tvd-right">
+				<li>
+					<a id="tvd-share-modal" class="tvd-modal-trigger" href="#tvd-modal1"
+					   data-overlay_class="tvd-white-bg" data-opacity=".95">
+						<span class="tvd-icon-heart"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</div>
+<?php include TVE_DASH_PATH . '/templates/share.phtml'; ?>

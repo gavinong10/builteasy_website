@@ -1,0 +1,291 @@
+
+.form-control{
+	font-size: @font-size-base;
+ 	background: none repeat scroll 0 0 @input-bg;
+	border: medium none;
+	border-radius:@border-radius-small;
+	padding: 8px;
+	width: 100%; 
+	height: @input-height; 
+    border: 1px solid #dedede; 
+
+  &:focus{
+
+  }
+}
+.form-control-focus(@color: @input-border-focus) {
+  @color-rgba: @link-color;
+  &:focus {
+    border-color: @color;
+    outline: 0;
+    .box-shadow(~"inset 0 1px 1px rgba(0,0,0,.075), 0 0 4px @{color-rgba}");
+  }
+}
+
+[data-toggle="checkbox"],
+[data-toggle="radio"]{
+  display: none;
+  outline: medium none !important;
+}
+.boostrap-checkbox,
+.boostrap-radio{
+  position: relative;
+  padding: 0 0 0 25px;
+  .checkbox-icons,
+  .radio-icons{
+    height: 21px;
+    left: 0;
+    line-height: 21px;
+    overflow: hidden;
+    position: absolute;
+    top: -1px;
+    width: 20px;
+    color: @input-bg;
+
+    .checkbox-unchecked,
+    .radio-unchecked{
+      font-size: 22px;
+      left: 0;
+      opacity: 1;
+      position: absolute;
+      top: 0;
+      vertical-align: sub;
+      .opacity(1);
+    }
+    .checkbox-unchecked{
+       .add-icon-before("\f0c8",0,1);
+    }
+    .radio-unchecked{
+       .add-icon-before("\f111",0,1);
+    }
+    .checkbox-checked,
+    .radio-checked{
+      font-size: 22px;
+      left: 0;
+      opacity: 1;
+      position: absolute;
+      top: 0;
+      vertical-align: sub;
+      .opacity(0);
+    }
+    .checkbox-checked{
+      .add-icon-before("\f14a",0,1);
+    }
+    .radio-checked{
+      .add-icon-before("\f192",0,1);
+    }
+    &:hover{
+    	.checkbox-unchecked{
+	      .add-icon-before("\f14a",0,1);
+	    }
+	    .radio-unchecked{
+	      .add-icon-before("\f192",0,1);
+	    }
+    }
+  }
+  &.checked{
+      .checkbox-unchecked,
+      .radio-unchecked{
+         .opacity(0);
+      }
+      .checkbox-checked,
+      .radio-checked{
+        .opacity(1);
+        color: @link-color;
+      }
+  }
+}
+
+.bootstrap-select{
+  display: block;
+  float: none;
+  margin-left: 0;
+  width: auto;
+  position: relative;
+  vertical-align: middle;
+  padding: 0;
+  width: 220px;
+  .btn.dropdown-toggle{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 40px;
+    padding: 6px 12px;
+    width: 100%;
+    float: right;
+    position: relative;
+    color: inherit;
+    .box-shadow(none);
+
+    &:hover,
+    &:focus{
+    	.box-shadow(none);
+    	.translate(0,0);
+    }
+    .caret {
+        margin-top: -2px;
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        vertical-align: middle;
+    }
+  }
+  .dropdown-menu{
+    .border-radius(0);  
+    margin: 0;
+    min-width: 100%;
+    border:none;
+    margin-top: 5px;
+    background: @input-bg;
+
+	> li > a{
+		&:extend(.clearfix all);
+		&:hover{
+			background-color: @link-color;
+		}
+	}
+  }
+  &.open{
+  	.btn.dropdown-toggle{
+  		.box-shadow(none);
+  	}
+  }
+}
+
+// Select dropdown
+.form-group {
+  .dropdown{
+    > span{
+      height: @input-height;
+      line-height: @input-height;
+      padding: 0 20px;
+      display: block;
+      cursor: pointer;
+      border:1px solid @border-color-base;
+      .border-radius(@border-radius-base);
+      overflow: hidden;
+      position: relative;
+      .add-icon-before("\f107");
+      &:before{
+        border-left: 1px solid @border-color-base;
+        display: block;
+        height: @input-height;
+        line-height: @input-height;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        width: @input-height;
+      }
+    }
+  .dropdown-menu{
+      width: 100%;
+      //.border-radius(0 0 @border-radius-base @border-radius-base);
+      border:1px solid @border-color-base;
+      padding: 0;
+      //margin: 0;
+      .box-shadow(0 3px 5px rgba(0,0,0,.175));
+      background: #fff;
+      > li {
+        border-bottom: 1px solid @border-color-base;
+        padding: 0;
+        margin: 0;
+        &:last-child{
+          border: none; 
+        }
+        > a{
+          padding-top:10px;
+          padding-bottom: 10px;
+          font-weight: inherit;
+          &:focus,
+          &:hover{
+            background-color: @brand-primary;
+            color: #ffffff;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+// Style checkbox input
+//---------------------------
+input[type="checkbox"]{
+  border: 1px solid #bbb;
+  background: #fff;
+  color: #555;
+  clear: none;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 0;
+  height: 14px;
+  margin: -4px 4px 0 0;
+  outline: 0;
+  padding: 0 !important;
+  text-align: center;
+  vertical-align: middle;
+  width: 14px;
+  -webkit-appearance: none;
+  // -webkit-box-shadow: inset 0 1px 2px rgba( 0, 0, 0, 0.1 );
+  // box-shadow: inset 0 1px 2px rgba( 0, 0, 0, 0.1 );
+  -webkit-transition: .05s border-color ease-in-out;
+  transition: .05s border-color ease-in-out;
+  background: #fbfbfb;
+  position: relative;
+}
+input[type="checkbox"]:checked:before {
+  content: "\f00c";
+  color: @brand-primary;
+  position: absolute;
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  font-family: "fontawesome";
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  left: -2px;
+  top: 6px;
+  font-size: 12px;
+}
+input[type="radio"] {
+  border: 1px solid #bbb;
+  background: #fff;
+  color: #555;
+  clear: none;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 0;
+  height: 16px;
+  margin: 0 5px 0 0;
+  outline: 0;
+  padding: 0 !important;
+  text-align: center;
+  vertical-align: middle;
+  width: 16px;
+  min-width: 16px;
+  -webkit-appearance: none;
+  -webkit-transition: .05s border-color ease-in-out;
+  transition: .05s border-color ease-in-out;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+}
+input[type="radio"]:checked:before {
+  content: "\2022";
+  text-indent: -9999px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  font-size: 24px;
+  width: 6px;
+  height: 6px;
+  margin: 4px;
+  line-height: 16px;
+  background: @brand-primary;
+  float: left;
+   display: inline-block; 
+  vertical-align: middle;
+   font: normal 21px/1 'dashicons'; 
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,31 @@
+{{ wp.get_header() }}
+
+<div id="content" class="clearfix">
+    {% if wp.is_active_sidebar('top') %}
+        {{ wp.get_sidebar('top') }}
+    {% endif %}
+
+    <div class="container">
+        <div class="row">
+            {% include 'helpers/messages.twig' %}
+
+            {% if wp.is_active_sidebar('content-top') %}
+                {{ wp.get_sidebar('content-top') }}
+            {% endif %}
+
+            <div id="main" class="span12">
+                {% block content %}{% endblock %}
+            </div><!-- /#main -->
+        </div><!-- /.row -->
+
+        {% if wp.is_active_sidebar('content-bottom') %}
+            {{ wp.get_sidebar('content-bottom') }}
+        {% endif %}
+    </div><!-- /.container -->
+
+    {% if wp.is_active_sidebar('bottom') %}
+        {{ wp.get_sidebar('bottom') }}
+    {% endif %}
+</div><!-- /#content -->
+
+{{ wp.get_footer() }}

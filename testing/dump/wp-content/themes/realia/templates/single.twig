@@ -1,0 +1,10 @@
+{% extends 'layout.twig' %}
+
+{% block content %}
+    {% if wp.have_posts() %}
+        {% include 'helpers/content-loop.twig' %}
+        {% if wp.comments_open(wp.get_the_ID()) %}
+            {{ wp.comments_template() }}
+        {% endif %}
+    {% endif %}
+{% endblock %}

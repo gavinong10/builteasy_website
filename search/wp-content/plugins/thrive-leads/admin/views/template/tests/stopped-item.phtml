@@ -1,0 +1,51 @@
+<td style="color:<#= item.get('color') #>">
+	<strong>
+		<#= item.get('name') #>
+	</strong>
+</td>
+
+<# if(item.get('form_type')) { #>
+<td style="color:<#= item.get('color') #>">
+	<strong>
+		<#= item.get('form_type')#>
+	</strong>
+</td>
+<# } #>
+
+<td><#= item.get('unique_impressions') #></td>
+<td><#= item.get('conversions') #></td>
+<td ><#= item.getConversionRate() == 0 ? 'N/A' : item.getConversionRate() + ' %' #></td>
+
+<# if (item.get('show_graph')) { #>
+<td>
+	<div class="candlestick-chart-holder" id="tve-candle-stick-chart-stopped-<#= item.get('index')#>"></div>
+</td>
+<# } #>
+
+<# if (item.get('is_control') == 1) { #>
+<td colspan="2" class="tvd-center-align">
+	<div class="inline-message"><?php echo __('This is the control', 'thrive-leads') ?></div>
+</td>
+<# } else { #>
+<td>
+<span style="color:<#= item.getPercentageImprovementColor() #>">
+    <# if(item.get('percentage_improvement') != "N/A" && item.get('percentage_improvement') > 0) { #>+<# } #><#= item.get('percentage_improvement') #>
+    <#= item.get('percentage_improvement') != "N/A" ? '%' : ''  #>
+</span>
+</td>
+<td><#= item.get('beat_original') #></td>
+<# } #>
+
+<td>
+	<#= item.get('trigger_name') #> / <br/>
+		<?php echo __('Animation', 'thrive-leads'); ?>: <#= item.get('animation_name') #>
+</td>
+
+<# if (item.get('show_graph')) { #>
+<td>
+	<a class="tvd-btn-icon tvd-btn-icon-green" target="_blank" href="<#= item.get('preview_url')#>" title="<?php echo __('View Form', 'thrive-leads') ?>">
+		<span class="tvd-icon-view"></span><?php echo __('View Form', 'thrive-leads') ?>
+	</a>
+
+</td>
+<# }  #>

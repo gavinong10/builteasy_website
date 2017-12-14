@@ -1,0 +1,125 @@
+form {
+  .input-append .add-on:last-child { background-color: #fff; border-radius: 0px; padding: 6px; }
+
+  label { font-weight: normal; }
+  .webform-component { margin-bottom: 10px; }
+  label.checkbox { margin: 0px; padding: 0px; }
+  .form-actions { background-color: transparent; border: 0px; margin: 0px; padding: 0px; }
+  .fileupload {
+    .uneditable-input { @include box-sizing(border-box); @include border-radius(0px); height: 40px !important; padding-bottom: 9px !important; padding-top: 9px!important; width: 100px; }
+    .input-append { margin-bottom: 0px;
+      .btn.fileupload-exists { background-color: $forms-file-select-background-color; }
+    }
+    .btn { @include transition(background-color .2s ease-in); border-radius: 0px !important; background-color: $forms-submit-background-color; color: $forms-submit-color; padding-bottom: 10px; padding-top: 10px;
+      span { @include border-radius(0px); }
+      &:hover { background-color: darken($forms-submit-background-color, 10%);}
+    }
+  }
+  input[type=submit] {
+    &.btn { @include transition(background-color .2s ease-in); border: 0px; color: $forms-submit-color;
+      &:hover { background-color: darken($forms-submit-background-color, 10%); }
+    }
+  }
+}
+
+
+textarea, input[type=date], input[type=text], input[type=password], input[type=email], input[type=number] {
+  -webkit-font-smoothing: antialiased; -webkit-appearance: none;
+  @include background-image(none); @include border-radius(0px); @include box-shadow(none);
+  background-image: none;  border: 1px solid $forms-textarea-border-color; color: $forms-textarea-color; margin: 0px; padding: 6px;
+  &:active, &:focus { @include box-shadow(none); border: 1px solid $forms-textarea-border-color; outline: 0px; }
+}
+
+button.form-submit {
+  @include transition(background-color .2s ease-in); @include background-image(none); @include border-radius(0px); @include box-shadow(none); @include text-shadow(none); @include transition(background-color .2s ease-in);
+  background-color: $forms-submit-background-color; background-image: url('../img/arrow-right-white.png'); background-position: 90% center; background-repeat: no-repeat; background-size: 8px 11px; border: 0px; padding: 7px 32px 7px 15px;
+  &:active, &:focus, &:hover { @include box-shadow(none); @include transition(background-color .2s ease-in); background-color: darken($forms-submit-background-color, 10%); background-position: 90% center; }
+  @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+    background-image: url('../img/arrow-right-white@2x.png');
+  }
+}
+
+.form-required { color: red; }
+.form-type-checkbox { padding-bottom: 7px; }
+
+.chzn-container {
+  .chzn-single { @include background-image(none); @include border-radius(0px); @include box-shadow(none); @include filter-gradient(#fff, #fff); background-image: none; border: 1px solid $forms-chosen-border-color; height: 38px; line-height: 40px;
+    &.chzn-single-with-drop { background-color: $forms-chosen-background-color; }
+    div { background-image: none; width: 36px;
+      b { @include background-image(none); background-image: url('../img/arrow-bottom-black.png') !important; background-size: 11px 7px !important; background-position: center center; background-repeat: no-repeat; }
+    }
+  }
+
+  .chzn-drop { @include shadow; @include border-radius(0px); border: 1px solid $forms-chosen-border-color; border-top: 0px;
+    .chzn-search { border: 0px;
+      input { @include background-image(none); background-image: url('../img/icons/search.png'); background-position: 95% center; background-repeat: no-repeat; border: 1px solid $forms-chosen-search-border-color; width: 100% !important; }
+    }
+    .chzn-results {
+      .active-result { padding: 10px 5px;
+        &.highlighted,
+        &.result-selected { @include background-image(none); background-color: $forms-chosen-selected-background-color; color: $forms-chosen-selected-color; }
+      }
+    }
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+  .chzn-container {
+    .chzn-single {
+      div {
+        b { background-image: url('../img/arrow-bottom-black@2x.png') !important; }
+      }
+    }
+  }
+}
+
+.ui-slider-horizontal { @include background-image(none); border-radius: 0px !important; background-color: $forms-slider-background-color !important; border: 0px !important; height: 5px !important;
+  .ui-slider-range { @include background-image(none); @include border-radius(0px); @include box-shadow(0px); background-color: $white; border: 0px; }
+  .ui-slider-handle { @include background-image(none); @include border-radius(0px); background-color: transparent !important; background-image: url('../img/icons/slider-handle.png') !important; background-position: center center; background-repeat: no-repeat; background-size: 19px 19px; border: 0px !important; cursor: pointer; cursor: pointer !important; height: 19px; top: -7px !important; width: 19px;
+    @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+      background-image: url('../img/icons/slider-handle@2x.png') !important;
+    }
+    &:focus, &:active { @include box-shadow(none); outline: 0px; }
+  }
+}
+
+.contact-form {
+  input[type=text], input[type=email] { height: 40px; }
+  textarea { height: 140px; }
+  input[type=text], input[type=email], textarea { @include box-sizing(border-box); width: 100%; }
+  .name, .email { float: left; width: 48%; }
+  .email { float: right; }
+}
+
+
+
+@-webkit-keyframes rotation1{
+  from{-webkit-transform:rotate(0deg);}
+  to{-webkit-transform:rotate(360deg);}
+}
+@-moz-keyframes rotation1{
+  from{-moz-transform:rotate(0deg);}
+  to{-moz-transform:rotate(360deg);}
+}
+@-o-keyframes rotation1{
+  from{-o-transform:rotate(0deg);}
+  to{-o-transform:rotate(360deg);}
+}
+@keyframes rotation1{
+  from{transform:rotate(0deg);}
+  to{transform:rotate(360deg);}
+}
+
+#loader {
+  @include border-radius(50%);
+
+  -moz-animation:rotation1 1s linear infinite;
+  -o-animation:rotation1 1s linear infinite;
+  -webkit-animation:rotation1 1s linear infinite;
+  animation:rotation1 1s linear infinite;
+  background: url('../img/preload.png') no-repeat center center $blue-light;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-bottom: -5px;
+}

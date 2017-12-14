@@ -1,0 +1,67 @@
+.property-detail { @include shadow(); background-color: $properties-detail-background-color; padding: 20px;
+  .overview { border: 1px solid $properties-detail-overview-border-color; margin: 0px 30px 10px 0px; padding: 20px;
+    h2 { clear: both; line-height: 1; margin: 0px 0px 20px 0px; }
+    table {
+      th { text-align: left; padding-right: 15px; }
+    }
+  }
+  #property-map { height: 400px; width: 100%;
+    img { max-width: none; }
+  }
+  ul { list-style: none;
+    li {
+      &.checked { background-image: url('../img/icons/nike.png'); background-position: left center; background-repeat: no-repeat; background-size: 11px 9px; padding-bottom: 3px; padding-left: 20px; padding-top: 3px;
+        @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) { background-image: url('../img/icons/nike@2x.png'); }
+      }
+      &.plain { background-image: url('../img/icons/cross.png'); background-position: left center; background-repeat: no-repeat; background-size: 11px 9px; padding-bottom: 3px; padding-left: 20px; padding-top: 3px;
+        @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) { background-image: url('../img/icons/cross@2x.png'); }
+      }
+    }
+  }
+}
+
+.property.carousel {
+  width: 100%;
+  .preview {
+    width: 100%;
+    a {
+      width: 100%;
+    }
+  }
+}
+#comments {
+  .comment-list {
+    float: left; width: 100%;
+    li.comment {
+      background-color: rgba(0, 0, 0, 0.02); float: left; width: 100%; margin-bottom: 15px; width: 100%; @include border-radius(8px);
+
+      > .comment-body {
+        padding: 10px;
+      }
+      > ul {
+        padding: 10px;
+      }
+    }
+    #respond {
+      float: left;
+      padding: 10px;
+
+      form {
+        float: left; width: 100%;
+        .comment-form-comment {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.overview {
+  table { width: 100%; }
+  .rating {
+    width: 100%;
+    .kk-star-ratings {
+      float: none; margin-top: 30px; margin-right: auto; margin-left: auto;
+    }
+  }
+}

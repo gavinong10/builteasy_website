@@ -1,0 +1,15 @@
+$preconst: hello
+
+=premixin
+  pre-mixin: here
+
+@import "importee", "scss_importee"
+@import "basic"
+@import "basic.css"
+@import ../results/complex.css
+@import "partial"
+
+nonimported
+  :myconst $preconst
+  :otherconst $postconst
+  +postmixin

@@ -1,0 +1,1580 @@
+# Copyright (C) 2013 EG-Attachments
+# This file is distributed under the same license as the EG-Attachments package.
+msgid ""
+msgstr ""
+"Project-Id-Version: EG-Attachments 2.0.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/eg-attachments\n"
+"POT-Creation-Date: 2013-02-10 23:52:03+00:00\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Emmanuel Georjon <blog@emmanuelgeorjon.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: inc/eg-attachment-keywords-help.inc.php:2
+msgid "General help"
+msgstr "cabhair Ginearálta"
+
+#: inc/eg-attachment-keywords-help.inc.php:5
+msgid "Fields with <font color=\"red\">red border</font> are mandatory"
+msgstr "Is iad Réimsí a bhfuil teorainn <font color=\"red\"> dearg </ font> éigeantach"
+
+#: inc/eg-attachment-keywords-help.inc.php:8
+msgid "Available keywords"
+msgstr "Cuir isteach focal sonrach ar Fáil"
+
+#: inc/eg-attachment-keywords-help.inc.php:11
+#, fuzzy
+msgid "Labels:"
+msgstr "Liosta Móra:"
+
+#: inc/eg-attachment-keywords-help.inc.php:17
+msgid "Label for title (title in english, titre in french, Titolo in italian, ..."
+msgstr "Lipéad le haghaidh teidil (teideal i mBéarla, títear i Fraincis, Titolo i Iodáilis, ..."
+
+#: inc/eg-attachment-keywords-help.inc.php:21
+msgid "Label for caption (caption in english)"
+msgstr "Lipéid le haghaidh fotheideal (fotheideal i mBéarla)"
+
+#: inc/eg-attachment-keywords-help.inc.php:25
+msgid "Label for description (description in english)"
+msgstr "Lipéid le haghaidh cur síos (tuairisc i mBéarla)"
+
+#: inc/eg-attachment-keywords-help.inc.php:29
+msgid "Label for filename (filename in english)"
+msgstr "Lipéid le haghaidh ainm (ainm comhaid i mBéarla)"
+
+#: inc/eg-attachment-keywords-help.inc.php:33
+msgid "Label for the size of the file (<strong>size</strong> in english)"
+msgstr "Lipéad do mhéid an chomhaid (<strong> méid </ strong> i mBéarla)"
+
+#: inc/eg-attachment-keywords-help.inc.php:37
+msgid "Label for the type of the file"
+msgstr "Lipéad don chineál an chomhaid"
+
+#: inc/eg-attachment-keywords-help.inc.php:41
+msgid "Label for the date"
+msgstr "Lipéad an dáta"
+
+#: inc/eg-attachment-keywords-help.inc.php:45
+msgid "Label of the counter (number of downloads of the document"
+msgstr "Lipéad ar an gcuntar (líon íosluchtú an doiciméid"
+
+#: inc/eg-attachment-keywords-help.inc.php:50
+msgid "Values:"
+msgstr "Luachanna:"
+
+#: inc/eg-attachment-keywords-help.inc.php:56
+#, fuzzy
+msgid "ID of the attachment"
+msgstr "Naisc le ceangaltán"
+
+#: inc/eg-attachment-keywords-help.inc.php:60
+msgid "caption of the document"
+msgstr "fotheideal ar an doiciméad"
+
+#: inc/eg-attachment-keywords-help.inc.php:64
+msgid "Number of downloads recorded on the document."
+msgstr "Líon na íosluchtú thaifeadadh ar an doiciméad."
+
+#: inc/eg-attachment-keywords-help.inc.php:68
+msgid "Date of last modification"
+msgstr "Dáta den mhodhnú is déanaí"
+
+#: inc/eg-attachment-keywords-help.inc.php:72
+msgid "description of the document"
+msgstr "cur síos ar an doiciméad"
+
+#: inc/eg-attachment-keywords-help.inc.php:76
+msgid "Specific URL, pointing directly to the file, but without showing the file name and path (recommended)"
+msgstr "URL ar leith, atá dírithe go díreach leis an gcomhad, ach gan a léiríonn ainm an chomhaid agus cosán (molta)"
+
+#: inc/eg-attachment-keywords-help.inc.php:80
+msgid "Name of the attached file"
+msgstr "Ainm an chomhaid faoi iamh"
+
+#: inc/eg-attachment-keywords-help.inc.php:84
+msgid "Size of the attached document"
+msgstr "Méid an doiciméad faoi iamh"
+
+#: inc/eg-attachment-keywords-help.inc.php:88
+msgid "Direct link (url) to the document (media file).The URL is the document's address. For example: <code>http://blog url/wp-content/upload/2011/09/file name.file extension/</code>"
+msgstr "Nasc díreach (url) chun an doiciméad (na meáin comhad). Is é an URL an doiciméad a seoladh. Mar shampla: <code>http://blog url/wp-content/upload/2011/09/file name.file extension/</code>"
+
+#: inc/eg-attachment-keywords-help.inc.php:92
+msgid "Link (url) to document as stored in the WordPress database"
+msgstr "Nasc (url) a dhoiciméadú mar a stóráil sa bhunachar sonraí WordPress"
+
+#: inc/eg-attachment-keywords-help.inc.php:96
+msgid "Full icon tags (including A and IMG tag. <code>WW</code> is the width of the icon, and <code>HH</code> is the heigth."
+msgstr "Clibeanna icon Iomlán (lena n-áirítear A agus tag IMG. <code> WW </ cód> Is é an leithead an icon, agus <code> HH </ cód> Is é an heigth."
+
+#: inc/eg-attachment-keywords-help.inc.php:100
+msgid "URL of icon"
+msgstr "URL icon"
+
+#: inc/eg-attachment-keywords-help.inc.php:104
+#, fuzzy
+msgid "The URL of the attachment, as defined by the permalink structure chosen. For example: <code>http://blog url/post url/attachment slug/</code>, or <code>http://blog url/?p=xx</code>."
+msgstr "<strong> Permalink </ strong>. <br /> <em> Tá an URL an iatán trí úsáid a shainmhínítear permalink struchtúr. Mar shampla:?. <code> Http://blog url / iar url / iatán seilide / </ cód>, nó <code> http://blog url / p = xx </ cód> <br/> an ceangaltán Beidh a bheith ar taispeáint taobh istigh do bhlag, mar phoist. </ em>"
+
+#: inc/eg-attachment-keywords-help.inc.php:108
+msgid "HTML attribut <code>rel=\"nofollow\"</code>"
+msgstr "HTML tréith <code>rel=\"nofollow\"</code>"
+
+#: inc/eg-attachment-keywords-help.inc.php:112
+msgid "Show the lock icon for documents that require login or password"
+msgstr "Taispeáin an deilbhín ghlais ar cháipéisí a fháil a éilíonn logáil isteach nó ar do phasfhocal"
+
+#: inc/eg-attachment-keywords-help.inc.php:116
+msgid "HTML attribut <code>target=\"_blank\"</code>"
+msgstr "HTML tréith <code>target=\"_blank\"</code>"
+
+#: inc/eg-attachment-keywords-help.inc.php:120
+msgid "HTML attribut <code>target=\"value\"</code>"
+msgstr "HTML tréith<code>target=\"value\"</code>"
+
+#: inc/eg-attachment-keywords-help.inc.php:124
+#, fuzzy
+msgid "Title of the document"
+msgstr "Teideal an liosta:"
+
+#: inc/eg-attachment-keywords-help.inc.php:128
+#, fuzzy
+msgid "Type of the documents"
+msgstr "Lig do na tuairimí"
+
+#: inc/eg-attachment-keywords-help.inc.php:132
+msgid "Same than %LINK_URL%, %FILE_URL%, or %DIRECT_URL%, according the option choosen in the Settings/Options menu."
+msgstr "Céanna ná% LINK_URL%,% FILE_URL%, nó % DIRECT_URL %, de réir an rogha choosen sna Socruithe / Roghanna roghchlár."
+
+#: inc/eg-attachments-admin.inc.php:37
+#, fuzzy
+msgid "EG-Attachment templates"
+msgstr "EG-Ceangaltáin Stats"
+
+#: inc/eg-attachments-admin.inc.php:38
+#, fuzzy
+msgid "EG-Attachment template"
+msgstr "EG-Ceangaltáin Stats"
+
+#: inc/eg-attachments-admin.inc.php:76
+#, fuzzy
+msgid "EGA Stats"
+msgstr "EG-Ceangaltáin Stats"
+
+#: inc/eg-attachments-admin.inc.php:77
+msgid "EG-Attachments Stats"
+msgstr "EG-Ceangaltáin Stats"
+
+#: inc/eg-attachments-admin.inc.php:90
+msgid "EGA templates"
+msgstr "teimpléid EGA"
+
+#: inc/eg-attachments-admin.inc.php:91
+#, fuzzy
+msgid "EG-Attachments templates"
+msgstr "EG-Ceangaltáin Stats"
+
+#: inc/eg-attachments-admin.inc.php:105
+#: inc/eg-attachments-admin.inc.php:109
+msgid "EG-Attachments"
+msgstr "EG-Ceangaltáin"
+
+#: inc/eg-attachments-admin.inc.php:137
+msgid "No document attached to this post/page"
+msgstr "Aon doiciméad a ghabhann leis an bpost seo / leathanach"
+
+#: inc/eg-attachments-admin.inc.php:140
+msgid "Attachments available for this post/page"
+msgstr "Ceangaltáin ar fáil don phost seo / leathanach"
+
+#: inc/eg-attachments-admin.inc.php:144
+msgid "ID"
+msgstr "ID"
+
+#: inc/eg-attachments-admin.inc.php:145
+#, fuzzy
+msgid "File Name"
+msgstr "ainm comhaid"
+
+#: inc/eg-attachments-admin.inc.php:146
+#: inc/eg-attachments-public.inc.php:621
+msgid "Type"
+msgstr "Cineál"
+
+#: inc/eg-attachments-admin.inc.php:147
+#: inc/eg-attachments-public.inc.php:618
+msgid "Size"
+msgstr "méid"
+
+#: inc/eg-attachments-admin.inc.php:148
+#: inc/eg-attachments-public.inc.php:623
+#: inc/eg-attachments-tools-form.inc.php:30
+msgid "Date"
+msgstr "Dáta"
+
+#: inc/eg-attachments-admin.inc.php:243
+msgid "You are not allowed to create/edit templates."
+msgstr "Níl tú cead a chruthú / in eagar teimpléid."
+
+#: inc/eg-attachments-admin.inc.php:260
+#: inc/eg-attachments-admin.inc.php:496
+#: inc/eg-attachments-admin.inc.php:650
+msgid "New_template"
+msgstr "New_template"
+
+#: inc/eg-attachments-admin.inc.php:306
+msgid "You are not allowed to copy templates."
+msgstr "Níl cead agat teimpléid chóipeáil."
+
+#: inc/eg-attachments-admin.inc.php:314
+msgid "Copy of "
+msgstr "cóip de"
+
+#: inc/eg-attachments-admin.inc.php:344
+#: inc/eg-attachments-admin.inc.php:368
+msgid "You are not allowed to delete templates."
+msgstr "Níl cead agat teimpléid a scriosadh."
+
+#: inc/eg-attachments-admin.inc.php:365
+#: inc/eg-attachments-tools-form.inc.php:19
+msgid "Templates"
+msgstr "Teimpléid"
+
+#: inc/eg-attachments-admin.inc.php:389
+#: inc/eg-attachments-tools-form.inc.php:18
+msgid "Template"
+msgstr "Teimpléid"
+
+#: inc/eg-attachments-admin.inc.php:413
+msgid "Add New"
+msgstr "Cuir Nua"
+
+#: inc/eg-attachments-admin.inc.php:498
+msgid "Description of the new template"
+msgstr "Cur síos ar an teimpléad nua"
+
+#: inc/eg-attachments-admin.inc.php:545
+msgid "Save"
+msgstr "Sábháil"
+
+#: inc/eg-attachments-admin.inc.php:547
+msgid "Go back to the list"
+msgstr "Téigh ar ais chuig an liosta"
+
+#: inc/eg-attachments-admin.inc.php:579
+msgid "Name of the template"
+msgstr "Ainm an teimpléid"
+
+#: inc/eg-attachments-admin.inc.php:583
+msgid "Choose a shortname, with standard characters (like a-z, 0-9, -_)"
+msgstr "Roghnaigh shortname, le carachtair caighdeánach (cosúil le a-z, 0-9,-_)"
+
+#: inc/eg-attachments-admin.inc.php:588
+#: inc/eg-attachments-public.inc.php:614
+#: inc/eg-attachments-tools-form.inc.php:28
+msgid "Description"
+msgstr "Cur síos"
+
+#: inc/eg-attachments-admin.inc.php:592
+#: inc/eg-attachments-tools-form.inc.php:27
+msgid "Slug"
+msgstr "drúchtíní"
+
+#: inc/eg-attachments-admin.inc.php:596
+msgid "Before"
+msgstr "roimh"
+
+#: inc/eg-attachments-admin.inc.php:600
+msgid "Loop"
+msgstr "lúb"
+
+#: inc/eg-attachments-admin.inc.php:604
+msgid "After"
+msgstr "Tar éis"
+
+#: inc/eg-attachments-admin.inc.php:642
+msgid "Error during template saving"
+msgstr "Earráid le linn shábháil teimpléad"
+
+#: inc/eg-attachments-admin.inc.php:643
+msgid "Error during template copy"
+msgstr "Earráid le linn cóip teimpléad"
+
+#: inc/eg-attachments-admin.inc.php:644
+msgid "Template successfully saved."
+msgstr "Teimpléad sábháilte go rathúil."
+
+#: inc/eg-attachments-admin.inc.php:645
+msgid "Template successfully created"
+msgstr "Teimpléad a cruthaíodh go rathúil"
+
+#: inc/eg-attachments-admin.inc.php:646
+msgid "Template sucessfully deleted"
+msgstr "Teimpléad scriosadh rathúil"
+
+#: inc/eg-attachments-admin.inc.php:647
+msgid "Error during template deletion"
+msgstr "Earráid le linn scriosadh teimpléad"
+
+#: inc/eg-attachments-admin.inc.php:648
+msgid "Bulk deletion done: %s on %s template(s) were deleted"
+msgstr "A scriosadh %s ar %s teimpléad (s): scriosadh Bulc dhéanamh"
+
+#: inc/eg-attachments-admin.inc.php:649
+msgid "Title is empty"
+msgstr "Teideal is folamh"
+
+#: inc/eg-attachments-admin.inc.php:650
+msgid "Title is still \"%s\""
+msgstr "Teideal tá sé fós \"%s\""
+
+#: inc/eg-attachments-admin.inc.php:651
+msgid "The field \"loop\" cannot be empty."
+msgstr "An réimse \"loop\" a bheith folamh."
+
+#: inc/eg-attachments-admin.inc.php:652
+msgid "Error during the copy operation"
+msgstr "Earráid le linn na hoibríochta cóip"
+
+#: inc/eg-attachments-admin.inc.php:653
+msgid "The initial post is unknown or doesn't exist"
+msgstr "Is é an post tosaigh anaithnid nó gan a bheith ann"
+
+#: inc/eg-attachments-admin.inc.php:654
+msgid "Purge of statistics: %d lines deleted (Retention: %d months)."
+msgstr "Purge staitisticí: Línte% d scriosta (Coinneáil: %d mhí)."
+
+#: inc/eg-attachments-admin.inc.php:796
+#: inc/eg-attachments-settings.inc.php:44
+#: inc/eg-attachments-settings.inc.php:xx
+msgid "Custom format"
+msgstr "formáid an Chustaim"
+
+#: inc/eg-attachments-admin.inc.php:797
+#, fuzzy
+msgid "Custom format from previous version %s"
+msgstr "Formáid an Chustaim, roimh liosta"
+
+#: inc/eg-attachments-admin.inc.php:930
+#: inc/eg-attachments-admin.inc.php:977
+msgid "Month"
+msgstr "Mí"
+
+#: inc/eg-attachments-admin.inc.php:935
+msgid "\\W"
+msgstr "\\W"
+
+#: inc/eg-attachments-admin.inc.php:936
+#: inc/eg-attachments-admin.inc.php:976
+#, fuzzy
+msgid "Week"
+msgstr "I gcás ina"
+
+#: inc/eg-attachments-admin.inc.php:942
+#: inc/eg-attachments-admin.inc.php:975
+#, fuzzy
+msgid "Day"
+msgstr "May"
+
+#: inc/eg-attachments-admin.inc.php:967
+#, fuzzy
+msgid "Start date: "
+msgstr "Ordú Sórtáil:"
+
+#: inc/eg-attachments-admin.inc.php:970
+msgid "End date: "
+msgstr "Deireadh Dáta:"
+
+#: inc/eg-attachments-admin.inc.php:973
+msgid "by "
+msgstr "ag"
+
+#: inc/eg-attachments-admin.inc.php:979
+#, fuzzy
+msgid "Display chart"
+msgstr "Taispeáin deilbhín"
+
+#: inc/eg-attachments-public.inc.php
+#, fuzzy
+msgid "click"
+msgstr "Cad a tharlaíonn"
+
+#: inc/eg-attachments-public.inc.php:654
+#, fuzzy
+msgid "clicks"
+msgstr "Cad a tharlaíonn"
+
+#: inc/eg-attachments-public.inc.php inc/eg-attachments-admin.inc.php:992
+#: inc/eg-attachments-admin.inc.php:1029
+#: inc/eg-attachments-admin.inc.php:1037
+#, fuzzy
+msgid "click(s)"
+msgstr "Cad a tharlaíonn"
+
+#: inc/eg-attachments-admin.inc.php:1010
+#, fuzzy
+msgid "Number of downloads"
+msgstr "Líon na ndoiciméad a chur ar taispeáint"
+
+#: inc/eg-attachments-admin.inc.php:1030
+#: inc/eg-attachments-admin.inc.php:1038
+#, fuzzy
+msgid "% Clicks"
+msgstr "Cad a tharlaíonn"
+
+#: inc/eg-attachments-admin.inc.php:1100
+msgid "1 item"
+msgstr "1 mír"
+
+#: inc/eg-attachments-admin.inc.php:1100
+msgid "%s items"
+msgstr "%s items"
+
+#: inc/eg-attachments-admin.inc.php:1102
+#, fuzzy
+msgid "Go to the first page"
+msgstr "Iar-eagarthóir leathanach"
+
+#: inc/eg-attachments-admin.inc.php:1103
+msgid "Go to the previous page"
+msgstr "Téigh go dtí an leathanach roimhe seo"
+
+#: inc/eg-attachments-admin.inc.php:1105
+msgid "of"
+msgstr "de"
+
+#: inc/eg-attachments-admin.inc.php:1107
+msgid "Go to the next page"
+msgstr "Téigh go dtí an chéad leathanach eile"
+
+#: inc/eg-attachments-admin.inc.php:1108
+msgid "Go to the last page"
+msgstr "Téigh go dtí an leathanach deireanach"
+
+#: inc/eg-attachments-admin.inc.php:1123
+msgid "Global"
+msgstr "Domhanda"
+
+#: inc/eg-attachments-admin.inc.php:1182
+#, fuzzy
+msgid "Multiple custom formats"
+msgstr "formáid an Chustaim"
+
+#: inc/eg-attachments-admin.inc.php:1183
+msgid "EG-Attachments can now manage multiple custom formats. A new menu allows you to edit &laquo;templates&raquo;"
+msgstr "Is féidir le EG-Attachments a bhainistiú anois formáidí saincheaptha il. Ceadaíonn roghchlár nua tú a chur in eagar &laquo;templates&raquo;"
+
+#: inc/eg-attachments-admin.inc.php:1192
+#, fuzzy
+msgid "New statistics"
+msgstr "Gníomhachtaigh staitisticí"
+
+#: inc/eg-attachments-admin.inc.php:1193
+msgid "The statistics module is using <strong>Google Chart Tools</strong> for better graphes."
+msgstr "Is é an modúl seo staidreamh i baint úsáide as <strong> Google Uirlisí Cairt </ strong> ar graphes níos fearr."
+
+#: inc/eg-attachments-admin.inc.php:1202
+msgid "Show or hide TinyMCE button"
+msgstr "Taispeáin nó folaigh an cnaipe TinyMCE"
+
+#: inc/eg-attachments-admin.inc.php:1203
+msgid "You can now show or hide TinyMCE button in the new/edit post/page "
+msgstr "Is féidir leat a thaispeáint anois nó i bhfolach cnaipe TinyMCE sa phost nua / edit / leathanach"
+
+#: inc/eg-attachments-admin.inc.php:1212
+msgid "Exclude thumbnail"
+msgstr "Fág amach thumbnail"
+
+#: inc/eg-attachments-admin.inc.php:1213
+msgid "You can now, automatically exclude the featured image from the list of attachments to be displayed."
+msgstr "Is féidir leat anois, a eisiamh go huathoibríoch ar an íomhá le feiceáil ón liosta ceangaltáin a chur ar taispeáint."
+
+#: inc/eg-attachments-admin.inc.php:1222
+msgid "Keywords"
+msgstr "eochairfhocail"
+
+#: inc/eg-attachments-admin.inc.php:1223
+msgid "Use these keywords to build you own template."
+msgstr "Bain úsáid as na focail a thógáil leat teimpléad féin."
+
+#: inc/eg-attachments-public.inc.php:50
+msgid "Something is going wrong. Bad address, or perhaps you try to access to a private document."
+msgstr "Rud éigin ag dul mícheart. Seoladh Bad, nó b'fhéidir iarracht tú a rochtain ar dhoiciméad príobháideach"
+
+#: inc/eg-attachments-public.inc.php:81
+msgid "This post is private. You must be a user of the site, and logged in, to display this file."
+msgstr "Tá an post seo príobháideach. Ní mór duit bheith i d'úsáideoir an tsuímh, agus logáilte isteach, a ghabhann leis an comhad a thaispeáint."
+
+#: inc/eg-attachments-public.inc.php:86
+msgid "This post is password protected. Please go to the site, and enter the password required to display the document"
+msgstr "Tá an post seo cosanta ag pasfhocal. Do thoil, téigh chuig an suíomh, agus an focal faire a chur ar taispeáint an doiciméad isteach"
+
+#: inc/eg-attachments-public.inc.php:217
+msgid "unknown"
+msgstr "anaithnid"
+
+#: inc/eg-attachments-public.inc.php:420
+msgid "Template doesn't exists. Use default"
+msgstr "Ní Teimpléad ann. Bain úsáid as réamhshocraithe"
+
+#: inc/eg-attachments-public.inc.php:430
+msgid "Error during processing shortcode template"
+msgstr "Earráid le linn teimpléad shortcode próiseála"
+
+#: inc/eg-attachments-public.inc.php:539
+#, fuzzy
+msgid "You need to login to access to the attachments"
+msgstr "Ar mhaith leat chun clibeanna a shannadh do iatáin?"
+
+#: inc/eg-attachments-public.inc.php:546
+msgid "Private document: please login to access"
+msgstr "Doiciméad Príobháideach: le do thoil logáil isteach chun rochtain a fháil ar"
+
+#: inc/eg-attachments-public.inc.php:555
+msgid "Document protected: please enter the password to access"
+msgstr "Doiciméad cosanta: cuir isteach an focal faire rochtain a fháil ar"
+
+#: inc/eg-attachments-public.inc.php:612
+msgid "Caption"
+msgstr "fotheideal"
+
+#: inc/eg-attachments-public.inc.php:616
+#, fuzzy
+msgid "Filename"
+msgstr "ainm comhaid"
+
+#: inc/eg-attachments-settings.inc.php:22
+#: inc/eg-attachments-widgets.inc.php:26
+#, fuzzy
+msgid "Custom templates"
+msgstr "formáid an Chustaim"
+
+#: inc/eg-attachments-settings.inc.php:228
+msgid "If you leave the field empty, the usual WordPress login form will be used (<code>%s</code>)."
+msgstr "Má fhágann tú an réimse folamh, beidh an bhfoirm logáil isteach gnách WordPress a úsáid (<code>%s</code>)."
+
+#: inc/eg-attachments-tools-form.inc.php:83
+#: inc/eg-attachments-tools-form.inc.php:128
+#, fuzzy
+msgid "Delete"
+msgstr "Dáta"
+
+#: inc/eg-attachments-tools-form.inc.php:116
+msgid "Edit template"
+msgstr "Cuir teimpléad"
+
+#: inc/eg-attachments-tools-form.inc.php:116
+msgid "Edit"
+msgstr "Cuir"
+
+#: inc/eg-attachments-tools-form.inc.php:117
+msgid "Copy template"
+msgstr "teimpléad cóip"
+
+#: inc/eg-attachments-tools-form.inc.php:117
+msgid "Copy"
+msgstr "Cóipeáil"
+
+#: inc/eg-attachments-tools-form.inc.php:123
+msgid "View template"
+msgstr "Féach ar an teimpléad"
+
+#: inc/eg-attachments-tools-form.inc.php:123
+msgid "View"
+msgstr "Féach ar"
+
+#: inc/eg-attachments-tools-form.inc.php:128
+msgid "Delete template"
+msgstr "Scrios teimpléad"
+
+#: inc/eg-attachments-tools-form.inc.php:133
+msgid "Edit &#8220;%s&#8221;"
+msgstr "Cuir &#8220;%s&#8221;"
+
+#: inc/eg-attachments-widgets.inc.php:17
+#, fuzzy
+msgid "Display attachments of the current post"
+msgstr "Taispeáin metabox a chur ar taispeáint ar liosta na iatáin ar an láthair post / leathanach"
+
+#: inc/eg-attachments-widgets.inc.php:35
+#, fuzzy
+msgid "Document type"
+msgstr "Cineál Doiciméad:"
+
+#: inc/eg-attachments-widgets.inc.php:38
+msgid "Check to exclude the feature image from the attachments list"
+msgstr "Seiceáil a eisiamh ar an íomhá gné ón liosta iatáin"
+
+#: inc/eg-attachments-widgets.inc.php:39
+msgid "Order by"
+msgstr "Ordú ag"
+
+#: inc/eg-attachments-widgets.inc.php:41
+msgid "Order"
+msgstr "Ordú"
+
+#: inc/eg-attachments-widgets.inc.php:42
+msgid "Ascending"
+msgstr "Ag dul suas"
+
+#: inc/eg-attachments-widgets.inc.php:42
+msgid "Descending"
+msgstr "dul síos"
+
+#: inc/eg-attachments-widgets.inc.php:43
+msgid "\"Save As\" activation"
+msgstr "\"Sábháil Mar \" gníomhachtaithe"
+
+#: inc/eg-attachments-widgets.inc.php:44
+msgid "Force \"Save As\" when users click on the attachments"
+msgstr "Fórsa \"Save As\" nuair a húsáideoirí cliceáil ar an ceangaltán"
+
+#: inc/eg-attachments-widgets.inc.php:45
+msgid "Number of documents to display"
+msgstr "Líon na ndoiciméad a chur ar taispeáint"
+
+#: inc/eg-attachments-widgets.inc.php:46
+msgid "&laquo;Nofollow&raquo; attribute"
+msgstr "&laquo;Nofollow&raquo; attribute"
+
+#: inc/eg-attachments-widgets.inc.php:47
+msgid "Check if you want to automatically add <code>rel=\"nofollow\"</code> to attachment links"
+msgstr "Seiceáil más mian leat a chur go huathoibríoch <code>rel=\"nofollow \" </ cód> Naisc cheangaltán le"
+
+#: inc/eg-attachments-widgets.inc.php:48
+#, fuzzy
+msgid "&laquo;Target&raquo; attribute"
+msgstr "&laquo;target=blank&raquo; attribute"
+
+#: inc/eg-attachments-widgets.inc.php:49
+msgid "Check if you want to automatically add <code>target=\"_blank\"</code> to attachment links"
+msgstr "Seiceáil más mian leat a chur go huathoibríoch <code>target=\"_blank \" </code> Naisc cheangaltán le"
+
+#: inc/eg-attachments-widgets.inc.php:50
+msgid "Attachments access"
+msgstr "ceangaltáin rochtana"
+
+#: inc/eg-attachments-widgets.inc.php:60
+msgid "Attachments"
+msgstr "ceangaltáin"
+
+#: inc/tinymce/eg_attach_popup.php:12
+msgid "You are not allowed to access this file."
+msgstr "Níl cead agat rochtain a fháil ar an comhad seo."
+
+#: inc/tinymce/eg_attach_popup.php:34
+#: inc/tinymce/eg_attach_popup.php:253
+msgid "All"
+msgstr "Gach"
+
+#: inc/tinymce/eg_attach_popup.php:35
+msgid "Documents"
+msgstr "doiciméid"
+
+#: inc/tinymce/eg_attach_popup.php:36
+msgid "Images"
+msgstr "Íomhánna"
+
+#: inc/tinymce/eg_attach_popup.php:39
+#: inc/tinymce/eg_attach_popup.php:44
+#: inc/eg-attachments-widgets.inc.php:51
+msgid "Use default parameter"
+msgstr "Bain úsáid as paraiméadar réamhshocraithe"
+
+#: inc/tinymce/eg_attach_popup.php:40
+msgid "No"
+msgstr "Uimh"
+
+#: inc/tinymce/eg_attach_popup.php:41
+msgid "Yes"
+msgstr "Tá"
+
+#: inc/tinymce/eg_attach_popup.php:45
+msgid "All users"
+msgstr "gach úsáideoir"
+
+#: inc/tinymce/eg_attach_popup.php:46
+msgid "Only logged users"
+msgstr "Úsáideoirí Amháin logáilte isteach"
+
+#: inc/tinymce/eg_attach_popup.php:195
+msgid "Title: "
+msgstr "Teideal:"
+
+#: inc/tinymce/eg_attach_popup.php:200
+msgid "HTML Tag for title: "
+msgstr "HTML Tag le haghaidh teidil:"
+
+#: inc/tinymce/eg_attach_popup.php:205
+msgid "List size: "
+msgstr "Méid liosta:"
+
+#: inc/tinymce/eg_attach_popup.php:209
+msgid "Template (for custom size): "
+msgstr "Teimpléad (do méid saincheaptha):"
+
+#: inc/tinymce/eg_attach_popup.php:213
+msgid "Document type: "
+msgstr "Cineál Doiciméad:"
+
+#: inc/tinymce/eg_attach_popup.php:217
+msgid "Number of documents to display: "
+msgstr "Líon na ndoiciméad a thaispeáint:"
+
+#: inc/tinymce/eg_attach_popup.php:224
+#, fuzzy
+msgid "Add &laquo;Nofollow&raquo; attribut"
+msgstr "&laquo;Nofollow&raquo; attribute"
+
+#: inc/tinymce/eg_attach_popup.php:229
+#, fuzzy
+msgid "Add target=\"blank\" attribut"
+msgstr "&laquo;target=blank&raquo; attribute"
+
+#: inc/tinymce/eg_attach_popup.php:232
+msgid "Force \"saveas\": "
+msgstr "Fórsa \"saveas \":"
+
+#: inc/tinymce/eg_attach_popup.php:236
+msgid "Attachments access: "
+msgstr "Ceangaltáin rochtana:"
+
+#: inc/tinymce/eg_attach_popup.php:243
+msgid "Filter attachments using tags"
+msgstr "Iatáin Scagaire clibeanna ag baint úsáide as"
+
+#: inc/tinymce/eg_attach_popup.php:245
+#, fuzzy
+msgid "Check if you want posts linked to ALL tags"
+msgstr "Seiceáil más mian leat post a bhaineann le gach tags"
+
+#: inc/tinymce/eg_attach_popup.php:250
+msgid "No attachment available for this post"
+msgstr "Níl aon iatán ar fáil le haghaidh an bpost seo"
+
+#: inc/tinymce/eg_attach_popup.php:262
+msgid "Document list: "
+msgstr "Liosta Doiciméad:"
+
+#: inc/tinymce/eg_attach_popup.php:269
+msgid "Insert"
+msgstr "Ionsáigh"
+
+#: inc/tinymce/eg_attach_popup.php:270
+msgid "Cancel"
+msgstr "Cealaigh"
+
+#: lib/eg-plugin.inc.php:238
+msgid "Settings"
+msgstr "Socruithe"
+
+#: lib/eg-plugin.inc.php:300
+msgid "EG-Plugins"
+msgstr "EG-Plugins"
+
+#: lib/eg-plugin.inc.php:468
+msgid "Plugin's homepage"
+msgstr "Leathanach baile Plugin ar"
+
+#: lib/eg-plugin.inc.php:473
+msgid "Frequently Asked Questions"
+msgstr "Ceisteanna a Chuirtear go Minic"
+
+#: lib/eg-plugin.inc.php:478
+msgid "Support forum"
+msgstr "fóram Tacaíochta"
+
+#: lib/eg-plugin.inc.php:483
+msgid "Last changes"
+msgstr "athruithe seo caite"
+
+#: lib/eg-plugin.inc.php:494
+msgid "This plugin required and requires many hours of work. If you use the plugin, and like it, feel free to show your appreciation to the author."
+msgstr "An mbreiseán teastáil agus éilíonn leor uair an chloig oibre. Má úsáideann tú an mbreiseán seo, agus is maith é, dar saor chun a thaispeáint do meas ar an údar."
+
+#: lib/eg-plugin.inc.php:506
+msgid "PayPal - The safer, easier way to pay online!"
+msgstr "PayPal - an bealach níos sábháilte, níos éasca a íoc ar líne!"
+
+#: lib/eg-plugin.inc.php:515
+msgid "Links"
+msgstr "Naisc"
+
+#: lib/eg-plugin.inc.php:521
+msgid "Donate"
+msgstr "Síntiúis"
+
+#: inc/eg-attachments-settings.inc.php:24
+#, fuzzy
+msgid "Shortcodes behavior"
+msgstr "Iompar shortcode Ginearálta"
+
+#: inc/eg-attachments-settings.inc.php:25
+msgid "Auto shortcode"
+msgstr "shortcode auto"
+
+#: inc/eg-attachments-settings.inc.php:26
+#, fuzzy
+msgid "Admin interface"
+msgstr "riarachán comhéadan"
+
+#: inc/eg-attachments-settings.inc.php:31
+#, fuzzy
+msgid "Link"
+msgstr "Naisc"
+
+#: inc/eg-attachments-settings.inc.php:32
+msgid "Behavior"
+msgstr "Oibriú"
+
+#: inc/eg-attachments-settings.inc.php:34
+msgid "CAUTION: the parameters of this section are impacting the default behavior of the shortcode. For example: if you activate &laquo; Nofollow &raquo; here, this attribut will be automatically add to the shortcode, evenif you don't specify it. If you don't check the option &laquo; Nofollow &raquo;, the attribut will appear only if you put the parameter nofollow=1 in the shortcode."
+msgstr "Rabhadh: de pharaiméadair an ailt seo ag dul i gcion ar iompar mhainneachtain an shortcode. Mar shampla: má ghníomhachtú tú &laquo; nofollow anseo, beidh an attribut go huathoibríoch a chur leis an shortcode, evenif nach bhfuil tú a shonrú air. Mura bhfuil tú ag seiceáil an rogha&laquo; Nofollow &raquo;, beidh an attribut le feiceáil ach amháin má chuir tú an paraiméadar nofollow=1 sa shortcode."
+
+#: inc/eg-attachments-settings.inc.php:37
+#, fuzzy
+msgid "Statistics"
+msgstr "Gníomhachtaigh staitisticí"
+
+#: inc/eg-attachments-settings.inc.php:38
+msgid "Security"
+msgstr "Slándáil"
+
+#: inc/eg-attachments-settings.inc.php:40
+msgid "CAUTION: the parameter <strong>Attachments access</strong> is impacting the default behavior of the shortcode."
+msgstr "Rabhadh: paraiméadar <strong> Attachments rochtain </ strong> tionchar acu ar an iompar mhainneachtain an shortcode."
+
+#: inc/eg-attachments-settings.inc.php:43
+msgid "Format"
+msgstr "Formáid"
+
+#: inc/eg-attachments-settings.inc.php:45
+msgid "Activation"
+msgstr "Gníomhachtú"
+
+#: inc/eg-attachments-settings.inc.php:48
+msgid "Administration bar"
+msgstr "riarachán bar"
+
+#: inc/eg-attachments-settings.inc.php:49
+msgid "Post editor page"
+msgstr "Iar-eagarthóir leathanach"
+
+#: inc/eg-attachments-settings.inc.php:50
+#, fuzzy
+msgid "Paths"
+msgstr "Fógraí"
+
+#: inc/eg-attachments-settings.inc.php:51
+msgid "Styles"
+msgstr "stíleanna"
+
+#: inc/eg-attachments-settings.inc.php:52
+#, fuzzy
+msgid "Uninstallation"
+msgstr "roghanna Díshuiteáil"
+
+#: inc/eg-attachments-settings.inc.php:58
+msgid "Links to attachments"
+msgstr "Naisc le ceangaltán"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "<br />All features cannot be implemented with all of these modes.<br /><table class=\"eg-attach-help\"><tr><th>Link type</th><th>Statistics</th><th>Force \"Save as\"</th><th>Security</th></tr><tr><th class=\"row\">Permalink</th><td>x</td><td>x</td><td>x</td></tr><tr><th class=\"row\">File</th><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><th class=\"row\">Direct</th><td>x</td><td>x</td><td>x</td></tr></table>"
+msgstr "<br /> Ní féidir le gach gnéithe a chur i bhfeidhm le gach ceann de na modhanna seo. <br /> <table class=\"eg-attach-help\"> <tr><th>Link type</th><th>Statistics</th><th>Force \"Save as\"</th><th>Security</th></tr><tr><th class=\"row\">Permalink</th><td>x</td><td>x</td><td>x</td></tr><tr><th class=\"row\">File</th><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><th class=\"row\">Direct</th><td>x</td><td>x</td><td>x</td></tr></table>"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "<strong>Direct</strong>.<br /><em>It's the default behavior of the plugin. The URL is pointing to the file, but in this case, the link is encoded. When you click on the attachment, it is displayed as a document, and not as a page of blog. WordPress mechanisms are used</em>"
+msgstr "<strong> Díreach </ strong>. <br /> <em> Tá sé an t-iompar mhainneachtain an mbreiseán seo. Is é an URL atá dírithe ar an gcomhad, ach sa chás seo, tá an nasc ionchódaithe. Nuair a bheidh tú cliceáil ar an astú, tá sé ar taispeáint mar dhoiciméad, agus ní mar leathanach de blog. Meicníochtaí WordPress a úsáidtear </ em>"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "<strong>Permalink</strong>.<br /><em>The URL of the attachment is using defined permalink structure. For example: <code>http://blog url/post url/attachment slug/</code>, or <code>http://blog url/?p=xx</code>.<br/>The attachment will be displayed inside your blog, as a post.</em>"
+msgstr "<strong> Permalink </ strong>. <br /> <em> Tá an URL an iatán trí úsáid a shainmhínítear permalink struchtúr. Mar shampla:?. <code> Http://blog url / iar url / iatán seilide / </ cód>, nó <code> http://blog url / p = xx </ cód> <br/> an ceangaltán Beidh a bheith ar taispeáint taobh istigh do bhlag, mar phoist. </ em>"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "<strong>File</strong>.<br /><em>The URL is the document's address. For example: <code>http://blog url/wp-content/upload/2011/09/file name.file extension/</code>.<br />When you click on the attachment, it is displayed directly, as a document, and not as a page of blog. WordPress mechanisms are not used</em>"
+msgstr "<strong> Comhad </ strong>. <br /> <em> Is é an URL an doiciméad a seoladh. Mar shampla:. <code> Http://blog url/wp-content/upload/2011/09/file name.file síneadh / </ cód> <br /> Nuair a chliceálann tú ar an astú, tá sé ar taispeáint go díreach, mar dhoiciméad, agus ní mar leathanach de blog. Nach mbíonn meicníochtaí WordPress a úsáidtear </ em>"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "In normal mode, when you click on the attachments' links, according their mime type, documents are displayed, or a dialog box appears to choose 'run with' or 'Save As'. By activating the following option, the dialog box will appear for all cases."
+msgstr "I Modh gnáth, nuair a chliceálann tú ar an ceangaltán 'naisc, de réir a gcineál MIME, doiciméid ar taispeáint, nó más dealraitheach bosca dialóige a roghnú' reáchtáil le 'nó' Save As '. Trí activating an rogha seo a leanas, beidh an bosca dialóige le feiceáil do gach cás."
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "&laquo;target=blank&raquo; attribute"
+msgstr "&laquo;target=blank&raquo; attribute"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Featured image"
+msgstr "íomhá Réadmhaoin"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Check if you want to exclude featured image (thumbnail) from the list of attachments"
+msgstr "Seiceáil más mian leat a eisiamh íomhá le feiceáil (thumbnail) ón liosta de na hiatáin"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Click counter"
+msgstr "Cliceáil gcuntar"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Record all clicks occuring in the listed attachements."
+msgstr "Taifead gach cad a tharlaíonn nuair a tharlaíonn sna attachements liostaithe."
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Activate statistics"
+msgstr "Gníomhachtaigh staitisticí"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Statistics, IP to exclude"
+msgstr "Staitisticí, IP a eisiamh"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "List of IP address you want to exclude"
+msgstr "Liosta de seoladh IP gur mian leat a eisiamh"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Maintenance"
+msgstr "cothabháil"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Delete records after"
+msgstr "Taifid Scrios i ndiaidh"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "months"
+msgstr "mhí"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Enter 0 (zero), if you wand to disable the maintenance"
+msgstr "Cuir isteach 0 (nialas), más rud é wand tú a chur ar ceal a chothabháil"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Restrict access to the attachments to logged users only!"
+msgstr "Rochtain ar an ceangaltán Srian d'úsáideoirí logáilte amháin!"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Url to login or register page"
+msgstr "Url chun logáil isteach nó a chlárú leathanach seo:"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Date format"
+msgstr "formáid Dáta"
+
+# eg-attachments-admin.inc.php:
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Default value: %s (%s)"
+msgstr "Luach réamhshocraithe:"
+
+# eg-attachments-admin.inc.php:
+#: inc/eg-attachments-settings.inc.php:
+msgid "Use PHP <strong>date()</strong> parameters to configure the date:<br />d&nbsp;&nbsp;&nbsp;&nbsp;Day of the month, 2 digits with leading zeros<br />D&nbsp;&nbsp;&nbsp;&nbsp;A textual representation of a day, three letters<br />j&nbsp;&nbsp;&nbsp;&nbsp;Day of the month without leading zeros<br />S&nbsp;&nbsp;&nbsp;&nbsp;English ordinal suffix for the day of the month, 2 characters<br />F&nbsp;&nbsp;&nbsp;&nbsp;A full textual representation of a month, such as January or March<br />m&nbsp;&nbsp;&nbsp;&nbsp;Numeric representation of a month, with leading zeros<br />M&nbsp;&nbsp;&nbsp;&nbsp;A short textual representation of a month, three letters<br />n&nbsp;&nbsp;&nbsp;&nbsp;Numeric representation of a month, without leading zeros<br />Y&nbsp;&nbsp;&nbsp;&nbsp;A full numeric representation of a year, 4 digits<br />y&nbsp;&nbsp;&nbsp;&nbsp;A two digit representation of a year"
+msgstr "Bain úsáid as PHP <strong> dáta () </ strong> paraiméadair a chumrú, an dáta: <br /> d Lá na míosa, 2 digit le nialais ar tosach <br /> D a léiriú téacs de lá, trí litir <br /> j lá na míosa gan nialais ar tosach <br /> S Béarla iarmhír ordinal le haghaidh an lá an mí, 2 carachtair <br /> F a léiriú iomlán téacs de mhí, mar shampla eanáir nó Márta <br /> m Uimhriúil ionadaíocht de mhí, le nialais ar tosach <br /> M a léiriú gearr téacs de mhí, trí litir <br /> n ionadaíocht Uimhriúil de mhí, gan nialais ar tosach <br /> Y ; a léiriú iomlán uimhriúil de bhliain, 4 dhigit <br /> y a léiriú dhá dhigit de bhliain"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "<strong>Custom format has been changed</strong>.<br />To make the custom formats more flexible, they are now manage in a specific menu. You can go to the menu <strong>Tools &gt; EGA Templates</strong> to discover the new way of managing them. During the update, your custom format were saved into a template."
+msgstr "Tá formáid <strong> Chustaim athraíodh </ strong>. <br /> Chun na formáidí saincheaptha níos solúbtha, tá siad a bhainistiú anois i roghchlár ar leith. Is féidir leat dul go dtí an roghchlár <strong> Uirlisí> Teimpléid EGA </ strong> a fháil amach an bealach nua a bhainistiú iad. Le linn an nuashonrú, bhí sábháilte do bhformáid saincheaptha i teimpléad."
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "With this option, you can automaticaly add the list of attachments in your blog, without using shortcode"
+msgstr "Leis an rogha seo, is féidir leat a chur automaticaly an liosta de na hiatáin i do bhlag, gan úsáid a bhaint shortcode"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Not activated"
+msgstr "ní gníomhachtaithe"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "At the end"
+msgstr "Ag deireadh na bliana"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Before the excerpt"
+msgstr "Roimh an sliocht"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Between excerpt and content"
+msgstr "Idir sliocht agus ábhar"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Auto / Manual"
+msgstr "Auto / Lámhleabhar"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "If this option is activated, auto shortcode won't be generated if a manual shortcode is detected in the post being displayed"
+msgstr "Má tá an rogha seo i ngníomh, ní bheidh shortcode uathoibríoch a ghiniúint má tá shortcode láimhe aimsíodh sa phost a bheith ar taispeáint"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Disable auto-shortcode when a manual shortcode is detected"
+msgstr "Díchumasaigh auto-shortcode nuair a shortcode láimhe braitheadh"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Where"
+msgstr "I gcás ina"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Activate automatic shortcode only on the following cases"
+msgstr "Gníomhachtaigh shortcode uathoibríoch ar na cásanna seo a leanas"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Homepage,"
+msgstr "Leathanach baile,"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Posts,"
+msgstr "poist,"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Pages,"
+msgstr "Leathanaigh,"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Lists of posts (archives, categories, ...)."
+msgstr "Liostaí na bpost (cartlanna, catagóirí, ...)."
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Title of the list"
+msgstr "Teideal an liosta:"
+
+#: inc/eg-attachments-settings:
+#, fuzzy
+msgid "HTML Tag for title"
+msgstr "HTML Tag le haghaidh teidil:"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "(tag like h2, or h3, ...)"
+msgstr "(tag cosúil le h2, nó h3, ...)"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "List format"
+msgstr "Formáid liosta:"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "No template available"
+msgstr "Níl sonraí ar fáil"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Sort Order"
+msgstr "Ordú Sórtáil:"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "(Default: -1, for all document are listed)"
+msgstr "(Athfhriotail: -1, le haghaidh gach doiciméad atá liostaithe)"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Default options?"
+msgstr "Roghanna Réamhshocrú?"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Do you want that auto shortcode options become the default options for the TinyMCE EG-Attachments Editor?"
+msgstr "Ar mhaith leat go bhfuil roghanna shortcode uathoibríoch a bheith ar na roghanna réamhshocraithe le haghaidh Eagarthóir an EG-Ceangaltáin TinyMCE?"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Display a <strong>EG-Attachments</strong> menu in the administration bar"
+msgstr "Taispeáin <strong> EG-Attachments roghchlár </strong> i mbeár riaracháin"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Metaboxes"
+msgstr "Metaboxes"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Show metabox to display list of attachments of the current post/page"
+msgstr "Taispeáin metabox a chur ar taispeáint ar liosta na iatáin ar an láthair post / leathanach"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "EG-Attachments button"
+msgstr "EG-Ceangaltáin Roghanna"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Show EG-Attachments button in post text editor ?"
+msgstr "Taispeáin EG-Attachments cnaipe i eagarthóir téacs phost?"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Tags assigments"
+msgstr "assigments Clibeanna"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "If you select this option, you will be able to select attachments by using the <strong>tags</strong> parameter in the shortcode."
+msgstr "Má roghnaíonn tú an rogha seo, beidh tú in ann ceangaltáin a roghnú trí úsáid a bhaint as na <strong>tags </ strong> paraiméadar sa shortcode."
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Do you want to assign tags to attachments?"
+msgstr "Ar mhaith leat chun clibeanna a shannadh do iatáin?"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Icon path"
+msgstr "cosáin Dheilbhíní"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Additional path where the plugin can get icons"
+msgstr "Cosán breise nuair is féidir an breiseán deilbhíní a fháil"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Icon_url"
+msgstr "Icon_url"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Additional url where the plugin can get icons"
+msgstr "Url breise nuair is féidir an breiseán deilbhíní a fháil"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Stylesheet"
+msgstr "stíleanna"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Check if you want to use the plugin stylesheet file, uncheck if you want to use your own styles, or include styles on the theme stylesheet."
+msgstr "Seiceáil más mian leat úsáid a bhaint as an comhad stílbhileog plugin, Díthiceáil más mian leat a úsáid do stíleanna féin, nó tá stíleanna ar an stílbhileog téama."
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Automatically load plugins' stylesheet"
+msgstr "Uathluchtaigh plugins 'stílbhileog."
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Data"
+msgstr "Dáta"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Be careful: these actions cannot be cancelled. All plugin's datas, including options, templates, and statistics will be deleted while plugin uninstallation."
+msgstr "Bí cúramach: Ní féidir na gníomhartha seo a chur ar ceal. Beidh gach breiseán ar roghanna a scriosadh agus uninstallation plugin."
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Delete data during uninstallation."
+msgstr "Roghanna Scrios i rith díshuiteáil."
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Display attachments for all users"
+msgstr "Taispeáin iatáin do gach úsáideoir"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Show attachments for everyone, but the url, for logged users only"
+msgstr "Iatáin Taispeáin do gach duine, ach an url, le haghaidh úsáideoirí logáilte amháin"
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "Display attachments for logged users only"
+msgstr "Rochtain ar an ceangaltán Srian d'úsáideoirí logáilte amháin!"
+
+#: /inc/eg-attachments-settings.inc.php:
+msgid "Some comments about security:<ul><li>- &laquo;Private&raquo; Attachments, or documents attached to a &laquo;Private&raquo; post, are not displayed, if the user is not logged,</li><li>- &laquo;Protected&raquo; Attachments, or documents attached to a &laquo;Protected&raquo; post, are not displayed, if users don't give the right password,</li><li>- For non private, and non protected posts, you can choose with the following options, to display attachments, to display without link, or hide attachments.</li></ul>"
+msgstr "Roinnt tuairimí maidir le slándáil: <ul> <li> - ní «Príobháideacha» Attachments, nó doiciméid a ghabhann le «Príobháideach» bpost, ar taispeáint, mura bhfuil an t-úsáideoir logáilte isteach, </ li> <li> - «cosanta »Attachments, nó doiciméid a ghabhann le« chosanta »post nach bhfuil, ar taispeáint, más rud é nach bhfuil úsáideoirí a thabhairt ar an pasfhocal ceart, </ li> <li> - do neamh príobháideacha, agus neamh poist a chosaint, is féidir leat a roghnú le na roghanna seo a leanas, ceangaltáin a thaispeáint, a thaispeáint gan nasc, nó ceangaltán bhfolach. </ li> </ ul>"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "List with details, and big icon"
+msgstr "Liosta le sonraí, agus icon mór"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Large list of attachments without icon"
+msgstr "Liosta mór de iatáin gan icon"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "List with details, and medium size icon"
+msgstr "Liosta le sonraí, agus icon méid mheán"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Medium list of attachments without icon"
+msgstr "Liosta Meánach iatáin gan icon"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "List with details, and small size icon"
+msgstr "Liosta le sonraí, agus icon méid beag"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "Small list of attachments without icon"
+msgstr "Liosta beag de iatáin gan icon"
+
+#: inc/eg-attachment-keywords-help.inc.php
+msgid "The number of downloads is displayed only when if the attachment was downloaded at least 1 time"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php
+msgid "The &laquo; nofollow &raquo; attribut is displayed only if the option &laquo; nofollow &raquo; is checked in the <a href=\"%s\">Settings / EG-Attachments</a> menu"
+msgstr ""
+
+#: inc/eg-attachment-keywords-help.inc.php
+msgid "The &laquo; target &raquo; attributs are displayed only if the option &laquo; target &raquo; is checked in the <a href=\"%s\">Settings / EG-Attachments</a> menu"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:
+msgid "Extension"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:
+#, fuzzy
+msgid "Cache"
+msgstr "Cealaigh"
+
+#: inc/eg-attachments-admin.inc.php:
+msgid "Clear plugin cache"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:
+msgid "The plugin is using cache to store the list of attachments. If the changes you make in the administration interface, are not seen in the front-end, you can use this option to clear the cache"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:
+msgid "Clear cache entries"
+msgstr ""
+
+#: inc/eg-attachments-admin.inc.php:
+msgid "Check the options, if you want to delete the following cache entries"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "When a list of attachments includes images, do you want to display"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "The thumbnail will be displayed with the size specified in the template"
+msgstr ""
+
+#: inc/eg-attachments-settings.inc.php:
+#, fuzzy
+msgid "The icon of the file type"
+msgstr "Cur síos ar an teimpléad nua"
+
+#: inc/eg-attachments-settings.inc.php:
+msgid "The Thumbnail of the image"
+msgstr ""
+
+#: inc/eg-attachments-popup.inc.php:
+msgid "Icons for the images:"
+msgstr ""
+
+#~ msgid "Clicks"
+#~ msgstr "Cad a tharlaíonn"
+#~ msgid "Title"
+#~ msgstr "Teideal"
+#~ msgid "Cannot display attachments. Current post or page is protected."
+#~ msgstr ""
+#~ "Ní féidir ceangaltán thaispeáint. Tá post reatha nó leathanach chosaint."
+#~ msgid "First"
+#~ msgstr "An chéad"
+#~ msgid "Last"
+#~ msgstr "Last"
+#~ msgid "Large"
+#~ msgstr "dul Sios"
+#~ msgid "Medium"
+#~ msgstr "Meánach"
+#~ msgid "Small"
+#~ msgstr "Beaga"
+#~ msgid "Document title"
+#~ msgstr "teideal doiciméad"
+#~ msgid "Order by: "
+#~ msgstr "ordú ag:"
+#~ msgid "Document label: "
+#~ msgstr "Lipéad Doiciméad:"
+#~ msgid "Fields: "
+#~ msgstr "réimsí:"
+#~ msgid "Display default fields?"
+#~ msgstr "Taispeáin réimsí réamhshocraithe?"
+#~ msgid "Nofollow: "
+#~ msgstr "nofollow:"
+#~ msgid "Attachments restricted to register users only"
+#~ msgstr "Ceangaltáin srianta a chlárú úsáideoirí amháin"
+#~ msgid "Document locked"
+#~ msgstr "doiciméad ghlas"
+#~ msgid "TB"
+#~ msgstr "TB"
+#~ msgid "MB"
+#~ msgstr "MB"
+#~ msgid "kB"
+#~ msgstr "kB"
+#~ msgid "B"
+#~ msgstr "B"
+#~ msgid ""
+#~ "Security problem. Try again. If this problem persist, contact <a href=\"%s"
+#~ "\">plugin author</a>."
+#~ msgstr ""
+#~ "Fadhb slándála. Bain triail as arís. Más rud é an fhadhb fós ann, déan "
+#~ "teagmháil le <a href=\"%s\"> plugin údar </ a>."
+#~ msgid ""
+#~ "You cannot access to the synchronization page. You haven't the \"%1s\" "
+#~ "capability. Please contact <a href=\"%2s\">the blog administrator</a>."
+#~ msgstr ""
+#~ "Ní féidir leat rochtain ar an leathanach sioncrónaithe. Ní Tá tú an \"%1s "
+#~ "\" cumas. Déan teagmháil <a href=\"%2s\"> an riarthóir bhlag </ a>."
+#~ msgid " cannot run with "
+#~ msgstr "ní féidir a reáchtáil le"
+#~ msgid " requires "
+#~ msgstr "éilíonn"
+#~ msgid " and later."
+#~ msgstr "agus níos déanaí."
+#~ msgid " to "
+#~ msgstr "chun"
+#~ msgid ""
+#~ "The plugin <strong>%1s</strong> requires the following PHP extensions: %2s"
+#~ msgstr ""
+#~ "Éilíonn an breiseán <strong>%1s </strong> na síntí PHP seo a leanas: %2s"
+#~ msgid ""
+#~ "The plugin <strong>%1s</strong> requires the following PHP options: %2s."
+#~ msgstr ""
+#~ "Éilíonn an breiseán <strong>%1s</strong> na roghanna PHP a leanas: %2s."
+#~ msgid "Save changes"
+#~ msgstr "athruithe a shábháil"
+#~ msgid "Cancel changes"
+#~ msgstr "athruithe Cealaigh"
+#~ msgid "Reset to defaults"
+#~ msgstr "Athshocraigh go mainneachtainí"
+#~ msgid "Error "
+#~ msgstr "earráid"
+#~ msgid ""
+#~ "Lists of attachments can be displayed everywhere posts are displayed, or "
+#~ "only when a single post or a single page is displayed"
+#~ msgstr ""
+#~ "Is féidir le liostaí de na ceangaltáin a chur ar taispeáint i ngach áit "
+#~ "poist ar taispeáint, nó nach bhfuil ach nuair a post amháin nó ar "
+#~ "leathanach amháin ar taispeáint"
+#~ msgid "in all pages"
+#~ msgstr "i gach leathanach"
+#~ msgid "Only for posts and pages"
+#~ msgstr "Amháin le haghaidh post agus leathanaigh"
+#~ msgid "Auto Shortcode Options"
+#~ msgstr "Roghanna Shortcode Auto"
+#~ msgid "Document label"
+#~ msgstr "lipéad doiciméad"
+#~ msgid "Small size"
+#~ msgstr "méid beag"
+#~ msgid "Display icons: "
+#~ msgstr "Deilbhíní Taispeáin:"
+#~ msgid "Check the box to display icons"
+#~ msgstr "Seiceáil an bosca a deilbhíní ar taispeáint"
+#~ msgid "Documents label: "
+#~ msgstr "Doiciméid lipéad:"
+#~ msgid "Choose the field that will be displayed as title of documents"
+#~ msgstr "Roghnaigh an réimse a bheith ar taispeáint mar theideal doiciméid"
+#~ msgid "The default list is: "
+#~ msgstr "Tá an liosta réamhshocraithe:"
+#~ msgid "Do you want to display default fields?"
+#~ msgstr "An bhfuil tú ag iarraidh a thaispeáint réimsí réamhshocraithe?"
+#~ msgid "Fields to be displayed"
+#~ msgstr "Réimsí a chur ar taispeáint"
+#~ msgid "Small list:"
+#~ msgstr "Liosta Bheaga:"
+#~ msgid "Medium list:"
+#~ msgstr "Liosta Medium:"
+#~ msgid "Position"
+#~ msgstr "seasamh"
+#~ msgid "Field"
+#~ msgstr "Réimse"
+#~ msgid "Custom"
+#~ msgstr "saincheaptha"
+#~ msgid ""
+#~ "You can define your own display format, using <strong>custom</strong>. "
+#~ "Parameters of this section will be applied only if you use <em>Custom</"
+#~ "em> as display format for auto-shortcode (fifth option of this page), or "
+#~ "if you specify <em>size=custom</em> in the shortcodes in your post.<br /"
+#~ ">Keywords you can use are listed below."
+#~ msgstr ""
+#~ "Is féidir leat a shainiú do bhformáid taispeáint féin, ag baint úsáide as "
+#~ "<strong> saincheaptha </strong>. Beidh Paraiméadair den alt seo i "
+#~ "bhfeidhm ach amháin má úsáideann tú <em> Chustaim </ em> mar fhormáid "
+#~ "taispeáint shortcode auto-(rogha cúigiú den leathanach seo), nó má tá tú "
+#~ "a shonrú <em>size=saincheaptha</ em> sa shortcodes i do <br/> phost. "
+#~ "Keywords is féidir leat úsáid atá liostaithe thíos."
+#~ msgid ""
+#~ "Available keywords:<br /><table class=\"eg-attach-custom-format"
+#~ "\"><tr><td><strong>%LINK%</strong></td><td>Full link of document (such as "
+#~ "&lt;a href=\"...\"&gt;...), </td></tr><tr><td><strong>%URL%</strong></"
+#~ "td><td>url of document (permalink),</td></tr><tr><td><strong>%GUID%</"
+#~ "strong></td><td>direct link to document as stored in the WP database,</"
+#~ "td></tr><tr><td><strong>%ICONURL%</strong></td><td>URL of icon,</td></"
+#~ "tr><tr><td><strong>%TITLE%</strong></td><td>Title of the document,</td></"
+#~ "tr><tr><td><strong>%CAPTION%</strong></td><td>caption of the document,</"
+#~ "td></tr><tr><td><strong>%DESCRIPTION%</strong></td><td>description of the "
+#~ "document,</td></tr><tr><td><strong>%FILENAME%</strong></td><td>Name of "
+#~ "the attached file,</td></tr><tr><td><strong>%FILESIZE%</strong></"
+#~ "td><td>Size of the attached document,</td></tr><tr><td><strong>%ATTID%</"
+#~ "strong></td><td>ID of the attachment.</td></tr><tr><td><strong>%TYPE%</"
+#~ "strong></td><td>Type of the documents</td></tr><tr><td><strong>%DATE%</"
+#~ "strong></td><td>Date of last modification</td></tr></table>"
+#~ msgstr ""
+#~ "Eochairfhocail ar fáil: <br /> <table class=\"eg-attach-custom-format\"> "
+#~ "<tr> <td> <strong>%% NASC </ strong> </ td> <td> nasc iomlán an doiciméid "
+#~ "(mar shampla, <a href=\"...\"> ...), </ td> </ tr> <tr> <td> <strong> URL%"
+#~ "% </ strong> </ td> url <td> an doiciméid (permalink), </ td> </ tr> <tr> "
+#~ "<td> <strong>% GUID% </ strong> </ td> <td> díreach nasc a dhoiciméadú "
+#~ "mar a stóráil i WP bunachar sonraí, </ td> </ tr> <tr> <td> <strong>% "
+#~ "ICONURL% </ strong> </ td> <td> URL icon, </ td> </ tr> <tr> <td >% "
+#~ "TEIDEAL <strong>% </ strong> </ td> <td> Teideal an doiciméad, </ td> </ "
+#~ "tr> <tr> <td> <strong>% Caption% </ strong> </ td > <td> fotheideal an "
+#~ "doiciméid, </ td> </ tr> <tr> <td> <strong>% cUR SÍOS% </ strong> </ td> "
+#~ "<td> cur síos ar an doiciméad, </ td> </ tr> <tr> <td> <strong>% ainm "
+#~ "comhaid% </ strong> </ td> <td> Ainm an comhad ceangailte, </ td> </ tr> "
+#~ "<tr> <td> <strong>% % Polasaí Breiseáin </ strong> </ td> <td> Méid an "
+#~ "doiciméad faoi iamh, </ td> </ tr> <tr> <td> <strong>% ATTID% </ strong> "
+#~ "</ td> <td> ID an iatán. </ td> </ tr> <tr> <td> <strong>% CINEÁL% </ "
+#~ "strong> </ td> <td> Cineál na doiciméid </ td> </ tr> <tr > <td> <strong>"
+#~ "% DÁTA% </ strong> </ td> <td> Dáta den mhodhnú is déanaí </ td> </ tr> "
+#~ "</ tábla>"
+#~ msgid "Custom format, before list: "
+#~ msgstr "Formáid an Chustaim, roimh liosta:"
+#~ msgid "Custom list format: "
+#~ msgstr "Bhformáid liosta Chustaim:"
+#~ msgid "Custom list format"
+#~ msgstr "Bhformáid liosta saincheaptha"
+#~ msgid "Custom format, after list: "
+#~ msgstr "Formáid an Chustaim, tar éis an liosta:"
+#~ msgid "Custom format, after list"
+#~ msgstr "Formáid an Chustaim, tar éis an lios"
+#~ msgid "General behavior of shortcodes"
+#~ msgstr "Iompar Ginearálta shortcodes"
+#~ msgid ""
+#~ "This option sets the default behavior of all shortcodes and auto-"
+#~ "shortcode. You can change the behavior of specific shortcodes by adding "
+#~ "<code>logged_users</code> parameter."
+#~ msgstr ""
+#~ "Leagann an rogha seo an t-iompar réamhshocraithe ar gach shortcodes agus "
+#~ "auto-shortcode. Is féidir leat athrú ar iompar na shortcodes ar leith trí "
+#~ "<code> logged_users </code> paraiméadar."
+#~ msgid "EG-Attachments Statistics"
+#~ msgstr "EG-Ceangaltáin Staitisticí"
+#~ msgid "Details of %s"
+#~ msgstr "Sonraí %s"
+#~ msgid "Top 10"
+#~ msgstr "top 10"
+#~ msgid "Top 25"
+#~ msgstr "Top 25"
+#~ msgid "History of \"%s\" "
+#~ msgstr "Stair na \"% s\""
+#~ msgid "Q1"
+#~ msgstr "Q1"
+#~ msgid "Q2"
+#~ msgstr "Q2"
+#~ msgid "Q3"
+#~ msgstr "Q3"
+#~ msgid "Q4"
+#~ msgstr "Q4"
+#~ msgid "Jan"
+#~ msgstr "Jan"
+#~ msgid "Feb"
+#~ msgstr "Feb"
+#~ msgid "Mar"
+#~ msgstr "Mar"
+#~ msgid "Apr"
+#~ msgstr "Apr"
+#~ msgid "Jun"
+#~ msgstr "Jun"
+#~ msgid "Jul"
+#~ msgstr "Jul"
+#~ msgid "Aug"
+#~ msgstr "Aug"
+#~ msgid "Sep"
+#~ msgstr "Sep"
+#~ msgid "Oct"
+#~ msgstr "Oct"
+#~ msgid "Nov"
+#~ msgstr "Nov"
+#~ msgid "Dec"
+#~ msgstr "Dec"
+#~ msgid "Total"
+#~ msgstr "Iomlán na"
+#~ msgid "All<br />time"
+#~ msgstr "Gach <br/> am"
+#~ msgid "Last<br />month"
+#~ msgstr "Last <br /> mí"
+#~ msgid "Current<br />month"
+#~ msgstr "Reatha <br /> mí"
+#~ msgid "Last<br />week"
+#~ msgstr "Last <br /> tseachtain"
+#~ msgid "Current<br />week"
+#~ msgstr "Reatha <br /> tseachtain"
+#~ msgid "Yesterday"
+#~ msgstr "Inné"
+#~ msgid "Today"
+#~ msgstr "Sa lá atá inniu"
+#~ msgid "No statistics available yet"
+#~ msgstr "Níl aon staitisticí atá ar fáil go fóill"
+#~ msgid "Display label of fields"
+#~ msgstr "Taispeáin lipéad de réimsí"
+#~ msgid "For Small size only, check the box if you want display labels"
+#~ msgstr ""
+#~ "Chun méid Beaga amháin, a sheiceáil sa bhosca más mian leat lipéid "
+#~ "taispeáint"
+#~ msgid "(For the other sizes, labels are always displayed)"
+#~ msgstr "(Le haghaidh na méideanna eile, lipéid ar taispeáint i gcónaí)"
+#~ msgid "Display label: "
+#~ msgstr "Taispeáin lipéad:"
+#~ msgid "(for size=small only)"
+#~ msgstr "(le haghaidh size = beag amháin)"
+#~ msgid "Custom fields"
+#~ msgstr "réimsí an Chustaim"
+#~ msgid "or display the following fields"
+#~ msgstr "nó taispeáint na réimsí seo a leanas"
+#~ msgid "Lists of posts."
+#~ msgstr "Liostaí de phoist."
+#~ msgid "Automatic Shortcode"
+#~ msgstr "Uathoibríoch Shortcode"
+#~ msgid "Administration"
+#~ msgstr "riarachán"
+#~ msgid ""
+#~ "All of the following parameters are applied on manual AND automatic "
+#~ "shortcode."
+#~ msgstr ""
+#~ "Gach ceann de na paraiméadair seo a leanas i bhfeidhm ar shortcode láimhe "
+#~ "AGUS uathoibríoch."
+#~ msgid "EG-Attachments settings"
+#~ msgstr "EG-Ceangaltáin suímh"
+#~ msgid ""
+#~ "When you upload an attachment file, which behavior do you want for "
+#~ "comments"
+#~ msgstr ""
+#~ "Nuair a bheidh tú uaslódáil comhad astú, a iompar ar mhaith leat chun "
+#~ "tuairimí"
+#~ msgid "Keep default"
+#~ msgstr "Coinnigh réamhshocraithe"
+#~ msgid "Closed the comments"
+#~ msgstr "Dúnta na tuairimí a"
+#~ msgid "Pingbacks/Trackbacks"
+#~ msgstr "Pingbacks / Trackbacks"
+#~ msgid "Allow the pings"
+#~ msgstr "Lig do na pings"
+#~ msgid "Closed the pings"
+#~ msgstr "Dúnta ar an pings"
+#~ msgid ""
+#~ "When you upload an attachment file, which behavior do you want for "
+#~ "pingbacks / trackbacks"
+#~ msgstr ""
+#~ "Nuair a bheidh tú uaslódáil comhad astú, a iompar ar mhaith leat do "
+#~ "Pingbacks / Trackbacks"
+#~ msgid "Icon height: "
+#~ msgstr "Airde Deilbhín:"
+#~ msgid "Icon width: "
+#~ msgstr "Leithead Deilbhín:"
+#~ msgid "Menu Order"
+#~ msgstr "Ordú Menu"
+#~ msgid ""
+#~ "EG-Attachments provides icons, to complete the existing WordPress' list. "
+#~ "You can add your own icons, by specifying a directory/url were these "
+#~ "icons are stored."
+#~ msgstr ""
+#~ "EG-Ceangaltáin deilbhíní, soláthraíonn a chur i gcrích liosta an "
+#~ "WordPress atá ann cheana féin '. Is féidir leat do deilbhíní féin, a "
+#~ "shonrú eolaire / url bhí na deilbhíní a stóráil."
+#~ msgid ""
+#~ "Please enter a location outside of EG-Attachments directories. By this "
+#~ "way, your icons won't be deleted while a plugin upgrade"
+#~ msgstr ""
+#~ "EG-Ceangaltáin deilbhíní, soláthraíonn a Chur i gcrích liosta an ATA "
+#~ "WordPress Ann cheana Féin '. An bhfuil a dhéanamh féidir Leat Féin "
+#~ "deilbhíní, ar an Eolaire shonrú / url An raibh na deilbhíní a stóráil."
+#~ msgid "Icon path (beta)"
+#~ msgstr "Deilbhín cosán (béite)"
+#~ msgid "Icon urlh (beta)"
+#~ msgstr "Deilbhín urlh (béite)"
+

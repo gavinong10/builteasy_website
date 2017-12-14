@@ -1,0 +1,1 @@
+new Array({% for property in properties %}[{{ property.meta._property_latitude.0 }}, {{ property.meta._property_longitude.0 }}]{% if not loop.last %},{% endif %}{% endfor %})

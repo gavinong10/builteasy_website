@@ -1,0 +1,184 @@
+{
+	"title": "Submission System",
+	"slug" : "submission",
+
+	"tabs": [
+		{
+			"settings": {
+				"slug"        : "common",
+				"title"       : "General",
+				"subpage_slug": "submission"
+			},
+
+			"sections": [
+				{
+					"settings": {
+						"id": "common"
+					},
+					"options" : [
+						{
+							"id"         : "post_type",
+							"label"      : "Post Type",
+							"type"       : "select_post_type_for_submission",
+							"default"    : "",
+							"description": "The submission system is only working with custom post types implementing the aviators_CUSTOM_POST_TYPE_NAME_form() function where are handled all form actions."
+						},
+						{
+							"id"         : "posts_per_page",
+							"label"      : "Posts Per Page",
+							"type"       : "textinput",
+							"default"    : "5",
+							"description": "How many posts will be displayed on the user's submission listing page. If you are using PayPal gateway be aware that site must make one connection per submission. It means that PayPal should close connection from your site."
+						},
+						{
+							"id"     : "payment_gateway",
+							"label"  : "Payment Gateway",
+							"type"   : "select",
+							"default": "free",
+							"choices": [
+								{
+									"key"  : "free",
+									"value": "Free"
+								},
+								{
+									"key"  : "paypal",
+									"value": "PayPal"
+								}
+							]
+						},
+						{
+							"id"     : "charging_type",
+							"label"  : "Charging Type",
+							"type"   : "select",
+							"default": "pay_per_post",
+							"choices": [
+								{
+									"key"  : "pay_per_post",
+									"value": "Pay Per Post"
+								}
+							]
+						}
+					]
+				},
+				{
+					"settings": {
+						"id"   : "pay_per_post",
+						"title": "Pay Per Post"
+					},
+					"options" : [
+						{
+							"id"         : "price",
+							"label"      : "How much for one post?",
+							"type"       : "textinput",
+							"default"    : "10",
+							"description": "(Required) Total cost of the transaction to the buyer. If tax charges are known, include them in this value. If not, this value should be the current sub-total of the order. If the transaction includes one or more one-time purchases, this field must be equal to the sum of the purchases."
+						},
+						{
+							"id"         : "tax",
+							"label"      : "Tax",
+							"type"       : "textinput",
+							"default"    : "1",
+							"description": "(Optional) Sum of tax for all items in this order."
+						},
+						{
+							"id"         : "description",
+							"label"      : "Description",
+							"type"       : "textarea",
+							"description": "(Optional) Description of items the buyer is purchasing."
+						},
+						{
+							"id"         : "currency_code",
+							"label"      : "Currency Code",
+							"type"       : "textinput",
+							"default"    : "USD",
+							"description": "A 3-character currency code (default is USD)."
+						}
+					]
+				}
+			]
+		},
+        {
+            "settings": {
+                "slug"        : "tos",
+                "title"       : "Legal Agreement",
+                "subpage_slug": "submission"
+            },
+            "sections": [
+                {
+                    "settings": {
+                        "id": "tos"
+                    },
+                    "options": [
+                        {
+                            "id"     : "enable_tos",
+                            "label"  : "Enable Legal Agreement",
+                            "description": "Enable legal agreement before property can be submitted from Front End Submission",
+                            "type"   : "boolean",
+                            "default": false
+                        },
+                        {
+                            "id"     : "tos_page",
+                            "label"  : "Agreement Post",
+                            "description": "Body of legal agreement, enter ID of Post",
+                            "type"   : "textinput",
+                            "default": false
+                        }
+                    ]
+                }
+            ]
+        },
+		{
+			"settings": {
+				"slug"        : "paypal",
+				"title"       : "PayPal",
+				"subpage_slug": "submission"
+			},
+
+			"sections": [
+				{
+					"settings": {
+						"id": "paypal"
+					},
+					"options" : [
+						{
+							"id"   : "username",
+							"label": "Username",
+							"type" : "textinput"
+						},
+						{
+							"id"   : "password",
+							"label": "Password",
+							"type" : "textinput"
+						},
+						{
+							"id"   : "signature",
+							"label": "Signature",
+							"type" : "textinput"
+						},
+						{
+							"id"     : "sandbox",
+							"label"  : "Sandbox",
+							"type"   : "boolean",
+							"default": false
+						},
+						{
+							"id"   : "sandbox_username",
+							"label": "Sandbox Username",
+							"type" : "textinput"
+						},
+						{
+							"id"   : "sandbox_password",
+							"label": "Sandbox Password",
+							"type" : "textinput"
+						},
+						{
+							"id"   : "sandbox_signature",
+							"label": "Sandbox Signature",
+							"type" : "textinput"
+						}
+					]
+				}
+			]
+		}
+	]
+}

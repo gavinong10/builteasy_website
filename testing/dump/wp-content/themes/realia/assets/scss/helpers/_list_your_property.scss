@@ -1,0 +1,11 @@
+.list-your-property-form {
+  h3 { clear: both;  font-size: 24px; }
+  form { margin: 0px;
+    input[type=text] { @include box-sizing(border-box); height: 40px; width: 100%; }
+    textarea { @include box-sizing(border-box); height: 191px; width: 100%; }
+    label { font-weight: bold; }
+    .chzn-container { @include box-sizing(border-box); width: 100% !important; }
+    .property-type, .contract-type, .bedrooms, .bathrooms, .area, .price { float: left; width: 48%; }
+    .contract-type, .bathrooms, .price { float: right; }
+  }
+}

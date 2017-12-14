@@ -1,0 +1,355 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: codeex shortcodes\n"
+"POT-Creation-Date: 2015-09-16 17:16+0800\n"
+"PO-Revision-Date: 2015-09-16 17:16+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-Basepath: ./\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../inc/tinymce/modal.php:11 ../inc/tinymce/modal.php:50
+#: ../inc/tinymce/modal.php:88 ../inc/tinymce/modal.php:153
+#: ../inc/tinymce/modal.php:193 ../inc/tinymce/modal.php:298
+#: ../inc/tinymce/modal.php:354 ../inc/tinymce/modal.php:548
+msgid "Style"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:13
+msgid "Failed"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:14
+msgid "Success"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:15
+msgid "Warning"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:16
+msgid "Info"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:20 ../inc/tinymce/modal.php:59
+#: ../inc/tinymce/modal.php:107 ../inc/tinymce/modal.php:163
+#: ../inc/tinymce/modal.php:396 ../inc/tinymce/modal.php:556
+msgid "Type"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:22 ../inc/tinymce/modal.php:61
+#: ../inc/tinymce/modal.php:109 ../inc/tinymce/modal.php:165
+#: ../inc/tinymce/modal.php:398 ../inc/tinymce/modal.php:550
+#: ../inc/tinymce/modal.php:558 ../inc/tinymce/modal.php:598
+msgid "Default"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:23 ../inc/tinymce/modal.php:62
+#: ../inc/tinymce/modal.php:110 ../inc/tinymce/modal.php:559
+msgid "Rounded"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:24 ../inc/tinymce/modal.php:111
+msgid "Border"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:28 ../inc/tinymce/modal.php:66
+#: ../inc/tinymce/modal.php:171 ../inc/tinymce/modal.php:209
+#: ../inc/tinymce/modal.php:571
+msgid "Text"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:32 ../inc/tinymce/modal.php:70
+#: ../inc/tinymce/modal.php:132 ../inc/tinymce/modal.php:175
+#: ../inc/tinymce/modal.php:213 ../inc/tinymce/modal.php:245
+#: ../inc/tinymce/modal.php:279 ../inc/tinymce/modal.php:335
+#: ../inc/tinymce/modal.php:416 ../inc/tinymce/modal.php:451
+#: ../inc/tinymce/modal.php:486 ../inc/tinymce/modal.php:528
+#: ../inc/tinymce/modal.php:575 ../inc/tinymce/modal.php:614
+msgid "Insert"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:52 ../inc/tinymce/modal.php:195
+msgid "Style 1"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:53 ../inc/tinymce/modal.php:196
+#: ../inc/tinymce/modal.php:551
+msgid "Style 2"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:54
+msgid "Left"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:55
+msgid "Right"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:90
+msgid "Small"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:91
+msgid "Medium"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:92
+msgid "Large"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:93
+msgid "Extra Large"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:97 ../inc/tinymce/modal.php:596
+msgid "Color"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:99 ../inc/tinymce/modal.php:602
+msgid "Yellow"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:100 ../inc/tinymce/modal.php:599
+msgid "Blue"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:101
+msgid "Green"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:102 ../inc/tinymce/modal.php:600
+msgid "Purple"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:103
+msgid "Gray"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:115 ../inc/tinymce/modal.php:403
+msgid "Target"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:117 ../inc/tinymce/modal.php:405
+msgid "Blank"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:118 ../inc/tinymce/modal.php:406
+msgid "Self"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:119 ../inc/tinymce/modal.php:407
+msgid "Parent"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:120 ../inc/tinymce/modal.php:408
+msgid "Top"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:124
+msgid "Label"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:128 ../inc/tinymce/modal.php:412
+msgid "Link"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:166
+msgid "Last"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:167 ../inc/tinymce/modal.php:303
+msgid "Box"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:197 ../inc/tinymce/modal.php:552
+msgid "Style 3"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:198
+msgid "Style 4"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:199
+msgid "Style 5"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:200
+msgid "Style 6"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:201
+msgid "Gradient"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:205
+msgid "Dropcop"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:231 ../inc/tinymce/modal.php:263
+#: ../inc/tinymce/modal.php:520
+msgid "Width"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:235 ../inc/tinymce/modal.php:267
+#: ../inc/tinymce/modal.php:524
+msgid "Height"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:239
+msgid "Embedded Src"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:242
+msgid "here"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:271 ../inc/tinymce/modal.php:610
+msgid "Title"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:275
+msgid "Image Path"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:300
+msgid "Balloon"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:301
+msgid "Book"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:302
+msgid "Bookmark"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:304
+msgid "Briefcase"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:305
+msgid "Calendar"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:306
+msgid "Clip"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:307
+msgid "Clock"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:308
+msgid "Cross"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:309
+msgid "Document"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:310
+msgid "Exclamation"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:311
+msgid "Folder"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:312
+msgid "Heart"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:313
+msgid "House"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:314
+msgid "Tint"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:315
+msgid "Marker"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:316
+msgid "Minus"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:317
+msgid "Arrow"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:318
+msgid "Pin"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:319
+msgid "Tick"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:323 ../inc/tinymce/modal.php:439
+#: ../inc/tinymce/modal.php:474
+msgid "Text 1"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:327 ../inc/tinymce/modal.php:447
+#: ../inc/tinymce/modal.php:482
+msgid "Text 2"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:331
+msgid "Text 3"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:399
+msgid "Circle"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:435
+msgid "Tab 1"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:443
+msgid "Tab 2"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:470
+msgid "Toggle 1"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:478
+msgid "Toggle 2"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:505
+msgid "Site"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:513
+msgid "Video ID"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:563
+msgid "Button Link"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:567
+msgid "Button Label"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:601
+msgid "Orange"
+msgstr ""
+
+#: ../inc/tinymce/modal.php:606
+msgid "Percent"
+msgstr ""

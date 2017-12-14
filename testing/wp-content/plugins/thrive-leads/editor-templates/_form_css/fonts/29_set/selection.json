@@ -1,0 +1,78 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"M512.48 603.552l-130.304-106.976-283.584 334.816h828.032l-283.616-338.144-130.528 110.304zM957.632 192.608h-890.080l445.056 374.336 445.024-374.336zM662.56 476.384l297.312 354.688v-606.464l-297.312 251.776zM64.128 224.608v606.464l297.312-354.688-297.312-251.776z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"envelope",
+					"email",
+					"mail",
+					"letter",
+					"contact"
+				],
+				"grid": 32
+			},
+			"attrs": [],
+			"properties": {
+				"id": 273,
+				"order": 2,
+				"prevSize": 32,
+				"code": 63042,
+				"name": "envelope2",
+				"ligatures": ""
+			},
+			"setIdx": 7,
+			"setId": 74,
+			"iconIdx": 24
+		}
+	],
+	"height": 1024,
+	"metadata": {
+		"name": "icomoon"
+	},
+	"preferences": {
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {
+				"fontFamily": "icomoon",
+				"majorVersion": 1,
+				"minorVersion": 0
+			},
+			"showGlyphs": true,
+			"metrics": {
+				"emSize": 1024,
+				"baseline": 6.25,
+				"whitespace": 50
+			},
+			"resetPoint": 33,
+			"showQuickUse": true,
+			"quickUsageToken": false,
+			"showMetrics": true,
+			"showMetadata": false
+		},
+		"imagePref": {
+			"color": 0,
+			"height": 32,
+			"columns": 16,
+			"margin": 16,
+			"png": false,
+			"sprites": true,
+			"prefix": "icon-"
+		},
+		"historySize": 100,
+		"showCodes": true,
+		"gridSize": 16,
+		"showLiga": false,
+		"showGrid": true,
+		"showGlyphs": true,
+		"showQuickUse": true,
+		"showQuickUse2": true,
+		"showSVGs": true,
+		"search": ""
+	}
+}

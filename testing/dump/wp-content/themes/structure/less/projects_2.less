@@ -1,0 +1,67 @@
+@import (reference) "_elements";
+
+.single-project {
+  .meta-title {
+    font-weight: normal;
+    color: #878787;
+    margin-right: 10px;
+    + span {
+      font-weight: 600;
+      font-style: italic;
+      color: #111;
+    }
+  }
+  .project-meta__content {
+    background-color: #F8F8F8;
+    padding: 35px 30px;
+    div {
+      margin-bottom: 10px;
+    }
+  }
+  &.tm_project_details_layout2 {
+    .row {
+      margin-top: 30px;
+      margin-bottom: 60px;
+    }
+  }
+  &.tm_project_details_layout3 {
+    .summary {
+      + .col-md-3 {
+        width: 100%;
+        ul {
+          margin: 0;
+          li {
+            margin: 0 0 10px;
+          }
+        }
+      }
+    }
+    .single-featured,
+    .single-project-description {
+      margin-bottom: 60px;
+    }
+    .gallery--layout3 {
+      .owl-dots {
+        display: inline-block;
+        width: auto;
+        position: absolute;
+        .translate(-50%, 0);
+        margin: 0;
+        padding: 3px 17px;
+        bottom: -15px;
+        .owl-dot {
+          width: 12px;
+          height: 12px;
+          vertical-align: middle;
+          opacity: 0.5;
+          border: 2px solid #FFFFFF;
+          .transit;
+          &.active {
+            background-color: #fff;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

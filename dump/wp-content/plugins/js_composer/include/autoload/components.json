@@ -1,0 +1,23 @@
+{
+  "vendors/*": "Vendors scripts for 3rd plugins",
+  "params/*": "Params scripts",
+  "hook-vc-grid.php": "Logic for shortcode vc_grid",
+  "hook-vc-iconpicker-param.php": "Logic for shortcode param iconpicker",
+  "hook-vc-message.php": "Logic for shortcode vc_message",
+  "hook-vc-progress-bar.php": "Logic for shortcode vc_progress_bar",
+  "hook-vc-wp-text.php": "Logic for shortcode vc_wp_text fix",
+  "hook-vc-pie.php": "Logic for shortcode vc_pie",
+  "vc-grid-item-editor.php": "Create new post type vc_grid_item or Grid item",
+  "ui-admin-pointers.php": "Integrating With WordPress’ UI: Admin Pointers",
+  "shortcodes/*": "Shortcodes logic - since 4.5",
+  "ui-vc-pointers.php": "Integrating With WordPress’ UI: Admin Pointers",
+  "vc-pages/*": "Vc Special pages.",
+  "vc-pointers-backend-editor.php": "Backend editor VC Pointers",
+  "vc-pointers-frontend-editor.php": "Frontend editor VC Pointers",
+  "vc-image-filters.php": "PHP class for photo effects like Instagram",
+  "vc-settings-presets.php": "Logic for settings presets",
+  "vc-single-image.php": "add bc for single image",
+  "backend-editor-ie.php": "add ie9 degradation",
+  "frontend-editor-ie.php": "add ie9 degradation",
+  "params-to-init.php": "add required init params"
+}

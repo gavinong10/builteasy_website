@@ -1,0 +1,321 @@
+@import "bourbon";
+
+@mixin lato {
+  font-family: 'Lato', sans-serif;
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+}
+
+$white: #fff;
+$black: #000;
+
+[class*='39_set'] {
+  &.tve_gray_bg {
+    background-image: none;
+    background: #c2c2c2;
+  }
+}
+
+#tve_39_set {
+  [class*='39_set'] {
+    @include clearfix();
+    //    .tve_editor_main_content {
+    //      max-width: 2200px;
+    //      margin-left: 0;
+    //      padding: 0 50px;
+    //    }
+    a {
+      color: inherit;
+    }
+    .tve_p_lb_close {
+      @include lato();
+      border-radius: 50%;
+      background: #d3e9da;
+      border: 1px solid #fff;
+      color: #333333;
+      font-size: 15px;
+      line-height: 17px;
+      text-decoration: none;
+    }
+    h2 {
+      @include lato();
+      color: #333333;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 1.111em;
+      letter-spacing: normal;
+      .bold_text {
+        color: #e64f30;
+      }
+    }
+    p {
+      @include lato();
+      color: #666;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 1.5em;
+      margin-bottom: 20px;
+      text-shadow: none;
+    }
+    h2 {
+      clear: none;
+      padding-bottom: 0;
+    }
+    .bold_text {
+      font-weight: 700!important;
+    }
+  }
+}
+
+#tve_39_set {
+  @include lato();
+  text-shadow: none;
+  article {
+    padding-bottom: 0;
+  }
+  .thrv_contentbox_shortcode {
+    margin-top: 0;
+    margin-bottom: 0;
+    .tve_cb5 {
+      border: 0;
+      border-radius: 5px;
+      box-shadow: 0 1px 10px 0 rgba(#000, .15);
+    }
+  }
+  .thrv_lead_generation {
+    &.thrv_lead_generation_vertical {
+      input[type="text"], input[type="email"] {
+        margin-bottom: 12px;
+      }
+    }
+    button {
+      @include lato();
+      border-radius: 5px;
+      border: 0;
+      box-shadow: 0 -1px 1px 0 rgba(#000, .3) inset;
+      color: $white;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      padding: 12px 10px;
+      text-shadow: 0 1px 1px rgba(#000, .3);
+    }
+    input[type="text"], input[type="email"] {
+      @include lato();
+      border-radius: 3px;
+      border: 1px solid #d4d4d4;
+      background: #fff;
+      box-shadow: none;
+      color: #999;
+      font-size: 18px;
+      font-weight: 300;
+      height: auto;
+      line-height: 28px;
+      padding: 11px 20px !important;
+      &:hover {
+        border: 1px solid #9f9f9f;
+        color: #676767;
+      }
+      &:focus {
+        color: #333;
+      }
+    }
+  }
+  .thrv-leads-form-box {
+    border: 0;
+  }
+  .thrv-leads-widget {
+    background: #d3e9da;
+  }
+  .tve-leads-lightbox {
+    .tve_p_lb_content {
+      background: #d3e9da;
+      border-radius: 0;
+      padding: 0 15px;
+      .tve_p_lb_inner {
+        overflow: visible;
+      }
+    }
+  }
+  /*
+   autoresponder elements
+ */
+  .tve_lg_radio_wrapper {
+    display: inline-block;
+    position: relative;
+    padding: 5px 20px 5px 0;
+    input[type="radio"] {
+      cursor: pointer;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 5;
+      width: 100%;
+      &:checked {
+        + label {
+          &:before {
+            background: #f5f5f5;
+          }
+        }
+      }
+      + label {
+        @include lato();
+        color: #666666;
+        display: inline-block;
+        position: relative;
+        font-size: 16px;
+        font-weight: 300;
+        &:before {
+          background-color: #fff;
+          border: 1px solid #c9c9c9;
+          box-shadow: 1px 1px 2px 0 rgba(#000, .3) inset;
+          border-radius: 100%;
+          content: '';
+          display: inline-block;
+          height: 20px;
+          margin-right: 10px;
+          vertical-align: middle;
+          width: 20px;
+        }
+        &:after {
+          @include transition(background-color .3s);
+          background-color: transparent;
+          border-radius: 100%;
+          content: '';
+          height: 8px;
+          position: absolute;
+          top: 8px;
+          left: 7px;
+          width: 8px;
+        }
+      }
+    }
+  }
+  .tve_lg_checkbox_wrapper {
+    display: inline-block;
+    position: relative;
+    padding: 5px 20px 5px 0;
+    width: auto;
+    input[type="checkbox"] {
+      &:not(:checked),
+      &:checked {
+        position: absolute;
+        visibility: hidden;
+        + label {
+          @include lato();
+          color: #666666;
+          cursor: pointer;
+          font-size: 16px;
+          font-weight: 300;
+          position: relative;
+          padding-left: 35px;
+          &:before {
+            background-color: #fff;
+            border: 1px solid #c9c9c9;
+            box-shadow: 1px 1px 2px 0 rgba(#000, .3) inset;
+            border-radius: 2px;
+            content: '';
+            height: 20px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 20px;
+          }
+          &:after {
+            @include transition(all, .2s);
+            content: "\02713";
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            position: absolute;
+            top: -2px;
+            left: 4px;
+          }
+        }
+      }
+      &:not(:checked) + label:after {
+        @include transform(scale(0));
+        opacity: 0;
+      }
+      &:checked + label:before {
+        background: #f5f5f5;
+      }
+      &:checked + label:after {
+        @include transform(scale(1));
+        opacity: 1;
+      }
+    }
+  }
+}
+
+$color-pallete:
+'blue' #5f9cb6 #477c9e #68a9bf #3e7095 #497ea0 #5d9ab4 #5d9ab4,
+'black' #2d2d2d #222222 #313131 #1d1d1d #222222 #2c2c2c #2c2c2c,
+'green' #a7c553 #8bb23f #b3cc5b #80aa37 #8db340 #a5c352 #dee9c2,
+'white' #b3b3b3 #9b9b9b #bdbdbd #919191 #9c9c9c #b2b2b2 #fff,
+'orange' #cfac38 #bf912a #d5b63d #b98625 #c0922b #ceaa37 #ceaa37,
+'purple' #8f7cae #6c5e94 #9c88b9 #5e528a #6e6096 #8c7aac #8c7aac,
+'red' #c52a2a #b22020 #cc2e2e #aa1c1c #b32121 #c32929 #c32929,
+'teal' #64a7a3 #4c8a85 #6eb2af #427f7a #4d8b87 #63a4a1 #d3e9da;
+
+@each $color in $color-pallete {
+  #tve_39_set {
+    //    .thrv-leads-screen-filler.tve_#{nth($color, 1)} {
+    //      background-color: nth($color, 4);
+    //    }
+    .tve_cb.tve_cb5.tve_#{nth($color, 1)} {
+      background: nth($color, 8);
+    }
+    .thrv-leads-form-box.tve_#{nth($color, 1)} {
+      background: nth($color, 8);
+    }
+    .thrv_lead_generation.tve_#{nth($color, 1)} {
+      input[type="text"], input[type="email"] {
+        &:focus {
+          border: 1px solid nth($color, 8);
+          box-shadow: 0 0 0 4px nth($color, 8) inset;
+        }
+      }
+      button {
+        @include linear-gradient(nth($color, 2), nth($color, 3));
+        &:hover {
+          @include linear-gradient(nth($color, 4), nth($color, 5));
+        }
+        &:active {
+          @include linear-gradient(nth($color, 6), nth($color, 7));
+        }
+      }
+      input[type="radio"] {
+        &:checked + label {
+          &:after {
+            background-color: nth($color, 6);
+          }
+        }
+      }
+      input[type="checkbox"] {
+        &:checked {
+          + label {
+            &:after {
+              color: nth($color, 6);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@import "_responsive";

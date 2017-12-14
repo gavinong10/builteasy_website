@@ -1,0 +1,1139 @@
+/* the following are all related to widgets */
+/* slider control */
+.goog-slider-thumb
+{
+    background-color: Black;
+    background: url(http://widgets.diverse-cdn.com/Content/Images/widgets/widgets-sprite.png) -110px 135px  rgba(0,0,0,.0);
+    cursor: pointer;
+    position: relative;
+    top: -8px;
+    width: 15px;
+    height: 15px;
+}
+.goog-twothumbslider-value-thumb
+{
+    background-color: Black;
+    background: url(http://widgets.diverse-cdn.com/Content/Images/widgets/widgets-sprite.png) -110px 135px rgba(0,0,0,.0);
+    cursor: pointer;
+    position: relative;
+    top: -8px;
+    width: 15px;
+    height: 15px;
+}
+.goog-twothumbslider-extent-thumb
+{
+    background-color: Black;
+    background: url(http://widgets.diverse-cdn.com/Content/Images/widgets/widgets-sprite.png) -110px 135px rgba(0,0,0,.0);
+    cursor: pointer;
+    position: absolute;
+    top: -8px;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+}
+.goog-slider-horizontal {
+    position: relative;
+}
+.goog-twothumbslider-horizontal
+{
+    position: relative;
+}
+.goog-slider
+{
+    height: 1px;
+    position: relative;
+}
+.goog-twothumbslider
+{
+    height: 1px;
+    position: relative;
+}
+/* generic widget */
+.widget_auth_wall
+{
+    background: url(http://widgets.diverse-cdn.com/Content/Images/widgets/missing-widget_notext.jpg) 0px 0px; 
+    background-repeat:no-repeat;  
+    background-position:center top;
+    height: 207px;
+    width:230px;
+    text-align: left;
+    vertical-align:middle;
+}
+.widget_auth_wall_listings
+{
+    background: url(http://widgets.diverse-cdn.com/Content/Images/widgets/missing-widget_notext.jpg)  0px 0px; 
+    background-repeat:no-repeat; 
+    background-position:center top; 
+    height: 207px;
+    width:230px;
+    text-align: left;
+    vertical-align:middle;
+}
+.widget_title
+{
+    color: #404040;
+    font: bold 16px arial,sans-serif;
+    text-align: left;
+}
+.widget_headcell
+{
+    border-bottom: solid 1px #404040;
+}
+.widget_table
+{
+    padding: 0px;
+    border-spacing: 5px;
+    border-collapse:separate;
+}
+.widget_empty_table
+{
+    padding: 1px;
+    border-spacing: 2px;
+    border-collapse:separate;
+    height:100%;
+    width:100%;
+}
+/* general table values */
+.widget_table_value
+{
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    color: Black;
+    font-weight: bold;
+    vertical-align: bottom;
+}
+.widget_table_label
+{
+    font-family: arial, sans-serif;
+    font-size: 10px;
+    color: #787878;
+    vertical-align: bottom;
+}
+/* gallery control styles*/
+.gallery_big_left_arrow
+{
+	opacity: 1.0; filter: alpha(opacity = 100);cursor:default;height:147px;width:25px;background-image:url(http://widgets.diverse-cdn.com/content/images/widgets/button_left_tall.png);background-position:center;background-repeat:no-repeat;background-size:30px 147px;background-color:transparent;-moz-border-top-left-radius: 8px;-webkit-border-top-left-radius: 8px;-khtml-border-top-left-radius: 8px;border-top-left-radius: 8px;-moz-border-bottom-left-radius: 8px;-webkit-border-bottom-left-radius: 8px;-khtml-border-bottom-left-radius: 8px;border-bottom-left-radius: 8px;
+}
+.gallery_big_right_arrow
+{
+	opacity: 1.0; filter: alpha(opacity = 100);cursor:default;height:147px;width:25px;background-image:url(http://widgets.diverse-cdn.com/content/images/widgets/button_right_tall.png);background-position:center;background-repeat:no-repeat;background-size:30px 147px;background-color:transparent;-moz-border-top-right-radius: 8px;-webkit-border-top-right-radius: 8px;-khtml-border-top-right-radius: 8px;border-top-right-radius: 8px;-moz-border-bottom-right-radius: 8px;-webkit-border-bottom-right-radius: 8px;-khtml-border-bottom-right-radius: 8px;border-bottom-right-radius: 8px;
+}
+.gallery_big_right_arrow_dis
+{
+	opacity: 0.5; filter: alpha(opacity = 100);cursor:default;height:147px;width:25px;background-image:url(http://widgets.diverse-cdn.com/content/images/widgets/button_right_tall.png);background-position:center;background-repeat:no-repeat;background-size:30px 147px;background-color:transparent;-moz-border-top-right-radius: 8px;-webkit-border-top-right-radius: 8px;-khtml-border-top-right-radius: 8px;border-top-right-radius: 8px;-moz-border-bottom-right-radius: 8px;-webkit-border-bottom-right-radius: 8px;-khtml-border-bottom-right-radius: 8px;border-bottom-right-radius: 8px;
+}
+.gallery_main_table
+{
+    border-spacing: 2px;
+    border-collapse:separate;
+}
+.gallery_master_table
+{
+    width: 180px;
+    height: 148px;
+}
+.gallery_address_cell
+{
+    background-color: Black;
+    background: rgba(0,0,0,.6);
+    text-align: center;
+    cursor:pointer;
+}
+.gallery_address_span
+{
+    color: white;
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.gallery_listing_data_row
+{    
+    padding:1px;
+    height: 15px;
+    background-color: Gray;
+    text-align: center;
+    background: url(http://widgets.diverse-cdn.com/Content/Images/widgets/transp_overlay.png)  rgba(190,190,190,.7);
+}
+.gallery_listing_data_row_alt
+{    
+    padding:1px;
+    height: 14px;
+    background-color: Black;
+    text-align: center;
+    background: url(http://widgets.diverse-cdn.com/Content/Images/widgets/transp_overlay.png)  rgba(0,0,0,.7);
+}
+.gallery_slideshow_value
+{
+    font: bold 14px arial, sans-serif;
+    color:White;
+    vertical-align:bottom;
+    border-collapse:separate;
+    border-spacing:2px;
+    padding:2px;
+}
+.gallery_image_toggle_cell
+{
+    height: 75px;
+}
+.gallery_image_toggle_cell_table
+{
+    width: 180px;
+    height: 78px;
+}
+.gallery_image_arrow_cell
+{
+    width: 25px;
+}
+.gallery_image_middle
+{
+    width: 90px;
+    cursor:pointer;
+}
+.gallery_image_arrow
+{
+    width: 20px;
+    height: 20px;
+    border: 0;
+    cursor:pointer;
+}
+.gallery_image_arrow_off
+{
+    width: 20px;
+    height: 20px;
+    border: 0;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+}
+.gallery_slideshow_label
+{
+    font-family: arial, sans-serif;
+    font-size: 10px;
+    color: White;
+    vertical-align: bottom;
+    text-align: left;
+    border-collapse:separate;
+    border-spacing:2px;
+    padding:2px;
+}
+.gallery_slideshow_price
+{
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    color: #96c831;
+    font-weight: bold;
+    padding:1px;
+}
+.gallery_address_row
+{
+    height: 25px;
+}
+.gallery_dummy_cell
+{
+    height: 78px;
+    cursor:pointer;
+}
+/* slideshow control styles */
+.slideshow_master_table
+{
+    height: 100%;
+    width:100%;
+    padding: 0px;
+    border-spacing: 0px;
+    background-color: Gray;
+}
+.slideshow_data_table
+{
+    width: 85%;
+    border-collapse:separate;
+    border-spacing:3px;
+    padding:2px;
+}
+.slideshow_arrow_row
+{
+    height: 23px;
+}
+.slideshow_address_cell
+{
+    opacity: 0.6;
+    filter: alpha(opacity = 60);
+    background-color: Black;
+    text-align: center;
+    cursor:pointer;
+}
+.slideshow_address_span
+{
+    color: white;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.slideshow_openhouse_banner
+{
+    height: 8%;
+    background-color: #fada83;
+}
+.slideshow_openhouse_banner_title
+{
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #3d3d3d;
+    text-align: right;
+}
+.slideshow_openhouse_banner_values
+{
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #3d3d3d;
+}
+.slideshow_listing_data_row
+{
+    opacity: 0.8;
+    filter: alpha(opacity = 80);
+    width: 90.4%;
+    height: 11.2%;
+    background-color: Black;
+    text-align: center;
+    background: url(http://widgets.diverse-cdn.com/Content/Images/widgets/transp_overlay.png) rgba(0,0,0,.8);
+    background-repeat: repeat-y;
+}
+.widget_slideshow_value
+{
+    vertical-align:bottom;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    color: White;
+    font-weight: bold;
+    text-align: right;
+}
+.widget_slideshow_label
+{
+    font-family: arial, sans-serif;
+    font-size: 10px;
+    color: Gray;
+    vertical-align: bottom;
+    text-align: left;
+}
+.widget_slideshow_price
+{
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    color: #96c831;
+    font-weight: bold;
+}
+.gallery_main_table td
+{
+    vertical-align:top;
+}
+/* viewAffordability */
+.affordability_div
+{
+    background-color:#fff;
+}
+
+.affordability_div tr{
+    text-align: left;
+    border:none;
+}
+
+.affordability_div td{
+    text-align: left;
+    border:none;
+    line-height:inherit;
+    padding:0;
+}
+
+.affordability_div td.affordability_button_cell{
+    text-align:center;
+}
+
+.affordability_div select, .affordability_div input[type=text]{
+    width:91%;
+    font-size:12px;
+    padding:8px;
+    height:32px;
+    border-color: #ddd;
+    margin-bottom:8px;
+}
+.affordability_title
+{
+    font-family:arial,sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    border-bottom: solid #dedede 1px;
+    padding-bottom:4px;
+    text-align:left;
+    width:150px;
+}
+.affordability_option_text
+{
+    font-family:arial,sans-serif;
+    font-size:10px;
+    color:#747474;
+    padding-left:6px;
+}
+.affordability_label
+{
+    font-family:arial,sans-serif;
+    font-size:12px;
+    color:#c4c4c4;
+}
+.affordability_value
+{
+    font-family:arial,sans-serif;
+    font-size:15px;
+    color:#747474;
+    border:solid 1px #c4c4c4;
+    background-color:White;
+    width:125px;
+}
+.affordability_checkbox
+{
+    font-family:arial,sans-serif;
+    font-size:11px;
+    color:#747474;
+}
+.affordability_checkbox span{
+    padding-left:6px;
+}
+.affordability_button
+{
+    font-family:arial,sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    color:White;
+    background-color:#2780e6;
+    width:170px;
+    height:32px;
+    border:solid Black 1px;
+    margin:10px auto;
+}
+.affordability_height_spacer
+{
+    height: 8px;
+    width:5px;
+}
+.affordability_button_cell
+{
+    text-align:center;
+    border-top:solid 1px #dedede;
+}
+/* viewQuickSearch */
+.QuickSearch_div
+{
+    padding: 0px;
+}
+.QuickSearch_div .quicksearch_div
+{
+    width:470px;
+    height:200px;
+    background-color:White;
+    margin: 0 auto;
+}
+.quicksearch_table
+{
+   height:100%;
+   width:100%; 
+}
+.quicksearch_header
+{
+    font-family:arial,sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    border-bottom: solid Black 1px;
+    text-align:left;
+    width:150px;
+}
+.quicksearch_vert_button_cell
+{
+    text-align:right;
+    padding:5px;
+}
+.quicksearch_label
+{
+    font-family:arial,sans-serif;
+    font-size:11px;
+    text-align: left;
+    width: 70px;
+}
+.quicksearch_flat_div
+{
+    width: 810px; 
+    background-color: White;
+    margin: 0 auto;
+    height:70px;
+}
+.quicksearch_value
+{
+    font-family:arial,sans-serif;
+    font-size:16px;
+    width:70px;
+    vertical-align:top;
+}
+.quicksearch_flat_value
+{
+    font-family:arial,sans-serif;
+    font-size:16px;
+    width:70px;
+}
+.quicksearch_button_cell
+{
+    text-align:right;
+    border-top:solid 1px Gray;
+}
+.quicksearch_flat_label
+{
+    font-family:arial,sans-serif;
+    font-size:11px;
+    width:50px;
+    text-align:right;
+    padding:2px;
+}
+.quicksearch_label_noheight
+{
+    font-family:arial,sans-serif;
+    font-size:11px;
+    text-align:right
+}
+.quicksearch_flat_price_table
+{
+    padding:0px;
+    border-spacing:2px;
+    border-collapse:separate;
+}
+.quicksearch_button
+{
+    font-family:arial,sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    color:White;
+    background-color:#2780e6;
+    width:170px;
+    height:32px;
+    border:solid Black 1px;
+}
+.quicksearch_spacer
+{
+    width:20px;
+}
+.quicksearch_vert_div
+{
+    width:240px;
+    height:350px;
+    background-color:White;
+    margin: 0 auto;
+}
+.quicksearch_vert_spacer
+{
+    width:5px;
+}
+.quicksearch_vert_list_primary
+{
+    font-family:arial,sans-serif;
+    font-size:12px;
+    width:215px;
+    padding:4px;
+}
+.quicksearch_flat_list_primary
+{
+    font-family:arial,sans-serif;
+    font-size:12px;
+    width:150px;
+    padding:4px;
+}
+.quicksearch_list_primary
+{
+    font-family:arial,sans-serif;
+    font-size:12px;
+    width:150px;
+    padding:4px;
+}
+.quicksearch_list
+{
+    font-family:arial,sans-serif;
+    font-size:12px;
+    padding:4px;
+}
+.quicksearch_price_table
+{
+    padding:0px;
+    border-spacing:0px;
+    width:200px;
+}
+/* viewMapSearch */
+.MapSearch_div
+{
+    width:100%;
+    height:100%;
+}
+.mapsearch_div
+{
+    height: 494px;
+    width: 548px;
+    visibility: visible;
+}
+
+.mapsearch-hiden-control{
+    height:50px;
+    width:100%;
+}
+
+.mapsearch_header
+{    
+    background-color: Black;
+    text-align: center;
+    background: rgba(0,0,0,.8) url(http://widgets.diverse-cdn.com/Content/Images/widgets/transp_overlay.png);
+    background-size: 30px 548px;
+    -webkit-background-size: 30px 548px;
+    background-repeat:repeat-y;
+    width: 548px;
+    height: 9.2%;
+    position: relative;
+    z-index:1;
+    top: -494px;
+    left: 0px;
+}
+.mapsearch_data_value
+{
+    font: bold 16px arial, sans-serif;
+    color: White;
+    vertical-align: bottom;
+    text-align: left;
+}
+.mapsearch_data_label
+{
+    font: bold 10px arial, sans-serif;
+    color: Silver;
+    vertical-align: top;
+    text-align: left;
+}
+.mapsearch_data_label_alt
+{
+    font: 10px arial, sans-serif;
+    color: White;
+    vertical-align: middle;
+    text-align: center;
+}
+.mapsearch_data_table
+{
+    padding: 1px;
+    border-spacing: 2px;
+    border-collapse:separate;
+    width: 100%;
+}
+.mapsearch_criteria_table
+{
+    padding: 3px;
+    border-spacing: 3px;
+    border-collapse:separate;
+}
+.mapsearch_modify_cell
+{
+    width: 51.1%;
+    text-align: right;
+    padding: 5px;
+    border-spacing: 5px;
+}
+.mapsearch_modify_button
+{
+    cursor:pointer;
+    border: 1px solid #3c90e8;
+    background: #3c90e8;
+    color: White;
+    font: bold 12px arial, sans-serif;
+    height: 30px;
+    width: 135px;
+}
+.mapsearch_header_div
+{
+    background-color: Black;
+    text-align: center;
+    background: rgba(0,0,0,.8) url(http://widgets.diverse-cdn.com/Content/Images/widgets/transp_overlay.png);
+    background-repeat:repeat-y;
+    width: 548px;
+    height: 30px;
+    position: absolute;
+    top: 96.2%;
+    left: 8px;
+}
+.mapsearch_footer_div
+{
+    background-color: Black;
+    text-align: center;
+    background: rgba(0,0,0,.8) url(http://widgets.diverse-cdn.com/Content/Images/widgets/widgets-sprite.png) 0 0px;
+    width: 548px;
+    height: 30px;
+    position: relative;
+    top: -75px;
+    left: 0px;
+}
+.mapsearch_footer_div_alt
+{
+    background-color: Black;
+    text-align: center;
+    background: rgba(0,0,0,.8) url(http://widgets.diverse-cdn.com/Content/Images/widgets/widgets-sprite.png) 0 0px;
+    width: 548px;
+    height: 30px;
+    position: relative;
+    top: -30px;
+    left: 0px;
+}
+.mapsearch_select
+{
+    background-color: Black;
+    color: White;
+    font: bold 11px arial, sans-serif;
+    border-color: Black;
+}
+.mapsearch_disc_cell
+{
+    width: 36.5%;
+}
+.mapsearch_criteria_panel
+{
+    background-color: Black;
+    visibility: hidden;
+    display: block;
+    background: rgba(0,0,0,.8);
+    text-align: center;
+    width: 190px;
+    height: 270px;
+    position: relative;
+    top: -109.2%;
+    left: 0px;
+}
+.mapsearch_update_cell
+{
+    text-align:center;
+    vertical-align: bottom;
+    height: 65px;
+}
+.mapsearch_update_button
+{
+    cursor:pointer;
+    text-align: center;
+    border: 1px solid #3c90e8;
+    background: #3c90e8;
+    color: White;
+    font: bold 12px arial, sans-serif;
+    height: 30px;
+    width: 135px;
+}
+.mapsearch_search_values
+{
+    font: bold 16px arial, sans-serif;
+    color: White;
+    vertical-align: middle;
+    text-align: right;
+}
+.mapsearch_criteria_block_cell
+{
+    height: 1px;
+    width: 200px;
+    vertical-align: top;
+    text-align: center;
+}
+.mapsearch_slider_cell
+{
+    background-color:White;
+    height: 1px;
+    width: 170px;
+    vertical-align: top;
+    text-align: center;
+    cursor:pointer;
+}
+.mapsearch_data_table
+{
+    height:100%;
+    width: 100%;
+}
+.gm-style-iw{
+    width:250px;
+    left:5px;
+}
+.info-window .dsix-small-listing{
+    padding:0 !important;
+}
+.info-window .dsidx-data{
+    width:100%;
+}
+.info-window .dsidx-secondary-data-line ul{
+    float:left;
+}
+.info-window .dsidx-secondary-data-line ul li{
+    font-weight:normal;
+    font-size:12px;
+}
+.info-window .dsidx-secondary-data-line ul li.dsidx-price{
+    background:none !important;
+    display:block;
+    padding:5px 0 !important;
+    margin:0 !important;
+    clear:both;
+}
+.info-window .dsidx-secondary-data-line ul li.dsidx-price a{
+    font-weight:bold !important;
+    color:#666;
+}
+.info-window .dsidx-address a{
+    font-weight:bold;
+}
+/* viewOpenHouse */
+.OpenHouse_div
+{
+    padding:0px;
+}
+.openhouse_div_internal
+{
+    width: 332px;
+    height:249px;
+    border: 1px solid White;
+}
+.openhouse_section_header
+{
+    width: 100%;
+    padding: 0px;
+    border-spacing: 0px;
+}
+.openhouse_section_header_cell
+{
+    height: 28px;
+    background: url('http://widgets.diverse-cdn.com/Content/Images/widgets/widgets-sprite.png') 0 0px #6e6e6e;
+    background-repeat: repeat-x;
+    background-color: #6e6e6e;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+/* viewRecentStatus */
+.widget_table_item_click
+{
+    width:100%;
+    height:100%;
+}
+.recentstatus_table_item_bg
+{
+    background-color: #f4f4f4;
+    width: 100%;
+    border-collapse:separate;
+    border-spacing:2px;
+}
+.recentstatus_table_item_bg_alt
+{
+    background-color: White;
+    width: 100%;
+    border-collapse:separate;
+    border-spacing:2px;
+}
+.recentstatus_hilight_price
+{
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    color: #339933;
+    font-weight: bold;
+    width: 31%;
+    text-align: right;
+    vertical-align: bottom;
+}
+.recentstatus_hilight_date
+{
+    font-family: arial, sans-serif;
+    font-size: 10px;
+    color: Black;
+    background-color: #fcde86;
+    text-align: right;
+}
+.recentstatus_section_header
+{
+    width: 100%;
+}
+.recentstatus_section_header_cell
+{
+    background-color: #6e6e6e;
+    height: 10.5%;
+    background: url('http://widgets.diverse-cdn.com/Content/Images/widgets/transp_overlay.png') rgba(110,110,110,.8);
+    background-repeat: repeat-y;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.recentstatus_section_link_cell
+{
+    height: 10.5%;
+    text-align: center;
+    border-top: Solid 1px Black;
+    color:Black;
+    cursor:pointer;
+}
+.recentstatus_internal_div
+{
+    max-width: 100%;
+    border: solid 1px #000;
+}
+/* viewHistoricalChart.js */
+.historicalchart_div
+{
+    width: 495px;
+    padding: 10px;
+    border: 1px solid #404040;
+    height: 215px;
+    background-color: White;
+}
+.historicalchart_table
+{
+    width: 100%;
+}
+.historicalchart_sub_table
+{
+    border-collapse:separate;
+    border-spacing:4px;
+}
+.historicalchart_sub_section
+{
+    color: Gray;
+    text-align: left;
+    font: bold 9px arial;
+}
+.historicalchart_item_option_0
+{
+    text-align: left;
+    font: 9px arial;
+    color: #3366FF;
+}
+.historicalchart_item_option_1
+{
+    text-align: left;
+    font: 9px arial;
+    color: #A2CD5A;
+}
+.historicalchart_item_option_2
+{
+    text-align: left;
+    font: 9px arial;
+    color: #458B00;
+}
+.historicalchart_item_option_3
+{
+    text-align: left;
+    font: 9px arial;
+    color: #101010;
+}
+.historicalchart_item_option_base
+{
+    text-align: left;
+    font: 9px arial;
+    color: Black;
+}
+*/
+/* viewQRCode.js */
+.qrcode_description
+{
+    color: #404040;
+    font: 12px arial,sans-serif;
+    text-align: left;
+}
+.qrcode_image
+{
+    height: 220px;
+    width: 220px;
+}
+.qrcode_icon
+{
+    height: 25px;
+    width: 15px;
+}
+.qrcode_div
+{
+    width: 242px;
+    padding: 6px;
+    height: 265px;
+    background-color: White;
+}
+/* end */
+/* Splash Styles */
+.loading-splash
+{
+    padding: 1em 1em 2em;
+    text-align: left;
+}
+.loading-indicator
+{
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-name: rotate-reverse;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    background: url('http://widgets.diverse-cdn.com/Content/Images/widgets/widgets-sprite.png') 0 -194px;
+}
+.loading-indicator.large
+{
+    height: 40px;
+    width: 40px;
+}
+.loading-indicator.extended-textbox-icon
+{
+    background-clip: content-box;
+    -webkit-background-clip: content-box;
+    background-origin: content-box;
+    -webkit-background-origin: content-box;
+    background-position:  0 -82px;
+    height: 20px;
+    padding: 6px;
+    width: 20px;
+}
+
+.loading-splash > .loading-indicator.large
+{
+    display: inline-block;
+    margin-left: 35px;
+    position: relative;
+    top: 9px;
+}
+.loading-indicator.fast
+{
+    -webkit-animation-duration: .7s;
+    -webkit-animation-name: rotate;
+    background-position: 0 -41px;
+}
+.loading-text
+{
+    color: #bbb;
+    display: inline-block;
+    font-size: 200%;
+}
+/* end of widgets */
+/*start of maps hover window */
+.dsidx-small-listing
+{
+        padding: 6px 10px;
+        cursor: pointer;
+}
+
+.dsidx-small-listing-alt 
+{
+        background: #f2f2f2;
+}
+
+.dsidx-small-listing .dsidx-address
+{
+        font-size: 12px;
+        font-weight: bold;
+        margin: 0 0 5px 0;
+        color: #000000;
+        padding: 0 0 4px 0;
+        
+        border-bottom: solid 1px #cccccc;
+}
+
+.dsidx-small-listing .dsidx-address a 
+{
+        color: #000000;
+}
+
+
+.dsidx-small-listing .dsidx-address span
+{
+        font-size: 10px;
+        color: #b3b3b3;
+        font-weight: normal;
+}
+
+.dsidx-small-listing .dsidx-media
+{
+        float: left;
+}
+
+
+.dsidx-small-listing .dsidx-media .dsidx-photo
+{
+        font-size: 0px;
+}
+
+.dsidx-small-listing .dsidx-media .dsidx-photo img
+{
+        border: solid 1px #cccccc;
+        margin: 0 6px 0 0;
+}
+.dsidx-small-listing .dsidx-secondary-data 
+{
+        padding: 2px 0 0 0;
+}
+.dsidx-small-listing .dsidx-secondary-data .dsidx-price 
+{
+        color: #ffffff;
+        font-size: 11px;
+        font-weight: bold;
+        padding: 2px 5px;
+        background: #666666;
+        display: inline-block;
+        margin: 7px 0 0 0;
+}
+
+.dsidx-small-listing .dsidx-secondary-data 
+{
+        font-size: 10px;
+        color: #999999;
+}
+
+.dsidx-small-listing .dsidx-secondary-data span 
+{
+        color: #000000;
+        font-weight: bold;
+}
+
+/* start map version */
+
+#dsidx-map-hover.dsidx-small-listing 
+{
+        border-radius: 3px;
+        background: white;
+        border: solid 1px #8d8c8c;
+        padding: 5px 5px;
+        
+        box-shadow: 0px 0px 2px 0 rgba(0,0,0,.2);
+        
+        overflow: visible;
+        
+        white-space: nowrap;
+}
+
+#dsidx-map-hover.dsidx-small-listing .dsidx-container
+{
+        position: relative;
+}
+
+#dsidx-map-hover.dsidx-small-listing .dsidx-map-hover-divet
+{
+        width: 7px;
+        height: 11px;
+        background: transparent url(http://localhost/images/dsidxpress/map-hover-divet.png) left top no-repeat;
+        position: absolute;
+        left: -12px;
+        top: 0px;
+}
+
+#dsidx-map-hover.dsidx-small-listing  .dsidx-media .dsidx-photo
+{
+        width: 50px;
+        text-align: center;
+}
+
+#dsidx-map-hover.dsidx-small-listing  .dsidx-media .dsidx-photo img
+{
+        max-width: 50px;
+}
+
+#dsidx-map-hover.dsidx-small-listing .dsidx-data 
+{
+        margin: 0 0 0 55px;
+}
+
+/* end of maps hover */

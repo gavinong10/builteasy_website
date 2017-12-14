@@ -1,0 +1,73 @@
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('select[name=filter_sort_by]').change(function () {
+            $('form.form-sort').submit();
+        });
+
+        $('select[name=filter_order]').change(function () {
+            $('form.form-sort').submit();
+        });
+    });
+</script>
+
+<div class="properties-rows">
+    <div class="filter">
+        <form action="{{ wp.get_bloginfo('wpurl') }}/{{ wp.__('properties', 'aviators') }}/" method="get" class="form-sort form-horizontal">
+            {% if q %}
+                {% for key, value in q %}
+                    {% if key != 'filter_order' and key != 'filter_sort_by' %}
+                        {% if value is iterable %}
+                            {% for val in value %}
+                                <input type="hidden" name="{{ key }}[]" value="{{ val }}">
+                            {% endfor %}
+                        {% else %}
+                            <input type="hidden" name="{{ key }}" value="{{ value }}">
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+
+            <div class="control-group">
+                <label class="control-label" for="inputSortBy">
+                    {{ wp.__('Sort by', 'aviators') }}
+                </label>
+
+                <div class="controls">
+                    <select name="filter_sort_by" id="inputSortBy">
+
+                            <option value="title" {% if default_sort == 'title'%}selected="selected"{% endif %}>{{ wp.__('Name', 'aviators') }}</option>
+                            <option value="date" {% if default_sort == 'date' %}selected="selected"{% endif %}>{{ wp.__('Date', 'aviators') }}</option>
+                            <option value="price" {% if default_sort == 'price' %}selected="selected"{% endif %}>{{ wp.__('Price', 'aviators') }}</option>
+
+                            {% if wp.aviators_settings_get_value('properties', 'filter_visibility', 'hide_beds') != 'on' %}
+                                <option value="beds" {% if default_sort == 'beds' %}selected="selected"{% endif %}>{{ wp.__('Bedrooms', 'aviators') }}</option>
+                            {% endif %}
+
+                            {% if wp.aviators_settings_get_value('properties', 'filter_visibility', 'hide_baths') != 'on' %}
+                                <option value="baths" {% if default_sort == 'baths' %}selected="selected"{% endif %}>{{ wp.__('Bathrooms', 'aviators') }}</option>
+                            {% endif %}
+
+                    </select>
+                </div>
+                <!-- /.controls -->
+            </div>
+            <!-- /.control-group -->
+
+            <div class="control-group">
+                <label class="control-label" for="inputOrder">
+                    {{ wp.__('Order', 'aviators') }}
+                </label>
+
+                <div class="controls">
+                    <select id="inputOrder" name="filter_order">
+                        <option value="DESC" {% if q.filter_order == 'DESC' %}selected="selected"{% endif %}>{{ wp.__('DESC', 'aviators') }}</option>
+                        <option value="ASC" {% if q.filter_order == 'ASC' %}selected="selected"{% endif %}>{{ wp.__('ASC', 'aviators') }}</option>
+                    </select>
+                </div>
+                <!-- /.controls -->
+            </div>
+            <!-- /.control-group -->
+        </form>
+    </div>
+    <!-- /.filter -->
+</div><!-- /.properties-rows -->

@@ -1,0 +1,23 @@
+/**
+ * NOO Meta Boxes Package.
+ *
+ * StyleSheet used in NOO Meta Boxes
+ *
+ * @package    NOO Framework
+ * @subpackage NOO Meta Boxes
+ * @version    1.0.0
+ * @author     Kan Nguyen <khanhnq@nootheme.com>
+ * @copyright  Copyright (c) 2014, NooTheme
+ * @license    http://opensource.org/licenses/gpl-2.0.php GPL v2 or later
+ * @link       http://nootheme.com
+ */
+/* ============================================================================= */
+
+/* post-format */
+.noo-control .post-format-icon:before {
+	top: 5px;
+}
+
+._noo_wp_post_override_layout {
+	margin-top: 5px;
+}

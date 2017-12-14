@@ -1,0 +1,272 @@
+backupbuddy-get-overview
+	Description:
+		Get any overview of BackupBuddy information for this site.
+	Arguments:
+		none
+	Return Array:
+			api- API version of this function. Increments of the output of this function changes.
+			status- Whether or not the action succeeded. Possible values: ok, error
+			message- Text status message.
+			overview- Array of overview information.
+				backupbuddyVersion- BackupBuddy version.
+				localTime- Current timestamp of server. (PHP's time()).
+				lastBackupStart- Timestamp last backup began. This MAY differ from the backup in lastBackupStats as this includes any unfinished backups.
+				lastBackupSerial- Serial ID of the last backup to start.
+				lastBackupStats- Array of stats about the last backup to complete. Deprecated?
+				editsSinceLastBackup- Number of edits made to posts/page since the last backup succeeded.
+				scheduleCount- Number of schedules.
+				profileCount- Number of profiles.
+				destinationCount- Number of destinations.
+				gmtOffset- Offset for timestamp on server from GMT. From get_option( 'gmt_offset' ). [As of verb API 5].
+				notifications- Array of string notifications, such as that backups are failing.
+
+
+
+backupbuddy-get-latestBackupProcess
+	Description:
+		Get details on the last backup process to run or is currently running.
+	Arguments:
+		none
+	Return Array:
+		api- API version of this function. Increments of the output of this function changes.
+		status- Whether or not the action succeeded. Possible values: ok, error
+		message- Text status message.
+		localTime- Current timestamp of server. (PHP's time()).
+		latestBackupProcess- Array of details on the latest backup process to run, which may or may not be currently running.
+			serial- Backup ID.
+			isRunning- 1 if this latest backup is currently running now. 0 if complete or timed out.
+			processStarted- Timestamp backup process began.
+			processFinished- Timestamp backup process finished. 0 if not finished.
+			processStepTitle- Friendly title of the currently step.
+			processStepFunction- Internal function name of the current step. eg: backup_zip_files
+			processStepElapsed- Number of seconds elapsed since this step began.
+			backupType- Type of backup. full, db, files
+			profileTitle- Friendly profile title.
+			scheduleTitle- Friendly schedule title. Blank string if not launched by a schedule.
+			archiveFile- ZIP filename. If this file no longer exists (deleted, moved offsite, etc) this will be set blank. eg: backup-backupbuddy-2014_01_13-05_53pm-full-zasmn27tn5.zip
+			archiveURL- URL to download the backup ZIP file. Eg: http://backupbuddy/wp-admin/admin-ajax.php?action=pb_backupbuddy_download_archive&backupbuddy_backup=backup-backupbuddy-2014_01_13-05_53pm-full-zasmn27tn5.zip
+			archiveSize- Current zip file size in bytes. Grows as the zip file is generated.
+			integrityStatus- Backup integrity scan status. -1 if integrity has not been scanned yet, true for OK, false for failure passing integrity scan.
+			destinations- Array of destinations to send to.
+				Array (
+					id- Numeric identifier for this destination.
+					title- Friendly user-specified title of destination.
+					type- Type of destination. Valid values: dropbox, dropbox2, email, ftp, local, rackspace, s3, sftp, stash, + any future destinations.
+				)
+
+
+
+backupbuddy-list-profiles
+	Description:
+		Get a list of profiles currently in existance.
+	Arguments:
+		none
+	Return Array:
+			api- API version of this function. Increments of the output of this function changes.
+			status- Whether or not the action succeeded. Possible values: ok, error
+			message- Text status message.
+			profiles- Array of profiles
+				title- User-specified title of profile. Tags stripped.
+				type- Type of profile. Valid values: defaults [internal use only], full, db, files
+				id- Numeric identifier for this profile.
+
+
+
+backupbuddy-get-backupStatus
+	Description:
+		Get backup status log up to this point. Only supports ECHOing out the response.
+	Arguments:
+		serial- Backup serial ID unique identifier.
+	Return Array:
+		IMPORTANT: This verb is _SPECIAL_ and returns a string response not the normal array. Returns full status log, newline separated.
+
+
+
+
+
+backupbuddy-list-destinations
+	Description:
+		Get a list of destinations currently in existance.
+	Arguments:
+		none
+	Return Array:
+			api- API version of this function. Increments of the output of this function changes.
+			status- Whether or not the action succeeded. Possible values: ok, error
+			message- Text status message.
+			destinations- Array of destinations
+				title- User-specified title of destination. Tags stripped.
+				type- Type of destination. Valid values: dropbox, dropbox2, email, ftp, local, rackspace, s3, sftp, stash, + any future destinations.
+				id- Numeric identifier for this destination.
+
+
+
+backupbuddy-run-backup
+	Description:
+		Run a backup by profile.
+	Arguments:
+		profile- Profile ID number to run. Alternatively this can be "full" or "db" which will run the built-in non-deletable full or database profiles.
+	Return Array:
+			api- API version of this function. Increments of the output of this function changes.
+			status- Whether or not the action succeeded. Possible values: ok, error
+			message- Text status message.
+			serial- Serial ID of the backup which was just run.
+
+
+
+backupbuddy-list-schedules
+	Description:
+		Get a list of backup schedules.
+	Arguments:
+		none
+	Return Array:
+			api- API version of this function. Increments of the output of this function changes.
+			status- Whether or not the action succeeded. Possible values: ok, error
+			message- Text status message.
+			schedules- Array of profiles
+				title- User-specified title of schedule. Tags stripped.
+				profileID- Numeric identifier for the profile this schedule will run.
+				profileTitle- User-specified title of the profile for this destination. Tags stripped.
+				type- Backup type as specified by the profile.
+				interval- Tag interval for schedule for WP cron. ie. hourly, daily, twicedaily, weekly, twiceweekly, monthly, twicemonthly
+				lastRun- Timestamp the schedule last ran.
+				enabled- Whether or not the schedule is currently enabled. Valid values: 1, 0
+				id- Numeric identifier for this schedule.
+
+
+
+backupbuddy-list-everything
+	Description:
+		Retrieve an array of all GETTER methods.
+	Arguments:
+		none
+	Return Array:
+			api- API version of this function. Increments of the output of this function changes.
+			status- Whether or not the action succeeded. Possible values: ok, error
+			message- Text status message.
+			overview- Full response from calling backupbuddy-get-overview.
+			destinations- Full response from calling backupbuddy-list-destinations.
+			profiles- Full response from calling backupbuddy-list-profiles.
+			schedules- Full response from calling backupbuddy-list-schedules.
+
+
+backupbuddy-get-importbuddy
+	Description:
+		Retrieve importbuddy.php contents, base64 encoded (to help maintain integrity through json encoding & transmission). Protected by provided password. If no password provided then uses default configured in Settings.
+	Arguments:
+		password- Passord to use. If blank then uses default.
+	Return Array:
+			api- API version of this function. Increments of the output of this function changes.
+			status- Whether or not the action succeeded. Possible values: ok, error
+			message- Text status message.
+			importbuddy- base64 encoded importbudy.php file contents.
+			importbuddy_hash- md5 hash of importbuddy contents to insure it transfers perfectly.
+
+
+backupbuddy-add-schedule
+	Description:
+		Creates a new backup schedule.
+	Arguments:
+		title- (string) User-specified title of schedule. Please strip tags.
+		profile- (int) Profile ID number (numeric).
+		interval- (string) Tag interval for schedule for WP cron. ie. hourly, daily, twicedaily, weekly, twiceweekly, monthly, twicemonthly
+		firstRun- (int) Timestamp of first runtime. Take care to handle timezone of server (gmtOffset provided in backupbuddy-get-overview) as well as timezone of user's browser.
+		destinations- (array) Destination IDs to send to after the schedule completes running.
+		deleteAfter- (bool) Whether or not to delete the local copy of the backup after sending to a destination (if applicable).
+		enabled- (bool) Whether or not this schedule is currently enabled (active) to be able to run.
+	Return Array:
+			api- API version of this function. Increments of the output of this function changes.
+			status- Whether or not the action succeeded. Possible values: ok, error
+			message- Text status message.
+			scheduleID- Numeric ID number of the new just-added schedule.
+
+
+backupbuddy-delete-schedule
+	Description:
+		Delete an existing schedule. Also handles unscheduling in WP cron.
+	Arguments:
+		id- (int) Numeric ID of the schedule to delete (array key).
+	Return Array:
+			api- API version of this function. Increments of the output of this function changes.
+			status- Whether or not the action succeeded. Possible values: ok, error
+			message- Text status message.
+
+
+backupbuddy-list-destinationTypes
+	Description:
+		Lists the types of destinations available on this server for creation.
+	Arguments:
+		none
+	Return Array:
+			api- API version of this function. Increments of the output of this function changes.
+			status- Whether or not the action succeeded. Possible values: ok, error
+			message- Text status message.
+			destinations- Array of destinations that could be created on this server.
+
+
+backupbuddy-test-destination
+	Description:
+		Test provided destination settings. Can be tested prior to creation. Accepts the exact settings also used for backupbuddy-add-destination verb.
+	Arguments:
+		settings- (array) Destination settings.
+	Return Array:
+			api- API version of this function. Increments of the output of this function changes.
+			status- Whether or not the action succeeded. Possible values: ok, error
+			message- Text status message.
+			[Note: Returns error if test fails. Descriptive cause of test failure supplied in the message field.]
+
+
+backupbuddy-delete-destination
+	Description:
+		Delete an existing destination. Handles stripping from existing scheduled destinations.
+	Arguments:
+		id- Numeric destination ID number.
+	Return Array:
+			api- API version of this function. Increments of the output of this function changes.
+			status- Whether or not the action succeeded. Possible values: ok, error
+			message- Text status message.
+			destination_id- Destination ID number of the destination just deleted.
+
+
+backupbuddy-get-destinationSettings
+	Description:
+		Retrieve the settings for an existing destination.
+	Arguments:
+		id- (int) Numeric destination ID number.
+	Return Array:
+			api- API version of this function. Increments of the output of this function changes.
+			status- Whether or not the action succeeded. Possible values: ok, error
+			message- Text status message.
+			settings- Array of all the settings for this destination.
+			destination_id- Destination ID number of the destination just deleted.
+
+
+backupbuddy-add-destination
+	Description:
+		Create a new destionation.
+	Arguments:
+		settings- (array) Destination settings for the new destinatino. This should be the complete destination settings array.
+					Defaults are applied by BackupBuddy whenever these settings are called so defaults shoudl not be mandatory.
+					These settings are NOT validated and are expected to be trusted and functional. Use the test verb for testing these same settings.
+					Accepts the exact settings also used for backupbuddy-test-destination verb.
+	Return Array:
+			api- API version of this function. Increments of the output of this function changes.
+			status- Whether or not the action succeeded. Possible values: ok, error
+			message- Text status message.
+			destination_id- Destination ID number of the destination just deleted.
+
+
+backupbuddy-edit-destination
+	Description:
+		Edits an existing new destionation.
+	Arguments:
+		settings- (array) Array of destination settings. See backupbuddy-add-destination settings argument for details.
+		id- (int) Numeric destination ID number.  Obtain via backupbuddy-list-destinations.
+	Return Array:
+			api- API version of this function. Increments of the output of this function changes.
+			status- Whether or not the action succeeded. Possible values: ok, error
+			message- Text status message.
+			destination_id- Destination ID number of the destination just deleted.
+
+
+
+

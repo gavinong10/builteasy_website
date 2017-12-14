@@ -1,0 +1,271 @@
+/* usual control elements */
+.control-container {
+	/* as far as controls are displayed as inline-block this puts them to center */
+	/* choose left or right to put it to left/right */
+  text-align: center; 
+  
+  /* margin from the bottom of slider */
+  /* see demo to learn how to put panel over the slider */
+  margin-top: 10px;
+}
+
+.control-element, .control-element-active {
+  /* this displays element as inline-block; zoom and *display is a hack for ie7 which does not support inline-block */
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  
+  /* change this to the values you need */
+  width: 7px;
+  height: 7px;
+  background: #d7f1ab;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.control-element-active {
+  background: #819462;
+}
+
+/* usual control elements over slider */
+.control-container-over {
+  /* fixes it on the top in the 3d world (the effects area of a slider has 100 by default) */
+  position: relative;
+  z-index: 101;
+  
+  /* put panel over the slider */
+  margin: -35px 0 0 10px;
+  
+  /* put panel in the middle */
+  /* margin: -30px auto; */
+  
+  background-color: rgba(215,241,171,0.6);
+  padding: 3px 5px;
+  
+  /* change width to your value */
+  width: 200px;
+}
+
+.control-element-over, .control-element-active-over {
+  /* this displays element as inline-block; zoom and *display is a hack for ie7 which does not support inline-block */
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  
+  /* change this to the values you need */
+  width: 10px;
+  height: 10px;
+  border-radius: 5px 5px 5px 5px;
+  background: white;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.control-element-active-over {
+  background: #424242;
+}
+
+/* image-preview control elements */
+.control-container-img {
+  /* as far as contorls are displayed as inline-block this puts them to center */
+  /* choose left or right to put it to left/right */
+  text-align: center; 
+  
+  /* change this to the values you need */
+  margin-top: 1px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.control-element-img, .control-element-active-img {
+  /* this displays element as inline-block; zoom and *display is a hack for ie7 which does not support inline-block */
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  
+  /* change this to the values you need */
+  width: 150px;
+  height: 88px;
+  margin: 0;
+  cursor: pointer;
+  opacity: 0.4;
+  filter: alpha(opacity=40)
+}
+
+.control-element-img:hover {
+  opacity: 0.7;
+  filter: alpha(opacity=70)
+}
+
+.control-element-active-img {
+  opacity: 1;
+  filter: alpha(opacity=100)
+}
+
+.control-element-img img, .control-element-active-img img {
+  width: 150px;
+  height: 88px;
+}
+
+/* carousel player */
+.player-container-carousel {
+  height: 132px;
+  width: 720px;
+  margin-top: 144px;
+}
+
+.player-back-carousel, .player-forward-carousel {
+  background-image: url(carousel.png);  
+  height: 132px;
+  width: 40px;
+  float: left;
+  opacity: 0.7;
+  filter: alpha(opacity=70)
+}
+
+.player-forward-carousel {
+  float: right;
+  background-position: -47px;
+}
+
+.player-back-carousel:hover {
+  background-position: -96px; 
+  opacity: 1;
+  filter: alpha(opacity=100)
+}
+
+.player-forward-carousel:hover {
+  background-position: -144px;
+  opacity: 1;
+  filter: alpha(opacity=100)
+}
+
+/* dummy for missing buttons to display the forward button in the same row */
+.player-pause-carousel, .player-play-carousel {
+  /* this displays element as inline-block; zoom and *display is a hack for ie7 which does not support inline-block */
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+/* usual player with images */
+.player-container {
+  height: 28px;
+  white-space: nowrap;
+}
+
+.player-pause, .player-play, .player-forward, .player-back {
+  /* this displays element as inline-block; zoom and *display is a hack for ie7 which does not support inline-block */
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  
+  cursor: pointer;
+  margin-left: 5px;
+  height: 28px;
+  width: 33px;
+  background-image: url(player.png);
+}
+
+.player-pause {
+  background-position: -199px 0;
+  width: 28px;
+}
+
+.player-pause:hover {
+  background-position: -161px 0;
+}
+
+.player-play {
+  background-position: -356px 0;
+  width: 28px;
+}
+
+.player-play:hover {
+  background-position: -319px 0;
+}
+
+.player-back {
+  background-position: -275px 0;
+}
+
+.player-back:hover {
+  background-position: -234px 0;
+}
+
+.player-forward {
+  background-position: -434px 0;
+}
+
+.player-forward:hover {
+  background-position: -393px 0;
+}
+
+/* usual player with text */
+.player-text-container {
+  background-position: 0 0;
+  color: white;
+  height: 28px;
+  width: 151px;
+  font-family: PT Sans Narrow;
+  font-size: 1.3em;
+  background-image: url(player.png);
+}
+
+.player-text-container div {
+  display: inline-block;
+  font-size: 0.8em;
+  margin: 0 10px;
+  cursor: pointer;
+  width: 29px;
+}
+
+.player-text-pause:hover, .player-text-play:hover, .player-text-forward:hover, .player-text-back:hover {
+  text-decoration: underline;
+}
+
+/* messages */
+.message-container {
+  background: #424242;
+  color: white;
+  font-size: 0.9em;
+  font-family: PT Sans Narrow;
+  padding: 5px;
+}
+
+/* events */
+#status-message {
+  visibility: hidden;
+  font-weight: bold;
+  color: red;
+}
+
+/* widget */
+.widget-container {
+  background: #424242;
+  color: white;
+  font-size: 0.9em;
+  font-family: PT Sans Narrow;
+  padding: 5px;
+}
+
+.widget-container td {
+  padding: 2px 4px;
+}
+
+.widget-container input {
+  width: 153px;
+}
+
+/* google maps */
+.maps-container {
+  background: rgba(42,42,42,0.6);
+  padding: 5px 5px 3px 5px;
+}
+
+.maps-container img {
+	/* fixed size is needed for animation */
+	width: 150px;
+	height: 150px;
+}

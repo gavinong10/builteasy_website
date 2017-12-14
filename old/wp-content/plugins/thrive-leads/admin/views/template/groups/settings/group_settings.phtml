@@ -1,0 +1,87 @@
+<div class="tvd-modal-content">
+    <div id="tve-leads-options-container">
+        <div class="tvd-row tvd-top-row">
+            <div class="tvd-col tvd-s7">&nbsp;</div>
+            <div class="tvd-col tvd-s5">
+                <div class="tvd-row tvd-collapse tvd-no-margin">
+                    <div class="tvd-col tvd-l6 tvd-s12">
+                        <div class="tvd-input-field">
+                            <select class="tve_leads_saved_options tvd-select2" data-placeholder="<?php echo __("Current selection", 'thrive-leads') ?>">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="tvd-col tvd-l6 tvd-s12">
+                        <button class="tve_leads_load_saved_options tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-full-btn"><?php echo __("Load Saved Options", 'thrive-leads') ?></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tve-message-container" style="">
+            <div class="error">
+                <?php
+                $cache_plugin = tve_dash_detect_cache_plugin();
+
+                $message = $cache_plugin
+                    ? sprintf(__('After saving these settings, the cache data from %s plugin will be automatically cleared (this is required each time you make a change to these settings)', 'thrive-leads'), '<strong>' . $cache_plugin . '</strong>')
+                    : sprintf(__('If you have a caching plugin installed (such as %1$sW3 Total Cache%2$s or %1$sWP Super Cache%2$s), please clear the cache after you change these settings', 'thrive-leads'), '<strong>', '</strong>');
+                ?>
+                <p><?php echo $message ?></p>
+            </div>
+        </div>
+        <div class="tvd-v-spacer vs-2"></div>
+        <h4>
+            <?php echo __("Display Logic", 'thrive-leads'); ?>
+            <span id="inclusions-count">(0)</span>
+        </h4>
+        <p><?php echo __("Use this form to set when your forms will be displayed:", 'thrive-leads') ?></p>
+
+        <div id="show_group_options"></div>
+        <div class="tvd-v-spacer vs-3"></div>
+        <h4 data-target="#exclusions_wrapper" class="tl-clickable tl-toggle-tab-display collapsed tvd-pointer">
+            <span><?php echo __("Exclusions", 'thrive-leads'); ?></span>
+            <span id="exclusions-count">(0)</span>
+        </h4>
+        <div class="tvd-relative">
+            <div id="exclusions_wrapper" class="tvd-not-visible">
+                <p><?php echo __("Use this form to set when your forms will not be displayed. This overrides the display logic above", 'thrive-leads') ?></p>
+                <div id="hide_group_options"></div>
+            </div>
+        </div>
+        <div class="tvd-v-spacer vs-3"></div>
+        <div class="">
+            <div class="tve_leads_tabs_content" style="display: block">
+                <div class="tvd-row tvd-collapse">
+                    <div class="tvd-col tvd-s12">
+                        <h4><?php echo __("Save as Template", 'thrive-leads'); ?></h4>
+                        <p><?php echo __("You can save the display configuration that you've created if you'd like a template to re-use with other forms.", 'thrive-leads'); ?></p>
+                    </div>
+                </div>
+                <div class="tvd-row tvd-collapse">
+                    <div class="tvd-col tvd-l3 tvd-s4">
+                        <div class="tvd-input-field">
+                            <input type="text" name="tve_leads_new_template_name" id="tve_leads_new_template_name"/>
+                            <label for="tve_leads_new_template_name"><?php echo __("Template name", 'thrive-leads'); ?></label>
+                        </div>
+                    </div>
+                    <div class="tvd-col tvd-l3 tvd-s4">
+                        <button class="tve_leads_add_new_template tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green"><?php echo __("Save Display Template", 'thrive-leads'); ?></button>
+                    </div>
+                </div>
+            </div>
+            <div class="tve_leads_tabs_content_wrapper">
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="tvd-modal-footer">
+    <div class="tvd-row">
+        <div class="tvd-col tvd-s6">
+            <button class="tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-dark tvd-modal-close tvd-waves-effect"><?php echo __("Cancel", 'thrive-leads'); ?></button>
+        </div>
+        <div class="tvd-col tvd-s6">
+            <button class="tve_leads_save_widget_options tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tvd-right"><?php echo __("Save & Close", 'thrive-leads'); ?></button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,217 @@
+
+@import "variables/base.less";
+// //== Header Variables
+@import "variables/header.less";
+@import "variables/shortcode.less";
+
+//== Scaffolding
+
+//== Color
+// Global textual link color.
+@link-color:            #75b08a;
+@link-hover-color:      darken(@link-color, 15%); // #0696C6
+
+// @gray-darker:            lighten(#000, 13.5%); // #222
+// @gray-dark:              lighten(#000, 20%);   // #333
+// @gray:                   lighten(#000, 33.5%); // #555
+// @gray-light:             lighten(#000, 60%);   // #999
+@gray-lighter:           #dedede; // #eee
+@gray-lightest:          #f6f6f6; // #eee
+@white: #fff;
+
+@brand-primary:           @link-color;
+@brand-button:           #f0e797;
+@brand-color:           #bdb254;
+// @brand-success:         #5cb85c;
+// @brand-info:            #5bc0de;
+// @brand-warning:         #f0ad4e;
+// @brand-danger:          #d9534f;
+@secondary: #bdb254;
+
+//defind color
+
+@white:#fff;
+
+// Body Background
+@body-bg:       #fff;
+@body-bg-image: "";
+@body-bg-repeat: no-repeat;
+@body-bg-align: left top;
+@body-bg-attachment: fixed;
+@body-bg-cover: auto;
+
+// Site layout
+@site-background: #fff; // lighten(@gray-lighter, 5%);
+@site-box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+@site-border-color: #d5d5d5;
+@site-border-color-rgba: rgba(0, 0, 0, 0.275);
+@site-width: 90%;
+@site-max-width: 1200px;
+
+//== Typography
+// Base Font
+@text-color:        #2d313f;
+@font-weight-small: 300;
+@font-weight-base: 300;
+@font-weight-bold: 700; 
+
+@font-family-base:        "Lato"; //@font-family-sans-serif;
+
+@font-size-base:          16px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+
+// @font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+// @font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
+// @font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.4285)); // ~20px
+@font-size-h5:   		  ceil(@font-size-base * 1.28571); //18px
+@font-size-h6:            @font-size-base ;// ~14px
+
+// Line Height
+@line-height-base:        1.5; // 20/14
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+// Headings Typography
+@headings-font-family:    "Lato";
+@headings-font-weight:    400;
+@headings-line-height:    1.1;
+@headings-color:          darken(@text-color, 20%);
+
+//Buttons
+@btn-font-weight: 400;
+
+@btn-primary-color:              @white;
+@btn-primary-bg:                 @brand-primary;
+@btn-primary-border:             @btn-primary-bg;
+
+@btn-secondary-color:           #bdb254;
+@btn-secondary-bg:              #f0e797;
+@btn-secondary-border:          #f0e797;
+@btn-secondary-bg-hover: 		@brand-primary;
+@btn-secondary-border-hover: 	@brand-primary;
+@btn-secondary-color-hover: 	#fff;
+@btn-thirdary-bg-hover: 		#e8df8b;
+@btn-thirdary-border-hover:		#e8df8b;
+
+// Components base style
+@border-radius-base:        4px;
+@border-radius-large:       6px;
+@border-radius-small:       3px;
+
+// Grid system
+@grid-columns:              12;
+@grid-gutter-width:         30px;
+
+// Nice scroll
+@nice-scroll-width: 10px;
+
+// Admin bar
+// ---------------------------------------------------------
+@admin-bar-height: 32px;
+@admin-bar-collapsed-height: 46px;
+
+@widget-link-size:          @font-size-base;
+
+// Widgets Vars
+// ---------------------------------------------------------
+@widget-title-color: #6c6c6c;
+@widget-border-color: @border-color-base;
+@widget-border-color-rgba: @border-color-rgba;
+@widget-border-radius: @border-radius-large;
+@widget-text-shadow: @text-shadow-base;
+
+@widget-block-bg: transparent;
+@widget-block-box-shadow: @box-shadow-base;
+
+@widget-item-padding-vertical: @padding-large-vertical;
+@widget-item-padding-horizontal: 0;
+
+@widget-item-padding-large-vertical: @padding-large-vertical;
+@widget-item-padding-large-horizontal: 0;
+
+@widget-item-line-height: @line-height-base;
+@widget-item-box-shadow: @box-shadow-base;
+@widget-item-hover-bg: @component-hover-bg-base;
+
+@widget-menu-current-item-bg: @nav-active-link-bg;
+
+//Search bar
+@search-bar-bg:#fff;
+@search-bar-input-bg:#ededed;
+
+
+// Pagination
+@pagination-item-box-shadow: @box-shadow-base;
+@pagination-active-item-box-shadow: @box-shadow-base;
+
+//== Breadcrumbs
+@breadcrumb-padding-vertical:   8px;
+@breadcrumb-padding-horizontal: 15px;
+//** Breadcrumb background color
+@breadcrumb-bg:                 rgba(0, 0, 0, 0);
+//** Breadcrumb text color
+@breadcrumb-color:              #979797;
+//** Text color of current page in the breadcrumb
+@breadcrumb-active-color:       #979797;
+//** Textual separator for between breadcrumb elements
+@breadcrumb-separator:          "/";
+
+// Page Heading
+@page-heading-divider-corlor: #e1e1e1;
+@page-heading-divider-corlor-rgba: rgba(0, 0, 0, 0.1);
+@page-heading-box-shadow: rgba(255, 255, 255, 0.795);
+@page-sub-heading-color: #b7b7b7;
+
+//Shop
+@shop-loop-item-border-color:#fff;
+@shop-loop-item-hover-border-color:@border-color-base;
+@shop-loop-item-bg:#fff;
+@shop-button-bg:lighten(@text-color, 50%);
+@shop-button-color:#2f3339;
+@payment-box-bg:#f7f7f7;
+@payment-box-color:#777;
+@shop-price-slider-range:@link-color;
+@shop-price-slider-content:#eee; 
+@shop-price-slider-handle:#e8e8e8;
+
+
+//Tab
+
+//Comment
+@comment-boder-color:#f8f8f8;
+
+
+//Form
+@input-bg: #fff;
+@input-height: 50px;
+@input-border-focus: lighten( @link-color, 10% );
+
+// Footer
+@wigetized-title-color:#fff;
+@footer-bg-color: #371B2C;
+@footer-text-color: #f5f5f5;
+@footer-link-color: #f5f5f5;
+@footer-link-hover-color: #f0e797;
+
+
+
+// Colophon
+// ---------------------------------------------------------
+@colophon-bg: #222;
+@colophon-box-shadow: @box-shadow-base;
+@colophon-border-top: @border-color-base; 
+@colophon-border-top-rgba: @border-color-rgba;
+@bottom-colophon-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.8);
+@bottom-colophon-border-top-rgba: rgba(0, 0, 0, 0.085);
+
+//Posts
+@hentry-border-bottom:#f8f8f8;
+@content-title-color:#282828;
+@content-border-color: @border-color-base;
+@content-featured-box-shadow: @box-shadow-base;
+
+//Gototop
+@go-to-top-bg:rgba(0, 0, 0, 0.15);
+
+@import "variables/miscellaneous.less";

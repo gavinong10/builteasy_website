@@ -1,0 +1,11 @@
+{% if wp.have_posts() %}
+
+    {% for post in posts %}
+        {{ wp_query.the_post() }}
+        {{ wp.get_template_part('content', wp.get_post_format()) }}
+    {% endfor %}
+
+    {{ wp.aviators_paging_nav('', 2, wp_query) }}
+{% else %}
+    {{ wp.get_template_part('content', 'none') }}
+{% endif %}

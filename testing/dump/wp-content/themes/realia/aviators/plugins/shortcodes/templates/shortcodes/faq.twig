@@ -1,0 +1,19 @@
+<div class="accordion" id="faq{{ category }}">
+    <div class="accordion-group">
+        {% for question in questions %}
+            <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#faq{{ category }}" href="#collapse{{ category }}{{ loop.index }}">
+                    <span class="sign"></span> {{ question.post_title }}
+                </a>
+            </div><!-- /.accordion-heading -->
+
+            <div id="collapse{{ category }}{{ loop.index }}" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    {{ question.post_content|raw }}
+                </div>
+                <!-- /.accordion-inner -->
+            </div><!-- /.accordion-body -->
+        {% endfor %}
+    </div>
+    <!-- /.accordion-group -->
+</div><!-- /.accordion -->

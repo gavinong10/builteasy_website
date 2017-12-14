@@ -1,0 +1,38 @@
+.widget.call-to-action { text-align: center;
+  .decoration {
+    @include border-radius(50%); @include transition(background-position .2s ease-in, border-color .2s ease-in, background-color .2s ease-in);
+    background-color: $bottom-circle-background-color; background-position: center bottom; background-repeat: no-repeat;  border: 6px solid $bottom-circle-border-color; display: block; height: 130px; margin: 0px auto 30px auto; width: 130px;
+  }
+  .address {
+    background-image: url('../img/call-to-action-address.png'); background-size: 53px 260px;
+    @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+      background-image: url('../img/call-to-action-address@2x.png');
+    }
+  }
+
+  .gps {
+    background-image: url('../img/call-to-action-gps.png'); background-size: 77px 260px;
+    @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+      background-image: url('../img/call-to-action-gps@2x.png');
+    }
+  }
+
+  .key {
+    background-image: url('../img/call-to-action-key.png'); background-size: 77px 260px;
+    @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+      background-image: url('../img/call-to-action-key@2x.png');
+    }
+  }
+
+
+  h2 { font-size: 30px; margin: 0px 0px 20px 0px;
+    a { color: $bottom-circle-title-color; text-decoration: none;
+      &:hover { text-decoration: none; }
+    }
+  }
+  .btn { @include buttonize; }
+  p { margin: 0px 0px 30px 0px; }
+  &:hover {
+    .key, .gps, .address { background-color: $bottom-circle-background-color-hover; background-position: center top; border-color: $bottom-circle-border-color-hover; }
+  }
+}

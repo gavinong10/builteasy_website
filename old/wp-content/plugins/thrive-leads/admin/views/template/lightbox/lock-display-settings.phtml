@@ -1,0 +1,32 @@
+<div class="tvd-modal-content">
+    <h4>
+        <#= post_title #>
+    </h4>
+
+    <p>
+        <?php echo __('This setting determines how the content inside the shortcode will be displayed.', 'thrive-leads') ?>
+    </p>
+
+    <div class="tvd-input-field">
+        <select id="tve-lock-display">
+            <option value="hide"<#if(model.get('content_lock_display')==='hide'){#>selected<#}#>><?php echo __('Hide', 'thrive-leads') ?></option>
+                    <option value="blur"<#if(model.get('content_lock_display')==='blur'){#>selected<#}#>><?php echo __('Blur', 'thrive-leads') ?></option>
+        </select>
+        <label for="tve-lock-display"><?php echo __('Content display', 'thrive-leads') ?></label>
+    </div>
+    <p class="tve-error tve-blur-warning">
+        <?php echo __('Warning! The blur filter is not supported in Internet Explorer. Low opacity will be used instead.', 'thrive-leads') ?>
+    </p>
+</div>
+<div class="tvd-modal-footer">
+    <div class="tvd-row">
+        <div class="tvd-col tvd-s12 tvd-m6">
+            <a href="javascript:void(0)" class="tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-dark tvd-modal-close tvd-waves-effect"
+               tabindex="3"><?php echo __('Cancel', 'thrive-leads') ?></a>
+        </div>
+        <div class="tvd-col tvd-s12 tvd-m6">
+            <a tabindex="2" href="javascript:void(0)"
+               class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tve-save-lead-lock tvd-modal-submit tvd-right"><?php echo __('Save', 'thrive-leads') ?></a>
+        </div>
+    </div>
+</div>

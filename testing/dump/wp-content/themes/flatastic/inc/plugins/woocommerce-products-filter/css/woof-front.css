@@ -1,0 +1,204 @@
+
+.woof-loading {
+	background: url('../img/ajax-loader.gif') no-repeat center center;
+	height: 200px;
+}
+
+	/* --------------------------------------------- */
+	/*	Widget
+	/* --------------------------------------------- */
+
+		#sidebar .widget-woof-filter {
+			overflow: hidden;
+
+			-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.10);
+					box-shadow: 0 1px 1px rgba(0,0,0,.10);
+		}
+
+			#sidebar .widget-woof-filter div.woof {
+				padding: 23px 20px 25px;
+				background-color: #fff;
+			}
+
+				.widget-woof-filter .woof_container {
+					position: relative;
+					margin-bottom: 15px;
+				}
+
+					.woof_container > .close_woof_container {
+						position: absolute;
+						right: 0;
+						top: 1px;
+						border: none;
+						background-color: transparent;
+						color: #292f38;
+						opacity: 0;
+
+						-webkit-transition: opacity .4s ease;
+								transition: opacity .4s ease;
+					}
+
+					.woof_container:hover > .close_woof_container { opacity: 1; }
+
+					.woof_container > .close_woof_container:before {
+						font-family: 'fontawesome';
+						font-size: 14px;
+						content: "\f00d";
+					}
+
+					.woof_container > .close_woof_container:hover:before { color: #e74c3c; }
+
+					.woof_container .woof_label {
+						display: block;
+						margin-bottom: 15px;
+						font-weight: 700;
+						font-size: 16px;
+					}
+
+				/* Button RESET */
+
+				.woof-reset-navigation 		 { color: #292f38; }
+				.woof-reset-navigation:hover { color: #e74c3c; }
+
+				.woof-reset-navigation:before {
+					margin-right: 10px;
+					font-family: 'fontawesome';
+					content: "\f021";
+				}
+
+	/* --------------------------------------------- */
+	/*	Type Color
+	/* --------------------------------------------- */
+
+	.woof_list_color li {
+		display: inline-block;
+		margin-right: 5px;
+		margin-bottom: 5px;
+		vertical-align: top;
+	}
+
+		.woof_list_color a {
+			display: block;
+			width: 26px;
+			height: 26px;
+			border: 2px solid #e2e6e7;
+			padding: 2px;
+			background-clip: content-box;
+			color: #292f38;
+			font-size: 0;
+			text-align: center;
+
+			-webkit-border-radius: 4px;
+					border-radius: 4px;
+			-webkit-transition: border-color .35s ease;
+					transition: border-color .35s ease;
+		}
+
+		.woof_list_color a:hover { border-color: #292f38; }
+
+		.woof_list_color a:before {
+			font-family: 'fontawesome';
+			font-size: 14px;
+			content: "\f00c";
+			opacity: 0;
+		}
+
+		.woof_list_color .chosen a:before { opacity: 1; }
+
+	/* --------------------------------------------- */
+	/*	Type Checkbox
+	/* --------------------------------------------- */
+
+	.woof_list_checkbox li {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+		.woof_list_checkbox a {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			color: #696e6e;
+			text-align: center;
+		}
+
+		.woof_list_checkbox a:before {
+			display: inline-block;
+			margin-right: 10px;
+			width: 22px;
+			height: 22px;
+			vertical-align: middle;
+			border: 2px solid #e2e6e7;
+			background-color: #f5f7f8;
+			content: "";
+
+			-webkit-border-radius: 4px;
+					border-radius: 4px;
+		}
+
+		.woof_list_checkbox .chosen a:after {
+			position: absolute;
+			left: 0;
+			top: 2px;
+			text-align: center;
+			width: 22px;
+			height: 22px;
+			color: #292f38;
+			font-family: 'fontawesome';
+			font-size: 12px;
+			content: "\f00c";
+		}
+
+	/* --------------------------------------------- */
+	/*	Type Radio
+	/* --------------------------------------------- */
+
+	.woof_list_radio li {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+		.woof_list_radio a {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			color: #696e6e;
+			text-align: center;
+		}
+
+		.woof_list_radio a:before {
+			display: inline-block;
+			margin-right: 10px;
+			width: 22px;
+			height: 22px;
+			vertical-align: middle;
+			border: 2px solid #e2e6e7;
+			background-color: #f5f7f8;
+			content: "";
+
+			-webkit-border-radius: 50%;
+					border-radius: 50%;
+		}
+
+		.woof_list_radio .chosen a:after {
+			position: absolute;
+			left: 6px;
+			top: 7px;
+			text-align: center;
+			width: 10px;
+			height: 10px;
+			background-color: #292f38;
+			content: "";
+
+			-webkit-border-radius: 50%;
+					border-radius: 50%;
+		}
+
+	/* --------------------------------------------- */
+	/*	Type Price
+	/* --------------------------------------------- */
+
+	.price_slider_amount input[type="text"] { display: none; }
+
+		.widget-woof-filter .price_label .from { float: left; }
+		.widget-woof-filter .price_label .to   { float: right; }

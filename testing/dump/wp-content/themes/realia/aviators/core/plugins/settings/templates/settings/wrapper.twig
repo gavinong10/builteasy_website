@@ -1,0 +1,52 @@
+<form method="post" action="options.php" enctype="multipart/form-data">
+    <div class="aviators">
+        <div class="aviators-wrapper clear">
+            <h2 class="page-title">
+                {{ title }}
+
+                {% if page_title %}
+                    / {{ page_title }}
+                {% endif %}
+
+                {% if active_tab_title %}
+                    / {{ active_tab_title }}
+                {% endif %}
+            </h2>
+
+            <div class="aviators-actions">
+                {{ submit|raw }}
+            </div>
+
+            <div class="aviators-main">
+                <div class="aviators-inner">
+                    {% if tabs %}
+                        <div class="aviators-sidebar">
+                            {{ settings_tabs }}
+                            {{ tabs|raw }}
+                        </div><!-- /.aviators-tabs -->
+                    {% endif %}
+
+                    <div class="aviators-content">
+                        {{ wp.settings_errors }}
+
+                        {% for form in forms %}
+                            {{ wp.settings_fields(form) }}
+                            {{ wp.do_settings_sections(form) }}
+                        {% endfor %}
+
+                    </div>
+                    <!-- /.aviators-content -->
+                </div>
+                <!-- /.aviators-inner -->
+            </div>
+            <!-- /.aviators-main -->
+
+            <div class="aviators-actions bottom">
+                {{ submit|raw }}
+            </div>
+
+        </div>
+        <!-- /.aviators-wrapper -->
+    </div>
+    <!-- /.aviators -->
+</form>

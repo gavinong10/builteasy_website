@@ -1,0 +1,9 @@
+<# if(message.get('status') === 'success') { #>
+    <div class="updated">
+        <p><#= message.get('text') #></p>
+    </div>
+<# } else if(message.get('status') === 'error') { #>
+    <div class="error">
+        <p><#= message.get('text') #></p>
+    </div>
+<# } #>

@@ -1,0 +1,1 @@
+new Array({% for property in properties %}'{{ wp.wp_get_object_terms(property.ID, 'property_types').0.slug }}'{% if not loop.last %},{% endif %}{% endfor %})

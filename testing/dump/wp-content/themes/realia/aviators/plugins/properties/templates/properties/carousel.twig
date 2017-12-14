@@ -1,0 +1,26 @@
+{{ before_widget|raw }}
+
+{% if properties %}
+    <div class="carousel">
+        {% if title %}
+            {{ before_title|raw }}{{ title|raw }}{{ after_title|raw }}
+        {% endif %}
+
+        <div class="content">
+            <a class="carousel-prev">{{ wp.__('Previous', 'aviators') }}</a>
+            <a class="carousel-next">{{ wp.__('Next', 'aviators') }}</a>
+
+            <ul class="properties-grid unstyled">
+                {% for property in properties %}
+                    <li>
+                        {% include 'properties/property-box-small.twig' %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <!-- /.content -->
+    </div><!-- /.carousel -->
+{% endif %}
+
+
+{{ after_widget|raw }}

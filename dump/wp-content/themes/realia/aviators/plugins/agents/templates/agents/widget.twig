@@ -1,0 +1,36 @@
+{% if agents %}
+    {{ before_widget|raw }}
+
+    {% if title %}
+        {{ before_title|raw }}{{ title }}{{ after_title|raw }}
+    {% endif %}
+
+    <div class="content">
+        {% for agent in agents %}
+            <div class="agent clearfix">
+                <div class="image">
+                    <a href="{{ wp.get_permalink(agent.ID) }}">
+                        {% if wp.get_the_post_thumbnail(agent.ID) %}
+                            {{ wp.get_the_post_thumbnail(agent.ID)|raw }}
+                        {% else %}
+                            <img src="{{ wp.get_template_directory_uri() }}/assets/img/agent-tmp.png" alt="{{ agent.post_title }}">
+                        {% endif %}
+                    </a>
+                </div>
+                <!-- /.image -->
+
+                <div class="name">
+                    <a href="{{ wp.get_permalink(agent.ID) }}">{{ agent.post_title }}</a>
+                </div>
+                <!-- /.name -->
+                <div class="phone">{{ agent.meta._agent_mobile.0 }}</div>
+                <!-- /.phone -->
+                <div class="email"><a href="mailto:{{ agent.meta._agent_email.0 }}">{{ agent.meta._agent_email.0 }}</a>
+                </div>
+                <!-- /.email -->
+            </div><!-- /.agent -->
+        {% endfor %}
+    </div><!-- /.content -->
+
+    {{ after_widget|raw }}
+{% endif %}

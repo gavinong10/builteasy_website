@@ -1,0 +1,98 @@
+            </div><!-- /#wrapper-inner -->
+
+            {{ wp.get_sidebar('bottom') }}
+
+            <div id="footer-wrapper">
+                {% if wp.is_active_sidebar('footer-1') or wp.is_active_sidebar('footer-2') or wp.is_active_sidebar('footer-3') or wp.is_active_sidebar('footer-4')%}
+                    <div id="footer-top">
+                        <div id="footer-top-inner" class="container">
+                            <div class="row">
+                                <div class="span3">
+                                    {% if not wp.dynamic_sidebar('footer-1') %}
+                                        {{ wp.get_sidebar('footer-1') }}
+                                    {% endif %}
+                                </div>
+
+                                <div class="span3">
+                                    {% if not wp.dynamic_sidebar('footer-2') %}
+                                        {{ wp.get_sidebar('footer-2') }}
+                                    {% endif %}
+                                </div>
+
+                                <div class="span3">
+                                    {% if not wp.dynamic_sidebar('footer-3') %}
+                                        {{ wp.get_sidebar('footer-3') }}
+                                    {% endif %}
+                                </div>
+
+                                <div class="span3">
+                                    {% if not wp.dynamic_sidebar('footer-4') %}
+                                        {{ wp.get_sidebar('footer-4') }}
+                                    {% endif %}
+                                </div>
+                            </div><!-- /.row -->
+                        </div><!-- /#footer-top-inner -->
+                    </div><!-- /#footer-top -->
+                {% endif %}
+
+                <div id="footer" class="footer container">
+                    <div id="footer-inner">
+                        <div class="row">
+                            <div class="span6 copyright">
+                                {{ wp.get_sidebar('footer-bottom-left') }}
+                            </div><!-- /.copyright -->
+
+                            <div class="span6 share">
+                                <div class="content">
+                                    <ul class="menu nav">
+                                        {% if not wp.aviators_settings_get_value('socialize', 'facebook', 'is_hidden') %}
+                                            <li class="first leaf">
+                                                <a href="{{  wp.aviators_settings_get_value('socialize', 'facebook', 'link') }}" class="facebook">Facebook</a>
+                                            </li>
+                                        {% endif %}
+
+                                        {% if not wp.aviators_settings_get_value('socialize', 'flickr', 'is_hidden') %}
+                                            <li class="leaf"><a href="{{  wp.aviators_settings_get_value('socialize', 'flickr', 'link') }}" class="flickr">Flickr</a></li>
+                                        {% endif %}
+
+                                        {% if not wp.aviators_settings_get_value('socialize', 'google_plus', 'is_hidden') %}
+                                            <li class="leaf"><a href="{{  wp.aviators_settings_get_value('socialize', 'google_plus', 'link') }}" class="google">Google+</a></li>
+                                        {% endif %}
+
+                                        {% if not wp.aviators_settings_get_value('socialize', 'linkedin', 'is_hidden') %}
+                                            <li class="leaf"><a href="{{  wp.aviators_settings_get_value('socialize', 'linkedin', 'link') }}" class="linkedin">LinkedIn</a></li>
+                                        {% endif %}
+
+                                        {% if not wp.aviators_settings_get_value('socialize', 'twitter', 'is_hidden') %}
+                                            <li class="leaf"><a href="{{  wp.aviators_settings_get_value('socialize', 'twitter', 'link') }}" class="twitter">Twitter</a></li>
+                                        {% endif %}
+
+                                        {% if not wp.aviators_settings_get_value('socialize', 'vimeo', 'is_hidden') %}
+                                            <li class="last leaf"><a href="{{  wp.aviators_settings_get_value('socialize', 'vimeo', 'link') }}" class="vimeo">Vimeo</a></li>
+                                        {% endif %}
+                                    </ul>
+                                </div><!-- /.content -->
+                            </div><!-- /.span6 -->
+                        </div><!-- /.row -->
+                    </div><!-- /#footer-inner -->
+                </div><!-- /#footer -->
+            </div><!-- /#footer-wrapper -->
+        </div><!-- /#wrapper-outer -->
+    </div><!-- /#wrapper -->
+
+    {% if wp.get_theme_mod('general_palette_is_hidden') == "" %}
+        {% include 'helpers/palette.twig' %}
+    {% endif %}
+
+    {% if wp.aviators_settings_get_value('google_analytics', 'tracking', 'code') %}
+        <script type="text/javascript">
+            var _gaq=[["_setAccount", "{{ wp.aviators_settings_get_value('google_analytics', 'tracking', 'code') }}"],["_trackPageview"]];
+            (function(d,t){ var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+                g.src="//www.google-analytics.com/ga.js";
+                s.parentNode.insertBefore(g,s) }(document,"script"));
+        </script>
+    {% endif %}
+
+    {{ wp_footer() }}
+</body>
+</html>

@@ -1,0 +1,155 @@
+@import (reference) "_elements";
+
+.single-post {
+  .entry-footer {
+    background-color: #f7f7f7;
+  }
+}
+
+.dates {
+  span {
+    font-size: 14px;
+    &.month, &.year {
+      text-transform: none;
+      font-style: italic;
+    }
+  }
+  .date {
+    font-weight: 600;
+  }
+  .comments-counts {
+    background-color: #fff;
+    color: #999999;
+    font-size: 14px;
+    text-transform: none;
+    font-style: italic;
+    span {
+      font-style: normal;
+      font-weight: 600;
+      color: #999999;
+    }
+  }
+}
+
+article.post {
+  .entry-header {
+    .entry-title {
+      font-size: 28px;
+      letter-spacing: 0.025em;
+    }
+  }
+}
+
+.entry-bottom {
+  .col-sm-8 {
+    font-style: italic;
+  }
+  a {
+    color: #999;
+  }
+}
+
+.author-info {
+  h3 {
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #dddddd;
+  }
+}
+
+.share {
+  a {
+    color: #ccc;
+    i {
+      font-size: 20px;
+    }
+  }
+}
+
+.entry-meta {
+  .categories-links {
+    a {
+      font-weight: 600;
+    }
+  }
+}
+
+.single-post, .page {
+  .comment-reply-title, .comments-title {
+    font-size: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    &:before {
+      display: none;
+    }
+    &:after {
+      width: 100%;
+    }
+  }
+}
+
+.single-post, .page {
+  .comment {
+    position: relative;
+    margin-bottom: 20px;
+    > div {
+      .clear;
+      background-color: transparent;
+      border-bottom: 1px solid #eeeeee;
+    }
+    .comment-author {
+      float: none;
+      display: inline-block;
+      vertical-align: top;
+      width: 15%;
+      padding-right: 20px;
+      margin-right: 0;
+    }
+    .comment-content {
+      display: inline-block;
+      vertical-align: top;
+      width: 75%;
+      cite {
+        &.fn {
+          a {
+            text-transform: none;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+          }
+        }
+      }
+      .metadata > a {
+        font-size: 13px;
+        font-style: italic;
+        color: #999999;
+      }
+    }
+    .comment-reply-link {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #999999;
+      background-color: #eeeeee;
+      padding: 5px 10px;
+    }
+    @media @md{
+      .children {
+        margin-left: 50px;
+      }
+    }
+    .fn {
+      font-style: normal;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+  }
+}

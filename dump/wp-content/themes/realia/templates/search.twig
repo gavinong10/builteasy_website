@@ -1,0 +1,20 @@
+{% extends 'layout.twig' %}
+
+{% block content %}
+	<h1 class="page-header">{{ wp.__( 'Search Results for', 'aviators') }}: {{ wp.get_search_query() }}</h1>
+
+    {% if wp.have_posts() %}
+        {% for post in posts %}
+            {{ wp_query.the_post() }}
+            {% if post.post_type == 'property' %}
+                {{ wp.get_template_part('content-property', wp.get_post_format()) }}
+            {% else %}
+                {{ wp.get_template_part('content', wp.get_post_format()) }}
+            {% endif %}
+        {% endfor %}
+
+        {{ wp.aviators_paging_nav('', 2, wp_query) }}
+    {% else %}
+        {{ wp.get_template_part('content', 'none') }}
+    {% endif %}
+{% endblock %}

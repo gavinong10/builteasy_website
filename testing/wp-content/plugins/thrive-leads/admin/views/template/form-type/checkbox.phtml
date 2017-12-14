@@ -1,0 +1,27 @@
+<div class="tvd-col tvd-s4">
+<# if(form.get('variations').length <= 0 || form.get('has_design') == false) { #>
+
+    <span class="tvd-disabled-hover">
+        <input id="tve-form-type-<#= form.get('ID') #>" disabled="disabled" type="checkbox" name="form-types[]" value="<#= form.get('ID') #>">
+        <label for="tve-form-type-<#= form.get('ID') #>"><#= form.get('post_title') #></label>
+    <span class="disabled">
+        <?php echo __('This form type has no design, please add one before including it into a test.', 'thrive-leads') ?>
+        <a href="javascript:void(0)"><?php echo __('Click here to learn more', 'thrive-leads') ?></a>
+    </span>
+    </span>
+<# } else if(form.get('group_test_id') || active_test.title) { #>
+    <span class="tvd-disabled-hover">
+        <input id="tve-form-type-<#= form.get('ID') #>" disabled="disabled" type="checkbox" name="form-types[]" value="<#= form.get('ID') #>">
+        <label for="tve-form-type-<#= form.get('ID') #>"><#= form.get('post_title') #></label>
+        <span class="disabled">
+            <span class="tve-icon-exclamation-circle"></span><?php echo __('This form type cannot be chosen because you currently have a split test running.', 'thrive-leads') ?>
+            <a href="javascript:void(0)"><?php echo __('Click here to learn more', 'thrive-leads') ?></a>
+        </span>
+    </span>
+<# } else { #>
+    <span>
+        <input id="tve-form-type-<#= form.get('ID') #>" type="checkbox" name="form-types[]" value="<#= form.get('ID') #>">
+        <label for="tve-form-type-<#= form.get('ID') #>"><#= form.get('post_title') #></label>
+    </span>
+<# } #>
+</div>

@@ -1,0 +1,92 @@
+/**
+ * Frontend style
+ *
+ * @author Your Inspiration Themes
+ * @package YITH WooCommerce Ajax Search
+ * @version 1.1.1
+ */
+
+/* search autocomplete */
+
+.yith-ajaxsearchform-container {
+	position: relative;
+	text-align: left;
+}
+
+	#sidebar .widget_product_search .yith-ajaxsearchform-container {
+		padding: 23px 20px 25px;
+		background-color: #fff;
+	}
+
+	.yith-ajaxsearchform-container .screen-reader-text {
+		display: inline-block;
+		margin-bottom: 5px;
+	}
+
+	.yith-ajaxsearchform-container #yith-ajaxsearchform { position: relative; }
+
+		.searchform-wrap input#yith-s {
+			width: 95%;
+			background: transparent;
+			border: none;
+			font-size: 1.15em;
+		}
+
+		.type-1 .searchform-wrap #yith-searchsubmit { display: none; }
+
+	.autocomplete-suggestions {
+		left: 0;
+		right: 0;
+		margin-top: 0;
+		background-color: #fff;
+
+		-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.10);
+				box-shadow: 0 1px 1px rgba(0,0,0,.10);
+		-webkit-border-radius: 0 0 6px 6px;
+				border-radius: 0 0 6px 6px;
+	}
+
+	.search-outer .autocomplete-suggestions { margin-top: 12px; }
+
+	.type-2 .searchform-wrap .autocomplete-suggestions { margin-top: 4px; }
+
+	.type-4 .searchform-wrap .autocomplete-suggestions,
+	.type-6 .searchform-wrap .autocomplete-suggestions { margin-top: 1px; }
+
+	.widget .autocomplete-suggestions { left: 20px; right: 20px; }
+
+		.autocomplete-suggestion {
+			padding: 10px;
+			border-top: 1px solid #ecf0f1;
+			cursor: pointer;
+
+			-webkit-transition: background-color .3s ease;
+					transition: background-color .3s ease;
+		}
+
+		.autocomplete-suggestion:hover { background-color: #fafbfb; }
+
+		.autocomplete-suggestion:last-child:hover {
+			border-radius: 0 0 6px 6px;
+		}
+
+		.autocomplete-suggestion:after {
+			clear: both;
+			display: block;
+			visibility: hidden;
+			height: 0;
+			content: ".";
+		}
+
+			.autocomplete-suggestion .thumbnail {
+				float: left;
+				margin-right: 10px;
+				margin-bottom: 5px;
+			}
+
+			.autocomplete-suggestion .autocomplete-content {
+				overflow: hidden;
+				display: block;
+				margin-bottom: 2px;
+				line-height: 1.2em;
+			}

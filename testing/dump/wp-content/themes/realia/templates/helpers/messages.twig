@@ -1,0 +1,10 @@
+
+{% if wp.aviators_flash_has_messages() %}
+    <div class="span12">
+        {% for message in wp.aviators_flash_get_messages() %}
+            <div class="alert {{ message.level }}">
+                {{ message.message|raw }}
+            </div><!-- /.alert -->
+        {% endfor %}
+    </div><!-- /.span12 -->
+{% endif %}

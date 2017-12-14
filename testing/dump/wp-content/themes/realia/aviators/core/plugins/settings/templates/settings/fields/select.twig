@@ -1,0 +1,9 @@
+<select name="{{ args.id }}" id="{{ args.id }}">
+    {% for choice in args.option.choices %}
+        <option value="{{ choice.key }}" {% if value == choice.key %}selected="selected"{% endif %}>{{ choice.value }}</option>
+    {% endfor %}
+</select>
+
+{% if option.description %}
+    <p class="description">{{ option.description }}</p>
+{% endif %}

@@ -1,0 +1,60 @@
+/* css for timepicker */
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+
+
+
+.modal {
+	width: 700px;
+	background: #FFFFFF;
+	border-radius: 5px;
+	border: 1px solid #D6D6D6;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	overflow: hidden;
+	padding: 0px;
+	height: 100%;
+	overflow: scroll;
+}
+.modal_header {
+	background: whiteSmoke;
+	padding: 20px;
+	padding-top: 5px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #D6D6D6;
+}
+.modal_header h2 {
+	font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",sans-serif;
+	color: #464646;
+	font-size: 1.43em;
+	font-style: normal;
+	margin-bottom: 0px;
+}
+.modal_close {
+	float: right;
+	color: #8f8f8f;
+	font-size: 18px;
+	cursor: pointer;
+	
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+.modal_content {
+	padding: 20px;
+	
+}
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}

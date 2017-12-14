@@ -1,0 +1,85 @@
+{% extends 'layout-fullwidth.twig' %}
+
+{% block content %}
+    <div class="login-register">
+        <div class="row">
+            <div class="span4">
+                <ul class="tabs nav nav-tabs">
+                    <li {% if active == "login" %}class="active"{% endif %}><a href="#login" data-toggle="tab">{{ wp.__('Login', 'aviators') }}</a></li>
+                    <li {% if active == "register" %}class="active"{% endif %}><a href="#register" data-toggle="tab">{{ wp.__('Register', 'aviators') }}</a></li>
+                </ul><!-- /.nav -->
+
+                <div class="tab-content">
+                    <div class="tab-pane {% if active == "login" %}active{% endif %}" id="login">
+                        <form method="post" action="{{ wp.get_bloginfo('wpurl') }}/wp-login.php">
+                            <input type="hidden" name="redirect_to" value="{{ wp.get_bloginfo('wpurl') }}">
+                            <div class="control-group">
+                                <label class="control-label" for="inputLoginLogin">
+                                    {{ wp.__('Login', 'aviators') }}
+                                    <span class="form-required">*</span>
+                                </label>
+
+                                <div class="controls">
+                                    <input type="text" id="inputLoginLogin" name="log" required="required">
+                                </div>
+                                <!-- /.controls -->
+                            </div>
+                            <!-- /.control-group -->
+
+                            <div class="control-group">
+                                <label class="control-label" for="inputLoginPassword">
+                                    {{ wp.__('Password', 'aviators') }}
+                                    <span class="form-required">*</span>
+                                </label>
+
+                                <div class="controls">
+                                    <input type="password" id="inputLoginPassword" name="pwd" required="required">
+                                </div><!-- /.controls -->
+                            </div><!-- /.control-group -->
+
+                            <div class="form-actions">
+                                <input type="submit" value="{{ wp.__('Login', 'aviators') }}" class="btn btn-primary arrow-right">
+                            </div><!-- /.form-actions -->
+                        </form>
+                    </div><!-- /.tab-pane -->
+
+                    <div class="tab-pane {% if active == "register" %}active{% endif %}" id="register">
+                        <form method="post" action="{{ wp.get_bloginfo('wpurl') }}/wp-login.php?action=register">
+                            <input type="hidden" name="redirect_to" value="{{ wp.get_bloginfo('wpurl') }}?action=register">
+
+                            <div class="control-group">
+                                <label class="control-label" for="inputRegisterEmail">
+                                    {{ wp.__('Username', 'aviators') }}
+                                    <span class="form-required" title="This field is required.">*</span>
+                                </label>
+
+                                <div class="controls">
+                                    <input type="text" id="inputRegisterEmail" required="required" name="user_login">
+                                </div><!-- /.controls -->
+                            </div><!-- /.control-group -->
+
+                            <div class="control-group">
+                                <label class="control-label" for="inputRegisterPassword">
+                                    {{ wp.__('E-mail', 'aviators') }}
+                                    <span class="form-required" title="This field is required.">*</span>
+                                </label>
+
+                                <div class="controls">
+                                    <input type="email" id="inputRegisterPassword" required="required" name="user_email">
+                                </div><!-- /.controls -->
+                            </div><!-- /.control-group -->
+
+                            <div class="form-actions">
+                                <input type="submit" value="{{ wp.__('Register', 'aviators') }}" class="btn btn-primary arrow-right">
+                            </div><!-- /.form-actions -->
+                        </form>
+                    </div><!-- /.tab-pane -->
+                </div><!-- /.tab-content -->
+            </div><!-- /.span4-->
+
+            <div class="span8">
+                {% block body %}{% endblock %}
+            </div>
+        </div><!-- /.row -->
+    </div><!-- /.login-register -->
+{% endblock %}

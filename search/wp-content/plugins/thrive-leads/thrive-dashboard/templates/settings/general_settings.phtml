@@ -1,0 +1,26 @@
+<?php require_once( TVE_DASH_PATH . '/templates/header.phtml' ); ?>
+<div class="tvd-container">
+    <h3 class="tvd-section-title"><?php echo __("General Settings", TVE_DASH_TRANSLATE_DOMAIN) ?></h3>
+    <div id="tve_dash_general_settings">
+        <?php foreach ($settings as $setting): ?>
+            <?php if (!in_array($setting['type'], $accepted_settings)): continue; endif; ?>
+            <div class="tvd-row-settings" data-setting-name="<?php echo $setting['name']; ?>" data-setting-type="<?php echo $setting['type']; ?>">
+                <?php if ($setting['multiple'] && is_array($setting['value'])): ?>
+                    <?php foreach ($setting['value'] as $key => $value): ?>
+                        <?php include dirname(__FILE__) . '/text_setting_row.phtml'; ?>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <?php $value = $setting['value']; ?>
+                    <?php include dirname(__FILE__) . '/text_setting_row.phtml'; ?>
+                <?php endif; ?>
+            </div>
+            <hr>
+        <?php endforeach; ?>
+    </div>
+</div>
+
+<div class="tvd-col tvd-m6">
+    <a href="<?php echo admin_url('admin.php?page=tve_dash_section'); ?>" class="tvd-waves-effect tvd-waves-light tvd-btn-small tvd-btn-gray">
+        <?php echo __("Back To Dashboard", TVE_DASH_TRANSLATE_DOMAIN); ?>
+    </a>
+</div>

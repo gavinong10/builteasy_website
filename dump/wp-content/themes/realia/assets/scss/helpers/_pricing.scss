@@ -1,0 +1,36 @@
+.pricing {
+    ul { list-style: none; margin: 0px; padding: 0px; }
+	.column { @include shadow; background-color: $pricing-background-color; padding: 20px; text-align: center;
+		h2 { background-image: url('../img/border-gray.png'); background-position: left bottom; background-repeat: repeat-x; color: $pricing-h2-color; font-size: 36px; margin: 0px; padding: 0px 0px 20px 0px; }
+		h3 { color: $pricing-h3-color; font-size: 30px; margin: 0px; padding-top: 10px; }
+		h4 { color: $pricing-h4-color; font-size: 14px; font-weight: normal; margin: 0px 0px 50px 0px; }
+		li { padding: 7px 0px; 
+			&:last-child { padding-bottom: 0px; }
+			&.important { font-weight: bold; }
+			&.unimportant { color: $pricing-unimportant-color; }
+		}
+		.btn-primary { background-color: $pricing-button-background-color; font-weight: bold; margin-top: 15px;
+          &:hover { background-color: darken($pricing-button-background-color, 10%); }
+        }
+	}
+	&.boxed {
+		.column { margin-top: 0px; 
+			h2 { background-color: $pricing-boxed-h2-background-color; background-image: none; color: $pricing-boxed-h2-color; margin-left: -20px; margin-right: -20px; margin-top: -20px; padding-top: 20px; }
+			h3 { color: $pricing-boxed-h3-color; font-weight: bold; }
+			h4 { margin-bottom: 7px; }
+			li { background-image: url('../img/border-gray.png'); background-position: left top; background-repeat: repeat-x;
+              &.unimportant { color: inherit; text-decoration: line-through; }
+            }
+			&.promoted { 
+				h2 { background-color: $pricing-boxed-promoted-h2-background-color; }
+				.content { border: 5px solid $pricing-boxed-promoted-border-color; border-top: 0px; margin-bottom: -20px; margin-left: -20px; margin-right: -20px; padding-left: 20px; padding-right: 20px; padding-bottom: 15px; }
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+  .pricing {
+    .column { margin-bottom: 30px; }
+  }
+}

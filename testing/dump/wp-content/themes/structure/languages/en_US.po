@@ -1,0 +1,1688 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Structure 1.5\n"
+"POT-Creation-Date: 2015-08-26 09:41+0700\n"
+"PO-Revision-Date: 2015-08-26 09:41+0700\n"
+"Last-Translator: \n"
+"Language-Team: ThemeMove <contact@thememove.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:15
+msgid "<span>Oops!</span> That page <span>can&rsquo;t</span> be found."
+msgstr ""
+
+#: ../404.php:32
+msgid "Look like you are lost"
+msgstr ""
+
+#: ../404.php:34
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: ../comments.php:36 ../comments.php:57
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:37 ../comments.php:58
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:54
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:68
+msgid "Comments are closed."
+msgstr ""
+
+#: ../comments.php:76
+msgid "Name *"
+msgstr ""
+
+#: ../comments.php:77
+msgid "Email *"
+msgstr ""
+
+#: ../comments.php:78
+msgid "Website"
+msgstr ""
+
+#: ../comments.php:89
+msgid "Comment *"
+msgstr ""
+
+#: ../content-2.php:27 ../content-single.php:24 ../content.php:25
+msgid "Posted by "
+msgstr ""
+
+#: ../content-2.php:29 ../content-single.php:26 ../content.php:27
+msgid "In "
+msgstr ""
+
+#: ../content-2.php:29 ../content-single.php:26 ../content.php:27
+#: ../inc/template-tags.php:112 ../inc/template-tags.php:118
+#: ../inc/template-tags.php:141 ../inc/template-tags.php:147
+msgid ", "
+msgstr ""
+
+#: ../content-2.php:40 ../content.php:38
+msgid "Continue Reading"
+msgstr ""
+
+#: ../content-2.php:44 ../content-single.php:45
+msgid "Share: "
+msgstr ""
+
+#: ../content-none.php:13
+msgid "Nothing Found"
+msgstr ""
+
+#: ../content-none.php:20
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../content-none.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../content-page.php:20 ../content-single.php:33 ../page.php:95
+#: ../page.php:192 ../single-job_listing.php:34 ../template-contact.php:32
+#: ../template-contact.php:80
+msgid "Pages:"
+msgstr ""
+
+#: ../content-page.php:28 ../inc/template-tags.php:159 ../page.php:200
+msgid "Edit"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-controls.php:39
+#: ../inc/customizer/section__colors.php:117
+#: ../inc/customizer/section__colors.php:156
+#: ../inc/customizer/section__colors.php:200
+#: ../inc/customizer/section__colors.php:365
+#: ../inc/customizer/section__colors.php:465
+#: ../inc/customizer/section__colors.php:557
+msgid "Background Color"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-controls.php:50
+msgid "Background Image"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-controls.php:61
+#: ../core/customizer/includes/class-kirki-settings.php:158
+msgid "No Repeat"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-controls.php:62
+#: ../core/customizer/includes/class-kirki-settings.php:159
+msgid "Repeat All"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-controls.php:63
+#: ../core/customizer/includes/class-kirki-settings.php:160
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-controls.php:64
+#: ../core/customizer/includes/class-kirki-settings.php:161
+msgid "Repeat Vertically"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-controls.php:65
+#: ../core/customizer/includes/class-kirki-controls.php:79
+#: ../core/customizer/includes/class-kirki-controls.php:96
+#: ../core/customizer/includes/class-kirki-settings.php:162
+#: ../core/customizer/includes/class-kirki-settings.php:176
+#: ../core/customizer/includes/class-kirki-settings.php:192
+msgid "Inherit"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-controls.php:68
+msgid "Background Repeat"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-controls.php:80
+#: ../core/customizer/includes/class-kirki-settings.php:177
+msgid "Cover"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-controls.php:81
+#: ../core/customizer/includes/class-kirki-settings.php:178
+msgid "Contain"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-controls.php:85
+msgid "Background Size"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-controls.php:97
+#: ../core/customizer/includes/class-kirki-settings.php:193
+msgid "Fixed"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-controls.php:98
+#: ../core/customizer/includes/class-kirki-settings.php:194
+msgid "Scroll"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-controls.php:102
+msgid "Background Attachment"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-controls.php:113
+#: ../core/customizer/includes/class-kirki-settings.php:208
+msgid "Left Top"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-controls.php:114
+#: ../core/customizer/includes/class-kirki-settings.php:209
+msgid "Left Center"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-controls.php:115
+#: ../core/customizer/includes/class-kirki-settings.php:210
+msgid "Left Bottom"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-controls.php:116
+#: ../core/customizer/includes/class-kirki-settings.php:211
+msgid "Right Top"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-controls.php:117
+#: ../core/customizer/includes/class-kirki-settings.php:212
+msgid "Right Center"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-controls.php:118
+#: ../core/customizer/includes/class-kirki-settings.php:213
+msgid "Right Bottom"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-controls.php:119
+#: ../core/customizer/includes/class-kirki-settings.php:214
+msgid "Center Top"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-controls.php:120
+#: ../core/customizer/includes/class-kirki-settings.php:215
+msgid "Center Center"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-controls.php:121
+#: ../core/customizer/includes/class-kirki-settings.php:216
+msgid "Center Bottom"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-controls.php:124
+msgid "Background Position"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-controls.php:141
+msgid "Background Opacity"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-fonts.php:144
+msgid "All"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-fonts.php:145
+msgid "Cyrillic"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-fonts.php:146
+msgid "Cyrillic Extended"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-fonts.php:147
+msgid "Devanagari"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-fonts.php:148
+msgid "Greek"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-fonts.php:149
+msgid "Greek Extended"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-fonts.php:150
+msgid "Khmer"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-fonts.php:151
+msgid "Latin"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-fonts.php:152
+msgid "Latin Extended"
+msgstr ""
+
+#: ../core/customizer/includes/class-kirki-fonts.php:153
+msgid "Vietnamese"
+msgstr ""
+
+#: ../core/customizer/includes/controls/class-kirki-customize-checkbox-control.php:25
+msgid "ON"
+msgstr ""
+
+#: ../core/customizer/includes/controls/class-kirki-customize-checkbox-control.php:26
+msgid "OFF"
+msgstr ""
+
+#: ../core/customizer/includes/controls/class-kirki-customize-color-control.php:38
+#: ../inc/metabox.php:73 ../inc/metabox.php:84 ../inc/metabox.php:95
+#: ../inc/metabox.php:112 ../inc/metabox.php:129 ../inc/metabox.php:148
+msgid "Default"
+msgstr ""
+
+#: ../core/customizer/includes/controls/class-kirki-customize-image-control.php:31
+msgid "No Image"
+msgstr ""
+
+#: ../core/customizer/includes/controls/class-kirki-customize-image-control.php:35
+msgid "Upload New"
+msgstr ""
+
+#: ../core/customizer/includes/controls/class-kirki-customize-image-control.php:36
+msgid "Uploaded"
+msgstr ""
+
+#: ../core/customizer/includes/controls/class-kirki-customize-image-control.php:118
+msgid "Remove Image"
+msgstr ""
+
+#: ../core/customizer/includes/controls/class-kirki-customize-image-control.php:156
+#, php-format
+msgid ""
+"The web browser on your device cannot be used to upload files. You may be "
+"able to use the <a href=\"%s\">native app for your device</a> instead."
+msgstr ""
+
+#: ../core/customizer/includes/controls/class-kirki-customize-image-control.php:160
+msgid "Drop a file here or <a href=\"#\" class=\"upload\">select a file</a>."
+msgstr ""
+
+#: ../core/customizer/includes/controls/class-kirki-customize-image-control.php:163
+msgid "Select File"
+msgstr ""
+
+#: ../core/customizer/includes/controls/class-kirki-customize-io-control.php:17
+#: ../core/customizer/includes/controls/class-kirki-customize-io-control.php:22
+msgid "Export"
+msgstr ""
+
+#: ../core/customizer/includes/controls/class-kirki-customize-io-control.php:20
+msgid ""
+"Click the button below to export the customization settings for this theme."
+msgstr ""
+
+#: ../core/customizer/includes/controls/class-kirki-customize-io-control.php:25
+#: ../core/customizer/includes/controls/class-kirki-customize-io-control.php:30
+msgid "Import"
+msgstr ""
+
+#: ../core/customizer/includes/controls/class-kirki-customize-io-control.php:28
+msgid "Upload a file to import customization settings for this theme."
+msgstr ""
+
+#: ../core/customizer/includes/controls/class-kirki-customize-upload-control.php:62
+msgid "Upload"
+msgstr ""
+
+#: ../core/customizer/includes/controls/class-kirki-customize-upload-control.php:63
+msgid "Remove"
+msgstr ""
+
+#: ../functions.php:77
+msgid "Primary Menu"
+msgstr ""
+
+#: ../functions.php:78
+msgid "Social Profile Links"
+msgstr ""
+
+#: ../inc/back-compat.php:38 ../inc/back-compat.php:48
+#: ../inc/back-compat.php:62
+#, php-format
+msgid ""
+"ThemeMove requires at least WordPress version 3.9. You are running version "
+"%s. Please upgrade and try again."
+msgstr ""
+
+#: ../inc/customizer.php:92
+msgid "Background"
+msgstr ""
+
+#: ../inc/customizer.php:93
+msgid "In this section you can change background image of the site"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:9
+msgid "Colors"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:30 ../inc/metabox.php:124
+msgid "Color Scheme"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:31
+msgid "Choose a color scheme for your site"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:43
+msgid "Site Color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:53
+msgid "Primary Color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:54
+msgid "Choose the most dominant theme color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:66
+msgid "Secondary Color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:67
+msgid "Choose the second most dominant theme color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:79
+#: ../inc/customizer/section__colors.php:482
+msgid "Heading Color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:80
+msgid "Choose color for your heading text"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:92
+#: ../inc/customizer/section__colors.php:217
+#: ../inc/customizer/section__colors.php:382
+#: ../inc/customizer/section__colors.php:516
+#: ../inc/customizer/section__colors.php:589
+msgid "Link Color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:93
+msgid "Define styles for site link"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:105
+msgid "Choose the hover text link color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:118
+msgid "Choose the background color for your site"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:130
+msgid "Body Text Color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:131
+msgid "Choose the color for content of your site"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:146
+msgid "Header Colors"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:157
+msgid "Choose the background color for header area"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:173
+#: ../inc/customizer/section__colors.php:250
+#: ../inc/customizer/section__colors.php:499
+#: ../inc/customizer/section__colors.php:573
+msgid "Text Color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:174
+msgid "Choose the color for header text"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:190
+msgid "Header Top Area Colors"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:201
+msgid "Choose the background color for header top area"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:218
+msgid "Choose the header top link color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:234
+msgid "Choose the header top hover link color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:251
+msgid "Choose the header top text color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:267
+msgid "Search Button"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:277
+msgid "Search Button Color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:278
+#: ../inc/customizer/section__colors.php:366
+msgid "Choose the background color for menu of your site"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:294
+msgid "Mini Cart Button"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:304
+msgid "Cart Button Color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:305
+msgid "Choose the color for mini cart button"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:321
+msgid "Cart Number Color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:322
+msgid "Choose the color for mini cart number"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:338
+msgid "Cart Number Background Color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:339
+msgid "Choose the background color for mini cart number"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:355
+msgid "Main Menu"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:383
+msgid "Menu link text color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:395
+msgid "Menu hover link text color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:406
+msgid "Border Right Color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:407
+msgid "Border right color for menu item, only work with header preset 02,04"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:418
+msgid "Border Top Color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:419
+msgid "Border top color for active menu item, only work with header preset 02"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:430
+msgid "Border Bottom Color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:431
+msgid ""
+"Border bottom color for active menu item, only work with header preset 02,04"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:442
+msgid "Mobile Menu Toggle Color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:443
+msgid "Color for mobile toggle menu"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:455
+msgid "Footer Color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:466
+msgid "Choose the background color for footer of your site"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:483
+msgid "Choose the heading color for footer of your site"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:500
+msgid "Choose the text color for footer of your site"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:517
+msgid "Choose the footer text link color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:533
+msgid "Choose the footer hover text link color"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:549
+#: ../inc/customizer/section__footer.php:43
+msgid "Copyright"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:558
+msgid "Choose the border color for copyright of your site"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:574
+msgid "Choose the text color for copyright section"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:590
+msgid "Choose the link color for copyright section"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:605
+msgid "Link Color Hover"
+msgstr ""
+
+#: ../inc/customizer/section__colors.php:606
+msgid "Choose the link color on hover for copyright section"
+msgstr ""
+
+#: ../inc/customizer/section__custom-code.php:11
+msgid "Custom Code"
+msgstr ""
+
+#: ../inc/customizer/section__custom-code.php:12
+msgid "In this section you can add custom JavaScript and CSS to your site."
+msgstr ""
+
+#: ../inc/customizer/section__custom-code.php:34
+#: ../inc/customizer/section__custom-code.php:56
+msgid "Custom CSS"
+msgstr ""
+
+#: ../inc/customizer/section__custom-code.php:45
+msgid "Enabling this option will apply custom css to your site"
+msgstr ""
+
+#: ../inc/customizer/section__custom-code.php:58
+#: ../inc/customizer/section__footer.php:67
+msgid "Entry your custom css code here"
+msgstr ""
+
+#: ../inc/customizer/section__custom-code.php:66
+msgid "Custom Javascript"
+msgstr ""
+
+#: ../inc/customizer/section__custom-code.php:77
+msgid "Enabling this option will apply custom Javascript to your site"
+msgstr ""
+
+#: ../inc/customizer/section__custom-code.php:89
+msgid "Custom JavaScript"
+msgstr ""
+
+#: ../inc/customizer/section__custom-code.php:91
+msgid "Entry your custom js code here"
+msgstr ""
+
+#: ../inc/customizer/section__footer.php:9
+msgid "Footer"
+msgstr ""
+
+#: ../inc/customizer/section__footer.php:10
+msgid "Scroll to bottom of page to see the change"
+msgstr ""
+
+#: ../inc/customizer/section__footer.php:31
+msgid "Uncovering"
+msgstr ""
+
+#: ../inc/customizer/section__footer.php:32
+msgid "Enabling this option will make Footer gradually appear on scroll"
+msgstr ""
+
+#: ../inc/customizer/section__footer.php:54
+msgid "Enabling this option will display copyright info"
+msgstr ""
+
+#: ../inc/customizer/section__footer.php:65
+msgid "Copyright Text"
+msgstr ""
+
+#: ../inc/customizer/section__footer.php:68
+msgid "Copyright 2014 ThemeMove.com. All right reserved."
+msgstr ""
+
+#: ../inc/customizer/section__header.php:10
+msgid "Header"
+msgstr ""
+
+#: ../inc/customizer/section__header.php:11
+msgid "In this section you can control all header settings of your site"
+msgstr ""
+
+#: ../inc/customizer/section__header.php:31 ../inc/metabox.php:107
+msgid "Header Presets"
+msgstr ""
+
+#: ../inc/customizer/section__header.php:41
+msgid "Choose a preset setup for your header"
+msgstr ""
+
+#: ../inc/customizer/section__header.php:46 ../inc/metabox.php:113
+msgid "Preset 01"
+msgstr ""
+
+#: ../inc/customizer/section__header.php:47 ../inc/metabox.php:114
+msgid "Preset 02"
+msgstr ""
+
+#: ../inc/customizer/section__header.php:48 ../inc/metabox.php:115
+msgid "Preset 03"
+msgstr ""
+
+#: ../inc/customizer/section__header.php:49 ../inc/metabox.php:116
+msgid "Preset 04"
+msgstr ""
+
+#: ../inc/customizer/section__header.php:50 ../inc/metabox.php:117
+msgid "Preset 05"
+msgstr ""
+
+#: ../inc/customizer/section__header.php:51 ../inc/metabox.php:118
+msgid "Preset 06"
+msgstr ""
+
+#: ../inc/customizer/section__header.php:52 ../inc/metabox.php:119
+msgid "Preset 07"
+msgstr ""
+
+#: ../inc/customizer/section__header.php:53 ../inc/metabox.php:120
+msgid "Preset 08"
+msgstr ""
+
+#: ../inc/customizer/section__header.php:62
+#: ../inc/customizer/section__options.php:38
+msgid "General Settings"
+msgstr ""
+
+#: ../inc/customizer/section__header.php:73 ../inc/metabox.php:79
+msgid "Top Area"
+msgstr ""
+
+#: ../inc/customizer/section__header.php:74
+msgid "Enabling this option will show header top area"
+msgstr ""
+
+#: ../inc/customizer/section__header.php:86 ../inc/template-tags.php:92
+msgid "Sticky"
+msgstr ""
+
+#: ../inc/customizer/section__header.php:87
+msgid "Enabling this option will sticky your header"
+msgstr ""
+
+#: ../inc/customizer/section__header.php:99
+msgid "Search"
+msgstr ""
+
+#: ../inc/customizer/section__header.php:100
+msgid "Enabling this option will display search button on header"
+msgstr ""
+
+#: ../inc/customizer/section__header.php:112
+msgid "Mini Cart"
+msgstr ""
+
+#: ../inc/customizer/section__header.php:113
+msgid "Enabling this option will display mini cart button on header"
+msgstr ""
+
+#: ../inc/customizer/section__header.php:123
+msgid "Logo"
+msgstr ""
+
+#: ../inc/customizer/section__header.php:133
+msgid "Logo Image - Normal"
+msgstr ""
+
+#: ../inc/customizer/section__header.php:134
+msgid "Choose a default logo image to display"
+msgstr ""
+
+#: ../inc/customizer/section__menu.php:13
+msgid "Menu"
+msgstr ""
+
+#: ../inc/customizer/section__menu.php:15
+msgid ""
+"You can edit your menu content on the Menus screen in the Appearance section."
+msgstr ""
+
+#: ../inc/customizer/section__options.php:9
+msgid "General"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:10
+msgid "In this section you can control all general settings of your site"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:29
+msgid "Front Page"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:49
+msgid "Box Mode"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:50
+msgid "Turn on this option if you want to enable box mode on your site"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:62 ../inc/metabox.php:143
+msgid "Page Layout"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:63
+msgid "Choose the page layout you want"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:80
+msgid "Search Layout"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:81
+msgid "Choose the layout for search page"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:98
+msgid "Archive Layout"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:99
+msgid "Choose the layout for archive page"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:114
+msgid "Page Transition"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:115
+msgid "Choose a transition effect for your page"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:131
+msgid "Smooth Scroll"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:132
+msgid ""
+"Enabling this option will perform a smooth scrolling effect on every page"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:143
+msgid "Scroll bar"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:144
+msgid "Enabling this option use custom color for scroll bar"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:155
+msgid "Back To Top"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:156
+msgid "Enabling this option will display a Back to Top button on every page"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:166
+msgid "Default Heading Background"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:167
+msgid "Default background image for heading title"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:177
+msgid "Breadcrumb"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:186
+msgid "\"Home\" text"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:195
+msgid "\"You are here\" text"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:205
+msgid "Favicon"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:215
+msgid "Favicon Image"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:216
+msgid "File must be .png or .ico format. Optimal dimensions: 32px x 32px."
+msgstr ""
+
+#: ../inc/customizer/section__options.php:227
+msgid "Apple Touch Icon"
+msgstr ""
+
+#: ../inc/customizer/section__options.php:228
+msgid "File must be .png format. Optimal dimensions: 152px x 152px."
+msgstr ""
+
+#: ../inc/customizer/section__post.php:9
+msgid "Post"
+msgstr ""
+
+#: ../inc/customizer/section__post.php:30
+msgid "Layout"
+msgstr ""
+
+#: ../inc/customizer/section__post.php:31
+msgid "Choose the post layout you want"
+msgstr ""
+
+#: ../inc/customizer/section__post.php:47
+msgid "Post Author Box"
+msgstr ""
+
+#: ../inc/customizer/section__post.php:48
+msgid "Enabling this option will display author box at bottom of post"
+msgstr ""
+
+#: ../inc/customizer/section__post.php:59
+msgid "Feature Image"
+msgstr ""
+
+#: ../inc/customizer/section__post.php:60
+msgid "Enabling this option will display big feature image at top of post"
+msgstr ""
+
+#: ../inc/customizer/section__post.php:70
+msgid "\"Our Blog\" text"
+msgstr ""
+
+#: ../inc/customizer/section__post.php:71
+msgid "Choose the text for single post heading"
+msgstr ""
+
+#: ../inc/customizer/section__typography.php:9
+msgid "Typography"
+msgstr ""
+
+#: ../inc/customizer/section__typography.php:10
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci earum "
+"est, explicabo id illo quae!"
+msgstr ""
+
+#: ../inc/customizer/section__typography.php:29
+msgid "Body Font"
+msgstr ""
+
+#: ../inc/customizer/section__typography.php:38
+#: ../inc/customizer/section__typography.php:83
+msgid "Font Family"
+msgstr ""
+
+#: ../inc/customizer/section__typography.php:53
+msgid "Font Size"
+msgstr ""
+
+#: ../inc/customizer/section__typography.php:74
+msgid "Heading Font"
+msgstr ""
+
+#: ../inc/customizer/section__typography.php:99
+msgid "H1 Font Size"
+msgstr ""
+
+#: ../inc/customizer/section__typography.php:121
+msgid "H2 Font Size"
+msgstr ""
+
+#: ../inc/customizer/section__typography.php:143
+msgid "H3 Font Size"
+msgstr ""
+
+#: ../inc/customizer/section__typography.php:165
+msgid "H4 Font Size"
+msgstr ""
+
+#: ../inc/customizer/section__typography.php:187
+msgid "H5 Font Size"
+msgstr ""
+
+#: ../inc/customizer/section__typography.php:209
+msgid "H6 Font Size"
+msgstr ""
+
+#: ../inc/extras.php:244
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../inc/extras.php:248
+#, php-format
+msgid "<cite class=\"fn\">%s</cite>"
+msgstr ""
+
+#: ../inc/extras.php:250
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: ../inc/extras.php:251
+msgid "(Edit)"
+msgstr ""
+
+#: ../inc/extras.php:276 ../inc/vc-template/thememove_project_details.php:49
+#: ../projects/single-project/meta.php:58
+msgid "Location"
+msgstr ""
+
+#: ../inc/extras.php:277
+msgid "Enter a location for this project."
+msgstr ""
+
+#: ../inc/extras.php:284 ../inc/vc-template/thememove_project_details.php:55
+#: ../projects/single-project/meta.php:65
+msgid "Surface Area"
+msgstr ""
+
+#: ../inc/extras.php:285
+msgid "Enter a surface area for this project."
+msgstr ""
+
+#: ../inc/extras.php:292 ../projects/single-project/meta.php:72
+msgid "Year Completed"
+msgstr ""
+
+#: ../inc/extras.php:293
+msgid "Enter a year Completed for this project."
+msgstr ""
+
+#: ../inc/extras.php:300 ../inc/vc-template/thememove_project_details.php:67
+#: ../projects/single-project/meta.php:79
+msgid "Value"
+msgstr ""
+
+#: ../inc/extras.php:301
+msgid "Enter a value for this project."
+msgstr ""
+
+#: ../inc/extras.php:308 ../inc/vc-template/thememove_project_details.php:73
+#: ../projects/single-project/meta.php:86
+msgid "Architect"
+msgstr ""
+
+#: ../inc/extras.php:309
+msgid "Enter a architect for this project."
+msgstr ""
+
+#: ../inc/extras.php:318
+msgid "Use Visual Composer"
+msgstr ""
+
+#: ../inc/extras.php:319
+msgid "Use Visual Composer for this project"
+msgstr ""
+
+#: ../inc/extras.php:341
+msgid "View your shopping cart"
+msgstr ""
+
+#: ../inc/extras.php:425
+msgid "Department"
+msgstr ""
+
+#: ../inc/metabox.php:49
+msgid "Page Settings"
+msgstr ""
+
+#: ../inc/metabox.php:58
+msgid "Bread Crumb"
+msgstr ""
+
+#: ../inc/metabox.php:59
+msgid "Custom settings for breadcrumb"
+msgstr ""
+
+#: ../inc/metabox.php:63 ../inc/metabox.php:74 ../inc/metabox.php:85
+#: ../inc/metabox.php:96
+msgid "Enable"
+msgstr ""
+
+#: ../inc/metabox.php:64 ../inc/metabox.php:75 ../inc/metabox.php:86
+#: ../inc/metabox.php:97
+msgid "Disable"
+msgstr ""
+
+#: ../inc/metabox.php:68
+msgid "Uncover Footer"
+msgstr ""
+
+#: ../inc/metabox.php:69
+msgid "Custom settings for uncover footer option"
+msgstr ""
+
+#: ../inc/metabox.php:80
+msgid "Custom settings for header top area"
+msgstr ""
+
+#: ../inc/metabox.php:90
+msgid "Sticky Header"
+msgstr ""
+
+#: ../inc/metabox.php:91
+msgid "Custom settings for sticky header"
+msgstr ""
+
+#: ../inc/metabox.php:101
+msgid "Custom Logo"
+msgstr ""
+
+#: ../inc/metabox.php:102
+msgid "Upload an image or enter a URL for logo"
+msgstr ""
+
+#: ../inc/metabox.php:108
+msgid "Custom settings for header presets"
+msgstr ""
+
+#: ../inc/metabox.php:125
+msgid "Custom settings for color scheme"
+msgstr ""
+
+#: ../inc/metabox.php:130 ../inc/variables.php:5
+msgid "Color Scheme for Header Preset 01"
+msgstr ""
+
+#: ../inc/metabox.php:131 ../inc/variables.php:45
+msgid "Color Scheme for Header Preset 02"
+msgstr ""
+
+#: ../inc/metabox.php:132 ../inc/variables.php:85
+msgid "Color Scheme for Header Preset 03"
+msgstr ""
+
+#: ../inc/metabox.php:133 ../inc/variables.php:125
+msgid "Color Scheme for Header Preset 04"
+msgstr ""
+
+#: ../inc/metabox.php:134 ../inc/variables.php:165
+msgid "Color Scheme for Header Preset 05"
+msgstr ""
+
+#: ../inc/metabox.php:135 ../inc/variables.php:205
+msgid "Color Scheme for Header Preset 06"
+msgstr ""
+
+#: ../inc/metabox.php:136 ../inc/variables.php:245
+msgid "Color Scheme for Header Preset 07"
+msgstr ""
+
+#: ../inc/metabox.php:137 ../inc/variables.php:285
+msgid "Color Scheme for Home V2 Default"
+msgstr ""
+
+#: ../inc/metabox.php:138 ../inc/variables.php:325
+msgid "Color Scheme for Home V2 Black"
+msgstr ""
+
+#: ../inc/metabox.php:139 ../inc/variables.php:365
+msgid "Color Scheme for Home V2 White"
+msgstr ""
+
+#: ../inc/metabox.php:144
+msgid "Choose a layout you want"
+msgstr ""
+
+#: ../inc/metabox.php:149
+msgid "Full width"
+msgstr ""
+
+#: ../inc/metabox.php:150
+msgid "Content-Sidebar"
+msgstr ""
+
+#: ../inc/metabox.php:151
+msgid "Sidebar-Content"
+msgstr ""
+
+#: ../inc/metabox.php:161
+msgid "Title Background"
+msgstr ""
+
+#: ../inc/metabox.php:162
+msgid "Upload an image or enter a URL for heading title"
+msgstr ""
+
+#: ../inc/template-tags.php:45
+msgid "&larr; Previous"
+msgstr ""
+
+#: ../inc/template-tags.php:46
+msgid "Next &rarr;"
+msgstr ""
+
+#: ../inc/template-tags.php:143
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: ../inc/template-tags.php:149
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: ../inc/template-tags.php:155
+msgid "Leave a comment"
+msgstr ""
+
+#: ../inc/template-tags.php:155
+msgid "1 Comment"
+msgstr ""
+
+#: ../inc/template-tags.php:155
+msgid "% Comments"
+msgstr ""
+
+#: ../inc/template-tags.php:176
+#, php-format
+msgid "Category: %s"
+msgstr ""
+
+#: ../inc/template-tags.php:178
+#, php-format
+msgid "Tag: %s"
+msgstr ""
+
+#: ../inc/template-tags.php:180
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: ../inc/template-tags.php:182
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: ../inc/template-tags.php:184
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: ../inc/template-tags.php:186
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: ../inc/template-tags.php:206
+#, php-format
+msgid "Archives: %s"
+msgstr ""
+
+#: ../inc/template-tags.php:210
+#, php-format
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: ../inc/template-tags.php:212
+msgid "Archives"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:324 ../inc/tmg-plugin-registration.php:111
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:325 ../inc/tmg-plugin-registration.php:112
+msgid "Install Plugins"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:326 ../inc/tmg-plugin-registration.php:113
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:327 ../inc/tmg-plugin-registration.php:115
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:388 ../inc/tmg-plugin-registration.php:137
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:389
+msgid "Return to the dashboard"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:390 ../inc/tmg-plugin-activation.php:3087
+#: ../inc/tmg-plugin-registration.php:138
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:391 ../inc/tmg-plugin-registration.php:139
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:392 ../inc/tmg-plugin-registration.php:140
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:393 ../inc/tmg-plugin-registration.php:142
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:394 ../inc/tmg-plugin-registration.php:144
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:395
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:396 ../inc/tmg-plugin-registration.php:146
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2209
+msgid "Required"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2212
+msgid "Recommended"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2229
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2232
+msgid "External Source"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2235
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2253
+msgid "Not Installed"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2257
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2259
+msgid "Active"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2265
+msgid "Required Update not Available"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2268
+msgid "Requires Update"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2271
+msgid "Update recommended"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2428
+msgid "Installed version:"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2436
+msgid "Minimum required version:"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2448
+msgid "Available version:"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2471
+#, php-format
+msgid ""
+"No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+"Dashboard</a>"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2485
+msgid "Plugin"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2486
+msgid "Source"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2487
+msgid "Type"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2491
+msgid "Version"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2492
+msgid "Status"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2655
+msgid "Install"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2661
+msgid "Update"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2664
+msgid "Activate"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2695
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2697
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2733
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:2735
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:3086
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:3424
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:3426
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:3427
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:3431
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:3432
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:3433
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:3434
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:3437
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:3439
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../inc/tmg-plugin-activation.php:3440
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../inc/variables.php:468
+msgid ""
+"Made with <i class=\"fa fa-heart\"></i> by <a target=\"_blank\" href="
+"\"http://themeforest.net/item/structure-construction-business-wordpress-"
+"theme/10798442?ref=ThemeMove\">ThemeMove.com</a>."
+msgstr ""
+
+#: ../inc/vc-extend.php:274
+msgid "Recent Posts 2"
+msgstr ""
+
+#: ../inc/vc-extend.php:276 ../inc/vc-extend.php:510 ../inc/vc-extend.php:619
+msgid "by THEMEMOVE"
+msgstr ""
+
+#: ../inc/vc-extend.php:508
+msgid "Google Maps"
+msgstr ""
+
+#: ../inc/vc-extend.php:518
+msgid ""
+"Enter address or coordinate. To learn how to get coordinates, visit <a href="
+"\"https://support.google.com/maps/answer/18539?hl=en\" target=\"_blank"
+"\">here</a>"
+msgstr ""
+
+#: ../inc/vc-extend.php:524
+msgid "Choose a image for marker address"
+msgstr ""
+
+#: ../inc/vc-extend.php:530
+msgid "Content for info window"
+msgstr ""
+
+#: ../inc/vc-extend.php:537
+msgid "Enter map height (in pixels or percentage)"
+msgstr ""
+
+#: ../inc/vc-extend.php:544
+msgid "Enter map width (in pixels or percentage)"
+msgstr ""
+
+#: ../inc/vc-extend.php:551
+msgid "Map zoom level"
+msgstr ""
+
+#: ../inc/vc-extend.php:566
+msgid "Choose a map type"
+msgstr ""
+
+#: ../inc/vc-extend.php:579
+msgid ""
+"Choose a map style. This approach changes the style of the Roadmap types "
+"(base imagery in terrain and satellite views is not affected, but roads, "
+"labels, etc. respect styling rules"
+msgstr ""
+
+#: ../inc/vc-extend.php:599
+msgid ""
+"To get the style snippet, visit <a href=\"https://snazzymaps.com\" target="
+"\"_blank\">Sanzzymaps</a> or <a href=\"http://www.mapstylr.com/\" target="
+"\"_blank\">Mapstylr</a>."
+msgstr ""
+
+#: ../inc/vc-extend.php:609
+msgid ""
+"If you want to use multiple Google Maps in one page, please add a class name "
+"for them."
+msgstr ""
+
+#: ../inc/vc-extend.php:616
+msgid "Project Details"
+msgstr ""
+
+#: ../inc/vc-extend.php:617
+msgid "Only available for Projects."
+msgstr ""
+
+#: ../inc/vc-extend.php:626
+msgid "Choose a layout to display project details"
+msgstr ""
+
+#: ../inc/vc-template/thememove_project_details.php:35
+msgid "Categories"
+msgstr ""
+
+#: ../inc/vc-template/thememove_project_details.php:43
+#: ../projects/single-project/meta.php:51
+msgid "Client"
+msgstr ""
+
+#: ../inc/vc-template/thememove_project_details.php:61
+msgid "Completed"
+msgstr ""
+
+#: ../inc/vc-template/thememove_project_details.php:79
+msgid "Link"
+msgstr ""
+
+#: ../inc/vc-template/thememove_project_details.php:81
+#: ../projects/single-project/meta.php:96
+msgid "Visit project"
+msgstr ""
+
+#: ../inc/vc-template/vc_button2.php:5
+msgid "Text on the button"
+msgstr ""
+
+#: ../job_manager/content-single-job_listing.php:5
+msgid "This listing has expired."
+msgstr ""
+
+#: ../projects/single-project/description.php:21
+msgid "<h3 class=\"heading-title\">The Challenges</h3>"
+msgstr ""
+
+#: ../projects/single-project/meta.php:17
+msgid "<h3 class=\"heading-title\">Project Description</h3>"
+msgstr ""
+
+#: ../projects/single-project/meta.php:95
+msgid "Link:"
+msgstr ""
+
+#: ../search.php:14
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../single-job_listing.php:43
+msgid "Job Department"
+msgstr ""
+
+#: ../single-job_listing.php:47
+msgid "Job Type"
+msgstr ""
+
+#: ../single-job_listing.php:51
+msgid "Job Location"
+msgstr ""
+
+#: ../single-job_listing.php:55
+msgid "Job Expiry Date"
+msgstr ""
+
+#: ../template-blog-2.php:115 ../template-blog-2.php:223
+#: ../template-blog.php:115 ../template-blog.php:223
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:27
+msgid "Product"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:28
+msgid "Price"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:29
+msgid "Quantity"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:30
+msgid "Total"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:47
+msgid "Remove this item"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:76
+msgid "Available on backorder"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:121
+msgid "Coupon"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:121
+msgid "Coupon code"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:122
+msgid "Apply Coupon"
+msgstr ""
+
+#: ../woocommerce/cart/cart.php:127
+msgid "Update Cart"
+msgstr ""

@@ -1,0 +1,203 @@
+.tvd-modal {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.22);
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 0;
+  max-width: 400px;
+  max-height: 70%;
+  width: 55%;
+  margin: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 2px;
+  will-change: top, opacity; }
+  @media only screen and (max-width: 1400px) {
+    .tvd-modal {
+      max-width: 600px !important;
+      width: 80%; } }
+  .tvd-modal h1, .tvd-modal h2, .tvd-modal h3, .tvd-modal h4 {
+    margin-top: 0; }
+    #wpbody .tvd-modal h1, .tvd-modal .tvd-modal h1, #wpbody .tvd-modal h2, .tvd-modal .tvd-modal h2, #wpbody .tvd-modal h3, .tvd-modal .tvd-modal h3, #wpbody .tvd-modal h4, .tvd-modal .tvd-modal h4 {
+      margin-top: 0; }
+  .tvd-modal .tvd-modal-content {
+    padding: 40px 40px 0;
+    position: relative;
+    z-index: 3; }
+    .tvd-modal .tvd-modal-content .tvd-icon-big {
+      margin-bottom: 2rem; }
+    .tvd-modal .tvd-modal-content:after {
+      display: block;
+      content: '';
+      height: 40px; }
+  .tvd-modal .tvd-modal-close {
+    cursor: pointer; }
+  .tvd-modal .tvd-modal-footer {
+    padding: 20px;
+    width: 100%; }
+    .tvd-modal .tvd-modal-footer .tvd-row {
+      margin: 0; }
+    .tvd-modal .tvd-modal-footer .tvd-btn-flat {
+      padding: 0 .5rem; }
+  .tvd-modal p a {
+    color: inherit;
+    text-decoration: underline; }
+    #wpbody .tvd-modal p a, .tvd-modal .tvd-modal p a {
+      color: inherit; }
+  #wpbody .tvd-modal p a, .tvd-modal .tvd-modal p a {
+    color: inherit;
+    text-decoration: underline; }
+
+.tvd-modal-content {
+  padding: 40px 40px 0;
+  position: relative;
+  z-index: 3; }
+  .tvd-modal-content .tvd-icon-big {
+    margin-bottom: 2rem; }
+  .tvd-modal-content:after {
+    display: block;
+    content: '';
+    height: 40px; }
+
+.tvd-modal-close {
+  cursor: pointer; }
+
+.tvd-modal-footer {
+  padding: 20px;
+  width: 100%; }
+  .tvd-modal-footer .tvd-row {
+    margin: 0; }
+  .tvd-modal-footer .tvd-btn-flat {
+    padding: 0 .5rem; }
+
+.tvd-modal-title {
+  margin-bottom: 2rem; }
+
+#wpbody .tvd-modal-close-x, .tvd-modal .tvd-modal-close-x {
+  color: #373737;
+  font-size: 35px;
+  font-weight: 300;
+  position: absolute;
+  top: 4px;
+  right: 15px;
+  z-index: 6; }
+  #wpbody .tvd-modal-close-x:hover, .tvd-modal .tvd-modal-close-x:hover {
+    color: #373737; }
+
+.tvd-modal.tvd-modal-fixed-footer {
+  padding: 0;
+  height: 70%; }
+  .tvd-modal.tvd-modal-fixed-footer .tvd-modal-content {
+    position: absolute;
+    height: calc(100% - 61px);
+    max-height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden; }
+  .tvd-modal.tvd-modal-fixed-footer .tvd-modal-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+    position: absolute;
+    padding: 10px 20px;
+    bottom: 0;
+    z-index: 4; }
+
+.tvd-modal-disable:before {
+  background: rgba(215, 215, 215, 0.8);
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5; }
+
+.tvd-modal-disable .tvd-modal-footer {
+  position: relative; }
+
+.tvd-modal.tvd-green, .tvd-modal.tvd-orange, .tvd-modal.tvd-red {
+  color: #fff; }
+  .tvd-modal.tvd-green h1, .tvd-modal.tvd-green h2, .tvd-modal.tvd-green h3, .tvd-modal.tvd-green h4, .tvd-modal.tvd-green h5, .tvd-modal.tvd-green h6, .tvd-modal.tvd-orange h1, .tvd-modal.tvd-orange h2, .tvd-modal.tvd-orange h3, .tvd-modal.tvd-orange h4, .tvd-modal.tvd-orange h5, .tvd-modal.tvd-orange h6, .tvd-modal.tvd-red h1, .tvd-modal.tvd-red h2, .tvd-modal.tvd-red h3, .tvd-modal.tvd-red h4, .tvd-modal.tvd-red h5, .tvd-modal.tvd-red h6 {
+    color: inherit; }
+    #wpbody .tvd-modal.tvd-green h1, .tvd-modal .tvd-modal.tvd-green h1, #wpbody .tvd-modal.tvd-green h2, .tvd-modal .tvd-modal.tvd-green h2, #wpbody .tvd-modal.tvd-green h3, .tvd-modal .tvd-modal.tvd-green h3, #wpbody .tvd-modal.tvd-green h4, .tvd-modal .tvd-modal.tvd-green h4, #wpbody .tvd-modal.tvd-green h5, .tvd-modal .tvd-modal.tvd-green h5, #wpbody .tvd-modal.tvd-green h6, .tvd-modal .tvd-modal.tvd-green h6, #wpbody .tvd-modal.tvd-orange h1, .tvd-modal .tvd-modal.tvd-orange h1, #wpbody .tvd-modal.tvd-orange h2, .tvd-modal .tvd-modal.tvd-orange h2, #wpbody .tvd-modal.tvd-orange h3, .tvd-modal .tvd-modal.tvd-orange h3, #wpbody .tvd-modal.tvd-orange h4, .tvd-modal .tvd-modal.tvd-orange h4, #wpbody .tvd-modal.tvd-orange h5, .tvd-modal .tvd-modal.tvd-orange h5, #wpbody .tvd-modal.tvd-orange h6, .tvd-modal .tvd-modal.tvd-orange h6, #wpbody .tvd-modal.tvd-red h1, .tvd-modal .tvd-modal.tvd-red h1, #wpbody .tvd-modal.tvd-red h2, .tvd-modal .tvd-modal.tvd-red h2, #wpbody .tvd-modal.tvd-red h3, .tvd-modal .tvd-modal.tvd-red h3, #wpbody .tvd-modal.tvd-red h4, .tvd-modal .tvd-modal.tvd-red h4, #wpbody .tvd-modal.tvd-red h5, .tvd-modal .tvd-modal.tvd-red h5, #wpbody .tvd-modal.tvd-red h6, .tvd-modal .tvd-modal.tvd-red h6 {
+      color: inherit; }
+
+.tvd-lean-overlay {
+  position: fixed;
+  z-index: 9999;
+  top: -100px;
+  left: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 125%;
+  width: 100%;
+  background: #000;
+  display: none;
+  will-change: opacity; }
+  .tvd-lean-overlay.tvd-white-bg {
+    background: #fff; }
+
+#tl-modal-base .tvd-modal-content {
+  min-width: 600px; }
+
+.tve-leads-assets-preview-templates {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 10px; }
+
+/*tvo comments modal*/
+.tvo-comments-modal {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.22);
+  background-color: #fff;
+  border-radius: 2px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden; }
+  .tvo-comments-modal h3 {
+    color: #393939;
+    font-size: 1.625rem;
+    font-weight: 500;
+    line-height: 110%;
+    margin: 0 0 0.65rem 0; }
+  .tvo-comments-modal h4 {
+    color: #393939;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 110%;
+    margin: 0.5rem 0 0.4rem 0; }
+  .tvo-comments-modal .tvd-no-margin {
+    margin: 0 !important; }
+  .tvo-comments-modal .tvd-small-text {
+    font-size: .875rem; }
+  .tvo-comments-modal a {
+    color: #03a9f4;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent; }
+    .tvo-comments-modal a:focus {
+      box-shadow: none; }
+  .tvo-comments-modal .tvo-edit-testimonial-tags-container .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background: #edefed;
+    border: 1px solid #dce0e0; }
+  .tvo-comments-modal .tvd-btn {
+    color: #fff; }
+
+/*this is for thrive ovation comments view*/
+.tvo-preview-email-wrapper {
+  background: #f7f7f7;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.22);
+  font-size: 1rem;
+  margin: 20px 0;
+  padding: 20px;
+  word-wrap: break-word; }
+  .tvo-preview-email-wrapper p {
+    font-size: 1rem;
+    margin-bottom: 20px; }
+  .tvo-preview-email-wrapper a {
+    pointer-events: none; }

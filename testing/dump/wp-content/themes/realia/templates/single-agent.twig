@@ -1,0 +1,54 @@
+{% extends 'layout.twig' %}
+
+{% block content %}
+    <h1 class="page-header">{{ post.post_title }}</h1>
+
+	<div class="agent">
+	    <div class="row">
+	        <div class="image span2">
+	            <a href="{{ wp.get_permalink(wp.get_the_ID()) }}">
+	                {% if wp.get_the_post_thumbnail(wp.get_the_ID()) %}
+	                    {{ wp.get_the_post_thumbnail(wp.get_the_ID())|raw }}
+	                {% else %}
+	                    <img src="{{ wp.get_template_directory_uri() }}/assets/img/agent-tmp.png" alt="{{ property.post_title }}">
+	                {% endif %}
+	            </a>
+	        </div><!-- /.image -->
+
+	        <div class="body span4">
+	            {{ wp.do_shortcode(wp.apply_filters('the_content', post.post_content))|raw }}
+	        </div><!-- /.body -->
+
+	        <div class="info span3">
+	            <div class="box">
+	                <div class="phone">
+	                    {{ wp.get_post_meta(wp.get_the_ID(), '_agent_mobile', TRUE) }}
+	                </div><!-- /.phone -->
+	                <div class="office">
+	                    {{ wp.get_post_meta(wp.get_the_ID(), '_agent_phone', TRUE) }}
+	                </div><!-- /.office -->
+
+	                <div class="email">
+	                    <a href="mailto:{{ wp.get_post_meta(wp.get_the_ID(), '_agent_email', TRUE) }}">
+	                        {{ wp.get_post_meta(wp.get_the_ID(), '_agent_email', TRUE) }}
+	                    </a>
+	                </div><!-- /.email -->
+	            </div><!-- /.box -->
+	        </div><!-- /.info -->
+	    </div><!-- /.row -->
+	</div><!-- /.agent -->
+
+    {% if properties %}
+        <hr>
+
+        <h2 class="page-header">{{ wp.__('Assigned Properties', 'aviators') }}</h2>
+
+        <div class="properties-rows">
+            <div class="row">
+                {% for property in properties %}
+                    {% include 'properties/property-row.twig' %}
+                {% endfor %}
+            </div><!-- /.row -->
+        </div><!-- /.properties -->
+    {% endif %}
+{% endblock %}

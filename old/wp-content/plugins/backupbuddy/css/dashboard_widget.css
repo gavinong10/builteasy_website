@@ -1,0 +1,96 @@
+.edits-since-wrapper {
+	margin: 0 0 1em 0;
+}
+
+.edits-since {
+	font-size: 3.75em;
+	font-weight: 300;
+	border: 4px solid #ebebeb;
+	border-radius: 100%;
+	width: 175px;
+	height: 175px;
+	margin: .5em auto .25em auto;
+	line-height: 3.5;
+	text-align: center;
+}
+
+.edits-since.green {
+	color: #a8d657;
+	border-color: #a8d657;
+}
+
+.edits-since.red {
+	color: #ff0000;
+	border-color: #ff0000;
+}
+
+#dashboard-widgets h4.number-heading {
+	text-transform: uppercase;
+	color: #999;
+	font-weight: normal;
+	text-align: center;
+}
+
+.backup-list li {
+	border: 1px solid #f1f1f1;
+	vertical-align: baseline;
+	background: #fff;
+}
+
+.backup-list .list-wrapper {
+	padding: .25em 1em;
+	border-left: 6px solid #ebebeb;
+	overflow: hidden;
+}
+
+.backup-list .list-title {
+	width: 25%;
+	float:left;
+	padding: .75em 0;
+}
+
+.backup-list .list-description {
+	width: 70%;
+	float: right;
+	margin-left: 5%;
+}
+
+.backup-list .description-item {
+	display: block;
+	float: left;
+	margin: 0 0 0 3%;
+	width: 24%;
+	font-weight: normal;
+	text-align: right;
+}
+
+.backup-list .description-item.backup-time {
+	width: 42%;
+}
+
+.backup-list .description-item span {
+	font-size: .7em;
+	text-transform: uppercase;
+	color: #666;
+}
+
+.backup-now {
+	margin: 1.5em 0 0 0;
+}
+
+.backup-now a {
+	display: block;
+	text-align: center;
+	padding: 1em 2em;
+	box-sizing: border-box;
+	background: #f95050;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color: #fff;
+	border-bottom: 4px solid #c04343;
+}
+
+.backup-now a:hover {
+	background: #ff7373;
+}

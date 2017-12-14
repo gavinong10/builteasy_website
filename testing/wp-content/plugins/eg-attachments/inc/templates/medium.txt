@@ -1,0 +1,16 @@
+[title]Medium[/title]
+[description]List with details, and medium size icon[/description]
+[before][/before]
+[loop]<dl class="attachments attachments-medium">
+<dt class="icon">
+	<a title="%TITLE%" href="%URL%" %NOFOLLOW%>
+		%ICON-32x32%
+	</a>
+</dt>
+<dd class="caption">
+	<strong>%FILENAME_LABEL%</strong> : <a title="%TITLE%" href="%URL%" %NOFOLLOW%>%FILENAME%</a> (%FILESIZE%)
+	<br>
+	<strong>%CAPTION_LABEL%</strong> : %CAPTION%
+</dd>
+</dl>[/loop]
+[after][/after]

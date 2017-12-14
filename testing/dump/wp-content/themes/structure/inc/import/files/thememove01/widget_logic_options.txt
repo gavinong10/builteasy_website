@@ -1,0 +1,16 @@
+[START=WIDGET LOGIC OPTIONS]
+better-menu-widget-3	"is_tree(59)"
+text-7	"is_page()"
+meta-2	"!is_page()"
+text-3	""
+text-6	""
+rev-slider-widget-2	"is_page(73112)"
+text-8	"is_tree(61)"
+better-menu-widget-4	"is_tree(61)"
+text-9	"!is_page()"
+text-10	"!is_page()"
+tag_cloud-2	"!is_page()"
+better-menu-widget-5	""
+text-11	""
+rev-slider-widget-3	"is_page(74536)"
+[STOP=WIDGET LOGIC OPTIONS]

@@ -1,0 +1,244 @@
+@import (reference) "_elements";
+
+.big-quote {
+  .col-sm-8 {
+    p:first-child {
+      line-height: 1.5;
+      letter-spacing: 0.025em;
+      color: #666;
+      margin-bottom: 15px !important;
+    }
+    h3 {
+      margin-bottom: 0;
+      + p {
+        font-size: 14px;
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+  .col-sm-4 {
+    .wpb_text_column {
+      .wpb_wrapper {
+        p {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+.big-quote-2 {
+  &:extend(.big-quote all);
+  .boxed {
+    padding: 40px 25px;
+  }
+  .col-sm-12 {
+    .wpb_text_column {
+      .wpb_wrapper {
+        &:before {
+          content: url("../images/quote3.png");
+          margin-right: 40px;
+          display: inline-block;
+          width: 5%;
+        }
+      }
+    }
+    p {
+      &:extend(.big-quote .col-sm-8 p all);
+      display: inline-block;
+      vertical-align: top;
+      font-size: 18px;
+      font-style: italic;
+      width: 90%;
+      color: #666;
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+.about-page {
+  .heading-title-3 {
+    margin-bottom: 30px !important;
+  }
+  .wpb_text_column {
+    .wpb_wrapper {
+      p:first-child {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+
+.intro4 {
+  .vc_btn3 {
+    &:after {
+      .iconfont;
+      content: '\f101';
+      margin-left: 15px;
+    }
+  }
+  @media @xs-max {
+    .col-sm-8 {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.intro5 {
+  .row {
+    display: table;
+  }
+  [class*="col"] {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .vc_custom_heading {
+    padding: 30px;
+    h2 {
+      margin: 0;
+    }
+  }
+  .vc_btn3 {
+    background: none !important;
+    padding: 0 !important;
+    border: none !important;
+    &:before {
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      margin-top: 5px;
+    }
+    &:after {
+      .iconfont;
+      content: '\f101';
+      font-size: 16px;
+      margin-left: 10px;
+    }
+  }
+  @media @lg {
+    .col-lg-9 {
+      position: relative;
+      overflow: hidden;
+      &:after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 50px;
+        background-color: #f7b200;
+        top: 0;
+        right: 0;
+        .transform(skew(-20deg, 0deg) translate(20px, 0));
+      }
+    }
+
+    .col-lg-3 {
+      background-color: #f7b200;
+    }
+  }
+}
+
+.scheme a.read-more {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  padding: 6px 18px;
+}
+
+.testimonials-list {
+  .author {
+    margin-bottom: 30px;
+    display: block;
+    font-style: normal;
+    span {
+      display: block;
+      &:first-child {
+        font-weight: bold;
+        font-style: normal;
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+.testimonial-4 .testimonials-list {
+  margin-bottom: 50px;
+  blockquote + img {
+    .rounded(100%);
+    margin: 0 15px 0 0;
+  }
+  @media @sm-max {
+    .testimonials-text {
+      padding: 30px;
+      margin-bottom: 20px;
+      font-style: italic;
+      display: block;
+      background-color: #f8f8f8;
+      &:before {
+        position: absolute;
+        left: 25px;
+        opacity: 1;
+      }
+    }
+  }
+  .author {
+    display: inline-block;
+    margin-top: 20px;
+    position: relative;
+    &:after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 16px 16px 0 0;
+      border-color: #f8f8f8 transparent transparent transparent;
+      position: absolute;
+      left: -50px;
+      top: -40px;
+      z-index: 99;
+    }
+    span:first-child {
+      color: #111111 !important;
+    }
+  }
+}
+
+.counting {
+  @media @xs-max {
+    .col-sm-6 {
+      &:first-child {
+        margin-bottom: 50px;
+      }
+      &:last-child {
+        .col-sm-4 {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media @sm {
+
+}
+
+@media @md {
+  .big-quote {
+    .col-sm-8 {
+      padding-left: 40px;
+      padding-right: 0;
+    }
+    .col-sm-4 {
+      padding-left: 0;
+    }
+  }
+}

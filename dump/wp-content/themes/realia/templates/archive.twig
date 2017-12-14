@@ -1,0 +1,21 @@
+{% extends 'layout.twig' %}
+
+{% block content %}
+    {% if wp.have_posts() %}
+        <header class="archive-header">
+            <h1 class="page-header archive-title">
+                {% if wp.is_day() %}
+                    {{ wp.printf(wp.__('Daily Archives: %s', 'aviators' ), wp.get_the_date()) }}
+                {% elseif wp.is_month() %}
+                    {{ wp.printf(wp.__('Monthly Archives: %s', 'aviators' ), wp.get_the_date(wp.__( 'F Y', 'monthly archives date format', 'aviators'))) }}
+                {% elseif wp.is_year() %}
+                    {{ wp.printf(wp.__( 'Yearly Archives: %s', 'twentythirteen' ), wp.get_the_date(wp.__( 'Y', 'yearly archives date format', 'aviators'))) }}
+                {% else %}
+                    {{ wp.__('Archives', 'aviators') }}
+                {% endif %}
+            </h1><!-- /.page-header -->
+        </header><!-- .archive-header -->
+    {% endif %}
+
+    {% include 'helpers/content-loop.twig' %}
+{% endblock %}

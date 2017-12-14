@@ -1,0 +1,25 @@
+<div class="pricing boxed">
+    <div class="column {% if promoted == 'yes' %}promoted{% endif %}">
+        {% if title %}
+            <h2>{{ title }}</h2>
+        {% endif %}
+
+        <div class="content">
+            {% if price %}
+                <h3>{{ price }}</h3>
+            {% endif %}
+
+            {% if subtitle %}
+                <h4>{{ subtitle }}</h4>
+            {% endif %}
+
+            {{ post.post_content|raw }}
+
+            {% if link and button_text %}
+                <a href="{{ link }}" class="btn btn-primary btn-large">{{ button_text }}</a>
+            {% endif %}
+        </div>
+        <!-- /.content -->
+    </div>
+    <!-- /.column -->
+</div><!-- /.pricing -->

@@ -1,0 +1,210 @@
+{
+	"IcoMoonType": "selection",
+	"icons": [
+		{
+			"icon": {
+				"paths": [
+					"M733.714 419.429q0-16-10.286-26.286l-52-51.429q-10.857-10.857-25.714-10.857t-25.714 10.857l-233.143 232.571-129.143-129.143q-10.857-10.857-25.714-10.857t-25.714 10.857l-52 51.429q-10.286 10.286-10.286 26.286 0 15.429 10.286 25.714l206.857 206.857q10.857 10.857 25.714 10.857 15.429 0 26.286-10.857l310.286-310.286q10.286-10.286 10.286-25.714zM877.714 512q0 119.429-58.857 220.286t-159.714 159.714-220.286 58.857-220.286-58.857-159.714-159.714-58.857-220.286 58.857-220.286 159.714-159.714 220.286-58.857 220.286 58.857 159.714 159.714 58.857 220.286z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"check-circle"
+				],
+				"defaultCode": 61528,
+				"grid": 14
+			},
+			"attrs": [],
+			"properties": {
+				"id": 83,
+				"order": 3,
+				"prevSize": 28,
+				"code": 61528,
+				"name": "check-circle"
+			},
+			"setIdx": 0,
+			"setId": 53,
+			"iconIdx": 0
+		},
+		{
+			"icon": {
+				"paths": [
+					"M1008 6.286q18.857 13.714 15.429 36.571l-146.286 877.714q-2.857 16.571-18.286 25.714-8 4.571-17.714 4.571-6.286 0-13.714-2.857l-258.857-105.714-138.286 168.571q-10.286 13.143-28 13.143-7.429 0-12.571-2.286-10.857-4-17.429-13.429t-6.571-20.857v-199.429l493.714-605.143-610.857 528.571-225.714-92.571q-21.143-8-22.857-31.429-1.143-22.857 18.286-33.714l950.857-548.571q8.571-5.143 18.286-5.143 11.429 0 20.571 6.286z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"paper-plane",
+					"send"
+				],
+				"defaultCode": 61912,
+				"grid": 14
+			},
+			"attrs": [],
+			"properties": {
+				"id": 429,
+				"order": 2,
+				"prevSize": 28,
+				"code": 61912,
+				"name": "paper-plane"
+			},
+			"setIdx": 0,
+			"setId": 53,
+			"iconIdx": 1
+		},
+		{
+			"icon": {
+				"paths": [
+					"M576 384h-320v64h320v-64zM384 256h-128v64h128v-64zM768 228.531v-100.531h-140.812l-179.188-128-179.188 128h-140.812v100.531l-128 91.469v640h896v-640l-128-91.469zM192 192h512v244.812l-256 211.188-256-211.188v-244.812zM64 448l252.031 191.625-252.031 192.375v-384zM128 896l254-206.25 66 50.25 65.875-50.125 254.125 206.125h-640zM832 832l-252.375-192.062 252.375-191.938v384z"
+				],
+				"width": 896,
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"mail-read"
+				],
+				"defaultCode": 61500,
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"id": 103,
+				"order": 1,
+				"prevSize": 32,
+				"code": 61500,
+				"name": "mail-read"
+			},
+			"setIdx": 0,
+			"setId": 53,
+			"iconIdx": 2
+		},
+		{
+			"icon": {
+				"paths": [
+					"M928 1024h-832c-17.664 0-32-14.304-32-32v-512c0-17.696 14.336-32 32-32h96v-128c0-176.736 143.264-320 320-320s320 143.264 320 320v128h96c17.696 0 32 14.304 32 32v512c0 17.696-14.304 32-32 32zM704 304c0-97.216-85.984-176-192-176s-192 78.784-192 176v144h384v-144z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"locked",
+					"encryption",
+					"login",
+					"log in"
+				],
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"id": 2,
+				"order": 30,
+				"prevSize": 32,
+				"code": 58880,
+				"name": "locked"
+			},
+			"setIdx": 0,
+			"setId": 53,
+			"iconIdx": 3
+		},
+		{
+			"icon": {
+				"paths": [
+					"M576 706.612v-52.78c70.498-39.728 128-138.772 128-237.832 0-159.058 0-288-192-288s-192 128.942-192 288c0 99.060 57.502 198.104 128 237.832v52.78c-217.102 17.748-384 124.42-384 253.388h896c0-128.968-166.898-235.64-384-253.388z"
+				],
+				"attrs": [],
+				"isMulticolor": false,
+				"tags": [
+					"user",
+					"profile",
+					"avatar",
+					"person",
+					"member"
+				],
+				"defaultCode": 57733,
+				"grid": 16
+			},
+			"attrs": [],
+			"properties": {
+				"order": 72,
+				"id": 1628,
+				"prevSize": 32,
+				"code": 59761,
+				"ligatures": "user, profile2",
+				"name": "user"
+			},
+			"setIdx": 28,
+			"setId": 25,
+			"iconIdx": 113
+		},
+		{
+			"icon": {
+				"paths": [
+					"M512.48 603.552l-130.304-106.976-283.584 334.816h828.032l-283.616-338.144-130.528 110.304zM957.632 192.608h-890.080l445.056 374.336 445.024-374.336zM662.56 476.384l297.312 354.688v-606.464l-297.312 251.776zM64.128 224.608v606.464l297.312-354.688-297.312-251.776z"
+				],
+				"attrs": [],
+				"tags": [
+					"envelope",
+					"email",
+					"mail",
+					"letter",
+					"contact"
+				],
+				"grid": 32
+			},
+			"attrs": [],
+			"properties": {
+				"id": 273,
+				"order": 73,
+				"prevSize": 32,
+				"code": 58881,
+				"name": "envelope"
+			},
+			"setIdx": 36,
+			"setId": 17,
+			"iconIdx": 273
+		}
+	],
+	"height": 1024,
+	"metadata": {
+		"name": "icomoon"
+	},
+	"preferences": {
+		"fontPref": {
+			"prefix": "icon-",
+			"metadata": {
+				"fontFamily": "icomoon",
+				"majorVersion": 1,
+				"minorVersion": 0
+			},
+			"showGlyphs": true,
+			"metrics": {
+				"emSize": 1024,
+				"baseline": 6.25,
+				"whitespace": 50
+			},
+			"resetPoint": 62976,
+			"showQuickUse": true,
+			"quickUsageToken": false,
+			"showMetrics": true,
+			"showMetadata": false
+		},
+		"imagePref": {
+			"color": 0,
+			"height": 32,
+			"columns": 16,
+			"margin": 16,
+			"png": false,
+			"sprites": true,
+			"prefix": "icon-"
+		},
+		"historySize": 100,
+		"showCodes": true,
+		"gridSize": 16,
+		"showLiga": false,
+		"showGrid": true,
+		"showGlyphs": true,
+		"showQuickUse": true,
+		"showQuickUse2": true,
+		"showSVGs": true,
+		"search": ""
+	}
+}

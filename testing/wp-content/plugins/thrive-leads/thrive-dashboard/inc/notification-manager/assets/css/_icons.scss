@@ -1,0 +1,65 @@
+$font-mdi: 'tvd-nm-icons';
+$icons-font-path: "../fonts/" !default;
+@font-face {
+  font-family: "#{$font-mdi}";
+  src: url("#{$icons-font-path}#{$font-mdi}.eot?#iefixe") format("embedded-opentype"),
+  url("#{$icons-font-path}#{$font-mdi}.woff?e") format("woff"),
+  url("#{$icons-font-path}#{$font-mdi}.ttf?e") format("truetype"),
+  url("#{$icons-font-path}#{$font-mdi}.svg##{$font-mdi}") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="tvd-nm-icon"], [class*=" tvd-nm-icon"] {
+  speak: none;
+  display: inline-block;
+  font-family: "tvd-nm-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+  &:before {
+    color: inherit;
+    display: inline-block;
+    speak: none;
+    text-decoration: inherit;
+  }
+}
+.tvd-nm-large-icon {
+  font-size: 40px;
+}
+.tvd-nm-medium-icon {
+  font-size: 30px;
+}
+.tvd-nm-small-icon {
+  font-size: 20px;
+}
+// icons
+.tvd-nm-icon-envelope-o:before {
+  content: "\f003";
+}
+.tvd-nm-icon-flask:before {
+  content: "\f0c3";
+}
+.tvd-nm-icon-code:before {
+  content: "\f121";
+}
+.tvd-nm-icon-angle-down:before {
+  content: "\e902";
+}
+.tvd-nm-icon-angle-up:before {
+  content: "\e901";
+}
+.tvd-nm-icon-chevron-right:before {
+  content: "\e900";
+}
+.tvd-nm-icon-plus:before {
+  content: "\e900";
+}
+.tvd-nm-icon-wordpress:before {
+  content: "\e905";
+}

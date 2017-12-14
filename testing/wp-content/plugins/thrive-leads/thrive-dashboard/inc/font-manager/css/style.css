@@ -1,0 +1,58 @@
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,300italic);
+
+.font-manager-settings {
+    background: #fff;
+    border: 1px solid #E1E1E1;
+    margin: 0 20px 0 0;
+    padding: 25px;
+    color: #323232;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.font-manager-settings h3 {
+    border-bottom: 1px solid #e1e1e1;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+    margin: 0;
+}
+
+#ttfm-custom-css {
+    width: 100%;
+}
+
+.tvd-fm-color {
+    border: 1px solid #5c5c5c;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+.form-table.postEdit {
+    max-width: 100%;
+}
+
+.form-table th {
+    color: #323232;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.form-table td, th {
+    border-bottom: 1px dashed #efefef;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.form-table label.btn {
+    border: 1px solid #f5f5f5;
+    margin: 0px;
+    padding: 6px;
+}
+
+.tvd-btn i {
+    font-size: 14px !important;
+    margin-right: 5px;
+}

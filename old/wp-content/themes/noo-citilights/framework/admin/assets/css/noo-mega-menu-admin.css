@@ -1,0 +1,34 @@
+/**
+ * NOO Mega Menu.
+ *
+ * StyleSheet used in Menu Settings
+ *
+ * @package    NOO Framework
+ * @subpackage NOO Mega Menu
+ * @version    1.0.0
+ * @author     Kan Nguyen <khanhnq@nootheme.com>
+ * @copyright  Copyright (c) 2014, NooTheme
+ * @license    http://opensource.org/licenses/gpl-2.0.php GPL v2 or later
+ * @link       http://nootheme.com
+ */
+/* ============================================================================= */
+.noo-menu-form {
+	float: left;
+	width: 100%;
+	margin: 10px 0 10px -10px;
+	background-color: #def4f0;
+	padding: 10px 0 10px 10px;
+	border-bottom: 1px solid #b9e6de;
+	border-top: 1px solid #b9e6de;
+}
+
+@media screen and (max-width: 782px) {
+	.noo-menu-form {
+		margin-right: -10px;
+		padding-right: 10px;
+	}
+}
+
+.noo-menu-form p.description {
+	color: #3a3a3a;
+}

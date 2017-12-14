@@ -1,0 +1,19 @@
+{% extends 'layout.twig' %}
+
+{% block content %}
+    <h1 class="page-header">{{ post.post_title }}</h1>
+
+    {% include 'properties/slider.twig' %}
+
+    <div class="property-detail">
+        {% include 'properties/overview.twig' %}
+
+        {{ wp.do_shortcode(wp.apply_filters('the_content', post.post_content))|raw }}
+
+        {% include 'properties/amenities.twig' %}
+
+        {% include 'properties/property-map.twig' %}
+    </div>
+
+    {{  wp.comments_template }}
+{% endblock %}

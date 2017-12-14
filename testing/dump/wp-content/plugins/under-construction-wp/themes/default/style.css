@@ -1,0 +1,59 @@
+/* Styles */
+html,body{
+    height:100%;
+    background:#000;
+    color:#fff;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body{
+	text-align:center;
+	padding:0;
+    padding-top: 20px;
+    background-color:rgba(0,0,0,0.60);	
+}
+
+#seed-ucp-content{
+    opacity:0.9;
+}
+
+#seed-ucp-content{
+	max-width:600px;
+	margin:0 auto;
+}
+
+#seed-ucp-content img{
+    max-width: 100%;
+    height: auto;
+}
+
+#seed-ucp-credit{
+	position: fixed;
+	bottom:0;
+	right:20px;
+	background-color: #000;
+	background-color: rgba(0, 0, 0, 0.70);
+	padding:1px 5px 2px;
+	border-radius: 4px 4px 0px 0px;
+}
+
+
+@media (min-width: 650px) {
+    html, body, #seed-ucp-page{
+        height:100%
+    }
+    body{
+        padding-top: 0px;
+    }
+
+    #seed-ucp-content{
+        vertical-align:middle;
+        display:inline-block;
+    }
+    #seed-ucp-page:before{
+      content: '';
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+}

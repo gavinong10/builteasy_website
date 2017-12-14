@@ -1,0 +1,41 @@
+{% extends 'layout.twig' %}
+
+{% block content %}
+    {% if not title %}
+        <h1 class="page-header">{{ wp.__('Properties', 'aviators') }}</h1>
+    {% else %}
+        <h1 class="page-header">{{ title }}</h1>
+    {% endif %}
+
+    {%  if content %}
+        <div class="term-content">
+            {{ content|raw }}
+        </div>
+    {% endif %}
+
+    {% if wp.aviators_settings_get_value('properties', 'properties', 'display_sort_bar') %}
+        {% include 'properties/sort.twig' %}
+    {% endif %}
+
+    {% if wp.have_posts() %}
+        {{ wp_query.the_post() }}
+        <div class="properties-{% if wp.aviators_settings_get_value('properties', 'properties', 'type') == 'row' %}rows{% else %}grid{% endif %}">
+            <div class="row">
+                {% for property in properties %}
+                    {% if wp.aviators_settings_get_value('properties', 'properties', 'type') == 'row' %}
+                        {% include 'properties/property-row.twig' %}
+                    {% else %}
+                        <div class="span3">
+                            {% include 'properties/property-box-small.twig' %}
+                        </div><!-- /.span3 -->
+                    {% endif %}
+                {% endfor %}
+            </div><!-- /.row -->
+        </div><!-- /.properties-grid -->
+
+
+        {{ wp.aviators_paging_nav('', 2, wp_query) }}
+    {% else %}
+        <p>{{ wp.__('No posts found.', 'aviators') }}</p>
+    {% endif %}
+{% endblock %}

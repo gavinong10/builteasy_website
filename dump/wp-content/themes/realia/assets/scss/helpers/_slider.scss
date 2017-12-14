@@ -1,0 +1,110 @@
+.slider-wrapper { padding-top: 30px; 
+  .slider-info { background-color: $slider-background-color; bottom: 20px; left: -300px; opacity: 0; padding: 10px; position: absolute; width: 280px;
+        h2 { line-height: 1; margin: 0px 0px 10px 0px; padding: 0px; 
+            a { color: $slider-h2-color; text-decoration: none; }
+        }   
+        h3 { color: #ffffff; font-size: 14px; line-height: 1; margin: 0px 0px 10px 0px; }
+
+        .price { background-image: url('../img/footer-border.png'); background-position: left bottom; background-repeat: repeat-x; background-size: 268px 1px; margin-bottom: 10px; overflow: hidden; padding: 5px 0px 15px 0px;
+            @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+                background-image: url('../img/footer-border@2x.png');
+            }   
+            h2 { color: #ffffff; float: left; font-size: 24px; line-height: 1; margin: 0px; padding: 0px; }
+            a { background-image: url('../img/arrow-right-white.png'); background-position: right center; background-repeat: no-repeat; background-size: 8px 11px; color: #ffffff; display: block; float: right; margin-top: 3px; padding-right: 20px;        
+                @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+                    background-image: url('../img/arrow-right-white@2x.png');
+                }
+            }
+        }       
+        .bathrooms { background-image: url('../img/icons/bathrooms-white.png'); background-position: left center; background-repeat: no-repeat; background-size: 14px 20px; color: #ffffff; font-weight: bold; float: left; margin-right: 30px; padding-left: 25px; 
+            @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+                background-image: url('../img/icons/bathrooms-white@2x.png');
+            }
+        }   
+        .bedrooms { background-image: url('../img/icons/bedrooms-white.png'); background-position: left center; background-repeat: no-repeat; background-size: 21px 12px; color: #ffffff; font-weight: bold; float: left; padding-left: 35px;
+            @media (-webkit-min-device-pixel-ratio: 2), (-moz-min-device-pixel-ratio: 2) {
+                background-image: url('../img/icons/bedrooms-white@2x.png');
+            }
+        }
+    }   
+  
+  .images { position: relative;
+    .iosSlider { height: 411px; left: 0; overflow: hidden; position: relative; top: 0; width: 100%; 
+      .slider { height: 411px; width: 100%; 
+        .slide { float: left; height: 411px; width: 100%; 
+          img { display: block; }
+        }      
+      }
+    }
+    .navigation { bottom: 15px; margin: 0px; padding: 0px; right: 15px; position: absolute; z-index: 99999;
+      li { @include border-radius(50%); background-color: $slider-navigation-background-color; display: block; float: left; height: 10px; margin: 0px 5px; text-indent: -9999px; width: 10px;
+        &.active { background-color: $slider-navigation-active-background-color;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .slider-wrapper {
+    .images {
+      .iosSlider { height: 330px;
+        .slider { height: 330px; }
+      }
+    }
+  }
+}
+
+@media (max-width: 979px) {
+  .slider-wrapper {
+    .span3 { float: none; width: auto; }
+    .images { float: none; margin-bottom: 30px; width: auto;
+      .iosSlider { height: 345px; width: auto;
+        .slider { height: 345px; }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .slider-wrapper {
+    .images {
+      .iosSlider { height: 180px;
+        .slider { height: 180px;
+        }
+        .slider-info { display: none !important; opacity: 0 !important; visibility: hidden;}
+      }
+    }
+  }
+}
+
+.rs-filter-vertical  {
+  position: absolute; width: 100%; top: 20px; z-index:1002;
+  .container {
+    position: relative;
+  }
+  .span3 {
+    position: absolute;
+    right: 0px;
+  }
+}
+
+.rs-filter-horizontal {
+  position: absolute; width: 100%; bottom: 20px; z-index:1002;
+}
+
+@media (max-width: 767px) {
+  .rs-filter-horizontal {
+    z-index: 1;
+    margin-top: 280px;
+    position: relative;
+  }
+
+  .rs-filter-vertical {
+    position: relative;
+    .span3 {
+      position: relative;
+    }
+  }
+}
+

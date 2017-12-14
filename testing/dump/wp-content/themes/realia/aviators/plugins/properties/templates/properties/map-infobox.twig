@@ -1,0 +1,29 @@
+{% spaceless %}
+    <div class="infobox">
+        <div class="close">
+            <img src="{{ wp.get_template_directory_uri() }}/assets/img/close.png" alt="">
+        </div>
+
+        <div class="image">
+            <a href="{{ wp.get_permalink(property.ID) }}">{% if wp.get_the_post_thumbnail(property.ID) %}{{ wp.get_the_post_thumbnail(property.ID, 'admin-thumb')|raw }}{% else %}
+                    <img src="{{ wp.get_template_directory_uri() }}/assets/img/property-tmp-small.png" alt="{{ property.post_title }}" width="80">{% endif %}
+            </a>
+        </div>
+
+        <div class="title">
+            <a href="{{ wp.get_permalink(property.ID) }}">{% if property.meta._property_title.0 %}{{ property.meta._property_title.0 }}{% else %}{{ property.post_title }}{% endif %}</a>
+        </div>
+
+        <div class="area">
+            <span class="key">{{ wp.__('Area', 'aviators') }}:</span>
+            <span class="value">{{ property.meta._property_area.0 }}{{ wp.aviators_settings_get_value('properties', 'units', 'area')|raw }}</span>
+        </div>
+
+        <div class="price">{% if property.meta._property_custom_text.0 %}{{ property.meta._property_custom_text.0 }}{% else %}{{ wp.aviators_price_format(property.meta._property_price.0) }}{% if property.meta._property_price_suffix.0 %}
+                <span class="suffix">{{ property.meta._property_price_suffix.0 }}</span>{% endif %}{% endif %}</div>
+
+        <div class="link">
+            <a href="{{ wp.get_permalink(property.ID) }}">{{ wp.__('View more', 'aviators') }}</a>
+        </div>
+    </div>
+{% endspaceless %}

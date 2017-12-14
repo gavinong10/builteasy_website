@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" {{ wp.language_attributes() }}>
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" {{ wp.language_attributes() }}>
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html {{ wp.language_attributes() }}>
+<!--<![endif]-->
+
+<head>
+    <meta charset="{{ wp.bloginfo('charset') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aviators, http://themes.byaviators.com">
+
+    <link rel="shortcut icon" href="{{ wp.get_stylesheet_directory_uri()  }}/assets/img/favicon.png" type="image/png">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="{{ wp.bloginfo('pingback_url') }}">
+
+    <!--[if lt IE 9]>
+        <script src="{{ wp.get_template_directory_uri() }}/assets/js/html5.js" type="text/javascript"></script>
+    <![endif]-->
+
+    {{ wp_head() }}
+
+    {% if wp.is_singular() %}
+        {{ wp.wp_enqueue_script('comment-reply') }}
+    {% endif %}
+
+    {% if wp.get_theme_mod('general_palette_is_hidden') == "" %}
+        <link rel="stylesheet" href="#" type="text/css" id="color-variant">
+    {% endif %}
+
+    <title>{{ wp.wp_title('|', FALSE, 'right')|raw }}</title>
+</head>
+
+<body class="{% for class in wp.get_body_class %}{{ class }} {% endfor %} {{ wp.get_theme_mod('header_variant') }} color-{{ color_class }} {{ wp.get_theme_mod('general_pattern') }} {{ wp.get_theme_mod('general_layout') }} {% if wp.get_theme_mod('header_position_is_fixed') %}header-fixed{% endif %}">
+
+<div id="wrapper-outer">
+    <div id="wrapper">
+        <div id="wrapper-inner">
+            <div class="header-top-wrapper">
+                <div class="header-top">
+                    {% include 'helpers/topbar.twig' %}
+
+                    <!-- HEADER -->
+                    <div id="header-wrapper">
+                        <div id="header">
+                            <div id="header-inner">
+                                <div class="container">
+                                    <div class="navbar">
+                                        <div class="navbar-inner">
+                                            <div class="row">
+                                                <div class="logo-wrapper span4">
+                                                    <a href="#nav" id="btn-nav">{{ wp.__('Toggle navigation', 'aviators') }}</a>
+
+                                                    {# LOGO #}
+                                                    <div class="logo">
+                                                        {% if wp.defined('ICL_LANGUAGE_CODE') %}
+                                                            <a href="{{ wp.icl_get_home_url() }}" title="{{ wp.__('Home', 'aviators') }}">
+                                                        {% else %}
+                                                            <a href="{{ wp.get_bloginfo('wpurl') }}" title="{{ wp.__('Home', 'aviators') }}">
+                                                        {% endif %}
+                                                            {% if wp.get_theme_mod('header_logo') %}
+                                                                <img src="{{ wp.get_theme_mod('header_logo') }}" alt="{{ wp.__('Home', 'aviators') }}">
+                                                            {% else %}
+                                                                <img src="{{ wp.get_template_directory_uri() }}/assets/img/logo.png" alt="{{ wp.__('Home', 'aviators') }}">
+                                                            {% endif %}
+                                                        </a>
+                                                    </div><!-- /.logo -->
+
+                                                    {# TITLE #}
+                                                    {% if wp.get_theme_mod('header_title_is_hidden') == "" %}
+                                                        {% if wp.get_bloginfo('name') %}
+                                                            <div class="site-name">
+                                                                <a href="{{ wp.get_bloginfo('wpurl') }}" title="{{ wp.__('Home') }}" class="brand">
+                                                                    {{ wp.get_bloginfo('name') }}
+                                                                </a>
+                                                            </div><!-- /.site-name -->
+                                                        {% endif %}
+                                                    {% endif %}
+
+                                                    {# DESCRIPTION #}
+                                                    {% if wp.get_theme_mod('header_description_is_hidden') == "" %}
+                                                        {% if wp.get_bloginfo('description') %}
+                                                            <div class="site-slogan">
+                                                                <span>{{ wp.get_bloginfo('description')|htmldecode }}</span>
+                                                            </div><!-- /.site-slogan -->
+                                                        {% endif %}
+                                                    {% endif %}
+                                                </div><!-- /.logo-wrapper -->
+
+                                                {% if wp.get_theme_mod('header_email_is_hidden') == "" or wp.get_theme_mod('header_phone_is_hidden') == "" %}
+                                                    <div class="info">
+                                                        {# EMAIL #}
+                                                        {% if wp.get_theme_mod('header_email_is_hidden') == "" %}
+                                                            <div class="site-email">
+                                                                <a href="mailto:{{ wp.get_option('header_email', 'info@byaviators.com') }}">
+                                                                    {{ wp.get_option('header_email', 'info@byaviators.com') }}
+                                                                </a>
+                                                            </div><!-- /.site-email -->
+                                                        {% endif %}
+
+                                                        {# PHONE #}
+                                                        {% if wp.get_theme_mod('header_phone_is_hidden') == "" %}
+                                                            <div class="site-phone">
+                                                                <span>{{ wp.get_option('header_phone', '333-444-555') }}</span>
+                                                            </div><!-- /.site-phone -->
+                                                        {% endif %}
+                                                    </div><!-- /.info -->
+                                                {% endif %}
+
+                                                {# LIST YOUR PROPERTY #}
+                                                {% if wp.get_theme_mod('header_call_to_action_is_hidden') == "" %}
+
+                                                    <a class="btn btn-primary btn-large list-your-property arrow-right"
+                                                        href="{{ wp.aviators_property_submission_button_get('url') }}">
+                                                        {{ wp.aviators_property_submission_button_get('text') }}
+                                                    </a>
+                                                {% endif %}
+                                            </div><!-- /.row -->
+                                        </div><!-- /.navbar-inner -->
+                                    </div><!-- /.navbar -->
+                                </div><!-- /.container -->
+                            </div><!-- /#header-inner -->
+                        </div><!-- /#header -->
+                    </div><!-- /#header-wrapper -->
+                </div><!-- /.top -->
+            </div><!-- /.top-wrapper -->
+
+            <!-- NAVIGATION -->
+            <div id="navigation">
+                <div class="container">
+                    <div class="navigation-wrapper">
+                        <div class="navigation clearfix-normal">
+                            {{ main_menu|raw }}
+
+                            {% if wp.dynamic_sidebar('navigation-right') %}{% endif %}
+                            {#{% if wp.get_theme_mod('header_search_is_hidden') == "" %}#}
+                                {#{{ wp.get_search_form }}#}
+                            {#{% endif %}#}
+                        </div><!-- /.navigation -->
+                    </div><!-- /.navigation-wrapper -->
+                </div><!-- /.container -->
+            </div><!-- /.navigation -->

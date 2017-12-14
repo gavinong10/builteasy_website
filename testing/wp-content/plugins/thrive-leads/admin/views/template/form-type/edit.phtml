@@ -1,0 +1,281 @@
+<div class="tve-header">
+	<nav id="tl-nav">
+		<div class="nav-wrapper">
+			<div class="tve-logo tvd-left">
+				<a href="<?php menu_page_url( 'thrive_leads_dashboard' ); ?>"
+				   title="<?php echo __( 'Thrive Leads Home', 'thrive-leads' ) ?>">
+					<?php echo '<img src="' . plugins_url( 'thrive-leads/admin/img' ) . '/tl-logo-full-white.png" > '; ?>
+				</a>
+			</div>
+			<?php
+				$dashboard_data = array(
+					'global_settings'            => array(
+						'ajax_load' => tve_leads_get_option( 'ajax_load' ),
+					)
+				);
+				include( dirname( dirname( dirname( __FILE__ ) ) ) . '/leads_menu.php' )
+			?>
+		</div>
+	</nav>
+</div>
+<?php include TVE_DASH_PATH . '/templates/share.phtml'; ?>
+<div class="tve-leads-breadcrumbs-wrapper">
+	<ul id="tve-leads-breadcrumbs"></ul>
+</div>
+<div class="tl-show-no-forms tvd-margin-top-big" style="display: none;">
+	<div class="tvd-row tvd-center-align">
+		<div class="tvd-col tvd-s4 tvd-offset-s4">
+			<img src="<?php echo TVE_LEADS_URL . 'admin/img/thrive_notification_logo.png' ?>" alt="">
+			<br>
+			<p><?php echo __( 'Your forms will appear here.', 'thrive-leads' ) ?></p>
+			<div class="tvd-margin-bottom">
+				<button
+					class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-gray tve-add-form"><?php echo __( 'Create Form', 'thrive-leads' ) ?></button>
+			</div>
+			<a href="#dashboard"
+			   class="tvd-btn-flat tvd-btn-flat-blue tvd-waves-effect"><?php echo __( 'Back To Dashboard', 'thrive-leads' ) ?></a>
+		</div>
+	</div>
+</div>
+<div class="tl-hide-no-forms">
+	<div class="tvd-row">
+		<div class="tvd-col tvd-s8">
+			<h3 class="tvd-left tvd-title tvd-margin-right">
+				<# if( model.get('parent') && model.get('parent').post_title ) { #>
+					<strong>
+						<#= model.get('parent').post_title #>
+					</strong> -
+					<# } #>
+						<#= model.get('post_title') #>
+			</h3>
+			<a class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue tvd-left tve-add-form"
+			   href="javascript:void(0)"><?php echo __( 'Add New Form', 'thrive-leads' ) ?></a>
+		</div>
+		<div class="tvd-col tvd-s4">
+			<div class="tvd-v-spacer vs-half"></div>
+			<div class="tvd-row tve-leads-copy-row">
+				<# if(model instanceof ThriveLeads.models.Shortcode) { #>
+				<div class="tvd-col tvd-l6 tvd-m5">
+					<div class="tvd-input-field">
+						<input readonly="readonly" class="tve-shortcode tvd-no-margin tve-leads-copy" type="text"
+						       value="<#= model.getCode() #>"/>
+					</div>
+				</div>
+				<div class="tvd-col tvd-l3 tvd-m4">
+		            <a class="tve-copy-to-clipboard tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue tvd-btn-small" href="javascript:void(0)">
+			            <span class="tl-copy-text"><?php echo __( 'Copy', 'thrive-leads' ) ?></span>
+		            </a>
+				</div>
+				<div class="tvd-col tvd-l3 tvd-m6">
+					<div class="tvd-vertical-align">
+						<a href="javascript:void(0)" class="tve-leads-main-php-code"
+						   title="<?php echo __( 'Get PHP Code', 'thrive-leads' ) ?>"><?php echo __( 'Get PHP Code', 'thrive-leads' ) ?></a>
+					</div>
+				</div>
+				<# } else if(model instanceof ThriveLeads.models.TwoStepLightbox) { #>
+					<div class="tvd-col tvd-s3">
+						&nbsp;
+					</div>
+					<div class="tvd-col tvd-s6">
+						<div class="tvd-input-field">
+							<input readonly="readonly" class="tve-shortcode tvd-no-margin tve-leads-copy" type="text"
+							       value="<#= model.getCode() #>"/>
+						</div>
+					</div>
+					<div class="tvd-col tvd-s3">
+						<a class="tve-copy-to-clipboard tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-blue tvd-btn-small" href="javascript:void(0)">
+							<span class="tve-icon-clone2"></span>
+							<span class="tl-copy-text"><?php echo __( 'Copy', 'thrive-leads' ) ?></span>
+						</a>
+					</div>
+				<# } #>
+			</div>
+		</div>
+	</div>
+	<div id="tve-lead-forms">
+		<h4><?php echo __( 'Forms', 'thrive-leads' ) ?></h4>
+		<p><?php echo __( 'Here you can create the designs for your opt in form. You can create as many forms as you like, and the traffic will be distributed randomly to each of them.', 'thrive-leads' ) ?></p>
+
+		<table class="tvd-collection tvd-with-header hide-no-groups">
+			<thead>
+			<tr class="tvd-collection-header">
+				<td>&nbsp;</td>
+				<td>
+					<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'Form Impressions', 'thrive-leads' ) ?>">
+						<h5 class="tvd-truncate-on-small-el">
+						<?php echo __( 'Form Impressions', 'thrive-leads' ) ?></h5>
+					</div>
+				</td>
+				<td>
+					<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'Conversions', 'thrive-leads' ) ?>">
+						<h5 class="tvd-truncate-on-small-el"><?php echo __( 'Conversions', 'thrive-leads' ) ?></h5>
+					</div>
+				</td>
+				<td>
+					<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'Conversion Rate', 'thrive-leads' ) ?>">
+						<h5 class="tvd-truncate-on-small-el"><?php echo __( 'Conversion Rate', 'thrive-leads' ) ?></h5>
+					</div>
+				</td>
+				<# if (model.get('has_trigger_settings')) { #>
+					<td>
+						<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'Trigger', 'thrive-leads' ) ?>">
+							<h5 class="tvd-truncate-on-small-el"><?php echo __( 'Trigger', 'thrive-leads' ) ?></h5>
+						</div>
+					</td>
+				<# } #>
+						<# if (model.get('has_frequency_settings')) { #>
+							<td>
+								<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'Display Frequency', 'thrive-leads' ) ?>">
+									<h5 class="tvd-truncate-on-small-el"><?php echo __( 'Display Frequency', 'thrive-leads' ) ?></h5>
+								</div>
+							</td>
+							<# } #>
+								<# if (model.get('has_position_settings')) { #>
+									<td>
+										<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'Position', 'thrive-leads' ) ?>">
+											<h5 class="tvd-truncate-on-small-el"><?php echo __( 'Position', 'thrive-leads' ) ?></h5>
+										</div>
+									</td>
+									<# } #>
+										<# if (model.get('has_animation_settings')) { #>
+											<td>
+												<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'Animation', 'thrive-leads' ) ?>">
+													<h5 class="tvd-truncate-on-small-el"><?php echo __( 'Animation', 'thrive-leads' ) ?></h5>
+												</div>
+											</td>
+											<# } #>
+												<# if (model.get('content_locking')) { #>
+													<td>
+														<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'Lock Mode', 'thrive-leads' ) ?>">
+															<h5 class="tvd-truncate-on-small-el"><?php echo __( 'Lock Mode', 'thrive-leads' ) ?></h5>
+														</div>
+													</td>
+													<# } #>
+														<td>&nbsp;</td>
+			</tr>
+			</thead>
+			<tbody id="tve-variation-list"></tbody>
+		</table>
+
+		<a style="display: none" class="tvd-waves-effect tvd-waves-light tvd-btn tvd-btn-green tve-start-variation-test tvd-right"
+		   href="javascript:void(0)" title="<?php echo __( 'Start A/B Test', 'thrive-leads' ) ?>">
+			<?php echo __( 'Start A/B Test', 'thrive-leads' ) ?>
+		</a>
+
+		<p class="show-no-groups" style="display: none">
+			<?php echo __( "You don't have any active forms", 'thrive-leads' ) ?> -
+			<a href="javascript:void(0)" class="tve-add-form">
+				<?php echo __( 'click here to create one', 'thrive-leads' ) ?>
+			</a>
+		</p>
+		<div class="tvd-v-spacer"></div>
+		<div id="tl-completed-tests" style="display: none">
+			<h4 title="<?php echo __( 'Click to expand', 'thrive-leads' ) ?>"
+			    class="tvd-pointer tl-toggle-display collapsed tvd-inline-block" data-target="#tve-completed-test-list">
+				<?php echo __( 'Completed Tests', 'thrive-leads' ) ?> (<#= model.get('completed_tests').length #>)
+			</h4>
+			<ul class="tvd-collection tvd-with-header tve-active-group-tests" style="display: none;" id="tve-completed-test-list">
+				<li class="tvd-collection-header">
+					<div class="tvd-row">
+						<div class="tvd-col tvd-s2">
+							<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'Test Name', 'thrive-leads' ) ?>">
+								<h5 class="tvd-truncate-on-small-el"><?php echo __( 'Test Name', 'thrive-leads' ) ?></h5>
+							</div>
+						</div>
+						<div class="tvd-col tvd-s2">
+							<h5>&nbsp;</h5>
+						</div>
+						<div class="tvd-col tvd-s2">
+							<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'Test Description', 'thrive-leads' ) ?>">
+								<h5 class="tvd-truncate-on-small-el"><?php echo __( 'Test Description', 'thrive-leads' ) ?></h5>
+							</div>
+						</div>
+						<div class="tvd-col tvd-s2">
+							<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'Start Date', 'thrive-leads' ) ?>">
+								<h5 class="tvd-truncate-on-small-el"><?php echo __( 'Start Date', 'thrive-leads' ) ?></h5>
+							</div>
+						</div>
+						<div class="tvd-col tvd-s2">
+							<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'End Date', 'thrive-leads' ) ?>">
+								<h5 class="tvd-truncate-on-small-el"><?php echo __( 'End Date', 'thrive-leads' ) ?></h5>
+							</div>
+						</div>
+						<div class="tvd-col tvd-s2">
+							<h5>&nbsp;</h5>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="tvd-v-spacer"></div>
+		<div id="tl-archived-forms" style="display: none">
+			<h4 title="<?php echo __( 'Click to expand', 'thrive-leads' ) ?>"
+			    class="tvd-pointer tl-toggle-display collapsed tvd-inline-block" data-target="#tl-toggle-forms">
+				<?php echo __( 'Archived Forms', 'thrive-leads' ) ?> (<#= model.get('variations_archived').length #>)
+			</h4>
+			<div id="tl-toggle-forms" style="display: none;">
+				<table class="tvd-collection tvd-with-header">
+				<thead>
+					<tr class="tvd-collection-header">
+						<td>&nbsp;</td>
+						<td>
+							<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'Form Impressions', 'thrive-leads' ) ?>">
+								<h5 class="tvd-truncate-on-small-el"><?php echo __( 'Form Impressions', 'thrive-leads' ) ?></h5>
+							</div>
+						</td>
+						<td>
+							<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'Conversions', 'thrive-leads' ) ?>">
+								<h5 class="tvd-truncate-on-small-el"><?php echo __( 'Conversions', 'thrive-leads' ) ?></h5>
+							</div>
+						</td>
+						<td>
+							<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'Conversion Rate', 'thrive-leads' ) ?>">
+								<h5 class="tvd-truncate-on-small-el"><?php echo __( 'Conversion Rate', 'thrive-leads' ) ?></h5>
+							</div>
+						</td>
+						<# if (model.get('has_trigger_settings')) { #>
+							<td>
+								<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'Trigger', 'thrive-leads' ) ?>">
+									<h5 class="tvd-truncate-on-small-el"><?php echo __( 'Trigger', 'thrive-leads' ) ?></h5>
+								</div>
+							</td>
+						<# } #>
+						<# if (model.get('has_frequency_settings')) { #>
+							<td>
+								<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'Display Frequency', 'thrive-leads' ) ?>">
+									<h5 class="tvd-truncate-on-small-el"><?php echo __( 'Display Frequency', 'thrive-leads' ) ?></h5>
+								</div>
+							</td>
+						<# } #>
+						<# if (model.get('has_position_settings')) { #>
+							<td>
+								<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'Position', 'thrive-leads' ) ?>">
+									<h5 class="tvd-truncate-on-small-el"><?php echo __( 'Position', 'thrive-leads' ) ?></h5>
+								</div>
+							</td>
+						<# } #>
+						<# if (model.get('has_animation_settings')) { #>
+							<td>
+								<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'Animation', 'thrive-leads' ) ?>">
+									<h5 class="tvd-truncate-on-small-el"><?php echo __( 'Animation', 'thrive-leads' ) ?></h5>
+								</div>
+							</td>
+						<# } #>
+						<# if (model.get('content_locking')) { #>
+							<td>
+								<div class="tvd-truncate-on-small" data-popup="<?php echo __( 'Lock Mode', 'thrive-leads' ) ?>">
+									<h5 class="tvd-truncate-on-small-el"><?php echo __( 'Lock Mode', 'thrive-leads' ) ?></h5>
+								</div>
+							</td>
+						<# } #>
+						<th>&nbsp;</th>
+					</tr>
+				</thead>
+				<tbody id="tve-archive-list"></tbody>
+			</table>
+			</div>
+		</div>
+	</div>
+	<div class="tvd-v-spacer vs-1"></div>
+	<a href="#dashboard" class="tvd-btn-flat tvd-btn-flat-primary tvd-btn-flat-dark tvd-waves-effect">&laquo; <?php echo __( 'Back To Dashboard', 'thrive-leads' ) ?></a>
+</div>

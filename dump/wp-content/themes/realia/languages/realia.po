@@ -1,0 +1,2512 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: realia\n"
+"POT-Creation-Date: 2014-06-20 20:24+0100\n"
+"PO-Revision-Date: 2014-06-20 20:24+0100\n"
+"Last-Translator: \n"
+"Language-Team: Aviators <info@byaviators.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: __;_e;wp.__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../comments.php:5
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgstr ""
+
+#: ../functions.php:23
+msgid "Content Import"
+msgstr ""
+
+#: ../functions.php:29
+msgid "Widget Import"
+msgstr ""
+
+#: ../functions.php:35
+msgid "Widget Logic Import"
+msgstr ""
+
+#: ../functions.php:41 ../launcher/launcher.php:77
+msgid "Theme Options"
+msgstr ""
+
+#: ../functions.php:140
+msgid "Main"
+msgstr ""
+
+#: ../functions.php:141
+msgid "Anonymous user"
+msgstr ""
+
+#: ../functions.php:142
+msgid "Authenticated user"
+msgstr ""
+
+#: ../functions.php:176
+msgid "Primary"
+msgstr ""
+
+#: ../functions.php:185
+msgid "Navigation Right"
+msgstr ""
+
+#: ../functions.php:195
+msgid "Top"
+msgstr ""
+
+#: ../functions.php:205
+msgid "Content Top"
+msgstr ""
+
+#: ../functions.php:214
+msgid "Property Detail"
+msgstr ""
+
+#: ../functions.php:223
+msgid "Content Bottom"
+msgstr ""
+
+#: ../functions.php:232
+msgid "Bottom One"
+msgstr ""
+
+#: ../functions.php:242
+msgid "Bottom Two"
+msgstr ""
+
+#: ../functions.php:252
+msgid "Bottom Three"
+msgstr ""
+
+#: ../functions.php:262
+msgid "Footer Area One"
+msgstr ""
+
+#: ../functions.php:272
+msgid "Footer Area Two"
+msgstr ""
+
+#: ../functions.php:282
+msgid "Footer Area Three"
+msgstr ""
+
+#: ../functions.php:292
+msgid "Footer Area Four"
+msgstr ""
+
+#: ../functions.php:302
+msgid "Footer Bottom Left"
+msgstr ""
+
+#: ../functions.php:317
+msgid "Sticky"
+msgstr ""
+
+#: ../functions.php:325
+msgid ", "
+msgstr ""
+
+#: ../functions.php:333
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: ../functions.php:335
+msgid "Posted by"
+msgstr ""
+
+#: ../functions.php:335
+msgid "on"
+msgstr ""
+
+#: ../functions.php:341
+msgid "Pages:"
+msgstr ""
+
+#: ../functions.php:357
+msgid "Continue reading"
+msgstr ""
+
+#: ../functions.php:369
+#, php-format
+msgid "%1$s on %2$s"
+msgstr ""
+
+#: ../functions.php:373
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: ../functions.php:404
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../functions.php:440
+msgid "First"
+msgstr ""
+
+#: ../functions.php:443
+#: ../aviators/plugins/properties/templates/properties/carousel.twig:10
+#: ../aviators/plugins/properties/templates/properties/slider.twig:36
+msgid "Previous"
+msgstr ""
+
+#: ../functions.php:453
+#: ../aviators/plugins/properties/templates/properties/carousel.twig:11
+#: ../aviators/plugins/properties/templates/properties/slider.twig:37
+msgid "Next"
+msgstr ""
+
+#: ../functions.php:456
+msgid "Last"
+msgstr ""
+
+#: ../functions.php:579
+#: ../aviators/libraries/class-tgm-plugin-activation.php:164
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../functions.php:580
+#: ../aviators/libraries/class-tgm-plugin-activation.php:165
+msgid "Install Plugins"
+msgstr ""
+
+#: ../functions.php:581
+#: ../aviators/libraries/class-tgm-plugin-activation.php:166
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../functions.php:583
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../functions.php:602
+#: ../aviators/libraries/class-tgm-plugin-activation.php:178
+#: ../aviators/libraries/class-tgm-plugin-activation.php:490
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../functions.php:603
+#: ../aviators/libraries/class-tgm-plugin-activation.php:179
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1846
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../functions.php:604
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: ../header.php:8
+msgid "Registration complete. Please check your e-mail."
+msgstr ""
+
+#: ../page-login.php:7 ../page-register.php:7
+msgid "You are already logged in."
+msgstr ""
+
+#: ../page-submission-index.php:14
+#: ../aviators/plugins/submission/renderers.php:55
+#: ../aviators/plugins/submission/renderers.php:89
+msgid "You must be logged in to access this page."
+msgstr ""
+
+#: ../aviators/core/plugins/settings/renderers.php:32
+#: ../aviators/core/plugins/settings/settings.php:67
+msgid "Settings"
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:167
+msgid "Something went wrong."
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:180
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:517
+#: ../aviators/libraries/class-tgm-plugin-activation.php:2058
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:545
+#, php-format
+msgid "The following plugin was activated successfully: %s."
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:704
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1091
+msgid "External Link"
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1096
+msgid "Private Repository"
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1099
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1103
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1106
+msgid "Required"
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1106
+msgid "Recommended"
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1109
+msgid "Not Installed"
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1111
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1281
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1297
+msgid "Plugin"
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1298
+msgid "Source"
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1299
+#: ../aviators/plugins/properties/widgets/carousel_properties.php:52
+#: ../aviators/plugins/properties/templates/properties/filter.twig:83
+#: ../aviators/plugins/properties/templates/properties/form-content.twig:107
+#: ../aviators/plugins/properties/templates/properties/overview.twig:33
+#: ../templates/properties/form-content.twig:109
+msgid "Type"
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1300
+#: ../aviators/plugins/submission/meta.php:15
+#: ../aviators/plugins/submission/templates/submission/index.twig:20
+msgid "Status"
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1318
+msgid "Install"
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1319
+msgid "Activate"
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1829
+msgid "Install package not available."
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1830
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1831
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1832
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1833
+msgid "Plugin install failed."
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1834
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1845
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1955
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1956
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1956
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1965
+msgid "Show Details"
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1956
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1965
+msgid "Hide Details"
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1957
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1958
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1962
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1963
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1964
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1965
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1966
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../aviators/libraries/class-tgm-plugin-activation.php:1967
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../aviators/plugins/accounts/widgets.php:7
+msgid "Aviators: Login"
+msgstr ""
+
+#: ../aviators/plugins/accounts/widgets.php:10
+#: ../aviators/plugins/accounts/widgets.php:19
+#: ../aviators/plugins/accounts/templates/accounts/login.twig:11
+#: ../templates/layout-login-register.twig:8
+#: ../templates/layout-login-register.twig:18
+msgid "Login"
+msgstr ""
+
+#: ../aviators/plugins/accounts/widgets.php:24
+#: ../aviators/plugins/accounts/widgets.php:71
+#: ../aviators/plugins/agencies/widgets/agencies.php:31
+#: ../aviators/plugins/agencies/widgets/assigned_agencies.php:31
+#: ../aviators/plugins/agents/widgets.php:31
+#: ../aviators/plugins/agents/widgets.php:93
+#: ../aviators/plugins/call-to-action/widgets.php:36
+#: ../aviators/plugins/partners/widgets/partners.php:31
+#: ../aviators/plugins/properties/properties.php:207
+#: ../aviators/plugins/properties/widgets/carousel_properties.php:40
+#: ../aviators/plugins/properties/widgets/enquire_properties.php:24
+#: ../aviators/plugins/properties/widgets/featured_properties.php:38
+#: ../aviators/plugins/properties/widgets/featured_properties_large.php:38
+#: ../aviators/plugins/properties/widgets/general_properties.php:124
+#: ../aviators/plugins/properties/widgets/most_recent_properties.php:38
+#: ../aviators/plugins/properties/widgets/property_filter.php:24
+#: ../aviators/plugins/properties/widgets/reduced_properties.php:38
+#: ../aviators/plugins/submission/templates/submission/index.twig:18
+msgid "Title"
+msgstr ""
+
+#: ../aviators/plugins/accounts/widgets.php:54
+msgid "Aviators: Register"
+msgstr ""
+
+#: ../aviators/plugins/accounts/widgets.php:57
+#: ../aviators/plugins/accounts/widgets.php:66
+#: ../templates/layout-login-register.twig:9
+msgid "Register"
+msgstr ""
+
+#: ../aviators/plugins/agencies/agencies.php:14
+#: ../aviators/plugins/agencies/agencies.php:26
+#: ../aviators/plugins/agencies/widgets/agencies.php:10
+#: ../aviators/plugins/agencies/widgets/agencies.php:19
+#: ../aviators/plugins/properties/meta.php:110
+#: ../templates/archive-agency.twig:4
+msgid "Agencies"
+msgstr ""
+
+#: ../aviators/plugins/agencies/agencies.php:15
+#: ../aviators/plugins/agents/meta.php:5
+msgid "Agency"
+msgstr ""
+
+#: ../aviators/plugins/agencies/agencies.php:16
+#: ../aviators/plugins/agents/agents.php:13 ../aviators/plugins/faq/faq.php:10
+#: ../aviators/plugins/landlords/landlords.php:26
+#: ../aviators/plugins/partners/partners.php:14
+#: ../aviators/plugins/pricing/pricing.php:7
+#: ../aviators/plugins/properties/properties.php:54
+#: ../aviators/plugins/submission/submission.php:27
+msgid "Add New"
+msgstr ""
+
+#: ../aviators/plugins/agencies/agencies.php:17
+msgid "Add New Agency"
+msgstr ""
+
+#: ../aviators/plugins/agencies/agencies.php:18
+msgid "Edit Agency"
+msgstr ""
+
+#: ../aviators/plugins/agencies/agencies.php:19
+msgid "New Agency"
+msgstr ""
+
+#: ../aviators/plugins/agencies/agencies.php:20
+msgid "All Agencies"
+msgstr ""
+
+#: ../aviators/plugins/agencies/agencies.php:21
+msgid "View Agency"
+msgstr ""
+
+#: ../aviators/plugins/agencies/agencies.php:22
+msgid "Search Agency"
+msgstr ""
+
+#: ../aviators/plugins/agencies/agencies.php:23
+msgid "No agencies found"
+msgstr ""
+
+#: ../aviators/plugins/agencies/agencies.php:24
+msgid "No agencies found in Trash"
+msgstr ""
+
+#: ../aviators/plugins/agencies/agencies.php:33
+msgid "agencies"
+msgstr ""
+
+#: ../aviators/plugins/agencies/agencies.php:52
+msgid "Agency Options"
+msgstr ""
+
+#: ../aviators/plugins/agencies/meta.php:4
+#: ../aviators/plugins/call-to-action/widgets.php:53
+#: ../aviators/plugins/landlords/meta.php:24
+#: ../aviators/plugins/properties/templates/properties/form-content.twig:75
+#: ../templates/properties/form-content.twig:86
+msgid "Address"
+msgstr ""
+
+#: ../aviators/plugins/agencies/meta.php:14
+#: ../aviators/plugins/agents/meta.php:32
+#: ../aviators/plugins/landlords/meta.php:74
+#: ../aviators/plugins/properties/enquire.php:36
+#: ../aviators/plugins/properties/templates/properties/enquire.twig:35
+msgid "Phone"
+msgstr ""
+
+#: ../aviators/plugins/agencies/meta.php:24
+#: ../aviators/plugins/agents/meta.php:42
+#: ../aviators/plugins/landlords/meta.php:84
+#: ../aviators/plugins/properties/enquire.php:52
+#: ../aviators/plugins/accounts/templates/accounts/register.twig:24
+#: ../templates/layout-login-register.twig:63
+msgid "E-mail"
+msgstr ""
+
+#: ../aviators/plugins/agencies/meta.php:34
+#: ../aviators/plugins/partners/meta.php:4
+msgid "URL"
+msgstr ""
+
+#: ../aviators/plugins/agencies/widgets/agencies.php:7
+msgid "Aviators: Agencies"
+msgstr ""
+
+#: ../aviators/plugins/agencies/widgets/agencies.php:36
+#: ../aviators/plugins/agencies/widgets/assigned_agencies.php:36
+#: ../aviators/plugins/agents/widgets.php:36
+#: ../aviators/plugins/agents/widgets.php:98
+#: ../aviators/plugins/partners/widgets/partners.php:36
+#: ../aviators/plugins/properties/widgets/carousel_properties.php:46
+#: ../aviators/plugins/properties/widgets/featured_properties.php:43
+#: ../aviators/plugins/properties/widgets/general_properties.php:131
+#: ../aviators/plugins/properties/widgets/most_recent_properties.php:43
+#: ../aviators/plugins/properties/widgets/reduced_properties.php:43
+msgid "Count"
+msgstr ""
+
+#: ../aviators/plugins/agencies/widgets/assigned_agencies.php:7
+msgid "Aviators: Assigned Agencies"
+msgstr ""
+
+#: ../aviators/plugins/agencies/widgets/assigned_agencies.php:10
+#: ../aviators/plugins/agencies/widgets/assigned_agencies.php:19
+msgid "Assigned Agencies"
+msgstr ""
+
+#: ../aviators/plugins/agents/agents.php:11
+#: ../aviators/plugins/agents/agents.php:23
+#: ../aviators/plugins/agents/widgets.php:10
+#: ../aviators/plugins/agents/widgets.php:19
+#: ../aviators/plugins/agents/widgets.php:81
+#: ../aviators/plugins/properties/meta.php:127
+#: ../aviators/plugins/properties/properties.php:217
+#: ../templates/archive-agent.twig:4
+msgid "Agents"
+msgstr ""
+
+#: ../aviators/plugins/agents/agents.php:12
+msgid "Agent"
+msgstr ""
+
+#: ../aviators/plugins/agents/agents.php:14
+msgid "Add New Agent"
+msgstr ""
+
+#: ../aviators/plugins/agents/agents.php:15
+msgid "Edit Agent"
+msgstr ""
+
+#: ../aviators/plugins/agents/agents.php:16
+msgid "New Agent"
+msgstr ""
+
+#: ../aviators/plugins/agents/agents.php:17
+msgid "All Agents"
+msgstr ""
+
+#: ../aviators/plugins/agents/agents.php:18
+msgid "View Agent"
+msgstr ""
+
+#: ../aviators/plugins/agents/agents.php:19
+msgid "Search Agent"
+msgstr ""
+
+#: ../aviators/plugins/agents/agents.php:20
+msgid "No agents found"
+msgstr ""
+
+#: ../aviators/plugins/agents/agents.php:21
+msgid "No agents found in Trash"
+msgstr ""
+
+#: ../aviators/plugins/agents/agents.php:30
+msgid "agents"
+msgstr ""
+
+#: ../aviators/plugins/agents/agents.php:50
+msgid "Agent Options"
+msgstr ""
+
+#: ../aviators/plugins/agents/meta.php:22
+#: ../aviators/plugins/landlords/meta.php:64
+msgid "Mobile"
+msgstr ""
+
+#: ../aviators/plugins/agents/widgets.php:7
+msgid "Aviators: Agents"
+msgstr ""
+
+#: ../aviators/plugins/agents/widgets.php:69
+msgid "Aviators: Assigned Agents"
+msgstr ""
+
+#: ../aviators/plugins/agents/widgets.php:72
+msgid "Displayable only on property detail page."
+msgstr ""
+
+#: ../aviators/plugins/aviators_utils/aviators_utils.php:48
+msgid "Widget Logic Export"
+msgstr ""
+
+#: ../aviators/plugins/aviators_utils/aviators_utils.php:49
+msgid "Theme Options Export"
+msgstr ""
+
+#: ../aviators/plugins/call-to-action/widgets.php:7
+msgid "Aviators: Call to Action"
+msgstr ""
+
+#: ../aviators/plugins/call-to-action/widgets.php:10
+msgid "Call to Action"
+msgstr ""
+
+#: ../aviators/plugins/call-to-action/widgets.php:19
+msgid "Call to action"
+msgstr ""
+
+#: ../aviators/plugins/call-to-action/widgets.php:41
+msgid "Text"
+msgstr ""
+
+#: ../aviators/plugins/call-to-action/widgets.php:46
+msgid "Link"
+msgstr ""
+
+#: ../aviators/plugins/call-to-action/widgets.php:51
+msgid "Class"
+msgstr ""
+
+#: ../aviators/plugins/call-to-action/widgets.php:54
+#: ../aviators/plugins/properties/meta-submission.php:54
+#: ../aviators/plugins/properties/meta.php:226
+#: ../aviators/plugins/properties/properties.php:213
+msgid "GPS"
+msgstr ""
+
+#: ../aviators/plugins/call-to-action/widgets.php:55
+msgid "Key"
+msgstr ""
+
+#: ../aviators/plugins/faq/faq.php:8 ../aviators/plugins/faq/faq.php:20
+msgid "FAQs"
+msgstr ""
+
+#: ../aviators/plugins/faq/faq.php:9
+msgid "FAQ"
+msgstr ""
+
+#: ../aviators/plugins/faq/faq.php:11
+msgid "Add New FAQ"
+msgstr ""
+
+#: ../aviators/plugins/faq/faq.php:12
+msgid "Edit FAQ"
+msgstr ""
+
+#: ../aviators/plugins/faq/faq.php:13
+msgid "New FAQ"
+msgstr ""
+
+#: ../aviators/plugins/faq/faq.php:14
+msgid "All FAQs"
+msgstr ""
+
+#: ../aviators/plugins/faq/faq.php:15
+msgid "View FAQ"
+msgstr ""
+
+#: ../aviators/plugins/faq/faq.php:16
+msgid "Search FAQ"
+msgstr ""
+
+#: ../aviators/plugins/faq/faq.php:17
+msgid "No FAQs found"
+msgstr ""
+
+#: ../aviators/plugins/faq/faq.php:18
+msgid "No FAQs found in Trash"
+msgstr ""
+
+#: ../aviators/plugins/faq/faq.php:45
+msgid "Categories"
+msgstr ""
+
+#: ../aviators/plugins/faq/faq.php:46 ../aviators/plugins/faq/faq.php:55
+msgid "Category"
+msgstr ""
+
+#: ../aviators/plugins/faq/faq.php:47
+msgid "Search Category"
+msgstr ""
+
+#: ../aviators/plugins/faq/faq.php:48
+msgid "All Categories"
+msgstr ""
+
+#: ../aviators/plugins/faq/faq.php:49
+msgid "Parent Category"
+msgstr ""
+
+#: ../aviators/plugins/faq/faq.php:50
+msgid "Parent Category:"
+msgstr ""
+
+#: ../aviators/plugins/faq/faq.php:51
+msgid "Edit Category"
+msgstr ""
+
+#: ../aviators/plugins/faq/faq.php:52
+msgid "Update Category"
+msgstr ""
+
+#: ../aviators/plugins/faq/faq.php:53
+msgid "Add New Category"
+msgstr ""
+
+#: ../aviators/plugins/faq/faq.php:54
+msgid "New Category"
+msgstr ""
+
+#: ../aviators/plugins/landlords/landlords.php:11
+#: ../aviators/plugins/landlords/landlords.php:25
+#: ../aviators/plugins/properties/meta.php:92
+msgid "Landlord"
+msgstr ""
+
+#: ../aviators/plugins/landlords/landlords.php:24
+#: ../aviators/plugins/landlords/landlords.php:36
+msgid "Landlords"
+msgstr ""
+
+#: ../aviators/plugins/landlords/landlords.php:27
+msgid "Add New Landlord"
+msgstr ""
+
+#: ../aviators/plugins/landlords/landlords.php:28
+msgid "Edit Landlord"
+msgstr ""
+
+#: ../aviators/plugins/landlords/landlords.php:29
+msgid "New Landlord"
+msgstr ""
+
+#: ../aviators/plugins/landlords/landlords.php:30
+msgid "All Landlords"
+msgstr ""
+
+#: ../aviators/plugins/landlords/landlords.php:31
+msgid "View Landlord"
+msgstr ""
+
+#: ../aviators/plugins/landlords/landlords.php:32
+msgid "Search Landlord"
+msgstr ""
+
+#: ../aviators/plugins/landlords/landlords.php:33
+msgid "No landlords found"
+msgstr ""
+
+#: ../aviators/plugins/landlords/landlords.php:34
+msgid "No landlords found in Trash"
+msgstr ""
+
+#: ../aviators/plugins/landlords/meta.php:4
+msgid "First Name"
+msgstr ""
+
+#: ../aviators/plugins/landlords/meta.php:14
+msgid "Last Name"
+msgstr ""
+
+#: ../aviators/plugins/landlords/meta.php:34
+msgid "City"
+msgstr ""
+
+#: ../aviators/plugins/landlords/meta.php:44
+msgid "ZIP"
+msgstr ""
+
+#: ../aviators/plugins/landlords/meta.php:54
+msgid "Country"
+msgstr ""
+
+#: ../aviators/plugins/landlords/meta.php:94
+msgid "Owned Properties"
+msgstr ""
+
+#: ../aviators/plugins/landlords/meta.php:105
+msgid "View on front end"
+msgstr ""
+
+#: ../aviators/plugins/landlords/meta.php:111
+msgid "Nothing"
+msgstr ""
+
+#: ../aviators/plugins/partners/partners.php:12
+#: ../aviators/plugins/partners/partners.php:24
+#: ../aviators/plugins/partners/widgets/partners.php:10
+#: ../aviators/plugins/partners/widgets/partners.php:19
+msgid "Partners"
+msgstr ""
+
+#: ../aviators/plugins/partners/partners.php:13
+msgid "Partner"
+msgstr ""
+
+#: ../aviators/plugins/partners/partners.php:15
+msgid "Add New Partner"
+msgstr ""
+
+#: ../aviators/plugins/partners/partners.php:16
+msgid "Edit Partner"
+msgstr ""
+
+#: ../aviators/plugins/partners/partners.php:17
+msgid "New Partner"
+msgstr ""
+
+#: ../aviators/plugins/partners/partners.php:18
+msgid "All Partners"
+msgstr ""
+
+#: ../aviators/plugins/partners/partners.php:19
+msgid "View Partner"
+msgstr ""
+
+#: ../aviators/plugins/partners/partners.php:20
+msgid "Search Partner"
+msgstr ""
+
+#: ../aviators/plugins/partners/partners.php:21
+msgid "No Partners found"
+msgstr ""
+
+#: ../aviators/plugins/partners/partners.php:22
+msgid "No Partners found in Trash"
+msgstr ""
+
+#: ../aviators/plugins/partners/partners.php:48
+msgid "Partner Options"
+msgstr ""
+
+#: ../aviators/plugins/partners/widgets/partners.php:7
+msgid "Aviators: Partners"
+msgstr ""
+
+#: ../aviators/plugins/pricing/pricing.php:5
+#: ../aviators/plugins/pricing/pricing.php:17
+msgid "Pricings"
+msgstr ""
+
+#: ../aviators/plugins/pricing/pricing.php:6
+msgid "Pricing"
+msgstr ""
+
+#: ../aviators/plugins/pricing/pricing.php:8
+msgid "Add New Pricing"
+msgstr ""
+
+#: ../aviators/plugins/pricing/pricing.php:9
+msgid "Edit Pricing"
+msgstr ""
+
+#: ../aviators/plugins/pricing/pricing.php:10
+msgid "New Pricing"
+msgstr ""
+
+#: ../aviators/plugins/pricing/pricing.php:11
+msgid "All Pricings"
+msgstr ""
+
+#: ../aviators/plugins/pricing/pricing.php:12
+msgid "View Pricing"
+msgstr ""
+
+#: ../aviators/plugins/pricing/pricing.php:13
+msgid "Search Pricing"
+msgstr ""
+
+#: ../aviators/plugins/pricing/pricing.php:14
+msgid "No Pricings found"
+msgstr ""
+
+#: ../aviators/plugins/pricing/pricing.php:15
+msgid "No Pricings found in Trash"
+msgstr ""
+
+#: ../aviators/plugins/properties/enquire.php:28
+msgid "Link to property"
+msgstr ""
+
+#: ../aviators/plugins/properties/enquire.php:32
+#: ../aviators/plugins/properties/templates/properties/enquire.twig:21
+#: ../aviators/plugins/properties/templates/properties/sort.twig:38
+msgid "Name"
+msgstr ""
+
+#: ../aviators/plugins/properties/enquire.php:40
+#: ../aviators/plugins/properties/templates/properties/enquire.twig:49
+#: ../aviators/plugins/properties/templates/properties/sort.twig:39
+msgid "Date"
+msgstr ""
+
+#: ../aviators/plugins/properties/enquire.php:44
+#: ../aviators/plugins/properties/templates/properties/enquire.twig:63
+msgid "Date From"
+msgstr ""
+
+#: ../aviators/plugins/properties/enquire.php:48
+#: ../aviators/plugins/properties/templates/properties/enquire.twig:76
+msgid "Date To"
+msgstr ""
+
+#: ../aviators/plugins/properties/enquire.php:56
+#: ../aviators/plugins/properties/templates/properties/enquire.twig:103
+msgid "Message"
+msgstr ""
+
+#: ../aviators/plugins/properties/enquire.php:59
+#: ../aviators/plugins/properties/properties.php:144
+#: ../aviators/plugins/properties/properties.php:153
+#: ../aviators/plugins/properties/properties.php:211
+#: ../aviators/plugins/properties/templates/properties/filter-horizontal.twig:28
+#: ../aviators/plugins/properties/templates/properties/filter.twig:17
+#: ../aviators/plugins/properties/templates/properties/form-content.twig:127
+#: ../aviators/plugins/properties/templates/properties/overview.twig:45
+#: ../templates/properties/form-content.twig:129
+msgid "Location"
+msgstr ""
+
+#: ../aviators/plugins/properties/enquire.php:94
+msgid "Your enquire was successfully sent."
+msgstr ""
+
+#: ../aviators/plugins/properties/enquire.php:97
+msgid "An error occured. Your enquire can not be sent."
+msgstr ""
+
+#: ../aviators/plugins/properties/meta-submission.php:4
+#: ../aviators/plugins/properties/meta.php:155
+#: ../aviators/plugins/properties/properties.php:210
+#: ../aviators/plugins/properties/templates/properties/overview.twig:17
+#: ../aviators/plugins/properties/templates/properties/sort.twig:40
+msgid "Price"
+msgstr ""
+
+#: ../aviators/plugins/properties/meta-submission.php:18
+#: ../aviators/plugins/properties/meta.php:175
+#: ../aviators/plugins/properties/templates/properties/overview.twig:52
+#: ../aviators/plugins/properties/templates/properties/sort.twig:47
+msgid "Bathrooms"
+msgstr ""
+
+#: ../aviators/plugins/properties/meta-submission.php:29
+#: ../aviators/plugins/properties/meta.php:195
+#: ../aviators/plugins/properties/templates/properties/overview.twig:61
+#: ../aviators/plugins/properties/templates/properties/sort.twig:43
+msgid "Bedrooms"
+msgstr ""
+
+#: ../aviators/plugins/properties/meta-submission.php:40
+#: ../aviators/plugins/properties/meta.php:215
+#: ../aviators/plugins/properties/templates/properties/map-infobox.twig:18
+#: ../aviators/plugins/properties/templates/properties/overview.twig:69
+#: ../aviators/plugins/properties/templates/properties/property-box-small.twig:55
+#: ../aviators/plugins/properties/templates/properties/property-row.twig:40
+msgid "Area"
+msgstr ""
+
+#: ../aviators/plugins/properties/meta-submission.php:62
+#: ../aviators/plugins/properties/meta.php:232
+msgid "Location search"
+msgstr ""
+
+#: ../aviators/plugins/properties/meta-submission.php:65
+#: ../aviators/plugins/properties/meta.php:234
+msgid "Search location"
+msgstr ""
+
+#: ../aviators/plugins/properties/meta-submission.php:70
+#: ../aviators/plugins/properties/meta-submission.php:71
+#: ../aviators/plugins/properties/meta.php:239
+#: ../aviators/plugins/properties/meta.php:240
+#: ../aviators/plugins/properties/widgets/map_properties.php:74
+#: ../aviators/plugins/properties/widgets/map_simple_properties.php:74
+msgid "Latitude"
+msgstr ""
+
+#: ../aviators/plugins/properties/meta-submission.php:76
+#: ../aviators/plugins/properties/meta-submission.php:77
+#: ../aviators/plugins/properties/meta.php:245
+#: ../aviators/plugins/properties/meta.php:246
+#: ../aviators/plugins/properties/widgets/map_properties.php:79
+#: ../aviators/plugins/properties/widgets/map_simple_properties.php:79
+msgid "Longitude"
+msgstr ""
+
+#: ../aviators/plugins/properties/meta.php:28
+msgid "Please fill the address (Title field)."
+msgstr ""
+
+#: ../aviators/plugins/properties/meta.php:35
+msgid "Please check the location (Locations checkboxes)."
+msgstr ""
+
+#: ../aviators/plugins/properties/meta.php:40
+msgid "Please check just one location (Locations checkbox)."
+msgstr ""
+
+#: ../aviators/plugins/properties/meta.php:52
+msgid "Geocode was not successful for the following reason: "
+msgstr ""
+
+#: ../aviators/plugins/properties/meta.php:63
+#: ../aviators/plugins/properties/templates/properties/overview.twig:9
+msgid "ID"
+msgstr ""
+
+#: ../aviators/plugins/properties/meta.php:70
+msgid "Leave empty for default ID."
+msgstr ""
+
+#: ../aviators/plugins/properties/meta.php:77
+#: ../aviators/plugins/properties/properties.php:209
+msgid "Optional Title"
+msgstr ""
+
+#: ../aviators/plugins/properties/meta.php:84
+msgid "It will be used in widgets and properties grid & rows layout."
+msgstr ""
+
+#: ../aviators/plugins/properties/meta.php:144
+msgid "Custom text instead of price"
+msgstr ""
+
+#: ../aviators/plugins/properties/meta.php:165
+msgid "Price suffix"
+msgstr ""
+
+#: ../aviators/plugins/properties/meta.php:185
+msgid "Hide baths"
+msgstr ""
+
+#: ../aviators/plugins/properties/meta.php:205
+msgid "Hide beds"
+msgstr ""
+
+#: ../aviators/plugins/properties/meta.php:256
+#: ../aviators/plugins/properties/properties.php:215
+#: ../aviators/plugins/properties/widgets/carousel_properties.php:66
+msgid "Featured"
+msgstr ""
+
+#: ../aviators/plugins/properties/meta.php:266
+#: ../aviators/plugins/properties/properties.php:216
+#: ../aviators/plugins/properties/widgets/carousel_properties.php:80
+#: ../aviators/plugins/properties/templates/properties/property-box-small.twig:34
+msgid "Reduced"
+msgstr ""
+
+#: ../aviators/plugins/properties/meta.php:275
+msgid "Slider image"
+msgstr ""
+
+#: ../aviators/plugins/properties/meta.php:286
+msgid "Images"
+msgstr ""
+
+#: ../aviators/plugins/properties/meta.php:296
+msgid "Insert"
+msgstr ""
+
+#: ../aviators/plugins/properties/meta.php:301
+#: ../aviators/plugins/properties/templates/properties/form-content.twig:13
+#: ../templates/properties/form-content.twig:13
+msgid "Remove"
+msgstr ""
+
+#: ../aviators/plugins/properties/meta.php:308
+msgid "Add"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:23
+#: ../aviators/plugins/properties/properties.php:350
+msgid "Property Options"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:52
+#: ../aviators/plugins/properties/properties.php:64
+#: ../aviators/plugins/properties/widgets/general_properties.php:19
+#: ../templates/archive-property.twig:5
+msgid "Properties"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:53
+msgid "Property"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:55
+msgid "Add New Property"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:56
+msgid "Edit Property"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:57
+msgid "New Property"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:58
+msgid "All Properties"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:59
+msgid "View Property"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:60
+msgid "Search Property"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:61
+msgid "No properties found"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:62
+msgid "No properties found in Trash"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:74
+#: ../aviators/plugins/agencies/templates/agencies/widget.twig:27
+msgid "properties"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:89
+msgid "Contract Types"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:90
+#: ../aviators/plugins/properties/properties.php:99
+#: ../aviators/plugins/properties/properties.php:214
+#: ../aviators/plugins/properties/templates/properties/form-content.twig:97
+#: ../aviators/plugins/properties/templates/properties/form-content.twig:117
+#: ../templates/properties/form-content.twig:119
+msgid "Contract Type"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:91
+msgid "Search Contract Types"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:92
+msgid "All Contract Types"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:93
+msgid "Parent Contract Type"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:94
+msgid "Parent Contract Type:"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:95
+msgid "Edit Contract Type"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:96
+msgid "Update Contract Type"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:97
+msgid "Add New Contract Type"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:98
+msgid "New Contract Type"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:109
+msgid "property-contract"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:116
+msgid "Property Types"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:117
+#: ../aviators/plugins/properties/properties.php:126
+#: ../aviators/plugins/properties/properties.php:212
+msgid "Property Type"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:118
+msgid "Search Property Types"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:119
+msgid "All Property Types"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:120
+msgid "Parent Property Type"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:121
+msgid "Parent Property Type:"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:122
+msgid "Edit Property Type"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:123
+msgid "Update Property Type"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:124
+msgid "Add New Property Type"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:125
+msgid "New Property Type"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:136
+msgid "property-type"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:143
+msgid "Locations"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:145
+msgid "Search Location"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:146
+msgid "All Locations"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:147
+msgid "Parent Location"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:148
+msgid "Parent Location:"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:149
+msgid "Edit Location"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:150
+msgid "Update Location"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:151
+msgid "Add New Location"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:152
+msgid "New Location"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:162
+msgid "location"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:170
+#: ../aviators/plugins/properties/templates/properties/form-content.twig:161
+#: ../templates/properties/form-content.twig:163
+msgid "Amenities"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:171
+#: ../aviators/plugins/properties/properties.php:180
+msgid "Amenity"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:172
+msgid "Search Amenity"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:173
+msgid "All Amenities"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:174
+msgid "Parent Amenity"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:175
+msgid "Parent Amenity:"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:176
+msgid "Edit Amenity"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:177
+msgid "Update Amenity"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:178
+msgid "Add New Amenity"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:179
+msgid "New Amenity"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:190
+msgid "amenity"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:208
+msgid "Thumbnail"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:218
+msgid "Author"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:244
+#: ../aviators/plugins/properties/properties.php:250
+#: ../aviators/plugins/properties/properties.php:258
+#: ../aviators/plugins/properties/properties.php:268
+#: ../aviators/plugins/properties/properties.php:306
+msgid "Undefined"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:279
+#: ../aviators/plugins/properties/properties.php:298
+msgid "On"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:282
+#: ../aviators/plugins/properties/properties.php:301
+msgid "Off"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:289
+msgid "Missing"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:317
+msgid "Not assigned"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:402
+msgid "Edit"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:409
+msgid "Delete"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:416
+msgid "View"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:423
+msgid "Publish"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:435
+msgid "Unpublish"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:488
+#: ../aviators/plugins/submission/renderers.php:60
+msgid "You are not post owner."
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:508
+msgid "You need to pay for submission item in order to publish it"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:520
+msgid "Administrator approval is required to publish the post"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:611
+msgid "Post has been successfully updated."
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:615
+msgid "Post has been successfully created."
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:659
+#: ../aviators/plugins/properties/properties.php:730
+msgid "Image can not be uploaded"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:807
+msgid "Post has been successfully deleted."
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:866
+msgid "Post's thumbnail has been successfully removed."
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:884
+msgid "Post has been successfully unpublished."
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:888
+msgid "Post is pending admin review."
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:892
+msgid "Post has been successfully published."
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:1124
+#: ../aviators/plugins/properties/properties.php:1162
+msgid "Call to action URL"
+msgstr ""
+
+#: ../aviators/plugins/properties/properties.php:1139
+#: ../aviators/plugins/properties/properties.php:1173
+msgid "Call to action text"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/carousel_properties.php:7
+msgid "Aviators: Carousel Properties"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/carousel_properties.php:10
+#: ../aviators/plugins/properties/widgets/carousel_properties.php:20
+msgid "Carousel Properties"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/carousel_properties.php:60
+msgid "New"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/carousel_properties.php:73
+msgid "Random"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/enquire_properties.php:7
+msgid "Aviators: Enquire Property"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/enquire_properties.php:10
+msgid "Enquire"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/enquire_properties.php:19
+msgid "Enquire Now"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/featured_properties.php:7
+msgid "Aviators: Featured Properties"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/featured_properties.php:10
+#: ../aviators/plugins/properties/widgets/featured_properties.php:19
+#: ../aviators/plugins/properties/widgets/featured_properties_large.php:19
+msgid "Featured Properties"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/featured_properties.php:48
+#: ../aviators/plugins/properties/widgets/featured_properties_large.php:44
+#: ../aviators/plugins/properties/widgets/general_properties.php:138
+#: ../aviators/plugins/properties/widgets/most_recent_properties.php:48
+#: ../aviators/plugins/properties/widgets/reduced_properties.php:48
+msgid "Shuffle"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/featured_properties_large.php:7
+msgid "Aviators: Featured Properties Large"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/featured_properties_large.php:10
+msgid "Featured Properties Large"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/general_properties.php:7
+msgid "Aviators: General Properties"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/general_properties.php:10
+msgid "General Properties"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/general_properties.php:50
+msgid "Select Random"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/general_properties.php:52
+msgid "This option will override any other filtering criteria"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/general_properties.php:58
+msgid "Filter by Property Type"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/general_properties.php:80
+msgid "Filter by Contract"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/general_properties.php:103
+msgid "Filter by Location"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/general_properties.php:144
+msgid "Display"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/general_properties.php:147
+msgid "Row"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/general_properties.php:148
+msgid "Grid"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/general_properties.php:149
+msgid "Sidebar"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/map_properties.php:7
+msgid "Aviators: Map Properties Advanced"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/map_properties.php:10
+#: ../aviators/plugins/properties/widgets/map_simple_properties.php:10
+msgid "Map Properties"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/map_properties.php:84
+#: ../aviators/plugins/properties/widgets/map_simple_properties.php:84
+msgid "Zoom"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/map_properties.php:89
+#: ../aviators/plugins/properties/widgets/map_simple_properties.php:89
+msgid "Height"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/map_properties.php:93
+#: ../aviators/plugins/properties/widgets/map_simple_properties.php:94
+msgid "Show filter"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/map_properties.php:98
+msgid "Horizontal filter"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/map_properties.php:103
+#: ../aviators/plugins/properties/widgets/map_simple_properties.php:99
+msgid "Enable geolocation"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/map_properties.php:108
+msgid "Map filtering"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/map_simple_properties.php:7
+msgid "Aviators: Map Properties"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/most_recent_properties.php:7
+msgid "Aviators: Most Recent Properties"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/most_recent_properties.php:10
+#: ../aviators/plugins/properties/widgets/most_recent_properties.php:19
+msgid "Most Recent Properties"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/property_filter.php:7
+msgid "Aviators:Property Filter"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/property_filter.php:10
+#: ../aviators/plugins/properties/widgets/property_filter.php:19
+msgid "Property Filter"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/reduced_properties.php:7
+msgid "Aviators: Reduced Properties"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/reduced_properties.php:10
+#: ../aviators/plugins/properties/widgets/reduced_properties.php:19
+msgid "Reduced Properties"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/slider_properties.php:7
+msgid "Aviators: Property Slider"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/slider_properties.php:10
+msgid "Property slider"
+msgstr ""
+
+#: ../aviators/plugins/properties/widgets/slider_properties.php:28
+msgid "Properties - property IDs (eg. 11,25,36)"
+msgstr ""
+
+#: ../aviators/plugins/submission/meta.php:4
+msgid "User ID"
+msgstr ""
+
+#: ../aviators/plugins/submission/meta.php:26
+msgid "Cost"
+msgstr ""
+
+#: ../aviators/plugins/submission/meta.php:37
+msgid "Post ID"
+msgstr ""
+
+#: ../aviators/plugins/submission/meta.php:48
+msgid "Payer ID"
+msgstr ""
+
+#: ../aviators/plugins/submission/meta.php:59
+msgid "Token"
+msgstr ""
+
+#: ../aviators/plugins/submission/properties.php:12
+msgid "You need to login to access this page."
+msgstr ""
+
+#: ../aviators/plugins/submission/renderers.php:34
+#: ../aviators/plugins/submission/renderers.php:67
+#: ../aviators/plugins/submission/renderers.php:96
+#: ../aviators/plugins/submission/utils.php:22
+msgid "There are no defined custom post types for submission system."
+msgstr ""
+
+#: ../aviators/plugins/submission/renderers.php:104
+msgid "No Legal Agreement selected!"
+msgstr ""
+
+#: ../aviators/plugins/submission/return.php:40
+msgid "Submission has been successfully published. Thanks!"
+msgstr ""
+
+#: ../aviators/plugins/submission/return.php:44
+msgid "Submission has not been paid yet."
+msgstr ""
+
+#: ../aviators/plugins/submission/submission.php:12
+#: ../aviators/plugins/submission/submission.php:26
+msgid "Transaction"
+msgstr ""
+
+#: ../aviators/plugins/submission/submission.php:25
+#: ../aviators/plugins/submission/submission.php:37
+msgid "Transactions"
+msgstr ""
+
+#: ../aviators/plugins/submission/submission.php:28
+msgid "Add New Transaction"
+msgstr ""
+
+#: ../aviators/plugins/submission/submission.php:29
+msgid "Edit Transaction"
+msgstr ""
+
+#: ../aviators/plugins/submission/submission.php:30
+msgid "New Transaction"
+msgstr ""
+
+#: ../aviators/plugins/submission/submission.php:31
+msgid "All Transactions"
+msgstr ""
+
+#: ../aviators/plugins/submission/submission.php:32
+msgid "View Transaction"
+msgstr ""
+
+#: ../aviators/plugins/submission/submission.php:33
+msgid "Search Transaction"
+msgstr ""
+
+#: ../aviators/plugins/submission/submission.php:34
+msgid "No transactions found"
+msgstr ""
+
+#: ../aviators/plugins/submission/submission.php:35
+msgid "No Transaction found in Trash"
+msgstr ""
+
+#: ../launcher/launcher.php:53
+msgid "Hydra"
+msgstr ""
+
+#: ../launcher/launcher.php:59
+msgid "Demo Content"
+msgstr ""
+
+#: ../launcher/launcher.php:65
+msgid "Widget Data"
+msgstr ""
+
+#: ../launcher/launcher.php:71
+msgid "Widget Logic"
+msgstr ""
+
+#: ../launcher/launcher.php:95
+msgid "One-Click Install"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:133
+#: ../launcher/importers/content-import.php:142
+#: ../launcher/importers/content-import.php:193
+#: ../launcher/importers/content-import.php:197
+#: ../launcher/importers/content-import.php:206
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: ../launcher/importers/content-import.php:134
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: ../launcher/importers/content-import.php:177
+msgid "All done."
+msgstr ""
+
+#: ../launcher/importers/content-import.php:177
+msgid "Have fun!"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:178
+msgid "Remember to update the passwords and roles of imported users."
+msgstr ""
+
+#: ../launcher/importers/content-import.php:198
+#, php-format
+msgid ""
+"The export file could not be found at <code>%s</code>. It is likely that "
+"this was caused by a permissions problem."
+msgstr ""
+
+#: ../launcher/importers/content-import.php:214
+#, php-format
+msgid ""
+"This WXR file (version %s) may not be supported by this version of the "
+"importer. Please consider updating."
+msgstr ""
+
+#: ../launcher/importers/content-import.php:239
+#, php-format
+msgid ""
+"Failed to import author %s. Their posts will be attributed to the current "
+"user."
+msgstr ""
+
+#: ../launcher/importers/content-import.php:265
+msgid "Assign Authors"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:266
+msgid ""
+"To make it easier for you to edit and save the imported content, you may "
+"want to reassign the author of the imported item to an existing user of this "
+"site. For example, you may want to import all the entries as <code>admin</"
+"code>s entries."
+msgstr ""
+
+#: ../launcher/importers/content-import.php:268
+#, php-format
+msgid ""
+"If a new user is created by WordPress, a new password will be randomly "
+"generated and the new user&#8217;s role will be set as %s. Manually changing "
+"the new user&#8217;s details will be necessary."
+msgstr ""
+
+#: ../launcher/importers/content-import.php:278
+msgid "Import Attachments"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:281
+msgid "Download and import file attachments"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:298
+msgid "Import author:"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:309
+msgid "or create new user with login name:"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:312
+msgid "as a new user:"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:320
+msgid "assign posts to an existing user:"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:322
+msgid "or assign posts to an existing user:"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:323
+msgid "- Select -"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:373
+#, php-format
+msgid ""
+"Failed to create new user for %s. Their posts will be attributed to the "
+"current user."
+msgstr ""
+
+#: ../launcher/importers/content-import.php:424
+#, php-format
+msgid "Failed to import category %s"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:464
+#, php-format
+msgid "Failed to import post tag %s"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:510
+#: ../launcher/importers/content-import.php:651
+#, php-format
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:536
+#, php-format
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:558
+#, php-format
+msgid "%s &#8220;%s&#8221; already exists."
+msgstr ""
+
+#: ../launcher/importers/content-import.php:617
+#, php-format
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:782
+msgid "Menu item skipped due to missing menu slug"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:789
+#, php-format
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:852
+msgid "Fetching attachments is not enabled"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:865
+msgid "Invalid file type"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:909
+msgid "Remote server did not respond"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:915
+#, php-format
+msgid "Remote server returned error response %1$d %2$s"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:922
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:927
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:933
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:1032
+msgid "Import WordPress"
+msgstr ""
+
+#: ../launcher/importers/content-import.php:1039
+#, php-format
+msgid ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
+msgstr ""
+
+#: ../launcher/importers/content-import.php:1054
+msgid ""
+"Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import "
+"the posts, pages, comments, custom fields, categories, and tags into this "
+"site."
+msgstr ""
+
+#: ../launcher/importers/content-import.php:1055
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr ""
+
+#: ../launcher/importers/content-import.php:1129
+msgid ""
+"Import <strong>posts, pages, comments, custom fields, categories, and tags</"
+"strong> from a WordPress export file."
+msgstr ""
+
+#: ../launcher/template/launcher.php:11
+msgid "Once Click Installation"
+msgstr ""
+
+#: ../launcher/template/launcher.php:15
+msgid ""
+"Dont start this process before you have <strong>installed</strong> and "
+"<strong>activated</strong> all the required plugins!"
+msgstr ""
+
+#: ../launcher/template/launcher.php:16
+msgid ""
+"Note that this process might overwrite your existing installation settings, "
+"use only on fresh installations!"
+msgstr ""
+
+#: ../launcher/template/launcher.php:17
+msgid ""
+"Note that some steps might execute for several minutes, do not reload this "
+"page, until the process is done!"
+msgstr ""
+
+#: ../launcher/template/launcher.php:18
+msgid ""
+"Do not run this installation multiple times, all the settings will be "
+"reverted to defaults!"
+msgstr ""
+
+#: ../launcher/template/launcher.php:23
+msgid "Start Demo Setup"
+msgstr ""
+
+#: ../launcher/template/launcher.php:31
+msgid "Show Report"
+msgstr ""
+
+#: ../settings/customization.php:10
+msgid "General"
+msgstr ""
+
+#: ../settings/customization.php:14
+msgid "Hide palette"
+msgstr ""
+
+#: ../settings/customization.php:20
+msgid "Layout"
+msgstr ""
+
+#: ../settings/customization.php:22 ../templates/helpers/palette.twig:65
+msgid "Wide"
+msgstr ""
+
+#: ../settings/customization.php:23 ../templates/helpers/palette.twig:71
+msgid "Boxed"
+msgstr ""
+
+#: ../settings/customization.php:29 ../settings/customization.php:100
+msgid "Variant"
+msgstr ""
+
+#: ../settings/customization.php:31 ../templates/helpers/palette.twig:50
+msgid "Blue"
+msgstr ""
+
+#: ../settings/customization.php:32 ../templates/helpers/palette.twig:56
+msgid "Gray Blue"
+msgstr ""
+
+#: ../settings/customization.php:33 ../templates/helpers/palette.twig:37
+msgid "Brown"
+msgstr ""
+
+#: ../settings/customization.php:34 ../templates/helpers/palette.twig:43
+msgid "Gray Brown"
+msgstr ""
+
+#: ../settings/customization.php:35
+msgid "Brown Dark"
+msgstr ""
+
+#: ../settings/customization.php:36
+msgid "Gray Brown Dark"
+msgstr ""
+
+#: ../settings/customization.php:37 ../templates/helpers/palette.twig:35
+msgid "Red"
+msgstr ""
+
+#: ../settings/customization.php:38 ../templates/helpers/palette.twig:41
+msgid "Gray Red"
+msgstr ""
+
+#: ../settings/customization.php:39 ../templates/helpers/palette.twig:36
+msgid "Magenta"
+msgstr ""
+
+#: ../settings/customization.php:40 ../templates/helpers/palette.twig:42
+msgid "Gray Magenta"
+msgstr ""
+
+#: ../settings/customization.php:41 ../templates/helpers/palette.twig:38
+msgid "Orange"
+msgstr ""
+
+#: ../settings/customization.php:42 ../templates/helpers/palette.twig:44
+msgid "Gray Orange"
+msgstr ""
+
+#: ../settings/customization.php:43 ../templates/helpers/palette.twig:51
+msgid "Violet"
+msgstr ""
+
+#: ../settings/customization.php:44 ../templates/helpers/palette.twig:57
+msgid "Gray Violet"
+msgstr ""
+
+#: ../settings/customization.php:45 ../templates/helpers/palette.twig:49
+msgid "Turquiose"
+msgstr ""
+
+#: ../settings/customization.php:46 ../templates/helpers/palette.twig:55
+msgid "Gray Turquiose"
+msgstr ""
+
+#: ../settings/customization.php:47 ../templates/helpers/palette.twig:48
+msgid "Green"
+msgstr ""
+
+#: ../settings/customization.php:48 ../templates/helpers/palette.twig:54
+msgid "Gray Green"
+msgstr ""
+
+#: ../settings/customization.php:49
+msgid "Green Light"
+msgstr ""
+
+#: ../settings/customization.php:50
+msgid "Gray Green Light"
+msgstr ""
+
+#: ../settings/customization.php:55
+msgid "Pattern"
+msgstr ""
+
+#: ../settings/customization.php:57
+msgid "Cloth Alike"
+msgstr ""
+
+#: ../settings/customization.php:58
+msgid "Corrugation"
+msgstr ""
+
+#: ../settings/customization.php:59
+msgid "Diagonal Noise"
+msgstr ""
+
+#: ../settings/customization.php:60
+msgid "Dust"
+msgstr ""
+
+#: ../settings/customization.php:61
+msgid "Fabric Plaid"
+msgstr ""
+
+#: ../settings/customization.php:62
+msgid "Farmer"
+msgstr ""
+
+#: ../settings/customization.php:63
+msgid "Grid Noise"
+msgstr ""
+
+#: ../settings/customization.php:64
+msgid "Lghtmesh"
+msgstr ""
+
+#: ../settings/customization.php:65
+msgid "PW Maze White"
+msgstr ""
+
+#: ../settings/customization.php:66
+msgid "None"
+msgstr ""
+
+#: ../settings/customization.php:73
+msgid "Top Bar"
+msgstr ""
+
+#: ../settings/customization.php:78
+msgid "Hide breadcrumb"
+msgstr ""
+
+#: ../settings/customization.php:84
+msgid "Hide user links"
+msgstr ""
+
+#: ../settings/customization.php:89
+msgid "Header"
+msgstr ""
+
+#: ../settings/customization.php:94
+msgid "Fixed"
+msgstr ""
+
+#: ../settings/customization.php:102 ../templates/helpers/palette.twig:10
+msgid "Light"
+msgstr ""
+
+#: ../settings/customization.php:103 ../templates/helpers/palette.twig:11
+msgid "Normal"
+msgstr ""
+
+#: ../settings/customization.php:104 ../templates/helpers/palette.twig:12
+msgid "Dark"
+msgstr ""
+
+#: ../settings/customization.php:111
+msgid "Logo"
+msgstr ""
+
+#: ../settings/customization.php:117
+msgid "Hide title"
+msgstr ""
+
+#: ../settings/customization.php:123
+msgid "Hide description"
+msgstr ""
+
+#: ../settings/customization.php:129
+msgid "Hide email"
+msgstr ""
+
+#: ../settings/customization.php:134
+msgid "Email value"
+msgstr ""
+
+#: ../settings/customization.php:140
+msgid "Hide phone"
+msgstr ""
+
+#: ../settings/customization.php:145
+msgid "Phone value"
+msgstr ""
+
+#: ../settings/customization.php:151
+msgid "Hide call to action button"
+msgstr ""
+
+#: ../aviators/core/plugins/settings/templates/settings/fields/image.twig:4
+msgid "Select Media"
+msgstr ""
+
+#: ../aviators/plugins/accounts/templates/accounts/login.twig:24
+#: ../templates/layout-login-register.twig:31
+msgid "Password"
+msgstr ""
+
+#: ../aviators/plugins/accounts/templates/accounts/register.twig:11
+#: ../templates/layout-login-register.twig:52
+msgid "Username"
+msgstr ""
+
+#: ../aviators/plugins/agencies/templates/agencies/widget.twig:31
+msgid "View profile"
+msgstr ""
+
+#: ../aviators/plugins/call-to-action/templates/call-to-action/widget.twig:14
+msgid "Read more"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/amenities.twig:4
+msgid "General amenities"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/enquire.twig:89
+msgid "Email"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/enquire.twig:116
+msgid "Send"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/filter-horizontal.twig:41
+#: ../aviators/plugins/properties/templates/properties/filter.twig:35
+#: ../aviators/plugins/properties/templates/properties/form-content.twig:137
+#: ../templates/properties/form-content.twig:139
+msgid "Sublocation"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/filter-horizontal.twig:55
+#: ../aviators/plugins/properties/templates/properties/filter.twig:59
+#: ../aviators/plugins/properties/templates/properties/form-content.twig:147
+#: ../templates/properties/form-content.twig:149
+msgid "District"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/filter-horizontal.twig:68
+#: ../aviators/plugins/properties/templates/properties/filter.twig:102
+msgid "Beds"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/filter-horizontal.twig:77
+#: ../aviators/plugins/properties/templates/properties/filter.twig:121
+msgid "Baths"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/filter-horizontal.twig:86
+#: ../aviators/plugins/properties/templates/properties/filter.twig:159
+msgid "Price From"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/filter-horizontal.twig:95
+#: ../aviators/plugins/properties/templates/properties/filter.twig:178
+msgid "Price To"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/filter-horizontal.twig:110
+#: ../aviators/plugins/properties/templates/properties/filter.twig:231
+msgid "Filter now!"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/filter.twig:140
+#: ../aviators/plugins/properties/templates/properties/overview.twig:39
+msgid "Contract"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/filter.twig:197
+msgid "Area From"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/filter.twig:209
+msgid "Area To"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/filter.twig:221
+msgid "Property ID"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/form-content.twig:7
+#: ../templates/properties/form-content.twig:7
+msgid "Featured image"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/form-content.twig:24
+#: ../templates/properties/form-content.twig:24
+msgid "Gallery"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/form-content.twig:67
+#: ../templates/properties/form-content.twig:78
+msgid "Add more"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/form-content.twig:86
+#: ../templates/properties/form-content.twig:98
+msgid "Description"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/map-infobox.twig:26
+msgid "View more"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/overview.twig:4
+msgid "Overview"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/overview.twig:77
+msgid "Rating"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/property-map.twig:2
+msgid "Map"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/sort.twig:32
+msgid "Sort by"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/sort.twig:58
+msgid "Order"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/sort.twig:63
+msgid "DESC"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/sort.twig:64
+msgid "ASC"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/widget-general.twig:14
+msgid "No properties found."
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/widget-large.twig:20
+msgid "Show all"
+msgstr ""
+
+#: ../aviators/plugins/properties/templates/properties/widget.twig:14
+msgid "No featured properties found."
+msgstr ""
+
+#: ../aviators/plugins/submission/templates/submission/add.twig:1
+msgid "Add submission"
+msgstr ""
+
+#: ../aviators/plugins/submission/templates/submission/add.twig:17
+msgid "Continue"
+msgstr ""
+
+#: ../aviators/plugins/submission/templates/submission/add.twig:29
+msgid "Close"
+msgstr ""
+
+#: ../aviators/plugins/submission/templates/submission/add.twig:35
+#: ../aviators/plugins/submission/templates/submission/edit.twig:13
+#: ../templates/submission/edit.twig:13
+msgid "Save"
+msgstr ""
+
+#: ../aviators/plugins/submission/templates/submission/index.twig:8
+msgid "Add new submission"
+msgstr ""
+
+#: ../aviators/plugins/submission/templates/submission/index.twig:17
+msgid "Image"
+msgstr ""
+
+#: ../aviators/plugins/submission/templates/submission/index.twig:19
+msgid "Created"
+msgstr ""
+
+#: ../aviators/plugins/submission/templates/submission/index.twig:21
+msgid "Actions"
+msgstr ""
+
+#: ../aviators/plugins/submission/templates/submission/index.twig:68
+msgid "No submisssions found."
+msgstr ""
+
+#: ../templates/404.twig:8
+msgid "The page cannot be found"
+msgstr ""
+
+#: ../templates/archive-agency.twig:13
+msgid "No agencies found."
+msgstr ""
+
+#: ../templates/archive-property.twig:39
+msgid "No posts found."
+msgstr ""
+
+#: ../templates/archive.twig:8
+#, python-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: ../templates/archive.twig:10
+#, python-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: ../templates/archive.twig:10
+msgid "F Y"
+msgstr ""
+
+#: ../templates/archive.twig:12
+#, python-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: ../templates/archive.twig:12
+msgid "Y"
+msgstr ""
+
+#: ../templates/archive.twig:14
+msgid "Archives"
+msgstr ""
+
+#: ../templates/comments.twig:12
+msgid "Comment navigation"
+msgstr ""
+
+#: ../templates/comments.twig:13
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../templates/comments.twig:14
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../templates/comments.twig:19
+msgid "Comments are closed."
+msgstr ""
+
+#: ../templates/search.twig:4
+msgid "Search Results for"
+msgstr ""
+
+#: ../templates/single-agency.twig:37
+msgid "About Agency"
+msgstr ""
+
+#: ../templates/single-agency.twig:47 ../templates/single-agent.twig:44
+msgid "Assigned Properties"
+msgstr ""
+
+#: ../templates/helpers/header.twig:56
+msgid "Toggle navigation"
+msgstr ""
+
+#: ../templates/helpers/palette.twig:3
+msgid "Toggle"
+msgstr ""
+
+#: ../templates/helpers/palette.twig:8
+msgid "Header styles"
+msgstr ""
+
+#: ../templates/helpers/palette.twig:17
+msgid "Patterns"
+msgstr ""
+
+#: ../templates/helpers/palette.twig:33
+msgid "Color variants"
+msgstr ""
+
+#: ../templates/helpers/palette.twig:39
+msgid "Brown dark"
+msgstr ""
+
+#: ../templates/helpers/palette.twig:45
+msgid "Gray Brown dark"
+msgstr ""
+
+#: ../templates/helpers/palette.twig:47
+msgid "Green light"
+msgstr ""
+
+#: ../templates/helpers/palette.twig:53
+msgid "Gray Green light"
+msgstr ""
+
+#: ../templates/helpers/palette.twig:62
+msgid "Layouts"
+msgstr ""
+
+#: ../templates/helpers/palette.twig:76
+msgid "Reset default"
+msgstr ""
+
+#: ../templates/helpers/searchform.twig:3
+msgid "Search"
+msgstr ""

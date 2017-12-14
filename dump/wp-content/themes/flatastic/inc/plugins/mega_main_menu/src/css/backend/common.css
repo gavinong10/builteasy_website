@@ -1,0 +1,725 @@
+/* bootstrap fixes */
+.modal-backdrop.fade.in
+{
+	display: none;
+}
+.modal.fade.in
+{
+	background-color: rgba(0,0,0, 0.5);
+}
+/* css tools */
+.bootstrap .no_left_margin
+{
+	margin-left: 0px;
+}
+.bootstrap .no_x_margin
+{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.float_holder:after 
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+.clearboth 
+{
+	clear: both;
+}
+.hidden_important
+{
+	display: none !important;
+	visibility: hidden !important;
+}
+.display_none
+{
+	display: none;
+}
+.bootstrap img
+{
+	max-width: 100%;
+}
+.mms_loading_indicator
+{
+	display: inline-block;
+	position: relative;
+	width: 38px;
+	height: 38px;
+}
+@keyframes spin {
+  to {
+    transform: rotate( 360deg );
+  }
+}
+.mms_loading_indicator:before
+{
+	content: ' ';
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+	border-style: solid;
+	border-width: 3px 3px 0px 0px;
+	border-top-color: #cccccc;
+	border-right-color: transparent !important;
+	border-bottom-color: transparent !important;
+	border-left-color: transparent !important;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-ms-border-radius: 100%;
+	-o-border-radius: 100%;
+	border-radius: 100%;
+	-webkit-animation: spin 1s linear infinite;
+	-moz-animation: spin 1s linear infinite;
+	-ms-animation: spin 1s linear infinite;
+	-o-animation: spin 1s linear infinite;
+	animation: spin 1s linear infinite;
+}
+/* colors */ 
+.bootstrap .mm_theme_options_form .save_shanges,
+.bootstrap .mm_theme_options,
+.bootstrap .mm_theme_options > *,
+.bootstrap .mm_theme_options .option *,
+.bootstrap .h_separator,
+.bootstrap .nav-tabs > li,
+.bootstrap .nav-tabs > li > a,
+.bootstrap .nav-tabs > li > a:hover,
+.bootstrap .nav-tabs > li > a:focus,
+.bootstrap .nav-tabs > li.active > a, 
+.bootstrap .nav-tabs > li.active > a:hover, 
+.bootstrap .nav-tabs > li.active > a:focus,
+.bootstrap .mm_theme_options .mm_content .tab-pane .panel .panel-heading a.accordion-toggle:before,
+.bootstrap .color_picker .wp-picker-container
+{
+	border-color: rgba(128,128,128, 0.3);
+}
+.bootstrap .mm_theme_options_form .mm_theme_options,
+.bootstrap .mm_theme_options_form .save_shanges,
+.bootstrap .mm_theme_options .mm_content .tab-pane .panel.row .panel-title a.accordion-toggle,
+.bootstrap .color_picker .wp-picker-container,
+.bootstrap .color_picker .wp-picker-container .wp-picker-holder .iris-border
+{
+	background-color: #f1f1f1;
+}
+.bootstrap .mm_theme_options .mm_content
+{
+	background-color: #ffffff;
+}
+.bootstrap .checkbox,
+.mm_checkbox
+{
+	background-color: transparent;
+}
+.bootstrap input[type="text"], 
+.bootstrap input[type="password"], 
+.bootstrap input[type="file"], 
+.bootstrap input[type="email"], 
+.bootstrap input[type="number"], 
+.bootstrap input[type="search"], 
+.bootstrap input[type="tel"], 
+.bootstrap input[type="url"], 
+.bootstrap textarea, 
+.bootstrap select
+{
+	border-color: #cccccc;
+}
+/* option_generator */
+.bootstrap .option.row
+{
+	padding-bottom: 25px;
+}
+.mm_content .bootstrap:last-child .option.row
+{
+	padding-bottom: 15px;
+}
+/*
+.mm_content .bootstrap .panel .option.row 
+{
+	padding-bottom: 20px;
+}
+*/
+.bootstrap .option .h_separator
+{
+	border-width: 1px 0px 0px 0px;
+	border-style: dotted;
+	margin-bottom: 3px;
+}
+.bootstrap .option .h_separator:last-child
+{
+	margin-bottom: 15px;
+}
+.bootstrap .option .section_caption
+{
+	font-size: 140%;
+	text-align: center;
+}
+.bootstrap .option .option_header .caption
+{
+	margin-bottom: 5px;
+	text-transform: capitalize;
+}
+.bootstrap .option .option_header .descr
+{
+	margin-bottom: 5px;
+	font-size: 11px;
+	line-height: 135%;
+	opacity: 0.8;
+}
+
+.bootstrap .option .option_field .mm_checkbox,
+.bootstrap .option .option_field .mm_radio
+{
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+.bootstrap .option .option_field .mm_checkbox label,
+.bootstrap .option .option_field .mm_radio label
+{
+	font-weight: normal;
+}
+.bootstrap .option .option_field .mm_checkbox label [type="checkbox"],
+.bootstrap .option .option_field .mm_radio label [type="radio"]
+{
+	margin: 0px 5px 0px 0px;
+}
+.bootstrap .option[class*="_html_type"] .option_field label input 
+{
+	visibility: hidden;
+} 
+.bootstrap .option.checkbox_type .option_field label input + *, 
+.bootstrap .option[class*="_html_type"] .option_field label input + * 
+{
+	opacity: 0.4;
+	max-width: 100%;
+}
+.bootstrap .option.checkbox_type .option_field label input:checked + *, 
+.bootstrap .option[class*="_html_type"] .option_field label input:checked + * 
+{
+	opacity: 1;
+}
+.bootstrap .option.multiplier_type > .option_field .multipler_pieces
+{
+	width: 160px;
+	margin-bottom: 15px;
+}
+.bootstrap .option.multiplier_type > .option_field .multipler_pieces input
+{
+	text-align: center;
+}
+.bootstrap .option.multiplier_type .multiplied_content > *
+{
+	position: relative;
+}
+.bootstrap .option.multiplier_type .multiplied_content > * .multiple_item_remover
+{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: block;
+	width: 14px;
+	height: 14px;
+	line-height: 14px;
+	font-size: 10px;
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+	background-color: #E74C3C;
+	color: #ECF0F1;
+	border-radius: 3px;
+	z-index: 2;
+}
+.bootstrap .option.icons_type .icon_preview
+{
+	text-align: center;
+	line-height: 27px;
+}
+.bootstrap .option.icons_type .icon_preview i
+{
+	font-size: 26px;
+	line-height: 26px;
+	width: 100%;
+}
+.bootstrap .option .input-group-btn .btn 
+{
+	width: 120px;
+}
+.bootstrap .wp-editor-area
+{
+	-webkit-box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+	box-sizing: border-box !important;
+}
+body #TB_title + #TB_title
+{
+	display: none;
+}
+body #TB_title:first-child
+{
+	display: block;
+}
+.bootstrap .gradient_selcetor .start_end
+{
+	line-height: 28px;
+	height: 28px;
+	text-align: right;
+}
+.bootstrap .gradient_selcetor .vertical_padding
+{
+	padding-top: 10px;
+}
+.bootstrap .gradient_selcetor .gradient_example 
+{
+/*
+	height: 30px;
+*/
+	line-height: 28px;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 3px;
+	cursor: pointer;
+	text-align: center;
+}
+.bootstrap .color_picker 
+{
+	position: relative;
+	min-height: 30px; 
+}
+.bootstrap .color_picker .wp-picker-container
+{
+	position: absolute;
+	z-index: 600;
+	border-width: 1px;
+	border-style: solid;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	border-radius: 3px;
+}
+.bootstrap .color_picker .wp-picker-container .wp-color-result
+{
+	white-space: nowrap;
+	top: 0px;
+	margin: 2px;
+	vertical-align: middle;
+}
+.bootstrap .color_picker .wp-picker-container .wp-color-result.wp-picker-open
+{
+	margin-right: 2px;
+}
+.bootstrap .color_picker .wp-picker-container .wp-picker-input-wrap
+{
+	margin-top: 2px;
+}
+.bootstrap .color_picker .wp-picker-container .wp-picker-input-wrap *
+{
+	vertical-align: middle;
+}
+.bootstrap .color_picker .wp-picker-container .wp-picker-input-wrap .wp-color-picker
+{
+	margin-right: 2px;
+}
+.bootstrap .color_picker .wp-picker-container .wp-picker-input-wrap .wp-picker-clear
+{
+	margin: 0px;
+}
+.bootstrap .color_picker .wp-picker-container .wp-picker-holder .iris-border
+{
+	border: 0px none;
+}
+.bootstrap .textarea 
+{
+	width: 100%;
+}
+/* theme options page */
+.bootstrap .mm_theme_page
+{
+	margin-top: 15px;
+}
+.bootstrap .mm_theme_options_form .theme_name
+{
+	font-size: 130%;
+	line-height: 24px;
+}
+.bootstrap .mm_theme_options_form .save_shanges
+{
+	border-width: 1px;
+	border-style: solid; 
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.bootstrap .mm_theme_options_form .save_shanges:first-child
+{
+	-webkit-border-radius: 3px 3px 0px 0px;
+	-moz-border-radius: 3px 3px 0px 0px;
+	-ms-border-radius: 3px 3px 0px 0px;
+	border-radius: 3px 3px 0px 0px;
+}
+.bootstrap .mm_theme_options_form .save_shanges:last-child
+{
+	-webkit-border-radius: 0px 0px 3px 3px;
+	-moz-border-radius: 0px 0px 3px 3px;
+	-ms-border-radius: 0px 0px 3px 3px;
+	border-radius: 0px 0px 3px 3px;
+}
+.bootstrap .mm_theme_options
+{
+	border-width: 0px 0px 0px 1px;
+	border-style: solid; 
+}
+.bootstrap .mm_theme_options .mm_navigation,
+.bootstrap:first-child > .option.row > * > .h_separator,
+.bootstrap .mm_theme_options .mm_navigation .menu_item a,
+.bootstrap .mm_theme_options .mm_navigation .menu_item a:hover,
+.bootstrap .mm_theme_options .mm_navigation .menu_item a:active
+{
+	border-width: 0px;
+	border-style: none; 
+}
+
+.bootstrap .mm_theme_options .mm_navigation
+{
+	padding: 0px;
+}
+.bootstrap .mm_theme_options .mm_navigation .menu_item
+{
+	float: none;
+	border-width: 0px 0px 1px 0px;
+	margin: 0px;
+	padding: 0px;
+	border-style: solid; 
+}
+.bootstrap .mm_theme_options .mm_navigation .menu_item a,
+.bootstrap .mm_theme_options .mm_navigation .menu_item a:hover,
+.bootstrap .mm_theme_options .mm_navigation .menu_item a:active
+{
+	position: relative;
+	padding-left: 35px;
+	padding-right: 5px;
+	margin: 0px -1px 0px 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-ms-border-radius: 0px;
+	border-radius: 0px;
+	z-index: 1;
+}
+
+.bootstrap .mm_theme_options .mm_navigation .menu_item a i
+{
+	position: absolute;
+	left: 8px;
+	width: 20px;
+	display: inline-block;
+	text-align: center;
+}
+.bootstrap .mm_theme_options .mm_content
+{
+	border-width: 0px 1px;
+	border-style: solid; 
+	min-height: 500px;
+	display: block !important;
+}
+.bootstrap .mm_theme_options .mm_content:after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+	width: 100%;
+	position: relative;
+}
+.bootstrap .mm_theme_options .mm_content .tab-pane .panel 
+{
+	overflow: visible;
+	float: none;
+}
+.bootstrap .mm_theme_options .mm_content .tab-pane .panel .panel-heading 
+{
+	padding: 0px;
+}
+.bootstrap .mm_theme_options .mm_content .tab-pane .panel .panel-heading a.accordion-toggle
+{
+	display: block;
+	position: relative;
+	height: 34px;
+	overflow: hidden;
+	line-height: 22px;
+	padding: 6px 8px 6px 50px;
+	text-decoration: none;
+}
+.bootstrap .mm_theme_options .mm_content .tab-pane .panel .panel-heading a.accordion-toggle:before
+{
+	content: '\2013';
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	float: left;
+	width: 36px;
+	height: 35px;
+	line-height: 34px;
+	text-align: center;
+	font-weight: 900;
+	font-size: 14px;
+	border-style: solid;
+	border-width: 0px 1px 0px 0px;
+}
+.bootstrap .mm_theme_options .mm_content .tab-pane .panel .panel-heading a.accordion-toggle.collapsed:before
+{
+	content: '\002B';
+	line-height: 36px;
+}
+/* menu-edit */
+.menu-edit .bootstrap .option.row 
+{
+	margin-right: 0px;
+	margin-bottom: 5px;
+	padding-bottom: 0px;
+} 
+.menu-edit .bootstrap .option.row > * 
+{
+	width: 100%;
+}
+.menu-edit .bootstrap .option.row .h_separator 
+{
+	display: none;
+	margin: 0px;
+
+}
+.menu-edit .bootstrap .option.row .option_header .caption 
+{
+	text-align: center;
+}
+.menu-edit .bootstrap .option.row .option_header .descr 
+{
+	opacity: 1;
+}
+.menu-edit .bootstrap .option.row .option_field .mm_checkbox,
+.menu-edit .bootstrap .option.row .option_field .radio
+{
+	width: 100%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.menu-edit .bootstrap .option.row .option_header .descr,  
+.menu-edit .bootstrap .option.row .option_field label 
+{
+	font-size: 12px;
+	font-style: italic;
+	font-family: sans-serif;
+}
+.menu-edit .bootstrap .option.row[class*="pull_to_other_side"],
+.menu-edit .bootstrap .option.row[class*="submenu_enable_full_width"]
+{
+	display: none;
+	visibility: hidden;
+}
+.menu-edit .menu-item-depth-0 .bootstrap .option.row[class*="pull_to_other_side"],
+.menu-edit .menu-item-depth-0 .bootstrap .option.row[class*="submenu_enable_full_width"]
+{
+	display: block;
+	visibility: visible;
+}
+/* icons_modal */
+.modal-backdrop.fade.in
+{
+	display: none;
+}
+.bootstrap .modal.fade.in
+{
+	background-color: rgba(0,0,0, 0.5);
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	display: block !important;
+}
+.bootstrap .modal-body
+{
+	max-height: none;
+}
+/*
+.modal-backdrop
+{
+	background-image: url('../../img/loading.gif');
+	background-position: center 50px;
+	background-repeat: no-repeat; 
+	background-size: 50px 50px; 
+}
+*/
+.holder 
+{
+	position: relative;
+}
+.bootstrap .all_icons_control_panel *,
+.bootstrap .all_icons_container label .drop
+{
+	position: relative;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 12px;
+}
+.bootstrap .all_icons_control_panel
+{
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+	overflow: hidden;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	background-color: #ffffff;
+	z-index: 9900;
+}
+.bootstrap .all_icons_control_panel > *,
+.bootstrap .all_icons_control_panel > input
+{
+	border-color: #357ebd;
+	border-width: 1px;
+	border-style: solid;
+	height: 28px;
+	line-height: 28px;
+	border-radius: 3px;
+	padding: 0px 10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.bootstrap .all_icons_control_panel .all_icons_search_input
+{
+	width: 160px;
+	max-width: 60%;
+	display: block;
+	float: left;
+}
+.bootstrap .all_icons_control_panel .ok_button
+{
+	float: right;
+/*	background-color: #428bca;
+	color: #ffffff;
+.all_icons_control_panel .ok_button:hover
+{
+	background-color: #3276b1;
+}
+*/
+	cursor: pointer;
+}
+.bootstrap .all_icons_container
+{
+	display: inline-block;
+	width: 100%;
+/*
+	max-height: 520px;
+	overflow-y: scroll;
+	overflow-x: visible;
+*/
+}
+.bootstrap .all_icons_container:after
+{
+	content: ' ';
+	display: block;
+	clear: both;
+	widows: 100%;
+	height: 0px;
+}
+.bootstrap .all_icons_container label
+{
+	display: block;
+	position: relative;
+	height: 26px;
+	width: 26px;
+	float: left;
+	cursor: pointer;
+}
+.bootstrap .all_icons_container label input
+{
+	visibility: hidden;
+	display: block;
+	position: absolute;
+	height: 0px;
+	width: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+.bootstrap .all_icons_container label i,
+.bootstrap .all_icons_container label i:before
+{
+	float: left;
+	display: block;
+	height: 26px;
+	width: 26px;
+	line-height: 26px;
+	font-size: 14px;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0px;
+	padding: 0px;
+	color: #555555;
+	cursor: pointer;
+}
+.bootstrap .all_icons_container label .drop
+{
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	top: 100%;
+	padding: 6px 8px;
+	overflow: hidden;
+	white-space: nowrap;
+	cursor: default;
+}
+.bootstrap .all_icons_container label:hover i
+{
+	position: relative;
+	top: -10px;
+	left: -10px;
+	width: 46px;
+	height: 46px;
+	border-width: 1px;
+	border-style: solid;
+	z-index: 10000;
+}
+.bootstrap .all_icons_container label:hover i:before
+{
+	width: 44px;
+	height: 44px;
+	line-height: 44px;
+	font-size: 30px;
+	color: #1d2329;
+	background-color: #f8f8f8;
+}
+.bootstrap .all_icons_container label input:checked + i,
+.bootstrap .all_icons_container label input:checked + i:before
+{
+	display: block;
+	color: #cccccc;
+	background-color: #1d2329;
+}
+/* miscellaneous */
+#adminmenu li.menu-top[class*="mega_main"] .wp-menu-image img 
+{
+	width: 18px;
+}
+/* responsive for sundry media */
+@media (max-width: 767px) {
+	.bootstrap .mm_theme_options .mm_navigation .menu_item a, 
+	.bootstrap .mm_theme_options .mm_navigation .menu_item a:hover, 
+	.bootstrap .mm_theme_options .mm_navigation .menu_item a:active
+	{
+		margin: 0px;
+	}
+	.bootstrap .mm_theme_options .mm_navigation .menu_item
+	{
+		border-width: 0px 1px 1px 0px;
+	}
+	.bootstrap .mm_theme_options .mm_content
+	{
+		border-width: 0px 1px 0px 0px;
+	}
+}

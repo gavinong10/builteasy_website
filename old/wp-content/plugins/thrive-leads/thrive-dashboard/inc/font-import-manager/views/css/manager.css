@@ -1,0 +1,50 @@
+#thrive-fonts-list .thrive-labels,
+#thrive-fonts-list .thrive-content {
+    float: left;
+}
+#thrive-fonts-list .thrive-labels {
+    width: 20%;
+}
+
+#thrive-fonts-list .thrive-head {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.tve-dash-font-preview {
+    font-size: 24px!important;
+}
+
+.font-import-manager-messages {
+    padding: 20px 0 10px 0;
+}
+
+.font-import-manager-messages div.error,
+.font-import-manager-messages div.updated {
+    margin: 0;
+}
+
+.font-import-manager-messages div.error p {
+    color: #dd3d36;
+}
+
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,300italic);
+
+.font-manager-import-settings {
+    background: #fff;
+    border: 1px solid #E1E1E1;
+    margin: 0 20px 0 0;
+    padding: 25px;
+    color: #323232;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.font-manager-import-settings h3 {
+    border-bottom: 1px solid #e1e1e1;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+    margin: 0;
+}

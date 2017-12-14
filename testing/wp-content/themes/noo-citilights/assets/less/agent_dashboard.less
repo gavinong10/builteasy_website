@@ -1,0 +1,263 @@
+
+// Agent menu
+.dashboard-sidebar {
+	background-color: #f8f8f8;
+	border-radius: @border-radius-base;
+
+	.sidebar-content {
+		padding: 1.25em;
+	}
+}
+
+.dashboard-sidebar-title {
+	font-size: 1.5em;
+	font-weight: 300;
+	margin: 50px 0 40px;
+}
+
+.user-sidebar-menu {
+	.user-avatar {
+		padding: 1.25em 1.25em 0.625em 1.25em;
+		img {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	.user-menu-links {
+		padding: 0.625em 1.5em;
+
+		a {
+			display: block;
+			color: @text-color;
+			line-height: 2em;
+			&:hover,
+			&:focus,
+			&.active {
+				color: @link-hover-color;
+			}
+
+			i {
+				margin-right: 1em;
+			}
+		}
+	}
+
+	.user-menu-submit {
+		padding: 1.25em 1.5em;
+		a {
+			display: block;
+			padding-top: 12px;
+			padding-bottom: 12px;
+			font-size: 18px;
+			line-height: 24px;
+			font-weight: bold;
+		}
+	}
+
+	.user-menu-links + .user-menu-links,
+	.user-menu-submit {
+		border-top: solid 0.0625em #ebebeb;
+		.box-shadow(inset 0 0.125em 0.125em -0.125em #fff);
+	}
+}
+
+// My Properties
+.properties.my-properties {
+	&.list {
+		.property-labels {
+			display: block;
+			padding: (@grid-gutter-width / 2) @grid-gutter-width 0;
+		}
+	}
+	.hentry {
+		.property-info {
+			.property-action {
+				.agent-action {
+					a {
+						display: inline-block;
+						width: 33.33%;
+						float: left;
+						border-radius: 0;
+
+						&:last-child{
+							border-bottom-right-radius: @border-radius-base;
+						}
+
+						&.disabled {
+							&, &:hover, &:focus {
+								color: @btn-secondary-color;
+								background-color: @btn-thirdary-bg-hover;
+								border-color: btn-thirdary-border-hover;
+							}
+						}
+					}
+
+					&.four-buttons a {
+						width: 25%;
+					}
+				}
+			}
+		}
+	}
+
+	.submission-payment {
+		display: table;
+		padding: (@grid-gutter-width / 2) @grid-gutter-width 0;
+		& > div {
+			display: table-cell;
+			vertical-align: middle;
+		}
+		.payment-form {
+			width: 45%;
+			p {
+				margin: 0;
+			}
+
+			.amount {
+				margin-left: 5px;
+			}
+		}
+		.payment-total {
+			// width: 25%;
+		}
+		.payment-action {
+			width: 35%;
+		}
+		.payment-total,
+		.payment-action {
+			padding-left: 5%;
+			border-left: 1px solid @border-color-base;
+		}
+	}
+}
+
+// Property submit form
+.noo-control-group {
+	border: 1px solid #eee;
+	margin-top: 50px;
+	+ .noo-control-group {
+		margin-top: 0;
+	}
+	.group-title {
+		background-color: #eee;
+		padding: 10px 20px;
+		font-size: 1.5em;
+	}
+	.group-container {
+		margin: 20px 5px 15px 5px;
+	}
+}
+
+.property-form {
+	.noo-control-group {
+		.group-container {
+			margin-right: 85px;
+		}
+		&.small-group {
+			.group-container {
+				margin-right: 5px;
+			}
+		}
+	}
+}
+
+// Images & Gallery
+#uploaded-images {
+	float: left;
+	width: 100%;
+
+	.uploaded-img {
+		float: left;
+		margin: 0 10px 15px 0;
+		position: relative;
+		max-width: 100%;
+		overflow: hidden;
+
+		i {
+			position: absolute;
+			bottom: 0px;
+			right: 0px;
+			background-color: @brand-primary;
+			color: #fff;
+			font-size: 20px;
+			padding: 5px;
+			cursor: pointer;
+		}
+
+		i.featured-img {
+			left: 0px;
+			top: 0px;
+			bottom: auto;
+			right: auto;
+			cursor: auto;
+		}
+	}
+}
+
+#aaiu-uploader {
+	margin-top: 30px;
+}
+
+// Google Maps
+.noo_property_google_map{
+	position: relative;
+
+	.noo_property_google_map_search {
+		position: absolute;
+		width: 50%;
+		margin: 0 auto;
+		top: 10px;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+
+	#noo_property_google_map_search_input{
+		margin-top: 16px;
+		border: 1px solid transparent;
+		border-radius: 2px 0 0 2px;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		outline: none;
+		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+		background-color: #fff;
+		padding: 0 11px 0 13px;
+		width: 350px;
+		height: 40px;
+		font-size: 14px;
+	}
+}
+
+.noo-submit {
+	margin-top: 30px;
+	input {
+		text-transform: uppercase;
+	}
+}
+
+.form-message {
+	h4 {
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+}
+
+.noo-login-form {
+	.noo-logreg.both .register-form {
+		box-shadow: none;
+	}
+}
+
+.membership-packages.noo-pricing-table {
+	margin-bottom: 30px;
+	.noo-pricing-column {
+		.pricing-content {
+			.pricing-info {
+				margin-top: 20px;
+			}
+		}
+	}
+}

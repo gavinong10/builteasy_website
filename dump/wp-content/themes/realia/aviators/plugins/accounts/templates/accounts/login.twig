@@ -1,0 +1,42 @@
+{{ before_widget|raw }}
+
+{% if title %}
+    {{ before_title|raw }}{{ title }}{{ after_title|raw }}
+{% endif %}
+
+<div class="content">
+    <form method="post" action="{{ wp.get_bloginfo('wpurl') }}/wp-login.php">
+        <div class="control-group">
+            <label class="control-label" for="inputLoginLogin">
+                {{ wp.__('Login', 'aviators') }}
+                <span class="form-required">*</span>
+            </label>
+
+            <div class="controls">
+                <input type="text" id="inputLoginLogin" name="log" required="required">
+            </div>
+            <!-- /.controls -->
+        </div>
+        <!-- /.control-group -->
+
+        <div class="control-group">
+            <label class="control-label" for="inputLoginPassword">
+                {{ wp.__('Password', 'aviators') }}
+                <span class="form-required">*</span>
+            </label>
+
+            <div class="controls">
+                <input type="password" id="inputLoginPassword" name="pwd" required="required">
+            </div>
+            <!-- /.controls -->
+        </div>
+        <!-- /.control-group -->
+
+        <div class="form-actions">
+            <input type="submit" value="{{ wp.__('Login', 'aviators') }}" class="btn btn-primary arrow-right">
+        </div>
+        <!-- /.form-actions -->
+    </form>
+</div><!-- /.content -->
+
+{{ after_widget|raw }}

@@ -1,0 +1,210 @@
+# Translation of Plugins - Revision Control - Stable (latest release) in English (Australia)
+# This file is distributed under the same license as the Plugins - Revision Control - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-01-29 07:46:26+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.3.0\n"
+"Language: en_AU\n"
+"Project-Id-Version: Plugins - Revision Control - Stable (latest release)\n"
+
+#. translators: %1$s = The Locale (de_DE, en_US, fr_FR, he_IL, etc). %2$s = The
+#. translate.wordpress.org link to the plugin overview
+#: revision-control.php:751
+msgid ""
+"Hi there!\n"
+"I notice you use WordPress in a Language other than English (US), Did you know you can translate WordPress Plugins into your native language as well?\n"
+"If you'd like to help out with translating this plugin into %1$s you can head over to <a href=\"%2$s\">translate.WordPress.org</a> and suggest translations for any languages which you know.\n"
+"Thanks! Dion."
+msgstr ""
+"Hi there!\n"
+"I notice you use WordPress in a Language other than English (US), Did you know you can translate WordPress Plugins into your native language as well?\n"
+"If you'd like to help out with translating this plugin into %1$s you can head over to <a href=\"%2$s\">translate.WordPress.org</a> and suggest translations for any languages which you know.\n"
+"Thanks! Dion."
+
+#. Author of the plugin/theme
+msgid "Dion Hulse"
+msgstr "Dion Hulse"
+
+#. Description of the plugin/theme
+msgid "Allows finer control over the number of Revisions stored on a global & per-type/page basis."
+msgstr "Allows finer control over the number of Revisions stored on a global & per-type/page basis."
+
+#. Plugin URI of the plugin/theme
+msgid "https://dd32.id.au/wordpress-plugins/revision-control/"
+msgstr "https://dd32.id.au/wordpress-plugins/revision-control/"
+
+#: revision-control.php:739
+msgid "Save Changes"
+msgstr "Save Changes"
+
+#: revision-control.php:735
+msgid "<em><strong>Note:</strong> This field is special. It controls what appears in the Revision Options <code>&lt;select&gt;</code> fields.<br />The basic syntax of this is simple, fields are seperated by comma's.<br /> A field may either be a number, OR a range.<br /> For example: <strong>1,5</strong> displays 1 Revision, and 5 Revisions. <strong>1..5</strong> on the other hand, will display 1.. 2.. 3.. 4.. 5.. Revisions.<br /> <strong>If in doubt, Leave this field alone.</strong></em>"
+msgstr "<em><strong>Note:</strong> This field is special. It controls what appears in the Revision Options <code>&lt;select&gt;</code> fields.<br />The basic syntax of this is simple, fields are seperated by comma's.<br /> A field may either be a number, OR a range.<br /> For example: <strong>1,5</strong> displays 1 Revision, and 5 Revisions. <strong>1..5</strong> on the other hand, will display 1.. 2.. 3.. 4.. 5.. Revisions.<br /> <strong>If in doubt, Leave this field alone.</strong></em>"
+
+#: revision-control.php:733
+msgid "Revision Range"
+msgstr "Revision Range"
+
+#: revision-control.php:713
+msgid "Page"
+msgid_plural "Pages"
+msgstr[0] "Page"
+msgstr[1] "Pages"
+
+#: revision-control.php:711
+msgid "Post"
+msgid_plural "Posts"
+msgstr[0] "Post"
+msgstr[1] "Posts"
+
+#: revision-control.php:701
+msgid "Default Revision Status"
+msgstr "Default Revision Status"
+
+#: revision-control.php:683
+msgid "Default revision status for <em>Post Types</em>"
+msgstr "Default revision status for <em>Post Types</em>"
+
+#: revision-control.php:679
+msgid "Revision Control Options"
+msgstr "Revision Control Options"
+
+#: revision-control.php:653
+msgid "Not storing any Revisions"
+msgstr "Not storing any Revisions"
+
+#: revision-control.php:651
+msgid "Currently storing an Unlimited number of Revisions"
+msgstr "Currently storing an Unlimited number of Revisions"
+
+#: revision-control.php:649
+msgid "Currently storing a maximum of %s Revision"
+msgid_plural "Currently storing a maximum of %s Revisions"
+msgstr[0] "Currently storing a maximum of %s Revision"
+msgstr[1] "Currently storing a maximum of %s Revisions"
+
+#: revision-control.php:634
+msgid "<strong>Error:</strong> <code>WP_POST_REVISIONS</code> is defined in your <code>wp-config.php</code>. <em>Revision Control</em> cannot operate."
+msgstr "<strong>Error:</strong> <code>WP_POST_REVISIONS</code> is defined in your <code>wp-config.php</code>. <em>Revision Control</em> cannot operate."
+
+#: revision-control.php:598
+msgid "Restore"
+msgstr "Restore"
+
+#: revision-control.php:578
+msgctxt "1: the Post_Type - Posts, Pages, etc. (plural always)"
+msgid "Revisions are currently enabled for %s, However there are no current Autosaves or Revisions created.<br />They'll be listed here once you Save. Happy Writing!"
+msgstr "Revisions are currently enabled for %s, However there are no current Autosaves or Revisions created.<br />They'll be listed here once you Save. Happy Writing!"
+
+#: revision-control.php:564
+msgctxt "post revision 1:datetime, 2:name"
+msgid "%1$s by %2$s"
+msgstr "%1$s by %2$s"
+
+#: revision-control.php:558
+msgid "Actions"
+msgstr "Actions"
+
+#: revision-control.php:557
+msgid "Author"
+msgstr "Author"
+
+#: revision-control.php:556
+msgid "Date Created"
+msgstr "Date Created"
+
+#: revision-control.php:555 revision-control.php:630
+msgid "Compare"
+msgstr "Compare"
+
+#: revision-control.php:554 revision-control.php:628
+msgid "Delete"
+msgstr "Delete"
+
+#: revision-control.php:544
+msgid "<strong>Please Note</strong>: This module requires the use of Javascript."
+msgstr "<strong>Please Note</strong>: This module requires the use of Javascript."
+
+#: revision-control.php:517
+msgid "<em>Please Note:</em> at present, Although Taxonomies <em>(Tags / Categories / Custom Taxonomies)</em> are stored with the revisions, Restoring a Revision will <strong>not</strong> restore the taxonomies at present."
+msgstr "<em>Please Note:</em> at present, Although Taxonomies <em>(Tags / Categories / Custom Taxonomies)</em> are stored with the revisions, Restoring a Revision will <strong>not</strong> restore the taxonomies at present."
+
+#: revision-control.php:513
+msgid "These Revisions are identical."
+msgstr "These Revisions are identical."
+
+#: revision-control.php:482
+msgid "Post Meta"
+msgstr "Post Meta"
+
+#: revision-control.php:461
+msgid "Newer: %s"
+msgstr "Newer: %s"
+
+#: revision-control.php:460
+msgid "Older: %s"
+msgstr "Older: %s"
+
+#: revision-control.php:441
+msgid "Compare Revisions of &#8220;%1$s&#8221;"
+msgstr "Compare Revisions of &#8220;%1$s&#8221;"
+
+#: revision-control.php:439
+msgid "Sorry, But you cant compare a Revision to itself."
+msgstr "Sorry, But you cant compare a Revision to itself."
+
+#: revision-control.php:429
+msgid "Sorry, But you cant compare unrelated Revisions."
+msgstr "Sorry, But you cant compare unrelated Revisions."
+
+#: revision-control.php:287 revision-control.php:290 revision-control.php:295
+msgid "Maximum %s Revision stored"
+msgid_plural "Maximum %s Revisions stored"
+msgstr[0] "Maximum %s Revision stored"
+msgstr[1] "Maximum %s Revisions stored"
+
+#: revision-control.php:279
+msgid "Do not store Revisions"
+msgstr "Do not store Revisions"
+
+#: revision-control.php:278
+msgid "Unlimited number of Revisions"
+msgstr "Unlimited number of Revisions"
+
+#: revision-control.php:277
+msgid "Default Revision Settings"
+msgstr "Default Revision Settings"
+
+#: revision-control.php:84
+msgid "Post Revisions"
+msgstr "Post Revisions"
+
+#: revision-control.php:77
+msgid "Revisions"
+msgstr "Revisions"
+
+#. #-#-#-#-#  tmp-revision-control.pot (Revision Control 2.3.2)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: revision-control.php:77 revision-control.php:646
+msgid "Revision Control"
+msgstr "Revision Control"
+
+#: revision-control.php:56
+msgid "Revision Compare"
+msgstr "Revision Compare"
+
+#: revision-control.php:55
+msgid "Please select a Left and Right revision to compare"
+msgstr "Please select a Left and Right revision to compare"
+
+#: revision-control.php:54
+msgid "Warning: Unlocking this post will cause the latest revision to be published!\\nContinue?"
+msgstr "Warning: Unlocking this post will cause the latest revision to be published!\\nContinue?"
+
+#: revision-control.php:53
+msgid "Are you sure you wish to delete the selected Revisions?"
+msgstr "Are you sure you wish to delete the selected Revisions?"

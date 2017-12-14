@@ -1,0 +1,258 @@
+@import (reference) "_elements";
+
+/*--------------------------------------------------------------
+Page
+-------------------------------------------------------------*/
+.page.full-width {
+  .entry-content {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+  }
+  &.wpb-js-composer {
+    .entry-content {
+      max-width: 5000px;
+      padding: 0;
+    }
+  }
+}
+
+.archive {
+  .hentry {
+    .clearfix;
+    max-width: 1170px;
+    margin: 0 auto 30px;
+  }
+}
+
+.paging-navigation {
+  max-width: 1170px;
+  margin: 0 auto;
+  .nav-next {
+    text-align: right;
+  }
+}
+
+.page-template-template-contact {
+  .wpb_column i {
+    font-size: 25px;
+    margin-right: 10px;
+  }
+}
+
+.leaders {
+  .wpb_content_element img {
+    border: 1px solid #eee;
+    padding: 0 40px;
+  }
+}
+
+.services-page {
+  .content {
+    padding-bottom: 0;
+  }
+  .features {
+    padding: 0;
+  }
+}
+
+.about-page {
+  .content {
+    padding-bottom: 0;
+  }
+  .heading-title {
+    margin-bottom: 22px;
+    padding-bottom: 8px;
+  }
+}
+
+.work-with-us {
+  padding: 70px 0;
+  position: relative;
+  .row {
+    position: relative;
+    z-index: 2;
+  }
+  .vc_custom_heading {
+    div {
+      max-width: 900px;
+      margin: auto;
+      margin-bottom: 20px !important;
+    }
+  }
+  &:before {
+    content: '';
+    .absolute-center();
+    opacity: 0.8;
+  }
+  &:after {
+    content: '';
+    .absolute-center();
+    opacity: 0.03;
+    background-image: url("../images/noise.gif");
+  }
+}
+
+.page-template-template-blog {
+  article {
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #EEEEEE;
+  }
+}
+
+.page-template-template-underconstruction {
+  .under {
+    position: relative;
+    padding: 200px 0;
+    &:before {
+      content: '';
+      .absolute-center;
+      opacity: 0.8;
+    }
+    > div {
+      position: relative;
+      z-index: 2;
+    }
+  }
+  &.uncover .site {
+    padding-bottom: 75px !important;
+  }
+  &.header-sticky .header-wrapper + .content-wrapper {
+    padding-top: 0 !important;
+  }
+  .notification {
+    padding: 50px 0;
+  }
+}
+
+.our-partners {
+  .wpb_wrapper {
+    h4 {
+      border-bottom: 2px solid #dddddd;
+      line-height: 1.7;
+      display: inline-block;
+    }
+  }
+  img {
+    background: #f8f8f8;
+    border: 1px solid transparent;
+    .transit;
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
+
+.price-table {
+  .price {
+    background-color: #AAAAAA;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #FFFFFF;
+    margin: -1px;
+    h3 {
+      color: #FFFFFF;
+      font-weight: bold;
+    }
+    h4 {
+      color: #FFFFFF;
+      font-size: 40px;
+      line-height: 1;
+      margin-bottom: 0;
+      font-weight: bold;
+    }
+  }
+  .price-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    p {
+      border-bottom: 1px solid #EEEEEE;
+      padding-bottom: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+  .col-sm-4 {
+    > .wpb_wrapper {
+      border: 1px solid #DDDDDD;
+      padding-bottom: 20px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.price-table-2 {
+  .col-sm-4 {
+    > .wpb_wrapper {
+      background-color: #EEEEEE;
+      border-color: #EEEEEE;
+    }
+  }
+  .price-content {
+    p {
+      border-color: #dddddd;
+    }
+  }
+}
+
+.history {
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.7em;
+  }
+  h3 em {
+    color: #FFB600;
+    font-style: normal;
+  }
+}
+
+.people {
+  .wpb_wrapper {
+    h4 {
+      border-bottom: 2px solid #dddddd;
+      line-height: 1.7;
+      display: inline-block;
+      letter-spacing: 1px;
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
+  em {
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  .social .menu li a {
+    color: #999;
+  }
+}
+
+.certifications-block {
+  .wpb_wrapper {
+    h4 {
+      border-bottom: 2px solid #dddddd;
+      line-height: 1.7;
+      display: inline-block;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+  }
+}
+
+.core-values {
+  .wpb_wrapper {
+    h4 {
+      border-bottom: 2px solid #dddddd;
+      line-height: 1.7;
+      display: inline-block;
+      font-weight: bold;
+      color: #333333;
+      letter-spacing: 1px;
+    }
+    img {
+      float: left;
+      margin: 0 20px 0 0;
+    }
+  }
+}

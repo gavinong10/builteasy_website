@@ -1,0 +1,64 @@
+.widget { margin-bottom: 20px;
+  &.our-agents {
+    .agent { @include shadow; background-color: $agents-widget-background-color; margin-bottom: 15px; padding: 8px 15px;
+      .image { float: left; margin-right: 20px; width: 70px;
+        img { width: 70px; }
+      }
+      .name { color: $agents-widget-name-color; font-size: 16px; margin-bottom: 8px;
+        a { color: $agents-widget-name-color; text-decoration: none;
+          &:hover { color: $agents-widget-name-color; }
+        }
+      }
+      .email, .phone { font-size: 12px; }
+
+      &:last-child { margin-bottom: 0px; }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .widget {
+    &.our-agents {
+      .agent { padding: 10px;
+        .image { margin-top: 3px; width: 50px;
+          img { width: 50px; }
+        }        
+        .name { font-size: 14px; line-height: 1.5; margin-bottom: 0px; }
+        .email, .phone { line-height: 1.5; }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .widget {
+    &.our-agents {
+      .agent { text-align: center;
+        .image { display: none; float: none; margin-bottom: 10px; width: 100%; 
+          img { width: auto; }
+        }        
+      }
+    }
+  }  
+}
+
+@media (max-width: 767px) {
+  .widget {
+    &.our-agents { margin-bottom: 0px; }
+  }
+}
+
+.our-agents-large {
+  .agent { border-bottom: 1px solid $white; margin-bottom: 30px; padding-bottom: 20px; 
+    &:last-child { border-bottom: 0px; margin-bottom: 0px; }
+  }
+}
+
+@media (max-width: 767px) {
+  .our-agents-large {
+    .image { text-align: center; }
+    .body {
+      h3 { text-align: center; }
+    }
+  }
+}

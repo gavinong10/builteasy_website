@@ -1,0 +1,31 @@
+
+
+.mad-admin-main {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+.select-wrap:before {
+    right: auto;
+    left: 10px;
+}
+
+.mad-control {
+    float: right;
+}
+
+.mad-description {
+    float: left;
+    margin-right: 5%;
+    margin-left: 0;
+}
+
+.mad-admin-main input[type="text"].uploader-upload-input {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.uploader-remove-preview:before {
+    left: auto;
+    right: -10px;
+}

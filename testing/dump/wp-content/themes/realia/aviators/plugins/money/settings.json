@@ -1,0 +1,70 @@
+{
+	"title": "Money",
+	"slug" : "money",
+	"tabs" : [
+		{
+			"settings": {
+				"slug"        : "currency",
+				"title"       : "Currency",
+				"subpage_slug": "money"
+			},
+
+			"sections": [
+				{
+					"settings": {
+						"id": "currency"
+					},
+					"options" : [
+						{
+							"id"     : "sign",
+							"label"  : "Sign",
+							"type"   : "textinput",
+							"default": "€"
+						},
+						{
+							"id"     : "before",
+							"label"  : "Show sign before price",
+							"type"   : "boolean",
+							"default": 0
+						}
+					]
+				}
+			]
+		},
+		{
+			"settings": {
+				"slug"        : "format",
+				"title"       : "Format",
+				"subpage_slug": "money"
+			},
+
+			"sections": [
+				{
+					"settings": {
+						"id": "format"
+					},
+					"options" : [
+						{
+							"id"     : "decimals",
+							"label"  : "Decimals",
+							"type"   : "textinput",
+							"default": 0
+						},
+						{
+							"id"     : "dec_point",
+							"label"  : "Decimal point",
+							"type"   : "textinput",
+							"default": "."
+						},
+						{
+							"id"     : "thousands_sep",
+							"label"  : "Thousands separator",
+							"type"   : "textinput",
+							"default": ","
+						}
+					]
+				}
+			]
+		}
+	]
+}

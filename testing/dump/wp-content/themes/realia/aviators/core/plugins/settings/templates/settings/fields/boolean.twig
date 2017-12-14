@@ -1,0 +1,5 @@
+<input type="checkbox" {% if value %}checked="checked"{% endif %} name="{{ args.id }}" id="{{ args.id }}">
+
+{% if option.description %}
+    <p class="description">{{ option.description }}</p>
+{% endif %}

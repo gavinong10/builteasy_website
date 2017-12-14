@@ -1,0 +1,26 @@
+<div class="tvd-row">
+    <div class="tvd-col tvd-s2">
+        <# if(url) { #>
+            <a href="<#= url #>" class="tvd-break-word"><#= name #></a>
+        <# } else { #>
+            <span  class="tvd-break-word">
+                <#= name #>
+            </span>
+        <# } #>
+    </div>
+    <div class="tvd-col tvd-s2">
+        <#= type #>
+    </div>
+    <div class="tvd-col tvd-s2">
+        <#= impressions #>
+    </div>
+    <div class="tvd-col tvd-s2">
+        <#= conversions #>
+    </div>
+    <div class="tvd-col tvd-s2">
+        <#= conversion_rate #>
+    </div>
+    <div class="tvd-col tvd-s2">
+        <#= leads #>
+    </div>
+</div>

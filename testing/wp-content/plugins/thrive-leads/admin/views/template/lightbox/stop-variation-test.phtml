@@ -1,0 +1,69 @@
+<div class="tvd-modal-content">
+    <table class="tvd-collection tvd-with-header">
+        <thead>
+            <tr class="tvd-collection-header">
+                <td>&nbsp;</td>
+                <# if (test_type == ThriveLeads .const.group_test_type) { #>
+                <td>
+                    <div class="tvd-truncate-on-small" data-popup="<?php echo __('Form Type', 'thrive-leads') ?>">
+                        <h5 class="tvd-truncate-on-small-el">
+                            <?php echo __('Form Type', 'thrive-leads') ?>
+                        </h5>
+                    </div>
+                </td>
+                <# } #>
+                <td>
+                    <div class="tvd-truncate-on-small" data-popup="<?php echo __('Form Impressions', 'thrive-leads') ?>">
+                        <h5 class="tvd-truncate-on-small-el">
+                            <?php echo __('Form Impressions', 'thrive-leads') ?>
+                        </h5>
+                    </div>
+                </td>
+                <td>
+                    <div class="tvd-truncate-on-small" data-popup="<?php echo __('Conversions', 'thrive-leads') ?>">
+                        <h5 class="tvd-truncate-on-small-el">
+                            <?php echo __('Conversions', 'thrive-leads') ?>
+                        </h5>
+                    </div>
+                </td>
+                <td>
+                    <div class="tvd-truncate-on-small" data-popup="<?php echo __('Conversions Rate', 'thrive-leads') ?>">
+                        <h5 class="tvd-truncate-on-small-el">
+                            <?php echo __('Conversions Rate', 'thrive-leads') ?>
+                        </h5>
+                    </div>
+                </td>
+                <td>
+                    <div class="tvd-truncate-on-small" data-popup="<?php echo __('Percentage Improvement', 'thrive-leads') ?>">
+                        <h5 class="tvd-truncate-on-small-el">
+                            <?php echo __('Percentage Improvement', 'thrive-leads') ?>
+                        </h5>
+                    </div>
+                </td>
+                <td>
+                    <div class="tvd-truncate-on-small" data-popup="<?php echo __('Chance To Beat Original', 'thrive-leads') ?>">
+                        <h5 class="tvd-truncate-on-small-el">
+                            <?php echo __('Chance To Beat Original', 'thrive-leads') ?>
+                        </h5>
+                    </div>
+                </td>
+                <td>
+                    <div class="tvd-truncate-on-small" data-popup="<?php echo __('Trigger', 'thrive-leads') ?>">
+                        <h5 class="tvd-truncate-on-small-el">
+                            <?php echo __('Trigger', 'thrive-leads') ?>
+                        </h5>
+                    </div>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody id="tve-stop-variation"></tbody>
+    </table>
+</div>
+<div class="tvd-modal-footer">
+    <div class="tvd-row">
+        <div class="tvd-col tvd-s12">
+            <a class="tvd-btn-flat tvd-btn-flat-secondary tvd-btn-flat-dark tvd-modal-close tvd-waves-effect" href="javascript:void(0)"><?php echo __('Cancel', 'thrive-leads') ?></a>
+        </div>
+    </div>
+</div>

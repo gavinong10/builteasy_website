@@ -1,0 +1,14 @@
+Backup successfully completed
+	backup_success
+Backup successfully sent to destination
+	remote_send_success
+Schedule created/edited
+	schedule_created
+	schedule_updated
+	schedule_deleted
+New destination created/edited
+	destination_created
+	destination_updated
+	destination_deleted
+Settings Reset
+	settings_reset

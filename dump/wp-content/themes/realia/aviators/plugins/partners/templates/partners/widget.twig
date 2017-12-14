@@ -1,0 +1,22 @@
+{{ before_widget|raw }}
+
+{% if title %}
+    {{ before_title|raw }}{{ title }}{{ after_title|raw }}
+{% endif %}
+
+{% if partners %}
+    <div class="partners">
+        <div class="row">
+            {% for partner in partners %}
+                <div class="span3">
+                    <div class="partner">
+                        <a href="{{ wp.get_post_meta(partner.ID, '_partner_url', TRUE) }}">
+                            {{ wp.get_the_post_thumbnail(partner.ID)|raw }}
+                        </a>
+                    </div>
+                </div><!-- /.span3 -->
+            {% endfor %}
+        </div><!-- /.row -->
+    </div><!-- /.partners -->
+{% endif %}
+{{ after_widget|raw }}

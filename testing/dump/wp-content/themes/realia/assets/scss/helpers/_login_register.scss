@@ -1,0 +1,18 @@
+.login-register { margin: 30px 0px;
+	.tabs { border: 0px; margin: 15px 0px 0px 0px;
+		li { text-align: center; width: 50%;
+			a { font-size: 30px; line-height: 40px; padding: 7px 15px; }
+		}
+	}
+	.tab-content {
+		form { margin: 0px; 
+			input[type=text], input[type=email], input[type=password] { @include box-sizing(border-box); height: 40px; width: 100%; }
+		}
+	}
+	.images {
+		.item { text-align: center;
+            img { margin-bottom: 20px; }
+			h3 { color: $login-register-h3-color; font-size: 18px; line-height: 24px; margin: 0px; padding: 0px; }
+		}
+	}
+}

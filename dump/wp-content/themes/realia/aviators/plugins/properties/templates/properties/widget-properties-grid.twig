@@ -1,0 +1,15 @@
+<div class="properties-grid">
+    <div class="row">
+        {% for property in properties %}
+        <div class="span3">
+            {% include 'properties/property-box-small.twig' with { 'property' : property } %}
+        </div>
+        {% if loop.index % wp.aviators_settings_get_value('properties', 'homepage', 'cols')  == 0 %}
+    </div>
+
+    <div class="row">
+        {% endif %}
+        {% endfor %}
+    </div>
+    <!-- /.row -->
+</div><!-- /.properties-grid -->

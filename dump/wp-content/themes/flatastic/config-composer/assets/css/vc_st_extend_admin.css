@@ -1,0 +1,310 @@
+
+.vc_panel-tabs > ul li a {
+	-webkit-box-shadow: none;
+			box-shadow: none;
+}
+
+/* Pricing Table
+---------------------------------------------------------- */
+
+/* Set icon */
+.vc_element-icon.icon-wpb-mad-list-styles   { background-image: url(../images/icons/list_styles.png); }
+.vc_element-icon.icon-wpb-mad-dropcap  		{ background-image: url(../images/icons/dropcap.png); }
+.vc_element-icon.icon-wpb-mad-progress-bar  { background-image: url(../images/icons/progress_bar.png); }
+.vc_element-icon.icon-wpb-mad-sliders	    { background-image: url(../images/icons/sliders.png); }
+.vc_element-icon.icon-wpb-mad-testimonials  { background-image: url(../images/icons/testimonials.png); }
+.vc_element-icon.icon-wpb-mad-team-members  { background-image: url(../images/icons/team_members.png); }
+.vc_element-icon.icon-wpb-mad-tables  	    { background-image: url(../images/icons/tables.png); }
+.vc_element-icon.icon-wpb-mad-info-block    { background-image: url(../images/icons/info_block.png); }
+.vc_element-icon.icon-wpb-mad-pricing-box   { background-image: url(../images/icons/pricing_box.png); }
+.vc_element-icon.icon-wpb-mad-woocommerce   { background-image: url(../images/icons/woocommerce.png); }
+.vc_element-icon.icon-wpb-mad-banners   	{ background-image: url(../images/icons/banners.png); }
+.vc_element-icon.icon-wpb-mad-posts-slider  { background-image: url(../images/icons/posts_slider.png); }
+.vc_element-icon.icon-wpb-brands-logo  		{ background-image: url(../images/icons/brands_logo.png); }
+
+.vc_element-icon.icon-wpb-mad-list-styles,
+.vc_element-icon.icon-wpb-mad-dropcap,
+.vc_element-icon.icon-wpb-mad-progress-bar,
+.vc_element-icon.icon-wpb-mad-sliders,
+.vc_element-icon.icon-wpb-mad-testimonials,
+.vc_element-icon.icon-wpb-mad-team-members,
+.vc_element-icon.icon-wpb-mad-tables,
+.vc_element-icon.icon-wpb-mad-info-block,
+.vc_element-icon.icon-wpb-mad-pricing-box,
+.vc_element-icon.icon-wpb-mad-woocommerce,
+.vc_element-icon.icon-wpb-mad-banners,
+.vc_element-icon.icon-wpb-mad-posts-slider,
+.vc_element-icon.icon-wpb-brands-logo { background-position: 0 0 !important; }
+
+/* Back-end output */
+#poststuff .wpb_vc_mad_pricing_box > .vc_controls {
+	opacity: 1 !important;
+	filter: alpha(opacity=100) !important;
+	visibility: visible;
+	position: relative;
+	height: 40px;
+}
+
+#poststuff .wpb_vc_mad_pricing_box.vc_empty-column > .bottom-controls { display: none; }
+#poststuff .wpb_vc_mad_pricing_box > .vc_controls.bottom-controls .vc_control-btn { display: none; }
+#poststuff .wpb_vc_mad_pricing_box > .vc_controls.bottom-controls .vc_control-btn-prepend { display: block; }
+
+#poststuff .wpb_vc_mad_pricing_box > .vc_controls.bottom-controls .vc_control-btn-prepend .icon {
+	background: none;
+	width: auto;
+	height: auto;
+}
+
+#poststuff .wpb_vc_mad_pricing_box > .vc_controls.bottom-controls .vc_control-btn-prepend .icon:after {
+	background:none;
+	color:#848c92;
+	content: "\f132";
+	font-family: "dashicons";
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 45px;
+}
+
+#poststuff .wpb_vc_mad_pricing_box > .vc_controls.bottom-controls .vc_control-btn-prepend .icon:hover:after { color:#c0c0c0; }
+#poststuff .wpb_vc_mad_pricing_box > .bottom-controls .vc_control-container {
+	outline: 1px dotted #e5e5e5;
+	background-color: #fff;
+	position: relative;
+}
+
+#poststuff .wpb_vc_mad_pricing_box > .bottom-controls .vc_control-btn .vc_btn-content{
+	padding: 0;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+}
+
+#poststuff .wpb_vc_mad_pricing_box > .bottom-controls .vc_control-btn .vc_btn-content:hover { background-color: #fff; }
+
+.wpb_vc_mad_pricing_box {
+	background:#fff;
+	padding: 1em;
+}
+
+.wpb_vc_mad_pricing_box > .wpb_element_wrapper { text-align: center; }
+
+.wpb_vc_mad_pricing_box > .wpb_element_wrapper .wpb_column_container { text-align: left; }
+
+
+.wpb_vc_mad_pricing_box > .wpb_element_wrapper .title {
+	display: block;
+	text-align: center;
+}
+
+.wpb_vc_mad_pricing_box > .wpb_element_wrapper h4.title {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.wpb_vc_mad_pricing_box > .wpb_element_wrapper span.currency {
+	display: inline-block;
+	font-size: 16px;
+	vertical-align: 20px;
+}
+
+.wpb_vc_mad_pricing_box > .wpb_element_wrapper span.price {
+	display: inline-block;
+	font-size: 50px;
+	line-height: 50px;
+}
+
+.wpb_vc_mad_pricing_box > .wpb_element_wrapper span.time {
+	display: block;
+	font-size: 16px;
+}
+
+.wpb_vc_mad_pricing_box > .wpb_element_wrapper span.features {
+	display: block;
+	margin: 15px 0 25px;
+	opacity: 0.7;
+}
+
+/* Icon
+---------------------------------------------------------- */
+
+/* Set icon */
+.icon-wpb-mad_info_block { }
+
+/* Back-end output */
+#mad-icon-dropdown {
+	border: 1px solid #c7c7c7;
+	height: 200px;
+	overflow: scroll;
+	overflow-x: hidden;
+	margin: 10px 0px;
+	width: 100%;
+}
+
+	.mad-icon-list { margin: 0; }
+
+	#mad-icon-dropdown input#trace { display: none; }
+
+	#mad-icon-dropdown li {
+		position: relative;
+		display: inline-block;
+		margin-left: -1px;
+		margin-top: -1px;
+		margin-bottom: 0;
+		margin-top: 0;
+		cursor: pointer;
+		border: 1px solid #ddd;
+		width: 1.5em;
+		height: 1.5em;
+		line-height: 1.5em;
+		text-align: center;
+		vertical-align: top;
+		font-size: 28px;
+
+		-webkit-transition: transform .1s ease-out;
+				transition: transform .1s ease-out;
+	}
+
+	#mad-icon-dropdown li:hover {
+		background-color: #00aef0;
+		color: #fff;
+		z-index: 3;
+
+		-webkit-transform: scale(1.3);
+				transform: scale(1.3);
+	}
+
+	#mad-icon-dropdown li.selected {
+		background-color: #303030;
+		color: #fff;
+	}
+
+.mad-icon-preview {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	vertical-align: top;
+	line-height: 35px;
+}
+
+	.mad-icon-preview > i {
+		font-size: 28px;
+		vertical-align: middle;
+	}
+
+.mad-search {
+	margin: 0 0 20px 0;
+	padding: 5px;
+	margin-left: 50px;
+	width: 150px;
+	border-color: #c7c7c7;
+}
+
+	.wpb_el_type_choose_icons .mad-search {
+		max-width: 220px;
+		margin-left: 12px !important;
+	}
+
+/* Type param: Tables
+---------------------------------------------------------- */
+
+.mad-admin-table {
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+	border-top: 1px solid #e1e1e1;
+}
+
+	.mad-admin-table .mad-table-row {
+		display: table-row;
+		position: relative;
+	}
+
+		.mad-admin-table .mad-table-cell {
+			display: table-cell;
+			border-left: 1px solid #e1e1e1;
+			border-bottom: 1px solid #e1e1e1;
+			padding: 4px;
+			background-color: #fff;
+			cursor: pointer;
+			height: 18px;
+			vertical-align: middle;
+			position: relative;
+		}
+
+/* Type param: Number
+---------------------------------------------------------- */
+
+.mad_number_block {
+	display: inline-block;
+	width: 20%;
+	vertical-align: top;
+}
+
+
+/* Type param: Attach Images fields
+---------------------------------------------------------- */
+
+/*.gallery_attached_images_list li {*/
+	/*position: relative;*/
+	/*float: left;*/
+	/*margin: 1%;*/
+	/*padding: 10px;*/
+	/*width: 48%;*/
+	/*background-color: #f5f5f5;*/
+	/*text-align: center;*/
+
+	/*-webkit-box-sizing: border-box;*/
+			/*box-sizing: border-box;*/
+/*}*/
+
+	/*.gallery_attached_images_list li img {*/
+		/*display: inline-block;*/
+		/*margin-right: 10px;*/
+	/*}*/
+
+/* Type param: Product categories
+---------------------------------------------------------- */
+
+.mad-custom li,
+.mad-custom-vals li {
+	display: inline-block;
+	padding: 5px 10px;
+	margin-left: 5px;
+	vertical-align: top;
+	cursor: pointer;
+
+	-webkit-border-radius: 4px;
+			border-radius: 4px;
+	-webkit-transition: all .35s ease;
+			transition: all .35s ease;
+}
+
+.mad-custom li { background-color: #00aef0; color: #fff; }
+.mad-custom li:hover { background-color: #0089bd; }
+
+.mad-custom li.selected {
+	pointer-events: none;
+	opacity: 0.15;
+}
+
+
+.mad-custom-vals li {
+	background-color: #00aef0;
+	color: #fff;
+}
+
+.mad-custom-vals li:hover { background-color: #0089bd; }
+
+	.mad-custom-vals li button {
+		margin-left: 10px;
+		background-color: transparent;
+		border: none;
+		color: #fff;
+		cursor: pointer;
+	}
+
+
+.wrap > .fade,
+.wpb_vc_param_value.fade { opacity: 1; }

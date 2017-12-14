@@ -1,0 +1,1654 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Thrive Dashboard\n"
+"POT-Creation-Date: 2016-01-18 12:59+0200\n"
+"PO-Revision-Date: 2016-01-18 12:59+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: .git\n"
+"X-Poedit-SearchPathExcluded-1: .idea\n"
+"X-Poedit-SearchPathExcluded-2: *.js\n"
+"X-Poedit-SearchPathExcluded-3: node_modules\n"
+
+#: classes/Product/LicenseManager.php:176
+#, php-format
+msgid ""
+"An error occurred while connecting to the license server. Error: %s. Please "
+"login to thrivethemes.com, report this error message on the forums and we'll "
+"get this sorted for you"
+msgstr ""
+
+#: classes/Product/LicenseManager.php:186
+#, php-format
+msgid ""
+"An error occurred while receiving the license status. The response was: %s. "
+"Please login to thrivethemes.com, report this error message on the forums "
+"and we'll get this sorted for you."
+msgstr ""
+
+#: classes/Product/LicenseManager.php:199
+msgid "Invalid response!"
+msgstr ""
+
+#: classes/Product/LicenseManager.php:206
+msgid "Invalid products returned from server!"
+msgstr ""
+
+#: classes/Product/LicenseManager.php:214
+msgid "Products returned from server are not accepted for licensing!"
+msgstr ""
+
+#: inc/auto-responder/admin.php:33 inc/functions.php:201
+msgid "API Connections"
+msgstr ""
+
+#: inc/auto-responder/admin.php:34
+msgid "API Connections Error Log"
+msgstr ""
+
+#: inc/auto-responder/admin.php:124
+msgid "Unknown error occurred"
+msgstr ""
+
+#: inc/auto-responder/admin.php:127
+msgid "is now disconnected"
+msgstr ""
+
+#: inc/auto-responder/admin.php:130
+msgid "Service disconnected"
+msgstr ""
+
+#: inc/auto-responder/admin.php:133
+msgid "Connection works"
+msgstr ""
+
+#: inc/auto-responder/admin.php:133
+msgid "Connection Error"
+msgstr ""
+
+#: inc/auto-responder/admin.php:136
+msgid "Connection established"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/AWeber.php:96
+#, php-format
+msgid "Could not test AWeber connection: %s"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/AWeber.php:196
+#, php-format
+msgid "Could not add contact: %s to list: %s"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Abstract.php:320
+msgid "is not connected"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/ActiveCampaign.php:51
+msgid "Both API URL and API Key fields are required"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/ActiveCampaign.php:59
+#, php-format
+msgid ""
+"Could not connect to ActiveCampaign using the provided details. Response "
+"was: <strong>%s</strong>"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/ActiveCampaign.php:66
+msgid "ActiveCampaign connected successfully"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/ActiveCampaign.php:151
+msgid "none"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/ArpReach.php:54
+#: inc/auto-responder/classes/Connection/ArpReach.php:66
+msgid "Invalid URL or API key"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/ArpReach.php:58
+msgid "Please provide at least one list for your subscribers"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/ArpReach.php:71
+msgid "ArpReach connected successfully"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Awsses.php:52
+msgid "You must provide a valid Amazon Web Services Simple Email API key"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Awsses.php:56
+msgid ""
+"You must provide a valid Amazon Web Services Simple Email Service secret key"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Awsses.php:60
+#: inc/auto-responder/classes/Connection/Postmark.php:53
+msgid "Email field must not be empty"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Awsses.php:68
+#, php-format
+msgid ""
+"Could not connect to Amazon Web Services Simple Email Service using the "
+"provided key (<strong>%s</strong>)"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Awsses.php:75
+msgid "Amazon Web Services Simple Email Service connected successfully"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/ConstantContact.php:61
+msgid "You must provide a valid Constant Contact API Key and API token"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/ConstantContact.php:69
+#, php-format
+msgid ""
+"Could not connect to Constant Contact using the provided API Key and API "
+"Token (<strong>%s</strong>)"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/ConstantContact.php:76
+msgid "Constant Contact connected successfully"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/ConvertKit.php:50
+msgid "You must provide a valid ConvertKit API Key"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/ConvertKit.php:58
+#, php-format
+msgid "Could not connect to ConvertKit: %s"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/ConvertKit.php:65
+msgid "ConvertKit connected successfully"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Drip.php:61
+msgid "You must provide a valid Drip token and Client ID"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Drip.php:69
+#, php-format
+msgid ""
+"Could not connect to Drip using the provided Token and Client ID (<strong>"
+"%s</strong>)"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Drip.php:76
+msgid "Drip connected successfully"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Drip.php:94
+msgid "Drip connection could not be validated!"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Drip.php:127
+msgid "There is not Campaign in your Drip account to be fetched !"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Drip.php:178
+msgid "User could not be subscribed"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/GetResponse.php:50
+msgid "You must provide a valid GetResponse key"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/GetResponse.php:58
+#, php-format
+msgid ""
+"Could not connect to GetResponse using the provided key (<strong>%s</strong>)"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/GetResponse.php:65
+msgid "GetResponse connected successfully"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/GoToWebinar.php:62
+msgid "Choose from the following upcoming webinars"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/GoToWebinar.php:89
+#: inc/auto-responder/classes/Connection/KlickTipp.php:52
+msgid "Email and password are required"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/GoToWebinar.php:106
+#, php-format
+msgid "Could not connect to GoToWebinar using the provided data (%s)"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/GoToWebinar.php:221
+msgid "Renew the token"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/GoToWebinar.php:222
+msgid "don't show this message again"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/GoToWebinar.php:227
+#, php-format
+msgid "Thrive API Connections: The access token for %s has expired on %s."
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/GoToWebinar.php:239
+#, php-format
+msgid "Thrive API Connections: The access token for %s will expire today."
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/GoToWebinar.php:241
+#, php-format
+msgid "Thrive API Connections: The access token for %s will expire tomorrow."
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/GoToWebinar.php:242
+#, php-format
+msgid "Thrive API Connections: The access token for %s will expire in %s days."
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/HubSpot.php:24
+msgid "Choose from the following contact lists"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/HubSpot.php:49
+msgid "You must provide a valid HubSpot key"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/HubSpot.php:57
+#, php-format
+msgid ""
+"Could not connect to HubSpot using the provided key (<strong>%s</strong>)"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/HubSpot.php:64
+msgid "HubSpot connected successfully"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Infusionsoft.php:49
+msgid "You must provide a valid Infusionsoft credentials"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Infusionsoft.php:57
+#, php-format
+msgid ""
+"Could not connect to Infusionsoft using the provided credentials (<strong>"
+"%s</strong>)"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/KlickTipp.php:69
+#, php-format
+msgid "Could not connect to Klick Tipp using the provided data: %s"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/KlickTipp.php:76
+msgid "Klick Tipp connected successfully!"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/KlickTipp.php:79
+#: inc/auto-responder/classes/Connection/KlickTipp.php:116
+#: inc/auto-responder/classes/Connection/KlickTipp.php:154
+#, php-format
+msgid "Could not connect to Klick Tipp using the provided data (%s)"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/MadMimi.php:51
+msgid "Username and API Key are required"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/MadMimi.php:59
+msgid "Could not connect to MadMimi using the provided data"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/MadMimi.php:67
+msgid "MadMimi connected successfully"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/MailPoet.php:49
+#: inc/auto-responder/classes/Connection/MailPoet.php:75
+msgid "MailPoet plugin must be installed and activated."
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/MailPoet.php:100
+msgid "MailPoet plugin could not be found."
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/MailPoet.php:123
+msgid "MailPoet plugin is not installed / activated"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/MailPoet.php:149
+msgid "Subscriber could not be saved"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Mailchimp.php:48
+msgid "You must provide a valid Mailchimp key"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Mailchimp.php:56
+#, php-format
+msgid ""
+"Could not connect to Mailchimp using the provided key (<strong>%s</strong>)"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Mailchimp.php:64
+msgid "Mailchimp connected successfully"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Mailchimp.php:123
+#: inc/auto-responder/classes/Connection/Sendinblue.php:138
+#: inc/auto-responder/classes/Connection/SendinblueEmail.php:210
+msgid "Please re-check your API connection details."
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Mailchimp.php:171
+msgid "Unknown Mailchimp Error"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Mailchimp.php:173
+#: inc/auto-responder/classes/Connection/Sendinblue.php:173
+#: inc/auto-responder/classes/Connection/SendinblueEmail.php:245
+msgid "Unknown Error"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Mailgun.php:51
+msgid "You must provide a valid Mailgun key"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Mailgun.php:55
+msgid "The domain name field must not be empty"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Mailgun.php:63
+#, php-format
+msgid ""
+"Could not connect to Mailgun using the provided key (<strong>%s</strong>)"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Mailgun.php:70
+msgid "Mailgun connected successfully"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Mandrill.php:48
+msgid "You must provide a valid Mandrill key"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Mandrill.php:57
+#, php-format
+msgid ""
+"Could not connect to Mandrill using the provided key (<strong>%s</strong>)"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Mandrill.php:64
+msgid "Mandrill connected successfully"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Ontraport.php:51
+msgid "You must provide a valid Ontraport AppID/APIKey"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Ontraport.php:59
+#, php-format
+msgid "Could not connect to Ontraport: %s"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Ontraport.php:66
+msgid "Ontraport connected successfully"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Postmark.php:49
+msgid "You must provide a valid Postmark key"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Postmark.php:62
+#, php-format
+msgid ""
+"Could not connect to Postmark using the provided key (<strong>%s</strong>)"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Postmark.php:70
+msgid "Postmark connected successfully"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/ReCaptcha.php:51
+msgid "Both Site Key and Secret Key fields are required"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/ReCaptcha.php:59
+msgid "Incorrect Secret Key."
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/ReCaptcha.php:66
+msgid "ReCaptcha connected successfully!"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Sendinblue.php:51
+#: inc/auto-responder/classes/Connection/SendinblueEmail.php:51
+msgid "You must provide a valid SendinBlue key"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Sendinblue.php:59
+#: inc/auto-responder/classes/Connection/SendinblueEmail.php:59
+#, php-format
+msgid ""
+"Could not connect to SendinBlue using the provided key (<strong>%s</strong>)"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Sendinblue.php:66
+#: inc/auto-responder/classes/Connection/SendinblueEmail.php:66
+msgid "SendinBlue connected successfully"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Sendinblue.php:171
+#: inc/auto-responder/classes/Connection/SendinblueEmail.php:243
+msgid "Unknown SendinBlue Error"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Sendreach.php:59
+#, php-format
+msgid "Could not connect to SendReach (<strong>%s</strong>)"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Sendreach.php:63
+msgid "SendReach connection established"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/Sendy.php:63
+msgid "Could not connect to Sendy"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/WebinarJamStudio.php:59
+msgid "You must provide a valid WebinarJamStudio key"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/WebinarJamStudio.php:67
+#, php-format
+msgid ""
+"Could not connect to WebinarJamStudio using the provided key (<strong>%s</"
+"strong>)"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/WebinarJamStudio.php:74
+msgid "WebinarJamStudio connected successfully"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/iContact.php:52
+msgid "You must provide a valid iContact AppID/Username/Password"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/iContact.php:60
+#, php-format
+msgid "Could not connect to iContact: %s"
+msgstr ""
+
+#: inc/auto-responder/classes/Connection/iContact.php:67
+msgid "iContact connected successfully"
+msgstr ""
+
+#: inc/auto-responder/classes/Editor/Controller.php:170
+msgid "API"
+msgstr ""
+
+#: inc/auto-responder/classes/Editor/Controller.php:171
+msgid "HTML Form code"
+msgstr ""
+
+#: inc/auto-responder/classes/LogsTable.php:40
+msgid "Form Data"
+msgstr ""
+
+#: inc/auto-responder/classes/LogsTable.php:41
+msgid "Service"
+msgstr ""
+
+#: inc/auto-responder/classes/LogsTable.php:42
+msgid "Date"
+msgstr ""
+
+#: inc/auto-responder/classes/LogsTable.php:43
+msgid "Error Message"
+msgstr ""
+
+#: inc/auto-responder/classes/LogsTable.php:103
+msgid "No error logs."
+msgstr ""
+
+#: inc/auto-responder/classes/LogsTable.php:128
+#: inc/auto-responder/lib/vendor/Html/Renderer.php:30
+#: inc/auto-responder/lib/vendor/Html/Renderer.php:373
+#: inc/auto-responder/views/setup/awsses.php:12
+#: inc/auto-responder/views/setup/madmimi.php:13
+msgid "Email"
+msgstr ""
+
+#: inc/auto-responder/classes/LogsTable.php:132
+#: inc/auto-responder/lib/vendor/Html/Renderer.php:23
+#: inc/font-import-manager/views/main.php:39
+msgid "Name"
+msgstr ""
+
+#: inc/auto-responder/classes/LogsTable.php:136
+msgid "Phone"
+msgstr ""
+
+#: inc/auto-responder/classes/LogsTable.php:152
+#: inc/auto-responder/views/admin-list.php:136
+msgid "Retry"
+msgstr ""
+
+#: inc/auto-responder/classes/LogsTable.php:158
+#: inc/auto-responder/views/admin-list.php:76
+#: inc/font-manager/views/admin-font-manager.php:49
+msgid "Delete"
+msgstr ""
+
+#: inc/auto-responder/lib/vendor/Html/Renderer.php:38
+msgid "Phone Number"
+msgstr ""
+
+#: inc/auto-responder/lib/vendor/Html/Renderer.php:147
+msgid "Display"
+msgstr ""
+
+#: inc/auto-responder/lib/vendor/Html/Renderer.php:147
+msgid "Field Number"
+msgstr ""
+
+#: inc/auto-responder/lib/vendor/Html/Renderer.php:148
+msgid "Field Properties"
+msgstr ""
+
+#: inc/auto-responder/lib/vendor/Html/Renderer.php:149
+msgid "Field Label / Description"
+msgstr ""
+
+#: inc/auto-responder/lib/vendor/Html/Renderer.php:150
+msgid "Validation"
+msgstr ""
+
+#: inc/auto-responder/lib/vendor/Html/Renderer.php:151
+msgid "Required Field"
+msgstr ""
+
+#: inc/auto-responder/lib/vendor/Html/Renderer.php:152
+msgid "Show Icon"
+msgstr ""
+
+#: inc/auto-responder/lib/vendor/Html/Renderer.php:213
+#: inc/auto-responder/lib/vendor/Html/Renderer.php:258
+msgid "Add icon"
+msgstr ""
+
+#: inc/auto-responder/lib/vendor/Html/Renderer.php:372
+msgid "None"
+msgstr ""
+
+#: inc/auto-responder/lib/vendor/Html/Renderer.php:374
+msgid "Phone number"
+msgstr ""
+
+#: inc/auto-responder/lib/vendor/Infusionsoft.php:32
+msgid ""
+"You must provide a subdomain and API key for your Infusionsoft application."
+msgstr ""
+
+#: inc/auto-responder/misc.php:166
+msgid "Connection is not specified !"
+msgstr ""
+
+#: inc/auto-responder/misc.php:173
+msgid "Where should I subscribe this user? List is not specified !"
+msgstr ""
+
+#: inc/auto-responder/misc.php:180
+msgid "Email is not specified !"
+msgstr ""
+
+#: inc/auto-responder/misc.php:195
+msgid "Cannot establish API connection"
+msgstr ""
+
+#: inc/auto-responder/misc.php:234
+msgid ""
+"Subscription was made with success but we could not delete the log from "
+"database !"
+msgstr ""
+
+#: inc/auto-responder/misc.php:241
+msgid "Subscription was made with success !"
+msgstr ""
+
+#: inc/auto-responder/misc.php:255
+msgid "Log ID is not valid !"
+msgstr ""
+
+#: inc/auto-responder/misc.php:265
+#, php-format
+msgid "An error occurred: %s"
+msgstr ""
+
+#: inc/auto-responder/misc.php:270
+#, php-format
+msgid "The log with ID: %s could not be found !"
+msgstr ""
+
+#: inc/auto-responder/misc.php:276
+#, php-format
+msgid "API Log with ID: %s has been deleted with success !"
+msgstr ""
+
+#: inc/auto-responder/views/admin-error-logs.php:2
+msgid "Thrive API Connections - error logs"
+msgstr ""
+
+#: inc/auto-responder/views/admin-error-logs.php:5
+msgid "Back to API Connections"
+msgstr ""
+
+#: inc/auto-responder/views/admin-list.php:33
+msgid "Active Connections"
+msgstr ""
+
+#: inc/auto-responder/views/admin-list.php:40
+#: inc/font-manager/views/admin-font-manager.php:58
+#: inc/icon-manager/views/main.php:39
+msgid "Back To Dashboard"
+msgstr ""
+
+#: inc/auto-responder/views/admin-list.php:46
+msgid "Error Logs"
+msgstr ""
+
+#: inc/auto-responder/views/admin-list.php:68
+msgid "Test"
+msgstr ""
+
+#: inc/auto-responder/views/admin-list.php:72
+#: inc/font-manager/views/admin-font-manager.php:47
+msgid "Edit"
+msgstr ""
+
+#: inc/auto-responder/views/admin-list.php:89
+#: inc/auto-responder/views/admin-list.php:109
+msgid "Add new Connection"
+msgstr ""
+
+#: inc/auto-responder/views/admin-list.php:103
+msgid "- Select an app -"
+msgstr ""
+
+#: inc/auto-responder/views/admin-list.php:126
+msgid "The connection didn't work."
+msgstr ""
+
+#: inc/auto-responder/views/admin-list.php:128
+msgid "Error message:"
+msgstr ""
+
+#: inc/auto-responder/views/admin-list.php:133
+#: inc/auto-responder/views/editor/add-api.php:13
+#: inc/auto-responder/views/editor/autoresponder-code-fields.php:6
+#: inc/auto-responder/views/editor/dashboard-api.php:88
+#: inc/auto-responder/views/setup/activecampaign.php:19
+#: inc/auto-responder/views/setup/arpreach.php:47
+#: inc/auto-responder/views/setup/aweber.php:14
+#: inc/auto-responder/views/setup/awsses.php:34
+#: inc/auto-responder/views/setup/constant-contact.php:44
+#: inc/auto-responder/views/setup/convertkit.php:13
+#: inc/auto-responder/views/setup/drip.php:19
+#: inc/auto-responder/views/setup/get-response.php:13
+#: inc/auto-responder/views/setup/gotowebinar.php:40
+#: inc/auto-responder/views/setup/gotowebinar.php:46
+#: inc/auto-responder/views/setup/hubspot.php:13
+#: inc/auto-responder/views/setup/iContact.php:26
+#: inc/auto-responder/views/setup/infusionsoft.php:19
+#: inc/auto-responder/views/setup/klicktipp.php:19
+#: inc/auto-responder/views/setup/madmimi.php:19
+#: inc/auto-responder/views/setup/mailchimp.php:14
+#: inc/auto-responder/views/setup/mailgun.php:23
+#: inc/auto-responder/views/setup/mailpoet.php:11
+#: inc/auto-responder/views/setup/mailpoet.php:25
+#: inc/auto-responder/views/setup/mandrill.php:14
+#: inc/auto-responder/views/setup/ontraport.php:18
+#: inc/auto-responder/views/setup/postmark.php:25
+#: inc/auto-responder/views/setup/recaptcha.php:19
+#: inc/auto-responder/views/setup/sendinblue.php:17
+#: inc/auto-responder/views/setup/sendinblueemail.php:18
+#: inc/auto-responder/views/setup/sendreach.php:19
+#: inc/auto-responder/views/setup/sendy.php:37
+#: inc/auto-responder/views/setup/webinarjamstudio.php:14
+#: inc/auto-responder/views/setup/wordpress.php:7
+msgid "Cancel"
+msgstr ""
+
+#: inc/auto-responder/views/admin-list.php:148
+msgid "Connection Ready!"
+msgstr ""
+
+#: inc/auto-responder/views/admin-list.php:150
+msgid "You can now connect your opt-in forms to "
+msgstr ""
+
+#: inc/auto-responder/views/admin-list.php:151
+msgid "See how it's done."
+msgstr ""
+
+#: inc/auto-responder/views/admin-list.php:156
+msgid "Done"
+msgstr ""
+
+#: inc/auto-responder/views/admin-list.php:202
+msgid "The connection failed."
+msgstr ""
+
+#: inc/auto-responder/views/admin-list.php:207
+msgid "Edit settings"
+msgstr ""
+
+#: inc/auto-responder/views/admin-list.php:217
+msgid "Are you sure you want to delete this connection?"
+msgstr ""
+
+#: inc/auto-responder/views/admin-list.php:225
+msgid "Yes, delete"
+msgstr ""
+
+#: inc/auto-responder/views/admin-list.php:230
+msgid "No, keep it"
+msgstr ""
+
+#: inc/auto-responder/views/editor/add-api.php:1
+msgid "Step 2: Choose your API Connection"
+msgstr ""
+
+#: inc/auto-responder/views/editor/add-api.php:17
+#: inc/auto-responder/views/editor/dashboard-api.php:93
+#: inc/font-manager/views/admin-font-options.php:158
+msgid "Save"
+msgstr ""
+
+#: inc/auto-responder/views/editor/add-custom-html.php:1
+msgid "Step 2: Insert HTML code"
+msgstr ""
+
+#: inc/auto-responder/views/editor/add-custom-html.php:3
+msgid ""
+"Step 2: Now insert your full HTML autoresponder code. You can find more "
+"information about what code is required"
+msgstr ""
+
+#: inc/auto-responder/views/editor/add-custom-html.php:4
+msgid "in our knowledge base"
+msgstr ""
+
+#: inc/auto-responder/views/editor/add.php:1
+msgid "Step 1: Choose Connection Type"
+msgstr ""
+
+#: inc/auto-responder/views/editor/add.php:3
+msgid ""
+"Choose whether you would like to connect using HTML form code or through an "
+"established API connection ?"
+msgstr ""
+
+#: inc/auto-responder/views/editor/add.php:15
+msgid "Go to the next step"
+msgstr ""
+
+#: inc/auto-responder/views/editor/autoresponder-code-fields.php:2
+msgid "Insert your code here"
+msgstr ""
+
+#: inc/auto-responder/views/editor/autoresponder-code-fields.php:9
+msgid "Generate Fields"
+msgstr ""
+
+#: inc/auto-responder/views/editor/autoresponder-code-fields.php:22
+msgid "Choose an icon"
+msgstr ""
+
+#: inc/auto-responder/views/editor/captcha-settings.php:15
+msgid "Add Captcha to Prevent Spam Signups"
+msgstr ""
+
+#: inc/auto-responder/views/editor/captcha-settings.php:17
+msgid "Requires integration with Google ReCaptcha"
+msgstr ""
+
+#: inc/auto-responder/views/editor/captcha-settings.php:23
+msgid "Theme"
+msgstr ""
+
+#: inc/auto-responder/views/editor/captcha-settings.php:27
+msgid "Light"
+msgstr ""
+
+#: inc/auto-responder/views/editor/captcha-settings.php:28
+msgid "Dark"
+msgstr ""
+
+#: inc/auto-responder/views/editor/captcha-settings.php:33
+msgid "Type"
+msgstr ""
+
+#: inc/auto-responder/views/editor/captcha-settings.php:37
+msgid "Image"
+msgstr ""
+
+#: inc/auto-responder/views/editor/captcha-settings.php:38
+msgid "Audio"
+msgstr ""
+
+#: inc/auto-responder/views/editor/captcha-settings.php:43
+#: inc/font-manager/views/admin-font-manager.php:22
+#: inc/font-manager/views/admin-font-options.php:98
+msgid "Size"
+msgstr ""
+
+#: inc/auto-responder/views/editor/captcha-settings.php:47
+msgid "Normal"
+msgstr ""
+
+#: inc/auto-responder/views/editor/captcha-settings.php:48
+msgid "Compact"
+msgstr ""
+
+#: inc/auto-responder/views/editor/dashboard-api.php:1
+#: inc/auto-responder/views/editor/dashboard-custom-html.php:2
+#: inc/auto-responder/views/editor/dashboard.php:1
+msgid "Connect with Service"
+msgstr ""
+
+#: inc/auto-responder/views/editor/dashboard-api.php:13
+msgid ""
+"Your sign up form is connected to service(s) using the following API "
+"connections:"
+msgstr ""
+
+#: inc/auto-responder/views/editor/dashboard-api.php:18
+msgid "Service Name"
+msgstr ""
+
+#: inc/auto-responder/views/editor/dashboard-api.php:30
+msgid "Settings"
+msgstr ""
+
+#: inc/auto-responder/views/editor/dashboard-api.php:35
+#: inc/font-import-manager/views/form.php:13 inc/icon-manager/views/form.php:19
+msgid "Remove"
+msgstr ""
+
+#: inc/auto-responder/views/editor/dashboard-api.php:48
+msgid "Add New Connection"
+msgstr ""
+
+#: inc/auto-responder/views/editor/dashboard-api.php:53
+msgid ""
+"Select which fields to display and their properties (you can reorder them by "
+"dragging the \"move\" icon from the left):"
+msgstr ""
+
+#: inc/auto-responder/views/editor/dashboard-api.php:64
+msgid "Thank You Page URL"
+msgstr ""
+
+#: inc/auto-responder/views/editor/dashboard-api.php:66
+msgid "After the form is submitted:"
+msgstr ""
+
+#: inc/auto-responder/views/editor/dashboard-api.php:71
+msgid "Reload current page"
+msgstr ""
+
+#: inc/auto-responder/views/editor/dashboard-api.php:73
+msgid "Redirect to URL"
+msgstr ""
+
+#: inc/auto-responder/views/editor/dashboard-custom-html.php:4
+msgid ""
+"Your sign up form is connected to a service using custom HTML form code."
+msgstr ""
+
+#: inc/auto-responder/views/editor/dashboard-custom-html.php:9
+msgid "Delete Connection"
+msgstr ""
+
+#: inc/auto-responder/views/editor/dashboard-custom-html.php:14
+msgid "Edit HTML form code"
+msgstr ""
+
+#: inc/auto-responder/views/editor/dashboard.php:3
+msgid ""
+"This setting allows you to connect your sign up form with various web "
+"services, such as autoresponder accounts."
+msgstr ""
+
+#: inc/auto-responder/views/editor/dashboard.php:5
+msgid "You currently have no connections set up with this sign up form"
+msgstr ""
+
+#: inc/auto-responder/views/editor/dashboard.php:9
+msgid "Create a new Connection"
+msgstr ""
+
+#: inc/auto-responder/views/editor/partials/api-lists.php:8
+msgid "Error while communicating with the service:"
+msgstr ""
+
+#: inc/auto-responder/views/editor/partials/api-lists.php:14
+msgid "No list available"
+msgstr ""
+
+#: inc/auto-responder/views/editor/partials/api-lists.php:22
+#: inc/auto-responder/views/editor/partials/api-select.php:22
+msgid "Reload"
+msgstr ""
+
+#: inc/auto-responder/views/editor/partials/api-select.php:3
+msgid "You currently don't have any API integrations set up."
+msgstr ""
+
+#: inc/auto-responder/views/editor/partials/api-select.php:5
+msgid "Click here to set up a new API connection"
+msgstr ""
+
+#: inc/auto-responder/views/editor/partials/api-select.php:7
+msgid "Choose from your list of existing API connections or"
+msgstr ""
+
+#: inc/auto-responder/views/editor/partials/api-select.php:9
+msgid "add a new integration"
+msgstr ""
+
+#: inc/auto-responder/views/setup/activecampaign.php:8
+msgid "API URL"
+msgstr ""
+
+#: inc/auto-responder/views/setup/activecampaign.php:13
+#: inc/auto-responder/views/setup/arpreach.php:20
+#: inc/auto-responder/views/setup/constant-contact.php:11
+#: inc/auto-responder/views/setup/get-response.php:7
+#: inc/auto-responder/views/setup/infusionsoft.php:13
+msgid "API Key"
+msgstr ""
+
+#: inc/auto-responder/views/setup/activecampaign.php:22
+#: inc/auto-responder/views/setup/arpreach.php:50
+#: inc/auto-responder/views/setup/aweber.php:18
+#: inc/auto-responder/views/setup/awsses.php:37
+#: inc/auto-responder/views/setup/constant-contact.php:47
+#: inc/auto-responder/views/setup/convertkit.php:16
+#: inc/auto-responder/views/setup/drip.php:22
+#: inc/auto-responder/views/setup/get-response.php:16
+#: inc/auto-responder/views/setup/gotowebinar.php:49
+#: inc/auto-responder/views/setup/hubspot.php:16
+#: inc/auto-responder/views/setup/iContact.php:29
+#: inc/auto-responder/views/setup/infusionsoft.php:22
+#: inc/auto-responder/views/setup/klicktipp.php:22
+#: inc/auto-responder/views/setup/madmimi.php:22
+#: inc/auto-responder/views/setup/mailchimp.php:17
+#: inc/auto-responder/views/setup/mailgun.php:26
+#: inc/auto-responder/views/setup/mailpoet.php:18
+#: inc/auto-responder/views/setup/mandrill.php:17
+#: inc/auto-responder/views/setup/ontraport.php:21
+#: inc/auto-responder/views/setup/postmark.php:28
+#: inc/auto-responder/views/setup/recaptcha.php:22
+#: inc/auto-responder/views/setup/sendinblue.php:20
+#: inc/auto-responder/views/setup/sendinblueemail.php:21
+#: inc/auto-responder/views/setup/sendreach.php:22
+#: inc/auto-responder/views/setup/sendy.php:40
+#: inc/auto-responder/views/setup/webinarjamstudio.php:17
+#: inc/auto-responder/views/setup/wordpress.php:14
+msgid "Connect"
+msgstr ""
+
+#: inc/auto-responder/views/setup/activecampaign/forms-list.php:3
+msgid "Choose the form you want to use:"
+msgstr ""
+
+#: inc/auto-responder/views/setup/activecampaign/forms-list.php:16
+msgid "No forms available for this list!"
+msgstr ""
+
+#: inc/auto-responder/views/setup/activecampaign/forms-list.php:22
+msgid "Tags"
+msgstr ""
+
+#: inc/auto-responder/views/setup/activecampaign/forms-list.php:24
+msgid ""
+"Comma-separated lists of tags to assign to a new contact in ActiveCampaign"
+msgstr ""
+
+#: inc/auto-responder/views/setup/arpreach.php:13
+#: inc/auto-responder/views/setup/sendy.php:9
+msgid "Installation URL"
+msgstr ""
+
+#: inc/auto-responder/views/setup/arpreach.php:26
+#: inc/auto-responder/views/setup/sendy.php:15
+msgid "List ID"
+msgstr ""
+
+#: inc/auto-responder/views/setup/arpreach.php:31
+#: inc/auto-responder/views/setup/sendy.php:20
+msgid "Write the List ID and press the enter key"
+msgstr ""
+
+#: inc/auto-responder/views/setup/aweber.php:10
+msgid ""
+"Click the button below to login to your AWeber account and authorize the API "
+"Connection."
+msgstr ""
+
+#: inc/auto-responder/views/setup/aweber.php:28
+msgid ""
+"There has been an error while communicating with AWeber API. Below are the "
+"error details:"
+msgstr ""
+
+#: inc/auto-responder/views/setup/awsses.php:17
+#: inc/auto-responder/views/setup/recaptcha.php:13
+msgid "Secret Key"
+msgstr ""
+
+#: inc/auto-responder/views/setup/awsses.php:21
+msgid "Access key"
+msgstr ""
+
+#: inc/auto-responder/views/setup/awsses.php:25
+msgid ""
+"Amazon Web Services Simple Email Service requires your email to be verified "
+"before allowing any emails to be sent. Please be sure that the email you set "
+"here matches the email you confirmed on the Amazon Web Services Simple Email "
+"Service website."
+msgstr ""
+
+#: inc/auto-responder/views/setup/awsses.php:28
+msgid ""
+"Emails will not be sent if Amazon Web Services Simple Email Service is on "
+"sandbox mode. If so please contact Amazon Web Services Simple Email Service "
+"to increase email limits and to be removed from sandbox."
+msgstr ""
+
+#: inc/auto-responder/views/setup/awsses.php:29
+#, php-format
+msgid "More details %s."
+msgstr ""
+
+#: inc/auto-responder/views/setup/awsses.php:29
+#: inc/auto-responder/views/setup/constant-contact.php:15
+msgid "here"
+msgstr ""
+
+#: inc/auto-responder/views/setup/constant-contact.php:12
+msgid "To get an API Key you have to follow these steps:"
+msgstr ""
+
+#: inc/auto-responder/views/setup/constant-contact.php:15
+#, php-format
+msgid "Register a new account %s"
+msgstr ""
+
+#: inc/auto-responder/views/setup/constant-contact.php:17
+msgid ""
+"Log in and create a new Application for which the API key will be "
+"automatically be generated."
+msgstr ""
+
+#: inc/auto-responder/views/setup/constant-contact.php:19
+msgid "Copy+Paste the API Key into the field"
+msgstr ""
+
+#: inc/auto-responder/views/setup/constant-contact.php:24
+msgid "Get Token"
+msgstr ""
+
+#: inc/auto-responder/views/setup/constant-contact.php:31
+#: inc/auto-responder/views/setup/drip.php:13
+msgid "API Token"
+msgstr ""
+
+#: inc/auto-responder/views/setup/constant-contact.php:32
+msgid "To get an API Token you have to follow these steps:"
+msgstr ""
+
+#: inc/auto-responder/views/setup/constant-contact.php:34
+msgid ""
+"After you have completed the steps for getting an API Key you have to click "
+"the Get Token Button"
+msgstr ""
+
+#: inc/auto-responder/views/setup/constant-contact.php:35
+msgid "Follow the steps until you receive the token string"
+msgstr ""
+
+#: inc/auto-responder/views/setup/constant-contact.php:36
+msgid ""
+"Copy+Paste the token string into the field and click the Connect to Constant "
+"Contact button"
+msgstr ""
+
+#: inc/auto-responder/views/setup/constant-contact.php:59
+msgid "Please enter the API Key in order to get the token !"
+msgstr ""
+
+#: inc/auto-responder/views/setup/convertkit.php:7
+#: inc/auto-responder/views/setup/hubspot.php:7
+#: inc/auto-responder/views/setup/madmimi.php:8
+#: inc/auto-responder/views/setup/mailchimp.php:8
+#: inc/auto-responder/views/setup/mailgun.php:16
+#: inc/auto-responder/views/setup/mandrill.php:8
+#: inc/auto-responder/views/setup/ontraport.php:12
+#: inc/auto-responder/views/setup/postmark.php:19
+#: inc/auto-responder/views/setup/sendinblue.php:11
+#: inc/auto-responder/views/setup/sendinblueemail.php:11
+#: inc/auto-responder/views/setup/webinarjamstudio.php:8
+msgid "API key"
+msgstr ""
+
+#: inc/auto-responder/views/setup/drip.php:8
+#: inc/auto-responder/views/setup/infusionsoft.php:8
+msgid "Client ID"
+msgstr ""
+
+#: inc/auto-responder/views/setup/gotowebinar.php:7
+msgid "GoToWebinar is connected. The access token expires on:"
+msgstr ""
+
+#: inc/auto-responder/views/setup/gotowebinar.php:14
+msgid "The GoToWebinar access token has expired on:"
+msgstr ""
+
+#: inc/auto-responder/views/setup/gotowebinar.php:15
+msgid ""
+"You need to renew the token by providing your GoToWebinar credentials below"
+msgstr ""
+
+#: inc/auto-responder/views/setup/gotowebinar.php:18
+#, php-format
+msgid ""
+"The GoToWebinar access token will expire in <strong>%s days</strong>. Renew "
+"the token by providing your GoToWebinar credentials below"
+msgstr ""
+
+#: inc/auto-responder/views/setup/gotowebinar.php:20
+msgid "Fill in your GoToWebinar username (email) and password below to connect"
+msgstr ""
+
+#: inc/auto-responder/views/setup/gotowebinar.php:25
+msgid "Email:"
+msgstr ""
+
+#: inc/auto-responder/views/setup/gotowebinar.php:32
+msgid "Password:"
+msgstr ""
+
+#: inc/auto-responder/views/setup/iContact.php:8
+msgid "iContact Username"
+msgstr ""
+
+#: inc/auto-responder/views/setup/iContact.php:13
+#: inc/auto-responder/views/setup/ontraport.php:7
+msgid "Application ID"
+msgstr ""
+
+#: inc/auto-responder/views/setup/iContact.php:18
+msgid "Application Password"
+msgstr ""
+
+#: inc/auto-responder/views/setup/klicktipp.php:8
+msgid "Username"
+msgstr ""
+
+#: inc/auto-responder/views/setup/klicktipp.php:13
+msgid "Password"
+msgstr ""
+
+#: inc/auto-responder/views/setup/mailchimp/optin-type.php:2
+msgid "Choose the type of optin you would like for the Mailchimp integration"
+msgstr ""
+
+#: inc/auto-responder/views/setup/mailchimp/optin-type.php:7
+msgid "Single optin"
+msgstr ""
+
+#: inc/auto-responder/views/setup/mailchimp/optin-type.php:9
+msgid "Double optin"
+msgstr ""
+
+#: inc/auto-responder/views/setup/mailchimp/optin-type.php:14
+msgid ""
+"(Double optin means your subscribers will need to confirm their email "
+"address before being added to your list)"
+msgstr ""
+
+#: inc/auto-responder/views/setup/mailgun.php:11
+msgid "Mailgun-approved domain name"
+msgstr ""
+
+#: inc/auto-responder/views/setup/mailgun.php:19
+msgid ""
+"Mailgun requires a domain name to be setup in order to send emails. Please "
+"be sure that the domain you set matches the domain on the mailgun website. A "
+"verification Email will be sent to your admin email, please make sure you "
+"have a valid email set."
+msgstr ""
+
+#: inc/auto-responder/views/setup/mailpoet.php:7
+msgid "Click the button below to enable MailPoet integration."
+msgstr ""
+
+#: inc/auto-responder/views/setup/mailpoet.php:22
+msgid ""
+"You currently do not have the MailPoet WP plugin installed or activated."
+msgstr ""
+
+#: inc/auto-responder/views/setup/postmark.php:6
+msgid ""
+"Postmark requires your email to be verified before allowing any emails to be "
+"sent. Please be sure that the email you set here matches the email you "
+"confirmed on the postmark website."
+msgstr ""
+
+#: inc/auto-responder/views/setup/postmark.php:13
+msgid "Postmark-approved email address"
+msgstr ""
+
+#: inc/auto-responder/views/setup/recaptcha.php:8
+msgid "Site Key"
+msgstr ""
+
+#: inc/auto-responder/views/setup/sendinblueemail.php:14
+msgid ""
+"SendinBlue requires SMTP activation before allowing the SendMail API to "
+"work. If SMTP is not activated yet on your account please contact SendinBlue "
+"by Email at contact@sendinblue.com for SMTP activation."
+msgstr ""
+
+#: inc/auto-responder/views/setup/sendreach.php:8
+msgid "Key"
+msgstr ""
+
+#: inc/auto-responder/views/setup/sendreach.php:13
+msgid "Secret"
+msgstr ""
+
+#: inc/auto-responder/views/setup/sendy/note.php:2
+msgid ""
+"Note: we would prefer displaying the list names instead of IDs here, but "
+"unfortunately that isn't possible with Sendy."
+msgstr ""
+
+#: inc/auto-responder/views/setup/wordpress.php:3
+msgid "Click the button below to enable Wordpress user accounts integration."
+msgstr ""
+
+#: inc/font-import-manager/classes/Tve_Dash_Font_Import_Manager.php:63
+msgid "Font pack saved !"
+msgstr ""
+
+#: inc/font-import-manager/classes/Tve_Dash_Font_Import_Manager.php:76
+msgid "Font pack removed"
+msgstr ""
+
+#: inc/font-import-manager/classes/Tve_Dash_Font_Import_Manager_View.php:33
+#, php-format
+msgid "No template found for %s"
+msgstr ""
+
+#: inc/font-import-manager/views/form.php:5
+msgid "Upload Fonts"
+msgstr ""
+
+#: inc/font-import-manager/views/form.php:9 inc/icon-manager/views/form.php:15
+msgid "Upload"
+msgstr ""
+
+#: inc/font-import-manager/views/form.php:24 inc/icon-manager/views/form.php:26
+msgid "Save options"
+msgstr ""
+
+#: inc/font-import-manager/views/form.php:27
+msgid "Save and Generate Fonts"
+msgstr ""
+
+#: inc/font-import-manager/views/main.php:18
+msgid "Font Import Manager"
+msgstr ""
+
+#: inc/font-import-manager/views/main.php:20
+#, php-format
+msgid ""
+"Thrive Themes integrates with %s so that you can upload your own font files "
+"for use in your web site."
+msgstr ""
+
+#: inc/font-import-manager/views/main.php:22
+msgid "Follow these steps to import custom fonts into your site:"
+msgstr ""
+
+#: inc/font-import-manager/views/main.php:24
+#, php-format
+msgid ""
+"Download one or more fonts from one of the many font libraries on the web. "
+"These files should be ttf or otf format. One such font library is: %s"
+msgstr ""
+
+#: inc/font-import-manager/views/main.php:25
+#, php-format
+msgid ""
+"Once downloaded to your computer, you can then upload each font to the Font "
+"Squirrel generator tool here: %s"
+msgstr ""
+
+#: inc/font-import-manager/views/main.php:26
+msgid ""
+"Once all your font files are uploaded, you can download the .zip file that "
+"is produced to your computer"
+msgstr ""
+
+#: inc/font-import-manager/views/main.php:27
+msgid ""
+"Upload this file to your site using the \"Upload\" button below and then "
+"click the \"Save and Generate Fonts\" button"
+msgstr ""
+
+#: inc/font-import-manager/views/main.php:28
+msgid ""
+"Once generated, your fonts will immediately become accessible from the font "
+"manager"
+msgstr ""
+
+#: inc/font-import-manager/views/main.php:31
+msgid "Import Fonts"
+msgstr ""
+
+#: inc/font-import-manager/views/main.php:35
+msgid "Your Custom Fonts"
+msgstr ""
+
+#: inc/font-import-manager/views/main.php:40
+msgid "Preview"
+msgstr ""
+
+#: inc/font-import-manager/views/main.php:53
+msgid "No custom fonts added"
+msgstr ""
+
+#: inc/font-import-manager/views/main.php:56
+msgid "Return to Font Manager"
+msgstr ""
+
+#: inc/font-manager/views/admin-font-manager.php:5
+msgid "Custom Font Manager"
+msgstr ""
+
+#: inc/font-manager/views/admin-font-manager.php:8
+msgid ""
+"By default, Thrive Themes integrates with Google Fonts. This allows you to "
+"choose from 600+ fonts for use in your content. However, you can also use "
+"the blue import font button below to import your own fonts files using a "
+"service called Font Squirrel"
+msgstr ""
+
+#: inc/font-manager/views/admin-font-manager.php:9
+msgid "Learn more about how to import your own fonts"
+msgstr ""
+
+#: inc/font-manager/views/admin-font-manager.php:13
+msgid "Import custom font manager"
+msgstr ""
+
+#: inc/font-manager/views/admin-font-manager.php:19
+msgid "Font name"
+msgstr ""
+
+#: inc/font-manager/views/admin-font-manager.php:25
+#: inc/font-manager/views/admin-font-options.php:141
+msgid "Color"
+msgstr ""
+
+#: inc/font-manager/views/admin-font-manager.php:28
+msgid "CSS Class Name"
+msgstr ""
+
+#: inc/font-manager/views/admin-font-manager.php:31
+msgid "Actions"
+msgstr ""
+
+#: inc/font-manager/views/admin-font-manager.php:41
+msgid "white"
+msgstr ""
+
+#: inc/font-manager/views/admin-font-manager.php:48
+msgid "Duplicate"
+msgstr ""
+
+#: inc/font-manager/views/admin-font-manager.php:63
+msgid "Add Custom Font"
+msgstr ""
+
+#: inc/font-manager/views/admin-font-manager.php:68
+msgid "Update Posts"
+msgstr ""
+
+#: inc/font-manager/views/admin-font-options.php:46
+msgid "Show all fonts"
+msgstr ""
+
+#: inc/font-manager/views/admin-font-options.php:51
+msgid "Recommended Fonts Only"
+msgstr ""
+
+#: inc/font-manager/views/admin-font-options.php:55
+msgid "Web Safe Fonts"
+msgstr ""
+
+#: inc/font-manager/views/admin-font-options.php:59
+msgid "Imported Fonts"
+msgstr ""
+
+#: inc/font-manager/views/admin-font-options.php:63
+msgid "View All Google Font Previews"
+msgstr ""
+
+#: inc/font-manager/views/admin-font-options.php:71
+msgid "- Select Font -"
+msgstr ""
+
+#: inc/font-manager/views/admin-font-options.php:91
+msgid "Class"
+msgstr ""
+
+#: inc/font-manager/views/admin-font-options.php:120
+msgid "Line Height"
+msgstr ""
+
+#: inc/font-manager/views/admin-font-options.php:148
+msgid "Custom CSS"
+msgstr ""
+
+#: inc/functions.php:56
+msgid "Facebook ID that will be used in our apps."
+msgstr ""
+
+#: inc/functions.php:64
+msgid "Admins that will moderate the comments"
+msgstr ""
+
+#: inc/functions.php:72
+msgid ""
+"Your forum name is part of the address that you login to \"http://xxxxxxxx."
+"disqus.com\" - the xxxxxxx is your shortname.  For example, with this URL: "
+"https://hairfreelife.disqus.com/ the shortname is \"hairfreelife"
+msgstr ""
+
+#: inc/functions.php:202
+msgid ""
+"Connect to your email marketing system, reCaptcha, email delivery services & "
+"more."
+msgstr ""
+
+#: inc/functions.php:204
+msgid "Manage Connections"
+msgstr ""
+
+#: inc/functions.php:208
+msgid "Custom Fonts"
+msgstr ""
+
+#: inc/functions.php:209
+msgid ""
+"Add & edit Google Fonts and other custom fonts to use in your Thrive "
+"products."
+msgstr ""
+
+#: inc/functions.php:211
+msgid "Manage Fonts"
+msgstr ""
+
+#: inc/functions.php:215
+msgid "Icon Manager"
+msgstr ""
+
+#: inc/functions.php:216
+msgid "Add & edit fully scalable icons with our font icon manager."
+msgstr ""
+
+#: inc/functions.php:218
+msgid "Manage Icons"
+msgstr ""
+
+#: inc/functions.php:222
+msgid "General Settings"
+msgstr ""
+
+#: inc/functions.php:223
+msgid "Shared settings between multiple themes and plugins."
+msgstr ""
+
+#: inc/functions.php:225
+msgid "Manage Settings"
+msgstr ""
+
+#: inc/hooks.php:113
+msgid "Unknown error"
+msgstr ""
+
+#: inc/hooks.php:114
+msgid "Deleting..."
+msgstr ""
+
+#: inc/hooks.php:115
+msgid "Testing..."
+msgstr ""
+
+#: inc/hooks.php:116
+msgid "Loading..."
+msgstr ""
+
+#: inc/hooks.php:117
+msgid "Connection works!"
+msgstr ""
+
+#: inc/hooks.php:118
+msgid "Connection failed!"
+msgstr ""
+
+#: inc/hooks.php:119
+msgid "Unlimited"
+msgstr ""
+
+#: inc/hooks.php:129
+msgid "Individual product"
+msgstr ""
+
+#: inc/hooks.php:130
+msgid "Full membership"
+msgstr ""
+
+#: inc/icon-manager/classes/Tve_Dash_Thrive_Icon_Manager.php:108
+msgid "New IcoMoon Font Pack installed. "
+msgstr ""
+
+#: inc/icon-manager/classes/Tve_Dash_Thrive_Icon_Manager.php:122
+msgid "IcoMoon Font Pack has been removed. "
+msgstr ""
+
+#: inc/icon-manager/views/form.php:6
+msgid "Upload Icon Pack"
+msgstr ""
+
+#: inc/icon-manager/views/form.php:29
+msgid "Save and Generate Icons"
+msgstr ""
+
+#: inc/icon-manager/views/icons.php:1
+msgid "Your Custom Icons"
+msgstr ""
+
+#: inc/icon-manager/views/icons.php:2
+msgid "These icons are available for use on your site:"
+msgstr ""
+
+#: inc/icon-manager/views/main.php:10
+msgid "Thrive Icon Manager"
+msgstr ""
+
+#: inc/icon-manager/views/main.php:11
+msgid ""
+"Thrive Themes / Content Builder integrate with IcoMoon. Here's how it works:"
+msgstr ""
+
+#: inc/icon-manager/views/main.php:13
+#, php-format
+msgid ""
+"%s to go to the IcoMoon web app and select the icons you want to use in your "
+"site"
+msgstr ""
+
+#: inc/icon-manager/views/main.php:13
+msgid "Click here"
+msgstr ""
+
+#: inc/icon-manager/views/main.php:14
+msgid "Download the font file from IcoMoon to your computer"
+msgstr ""
+
+#: inc/icon-manager/views/main.php:15
+msgid "Upload the font file through the upload button below"
+msgstr ""
+
+#: inc/icon-manager/views/main.php:16
+msgid "Your icons will be available for use!"
+msgstr ""
+
+#: inc/icon-manager/views/main.php:20
+msgid "Import Icons"
+msgstr ""
+
+#: inc/icon-manager/views/main.php:23
+msgid ""
+"You don't have any icons yet, use the Upload button to import a custom icon "
+"pack."
+msgstr ""
+
+#: inc/icon-manager/views/main.php:25
+msgid ""
+"Your custom icon pack has been loaded. To modify your icon pack, simply "
+"upload a new file."
+msgstr ""

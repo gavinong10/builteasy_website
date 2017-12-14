@@ -1,0 +1,168 @@
+# Copyright (C) 2010 
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/header-footer\n"
+"POT-Creation-Date: 2011-11-28 08:30:40+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-11-14 09:47+0100\n"
+"Last-Translator: jelena kovacevic <jecajeca260@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: Poedit 1.5.5\n"
+
+#: options.php:87
+msgid ""
+"Detailed documentation and FAQs can be found online on <a href=\"http://www."
+"satollo.net/plugins/header-footer\"><strong>Header and Footer plugin "
+"official page</strong></a>."
+msgstr ""
+"Documentación detallada y Preguntas Frecuentes que pueden encontrarse en "
+"línea en <a href=\"http://www.satollo.net/plugins/header-footer"
+"\"><strong>Página oficial del plugin Header and Footer</strong></a>."
+
+#: options.php:88
+msgid "PHP is allowed on textareas below."
+msgstr "PHP está permitido en las áreas de texto de abajo."
+
+#: options.php:88
+msgid "If you use bbPress, read the official page."
+msgstr "Si usted utiliza bbPress, lea la página oficial."
+
+#: options.php:97
+msgid "Page head and footer"
+msgstr "Head y footer de la página "
+
+#: options.php:98
+msgid "Post content"
+msgstr "Contenido del Post"
+
+#: options.php:99
+msgid "Page content"
+msgstr "Contenido de la página"
+
+#: options.php:100
+msgid "Facebook"
+msgstr "Facebook"
+
+#: options.php:101
+msgid "Snippets"
+msgstr "Fragmentos"
+
+#: options.php:102
+msgid "Notes and..."
+msgstr "Notas y..."
+
+#: options.php:107
+msgid "Code to be added on HEAD section of the home"
+msgstr "Código que se añade en la sección HEAD de la página de inicio"
+
+#: options.php:108
+msgid "Code to be added on HEAD section of every page"
+msgstr "Código que se añade en la sección HEAD de cada página"
+
+#: options.php:109
+msgid "Code to be added before the end of the page"
+msgstr "Código que se añade antes del final de la página"
+
+#: options.php:118
+msgid "Code to be inserted before each post"
+msgstr "Código que se inserta antes de cada post"
+
+#: options.php:119
+msgid "Code to be inserted after each post"
+msgstr "Código que se inserta después de cada post"
+
+#: options.php:125
+msgid "Code to be inserted before each page"
+msgstr "Código que se inserta antes de cada página"
+
+#: options.php:126
+msgid "Code to be inserted after each page"
+msgstr "Código que se inserta después de cada página"
+
+#: options.php:133
+msgid "Facebook page type for the generic web page"
+msgstr "Tipo de página de Facebook para la página web genérica"
+
+#: options.php:133
+msgid "Usually \"article\" is the right choice, if empty will be skipped"
+msgstr ""
+"Usualmente \"artículo\" es la opción correcta, si está vacío se odviará"
+
+#: options.php:134
+msgid "Facebook page type for the home"
+msgstr "Tipo de página de Facebook para el inicio"
+
+#: options.php:134
+msgid ""
+"Usually \"blog\" is a good choice, if empty will be used the generic type"
+msgstr ""
+"Usualmente, \"blog\" es una buena opción, si está vacío se utilizará el tipo "
+"genérico"
+
+#: options.php:135
+msgid "Facebook Open Graph Image"
+msgstr "Imagen de Open Graph de Facebook"
+
+#: options.php:135
+msgid ""
+"Adds the Facebook Open Graph metatag with a reference to the first post image"
+msgstr "Adiciona una metaetiqueta Open Graph con una referencia al primer post"
+
+#: options.php:138
+msgid "Facebook Open Graph default image"
+msgstr "Imagen Open Graph de Facebook por defecto "
+
+#: options.php:143
+msgid ""
+"If no image can be extracted from a post, that image URL will be used (if "
+"present)."
+msgstr ""
+"Si no hay imagen que se pueda extraer de un post, se utilizará la URL de la "
+"imagen (si está presente)."
+
+#: options.php:144
+msgid ""
+"<strong>Warning.</strong> On some versions of WordPress after the image "
+"selection button is pressed the tabs above does not change anymore. Just "
+"save so\r\n"
+"                        this page is reloaded (<a href=\"http://wordpress."
+"org/support/topic/wp-32-thickbox-jquery-ui-tabs-conflict\" target=\"_blank"
+"\">reference</a>)."
+msgstr ""
+"<strong>Advertencia.</strong> En algunas versiones de WordPress después de "
+"pulsar el botón de selección de imagen, las pestañas de abajo no cambian "
+"más. Sólo salve para que \r\n"
+" esta página se vuelva a cargar (<a href=\"http://wordpress.org/support/"
+"topic/wp-32-thickbox-jquery-ui-tabs-conflict\" target=\"_blank\">referencia</"
+"a>)."
+
+#: options.php:153
+msgid ""
+"Common snippets that can be used in any header or footer area referring them "
+"as [snippet_N] where N is the snippet number\r\n"
+"            from 1 to 5. Snippets are inserted before PHP evaluation."
+msgstr ""
+"Fragmentos comunes que se pueden utilizar en cualquier área del head o "
+"footer refiriéndose a ellos como [snippet_N] donde N es el número del "
+"fragmento \r\n"
+" de 1 a 5. Los fragmentos se insertan antes de la evaluación de PHP."
+
+#: options.php:155
+msgid ""
+"Useful for social button to be placed before and after the post or in posts "
+"and pages."
+msgstr ""
+"Útil para el botón social para ser colocado antes y después del post y las "
+"páginas."
+
+#: options.php:166
+msgid "Notes and parked codes"
+msgstr "Notas y códigos estacionados"
+
+#: options.php:170
+msgid "save"
+msgstr "salvar"

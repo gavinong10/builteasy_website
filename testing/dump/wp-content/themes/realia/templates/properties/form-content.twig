@@ -1,0 +1,177 @@
+<div class="span4">
+    <div class="submission-box">
+        <input type="hidden" name="post_type">
+
+        <div class="control-group">
+            <label class="control-label" for="address">
+                {{ wp.__('Featured image', 'aviators') }}
+            </label>
+
+            <div class="controls">
+                {% if wp.has_post_thumbnail(post.ID) %}
+                    {{ wp.get_the_post_thumbnail(post.ID, 'admin-thumb')|raw }}
+                    <a href="?action=delete-thumbnail&id={{ post.ID }}">{{ wp.__('Remove', 'aviators') }}</a>
+                {% else %}
+                    <div class="featured-image">
+                        <input type="file" name="featured_image">
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="address">
+                {{ wp.__('Gallery', 'aviators') }}
+            </label>
+
+            <div class="controls">
+                <script>
+                    jQuery('document').ready(function () {
+
+                        jQuery('#add-more-featured-image').click(function () {
+                            var wrapper = jQuery('#add-more-wrapper-order');
+                            var count = jQuery('li', wrapper).size();
+                            var context = jQuery('#add-more-wrapper-order').append('<li><input type="file" name="_property_meta_slides_' + count + '"><input class="order-value" type="hidden" name="_property_meta_slides_weight_' + count + '" value="' + count + '"><div class="actions"><div class="drag"></div><div class="remove"></div></div></li>');
+                            jQuery('.remove', context).click(function () {
+                                jQuery(this).parent().parent().remove();
+                            });
+                        });
+
+                        jQuery('.remove').click(function () {
+                            jQuery(this).parent().parent().remove();
+                        });
+
+                        jQuery('#add-more-wrapper-order').sortable({
+                            update: function (event, ui) {
+                                var position = 0;
+                                jQuery('#add-more-wrapper-order > li').each(function (index) {
+                                    jQuery('.order-value', this).attr('value', position);
+                                    position += 1;
+                                })
+                            }
+                        });
+                    });
+
+                </script>
+
+                <div id="add-more-wrapper">
+                    <ul id="add-more-wrapper-order">
+                        {% set count = 0 %}
+                        {% for slide in slides %}
+                            <li class="img-container"><img width="80" height="80" src={{ slide.imgurl }}><input
+                                        type="hidden" name="_property_meta_slides_id_{{ count }}"
+                                        value="{{ slide.imgurl }}"> <input class="order-value" type="hidden"
+                                                                           name="_property_meta_slides_weight_{{ count }}"
+                                                                           value="{{ count }}">
+
+                                <div class="actions">
+                                    <div class="drag"></div>
+                                    <div class="remove"></div>
+                                </div>
+                            </li>
+                            {% set count = count + 1 %}
+                        {% endfor %}
+                    </ul>
+
+                    <div class="button-wrapper">
+                        <button class="btn btn-primary" id="add-more-featured-image"
+                                type="button">{{ wp.__('Add more', 'aviators') }}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="address">
+                {{ wp.__('Address', 'aviators') }}
+            </label>
+
+            <div class="controls">
+                <input type="text" name="post_title" size="30" value="{{ post.post_title }}" id="address"
+                       autocomplete="off"
+                       required="required">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label" for="description">
+                {{ wp.__('Description', 'aviators') }}
+            </label>
+
+            <div class="controls">
+                <textarea id="description" class="wp-editor-area" rows="10" name="content"
+                          required="required">{{ post.post_content }}</textarea>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label">
+                {{ wp.__('Type', 'aviators') }}
+            </label>
+
+            <div class="controls">
+                {{ property_types|raw }}
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label">
+                {{ wp.__('Contract Type', 'aviators') }}
+            </label>
+
+            <div class="controls">
+                {{ property_contracts|raw }}
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label">
+                {{ wp.__('Location', 'aviators') }}
+            </label>
+
+            <div class="controls">
+                {{ property_locations|raw }}
+            </div>
+        </div>
+
+        {% if wp.aviators_settings_get_value('properties', 'frontend-submission', 'hide_sublocation') != 'on' %}
+            <div id="sublocation-wrapper" class="control-group">
+                <label class="control-label">
+                    {{ wp.__('Sublocation', 'aviators') }}
+                </label>
+
+                <div id="sublocation-input" class="controls">
+                    {{ property_sublocations|raw }}
+                </div>
+            </div>
+            {% if wp.aviators_settings_get_value('properties', 'frontend-submission', 'hide_subsublocation') != 'on' %}
+                <div id="subsublocation-wrapper" class="control-group">
+                    <label class="control-label">
+                        {{ wp.__('District', 'aviators') }}
+                    </label>
+
+                    <div id="subsublocation-input" class="controls">
+                        {{ property_subsublocations|raw }}
+                    </div>
+                </div>
+            {% endif %}
+        {% endif %}
+
+    </div>
+</div>
+
+<div class="span4">
+    <div class="control-group submission-box clearfix">
+        <label class="control-label">
+            {{ wp.__('Amenities', 'aviators') }}
+        </label>
+
+        <div class="controls">
+            <ul class="unstyled">
+                {{ amenities|raw }}
+            </ul>
+        </div>
+    </div>
+</div>
+
+

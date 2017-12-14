@@ -1,0 +1,38 @@
+.pagination{
+	 display:table;
+	 padding-left: 0;
+	 margin:@line-height-computed auto;
+	 line-height: 3;
+	.page-numbers{
+		color: @text-color;
+		background: #ececec;
+	    padding: 0 20px;
+	    text-transform: uppercase;
+	    font-size: @font-size-base;
+	    float: left;
+	    height: 50px;
+	    line-height: 50px;
+	    margin: 0 3px;
+		text-align: center;
+	    &.current{
+	    	background: @link-color;
+	    	color: #ffffff;
+	    }
+	    &.dots{
+	    	border:none;
+	    	border-radius: 0px;
+	    	color: @text-color;
+	    	padding-left: 10px;
+	    	padding-right: 10px;
+	    }
+	}
+	a.page-numbers{
+		text-decoration: none;
+		color: @text-color;
+		font-weight: bold;
+		&:hover{
+			background: @link-color;
+	    	color: #ffffff;
+		}
+	}
+}

@@ -1,0 +1,39 @@
+<article id="post-{{ wp.the_ID() }}" {{ post_class() }}>
+    {# HEADER #}
+    <header class="entry-header">
+
+        {% if wp.aviators_entry_meta() or wp.aviators_edit_post_link() %}
+            <div class="entry-meta">
+                {{ wp.aviators_entry_meta() }}
+                {{ wp.aviators_edit_post_link() }}
+            </div><!-- .entry-meta -->
+        {% endif %}
+
+        {% if wp.is_single() %}
+            <h1 class="page-header entry-title">{{ wp.the_title() }}</h1>
+        {% else %}
+            <h1 class="page-header entry-title">
+                <a href="{{ wp.the_permalink() }}" rel="bookmark">{{ wp.the_title() }}</a>
+            </h1>
+        {% endif %}
+
+        {# POST THUMBNAIL #}
+        {% if (wp.has_post_thumbnail() and not wp.post_password_required()) %}
+            <div class="entry-thumbnail">
+                {{ wp.the_post_thumbnail() }}
+            </div><!-- /.entry-thumbnail -->
+        {% endif %}
+    </header><!-- .entry-header -->
+
+    {# SEARCH #}
+    {% if wp.is_search() %}
+        <div class="entry-summary">
+            {{ wp.the_excerpt() }}
+        </div><!-- .entry-summary -->
+    {% else %}
+        <div class="entry-content">
+            {{ wp.aviators_the_content() }}
+            {{ wp.aviators_link_pages() }}
+        </div><!-- .entry-content -->
+    {% endif %}
+</article><!-- /#post -->

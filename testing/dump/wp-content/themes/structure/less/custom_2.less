@@ -1,0 +1,234 @@
+@import (reference) "_elements";
+
+select, textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+  color: #999;
+  font-size: 15px;
+  font-style: italic;
+  border: none;
+  background-color: #F7F7F7;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #999 !important;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #999 !important;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #999 !important;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #999 !important;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  .transit;
+}
+
+.eg-thememove-blog-element-3 {
+  &:before {
+    content: "\f017";
+    .iconfont;
+    margin-right: 5px;
+  }
+}
+
+.eg-thememove-blog-element-23-a a {
+  &:before {
+    content: "\f086";
+    .iconfont;
+    margin-right: 5px;
+  }
+}
+
+.download-btn {
+  margin: 20px 0 !important;
+  .vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern {
+    text-transform: none;
+    font-weight: 600;
+    border: none;
+    color: #999;
+    background-color: #F4F4F4;
+    padding-left: 20px !important;
+  }
+  button:after {
+    .iconfont;
+    content: "\f019";
+    font-size: 20px;
+    margin-left: 15px;
+    color: #cccccc;
+  }
+  i {
+    vertical-align: middle !important;
+    position: relative !important;
+    display: inline-block !important;
+    left: auto !important;
+    top: auto !important;
+    color: #aaa;
+    margin-right: 10px;
+    .translate(0, 0) !important;
+  }
+}
+
+.download2 {
+  display: block;
+  font-weight: 600;
+  position: relative;
+  color: #999 !important;
+  background-color: #F4F4F4;
+  padding: 10px 20px;
+  margin-bottom: 2px;
+  border: none;
+  i {
+    margin-right: 10px;
+    color: #aaaaaa;
+  }
+  .fa-download {
+    font-size: 20px;
+    right: 15px;
+    position: absolute;
+    top: 50%;
+    color: #cccccc;
+    margin: 0;
+    .translate(0, -50%);
+  }
+  &:hover {
+    color: #fff !important;
+    i {
+      color: #fff;
+    }
+  }
+}
+
+.listing {
+  margin: 0 !important;
+  li {
+    list-style: none;
+    margin-right: 0;
+    margin-left: 0 !important;
+    margin-bottom: 10px !important;
+    i {
+      display: inline-block;
+      vertical-align: middle;
+      width: 5%;
+    }
+    span {
+      display: inline-block;
+      vertical-align: top;
+      width: 92%;
+    }
+  }
+}
+
+.vc_images_carousel {
+  .vc_carousel-indicators li {
+    margin: 0 !important;
+  }
+  .images-carousel-2 & {
+    .vc_carousel-indicators {
+      width: auto;
+      .translate(-50%, 0);
+      margin: 0;
+      padding: 3px 17px;
+      bottom: -15px;
+      li {
+        width: 12px;
+        height: 12px;
+        border-width: 2px;
+        vertical-align: middle;
+        opacity: 0.5;
+        &.vc_active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.wpb_image_grid {
+  .single-project & {
+    .wpb_image_grid_ul {
+      .isotope-item {
+        position: relative !important;
+        left: auto !important;
+        top: auto !important;
+      }
+    }
+  }
+}
+
+.tm_project_details {
+  .single-project-categories {
+    list-style-type: none;
+    li {
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+  &__warning {
+    color: #f1505a;
+  }
+  table {
+    background-color: #F8F8F8;
+    td {
+      &.meta-title {
+        width: 40%;
+        + td {
+          font-weight: 700;
+          font-style: italic;
+          color: #111111;
+        }
+      }
+    }
+  }
+  &--layout1 {
+    padding: 40px 30px;
+    margin-bottom: 0;
+    td {
+      padding: 0 0 5px;
+    }
+  }
+  &--layout2 {
+    padding: 30px;
+    td {
+      display: block;
+      padding: 0;
+      + td {
+        padding-bottom: 15px;
+      }
+    }
+  }
+}
+
+.thememove-gmaps {
+  img {
+    max-width: none;
+  }
+}

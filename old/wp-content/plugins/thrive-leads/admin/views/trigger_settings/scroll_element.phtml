@@ -1,0 +1,31 @@
+<p><?php echo __('Insert the ID or the class name of the element that the user should scroll to in order to display this form', 'thrive-leads') ?></p>
+<div class="tvd-input-field">
+    <input type="text" name="c" class="trigger-config" value="<?php echo empty($config['c']) ? '' : $config['c'] ?>" id="trigger-config-class">
+    <label for="trigger-config-class"><?php echo __('Class', 'thrive-leads') ?></label>
+</div>
+<div class="tvd-input-field">
+    <input type="text" name="i" class="trigger-config" value="<?php echo empty($config['i']) ? '' : $config['i'] ?>" id="trigger-config-id">
+    <label for="trigger-config-id"><?php echo __('ID', 'thrive-leads') ?></label>
+</div>
+<div class="tvd-row tvd-collapse">
+    <div class="tvd-col tvd-s2">
+        <p style="margin-top: 0;">
+            <?php echo __('SmartExit+', 'thrive-leads') ?>
+        </p>
+    </div>
+    <div class="tvd-col tvd-s10">
+        <div class="tvd-switch">
+            <label>
+                <span class="tvd-on-large-and-down">
+                    <?php echo __('Off', 'thrive-leads') ?>
+                </span>
+                <input type="checkbox" class="trigger-config" value="1" name="exi"<?php echo empty($config['exi']) ? '' : ' checked="checked"' ?>>
+                <span class="tvd-lever"></span>
+                <span class="tvd-on-large-and-down">
+                    <?php echo __('On', 'thrive-leads') ?>
+                </span>
+            </label>
+        </div>
+    </div>
+</div>
+<p class="tve-form-description"><?php echo __('Use this option to trigger the form on exit-intent if the visitor attempts to leave the site before the element has entered the viewport', 'thrive-leads') ?></p>

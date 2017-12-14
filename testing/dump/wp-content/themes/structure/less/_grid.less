@@ -1,0 +1,298 @@
+@import (reference) "_variables";
+@import (reference) "_elements";
+
+/*--------------------------------------------
+Grid Framework
+----------------------------------------------*/
+// Framework grid generation
+//
+// Used only by Bootstrap to generate the correct number of grid classes given
+// any value of `@grid-columns`.
+
+.make-grid-columns() {
+  // Common styles for all sizes of grid columns, widths 1-12
+  .col(@index) when (@index = 1) {
+    // initial
+    @item: ~".col-xs-@{index}, .col-sm-@{index}, .col-md-@{index}, .col-lg-@{index}";
+    .col((@index + 1), @item);
+  }
+  .col(@index, @list) when (@index =< @grid-columns) {
+    // general; "=<" isn't a typo
+    @item: ~".col-xs-@{index}, .col-sm-@{index}, .col-md-@{index}, .col-lg-@{index}";
+    .col((@index + 1), ~"@{list}, @{item}");
+  }
+  .col(@index, @list) when (@index > @grid-columns) {
+    // terminal
+    @{list} {
+      min-height: 1px;
+      padding-left: (@grid-gutter-width / 2);
+      padding-right: (@grid-gutter-width / 2);
+      display: inline-block;
+      vertical-align: top;
+      float: none;
+      width: 100%;
+      font-size: @font-size-base;
+    }
+  }
+  .col(1); // kickstart it
+}
+
+.float-grid-columns(@class) {
+  .col(@index) when (@index = 1) {
+    // initial
+    @item: ~".col-@{class}-@{index}";
+    .col((@index + 1), @item);
+  }
+  .col(@index, @list) when (@index =< @grid-columns) {
+    // general
+    @item: ~".col-@{class}-@{index}";
+    .col((@index + 1), ~"@{list}, @{item}");
+  }
+  .col(1); // kickstart it
+}
+
+.calc-grid-column(@index, @class, @type) when (@type = width) and (@index > 0) {
+  .col-@{class}-@{index} {
+    width: percentage((@index / @grid-columns));
+  }
+}
+
+// Basic looping in LESS
+.loop-grid-columns(@index, @class, @type) when (@index >= 0) {
+  .calc-grid-column(@index, @class, @type);
+  // next iteration
+  .loop-grid-columns((@index - 1), @class, @type);
+}
+
+// Create grid for specific class
+.make-grid(@class) {
+  .float-grid-columns(@class);
+  .loop-grid-columns(@grid-columns, @class, width);
+}
+
+// Grid system
+//
+// Generate semantic grid columns with these mixins.
+
+// Centered container element
+.container-fixed() {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: (@grid-gutter-width / 2);
+  padding-right: (@grid-gutter-width / 2);
+}
+
+// Creates a container for a series of columns
+.make-row(@gutter: @grid-gutter-width) {
+  margin-left: (@gutter / -2);
+  margin-right: (@gutter / -2);
+}
+
+// Generate the extra small columns
+.make-xs-column(@columns; @gutter: @grid-gutter-width) {
+  width: percentage((@columns / @grid-columns));
+  min-height: 1px;
+  padding-left: (@gutter / 2);
+  padding-right: (@gutter / 2);
+}
+
+// Generate the small columns
+.make-sm-column(@columns; @gutter: @grid-gutter-width) {
+  min-height: 1px;
+  padding-left: (@gutter / 2);
+  padding-right: (@gutter / 2);
+
+  @media (min-width: @screen-sm-min) {
+    width: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the medium columns
+.make-md-column(@columns; @gutter: @grid-gutter-width) {
+  min-height: 1px;
+  padding-left: (@gutter / 2);
+  padding-right: (@gutter / 2);
+
+  @media (min-width: @screen-md-min) {
+    width: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the large columns
+.make-lg-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  min-height: 1px;
+  padding-left: (@gutter / 2);
+  padding-right: (@gutter / 2);
+
+  @media (min-width: @screen-lg-min) {
+    width: percentage((@columns / @grid-columns));
+  }
+}
+
+//
+// Grid system
+// --------------------------------------------------
+
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: (@grid-gutter-width / 2);
+  padding-right: (@grid-gutter-width / 2);
+}
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but without any defined
+// width for fluid, full width layouts.
+
+.container-fluid {
+  .container-fixed();
+}
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
+
+.row {
+  .make-row();
+  font-size: 0;
+}
+
+// Columns
+//
+// Common styles for small and large grid columns
+
+.make-grid-columns();
+
+.make-grid(xs);
+
+@media (min-width: @screen-sm-min) {
+  .make-grid(sm);
+}
+
+@media (min-width: @screen-md-min) {
+  .make-grid(md);
+}
+
+@media (min-width: @screen-lg-min) {
+  .make-grid(lg);
+}
+
+.col-lg-20 {
+  .make-lg-column(2.4);
+  display: inline-block;
+  font-size: @font-size-base;
+  vertical-align: top;
+}
+
+.col-md-20 {
+  .make-md-column(2.4);
+  display: inline-block;
+  vertical-align: top;
+  font-size: @font-size-base;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+
+  .no-padding-xs {
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important;
+  }
+
+  .no-padding-sm {
+    padding: 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important;
+  }
+
+  .no-padding-md {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important;
+  }
+
+  .no-padding-lg {
+    padding: 0;
+  }
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+//mobile
+.container {
+  max-width: 320px;
+}
+
+@media @xs {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media @sm {
+  .container {
+    max-width: 640px;
+  }
+}
+
+//big tablet
+@media @md {
+  [class*="col"] {
+    margin-bottom: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+  }
+
+  .container {
+    max-width: 960px;
+  }
+}
+
+//desktop
+@media @lg {
+  [class*="col"] {
+    margin-bottom: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+  }
+
+  .container {
+    max-width: 1170px;
+  }
+
+  .boxed {
+    max-width: 1200px;
+    margin: auto;
+  }
+}

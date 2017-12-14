@@ -1,0 +1,80 @@
+/**
+ * Main YITH WooCommerce Wishlist CSS
+ *
+ * @author Your Inspiration Themes
+ * @package YITH WooCommerce Wishlist
+ * @version 1.1.5
+ */
+
+.wishlist_table .product-name h4 a  { font-weight: 700; }
+
+
+/*.summary .product_meta { margin-top: 45px; }*/
+
+/* Popup message */
+/*#yith-wcwl-popup-message {*/
+    /*background: white;*/
+    /*border: 1px solid #CCC;*/
+    /*border-radius: 5px;*/
+    /*-webkit-border-radius: 5px;*/
+    /*-moz-border-radius: 5px;*/
+    /*line-height: 50px;*/
+    /*padding: 15px;*/
+    /*position: fixed;*/
+    /*text-align: center;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*z-index: 10000; *//* Thanks WP -.- */
+/*}*/
+
+/* Wishlist table template */
+/*.wishlist_table {}*/
+
+/*.wishlist_table tr td { text-align: center; }*/
+/*.wishlist_table tr td.product-thumbnail, .wishlist_table tr td.product-name { text-align: left; }*/
+/*.wishlist_table tr td.product-stock-status span.wishlist-in-stock { color: #297E29; }*/
+/*.wishlist_table tr td.product-stock-status span.wishlist-out-of-stock { color: #F00; }*/
+
+/* Wishlist buttons */
+/*.summary .single_add_to_wishlist.button, div.product .woocommerce-price-and-add .single_add_to_wishlist.button { margin: 0px; } */
+/*.yith-wcwl-add-to-wishlist { margin-top: 10px; }*/
+/*.yith-wcwl-add-button > a i, .wishlist_table .add_to_cart.button i { margin-right: 10px; }*/
+/*.wishlist_table .add_to_cart.button { margin: 0px; }*/
+
+
+
+/* Share buttons */
+/*.yith-wcwl-share ul {*/
+    /*margin-bottom: 10px;*/
+    /*margin-left: 0px;*/
+/*}*/
+
+/*.yith-wcwl-share ul, .yith-wcwl-share li { height: 21px; }*/
+/*.yith-wcwl-share li, .entry-content .yith-wcwl-share li { margin-left: 0px; margin-right: 3px; }*/
+
+/*.yith-wcwl-share li a {*/
+    /*background-position: left bottom;*/
+    /*display: inline-block;*/
+    /*width: 21px;*/
+    /*height: 21px;*/
+/*}*/
+
+/*.yith-wcwl-share li a:hover { background-position: left top; }*/
+/*.yith-wcwl-share li a.facebook { background-image: url(../images/facebook.png ); }*/
+/*.yith-wcwl-share li a.twitter { background-image: url(../images/twitter.png ); }*/
+/*.yith-wcwl-share li a.pinterest { background-image: url(../images/pinterest.jpg ); }*/
+/*.yith-wcwl-share li a.googleplus { background-image: url(../images/googleplus.jpg ); }*/
+/*.yith-wcwl-share li a.email { background-image: url(../images/email.jpg ); }*/
+
+/* AJAX loading gif */
+.yith-wcwl-add-to-wishlist .ajax-loading {
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    display: inline !important;
+    margin-left: 5px;
+    vertical-align: middle;
+    visibility: hidden;
+    width: 16px !important;
+    height: 16px !important;
+}

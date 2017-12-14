@@ -1,0 +1,29 @@
+{
+	"title": "Google Analytics",
+	"slug" : "google_analytics",
+
+	"tabs": [
+		{
+			"settings": {
+				"slug"        : "google_analytics",
+				"title"       : "Google Analytics",
+				"subpage_slug": "google_analytics"
+			},
+
+			"sections": [
+				{
+					"settings": {
+						"id": "tracking"
+					},
+					"options" : [
+						{
+							"id"   : "code",
+							"label": "Tracking code",
+							"type" : "textinput"
+						}
+					]
+				}
+			]
+		}
+	]
+}

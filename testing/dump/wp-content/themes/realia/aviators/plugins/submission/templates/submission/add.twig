@@ -1,0 +1,40 @@
+<h1 class="page-header">{{ wp.__('Add submission', 'aviators') }}</h1>
+
+<form method="post" action="" enctype="multipart/form-data" class="submission-form">
+    <div class="row">
+
+        {{ form.content|raw }}
+
+        <div class="span4">
+            <div class="submission-box clearfix">
+                {{ form.metabox._setup() }}
+            </div>
+        </div><!-- /.submission-box -->
+    </div>
+
+
+    {% if tos is not empty %}
+        {% set value = wp.__('Continue', 'aviators') %}
+        <a href="#legal-agreement" role="button" class="btn btn-primary" data-toggle="modal">Save</a>
+
+        <div id="legal-agreement" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="myModalLabel">{{ tos_page.post_title }}</h3>
+            </div>
+            <div class="modal-body">
+                {{ tos_content|raw }}
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true"> {{ wp.__('Close', 'aviators') }}  </button>
+                <input type="submit" class="btn btn-primary" value="{{ value }}">
+            </div>
+        </div>
+    {% else %}
+        <div class="form-actions">
+            {% set value = wp.__('Save', 'aviators') %}
+            <input type="submit" class="btn btn-primary" value="{{ value }}">
+        </div>
+    {% endif %}
+
+</form>

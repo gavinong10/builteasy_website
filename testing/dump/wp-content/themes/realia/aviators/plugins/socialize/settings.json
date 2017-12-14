@@ -1,0 +1,130 @@
+{
+	"title": "Socialize",
+	"slug" : "socialize",
+
+	"tabs": [
+		{
+			"settings": {
+				"slug"        : "socialize",
+				"title"       : "Social",
+				"subpage_slug": "socialize"
+			},
+			"sections": [
+				{
+					"settings": {
+						"id"   : "facebook",
+						"title": "Facebook"
+					},
+					"options" : [
+						{
+							"id"   : "is_hidden",
+							"label": "Hide Facebook",
+							"type" : "boolean"
+						},
+						{
+							"id"     : "link",
+							"label"  : "Link",
+							"type"   : "textinput",
+							"default": "http://www.facebook.com"
+						}
+					]
+				},
+				{
+					"settings": {
+						"id"   : "flickr",
+						"title": "Flickr"
+					},
+					"options" : [
+						{
+							"id"   : "is_hidden",
+							"label": "Hide Flickr",
+							"type" : "boolean"
+						},
+						{
+							"id"     : "link",
+							"label"  : "Link",
+							"type"   : "textinput",
+							"default": "http://www.flickr.com"
+						}
+					]
+				},
+				{
+					"settings": {
+						"id"   : "google_plus",
+						"title": "Google+"
+					},
+					"options" : [
+						{
+							"id"   : "is_hidden",
+							"label": "Hide Google+",
+							"type" : "boolean"
+						},
+						{
+							"id"     : "link",
+							"label"  : "Link",
+							"type"   : "textinput",
+							"default": "http://plus.google.com"
+						}
+					]
+				},
+				{
+					"settings": {
+						"id"   : "linkedin",
+						"title": "LinkedIn"
+					},
+					"options" : [
+						{
+							"id"   : "is_hidden",
+							"label": "Hide LinkedIn",
+							"type" : "boolean"
+						},
+						{
+							"id"     : "link",
+							"label"  : "Link",
+							"type"   : "textinput",
+							"default": "http://linkedin.com"
+						}
+					]
+				},
+				{
+					"settings": {
+						"id"   : "twitter",
+						"title": "Twitter"
+					},
+					"options" : [
+						{
+							"id"   : "is_hidden",
+							"label": "Hide Twitter",
+							"type" : "boolean"
+						},
+						{
+							"id"     : "link",
+							"label"  : "Link",
+							"type"   : "textinput",
+							"default": "http://www.twitter.com"
+						}
+					]
+				},
+				{
+					"settings": {
+						"id"   : "vimeo",
+						"title": "Vimeo"
+					},
+					"options" : [
+						{
+							"id"   : "is_hidden",
+							"label": "Hide Vimeo",
+							"type" : "boolean"
+						},
+						{
+							"id"     : "link",
+							"label"  : "Link",
+							"type"   : "textinput",
+							"default": "http://vimeo.com"
+						}
+					]
+				}
+			]
+		}
+	]
+}

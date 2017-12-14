@@ -1,0 +1,267 @@
+CHANGELOG
+
+------------------------------------------------------------------------------------------------------------------------
+September 3, 2014 - 3.1.5 Update
+------------------------------------------------------------------------------------------------------------------------\
+Fix - Breadcrumb compatiblity issue - posts shifting by one
+
+templates/helpers/topbar.twig
+
+------------------------------------------------------------------------------------------------------------------------
+September 2, 2014 - 3.1.4 Update
+------------------------------------------------------------------------------------------------------------------------\
+Fix - Custom text instead of price on row display
+Fix - Price filter options on Revolution slider
+Fix - Special characters in widget titles allowed
+
+aviators/plugins/properties/templates/properties/carousel.twig
+aviators/plugins/properties/templates/properties/enquire.twig
+aviators/plugins/properties/templates/properties/filter-horizontal.twig
+aviators/plugins/properties/templates/properties/filter.twig
+aviators/plugins/properties/templates/properties/property-row.twig
+aviators/plugins/properties/templates/properties/widget-general.twig
+aviators/plugins/properties/templates/properties/widget-large.twig
+aviators/plugins/properties/templates/properties/widget.twig
+aviators/plugins/properties/utils.php
+aviators/plugins/properties/widgets/property_filter.php
+aviators/plugins/properties/widgets/revolution_slider.php
+
+------------------------------------------------------------------------------------------------------------------------
+July 9, 2014 - 3.1.3 Update
+------------------------------------------------------------------------------------------------------------------------\
+Fix - Revolution Slider Filters responsivity
+Fix - Paypal currency
+
+aviators/plugins/properties/properties.php
+aviators/plugins/properties/utils.php
+aviators/plugins/submission/utils.php
+
+------------------------------------------------------------------------------------------------------------------------
+June 23, 2014 - 3.1.2 Update
+------------------------------------------------------------------------------------------------------------------------\
+Feature - Added Contract Type to filter
+Feature - Revolution Slider can display with filters
+
+assets/css
+functions.php
+aviators/plugins/properties/properties.php
+aviators/plugins/properties/templates/properties/widget-revolution-slider.twig
+aviators/plugins/properties/widgets/revolution_slider.php
+aviators/plugins/properties/settings.json
+aviators/plugins/properties/templates/properties/filter-horizontal.twig
+aviators/plugins/properties/templates/properties/filter.twig
+
+------------------------------------------------------------------------------------------------------------------------
+June 21, 2014 - 3.1.1 Update
+------------------------------------------------------------------------------------------------------------------------\
+
+Fix - Added exports for one click installation
+Feature - Added options to disable Sublocation And District for frontend submission form
+Feature - Added option to disalbe Sublocation and District for filters
+
+exports
+plugins/properties
+templates
+style.css
+
+------------------------------------------------------------------------------------------------------------------------
+June 20, 2014 - 3.1.0 Update
+------------------------------------------------------------------------------------------------------------------------
+Feature - 3rd level of sublocations in frontend submission form
+Feature - Added One click installation
+Fix - Call to action button translatable
+Fix - Map filtering for Vertical Filter
+
+functions.php
+exports
+plugins/properties/properties.php
+plugins/properties/templates/properties/form-content.twig
+plugins/submission/utils.php
+launcher/assets/img/check.png
+launcher/assets/img/lock-open.png
+launcher/assets/img/lock.png
+launcher/assets/img/play.png
+launcher/importers/content-import.php
+launcher/importers/hydra-import.php
+launcher/importers/logic-import.php
+launcher/importers/theme-options-import.php
+launcher/importers/widget-import.php
+launcher/launcher.php
+launcher/template/launcher.php
+launcher/template/messages.php
+settings/plugins.json
+settings/customization.php
+templates/helpers/header.twig
+assets/js/realia.js
+assets/scss/helpers/_forms.scss
+templates/properties/form-content.twig
+plugins/aviators_utils
+
+
+------------------------------------------------------------------------------------------------------------------------
+June 5, 2014 - 3.0.1 Update
+------------------------------------------------------------------------------------------------------------------------
+Feature - 3rd level of sublocations
+Feature - Preloader image for sublocations
+
+aviators/plugins/properties/templates/properties/filter-horizontal.twig
+aviators/plugins/properties/utils.php
+aviators/plugins/properties/settings.json
+aviators/plugins/properties/templates/properties/filter.twig
+assets/js/realia.js
+assets/css
+------------------------------------------------------------------------------------------------------------------------
+May 29, 2014 - 3.0.0 Update
+------------------------------------------------------------------------------------------------------------------------
+Feature - Horizontal Filter for map
+Feature - Map Filtering
+
+assets/js/realia.js
+assets/css
+functions.php
+
+------------------------------------------------------------------------------------------------------------------------
+May 27, 2014 - 2.8.9 Update
+------------------------------------------------------------------------------------------------------------------------
+Feature - Filter Sublocations
+
+assets/js/realia.js
+aviators/plugins/properties/properties.php
+aviators/plugins/properties/settings.json
+aviators/plugins/properties/templates/properties/filter.twig
+aviators/plugins/properties/utils.php
+
+------------------------------------------------------------------------------------------------------------------------
+May 9, 2014 - 2.8.8 Update
+------------------------------------------------------------------------------------------------------------------------
+Fix - Author email for enquire form
+Fix - Custom text instead of price in widget
+Feature - Generic Widget for properties which can filter on taxonomy terms
+Feature - Honeypot added to prevent spam from enquire form
+
+functions.php
+plugins/properties/enquire.php
+plugins/properties/properties.php
+plugins/properties/templates/properties/properties-grid.twig
+plugins/properties/templates/properties/property-sidebar.twig
+plugins/properties/templates/properties/widget-general.twig
+plugins/properties/templates/properties/widget-properties-grid.twig
+plugins/properties/templates/properties/widget-properties-row.twig
+plugins/properties/templates/properties/widget-properties-sidebar.twig
+plugins/properties/templates/properties/widget.twig
+plugins/properties/utils.php
+plugins/properties/widgets/general_properties.php
+plugins/properties/enquire.php
+plugins/properties/templates/properties/property-sidebar.twig
+plugins/properties/enquire.php
+
+------------------------------------------------------------------------------------------------------------------------
+April 18, 2014 - 2.8.7 Update
+------------------------------------------------------------------------------------------------------------------------
+Feature - Added support for Property ID search for frontend
+Fix - Refactored enquire form, as some server installation had problems loading correct php to send mail.
+
+"realia" folder
++3 -0 header.php
++1 -1 style.css
+
+"aviators" folder
++12 -20 plugins/properties/enquire.php
++2 -1 plugins/properties/templates/properties/enquire.twig
++6 -0 plugins/properties/settings.json
++12 -0 plugins/properties/templates/properties/filter.twig
++262 -251 plugins/properties/utils.php
+
+------------------------------------------------------------------------------------------------------------------------
+March 31, 2014 - 2.8.6 Update
+------------------------------------------------------------------------------------------------------------------------
+Update
+Fix - added PictoPro icon set into assets/libraries
+Fix - update templates/submission/edit.twig file
+
+------------------------------------------------------------------------------------------------------------------------
+March 13, 2014 - 2.8.5 Update
+------------------------------------------------------------------------------------------------------------------------
+Update:
+Fix - Menu in boxed layout for mobile devices styled correctly
+Feature - Enquire form now has options to whom will the email sent
+Feature - Prior to submitting property to from front-end submission Legal Agreement can be displayed
+
+Documentation update:
+ - How to add custom map icons
+
+
+"realia" Folder
++1 -1 assets/css/realia-blue.css
++1 -1 assets/css/realia-brown-dark.css
++1 -1 assets/css/realia-brown.css
++1 -1 assets/css/realia-gray-blue.css
++1 -1 assets/css/realia-gray-brown-dark.css
++1 -1 assets/css/realia-gray-brown.css
++1 -1 assets/css/realia-gray-green-light.css
++1 -1 assets/css/realia-gray-green.css
++1 -1 assets/css/realia-gray-magenta.css
++1 -1 assets/css/realia-gray-orange.css
++1 -1 assets/css/realia-gray-red.css
++1 -1 assets/css/realia-gray-turquiose.css
++1 -1 assets/css/realia-gray-violet.css
++1 -1 assets/css/realia-green-light.css
++1 -1 assets/css/realia-green.css
++1 -1 assets/css/realia-magenta.css
++1 -1 assets/css/realia-orange.css
++1 -1 assets/css/realia-red.css
++1 -1 assets/css/realia-turquiose.css
++1 -1 assets/css/realia-violet.css
++10 -0 assets/scss/helpers/_navigation.scss
++2 -0 templates/properties/form-content.twig
++0 -5 templates/submission/edit.twig
+
+"realia/aviators" Folder
++68 -50 plugins/properties/enquire.php
++32 -0 plugins/properties/settings.json
++25 -13 plugins/submission/renderers.php
++30 -0 plugins/submission/settings.json
++25 -4 plugins/submission/templates/submission/add.twig
+
+------------------------------------------------------------------------------------------------------------------------
+March 11, 2014 - 2.8.4 Update
+------------------------------------------------------------------------------------------------------------------------
+
+Update:
+Fix - Default Color options in theme customization resulted in wrong ling - css was not loaded properly
+Fix - Property slider now respect custom text instead of price
+Feature - Taxonomy pages now can have description ( Text inserted in taxonomy term description )
+Feature - Pages with grid template now display page content above the grid
+Feature - Pages with row template now display page content above the rows
+Feature - Default Sorting option for archive property page now can be set from Administration
+Feature - Added widget logic export
+
+Documentation update:
+ - How to disable error reporting
+ - How to upload the theme
+
+Changed Files
+
+"realia" Folder
+README.txt
+export/widget_logic_options.txt
++6 -0 archive-property.php
++5 -3 page-properties-grid.php
++3 -1 page-properties-rows.php
++1 -1 settings/customization.php
++5 -1 taxonomy-amenities.php
++5 -1 taxonomy-locations.php
++5 -1 taxonomy-property_contracts.php
++5 -1 taxonomy-property_types.php
++6 -0 templates/archive-property.twig
++10 -0 templates/page-properties-grid.twig
++16 -8 templates/page-properties-rows.twig
++1 -1 style.css
++22 -0 templates/properties/properties-grid.twig
+
+"realia/aviators" Folder
++0 -0 libraries/plugins/revslider.zip
++6 -6 plugins/properties/assets/js/geolocation.js
++320 -272 plugins/properties/settings.json
++8 -8 plugins/properties/templates/properties/filter-horizontal.twig
++4 -0 plugins/properties/templates/properties/properties-grid.twig
