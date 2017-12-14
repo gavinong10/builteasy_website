@@ -1,8 +1,0 @@
-# This file will ignore files/folders from git
-
-# Node Modules #
-node_modules/
-u.sh
-Ultimate_VC_Addons.zip
-# GRAUPI fetch #
-bcore.sh

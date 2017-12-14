@@ -1,3 +1,0 @@
-{
-	"plugins": ["aviators_utils", "money", "properties", "agents", "agencies", "partners", "landlords", "shortcodes", "faq", "pricing", "call-to-action", "accounts", "google_analytics", "socialize", "submission"]
-}
