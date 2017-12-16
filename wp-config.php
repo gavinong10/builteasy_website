@@ -20,13 +20,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'builteas_builteasy');
+define('DB_NAME', 'builteasy_wp');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'builteasy_wp');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'BuiltEasy123!');
+define('DB_PASSWORD', 'lk4lcAkGsPlX');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -87,5 +87,5 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
-define('WP_HOME', 'http://builteasy.site');
-define('WP_SITEURL', WP_HOME . '/');
+#define('WP_HOME', 'http://builteasy.site');
+#define('WP_SITEURL', WP_HOME . '/');
