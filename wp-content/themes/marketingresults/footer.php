@@ -50,6 +50,28 @@
 jQuery(document).ready(function(){
 	jQuery("#navbar a.dropdown-toggle").append('&nbsp;<span class="caret"></span>');
 });
+jQuery(document).ready(function () {
+
+	// Open in new window
+//	jQuery(".divLink").click(function () {
+//		window.open(jQuery(this).find("a:first").attr("href"));
+//		return false;
+//	});
+		
+	// Or use this to Open link in same window (similar to target=_blank)
+	jQuery(".divLink").click(function(){
+		window.location = jQuery(this).find("a:first").attr("href");
+		return false;
+	});
+
+	// Show URL on Mouse Hover
+	jQuery(".divLink").hover(function () {
+		window.status = jQuery(this).find("a:first").attr("href");
+	}, function () {
+		window.status = "";
+	});
+
+});
 </script>
 </body>
 </html>

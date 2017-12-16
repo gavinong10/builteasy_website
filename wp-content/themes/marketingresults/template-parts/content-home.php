@@ -7,12 +7,13 @@
 				if( have_rows('builds') ) { 
 					 while ( have_rows('builds') ) { the_row(); ?>
 					<div class="col-sm-6 col-md-6 box text-center">
-						<div class="icon-box-1 white-bg pxy-6 box-shadow">
+						<div class="icon-box-1 white-bg pxy-6 box-shadow divLink" style="cursor: pointer;">
+						<a href="<?php the_sub_field('read_more_link'); ?>"></a>
 							<div class="icon "><a href="#"><i class="<?php the_sub_field('icon'); ?>" aria-hidden="true"></i></a></div>
 								<div class="icon-dec">
 								<h4 class="text-black mb-4 text-uppercase"><?php the_sub_field('title'); ?></h4>
 								<?php the_sub_field('description'); ?>
-								<a href="<?php the_sub_field('read_more_link'); ?>" class="btn btn-default btn-sm radius">Read More <i class="fa fa-plus ml-1" aria-hidden="true"></i>
+								<a class="btn btn-default btn-sm radius">Read More <i class="fa fa-plus ml-1" aria-hidden="true"></i>
 								</a>
 							</div>
 						</div>
@@ -48,7 +49,7 @@
 				<div class="col-md-7 col-sm-12 pull-right">
 					<div class="videoimg">
 						<img class="img-responsive" src="<?php echo get_field('video_image'); ?>" alt="">
-						<a class="popup-youtube" href="<?php echo get_field('video_link'); ?>"> <i class="fa fa-play"></i> </a>
+						<!-- <a class="popup-youtube" href="<?php echo get_field('video_link'); ?>"> <i class="fa fa-play"></i> </a> -->
 					</div>
 				</div>
 				<div class="col-md-5 col-sm-12">
@@ -246,12 +247,9 @@
 			</div>
 
 			<div class="col-sm-6">
-			<form>
-				<div class="form-group">
-					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-					<a href="#" class="btn btn-default btn-danger"><i class="fa fa-paper-plane" aria-hidden="true"></i> Send</a>
-				</div>
-			</form>
+			<?php
+				echo do_shortcode('[mc4wp_form id="1041"]');
+			?>
 			</div>
 			</div>
 		</div>
@@ -281,9 +279,9 @@ call_us_number','options')); ?>"><?php the_field('call_us_number','options'); ?>
         <div class="contact-info text-center"> <span class="icon-round"> <i class="fa fa-group"></i> </span>
           <h3>FOLLOW US</h3>
           <ul class="list-inline social">
-            <li><a href="<?php the_field('facebook','options'); ?>"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="<?php the_field('linked_in','options'); ?>"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-            <li><a href="<?php the_field('instagram','options'); ?>"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a target="_blank" href="<?php the_field('facebook','options'); ?>"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a target="_blank" href="<?php the_field('linked_in','options'); ?>"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a target="_blank" href="<?php the_field('instagram','options'); ?>"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
           </ul>
         </div>
       </div>
