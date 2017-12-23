@@ -161,87 +161,86 @@ $i = 0;
 	</section-->
 	<section class="home-promotion pt-0 pb-0">
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-				<ol class="carousel-indicators">
-						<?php $i = 0;
-$flag = true;while (have_rows('testimonial_lists')) {the_row();?>
-							<li data-target="#carousel-example-generic" data-slide-to="<?php echo $i++; ?>
-			" <?php if ($flag) {echo 'class="active"';
-    $flag = false;}?>
-		>
-	</li>
-					<?php }?>
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<?php $i = 0;
+						$flag = true;while (have_rows('testimonial_lists')) {the_row();?>
+				<li data-target="#carousel-example-generic" data-slide-to="<?php echo $i++; ?>
+				" <?php if ($flag) {echo 'class="active"'; $flag=false;}?>
+					>
+				</li>
+				<?php }?>
 			</ol>
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner" role="listbox">
-						<?php $flag = true;?>
-					<?php while (have_rows('testimonial_lists')) {the_row();?>
-									<div class="item <?php if ($flag) {echo 'active';
-    $flag = false;}?>
-		">
-						<div class="row row-eq-height no-gutter">
-								<div class="col-sm-6 promo-bg" style="background: url('<?php the_sub_field('image');?>
-		') no-repeat 0 0; background-size: cover;">
-								<div class="clipper hidden-xs">
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<?php $flag = true;?>
+				<?php while (have_rows('testimonial_lists')) {the_row();?>
+				<div class="item <?php if ($flag) {echo 'active';
+		$flag = false;}?>
+			">
+					<div class="row row-eq-height no-gutter">
+						<div class="col-sm-6 promo-bg" style="background: url('<?php the_sub_field('image');?>
+			') no-repeat 0 0; background-size: cover;">
+							<div class="clipper hidden-xs">
 
-		</div>
+							</div>
 						</div>
-							<div class="col-sm-6">
-									<div class="promo-wrapper">
-										<div class="promo-slider">
-											<div class="promo">
-												<h2>
-			<?php the_sub_field('title');?>
-	</h2>
-											<p class="promo-text">
-			<?php the_sub_field('content');?>
-	</p>
-											<a href="#<?php //the_sub_field('video_link'); ?>
-		" class="btn btn-default btn-danger" tabindex="0">
-		Download now</a>
+						<div class="col-sm-6">
+							<div class="promo-wrapper">
+								<div class="promo-slider">
+									<div class="promo">
+										<h2>
+											<?php the_sub_field('title');?>
+										</h2>
+										<p class="promo-text">
+											<?php the_sub_field('content');?>
+										</p>
+										<a href="<?php the_sub_field('download_link'); ?>
+			" class="btn btn-default btn-danger" tabindex="0">
+											Download now</a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-					<?php }?>
-					<!--div class="item">
-						<div class="col-sm-6 promo-bg" style="background: url('images/img2.jpg') no-repeat 0 0; background-size: cover;">
-							<div class="clipper hidden-xs">
+				<?php }?>
+				<!--div class="item">
+							<div class="col-sm-6 promo-bg" style="background: url('images/img2.jpg') no-repeat 0 0; background-size: cover;">
+								<div class="clipper hidden-xs">
 
-		</div>
-					</div>
-						<div class="col-sm-6">
-								<div class="promo-wrapper">
-									<div class="promo-slider">
-										<div class="promo">
-											<h2>
-			Download your FREE Home Building Guide</h2>
-										<p class="promo-text">
-			Thinking about building a new home? Check out our new home building guide. From your initial plans to the construction process, this free guide covers everything you need to know.</p>
-										<a href="#" class="btn btn-default btn-danger" tabindex="0">
-			Download now</a>
+			</div>
+						</div>
+							<div class="col-sm-6">
+									<div class="promo-wrapper">
+										<div class="promo-slider">
+											<div class="promo">
+												<h2>
+				Download your FREE Home Building Guide</h2>
+											<p class="promo-text">
+				Thinking about building a new home? Check out our new home building guide. From your initial plans to the construction process, this free guide covers everything you need to know.</p>
+											<a href="#" class="btn btn-default btn-danger" tabindex="0">
+				Download now</a>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div-->
+					</div-->
 			</div>
-				<!-- Controls -->
-				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true">
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true">
 
-		</span>
-					<span class="sr-only">
-			Previous</span>
+				</span>
+				<span class="sr-only">
+					Previous</span>
 			</a>
-				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true">
+			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true">
 
-		</span>
-					<span class="sr-only">
-			Next</span>
+				</span>
+				<span class="sr-only">
+					Next</span>
 			</a>
 		</div>
 	</section>
