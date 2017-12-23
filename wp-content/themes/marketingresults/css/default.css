@@ -1230,6 +1230,10 @@ a.anchor {
     display: none;
 }
 
+.post-template-default #secondary {
+    display: none;
+}
+
 .blog #primary,.post-template-default #primary{
     background: black;
 }
@@ -1239,6 +1243,7 @@ a.anchor {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    padding-bottom: 30px;
 }
 
 @media (min-width: 768px) {
