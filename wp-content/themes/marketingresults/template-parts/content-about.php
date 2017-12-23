@@ -326,13 +326,13 @@
 
 					<?php if(get_sub_field('link_1')) { ?>
 
-            <a href="<?php the_sub_field('link_1'); ?>" class="btn btn-sm" >Learn More</a>
+            <a href="<?php the_sub_field('link_1'); ?>" class="btn btn-sm" ><?php the_sub_field('link_1_name'); ?></a>
 
 					<?php } ?>
 
           <?php if(get_sub_field('link_2')) { ?>
             
-            <a href="<?php the_sub_field('link_2'); ?>" class="btn btn-sm" >Learn More</a>
+            <a href="<?php the_sub_field('link_2'); ?>" class="btn btn-sm" ><?php the_sub_field('link_2_name'); ?></a>
 
 					<?php } ?>
 
