@@ -162,6 +162,10 @@ $i = 0;
 	<section class="home-promotion pt-0 pb-0">
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
+			<!-- TODO: Add the carousel indicators only when there are more than 1 testimonial -->
+			<?php
+				if (false):
+			 ?>
 			<ol class="carousel-indicators">
 				<?php $i = 0;
 						$flag = true;while (have_rows('testimonial_lists')) {the_row();?>
@@ -171,6 +175,7 @@ $i = 0;
 				</li>
 				<?php }?>
 			</ol>
+			<?php endif ?>
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
 				<?php $flag = true;?>
@@ -230,7 +235,7 @@ $i = 0;
 			<!-- Controls -->
 			 <?php
 				if ($testimonial_rows > 1):
-			?>
+			 ?>
 			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
 				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true">
 
