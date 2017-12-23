@@ -1227,7 +1227,7 @@ a.anchor {
     display: none;
 }
 
-.blog {
+.blog #primary{
     background: black;
     padding-right: 15px;
     padding-left: 15px;
@@ -1236,17 +1236,17 @@ a.anchor {
 }
 
 @media (min-width: 768px) {
-  blog {
+  blog #primary{
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  blog {
+  blog #primary{
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  blog {
+  blog #primary{
     width: 1170px;
   }
 }
