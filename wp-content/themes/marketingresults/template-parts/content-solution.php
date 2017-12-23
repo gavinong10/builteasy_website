@@ -99,8 +99,9 @@
                         </div>
                         <div class="row">
                             <div class="col-xs-12 mt-3">
-								<?php $book_button_url=get_field('book_button_url'); ?>
-                                <a href="<?php echo $book_button_url; ?>" type="button" class="btn btn-default btn-book"> <i class="fa fa-calendar"></i> <?php the_field("book_button_name") ?></a>
+                                <?php $book_button_url=get_field('book_button_url'); if ($book_button_url): ?>
+                                    <a href="<?php echo $book_button_url; ?>" type="button" class="btn btn-default btn-book"> <i class="fa fa-calendar"></i> <?php the_field("book_button_name") ?></a>
+                                <?php endif; ?>
                             </div>
                         </div>
                     </div>
