@@ -47,7 +47,7 @@
                         ?>
                         <div class="col-md-3 col-sm-6">
                             <div class="icon-box center">
-                                <div class="icon intelligent-way-content"><a href="#" class="hi-icon"><i class="fa fa-<?php the_sub_field("fa_class")?>" aria-hidden="true"></i></a></div>
+                                <div class="icon intelligent-way-content"><span class="hi-icon"><i class="fa fa-<?php the_sub_field("fa_class")?>" aria-hidden="true"></i></span></div>
                                 <div class="icon-dec">
                                     <h4 class="text-white"> <?php the_sub_field("title")?></h4>
                                     <p class="mt-2"><?php the_sub_field("content")?></p>
