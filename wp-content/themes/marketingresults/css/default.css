@@ -1223,6 +1223,9 @@ a.anchor {
     visibility: hidden;
 }
 
+/* #### ROUGH BLOG WORK #### */
+
+
 .blog #secondary {
     display: none;
 }
@@ -1231,7 +1234,7 @@ a.anchor {
     background: black;
 }
 
-.blog #main,.post-template-default #main{
+.post-template-default #main{
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -1239,17 +1242,44 @@ a.anchor {
 }
 
 @media (min-width: 768px) {
-  blog #main,.post-template-default #main{
+  .post-template-default #main{
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  blog #main,.post-template-default #main{
+  .post-template-default #main{
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  blog #main,.post-template-default #main{
+  .post-template-default #main{
+    width: 1170px;
+  }
+}
+
+blog #primary{
+    background: black;
+}
+
+.blog #main{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  blog #main{
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  blog #main{
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  blog #main{
     width: 1170px;
   }
 }
