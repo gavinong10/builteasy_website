@@ -1227,7 +1227,7 @@ a.anchor {
     display: none;
 }
 
-.blog #primary{
+.blog #primary,.post-template-default #primary{
     background: black;
     padding-right: 15px;
     padding-left: 15px;
@@ -1236,17 +1236,17 @@ a.anchor {
 }
 
 @media (min-width: 768px) {
-  blog #primary{
+  blog #primary,.post-template-default #primary{
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  blog #primary{
+  blog #primary,.post-template-default #primary{
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  blog #primary{
+  blog #primary,.post-template-default #primary{
     width: 1170px;
   }
 }
