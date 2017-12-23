@@ -228,6 +228,9 @@ $i = 0;
 					</div-->
 			</div>
 			<!-- Controls -->
+			 <?php
+				if ($testimonial_rows > 1):
+			?>
 			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
 				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true">
 
@@ -242,6 +245,7 @@ $i = 0;
 				<span class="sr-only">
 					Next</span>
 			</a>
+			<?php endif ?>
 		</div>
 	</section>
 
@@ -263,9 +267,9 @@ $i = 0;
             <?php
 
 if (have_rows('testimonial', 123)):
-
+	$testimonial_rows = 0;
     while (have_rows('testimonial', 123)): the_row();
-
+		$testimonial_rows++;
         ?>
 
 						            	<div class="item">
