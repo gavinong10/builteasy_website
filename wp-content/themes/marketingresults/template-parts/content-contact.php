@@ -165,8 +165,8 @@
             </div>
 
             <div class="row">
-
-            <div id="content-form" class="col-md-offset-2 col-md-8">
+            <a class="anchor" id="content-form"></a>
+            <div class="col-md-offset-2 col-md-8">
 
             	<?php echo do_shortcode('[contact-form-7 id="187" title="Contact form"]'); ?>
 

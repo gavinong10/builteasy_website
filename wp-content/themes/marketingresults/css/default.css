@@ -833,7 +833,7 @@ ul.page-breadcrumb li a:hover {  color: #841618; }
 
 .building-title{font-size: 25px; font-weight: 500; margin: 0; color: #000000;}
 
-.building-consultation__phone-number {color: #d7b361; font-size:22px; font-weight:600; margin:10px 0 20px; display:block; text-decoration: none; line-height: 46px;}
+.building-consultation__phone-number {color: #d7b361; font-size:22btn-bookpx; font-weight:600; margin:10px 0 20px; display:block; text-decoration: none; line-height: 46px;}
 
 .building-consultation__talk-to-us-now .building-consultation__header-line {margin:10px auto 20px; width:60px; height:3px; background: #d7b361;}
 
@@ -1216,3 +1216,9 @@ h1, .h1 { font-size: 30px; line-height: 40px;}
 
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
