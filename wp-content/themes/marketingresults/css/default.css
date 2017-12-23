@@ -1222,3 +1222,11 @@ a.anchor {
     top: -250px;
     visibility: hidden;
 }
+
+#secondary {
+    display: none;
+}
+
+.blog {
+    background: black;
+}
