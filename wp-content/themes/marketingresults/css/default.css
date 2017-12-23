@@ -420,7 +420,7 @@ icon-dec h5 { font-size: 30px; }
 
     font-size: 0px;
 
-    cursor: pointer;
+    -cursor: pointer;
 
     margin: 15px 30px;
 
