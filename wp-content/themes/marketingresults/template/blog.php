@@ -1,9 +1,8 @@
 <?php
 /* Template Name: Blog */
-
 get_header();?>
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main blog container">
+	<div id="primary" class="content-area blackblog container">
+		<main id="main" class="site-main">
 
 			<?php
             // while (have_posts()): the_post();
