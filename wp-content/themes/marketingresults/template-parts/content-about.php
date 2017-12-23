@@ -160,7 +160,7 @@
 
                         <div class="icon-box center">
 
-                            <div class="icon"><a href="javascript:void(0)" class="hi-icon"><i class="<?php the_sub_field('icon')?>" aria-hidden="true"></i></a></div>
+                            <div class="icon"><span class="hi-icon"><i class="<?php the_sub_field('icon')?>" aria-hidden="true"></i></span></div>
 
                             <div class="icon-dec">
 
@@ -250,7 +250,7 @@
 
 			  <div class="icon-box left">
 
-				<div class="icon"><a href="javascript:void(0);" class="hi-icon"><img class="img-center" src="<?php the_sub_field('image'); ?>" alt=""></a></div>
+				<div class="icon"><span class="hi-icon"><img class="img-center" src="<?php the_sub_field('image'); ?>" alt=""></span></div>
 
 				<div class="icon-dec">
 
@@ -326,13 +326,13 @@
 
 					<?php if(get_sub_field('link_1')) { ?>
 
-						<button class="btn btn-sm" >Learn More</button>
+            <a href="<?php if(get_sub_field('link_1')); ?>" class="btn btn-sm" >Learn More</a>
 
 					<?php } ?>
 
-					<?php if(get_sub_field('link_2')) { ?>
-
-						<button class="btn btn-sm" >Learn More</button>
+          <?php if(get_sub_field('link_2')) { ?>
+            
+            <a href="<?php if(get_sub_field('link_2')); ?>" class="btn btn-sm" >Learn More</a>
 
 					<?php } ?>
 
@@ -719,7 +719,7 @@
 
                         <div class="icon-box left">
 
-                            <div class="icon"><a href="#" class="hi-icon"><img class="img-center" src="<?php the_sub_field('enquire_image'); ?>" alt=""></a></div>
+                            <div class="icon"><span href="#" class="hi-icon"><img class="img-center" src="<?php the_sub_field('enquire_image'); ?>" alt=""></span></div>
 
                             <div class="icon-dec">
 

@@ -201,7 +201,7 @@ $i = 0;
 											<?php the_sub_field('content');?>
 										</p>
 										<a href="<?php the_sub_field('download_link'); ?>
-			" class="btn btn-default btn-danger" tabindex="0">
+			" class="btn btn-default btn-danger" tabindex="0" download>
 											Download now</a>
 									</div>
 								</div>
