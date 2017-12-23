@@ -24,6 +24,63 @@ if (have_rows('builds')) {
 			</div>
 		</div>
 	</section>
+	<section class="white-bg" id="testimonial">
+
+  <div class="container">
+
+
+
+	<div class="row">
+
+		<div class="col-md-offset-2 col-md-8">
+
+        <div class="testimonial">
+
+            <div class="owl-carousel" data-nav-dots="true" data-items="1" data-md-items="1" data-sm-items="1" data-xs-items="1" >
+
+            <?php
+
+if (have_rows('testimonial', 123)):
+	$testimonial_rows = 0;
+    while (have_rows('testimonial', 123)): the_row();
+		$testimonial_rows++;
+        ?>
+
+						            	<div class="item">
+
+						                	<div class="testimonial-description-block text-center">
+
+						                    	<i class="fa fa-comments" aria-hidden="true"></i>
+
+						                    	<h4 class="text-black"><?php the_sub_field('testimonial_title');?></h4>
+
+						                        <div><?php the_sub_field('testimonial_sub_title');?></div>
+
+												<div><?php the_sub_field('testimonial_sub_title2');?></div>
+
+						                    </div>
+
+						                </div>
+
+						           <?php
+
+    endwhile;
+
+endif;
+
+?>
+
+            </div>
+
+        </div>
+
+        </div>
+
+	</div>
+
+</div>
+
+</section>
 	<section class="p-0 marketing">
 		<div class="container-fluid p-0">
 			<div class="row row-eq-height no-gutter valign">
@@ -253,65 +310,6 @@ $i = 0;
 			<?php endif ?>
 		</div>
 	</section>
-
-
-<section class="white-bg" id="testimonial">
-
-  <div class="container">
-
-
-
-	<div class="row">
-
-		<div class="col-md-offset-2 col-md-8">
-
-        <div class="testimonial">
-
-            <div class="owl-carousel" data-nav-dots="true" data-items="1" data-md-items="1" data-sm-items="1" data-xs-items="1" >
-
-            <?php
-
-if (have_rows('testimonial', 123)):
-	$testimonial_rows = 0;
-    while (have_rows('testimonial', 123)): the_row();
-		$testimonial_rows++;
-        ?>
-
-						            	<div class="item">
-
-						                	<div class="testimonial-description-block text-center">
-
-						                    	<i class="fa fa-comments" aria-hidden="true"></i>
-
-						                    	<h4 class="text-black"><?php the_sub_field('testimonial_title');?></h4>
-
-						                        <div><?php the_sub_field('testimonial_sub_title');?></div>
-
-												<div><?php the_sub_field('testimonial_sub_title2');?></div>
-
-						                    </div>
-
-						                </div>
-
-						           <?php
-
-    endwhile;
-
-endif;
-
-?>
-
-            </div>
-
-        </div>
-
-        </div>
-
-	</div>
-
-</div>
-
-</section>
 
 
 	<!--section>
