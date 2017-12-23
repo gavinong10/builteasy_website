@@ -1223,10 +1223,30 @@ a.anchor {
     visibility: hidden;
 }
 
-#secondary {
+.blog #secondary {
     display: none;
 }
 
-.blackblog {
+.blog {
     background: black;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  blog {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  blog {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  blog {
+    width: 1170px;
+  }
 }
