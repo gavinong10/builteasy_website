@@ -280,7 +280,7 @@
 
                 <?php the_field('five_content');?>
 				<?php $five_url=get_field('five_button_url'); ?>
-            	<a class="btn btn-sm btn-danger text-white" href="<?php echo $five_url; ?>" target="_blank"><?php the_field('five_button'); ?></a>
+            	<a style="text-decoration: none;" class="btn btn-sm btn-danger text-white" href="<?php echo $five_url; ?>" target="_blank"><?php the_field('five_button'); ?></a>
 
             </div>
 
