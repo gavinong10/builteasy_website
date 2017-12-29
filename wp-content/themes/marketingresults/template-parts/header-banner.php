@@ -30,7 +30,7 @@
                             the_row();
 							$link=get_sub_field('button_url'); 
                             ?>
-                            <a href="<?php echo $link; ?>" type="button" class="btn btn-default outline"><b><?php the_sub_field("button_title"); ?></b></a>
+                            <a href="<?php echo $link; ?> target="<?php the_sub_field("target"); ?>" type="button" class="btn btn-default outline"><b><?php the_sub_field("button_title"); ?></b></a>
                             <?php   
                         }
                  ?>                
