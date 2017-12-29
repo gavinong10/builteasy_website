@@ -148,6 +148,8 @@
     table.s3-table-inputs td:first-child{font-weight: bold; width:125px}
 	div#s3-adv-opts {margin-top:5px; }
 	div.s3-allnonelinks {font-size:11px; float:right;}
+	select#plugins {width:330px; height:100px}
+	select#tables {width:330px; height:100px}
 
 	/* password indicator */
 	.top_testresult{font-weight:bold;	font-size:11px; color:#222;	padding:1px 1px 1px 4px; margin:4px 0 0 0px; width:495px; dislay:inline-block}
@@ -177,8 +179,8 @@
 	table.s4-final-step {width:100%;}
 	table.s4-final-step td {padding:5px 15px 5px 5px}
 	table.s4-final-step td:first-child {white-space:nowrap;}
-	div.s4-go-back {border-top:1px solid #dfdfdf; margin:auto; font-style:italic; font-size:10px; color:#333}
-	a.s4-final-btns {display: block; width:135; padding:5px; line-height: 1.4; background-color:#F1F1F1; border:1px solid silver;
+	div.s4-go-back {border-top:1px dotted #dfdfdf; margin:auto; font-style:italic; font-size:10px; color:#333}
+	a.s4-final-btns {display: block; width:145px; padding:5px; line-height: 1.4; background-color:#F1F1F1; border:1px solid silver;
 		color: #000; box-shadow: 5px 5px 5px -5px #949494; text-decoration: none; text-align: center; border-radius: 4px;
 	}
 	a.s4-final-btns:hover {background-color: #dfdfdf;}
@@ -220,5 +222,7 @@
 	<?php else : ?>
 		.dupx-debug {display:none}
 	<?php endif; ?>
+	small.s3-warn {color: maroon;font-style: italic;}
+	div.s4-warn {color: maroon;}
 
 </style>

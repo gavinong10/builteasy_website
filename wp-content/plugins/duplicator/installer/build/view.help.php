@@ -2,7 +2,7 @@
 HELP FORM -->
 <div id="main-help">
 <div class="help-online">
-	<i class="fa fa-file-text-o"></i> For additional help visit the<br/> <a href="https://snapcreek.com/support/docs/?utm_source=duplicator_free&utm_medium=wordpress_plugin&utm_campaign=problem_resolution&utm_content=knowledgebase" target="_blank">Online Knowledge-Base</a><br/>
+	<i class="fa fa-file-text-o"></i> For additional help visit the<br/> <a href="https://snapcreek.com/support/docs/" target="_blank">Online Knowledge-Base</a><br/>
 	<small>Features available only in Duplicator Pro are flagged with a <sup>pro</sup> tag.</small>
 </div>
 
@@ -58,6 +58,9 @@ STEP 1
 			<th>Details</th>
 		</tr>
 		<tr>
+			<td colspan="2" class="section">General Options</td>
+		</tr>
+		<tr>
 			<td>Extraction</td>
 			<td>
 				<b>Manual Archive Extraction</b><br/>
@@ -89,9 +92,26 @@ STEP 1
 			</td>
 		</tr>
 		<tr>
-			<td>Config Files</td>
+			<td colspan="2" class="section">Advanced Options</td>
+		</tr>
+		<tr>
+			<td>Safe Mode</td>
 			<td>
-				Inside the archive.zip should be a copy of the original .htaccess (Apache) or the web.config (IIS) files that were set up with your packaged site.
+				Safe mode is designed to configure the site with specific options at install time to help over come issues that may happen during the install were the site
+				is having issues.  These options should only be used if you run into issues after you have tried to run an install.
+				<br/><br/>
+				<b>Basic:</b> This safe mode option will disable all the plugins at install time.  When this option is set you will need to re-enable all plugins after the
+				install has full ran.
+				<br/><br/>
+
+				<b>Advanced:</b> This option applies all settings used in basic and will also de-activate and reactivate your theme when logging in for the first time.  This
+				options should be used only if the Basic option did not work.
+			</td>
+		</tr>
+		<tr>
+			<td>Config Files <sup>pro</sup></td>
+			<td>
+				Inside the archive.zip should be a copy of the original .htaccess (Apache) or the web.config (IIS) files that were setup with your packaged site.
 				When the installer runs it will backup and then reset all <i>.htaccess, user.ini, and web.config</i> files.   It will then create blank copies of
 				both files.   This is needed because the original files that were archived in most cases will not play well in the new environment.
 				<br/><br/>
@@ -124,6 +144,7 @@ STEP 1
 	<br/><br/>
 
 </div>
+<br/>
 
 
 <!-- ============================================
@@ -135,7 +156,7 @@ STEP 2
 
     <h3>Basic/cPanel:</h3>
     There are currently two options you can use to perform the database setup.  The "Basic" option requires knowledge about the existing server and on most hosts
-    will require that the database be set up ahead of time.  The cPanel option is for hosts that support <a href="http://cpanel.com/" target="_blank">cPanel Software</a>.
+    will require that the database be setup ahead of time.  The cPanel option is for hosts that support <a href="http://cpanel.com/" target="_blank">cPanel Software</a>.
     This option will automatically show you the existing databases and users on your cPanel server and allow you to create new databases directly
     from the installer.
     <br/><br/>
@@ -170,7 +191,7 @@ STEP 2
 				- Your host does not use <a href="http://cpanel.com/" target="_blank">cPanel Software</a> <br/>
 				- Your host has disabled cPanel API access <br/>
 				- Your host has configured cPanel to work differently (please contact your host) <br/>
-				- View a list of valid cPanel <a href='https://snapcreek.com/wordpress-hosting/?utm_source=duplicator_free&utm_medium=wordpress_plugin&utm_campaign=affiliate&utm_content=inst_cpanel_hosts' target='_blank'>Supported Hosts</a>
+				- View a list of valid cPanel <a href='https://snapcreek.com/wordpress-hosting/' target='_blank'>Supported Hosts</a>
 			</td>
 		</tr>
 	</table>
@@ -240,11 +261,25 @@ STEP 2
 			<th>Details</th>
 		</tr>
 		<tr>
-			<td>Prefix:<sup>pro*</sup></td>
+			<td>Prefix<sup>pro*</sup></td>
 			<td>By default, databases are prefixed with the cPanel account's username (for example, myusername_databasename).  However you can ignore this option if
 			your host does not use the default cPanel username prefix schema.  Check the 'Ignore cPanel Prefix' and the username prefixes will be ignored.
-			This will still require you to enter in the cPanel's required setup prefix if they require one.  The checkbox will be set to read-only if your host has
+			This will still require you to enter in the cPanels required setup prefix if they require one.  The checkbox will be set to read-only if your host has
 			disabled prefix settings.  Please see your host full requirements when using the cPanel options.</td>
+		</tr>
+		<tr>
+			<td>Legacy</td>
+			<td>When creating a database table, the Mysql version being used may not support the collation type of the Mysql version where the table was created.
+			In this scenario, the installer will fallback to a legacy collation type to try and create the table. This value should only be checked if you receive an error when
+			testing the database.
+			<br/><br/>
+			For example, if the database was created on MySQL 5.7 and the tables collation type was 'utf8mb4_unicode_520_ci', however your trying to run the installer
+			on an older MySQL 5.5 engine that does not support that type then an error will be thrown.  If this option is checked  then the legacy setting will try to
+			use 'utf8mb4_unicode_520', then 'utf8mb4', then 'utf8' and so on until it runs out of options.
+			<br/><br/>
+			For more information about this feature see the online FAQ question titled
+			<a href="https://snapcreek.com/duplicator/docs/faqs-tech/#faq-installer-110-q" target="_blank">"What is compatibility mode & 'unknown collation' errors"</a>
+			</td>
 		</tr>
 		<tr>
 			<td>Spacing</td>
@@ -259,12 +294,12 @@ STEP 2
 		<tr>
 			<td>Charset</td>
 			<td>When the database is populated from the SQL script it will use this value as part of its connection.  Only change this value if you know what your
-			databases character  set should be.</td>
+			databases character set should be.</td>
 		</tr>
 		<tr>
 			<td>Collation</td>
 			<td>When the database is populated from the SQL script it will use this value as part of its connection.  Only change this value if you know what your
-			databases character  set should be.</td>
+			databases collation set should be.</td>
 		</tr>
 	</table>
 	<sup>*cPanel Only Option</sup>
@@ -300,10 +335,7 @@ STEP 2
 		</tr>
 	</table>
 	<br/><br/>
-
-
-
-</div>
+</div><br/>
 
 
 <!-- ============================================
@@ -333,7 +365,7 @@ STEP 3
 		</tr>
 		<tr>
 			<td colspan="2" class="section">New Admin Account</td>
-		</td>
+		</tr>
 		<tr>
 			<td>Username</td>
 			<td>A new WordPress username to create.  This will create a new WordPress administrator account.  Please note that usernames are not changeable from the within the UI.</td>
@@ -344,7 +376,7 @@ STEP 3
 		</tr>
 		<tr>
 			<td colspan="2" class="section">Scan Options</td>
-		</td>
+		</tr>
 		<tr>
 			<td>Cleanup <sup>pro</sup></td>
 			<td>The checkbox labeled Remove schedules &amp; storage endpoints will empty the Duplicator schedule and storage settings.  This is recommended to keep enabled so that you do not have unwanted schedules and storage options enabled.</td>
@@ -384,7 +416,7 @@ STEP 3
 		<tr>
 			<td>Config SSL</td>
 			<td>Turn off SSL support for WordPress. This sets FORCE_SSL_ADMIN in your wp-config file to false if true, otherwise it will create the setting if not set.  The "Enforce on Login"
-				will turn off SSL support for WordPress Logins. </td>
+				will turn off SSL support for WordPress Logins.</td>
 		</tr>
 		<tr>
 			<td>Config Cache</td>
@@ -393,7 +425,7 @@ STEP 3
 		</tr>
 	</table>
 	<br/><br/>
-</div>
+</div><br/>
 
 
 <!-- ============================================
@@ -426,7 +458,7 @@ STEP 4
 	<div style="padding: 0px 10px 10px 10px;">
 		<b>Common Quick Fix Issues:</b>
 		<ul>
-			<li>Use an <a href='https://snapcreek.com/wordpress-hosting/?utm_source=duplicator_free&utm_medium=wordpress_plugin&utm_campaign=affiliate&utm_content=inst_help_hosts' target='_blank'>approved hosting provider</a></li>
+			<li>Use an <a href='https://snapcreek.com/wordpress-hosting/' target='_blank'>approved hosting provider</a></li>
 			<li>Validate directory and file permissions (see below)</li>
 			<li>Validate web server configuration file (see below)</li>
 			<li>Clear your browsers cache</li>
@@ -461,7 +493,7 @@ STEP 4
 
 </div>
 
-<div style="text-align:center">For additional help please visit the <a href="https://snapcreek.com/support/docs/?utm_source=duplicator_free&utm_medium=wordpress_plugin&utm_campaign=problem_resolution&utm_content=additional_help" target="_blank">online resources</a></div>
+<div style="text-align:center">For additional help please visit the <a href="https://snapcreek.com/support/docs/" target="_blank">online resources</a></div>
 
 <br/><br/>
 </div>

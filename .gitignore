@@ -1,6 +1,7 @@
 *.sql
 *.zip
 .htaccess
+**/*wp-content/plugins/
 **/*wp-content/uploads/
 **/*wp-content/blogs.dir/
 **/*wp-content/upgrade/

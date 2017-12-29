@@ -1,0 +1,373 @@
+0000.000 (0) Opened log file at time: Fri, 29 Dec 2017 08:45:08 +0000 on http://www.builteasy.com.au
+0000.001 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.14.2 WP: 4.9.1 PHP: 7.1.11 (apache2handler, Linux ip-172-31-38-41 4.9.62-21.56.amzn1.x86_64 #1 SMP Thu Nov 16 05:37:08 UTC 2017 x86_64) MySQL: 5.5.58 WPLANG: en_AU Server: Apache/2.4.27 (Amazon) OpenSSL/1.0.2k-fips PHP/7.1.11 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 11.2M | 2M) multisite: N openssl: OpenSSL 1.0.2k-fips  26 Jan 2017 mcrypt: N LANG: C ZipArchive::addFile: Y
+0000.003 (0) Free space on disk containing Updraft's temporary directory: 6674.9 MB
+0000.005 (0) Tasks: Backup files: 1 (schedule: manual) Backup DB: 1 (schedule: manual)
+0000.007 (0) Semaphore (fd, wp_options) being initialised
+0000.013 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.017 (0) Set semaphore last lock (fd) time to 2017-12-29 08:45:08
+0000.019 (0) Semaphore lock (fd) complete
+0000.025 (0) Backup run: resumption=0, nonce=c2b0df611fdd, begun at=1514537108 (0s ago), job type=backup
+0000.028 (0) Scheduling a resumption (1) after 300 seconds (1514537408) in case this run gets aborted
+0000.046 (0) Checking if we have a zip executable available
+0000.048 (0) Testing: /usr/bin/zip
+0000.054 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.057 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.059 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.060 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.061 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.068 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.071 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.073 (0) Working binary zip found: /usr/bin/zip
+0000.077 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.079 (0) Creation of backups of directories: beginning
+0000.085 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.115 (0) Total entities for the zip file: 420 directories, 2945 files (0 skipped as non-modified), 49.1 MB
+0000.119 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.122 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.125 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.128 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.130 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.132 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (5.3 MB, 2945 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0000.646 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: size is now: 3.10 MB
+0000.651 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 600 files added (on-disk size: 3123.3 KB)
+0000.654 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 700 files added (on-disk size: 3123.3 KB)
+0000.658 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 800 files added (on-disk size: 3123.3 KB)
+0000.661 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 900 files added (on-disk size: 3123.3 KB)
+0000.665 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 1000 files added (on-disk size: 3123.3 KB)
+0000.665 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (16.4 MB, 2945 files batched, 501 (1002) added so far); re-opening (prior size: 3123.3 KB)
+0001.613 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: size is now: 8.80 MB
+0001.619 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 1100 files added (on-disk size: 8977 KB)
+0001.622 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 1200 files added (on-disk size: 8977 KB)
+0001.625 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 1300 files added (on-disk size: 8977 KB)
+0001.628 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 1400 files added (on-disk size: 8977 KB)
+0001.630 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 1500 files added (on-disk size: 8977 KB)
+0001.632 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (9.2 MB, 2945 files batched, 501 (1503) added so far); re-opening (prior size: 8977 KB)
+0002.073 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: size is now: 11.30 MB
+0002.079 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 1600 files added (on-disk size: 11550.1 KB)
+0002.082 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 1700 files added (on-disk size: 11550.1 KB)
+0002.086 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 1800 files added (on-disk size: 11550.1 KB)
+0002.090 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 1900 files added (on-disk size: 11550.1 KB)
+0002.094 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 2000 files added (on-disk size: 11550.1 KB)
+0002.096 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (1.8 MB, 2945 files batched, 501 (2004) added so far); re-opening (prior size: 11550.1 KB)
+0002.221 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 2100 files added (on-disk size: 12322.1 KB)
+0002.224 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 2200 files added (on-disk size: 12322.1 KB)
+0002.226 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 2300 files added (on-disk size: 12322.1 KB)
+0002.230 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 2400 files added (on-disk size: 12322.1 KB)
+0002.233 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 2500 files added (on-disk size: 12322.1 KB)
+0002.235 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (10.5 MB, 2945 files batched, 501 (2505) added so far); re-opening (prior size: 12322.1 KB)
+0002.945 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: size is now: 15.80 MB
+0002.950 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 2600 files added (on-disk size: 16183 KB)
+0002.953 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 2700 files added (on-disk size: 16183 KB)
+0002.957 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 2800 files added (on-disk size: 16183 KB)
+0002.958 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip.tmp: 2900 files added (on-disk size: 16183 KB)
+0003.666 (0) Created plugins zip (0) - 18592.7 KB in 3.6 s (5193.9 KB/s) (sha1: 3c50ca3f29645789cde1ec17f7c218ca439333d4, sha256: 7b34d9cee74e9879827e44c8e8104b45f5a6be65f5752abf54292f3fb5ee3135)
+0003.670 (0) Beginning creation of dump of themes (split every: 400 MB)
+0003.676 (0) Total entities for the zip file: 34 directories, 266 files (0 skipped as non-modified), 9.9 MB
+0003.680 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0003.683 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0004.065 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-themes.zip.tmp: size is now: 8.20 MB
+0004.168 (0) Created themes zip (0) - 8427.5 KB in 0.5 s (16996.7 KB/s) (sha1: f2edcfed93fbe4fdb411d9178ae0ab8a1c18b83e, sha256: 9054debb2f4b46030f3802346178a32830cee08e743d97d1712b815fb2756191)
+0004.172 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0004.173 (0) Looking for candidates to back up in: /var/www/vhosts/builteasy.com.au/wp-content/uploads
+0004.175 (0) finding files: 2017: adding to list (1)
+0004.176 (0) finding files: mc4wp-debug-log.php: adding to list (2)
+0004.177 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0004.186 (0) Total entities for the zip file: 5 directories, 536 files (0 skipped as non-modified), 245.1 MB
+0004.189 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 MB added on this batch (39.6 MB, 536 files batched, 41 (41) added so far); re-opening (prior size: 0 KB)
+0004.721 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-uploads.zip.tmp: size is now: 39.60 MB
+0004.725 (0) A useful amount of data was added after this amount of zip processing: 1.5 s (normalised: 0.9 s, rate: 27180 KB/s)
+0004.729 (0) Performance is good - will increase the amount of data we attempt to batch (time=1.4903540611267, normalised_time=0.94187031885329, max_time=-1, data points known=0, old_max_bytes=26214400, new_max_bytes=166993689)
+0004.733 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-uploads.zip.tmp: 100 files added (on-disk size: 40517.7 KB)
+0004.736 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-uploads.zip.tmp: 200 files added (on-disk size: 40517.7 KB)
+0004.738 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 159.3 MB added on this batch (162.8 MB, 536 files batched, 247 (288) added so far); re-opening (prior size: 40517.7 KB)
+0007.625 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-uploads.zip.tmp: size is now: 200.40 MB
+0007.632 (0) A useful amount of data was added after this amount of zip processing: 3.4 s (normalised: 3.3 s, rate: 49066.3 KB/s)
+0007.634 (0) Performance is good - will increase the amount of data we attempt to batch (time=3.3965499401093, normalised_time=3.3236591610157, max_time=-1, data points known=0, old_max_bytes=166993689, new_max_bytes=209715200)
+0007.638 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-uploads.zip.tmp: 300 files added (on-disk size: 205230.7 KB)
+0007.641 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-uploads.zip.tmp: 400 files added (on-disk size: 205230.7 KB)
+0007.645 (0) Zip: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-uploads.zip.tmp: 500 files added (on-disk size: 205230.7 KB)
+0011.333 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-uploads.zip.tmp: size is now: 243.30 MB
+0014.974 (0) Created uploads zip (0) - 249111.9 KB in 10.8 s (23076.2 KB/s) (sha1: 51b10b35ed2bb2caa2200fae1dc83012f86ab4d3, sha256: 5dbf76bb48d0dae883a81dd4dfb623216aa66c1579facb1fc53e17c53dbd8eb0)
+0014.979 (0) Beginning backup of other directories found in the content directory (index: 0)
+0014.980 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0014.981 (0) Looking for candidates to back up in: /var/www/vhosts/builteasy.com.au/wp-content
+0014.985 (0) finding files: uploads: skipping: this is the uploads directory
+0014.987 (0) finding files: plugins: skipping: this is the plugins directory
+0014.988 (0) finding files: cache: skipping: excluded by options
+0014.989 (0) finding files: upgrade: skipping: excluded by options
+0014.991 (0) finding files: themes: skipping: this is the themes directory
+0014.992 (0) finding files: updraft: skipping: this is the updraft directory
+0014.993 (0) finding files: wflogs: adding to list (1)
+0014.995 (0) finding files: index.php: adding to list (2)
+0014.997 (0) finding files: languages: adding to list (3)
+0015.002 (0) Total entities for the zip file: 4 directories, 27 files (0 skipped as non-modified), 2.9 MB
+0015.185 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-others.zip.tmp: size is now: 0.90 MB
+0015.205 (0) Created others zip (0) - 951.5 KB in 0.2 s (4579.3 KB/s) (sha1: fdf7860b2ace5def1a712b2957d81cdec0bc9e4b, sha256: ff77a3149f0853bafed293993e7441c67bf333660010a853f8490b0cdcf9687a)
+0015.216 (0) Saving backup status to database (elements: 8)
+0015.223 (0) Beginning creation of database dump (WordPress DB)
+0015.234 (0) Testing: /usr/bin/mysqldump
+0015.302 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `wp_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\nCRE (truncated - 1196 bytes total)
+0015.305 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0015.339 (0) Table wp_options: Total expected rows (approximate): 408
+0015.354 (0) Table wp_options: Total rows added: 299 in 0.01 seconds
+0015.357 (0) Table wp_options: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_options.table.gz - 24.9 KB)
+0015.365 (0) Table wp_users: Total expected rows (approximate): 2
+0015.368 (0) Table wp_users: Total rows added: 2 in 0.00 seconds
+0015.369 (0) Table wp_users: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_users.table.gz - 0.6 KB)
+0015.378 (0) Table wp_usermeta: Total expected rows (approximate): 34
+0015.381 (0) Table wp_usermeta: Total rows added: 34 in 0.00 seconds
+0015.384 (0) Table wp_usermeta: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_usermeta.table.gz - 1.7 KB)
+0015.390 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0015.393 (0) Table wp_commentmeta: Total rows added: 0 in 0.00 seconds
+0015.396 (0) Table wp_commentmeta: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_commentmeta.table.gz - 0.4 KB)
+0015.402 (0) Table wp_comments: Total expected rows (approximate): 1
+0015.405 (0) Table wp_comments: Total rows added: 1 in 0.00 seconds
+0015.407 (0) Table wp_comments: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_comments.table.gz - 0.7 KB)
+0015.414 (0) Table wp_links: Total expected rows (approximate): 0
+0015.417 (0) Table wp_links: Total rows added: 0 in 0.00 seconds
+0015.420 (0) Table wp_links: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_links.table.gz - 0.4 KB)
+0015.441 (0) Table wp_postmeta: Total expected rows (approximate): 61156
+0015.747 (0) Table wp_postmeta: binary mysqldump finished (writes: 37) in 0.30 seconds
+0015.751 (0) Table wp_postmeta: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_postmeta.table.gz - 703.4 KB)
+0015.761 (0) Table wp_posts: Total expected rows (approximate): 465
+0015.798 (0) Table wp_posts: Total rows added: 862 in 0.03 seconds
+0015.802 (0) Table wp_posts: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_posts.table.gz - 62.1 KB)
+0015.809 (0) Table wp_term_relationships: Total expected rows (approximate): 19
+0015.812 (0) Table wp_term_relationships: Total rows added: 19 in 0.00 seconds
+0015.813 (0) Table wp_term_relationships: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_term_relationships.table.gz - 0.4 KB)
+0015.821 (0) Table wp_term_taxonomy: Total expected rows (approximate): 4
+0015.824 (0) Table wp_term_taxonomy: Total rows added: 4 in 0.00 seconds
+0015.825 (0) Table wp_term_taxonomy: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_term_taxonomy.table.gz - 0.5 KB)
+0015.833 (0) Table wp_termmeta: Total expected rows (approximate): 0
+0015.837 (0) Table wp_termmeta: Total rows added: 0 in 0.00 seconds
+0015.838 (0) Table wp_termmeta: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_termmeta.table.gz - 0.4 KB)
+0015.845 (0) Table wp_terms: Total expected rows (approximate): 4
+0015.848 (0) Table wp_terms: Total rows added: 4 in 0.00 seconds
+0015.849 (0) Table wp_terms: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_terms.table.gz - 0.4 KB)
+0015.859 (0) Table wp_duplicator_packages: Total expected rows (approximate): 0
+0015.861 (0) Table wp_duplicator_packages: Total rows added: 0 in 0.00 seconds
+0015.865 (0) Table wp_duplicator_packages: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_duplicator_packages.table.gz - 0.4 KB)
+0015.999 (0) Table wp_wfBadLeechers: Total expected rows (approximate): 0
+0016.002 (0) Table wp_wfBadLeechers: Total rows added: 0 in 0.00 seconds
+0016.005 (0) Table wp_wfBadLeechers: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfBadLeechers.table.gz - 0.3 KB)
+0016.013 (0) Table wp_wfBlockedCommentLog: Total expected rows (approximate): 0
+0016.016 (0) Table wp_wfBlockedCommentLog: Total rows added: 0 in 0.00 seconds
+0016.017 (0) Table wp_wfBlockedCommentLog: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfBlockedCommentLog.table.gz - 0.3 KB)
+0016.024 (0) Table wp_wfBlockedIPLog: Total expected rows (approximate): 0
+0016.026 (0) Table wp_wfBlockedIPLog: Total rows added: 0 in 0.00 seconds
+0016.029 (0) Table wp_wfBlockedIPLog: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfBlockedIPLog.table.gz - 0.3 KB)
+0016.036 (0) Table wp_wfBlocks: Total expected rows (approximate): 0
+0016.038 (0) Table wp_wfBlocks: Total rows added: 0 in 0.00 seconds
+0016.041 (0) Table wp_wfBlocks: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfBlocks.table.gz - 0.4 KB)
+0016.048 (0) Table wp_wfBlocksAdv: Total expected rows (approximate): 0
+0016.049 (0) Table wp_wfBlocksAdv: Total rows added: 0 in 0.00 seconds
+0016.052 (0) Table wp_wfBlocksAdv: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfBlocksAdv.table.gz - 0.3 KB)
+0016.058 (0) Table wp_wfConfig: Total expected rows (approximate): 187
+0016.072 (0) Table wp_wfConfig: Total rows added: 187 in 0.01 seconds
+0016.075 (0) Table wp_wfConfig: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfConfig.table.gz - 232.9 KB)
+0016.086 (0) Table wp_wfCrawlers: Total expected rows (approximate): 10
+0016.089 (0) Table wp_wfCrawlers: Total rows added: 10 in 0.00 seconds
+0016.094 (0) Table wp_wfCrawlers: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfCrawlers.table.gz - 0.6 KB)
+0016.119 (0) Table wp_wfFileMods: Total expected rows (approximate): 2979
+0016.185 (0) Table wp_wfFileMods: Total rows added: 3168 in 0.06 seconds
+0016.188 (0) Table wp_wfFileMods: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfFileMods.table.gz - 260.9 KB)
+0016.195 (0) Table wp_wfHits: Total expected rows (approximate): 1953
+0016.220 (0) Table wp_wfHits: Total rows added: 1897 in 0.02 seconds
+0016.223 (0) Table wp_wfHits: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfHits.table.gz - 27.7 KB)
+0016.231 (0) Table wp_wfHoover: Total expected rows (approximate): 0
+0016.235 (0) Table wp_wfHoover: Total rows added: 0 in 0.00 seconds
+0016.237 (0) Table wp_wfHoover: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfHoover.table.gz - 0.3 KB)
+0016.245 (0) Table wp_wfIssues: Total expected rows (approximate): 123
+0016.249 (0) Table wp_wfIssues: Total rows added: 94 in 0.00 seconds
+0016.252 (0) Table wp_wfIssues: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfIssues.table.gz - 8.5 KB)
+0016.270 (0) Table wp_wfKnownFileList: Total expected rows (approximate): 2942
+0016.293 (0) Table wp_wfKnownFileList: Total rows added: 3168 in 0.02 seconds
+0016.296 (0) Table wp_wfKnownFileList: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfKnownFileList.table.gz - 28.5 KB)
+0016.302 (0) Table wp_wfLeechers: Total expected rows (approximate): 41
+0016.305 (0) Table wp_wfLeechers: Total rows added: 41 in 0.00 seconds
+0016.308 (0) Table wp_wfLeechers: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfLeechers.table.gz - 0.7 KB)
+0016.313 (0) Table wp_wfLockedOut: Total expected rows (approximate): 0
+0016.316 (0) Table wp_wfLockedOut: Total rows added: 0 in 0.00 seconds
+0016.317 (0) Table wp_wfLockedOut: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfLockedOut.table.gz - 0.3 KB)
+0016.326 (0) Table wp_wfLocs: Total expected rows (approximate): 0
+0016.329 (0) Table wp_wfLocs: Total rows added: 0 in 0.00 seconds
+0016.332 (0) Table wp_wfLocs: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfLocs.table.gz - 0.4 KB)
+0016.338 (0) Table wp_wfLogins: Total expected rows (approximate): 4
+0016.341 (0) Table wp_wfLogins: Total rows added: 4 in 0.00 seconds
+0016.344 (0) Table wp_wfLogins: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfLogins.table.gz - 0.7 KB)
+0016.352 (0) Table wp_wfNet404s: Total expected rows (approximate): 1
+0016.354 (0) Table wp_wfNet404s: Total rows added: 1 in 0.00 seconds
+0016.356 (0) Table wp_wfNet404s: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfNet404s.table.gz - 0.4 KB)
+0016.364 (0) Table wp_wfNotifications: Total expected rows (approximate): 2
+0016.366 (0) Table wp_wfNotifications: Total rows added: 2 in 0.00 seconds
+0016.369 (0) Table wp_wfNotifications: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfNotifications.table.gz - 0.5 KB)
+0016.377 (0) Table wp_wfPendingIssues: Total expected rows (approximate): 0
+0016.378 (0) Table wp_wfPendingIssues: Total rows added: 0 in 0.00 seconds
+0016.381 (0) Table wp_wfPendingIssues: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfPendingIssues.table.gz - 0.4 KB)
+0016.388 (0) Table wp_wfReverseCache: Total expected rows (approximate): 10
+0016.390 (0) Table wp_wfReverseCache: Total rows added: 10 in 0.00 seconds
+0016.392 (0) Table wp_wfReverseCache: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfReverseCache.table.gz - 0.5 KB)
+0016.400 (0) Table wp_wfSNIPCache: Total expected rows (approximate): 0
+0016.402 (0) Table wp_wfSNIPCache: Total rows added: 0 in 0.00 seconds
+0016.405 (0) Table wp_wfSNIPCache: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfSNIPCache.table.gz - 0.4 KB)
+0016.413 (0) Table wp_wfScanners: Total expected rows (approximate): 21
+0016.416 (0) Table wp_wfScanners: Total rows added: 21 in 0.00 seconds
+0016.417 (0) Table wp_wfScanners: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfScanners.table.gz - 0.5 KB)
+0016.425 (0) Table wp_wfStatus: Total expected rows (approximate): 123
+0016.429 (0) Table wp_wfStatus: Total rows added: 123 in 0.00 seconds
+0016.431 (0) Table wp_wfStatus: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfStatus.table.gz - 3 KB)
+0016.439 (0) Table wp_wfThrottleLog: Total expected rows (approximate): 0
+0016.442 (0) Table wp_wfThrottleLog: Total rows added: 0 in 0.00 seconds
+0016.446 (0) Table wp_wfThrottleLog: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfThrottleLog.table.gz - 0.3 KB)
+0016.454 (0) Table wp_wfVulnScanners: Total expected rows (approximate): 0
+0016.457 (0) Table wp_wfVulnScanners: Total rows added: 0 in 0.00 seconds
+0016.460 (0) Table wp_wfVulnScanners: finishing file (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfVulnScanners.table.gz - 0.3 KB)
+0016.468 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_options.table.gz (1/38): adding to final database dump
+0016.473 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_users.table.gz (2/38): adding to final database dump
+0016.475 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_usermeta.table.gz (3/38): adding to final database dump
+0016.478 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_commentmeta.table.gz (4/38): adding to final database dump
+0016.480 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_comments.table.gz (5/38): adding to final database dump
+0016.481 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_links.table.gz (6/38): adding to final database dump
+0016.483 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_postmeta.table.gz (7/38): adding to final database dump
+0016.637 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_posts.table.gz (8/38): adding to final database dump
+0016.655 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_term_relationships.table.gz (9/38): adding to final database dump
+0016.658 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_term_taxonomy.table.gz (10/38): adding to final database dump
+0016.660 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_termmeta.table.gz (11/38): adding to final database dump
+0016.661 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_terms.table.gz (12/38): adding to final database dump
+0016.664 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_duplicator_packages.table.gz (13/38): adding to final database dump
+0016.664 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfBadLeechers.table.gz (14/38): adding to final database dump
+0016.665 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfBlockedCommentLog.table.gz (15/38): adding to final database dump
+0016.668 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfBlockedIPLog.table.gz (16/38): adding to final database dump
+0016.669 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfBlocks.table.gz (17/38): adding to final database dump
+0016.672 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfBlocksAdv.table.gz (18/38): adding to final database dump
+0016.673 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfConfig.table.gz (19/38): adding to final database dump
+0016.686 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfCrawlers.table.gz (20/38): adding to final database dump
+0016.689 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfFileMods.table.gz (21/38): adding to final database dump
+0016.715 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfHits.table.gz (22/38): adding to final database dump
+0016.725 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfHoover.table.gz (23/38): adding to final database dump
+0016.727 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfIssues.table.gz (24/38): adding to final database dump
+0016.730 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfKnownFileList.table.gz (25/38): adding to final database dump
+0016.739 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfLeechers.table.gz (26/38): adding to final database dump
+0016.741 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfLockedOut.table.gz (27/38): adding to final database dump
+0016.744 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfLocs.table.gz (28/38): adding to final database dump
+0016.745 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfLogins.table.gz (29/38): adding to final database dump
+0016.748 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfNet404s.table.gz (30/38): adding to final database dump
+0016.749 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfNotifications.table.gz (31/38): adding to final database dump
+0016.751 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfPendingIssues.table.gz (32/38): adding to final database dump
+0016.752 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfReverseCache.table.gz (33/38): adding to final database dump
+0016.753 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfSNIPCache.table.gz (34/38): adding to final database dump
+0016.756 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfScanners.table.gz (35/38): adding to final database dump
+0016.757 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfStatus.table.gz (36/38): adding to final database dump
+0016.759 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfThrottleLog.table.gz (37/38): adding to final database dump
+0016.761 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db-table-wp_wfVulnScanners.table.gz (38/38): adding to final database dump
+0016.763 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db.gz: finished writing out complete database file (1336 KB)
+0016.789 (0) Total database tables backed up: 38 (backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db.gz, size: 1392887, sha256)
+0016.801 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0016.803 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0016.804 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0016.805 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-others.zip: others: This file has not yet been successfully uploaded: will queue
+0016.808 (0) backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db.gz: db: This file has not yet been successfully uploaded: will queue
+0016.809 (0) Saving backup history. Total backup size: 271.9 MB
+0016.813 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0016.822 (0) Cloud backup selection (1/1): s3 with instance (1/1) (last)
+0016.825 (0) Beginning dispatch of backup to remote (s3) (instance identifier s-3250df353beaea5615ac98e1a4695b14)
+0017.224 (0) Set region: us-west-2
+0017.227 (0) S3 upload (us-west-2): backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip (chunks: 4) -> s3://builteasy-website-backups/backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip
+0017.317 (0) S3 chunked upload: got multipart ID: P5aaXNzcrLLxTyuEU7Ng1GlXHXEkujrFedhbB6jnGQE3T0cQbBtJM0wdVKFmE3YY8lkTShEvs.aUZ4uX.br0Ma3SW27C5o2gHxiVBrjYDh3u4Njy7w0bCbBosGYE6Kge
+0017.629 (0) S3 chunked upload: 25 % uploaded (1, "fada967c421a86069e7f06ee9b320f50")
+0017.826 (0) S3 chunked upload: 50 % uploaded (2, "e65cd09c91a6ce40706e1e7c7d43c64b")
+0018.190 (0) S3 chunked upload: 75 % uploaded (3, "53445fee551946ff2df3ee5a6ffd4c4c")
+0018.369 (0) S3 chunked upload: 100 % uploaded (4, "4a4d89e663ad94cb1fbc799ce4bfa7b0")
+0018.374 (0) S3 upload: all chunks uploaded; will now instruct S3 to re-assemble
+0018.591 (0) S3 upload (plugins0): re-assembly succeeded
+0018.598 (0) Recording as successfully uploaded: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip (6ab046f2e2cf4f5eddac967118442b10)
+0018.610 (0) Deleting local file: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-plugins.zip: OK
+0018.612 (0) S3 upload (us-west-2): backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-themes.zip (chunks: 2) -> s3://builteasy-website-backups/backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-themes.zip
+0018.621 (0) S3 chunked upload: got multipart ID: XDw4ins52zod2Ru7ksDjVDDmly4sEDr03B_kywxeXrYXmSWTfCeySdTCaGSjddHkjPQPfiiu5IP3O_4dmkMEhlL4epXBmJGWW5N1k6hZEojaq.6hxfd0OkpxH3HGTqws
+0018.934 (0) S3 chunked upload: 50 % uploaded (1, "e3cb9535a0c4e34fceeb6a62207f669a")
+0019.180 (0) S3 chunked upload: 100 % uploaded (2, "aedb3f34088d9f2b4ed33f6be5230c98")
+0019.188 (0) S3 upload: all chunks uploaded; will now instruct S3 to re-assemble
+0019.342 (0) S3 upload (themes0): re-assembly succeeded
+0019.348 (0) Recording as successfully uploaded: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-themes.zip (8fe55f1a9218e9de9af5524ac2b1c1d5)
+0019.356 (0) Deleting local file: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-themes.zip: OK
+0019.358 (0) S3 upload (us-west-2): backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-uploads.zip (chunks: 49) -> s3://builteasy-website-backups/backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-uploads.zip
+0019.370 (0) S3 chunked upload: got multipart ID: aJvcIGO0m2Nbn6qu6BMbPZxaN0jncvv_Wqkzs9JRuqvF3N4ZOl3ybc3raXdApt2f6ncuKS3GG5ukyy1kPUA.P9RDQlsaunHgJCgtEmo4VYdetBbh_cZ_uGkSmLY8IeqC
+0019.765 (0) S3 chunked upload: 2 % uploaded (1, "2ba76259745b55b6fdd711b82bc12af8")
+0020.046 (0) S3 chunked upload: 4.1 % uploaded (2, "9a4b20dbdb5fd59c965a70ecb79580db")
+0020.494 (0) S3 chunked upload: 6.1 % uploaded (3, "ce4052303f9354e44729cea15c716b51")
+0020.859 (0) S3 chunked upload: 8.2 % uploaded (4, "2c7a59bee0e2f9ea3d73f699591f3db2")
+0021.117 (0) S3 chunked upload: 10.2 % uploaded (5, "560f50b68504e356d0f00569540c5fbc")
+0021.361 (0) S3 chunked upload: 12.2 % uploaded (6, "0e1594a6501ff792994ba5a2fb37924b")
+0021.986 (0) S3 chunked upload: 14.3 % uploaded (7, "0f850b711d5160aece97e1a558f2fdc9")
+0022.327 (0) S3 chunked upload: 16.3 % uploaded (8, "e6163a29b5b7a2108378fb8c886339ac")
+0022.556 (0) S3 chunked upload: 18.4 % uploaded (9, "c7f54e6baa99387c6b713cf7a2585007")
+0022.901 (0) S3 chunked upload: 20.4 % uploaded (10, "6f5a9898c31b35ec6ba4803806e18baa")
+0023.169 (0) S3 chunked upload: 22.4 % uploaded (11, "15ad8980dcfa37b52e795e9105fc962a")
+0023.422 (0) S3 chunked upload: 24.5 % uploaded (12, "1bdf99ae595b39762f281f371fe02e60")
+0023.779 (0) S3 chunked upload: 26.5 % uploaded (13, "e98de2b03e63672d9f878e67138b4beb")
+0024.018 (0) S3 chunked upload: 28.6 % uploaded (14, "23ff82e09c3058d462752d145826f2b1")
+0024.241 (0) S3 chunked upload: 30.6 % uploaded (15, "7b246f039b41c3c3b26b2724d3be82f6")
+0024.570 (0) S3 chunked upload: 32.7 % uploaded (16, "180336966e4a3e044545196138770a78")
+0024.787 (0) S3 chunked upload: 34.7 % uploaded (17, "deb334759751bbf23f5e8336a7f1b9ab")
+0025.069 (0) S3 chunked upload: 36.7 % uploaded (18, "2d758e78a67b622c2fec62b86ebdbc6f")
+0025.289 (0) S3 chunked upload: 38.8 % uploaded (19, "0a320c7202f9500c0c57e990b3f55e59")
+0025.522 (0) S3 chunked upload: 40.8 % uploaded (20, "5e38ae27c5ebf960a51e53c54b44cc91")
+0025.831 (0) S3 chunked upload: 42.9 % uploaded (21, "9c475df015df24660209d6b0d45fca11")
+0026.013 (0) S3 chunked upload: 44.9 % uploaded (22, "6bfa6454332ca7a11a2229733a017334")
+0026.256 (0) S3 chunked upload: 46.9 % uploaded (23, "1a8a6a06edc4491bf16c73925355f799")
+0026.607 (0) S3 chunked upload: 49 % uploaded (24, "7a739da553688e75385042d03ed7e9c3")
+0026.902 (0) S3 chunked upload: 51 % uploaded (25, "c56cbb1ffc21b0615a42ffd3d52b7fd3")
+0027.240 (0) S3 chunked upload: 53.1 % uploaded (26, "40d5f9a16a6ba080740c62df3ec256d0")
+0027.600 (0) S3 chunked upload: 55.1 % uploaded (27, "b55655618d4139019d4d72b16cf89cfb")
+0028.069 (0) S3 chunked upload: 57.1 % uploaded (28, "2baebb788055d5a6e21e30a2041d6709")
+0028.399 (0) S3 chunked upload: 59.2 % uploaded (29, "b188d47dbc5c1544e2827d37b2ae6f4e")
+0028.857 (0) S3 chunked upload: 61.2 % uploaded (30, "6fa1c5732d14a13246a36ab67f74ea34")
+0029.868 (0) S3 chunked upload: 63.3 % uploaded (31, "eafa2655f0ee70aabd52989b38577535")
+0030.205 (0) S3 chunked upload: 65.3 % uploaded (32, "c607c6dd73b35b7d1eff2cafe128f08f")
+0030.445 (0) S3 chunked upload: 67.3 % uploaded (33, "4f4c4ea127268ef543cd9a524abe3324")
+0030.891 (0) S3 chunked upload: 69.4 % uploaded (34, "1d038820cc156dff1482ca50a7b5d950")
+0031.152 (0) S3 chunked upload: 71.4 % uploaded (35, "dacd3cde8bd877498b188108809dffcc")
+0032.227 (0) S3 chunked upload: 73.5 % uploaded (36, "01b72d6ae5d8f2d16a2c8b459c1d20ee")
+0032.541 (0) S3 chunked upload: 75.5 % uploaded (37, "468c0c093d1667e19e810fdb817c8f14")
+0032.821 (0) S3 chunked upload: 77.6 % uploaded (38, "e8c65f93f8766131226a67658661a5e7")
+0033.091 (0) S3 chunked upload: 79.6 % uploaded (39, "800e2856a77e191c9020d69bf377ed83")
+0033.359 (0) S3 chunked upload: 81.6 % uploaded (40, "a63cf0ecca6ab54f6785722ac76103aa")
+0033.666 (0) S3 chunked upload: 83.7 % uploaded (41, "74c1a5c5bd0952bc62c4471d70ede60b")
+0033.946 (0) S3 chunked upload: 85.7 % uploaded (42, "d4eddba0987434852f6d83766c0fd270")
+0034.149 (0) S3 chunked upload: 87.8 % uploaded (43, "a163f788f39fa7b175feaaca358713ee")
+0034.474 (0) S3 chunked upload: 89.8 % uploaded (44, "a65cbca2834ef3ce154dfd6e5f23a6d8")
+0034.781 (0) S3 chunked upload: 91.8 % uploaded (45, "b4282e6ba1374dac37b8ca551a5ef33c")
+0035.291 (0) S3 chunked upload: 93.9 % uploaded (46, "8c7484e5d80532b51aefe0bd1245eb16")
+0035.631 (0) S3 chunked upload: 95.9 % uploaded (47, "4c625b1cd4486dac369739cdd73fd237")
+0035.868 (0) S3 chunked upload: 98 % uploaded (48, "7a4445e28d9d8d75fb3dc2bcbcff4b56")
+0036.247 (0) S3 chunked upload: 100 % uploaded (49, "372199b316db161be6a5347f7f0150f1")
+0036.256 (0) S3 upload: all chunks uploaded; will now instruct S3 to re-assemble
+0036.356 (0) S3 upload (uploads0): re-assembly succeeded
+0036.360 (0) Recording as successfully uploaded: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-uploads.zip (8ae4a0741bc7935301751d4bcd585e72)
+0036.390 (0) Deleting local file: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-uploads.zip: OK
+0036.393 (0) S3 upload (us-west-2): backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-others.zip (chunks: 1) -> s3://builteasy-website-backups/backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-others.zip
+0036.539 (0) S3 regular upload: success
+0036.545 (0) Recording as successfully uploaded: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-others.zip (88e4160a93fc594223f87a900d62a9d6)
+0036.553 (0) Deleting local file: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-others.zip: OK
+0036.555 (0) S3 upload (us-west-2): backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db.gz (chunks: 1) -> s3://builteasy-website-backups/backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db.gz
+0036.654 (0) S3 regular upload: success
+0036.660 (0) Recording as successfully uploaded: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db.gz (696bbd4ab00938e0bfeeae2a60127d73)
+0036.666 (0) Deleting local file: backup_2017-12-29-0845_Built_Easy_c2b0df611fdd-db.gz: OK
+0036.672 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0036.673 (0) Number of backup sets in history: 1; groups (db): 1
+0036.675 (0) Examining (for databases) backup set with group_id=0, nonce=c2b0df611fdd, datestamp=1514537108 (Dec 29 2017 08:45:08)
+0036.676 (0) This backup set is the backup set just made, so will not be deleted.
+0036.676 (0) Number of backup sets in history: 1; groups (files): 1
+0036.677 (0) Examining (for files) backup set with nonce=c2b0df611fdd, datestamp=1514537108 (Dec 29 2017 08:45:08)
+0036.677 (0) This backup set is the backup set just made, so will not be deleted.
+0036.679 (0) This backup set is the backup set just made, so will not be deleted.
+0036.680 (0) This backup set is the backup set just made, so will not be deleted.
+0036.680 (0) This backup set is the backup set just made, so will not be deleted.
+0036.680 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0036.680 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0036.685 (0) Resume backup (c2b0df611fdd, 0): finish run
+0036.692 (0) Decremented the semaphore (fd) by 1
+0036.693 (0) Semaphore (fd) unlocked
+0036.696 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0036.702 (0) No email will/can be sent - the user has not configured an email address.
+0036.704 (0) The backup apparently succeeded and is now complete

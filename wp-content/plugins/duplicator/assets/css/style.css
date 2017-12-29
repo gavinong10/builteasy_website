@@ -38,8 +38,8 @@ div#dup-progress-bar-area {width:500px; margin:40px auto 0px auto; padding:25px 
 div#dup-progress-bar-area h2 {margin-bottom:15px}
 
 /*HEADER MESSAGES*/
-div.dup-hdr-success {color:green; font-size:20px; font-weight:bold}
-div.dup-hdr-error {color:#A62426; font-size:20px; font-weight:bold}
+div.dup-hdr-success {color:green; font-size:22px; font-weight:bold}
+div.dup-hdr-error {color:#A62426; font-size:22px; font-weight:bold}
 
 /*DIALOGS: THICKBOX   */
 #TB_title { padding-bottom: 3px!important; margin-bottom:5px!important; font-size:16px!important;}
@@ -54,6 +54,7 @@ div#dup-global-error-reserved-files p {font-size:14px}
 div#dup-global-error-reserved-files b.pass-msg {color:green; font-size:20px}
 div#dup-global-error-reserved-files p.pass-lnks {line-height:24px; margin:-7px 0 0 5px}
 div#dup-global-error-reserved-files div.pass-msg {padding:5px 0 0 10px; font-size:11px; color:#999; font-style: italic}
+div.dup-wpnotice-box {display:none;}
 
 /*================================================
 PARSLEY:Overrides*/
@@ -64,3 +65,5 @@ input.parsley-error, textarea.parsley-error {
 }
 div.qtip-content {line-height:16px}
 ul.parsley-error-list {margin:1px 0px -7px 0px}
+div.notice-safemode {color: maroon;}
+div.cleanup-notice b.title {color: green;font-size: 20px;}

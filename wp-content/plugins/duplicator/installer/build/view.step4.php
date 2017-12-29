@@ -1,8 +1,14 @@
 <?php
+
+	$_POST['url_new']	    = isset($_POST['url_new'])      ? DUPX_U::sanitize($_POST['url_new']) : '';
 	$_POST['archive_name']  = isset($_POST['archive_name']) ? $_POST['archive_name'] : '';
-	$_POST['retain_config'] = (isset($_POST['retain_config']) && $_POST['retain_config'] == '1') ? true : false;
+	$_POST['retain_config'] = isset($_POST['retain_config']) && $_POST['retain_config'] == '1' ? true : false;
+    $_POST['exe_safe_mode']	= isset($_POST['exe_safe_mode']) ? $_POST['exe_safe_mode'] : 0;
+        
 	$admin_base		= basename($GLOBALS['FW_WPLOGIN_URL']);
-	$admin_redirect = rtrim($_POST['url_new'], "/") . "/wp-admin/admin.php?page=duplicator-tools&tab=cleanup&package={$_POST['archive_name']}";
+
+    $safe_mode	= $_POST['exe_safe_mode'];
+	$admin_redirect = rtrim($_POST['url_new'], "/") . "/wp-admin/admin.php?page=duplicator-tools&tab=diagnostics&section=info&package={$_POST['archive_name']}&safe_mode={$safe_mode}";
 	$admin_redirect = urlencode($admin_redirect);
 	$admin_url_qry  = (strpos($admin_base, '?') === false) ? '?' : '&';
 	$admin_login	= rtrim($_POST['url_new'], '/') . "/{$admin_base}{$admin_url_qry}redirect_to={$admin_redirect}";
@@ -25,27 +31,31 @@ VIEW: STEP 4 - INPUT -->
 	<div class="dupx-logfile-link"><a href="installer-log.txt?now=<?php echo $GLOBALS['NOW_DATE'] ?>" target="install_log">installer-log.txt</a></div>
 
 	<div class="hdr-main">
-        Step <span class="step">4</span> of 4: Test
+        Step <span class="step">4</span> of 4: Test Site
 	</div><br />
 
-	<div class="hdr-sub3">
-		<div class="s4-final-title">Final Steps</div>
-	</div>
-
 	<table class="s4-final-step">
-		<tr>
+		<tr style="vertical-align:top">
 			<td><a class="s4-final-btns" href="javascript:void(0)" onclick="DUPX.getAdminLogin()">Site Login</a></td>
 			<td>
-				<i>Login to the administrator section to finalize the setup</i>
+				<i>Login to finalize the setup</i>
 				<?php if ($_POST['retain_config']) :?>
 					<br/> <i>Update of Permalinks required see: Admin &gt; Settings &gt; Permalinks &gt; Save</i>
 				<?php endif;?>
+				<br/><br/>
+
+				<!-- WARN: SAFE MODE MESSAGES -->
+				<div class="s4-warn" style="display:<?php echo ($safe_mode > 0 ? 'block' : 'none')?>">
+					<b>Safe Mode</b><br/>
+					Safe mode has <u>deactivated</u> all plugins. Please be sure to enable your plugins after logging in. <i>If you notice that problems arise when activating
+					the plugins then active them one-by-one to isolate the plugin that	could be causing the issue.</i>
+				</div>
 			</td>
 		</tr>
 		<tr>
 			<td><a class="s4-final-btns" href="javascript:void(0)" onclick="$('#dup-step3-install-report').toggle(400)">Show Report</a></td>
 			<td>
-				<i>Optionally, review the migration report.</i><br/>
+				<i>Optionally review the migration report</i><br/>
 				<i id="dup-step3-install-report-count">
 					<span data-bind="with: status.step2">Install Notices: (<span data-bind="text: query_errs"></span>)</span> &nbsp;
 					<span data-bind="with: status.step3">Update Notices: (<span data-bind="text: err_all"></span>)</span> &nbsp; &nbsp;
@@ -53,7 +63,8 @@ VIEW: STEP 4 - INPUT -->
 				</i>
 			</td>
 		</tr>
-	</table><br/>
+	</table>
+	<br/><br/>
 
 	<div class="s4-go-back">
 		Additional Notes:
@@ -63,6 +74,10 @@ VIEW: STEP 4 - INPUT -->
 				re-run installer at <a href="javascript:history.go(-3)">step 1</a>
 			</li>
 			<li>The .htaccess file was reset.  Resave plugins that write to this file.</li>
+			<li>
+				Visit the <a href="installer.php?help=1#troubleshoot" target="_blank">troubleshoot</a> section or
+				<a href='https://snapcreek.com/duplicator/docs/faqs-tech/?utm_source=duplicator_free&utm_medium=wordpress_plugin&utm_campaign=problem_resolution&utm_content=inst4_step4_troubleshoot' target='_blank'>online FAQs</a> for additional help.
+			</li>
 		</ul>
 	</div>
 
@@ -127,7 +142,7 @@ VIEW: STEP 4 - INPUT -->
 				<ul>
 					<li>
 						<b>Unknown collation:</b> See Online FAQ:
-						<a href="https://snapcreek.com/duplicator/docs/faqs-tech/?utm_source=duplicator_free&utm_medium=wordpress_plugin&utm_campaign=problem_resolution&utm_content=inst_step4_unknowncoll#faq-trouble-090-q" target="_blank">What is Compatibility mode & 'Unknown collation' errors?</a>
+						<a href="https://snapcreek.com/duplicator/docs/faqs-tech/?utm_source=duplicator_free&utm_medium=wordpress_plugin&utm_campaign=problem_resolution&utm_content=inst_step4_unknowncoll#faq-installer-110-q" target="_blank">What is Compatibility mode & 'Unknown collation' errors?</a>
 					</li>
 					<li>
 						<b>Query Limits:</b> Update MySQL server with the <a href="https://dev.mysql.com/doc/refman/5.5/en/packet-too-large.html" target="_blank">max_allowed_packet</a>
@@ -228,10 +243,10 @@ VIEW: STEP 4 - INPUT -->
 	</div>
 	<br/><br/>
 
-	<div class='s4-connect'>
+	<!--div class='s4-connect'>
 		<a href="installer.php?help=1#troubleshoot" target="_blank">Troubleshoot</a> |
 		<a href='https://snapcreek.com/duplicator/docs/faqs-tech/?utm_source=duplicator_free&utm_medium=wordpress_plugin&utm_campaign=problem_resolution&utm_content=inst4_step4_troubleshoot' target='_blank'>FAQs</a>
-	</div><br/>
+	</div--><br/>
 </form>
 
 <script>

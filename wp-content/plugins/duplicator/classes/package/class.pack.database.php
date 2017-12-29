@@ -239,14 +239,17 @@ class DUP_Database
         }
 
         $cmd .= ' -u '.escapeshellarg(DB_USER);
-        $cmd .= (DB_PASSWORD) ? ' -p'.escapeshellarg(DB_PASSWORD) : '';
+        if(DUP_Util::isWindows())
+         $cmd .= (DB_PASSWORD) ? ' -p'.escapeshellcmd(DB_PASSWORD) : '';
+        else
+         $cmd .= (DB_PASSWORD) ? ' -p'.escapeshellarg(DB_PASSWORD) : '';
+        
         $cmd .= ' -h '.escapeshellarg($host);
         $cmd .= (!empty($port) && is_numeric($port) ) ?
             ' -P '.$port : '';
         $cmd .= ' -r '.escapeshellarg($this->dbStorePath);
         $cmd .= ' '.escapeshellarg(DB_NAME);
         $cmd .= ' 2>&1';
-
         $output = shell_exec($cmd);
 
         // Password bug > 5.6 (@see http://bugs.mysql.com/bug.php?id=66546)
@@ -350,7 +353,9 @@ class DUP_Database
                             if (is_null($value) || !isset($value)) {
                                 ($num_values == $num_counter) ? $sql .= 'NULL' : $sql .= 'NULL, ';
                             } else {
-                                ($num_values == $num_counter) ? $sql .= '"'.@esc_sql($value).'"' : $sql .= '"'.@esc_sql($value).'", ';
+                                ($num_values == $num_counter) 
+									? $sql .= '"' . DUP_DB::escSQL($value, true) . '"'
+									: $sql .= '"' . DUP_DB::escSQL($value, true) . '", ';
                             }
                             $num_counter++;
                         }

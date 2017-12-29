@@ -274,7 +274,7 @@ VALIDATION
 			</table><br/>
 
 			The deployment path above must be writable by PHP in order to extract the archive file.  Incorrect permissions and extension such as
-			<a href="https://suhosin.org/stories/index.html" target="_blank">suhosin</a> can sometimes inter-fear with PHP being able to write/extract files.
+			<a href="https://suhosin.org/stories/index.html" target="_blank">suhosin</a> can sometimes interfere with PHP being able to write/extract files.
 			Please see the <a href="https://snapcreek.com/duplicator/docs/faqs-tech/?utm_source=duplicator_free&utm_medium=wordpress_plugin&utm_campaign=problem_resolution&utm_content=installer_perms#faq-trouble-055-q" target="_blank">FAQ permission</a> help link for complete details.
 			PHP with <a href='http://php.net/manual/en/features.safe-mode.php' target='_blank'>safe mode</a> should be disabled.  If this test fails
 			please contact your hosting provider or server administrator to disable PHP safe mode.
@@ -444,7 +444,7 @@ OPTIONS
 <div id="s1-area-adv-opts" style="display:none">
 	<div class="help-target"><a href="?help#help-s1" target="_blank">[help]</a></div>
 	<br/>
-	<div class="hdr-sub3">Advanced</div>
+	<div class="hdr-sub3">General</div>
 	<table class="dupx-opts dupx-advopts">
 		<tr>
 			<td>Extraction:</td>
@@ -462,8 +462,20 @@ OPTIONS
 			</td>
 		</tr>
 	</table>
-
+	<br>
+	<br>
+	<div class="hdr-sub3">Advanced</div>
 	<table class="dupx-opts dupx-advopts">
+                <tr>
+			<td>Safe Mode:</td>
+			<td>
+                            <select name="exe_safe_mode" id="exe_safe_mode" onchange="DUPX.onSafeModeSwitch();" style="width:200px;">
+                                <option value="0">Off</option>
+                                <option value="1">Basic</option>
+                                <option value="2">Advance</option>
+                            </select>
+			</td>
+		</tr>
 		<tr>
 			<td>Config Files:</td>
 			<td>
@@ -616,6 +628,7 @@ Auto Posts to view.step2.php
 		<input type="hidden" name="action_step" value="2" />
 		<input type="hidden" name="archive_name" value="<?php echo $GLOBALS['FW_PACKAGE_NAME'] ?>" />
 		<input type="hidden" name="logging" id="ajax-logging"  />
+                <input type="hidden" name="exe_safe_mode" id="exe-safe-mode"  value="0" />
 		<input type="hidden" name="retain_config" id="ajax-retain-config"  />
 		<input type="hidden" name="json"    id="ajax-json" />
 		<textarea id='ajax-json-debug' name='json_debug_view'></textarea>
@@ -679,6 +692,7 @@ Auto Posts to view.step2.php
                 if (typeof(data) != 'undefined' && data.pass == 1) {
 					$("#ajax-logging").val($("input:radio[name=logging]:checked").val());
 					 $("#ajax-retain-config").val($("#retain_config").is(":checked") ? 1 : 0);
+                                         $("#exe-safe-mode").val($("#exe_safe_mode").val());
 					$("#ajax-json").val(escape(dataJSON));
 					<?php if (! $GLOBALS['DUPX_DEBUG']) : ?>
 						setTimeout(function() {$('#s1-result-form').submit();}, 500);
@@ -733,7 +747,22 @@ Auto Posts to view.step2.php
 		$('#s1-result-form').hide();
 		$('#s1-input-form').show(200);
 	}
-	
+
+        DUPX.onSafeModeSwitch = function ()
+        {
+            var mode = $('#exe_safe_mode').val();
+            if(mode == 0){
+                $("#retain_config").removeAttr("disabled");
+            }else if(mode == 1 || mode ==2){
+                if($("#retain_config").is(':checked'))
+                            $("#retain_config").removeAttr("checked");
+                $("#retain_config").attr("disabled", true);
+            }
+
+            $('#exe-safe-mode').val(mode);
+            console.log("mode set to"+mode);
+        }
+        
 	//DOCUMENT LOAD
 	$(document).ready(function()
     {

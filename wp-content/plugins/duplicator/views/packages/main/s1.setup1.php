@@ -30,9 +30,9 @@ $ui_css_archive		= (isset($data->payload['dup-pack-archive-panel']) && $data->pa
 $ui_css_installer	= (isset($data->payload['dup-pack-installer-panel']) && $data->payload['dup-pack-installer-panel']) ? 'display:block' : 'display:none';
 $dup_intaller_files = implode(", ", array_keys(DUP_Server::getInstallerFiles()));
 $dbbuild_mode		= (DUP_Settings::Get('package_mysqldump') && DUP_DB::getMySqlDumpPath()) ? 'mysqldump' : 'PHP';
-$retry_enabled		= isset($_GET['retry']) ? true : false;
-$retry_dbenabled	= isset($_GET['retry']) && $_GET['retry'] == 2 ? true : false;
 
+//="No Selection", 1="Try Again", 2="Two-Part Install"
+$retry_state		= isset($_GET['retry']) ? $_GET['retry'] : 0;
 ?>
 
 <style>
@@ -74,12 +74,12 @@ TOOL BAR: STEPS -->
 <hr class="dup-toolbar-line">
 
 <?php if (!empty($action_response)) : ?>
-    <div id="message" class="updated below-h2"><p><?php echo $action_response; ?></p></div>
+    <div id="message" class="notice notice-success is-dismissible"><p><?php echo $action_response; ?></p></div>
 <?php endif; ?>	
 
 <!-- ============================
 SYSTEM REQUIREMENTS -->
-<?php if (! $dup_tests['Success']) : ?>
+<?php if (! $dup_tests['Success'] || $dup_tests['Warning']) : ?>
 <div class="dup-box">
     <div class="dup-box-title">
         <?php
@@ -137,21 +137,30 @@ SYSTEM REQUIREMENTS -->
         <!-- PERMISSIONS -->
         <div class='dup-sys-req'>
             <div class='dup-sys-title'>
-                <a><?php _e('Required Paths', 'duplicator'); ?></a> <div><?php echo $dup_tests['IO']['ALL']; ?></div>
+                <a><?php _e('Required Paths', 'duplicator'); ?></a>
+				<div>
+					<?php
+						if ($dup_tests['IO']['ALL']) {
+							echo ($dup_tests['IO']['WPROOT'] == 'Warn') ? 'Warn' : 'Pass';
+						} else {
+							echo 'Fail';
+						}
+					?>
+				</div>
             </div>
             <div class="dup-sys-info dup-info-box">
 				<?php
-				printf("<b>%s</b> &nbsp; [%s] <br/>", $dup_tests['IO']['SSDIR'], DUPLICATOR_SSDIR_PATH);
-				printf("<b>%s</b> &nbsp; [%s] <br/>", $dup_tests['IO']['SSTMP'], DUPLICATOR_SSDIR_PATH_TMP);
+					printf("<b>%s</b> &nbsp; [%s] <br/>", $dup_tests['IO']['SSDIR'], DUPLICATOR_SSDIR_PATH);
+					printf("<b>%s</b> &nbsp; [%s] <br/>", $dup_tests['IO']['SSTMP'], DUPLICATOR_SSDIR_PATH_TMP);
+					printf("<b>%s</b> &nbsp; [%s] <br/>", $dup_tests['IO']['WPROOT'], DUPLICATOR_WPROOTPATH);
 				?>
-				<br/>
-				<div style="font-size:11px">
-					<?php 
-						_e("If Duplicator does not have enough permissions then you will need to manually create the paths above. &nbsp; ", 'duplicator'); 
-						if ($dup_tests['IO']['WPROOT'] == 'Fail')
-						{
-							echo sprintf( __('The root WordPress path [%s] is currently not writable by PHP.', 'duplicator'), 	DUPLICATOR_WPROOTPATH);
+				<div style="font-size:11px; padding-top: 3px">
+					<?php
+						if ($dup_tests['IO']['WPROOT'] == 'Warn') {
+							echo sprintf( __('If the root WordPress path is not writable by PHP on some systems this can cause issues.', 'duplicator'), DUPLICATOR_WPROOTPATH);
+							echo '<br/>';
 						}
+						_e("If Duplicator does not have enough permissions then you will need to manually create the paths above. &nbsp; ", 'duplicator'); 
 					?>
 				</div>
             </div>
@@ -197,7 +206,7 @@ SYSTEM REQUIREMENTS -->
                     <?php else: 
                         $duplicator_nonce = wp_create_nonce('duplicator_cleanup_page');
                     ?> 
-                    <form method="post" action="admin.php?page=duplicator-tools&tab=cleanup&action=installer&_wpnonce=<?php echo $duplicator_nonce; ?>">
+                    <form method="post" action="admin.php?page=duplicator-tools&tab=diagnostics&section=info&action=installer&_wpnonce=<?php echo $duplicator_nonce; ?>">
 						<b><?php _e('WordPress Root Path:', 'duplicator'); ?></b>  <?php echo DUPLICATOR_WPROOTPATH; ?><br/>
 						<?php _e("A reserved file(s) was found in the WordPress root directory. Reserved file names include [{$dup_intaller_files}].  To archive your data correctly please remove any of these files from your WordPress root directory.  Then try creating your package again.", 'duplicator'); ?>
                         <br/><input type='submit' class='button button-small' value='<?php _e('Remove Files Now', 'duplicator') ?>' style='font-size:10px; margin-top:5px;' />

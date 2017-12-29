@@ -19,19 +19,24 @@ ARCHIVE -->
 <div class="scan-header scan-item-first">
 	<i class="fa fa-files-o"></i>
 	<?php _e("Files", 'duplicator'); ?>
-	<i class="fa fa-question-circle data-size-help"
-		data-tooltip-title="<?php _e('Archive Size', 'duplicator'); ?>"
-		data-tooltip="<?php _e('This size includes only files BEFORE compression is applied. It does not include the size of the '
-					. 'database script or any applied filters.  Once complete the package size will be smaller than this number.', 'duplicator'); ?>"></i>
-	<div id="data-arc-size1"></div>
-	<div class="dup-scan-filter-status">
-		<?php
-			if ($Package->Archive->ExportOnlyDB) {
-				echo '<i class="fa fa-filter"></i> '; _e('Database Only', 'duplicator');
-			} elseif ($Package->Archive->FilterOn) {
-				echo '<i class="fa fa-filter"></i> '; _e('Enabled', 'duplicator');
-			}
-		?>
+	
+	<div class="scan-header-details">
+		<div class="dup-scan-filter-status">
+			<?php
+				if ($Package->Archive->ExportOnlyDB) {
+					echo '<i class="fa fa-filter"></i> '; _e('Database Only', 'duplicator');
+				} elseif ($Package->Archive->FilterOn) {
+					echo '<i class="fa fa-filter"></i> '; _e('Enabled', 'duplicator');
+				}
+			?>
+		</div>
+		<div id="data-arc-size1"></div>
+		<i class="fa fa-question-circle data-size-help"
+			data-tooltip-title="<?php _e('Archive Size', 'duplicator'); ?>"
+			data-tooltip="<?php _e('This size includes only files BEFORE compression is applied. It does not include the size of the '
+						. 'database script or any applied filters.  Once complete the package size will be smaller than this number.', 'duplicator'); ?>"></i>
+
+		<div class="dup-data-size-uncompressed"><?php _e("uncompressed"); ?></div>
 	</div>
 </div>
 
@@ -116,7 +121,7 @@ TOTAL SIZE -->
 								_e('No large files found during this scan.', 'duplicator');
 							} else {
 								echo "<div style='color:maroon'>";
-								_e('No large files found during this scan.  If you\'re having issues building a package click the back button and try '
+									_e('No large files found during this scan.  If you\'re having issues building a package click the back button and try '
 									. 'adding a file filter to non-essential files paths like wp-content/uploads.   These excluded files can then '
 									. 'be manually moved to the new location after you have ran the migration installer.', 'duplicator');
 								echo "</div>";
@@ -145,6 +150,59 @@ TOTAL SIZE -->
 		<div id="hb-files-large-result" class="hb-files-style"></div>
 	</div>
 </div>
+
+<!-- ======================
+ADDON SITES -->
+<div id="addonsites-block"  class="scan-item">
+	<div class='title' onclick="Duplicator.Pack.toggleScanItem(this);">
+		<div class="text"><i class="fa fa-caret-right"></i> <?php _e('Addon Sites');?></div>
+		<div id="data-arc-status-addonsites"></div>
+	</div>
+    <div class="info">
+        <div style="margin-bottom:10px;">
+            <small>
+            <?php
+                printf(__('An "Addon Site" is a separate WordPress site(s) residing in subdirectories within this site. If you confirm these to be separate sites, '
+					. 'then it is recommended that you exclude them by checking the corresponding boxes below and clicking the \'Add Filters & Rescan\' button.  To backup the other sites '
+					. 'install the plugin on the sites needing to be backed-up.'));
+            ?>
+            </small>
+        </div>
+        <script id="hb-addon-sites" type="text/x-handlebars-template">
+            <div class="container">
+                <div class="hdrs">
+                    <span style="font-weight:bold">
+                        <?php _e('Quick Filters'); ?>
+                    </span>
+                </div>
+                <div class="data">
+                    {{#if ARC.FilterInfo.Dirs.AddonSites.length}}
+                        {{#each ARC.FilterInfo.Dirs.AddonSites as |path|}}
+                        <div class="directory">
+                            <input type="checkbox" name="dir_paths[]" value="{{path}}" id="as_dir_{{@index}}"/>
+                            <label for="as_dir_{{@index}}" title="{{path}}">
+                                {{path}}
+                            </label>
+                        </div>
+                        {{/each}}
+                    {{else}}
+                    <?php _e('No add on sites found.'); ?>
+                    {{/if}}
+                </div>
+            </div>
+            <div class="apply-btn">
+                <div class="apply-warn">
+                    <?php _e('*Checking a directory will exclude all items in that path recursively.'); ?>
+                </div>
+                <button type="button" class="button-small" onclick="Duplicator.Pack.applyFilters(this, 'addon')">
+                    <i class="fa fa-filter"></i> <?php _e('Add Filters &amp; Rescan');?>
+                </button>
+            </div>
+        </script>
+        <div id="hb-addon-sites-result" class="hb-files-style"></div>
+    </div>
+</div>
+
 
 <!-- ============
 FILE NAME CHECKS -->
@@ -231,17 +289,22 @@ DATABASE -->
 	<div class="scan-header">
 		<i class="fa fa-table"></i>
 		<?php _e("Database", 'duplicator');	?>
-		<i class="fa fa-question-circle data-size-help"
-			data-tooltip-title="<?php _e("Database Size:", 'duplicator'); ?>"
-			data-tooltip="<?php _e('The database size represents only the included tables. The process for gathering the size uses the query SHOW TABLE STATUS.  '
-				. 'The overall size of the database file can impact the final size of the package.', 'duplicator'); ?>"></i>
-		<div id="data-db-size1"></div>
-		<div class="dup-scan-filter-status">
-			<?php
-				if ($Package->Database->FilterOn) {
-					echo '<i class="fa fa-filter"></i> '; _e('Enabled', 'duplicator');
-				}
-			?>
+		<div class="scan-header-details">
+			<div class="dup-scan-filter-status">
+				<?php
+					if ($Package->Database->FilterOn) {
+						echo '<i class="fa fa-filter"></i> '; _e('Enabled', 'duplicator');
+					}
+				?>
+			</div>
+			<div id="data-db-size1"></div>
+			<i class="fa fa-question-circle data-size-help"
+				data-tooltip-title="<?php _e("Database Size:", 'duplicator'); ?>"
+				data-tooltip="<?php _e('The database size represents only the included tables. The process for gathering the size uses the query SHOW TABLE STATUS.  '
+					. 'The overall size of the database file can impact the final size of the package.', 'duplicator'); ?>"></i>
+
+			<div class="dup-data-size-uncompressed"><?php _e("uncompressed"); ?></div>
+
 		</div>
 	</div>
 
@@ -294,8 +357,8 @@ DATABASE -->
 	</div>
 	<?php
         echo '<div class="dup-pro-support">&nbsp;';
-        _e('Package support up to 2GB available in', 'duplicator');
-        echo '&nbsp;<i><a href="https://snapcreek.com/duplicator/?utm_source=duplicator_free&amp;utm_medium=wordpress_plugin&amp;utm_content=free_size_warn&amp;utm_campaign=duplicator_pro" target="_blank">' . __('Duplicator Pro', 'duplicator') . '!</a></i>';
+        _e('Migrate large, multi-gig sites with', 'duplicator');
+        echo '&nbsp;<i><a href="https://snapcreek.com/duplicator/?utm_source=duplicator_free&amp;utm_medium=wordpress_plugin&amp;utm_content=free_size_warn_multigig&amp;utm_campaign=duplicator_pro" target="_blank">' . __('Duplicator Pro', 'duplicator') . '!</a></i>';
         echo '</div>';
 	?>
 </div>
@@ -537,7 +600,19 @@ jQuery(document).ready(function($)
 		$btn.html('<i class="fa fa-circle-o-notch fa-spin"></i> <?php _e('Initializing Please Wait...', 'duplicator');?>');
 		$btn.attr('disabled', 'true');
 
-		var id = (type == 'large') ? '#hb-files-large-result' : '#hb-files-utf8-result'
+		//var id = (type == 'large') ? '#hb-files-large-result' : '#hb-files-utf8-result'
+		var id = '';
+        switch(type){
+            case 'large':
+                id = '#hb-files-large-result';
+                break;
+            case 'utf8':
+                id = '#hb-files-utf8-result';
+                break;
+            case 'addon':
+                id = '#hb-addon-sites-result';
+                break;
+        }
 		var dirFilters  = [];
 		var fileFilters = [];
 		$(id + " input[name='dir_paths[]']:checked").each(function()  {dirFilters.push($(this).val());});
@@ -582,6 +657,12 @@ jQuery(document).ready(function($)
 		var templateScript = Handlebars.compile(template);
 		var html = templateScript(data);
 		$('#hb-files-large-result').html(html);
+
+		//ADDON SITES
+        var template = $('#hb-addon-sites').html();
+        var templateScript = Handlebars.compile(template);
+        var html = templateScript(data);
+        $('#hb-addon-sites-result').html(html);
 
 		//NAME CHECKS
 		var template = $('#hb-files-utf8').html();
@@ -649,7 +730,7 @@ jQuery(document).ready(function($)
 	}
 
 	<?php
-		if (isset($_GET['retry'])) {
+		if (isset($_GET['retry']) && $_GET['retry'] == '1' ) {
 			echo "$('#scan-itme-file-size').show(300)";
 		}
 	?>

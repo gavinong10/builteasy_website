@@ -7,6 +7,7 @@
 	$old_path = $GLOBALS['FW_WPROOT'];
 	$new_path = DUPX_U::setSafePath($GLOBALS['CURRENT_ROOT_PATH']);
 	$new_path = ((strrpos($old_path, '/') + 1) == strlen($old_path)) ? DUPX_U::addSlash($new_path) : $new_path;
+    $_POST['exe_safe_mode']	= isset($_POST['exe_safe_mode']) ? $_POST['exe_safe_mode'] : 0;
 ?>
 
 
@@ -28,6 +29,7 @@ VIEW: STEP 3- INPUT -->
 	<input type="hidden" name="dbname" 		 value="<?php echo $_POST['dbname'] ?>" />
 	<input type="hidden" name="dbcharset" 	 value="<?php echo $_POST['dbcharset'] ?>" />
 	<input type="hidden" name="dbcollate" 	 value="<?php echo $_POST['dbcollate'] ?>" />
+	<input type="hidden" name="exe_safe_mode" id="exe-safe-mode" value="<?php echo $_POST['exe_safe_mode'] ?>" />
 
 	<div class="dupx-logfile-link"><a href="installer-log.txt?now=<?php echo $GLOBALS['NOW_DATE'] ?>" target="install_log">installer-log.txt</a></div>
 	<div class="hdr-main">
@@ -120,26 +122,29 @@ VIEW: STEP 3- INPUT -->
 						<a href="javascript:void(0)" onclick="$('#tables option').prop('selected',true);">[All]</a>
 						<a href="javascript:void(0)" onclick="$('#tables option').prop('selected',false);">[None]</a>
 					</div><br style="clear:both" />
-					<select id="tables" name="tables[]" multiple="multiple" style="width:315px; height:100px">
+					<select id="tables" name="tables[]" multiple="multiple">
 						<?php
-						foreach( $all_tables as $table ) {
-							echo '<option selected="selected" value="' . DUPX_U::escapeHTML( $table ) . '">' . $table . '</option>';
-						}
+							foreach( $all_tables as $table ) {
+								echo '<option selected="selected" value="' . DUPX_U::escapeHTML( $table ) . '">' . $table . '</option>';
+							}
 						?>
 					</select>
-
 				</td>
 				<td valign="top">
                     <b>Activate Plugins:</b>
-					<div class="s3-allnonelinks">
+					<?php echo ($_POST['exe_safe_mode'] > 0) ? '<small class="s3-warn">Safe Mode Enabled</small>' : '' ; ?>
+					<div class="s3-allnonelinks"  style="<?php echo  ($_POST['exe_safe_mode']>0)? 'display:none':''; ?>">
 						<a href="javascript:void(0)" onclick="$('#plugins option').prop('selected',true);">[All]</a>
 						<a href="javascript:void(0)" onclick="$('#plugins option').prop('selected',false);">[None]</a>
 					</div><br style="clear:both" />
-					<select id="plugins" name="plugins[]" multiple="multiple" style="width:315px; height:100px">
+					<select id="plugins" name="plugins[]" multiple="multiple" <?php echo ($_POST['exe_safe_mode'] > 0) ? 'disabled="disabled"' : ''; ?>>
 						<?php
-						foreach ($active_plugins as $plugin) {
-							echo '<option selected="selected" value="' . DUPX_U::escapeHTML( $plugin ) . '">' . dirname($plugin) . '</option>';
-						}
+							$selected_string = ($_POST['exe_safe_mode'] > 0) ? '' : 'selected="selected"';
+							foreach ($active_plugins as $plugin) {
+								$plug_val  = DUPX_U::escapeHTML($plugin);
+								$plug_name = dirname($plugin);
+								echo "<option {$selected_string} value='{$plug_val}'>{$plug_name}</option>";
+							}
 						?>
 					</select>
 				</td>
@@ -190,6 +195,7 @@ VIEW: STEP 3 - AJAX RESULT
 		<input type="hidden" name="action_step"  value="4" />
 		<input type="hidden" name="archive_name" value="<?php echo $_POST['archive_name'] ?>" />
 		<input type="hidden" name="retain_config" value="<?php echo $_POST['retain_config']; ?>" />
+                <input type="hidden" name="exe_safe_mode" id="exe-safe-mode"  value="<?php echo $_POST['exe_safe_mode']; ?>"/>
 		<input type="hidden" name="url_new" id="ajax-url_new"  />
 		<input type="hidden" name="json"    id="ajax-json" />
 		<br/>

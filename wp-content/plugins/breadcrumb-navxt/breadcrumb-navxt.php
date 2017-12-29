@@ -3,14 +3,15 @@
 Plugin Name: Breadcrumb NavXT
 Plugin URI: http://mtekk.us/code/breadcrumb-navxt/
 Description: Adds a breadcrumb navigation showing the visitor&#39;s path to their current location. For details on how to use this plugin visit <a href="http://mtekk.us/code/breadcrumb-navxt/">Breadcrumb NavXT</a>. 
-Version: 5.7.1
+Version: 6.0.1
 Author: John Havlik
 Author URI: http://mtekk.us/
 License: GPL2
 Text Domain: breadcrumb-navxt
 Domain Path: /languages
 */
-/*  Copyright 2007-2017  John Havlik  (email : john.havlik@mtekk.us)
+/*
+	Copyright 2007-2017  John Havlik  (email : john.havlik@mtekk.us)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -32,7 +33,7 @@ if(version_compare(phpversion(), '5.3.0', '<'))
 	//Only purpose of this function is to echo out the PHP version error
 	function bcn_phpold()
 	{
-		printf('<div class="error"><p>' . __('Your PHP version is too old, please upgrade to a newer version. Your version is %1$s, Breadcrumb NavXT requires %2$s', 'breadcrumb-navxt') . '</p></div>', phpversion(), '5.3.0');
+		printf('<div class="notice notice-error"><p>' . esc_html__('Your PHP version is too old, please upgrade to a newer version. Your version is %1$s, Breadcrumb NavXT requires %2$s', 'breadcrumb-navxt') . '</p></div>', phpversion(), '5.3.0');
 	}
 	//If we are in the admin, let's print a warning then return
 	if(is_admin())
@@ -56,11 +57,11 @@ if(class_exists('WP_Widget'))
 	//Include the WP 2.8+ widget class
 	require_once(dirname(__FILE__) . '/class.bcn_widget.php');
 }
-$breadcrumb_navxt = NULL;
+$breadcrumb_navxt = null;
 //TODO change to extends mtekk_plugKit
 class breadcrumb_navxt
 {
-	const version = '5.7.1';
+	const version = '6.0.1';
 	protected $name = 'Breadcrumb NavXT';
 	protected $identifier = 'breadcrumb-navxt';
 	protected $unique_prefix = 'bcn';
@@ -85,7 +86,7 @@ class breadcrumb_navxt
 		add_action('wp_loaded', array($this, 'wp_loaded'), 15);
 		add_action('init', array($this, 'init'));
 		//Register the WordPress 2.8 Widget
-		add_action('widgets_init', create_function('', 'return register_widget("'. $this->unique_prefix . '_widget");'));
+		add_action('widgets_init', array($this, 'register_widget'));
 		//Load our network admin if in the network dashboard (yes is_network_admin() doesn't exist)
 		if(defined('WP_NETWORK_ADMIN') && WP_NETWORK_ADMIN)
 		{
@@ -106,6 +107,10 @@ class breadcrumb_navxt
 		add_filter('bcn_allowed_html', array($this, 'allowed_html'), 1, 1);
 		//We want to run late for using our breadcrumbs
 		add_filter('tha_breadcrumb_navigation', array($this, 'tha_compat'), 99);
+	}
+	public function register_widget()
+	{
+		return register_widget($this->unique_prefix . '_widget');
 	}
 	public function allowed_html($tags)
 	{
@@ -277,7 +282,7 @@ class breadcrumb_navxt
 					$opts['bpost_' . $post_type->name . '_taxonomy_referer'] = false;
 				}
 				//If the post type does not have settings in the options array yet, we need to load some defaults
-				if(!isset($opts['Hpost_' . $post_type->name . '_template']) || !$post_type->hierarchical && !isset($opts['Spost_' . $post_type->name . '_taxonomy_type']))
+				if(!isset($opts['Hpost_' . $post_type->name . '_template']) || !$post_type->hierarchical && !isset($opts['Spost_' . $post_type->name . '_hierarchy_type']))
 				{
 					//Add the necessary option array members
 					$opts['Hpost_' . $post_type->name . '_template'] = bcn_breadcrumb::get_default_template();
@@ -293,28 +298,31 @@ class breadcrumb_navxt
 					//Default to not showing a post_root
 					$opts['apost_' . $post_type->name . '_root'] = 0;
 					//Default to not displaying a taxonomy
-					$opts['bpost_' . $post_type->name . '_taxonomy_display'] = false;
+					$opts['bpost_' . $post_type->name . '_hierarchy_display'] = false;
 					//Loop through all of the possible taxonomies
 					foreach($wp_taxonomies as $taxonomy)
 					{
 						//Check for non-public taxonomies
-						if(!apply_filters('bcn_show_tax_private', $taxonomy->public, $taxonomy->name))
+						if(!apply_filters('bcn_show_tax_private', $taxonomy->public, $taxonomy->name, $post_type->name))
 						{
 							continue;
 						}
 						//Activate the first taxonomy valid for this post type and exit the loop
 						if($taxonomy->object_type == $post_type->name || in_array($post_type->name, $taxonomy->object_type))
 						{
-							$opts['bpost_' . $post_type->name . '_taxonomy_display'] = true;
-							$opts['Spost_' . $post_type->name . '_taxonomy_type'] = $taxonomy->name;
+							$opts['bpost_' . $post_type->name . '_hierarchy_display'] = true;
+							$opts['Spost_' . $post_type->name . '_hierarchy_type'] = $taxonomy->name;
 							break;
 						}
 					}
-					//If there are no valid taxonomies for this type, we default to not displaying taxonomies for this post type
-					if(!isset($opts['Spost_' . $post_type->name . '_taxonomy_type']))
+					//If there are no valid taxonomies for this type, setup our defaults
+					if(!isset($opts['Spost_' . $post_type->name . '_hierarchy_type']))
 					{
-						$opts['Spost_' . $post_type->name . '_taxonomy_type'] = 'BCN_DATE';
+						$opts['Spost_' . $post_type->name . '_hierarchy_type'] = 'BCN_DATE';
 					}
+					//Run through some filters, allowing extensions to directly influence the default hierarchy selection/display
+					$opts['Spost_' . $post_type->name . '_hierarchy_type'] = apply_filters('bcn_default_hierarchy_type', $opts['Spost_' . $post_type->name . '_hierarchy_type'], $post_type->name);
+					$opts['bpost_' . $post_type->name . '_hierarchy_display'] = apply_filters('bcn_default_hierarchy_display', $opts['bpost_' . $post_type->name . '_hierarchy_display'], $post_type->name, $opts['Spost_' . $post_type->name . '_hierarchy_type']);
 				}
 			}
 		}
@@ -391,8 +399,12 @@ class breadcrumb_navxt
 	 * @param bool $linked Whether to allow hyperlinks in the trail or not.
 	 * @param bool $reverse Whether to reverse the output or not.
 	 * @param bool $force Whether or not to force the fill function to run.
+	 * @param string $template The template to use for the string output.
+	 * 
+	 * @return void Void if Option to print out breadcrumb trail was chosen.
+	 * @return string String-Data of breadcrumb trail.
 	 */
-	public function display($return = false, $linked = true, $reverse = false, $force = false)
+	public function display($return = false, $linked = true, $reverse = false, $force = false, $template = '%1$s%2$s')
 	{
 		$this->get_settings();
 		//If we're being forced to fill the trail, clear it before calling fill
@@ -407,22 +419,20 @@ class breadcrumb_navxt
 	/**
 	 * Outputs the breadcrumb trail with each element encapsulated with li tags
 	 * 
+	 * @deprecated 6.0.0 No longer needed, superceeded by $template parameter in display
+	 * 
 	 * @param bool $return Whether to return or echo the trail.
 	 * @param bool $linked Whether to allow hyperlinks in the trail or not.
 	 * @param bool $reverse Whether to reverse the output or not.
 	 * @param bool $force Whether or not to force the fill function to run.
+	 * 
+	 * @return void Void if Option to print out breadcrumb trail was chosen.
+	 * @return string String-Data of breadcrumb trail.
 	 */
 	public function display_list($return = false, $linked = true, $reverse = false, $force = false)
 	{
-		$this->get_settings();
-		//If we're being forced to fill the trail, clear it before calling fill
-		if($force)
-		{
-			$this->breadcrumb_trail->breadcrumbs = array();
-		}
-		//Generate the breadcrumb trail
-		$this->breadcrumb_trail->fill();
-		return $this->breadcrumb_trail->display_list($return, $linked, $reverse);
+		_deprecated_function( __FUNCTION__, '6.0', 'breadcrumb_navxt::display');
+		return $this->display($return, $linked, $reverse, $force, "<li%3\$s>%1\$s</li>\n");
 	}
 	/**
 	 * Outputs the breadcrumb trail in Schema.org BreadcrumbList compatible JSON-LD
@@ -430,6 +440,9 @@ class breadcrumb_navxt
 	 * @param bool $return Whether to return or echo the trail.
 	 * @param bool $reverse Whether to reverse the output or not.
 	 * @param bool $force Whether or not to force the fill function to run.
+	 * 
+	 * @return void Void if Option to print out breadcrumb trail was chosen.
+	 * @return string String-Data of breadcrumb trail.
 	 */
 	public function display_json_ld($return = false, $reverse = false, $force = false)
 	{
@@ -461,6 +474,9 @@ function bcn_init()
  * @param bool $linked Whether to allow hyperlinks in the trail or not. (optional)
  * @param bool $reverse Whether to reverse the output or not. (optional)
  * @param bool $force Whether or not to force the fill function to run. (optional)
+ * 
+ * @return void Void if Option to print out breadcrumb trail was chosen.
+ * @return string String-Data of breadcrumb trail.
  */
 function bcn_display($return = false, $linked = true, $reverse = false, $force = false)
 {
@@ -477,13 +493,16 @@ function bcn_display($return = false, $linked = true, $reverse = false, $force =
  * @param bool $linked Whether to allow hyperlinks in the trail or not. (optional)
  * @param bool $reverse Whether to reverse the output or not. (optional)
  * @param bool $force Whether or not to force the fill function to run. (optional)
+ * 
+ * @return void Void if Option to print out breadcrumb trail was chosen.
+ * @return string String-Data of breadcrumb trail.
  */
 function bcn_display_list($return = false, $linked = true, $reverse = false, $force = false)
 {
 	global $breadcrumb_navxt;
 	if($breadcrumb_navxt !== null)
 	{
-		return $breadcrumb_navxt->display_list($return, $linked, $reverse, $force);
+		return $breadcrumb_navxt->display($return, $linked, $reverse, $force, "<li%3\$s>%1\$s</li>\n");
 	}
 }
 /**
@@ -492,6 +511,9 @@ function bcn_display_list($return = false, $linked = true, $reverse = false, $fo
  * @param bool $return Whether to return or echo the trail. (optional)
  * @param bool $reverse Whether to reverse the output or not. (optional)
  * @param bool $force Whether or not to force the fill function to run. (optional)
+ * 
+ * @return void Void if Option to print out breadcrumb trail was chosen.
+ * @return string String-Data of breadcrumb trail.
  */
 function bcn_display_json_ld($return = false, $reverse = false, $force = false)
 {
