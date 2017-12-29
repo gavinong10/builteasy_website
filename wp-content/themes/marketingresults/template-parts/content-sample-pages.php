@@ -364,7 +364,7 @@
 
                 <p><?php the_sub_field('advice_sub_title'); ?></p>
 				<?php $advice_button_url=get_sub_field('advice_button_url'); ?>
-                <a target="<?php the_sub_field('target'); ?>" class="btn btn-sm" href="<?php echo $advice_button; ?>"><?php the_sub_field('advice_button');?></a>
+                <a target="<?php the_sub_field('target'); ?>" class="btn btn-sm" href="<?php echo $advice_button_url; ?>"><?php the_sub_field('advice_button');?></a>
 
               </div>
 
