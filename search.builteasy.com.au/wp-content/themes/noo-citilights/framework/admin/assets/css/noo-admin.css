@@ -1,0 +1,242 @@
+/**
+ * NOO Framework Package.
+ *
+ * StyleSheet used in admin for NOO Theme
+ *
+ * @package    NOO Framework
+ * @version    1.0.0
+ * @author     Kan Nguyen <khanhnq@nootheme.com>
+ * @copyright  Copyright (c) 2014, NooTheme
+ * @license    http://opensource.org/licenses/gpl-2.0.php GPL v2 or later
+ * @link       http://nootheme.com
+ */
+/* ============================================================================= */
+
+/* Admin Typo */
+h2 small {
+	font-weight: normal;
+	line-height: 1;
+	font-size: 14px;
+}
+
+a.noo-copyright {
+	text-decoration: none;
+	color: #47bfa9;
+}
+
+a.noo-copyright:hover {
+	color: #369d8a;
+	border-bottom: 1px dotted #369d8a;
+}
+
+/* Admin Icons */
+#menu-posts-portfolio_project div.wp-menu-image.dashicons-portfolio:before,
+#toplevel_page_customize div.wp-menu-image.dashicons-welcome-view-site:before {
+	color: #47bfa9; /* NOO Color */
+}
+
+#menu-posts-noo_agent .wp-menu-image img,
+#menu-posts-portfolio_project .wp-menu-image img,
+#toplevel_page_customize .wp-menu-image img {
+	padding: 6px 0 0 0;
+	opacity: 0.9;
+	filter: alpha(opacity=0.9);
+}
+
+/* Title icon for Portfolio media type */
+.hentry.type-portfolio_project.media-image .post-title a.row-title:before,
+.hentry.type-portfolio_project.media-gallery .post-title a.row-title:before,
+.hentry.type-portfolio_project.media-video .post-title a.row-title:before {
+	position: relative;
+	display: inline-block;
+	margin-right: 5px;
+	top: 3px;
+	width: 20px;
+	height: 20px;
+	font: 400 20px/1 dashicons;
+	color: #ddd;
+	-webkit-transition: all .1s ease-in-out;
+	-moz-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	
+}
+
+.hentry.type-portfolio_project.media-image .post-title a.row-title:hover:before,
+.hentry.type-portfolio_project.media-gallery .post-title a.row-title:hover:before,
+.hentry.type-portfolio_project.media-video .post-title a.row-title:hover:before {
+	color: inherit;
+}
+
+.hentry.type-portfolio_project.media-image .post-title a.row-title:before {
+	content: '\f128';
+}
+
+.hentry.type-portfolio_project.media-gallery .post-title a.row-title:before {
+	content: '\f161';
+}
+
+.hentry.type-portfolio_project.media-video .post-title a.row-title:before {
+	content: '\f126';
+}
+
+/* Image thumbnail */
+.noo-thumb-wrapper img {
+	max-width: 120px;
+	max-height: 120px;
+	vertical-align: top;
+	margin: 15px 15px 0 0;
+}
+
+/* Fix form-field error with checkbox and radio field */
+.form-field input[type="checkbox"],
+.form-field input[type="radio"] {
+	width: 16px;
+}
+
+.form-field input[type="button"] {
+	width: auto;
+}
+
+/* NOO form */
+.noo-form-body {	
+	max-height: 540px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding-right: 15px;
+	padding-left: 5px;
+}
+
+.noo-form-group {
+	margin-top: 20px;
+	line-height: 2em;
+}
+
+.noo-form-group:before,
+.noo-form-group:after {
+	content: " ";
+	display: table;
+}
+
+.bar-item-group .noo-form-group,
+.bar-item-group hr {
+	margin-top: 10px;
+}
+
+.noo-form-footer {
+	position: absolute;
+	bottom: 40px;
+	right: 35px;
+}
+
+.noo-form-group:after {
+	clear: both;
+}
+
+.noo-form-group + hr {
+	margin-top: 20px;
+}
+
+.noo-form-group > label {
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 30%;
+	max-width: 200px;
+	min-width: 150px;
+	top: 0;
+	float: left;
+	font-weight: bold;
+}
+
+.noo-form-group	.noo-control {
+	width: 65%;
+	float: left;
+}
+
+.noo-form-group	.field-desc {
+	font-weight: normal;
+}
+
+#side-sortables .noo-form-group > label,
+#side-sortables .noo-form-group .noo-control {
+	width: 100%;
+	max-width: none;
+}
+
+.customize-control .noo-control,
+.vc-shortcode-param .noo-control {
+	width: 100%;
+	float: none;
+}
+
+.noo-control input[type="button"] + input[type="button"] {
+	margin-left: 10px;
+}
+
+.noo-control input[type="text"],
+.noo-control textarea,
+.noo-control select {
+	display: block;
+	width: 100%;
+	/* max-width: 600px; */
+}
+
+.noo-control select[multiple] {
+	height: 150px;
+}
+
+.noo-control input[type="radio"] {
+	margin: 1px 10px 0 0;
+}
+
+.noo-control textarea {
+	height: 100px;
+}
+
+.noo-control .wp-picker-container input[type="text"].noo-color-picker {
+	display: inline-block;
+	width: 86px;
+	line-height: 24px;
+	height: 24px;
+	vertical-align: top;
+}
+
+.noo-control .icon-selector input,
+.noo-control .icon-selector a {
+	display: inline-block;
+	width: 45%;
+}
+
+.noo-control input[type="text"].noo-slider {
+	display: inline-block;
+	width: 20%;
+}
+
+.noo-control .ui-slider.ui-slider-horizontal {
+	display: inline-block;
+	width: 75%;
+	margin-left: 3%;
+}
+
+.noo-control small {
+	line-height: 15px;
+	display: block;
+	color: #888;
+}
+
+.noo-control a > i {
+	margin-top: 3px;
+}
+
+.noo-fontawesome-dialog {
+	text-decoration: none;
+}
+
+#TB_overlay {
+	z-index: 100000 !important;
+}
+
+#TB_window {
+	z-index: 100001 !important;
+}
